@@ -18,10 +18,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "CIVX · Civic Index",
+    default: "CIVX · Jawa Barat",
     template: "%s · CIVX",
   },
-  description: "Transparent regional pressure insights from public data.",
+  description: "Jawa Barat civic pressure, verified public observations, regional context and capabilities in one transparent index.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {

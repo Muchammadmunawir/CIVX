@@ -1,5 +1,5 @@
 .page { padding-block: var(--space-6) var(--space-12); }
-.page a:focus-visible, .page button:focus-visible, .field select:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.page a:focus-visible, .page button:focus-visible, .page summary:focus-visible, .field select:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .intro { align-items: end; display: flex; flex-wrap: wrap; gap: var(--space-4) var(--space-8); justify-content: space-between; padding-block: var(--space-5) var(--space-6); }
 .intro h1 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 650; letter-spacing: -.035em; line-height: 1.2; margin: 0 0 var(--space-2); }
 .intro p { color: var(--muted); font-size: .875rem; line-height: 1.6; margin: 0; }
@@ -64,6 +64,9 @@
 .track span { background: var(--accent); display: block; height: 100%; }
 .indicatorSide[data-side="B"] .track span { background: var(--foreground); height: 4px; }
 .scale { color: var(--muted); display: flex; flex-wrap: wrap; font-size: .6875rem; gap: var(--space-1); justify-content: space-between; line-height: 1.5; margin: var(--space-1) 0 0; }
+.evidence { border-top: 1px solid var(--border); font-size: .8125rem; line-height: 1.6; margin-top: var(--space-4); overflow-wrap: anywhere; padding-top: var(--space-3); }
+.evidence > summary { cursor: pointer; font-weight: 600; min-height: var(--control-height); padding-block: var(--space-2); }
+.evidence[open] > summary { margin-bottom: var(--space-2); }
 .indicatorDifference { border-top: 1px solid var(--border); margin-top: var(--space-4); padding-top: var(--space-3); }
 .indicatorDifference > p { display: flex; font-size: .8125rem; font-weight: 600; gap: var(--space-2); margin: 0 0 var(--space-3); }
 .indicatorDifference > p > span { color: var(--muted); font-weight: 400; }

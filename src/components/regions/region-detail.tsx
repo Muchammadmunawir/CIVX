@@ -1,171 +1,96 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PressureBadge } from "@/components/data/pressure-badge";
-import { getPublishedContext } from "@/lib/civx/coverage";
-import { getRegionDetail, regionalData, release } from "@/lib/civx/data";
+import { categoryForScore, civicRelease, coreIndicators, getCurrentRegion } from "@/lib/civx/current";
+import type { V2Observation } from "@/lib/civx/v2/types";
+import { ObservationEvidence, observationStatus, observationValue } from "./evidence";
 import styles from "./region-detail.module.css";
+import record from "./record.module.css";
 
 const decimal = new Intl.NumberFormat("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-export function RegionDetail({ id, contextual = false }: { id: string; contextual?: boolean }) {
-  const detail = getRegionDetail(id);
-  if (!detail) notFound();
-  const { region, civicIndex } = detail;
-  const labelPrefix = `region-${id}-${contextual ? "context" : "page"}`;
-  const { ordered: published, median, positionById } = getPublishedContext(regionalData);
-  const position = positionById.get(region.id);
-  const medianDelta = civicIndex.status === "available" && median !== null
-    ? civicIndex.score - median
-    : null;
-  const largestContribution = civicIndex.status === "available"
-    ? civicIndex.components.reduce((largest, component) =>
-        component.contribution > largest.contribution ? component : largest)
-    : undefined;
+const candidatesById = new Map(civicRelease.candidates.map(candidate => [candidate.id, candidate]));
 
+function OptionalEvidence({ observations }: { observations: V2Observation[] }) {
+  return observations.map(observation => <details className={record.disclosure} key={observation.id}>
+    <summary>{coreIndicators.find(policy => policy.id === observation.indicatorId)?.label ?? candidatesById.get(observation.indicatorId)?.label ?? observation.indicatorId}<span className={record.status}>{observation.kind === "advantage_signal" ? observationValue(observation) : `${observationStatus(observation)} · ${observationValue(observation)}`} · {observation.period ?? "No regional observation year"}</span></summary>
+    <ObservationEvidence observation={observation} />
+  </details>);
+}
+
+export function RegionDetail({ id, contextual = false }: { id: string; contextual?: boolean }) {
+  const region = getCurrentRegion(id);
+  if (!region) notFound();
+  const { pressure } = region;
+  const { methodology } = civicRelease;
+  const labelPrefix = `region-${id}-${contextual ? "context" : "page"}`;
+  const context = region.observations.filter(observation => observation.kind === "context_indicator");
+  const advantages = region.observations.filter(observation => observation.kind === "advantage_signal");
+  const present = advantages.filter(observation => observation.kind === "advantage_signal" && observation.presence === "verified_present" && observation.verificationState === "verified" && observation.comparabilityStatus === "comparable");
+  const otherAdvantages = advantages.filter(observation => !present.includes(observation));
   return (
     <article className={`${contextual ? styles.contextual : "civx-container"} ${styles.page}`}>
       {!contextual && <Link className={`civx-text-link ${styles.back}`} href="/explore">← Explore regions</Link>}
       <header className={styles.hero}>
         <div className={styles.identity}>
-          <p className="civx-eyebrow">Regional record / Jawa Barat / {region.period}</p>
+          <p className="civx-eyebrow">CIVX / Regional record / Jawa Barat / {civicRelease.period}</p>
           <h1 id={`${labelPrefix}-title`}>{region.name}</h1>
           <p className={styles.identityMeta}>{region.type === "kabupaten" ? "Regency" : "City"} · BPS region {region.id}</p>
           <p className={styles.boundary}>Boundary reference: {region.boundaryReference}</p>
-          <p className={styles.releaseNote}>{release.period} release · {published.length} published scores. CIVX is a modeled relative index, not an official BPS ranking or a causal measure.</p>
+          <p className={styles.releaseNote}>One common contract: {coreIndicators.length} validated core indicators across {methodology.dimensions.length} pressure dimensions. No imputation or region-specific reweighting.</p>
         </div>
         <div className={styles.result} aria-labelledby={`${labelPrefix}-status`}>
-          <p className={styles.resultLabel}>Civic Index <span>· data year {region.period}</span></p>
-          {civicIndex.status === "available" ? (
-            <>
-              <PressureBadge category={region.category} />
-              <h2 className={styles.score} id={`${labelPrefix}-status`}>{decimal.format(civicIndex.score)}<span> / 100</span></h2>
-              {region.interpretation && <p className={styles.interpretation}>{region.interpretation}</p>}
-              <div className={styles.scale} role="img" aria-label={`${region.name}: ${decimal.format(civicIndex.score)} out of 100${median === null ? "" : `; published median: ${decimal.format(median)} out of 100`}. A higher result indicates more modeled pressure.`}>
-                <div className={styles.scaleTrack}>
-                  <span className={styles.scaleFill} style={{ width: `${civicIndex.score}%` }} />
-                  {median !== null && <span className={styles.medianMarker} style={{ left: `${median}%` }} />}
-                  <span className={styles.primaryMarker} style={{ left: `${civicIndex.score}%` }} />
-                </div>
-                <div className={styles.scaleTicks}><span>0 · lower</span><span>25</span><span>50</span><span>75</span><span>100 · higher</span></div>
-              </div>
-              <div className={styles.scaleLegend}>
-                <span><i className={styles.primaryKey} aria-hidden="true" />{region.name}: <strong>{decimal.format(civicIndex.score)}</strong></span>
-                {median !== null && <span><i className={styles.medianKey} aria-hidden="true" />Published median: <strong>{decimal.format(median)}</strong></span>}
-              </div>
-            </>
-          ) : (
-            <>
-              <h2 className={styles.unavailable} id={`${labelPrefix}-status`}>Index unavailable</h2>
-              <p className={styles.interpretation}>{civicIndex.reason}</p>
-            </>
-          )}
+          <p className={styles.resultLabel}>Civic Index <span>· {civicRelease.period}</span></p>
+          {pressure.status === "available" ? <>
+            <PressureBadge category={categoryForScore(pressure.score)} />
+            <h2 className={styles.score} id={`${labelPrefix}-status`}>{decimal.format(pressure.score)}<span> / 100</span></h2>
+            <p className={styles.interpretation}>Higher means more modeled relative pressure, not better performance. Context and advantages do not change this score.</p>
+            <div className={styles.scale} role="img" aria-label={`${region.name}: ${decimal.format(pressure.score)} out of 100. Higher means more modeled pressure.`}><div className={styles.scaleTrack}><span className={styles.scaleFill} style={{ width: `${pressure.score}%` }} /><span className={styles.primaryMarker} style={{ left: `${pressure.score}%` }} /></div><div className={styles.scaleTicks}><span>0 · lower</span><span>50</span><span>100 · higher</span></div></div>
+          </> : <><h2 className={styles.unavailable} id={`${labelPrefix}-status`}>Index unavailable</h2><p>{pressure.reason}</p></>}
         </div>
-        {civicIndex.status === "available" && (
-          <div className={styles.heroInsights}>
-            {position !== undefined && (
-              <div className={styles.heroInsight}>
-                <span>Position within the CIVX {release.period} release</span>
-                <strong>Modeled order · tied scores share a position</strong>
-                <b className="civx-mono">{position} <small>of {published.length}</small></b>
-              </div>
-            )}
-            {medianDelta !== null && (
-              <div className={styles.heroInsight}>
-                <span>Difference from published median</span>
-                <strong>{medianDelta > 0 ? "Above" : medianDelta < 0 ? "Below" : "At"} the published median</strong>
-                <b className="civx-mono">{medianDelta > 0 ? "+" : ""}{decimal.format(medianDelta)} <small>index points</small></b>
-              </div>
-            )}
-            {largestContribution && (
-              <div className={styles.heroInsight}>
-                <span>Largest contribution to this index</span>
-                <strong>{largestContribution.label}</strong>
-                <b className="civx-mono">{decimal.format(largestContribution.contribution)} <small>index points</small></b>
-              </div>
-            )}
-          </div>
-        )}
       </header>
-
-      {civicIndex.status === "available" && (
-        <>
-
-          <section className={styles.section} aria-labelledby={`${labelPrefix}-indicators`}>
-            <div className={styles.sectionHeading}>
-              <div>
-                <p className="civx-eyebrow">01 / Components</p>
-                <h2 id={`${labelPrefix}-indicators`}>Inside the score</h2>
-              </div>
-              <p>{civicIndex.components.length} indicators · published methodology weights</p>
-            </div>
-            <p className={styles.sectionIntro}>Observed BPS values, normalized pressure scores and weighted contributions are separate quantities. Each source below links to its BPS publication and identifies its table.</p>
-            <details className={styles.readingGuide}>
-              <summary>What do raw, normalized and contribution mean?</summary>
-              <p><strong>Raw value</strong> is the observed BPS figure in its original unit. <strong>Normalized score</strong> places it on a 0–100 modeled pressure scale against the fixed {release.period} reference set. <strong>Contribution</strong> is its weighted share of the Civic Index; its maximum is the indicator weight × 100 points. These are different quantities.</p>
-            </details>
-            <div className={styles.indicators}>
-              {civicIndex.components.map((component, index) => {
-                const policy = release.methodology.indicators.find((indicator) => indicator.id === component.indicatorId);
-                const potential = component.weight * 100;
-                return (
-                  <article className={styles.indicator} key={component.indicatorId} aria-labelledby={`${labelPrefix}-${component.indicatorId}`}>
-                    <div className={styles.indicatorTop}>
-                      <span className={styles.number}>{String(index + 1).padStart(2, "0")}</span>
-                      <div>
-                        <h3 id={`${labelPrefix}-${component.indicatorId}`}>{component.label}</h3>
-                        <p>{component.direction === "lower" ? "A lower raw value maps to more modeled pressure." : "A higher raw value maps to more modeled pressure."}</p>
-                      </div>
-                    </div>
-                    <div className={styles.indicatorBody}>
-                      <dl className={styles.metrics}>
-                        <div><dt>Raw observed value · {component.period}</dt><dd>{decimal.format(component.value)} <small>{component.unit}</small></dd></div>
-                        <div><dt>Normalized pressure score</dt><dd>{decimal.format(component.score)} <small>/ 100</small></dd></div>
-                        <div><dt>Weighted index contribution</dt><dd>{decimal.format(component.contribution)} <small>/ {decimal.format(potential)} points</small></dd></div>
-                      </dl>
-                      <div className={styles.contribution}>
-                        <div className={styles.barLabel}><span>Contribution to overall score</span><strong>{decimal.format(component.contribution)} / {decimal.format(potential)}</strong></div>
-                        <div className={styles.barTrack} role="img" aria-label={`${component.label} contributes ${decimal.format(component.contribution)} of ${decimal.format(potential)} possible index points`}>
-                          <span style={{ width: `${component.score}%` }} />
-                        </div>
-                        <div className={styles.barEnds}><span>0</span><span>{decimal.format(potential)} points</span></div>
-                        {policy && <p className={styles.referenceRange}>{release.period} fixed reference range: {decimal.format(policy.minimum)}–{decimal.format(policy.maximum)} {component.unit} · {release.referenceSetId}.</p>}
-                      </div>
-                    </div>
-                    <div className={styles.sources}>
-                      <p>Source &amp; observation year · published BPS table</p>
-                      <ul>
-                        {component.sources.map((source) => (
-                          <li key={source.id}>
-                            <a className="civx-text-link" href={source.url} target="_blank" rel="noopener noreferrer">{source.publisher} · {source.title} ↗</a>
-                            <span>Table {source.table} · {source.page} · data year {source.dataYear} · {source.referencePeriod}</span>
-                            <span className={styles.sourceId}>Source {source.id} · artifact {source.artifactId}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </article>
-                );
-              })}
-            </div>
-          </section>
-
-          <section className={styles.section} aria-labelledby={`${labelPrefix}-context`}>
-            <div className={styles.sectionHeading}>
-              <div>
-                <p className="civx-eyebrow">02 / Release context</p>
-                <h2 id={`${labelPrefix}-context`}>Read the published context</h2>
-              </div>
-              <Link className="civx-text-link" href={`/compare?a=${encodeURIComponent(region.id)}`}>Compare with {region.name} ↗</Link>
-            </div>
-            <p className={styles.sectionIntro}>Position and median compare only scores published in this {release.period} CIVX release. They are descriptive modeled values, not an official BPS ranking, a measure of statistical significance or an explanation of causes. Normalization uses the fixed {release.referenceSetId} reference set, not the published median.</p>
-          </section>
-        </>
-      )}
-
+      <section className={styles.section} aria-labelledby={`${labelPrefix}-dimensions`}>
+        <div className={styles.sectionHeading}><div><p className="civx-eyebrow">01 / Pressure dimensions</p><h2 id={`${labelPrefix}-dimensions`}>Inside the Civic Index</h2></div><Link className="civx-text-link" href={`/compare?a=${region.id}`}>Compare this region ↗</Link></div>
+        <p className={styles.sectionIntro}>Dimension scores use the same fixed reference and budgets for every region. Expand a dimension for its index contribution.</p>
+        {pressure.status === "available" && pressure.dimensions.map(dimension => <details className={record.disclosure} key={dimension.id}>
+          <summary><span className={record.dimensionLine}><strong>{dimension.label}</strong><span>{decimal.format(dimension.score)} / 100 <small>{decimal.format(dimension.weight * 100)}% of index</small></span></span></summary>
+          <p>{decimal.format(dimension.contribution)} index points contributed. A dimension score is not its weighted index contribution.</p>
+        </details>)}
+        {methodology.unsupportedDimensions.length > 0 && <details className={record.disclosure}><summary>Unscored dimensions · no zero or substitute score</summary><ul>{methodology.unsupportedDimensions.map(dimension => <li key={dimension.id}><strong>{dimension.label}:</strong> {dimension.reason}</li>)}</ul></details>}
+      </section>
+      <section className={styles.section} aria-labelledby={`${labelPrefix}-indicators`}>
+        <div className={styles.sectionHeading}><div><p className="civx-eyebrow">02 / Validated core</p><h2 id={`${labelPrefix}-indicators`}>Core indicators</h2></div><p>{coreIndicators.length} shared inputs</p></div>
+        <p className={styles.sectionIntro}>Raw observations, normalized pressure and weighted contributions are separate quantities. Expand each input for its source and calculation evidence.</p>
+        {pressure.status === "available" && methodology.dimensions.flatMap(dimension => dimension.indicators.map(policy => {
+          const component = pressure.dimensions.find(value => value.id === dimension.id)?.components.find(value => value.indicatorId === policy.id);
+          const observation = component && region.observations.find(value => value.id === component.observationId);
+          if (!component || !observation) return null;
+          return <details className={record.disclosure} key={policy.id}>
+            <summary>{policy.label}<span className={record.status}>{observationValue(observation)} · {decimal.format(component.score)} / 100 pressure · {decimal.format(component.contribution)} index points</span></summary>
+            <dl className={record.keyValues}><div><dt>Dimension</dt><dd>{dimension.label}</dd></div><div><dt>Raw observed · {observation.period}</dt><dd>{observationValue(observation)}</dd></div><div><dt>Normalized pressure</dt><dd>{decimal.format(component.score)} / 100</dd></div><div><dt>Index contribution</dt><dd>{decimal.format(component.contribution)} points<small>{decimal.format(component.effectiveWeight * 100)}% effective weight</small></dd></div></dl>
+            <p>{policy.direction === "higher" ? "Higher" : "Lower"} raw values mean more modeled pressure. Fixed reference: {policy.minimum}–{policy.maximum} {policy.unit}. Within-dimension weight: {decimal.format(policy.withinDimensionWeight * 100)}%.</p>
+            <details className={record.disclosure}><summary>Definition, raw source &amp; derivation</summary><ObservationEvidence observation={observation} /></details>
+          </details>;
+        }))}
+      </section>
+      <div className={record.grid}>
+        <section className={record.panel} aria-labelledby={`${labelPrefix}-context`}>
+          <h2 id={`${labelPrefix}-context`}>Context Signals</h2>
+          <p className={record.note}>No effect on the Civic Index. Density does not imply poor performance. Facility supply is not actual healthcare access.</p>
+          <OptionalEvidence observations={context} />
+          {!context.length && <p>No comparable verified data.</p>}
+        </section>
+        <section className={record.panel} aria-labelledby={`${labelPrefix}-advantages`}>
+          <h2 id={`${labelPrefix}-advantages`}>Regional Advantages</h2>
+          <p className={record.note}>Verified capabilities, not score bonuses. Dated evidence does not claim province-wide completeness.</p>
+          {present.length ? <OptionalEvidence observations={present} /> : <p>No comparable verified data. This does not establish absence.</p>}
+          {otherAdvantages.length > 0 && <details className={record.disclosure}><summary>Other capability evidence &amp; coverage gaps</summary><p>Unknown is not zero, verified absence or a disadvantage.</p><OptionalEvidence observations={otherAdvantages} /></details>}
+        </section>
+      </div>
       <aside className={styles.provenance} aria-labelledby={`${labelPrefix}-provenance`}>
-        <p className="civx-eyebrow">Record notes</p>
-        <h2 id={`${labelPrefix}-provenance`}>Method &amp; provenance</h2>
-        {civicIndex.status === "available" && <p>Release {civicIndex.releaseId} · reference set {civicIndex.referenceSetId} · methodology {civicIndex.methodologyVersion}. Source artifact {release.artifact.id} · {release.artifact.publication}, revised {release.artifact.revisedAt}. The BPS observation periods shown above need not refer to the same month.</p>}
-        <p>Inspect the <Link className="civx-text-link" href="/methodology">methodology and limitations ↗</Link> and the <Link className="civx-text-link" href="/sources">source register ↗</Link> for table, artifact, and access details.</p>
+        <h2 id={`${labelPrefix}-provenance`}>Sources &amp; record notes</h2>
+        <p>Each expanded observation retains raw values, source locators, artifacts and any numerator/denominator derivation.</p>
+        <details className={record.disclosure}><summary>Release identifiers &amp; interpretation limits</summary><p>{methodology.weightDecision}</p><p>Release {civicRelease.releaseId} · Method {methodology.methodologyVersion} · Reference {methodology.referenceSetId}.</p><p>Source windows differ. Improved sanitation and drinking-water sources do not establish safely managed services. Project-validated only; no government endorsement.</p></details>
+        <div className={record.links}><Link href="/methodology">Methodology &amp; sensitivity ↗</Link><Link href="/sources">Full source directory ↗</Link></div>
       </aside>
     </article>
   );

@@ -21,6 +21,8 @@
 .control input:hover, .control select:hover { border-color: var(--accent); }
 .control input:focus-visible, .control select:focus-visible { border-color: var(--accent); outline: 2px solid var(--accent); outline-offset: 3px; }
 .control select:disabled { color: var(--muted); cursor: not-allowed; }
+.control > p { color: var(--muted); font-size: .8125rem; line-height: 1.6; margin: 0; }
+.results > .control { margin-bottom: var(--space-4); }
 .toolbarFoot { align-items: center; display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); min-height: var(--control-height); }
 .resultCount { color: var(--muted); font-size: .8125rem; margin: 0; }
 .resultCount strong { color: var(--foreground); font-variant-numeric: tabular-nums; }

@@ -1,0 +1,2632 @@
+{
+  "baseline": "Four equal domain budgets; capped poverty/HDI allocation; equal basic-service inputs",
+  "referenceSetId": "civx-bps-jabar-27-kabkota-2023-current",
+  "scenarios": [
+    {
+      "id": "socioeconomic_40",
+      "label": "Socioeconomic 40%, other domains 20%",
+      "dimensionWeights": {
+        "socioeconomic": 0.4,
+        "basic_services": 0.2,
+        "health": 0.2,
+        "resilience": 0.2
+      },
+      "indicatorWeights": {
+        "poverty": 0.25,
+        "unemployment": 0.5,
+        "hdi": 0.25,
+        "sanitation": 0.3333333333333333,
+        "drinking_water": 0.3333333333333333,
+        "puskesmas_per_100k": 0.3333333333333333,
+        "dbd_incidence": 1,
+        "disaster_risk": 1
+      },
+      "maxAbsoluteScoreChange": 7.26,
+      "meanAbsoluteScoreChange": 2.79,
+      "maxOrderMovement": 5,
+      "spearman": 0.971917,
+      "orderReversals": 22,
+      "categoryChanges": 0,
+      "regions": [
+        {
+          "regionId": "3201",
+          "score": 51.28,
+          "change": 4.22,
+          "baselineRank": 16,
+          "rank": 15,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3202",
+          "score": 62.09,
+          "change": 1.12,
+          "baselineRank": 5,
+          "rank": 5,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3203",
+          "score": 72.29,
+          "change": 1.8,
+          "baselineRank": 1,
+          "rank": 1,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3204",
+          "score": 47.02,
+          "change": 1.6,
+          "baselineRank": 18,
+          "rank": 17,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3205",
+          "score": 64.7,
+          "change": 2.45,
+          "baselineRank": 3,
+          "rank": 3,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3206",
+          "score": 54.08,
+          "change": 0.59,
+          "baselineRank": 9,
+          "rank": 12,
+          "orderMovement": 3
+        },
+        {
+          "regionId": "3207",
+          "score": 37.53,
+          "change": 0.83,
+          "baselineRank": 24,
+          "rank": 25,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3208",
+          "score": 61.99,
+          "change": 6.9,
+          "baselineRank": 7,
+          "rank": 6,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3209",
+          "score": 55.04,
+          "change": 5.16,
+          "baselineRank": 13,
+          "rank": 10,
+          "orderMovement": -3
+        },
+        {
+          "regionId": "3210",
+          "score": 44.51,
+          "change": 3.33,
+          "baselineRank": 20,
+          "rank": 21,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3211",
+          "score": 63.15,
+          "change": 0.05,
+          "baselineRank": 2,
+          "rank": 4,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3212",
+          "score": 45.07,
+          "change": 7.26,
+          "baselineRank": 23,
+          "rank": 20,
+          "orderMovement": -3
+        },
+        {
+          "regionId": "3213",
+          "score": 54.19,
+          "change": 4.45,
+          "baselineRank": 14,
+          "rank": 11,
+          "orderMovement": -3
+        },
+        {
+          "regionId": "3214",
+          "score": 55.83,
+          "change": 2.63,
+          "baselineRank": 10,
+          "rank": 9,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3215",
+          "score": 57.9,
+          "change": 3.52,
+          "baselineRank": 8,
+          "rank": 7,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3216",
+          "score": 43.14,
+          "change": 4.02,
+          "baselineRank": 21,
+          "rank": 23,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3217",
+          "score": 64.83,
+          "change": 3.52,
+          "baselineRank": 4,
+          "rank": 2,
+          "orderMovement": -2
+        },
+        {
+          "regionId": "3218",
+          "score": 49.63,
+          "change": -2.91,
+          "baselineRank": 11,
+          "rank": 16,
+          "orderMovement": 5
+        },
+        {
+          "regionId": "3271",
+          "score": 53.77,
+          "change": 2.28,
+          "baselineRank": 12,
+          "rank": 13,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3272",
+          "score": 57.2,
+          "change": 1.25,
+          "baselineRank": 6,
+          "rank": 8,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3273",
+          "score": 45.38,
+          "change": -0.18,
+          "baselineRank": 17,
+          "rank": 19,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3274",
+          "score": 46.08,
+          "change": 3.77,
+          "baselineRank": 19,
+          "rank": 18,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3275",
+          "score": 36.09,
+          "change": 1.04,
+          "baselineRank": 26,
+          "rank": 26,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3276",
+          "score": 27.73,
+          "change": 0.95,
+          "baselineRank": 27,
+          "rank": 27,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3277",
+          "score": 43.56,
+          "change": 4.56,
+          "baselineRank": 22,
+          "rank": 22,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3278",
+          "score": 51.74,
+          "change": 3.15,
+          "baselineRank": 15,
+          "rank": 14,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3279",
+          "score": 38.3,
+          "change": 1.92,
+          "baselineRank": 25,
+          "rank": 24,
+          "orderMovement": -1
+        }
+      ]
+    },
+    {
+      "id": "services_40",
+      "label": "Basic services 40%, other domains 20%",
+      "dimensionWeights": {
+        "socioeconomic": 0.2,
+        "basic_services": 0.4,
+        "health": 0.2,
+        "resilience": 0.2
+      },
+      "indicatorWeights": {
+        "poverty": 0.25,
+        "unemployment": 0.5,
+        "hdi": 0.25,
+        "sanitation": 0.3333333333333333,
+        "drinking_water": 0.3333333333333333,
+        "puskesmas_per_100k": 0.3333333333333333,
+        "dbd_incidence": 1,
+        "disaster_risk": 1
+      },
+      "maxAbsoluteScoreChange": 7.8,
+      "meanAbsoluteScoreChange": 2.52,
+      "maxOrderMovement": 6,
+      "spearman": 0.946886,
+      "orderReversals": 33,
+      "categoryChanges": 1,
+      "regions": [
+        {
+          "regionId": "3201",
+          "score": 50.15,
+          "change": 3.09,
+          "baselineRank": 16,
+          "rank": 13,
+          "orderMovement": -3
+        },
+        {
+          "regionId": "3202",
+          "score": 65.39,
+          "change": 4.42,
+          "baselineRank": 5,
+          "rank": 3,
+          "orderMovement": -2
+        },
+        {
+          "regionId": "3203",
+          "score": 72.03,
+          "change": 1.55,
+          "baselineRank": 1,
+          "rank": 1,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3204",
+          "score": 48.23,
+          "change": 2.81,
+          "baselineRank": 18,
+          "rank": 15,
+          "orderMovement": -3
+        },
+        {
+          "regionId": "3205",
+          "score": 67.3,
+          "change": 5.06,
+          "baselineRank": 3,
+          "rank": 2,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3206",
+          "score": 58.41,
+          "change": 4.92,
+          "baselineRank": 9,
+          "rank": 6,
+          "orderMovement": -3
+        },
+        {
+          "regionId": "3207",
+          "score": 39.37,
+          "change": 2.68,
+          "baselineRank": 24,
+          "rank": 22,
+          "orderMovement": -2
+        },
+        {
+          "regionId": "3208",
+          "score": 51.69,
+          "change": -3.4,
+          "baselineRank": 7,
+          "rank": 11,
+          "orderMovement": 4
+        },
+        {
+          "regionId": "3209",
+          "score": 46.82,
+          "change": -3.06,
+          "baselineRank": 13,
+          "rank": 17,
+          "orderMovement": 4
+        },
+        {
+          "regionId": "3210",
+          "score": 42.71,
+          "change": 1.53,
+          "baselineRank": 20,
+          "rank": 19,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3211",
+          "score": 59.96,
+          "change": -3.14,
+          "baselineRank": 2,
+          "rank": 5,
+          "orderMovement": 3
+        },
+        {
+          "regionId": "3212",
+          "score": 36.52,
+          "change": -1.3,
+          "baselineRank": 23,
+          "rank": 23,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3213",
+          "score": 46.56,
+          "change": -3.17,
+          "baselineRank": 14,
+          "rank": 18,
+          "orderMovement": 4
+        },
+        {
+          "regionId": "3214",
+          "score": 56.49,
+          "change": 3.3,
+          "baselineRank": 10,
+          "rank": 7,
+          "orderMovement": -3
+        },
+        {
+          "regionId": "3215",
+          "score": 52.09,
+          "change": -2.3,
+          "baselineRank": 8,
+          "rank": 10,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3216",
+          "score": 39.79,
+          "change": 0.67,
+          "baselineRank": 21,
+          "rank": 21,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3217",
+          "score": 63.32,
+          "change": 2.01,
+          "baselineRank": 4,
+          "rank": 4,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3218",
+          "score": 53.54,
+          "change": 1,
+          "baselineRank": 11,
+          "rank": 9,
+          "orderMovement": -2
+        },
+        {
+          "regionId": "3271",
+          "score": 49.82,
+          "change": -1.68,
+          "baselineRank": 12,
+          "rank": 14,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3272",
+          "score": 54.86,
+          "change": -1.09,
+          "baselineRank": 6,
+          "rank": 8,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3273",
+          "score": 46.87,
+          "change": 1.31,
+          "baselineRank": 17,
+          "rank": 16,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3274",
+          "score": 34.52,
+          "change": -7.8,
+          "baselineRank": 19,
+          "rank": 25,
+          "orderMovement": 6
+        },
+        {
+          "regionId": "3275",
+          "score": 34.67,
+          "change": -0.39,
+          "baselineRank": 26,
+          "rank": 24,
+          "orderMovement": -2
+        },
+        {
+          "regionId": "3276",
+          "score": 27.98,
+          "change": 1.19,
+          "baselineRank": 27,
+          "rank": 27,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3277",
+          "score": 40.57,
+          "change": 1.57,
+          "baselineRank": 22,
+          "rank": 20,
+          "orderMovement": -2
+        },
+        {
+          "regionId": "3278",
+          "score": 50.23,
+          "change": 1.64,
+          "baselineRank": 15,
+          "rank": 12,
+          "orderMovement": -3
+        },
+        {
+          "regionId": "3279",
+          "score": 34.4,
+          "change": -1.99,
+          "baselineRank": 25,
+          "rank": 26,
+          "orderMovement": 1
+        }
+      ]
+    },
+    {
+      "id": "health_40",
+      "label": "Public health 40%, other domains 20%",
+      "dimensionWeights": {
+        "socioeconomic": 0.2,
+        "basic_services": 0.2,
+        "health": 0.4,
+        "resilience": 0.2
+      },
+      "indicatorWeights": {
+        "poverty": 0.25,
+        "unemployment": 0.5,
+        "hdi": 0.25,
+        "sanitation": 0.3333333333333333,
+        "drinking_water": 0.3333333333333333,
+        "puskesmas_per_100k": 0.3333333333333333,
+        "dbd_incidence": 1,
+        "disaster_risk": 1
+      },
+      "maxAbsoluteScoreChange": 12.19,
+      "meanAbsoluteScoreChange": 4.93,
+      "maxOrderMovement": 8,
+      "spearman": 0.909646,
+      "orderReversals": 46,
+      "categoryChanges": 5,
+      "regions": [
+        {
+          "regionId": "3201",
+          "score": 41.87,
+          "change": -5.19,
+          "baselineRank": 16,
+          "rank": 18,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3202",
+          "score": 48.78,
+          "change": -12.19,
+          "baselineRank": 5,
+          "rank": 11,
+          "orderMovement": 6
+        },
+        {
+          "regionId": "3203",
+          "score": 61.23,
+          "change": -9.25,
+          "baselineRank": 1,
+          "rank": 3,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3204",
+          "score": 38.84,
+          "change": -6.58,
+          "baselineRank": 18,
+          "rank": 20,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3205",
+          "score": 53.39,
+          "change": -8.85,
+          "baselineRank": 3,
+          "rank": 6,
+          "orderMovement": 3
+        },
+        {
+          "regionId": "3206",
+          "score": 42.94,
+          "change": -10.54,
+          "baselineRank": 9,
+          "rank": 17,
+          "orderMovement": 8
+        },
+        {
+          "regionId": "3207",
+          "score": 31.7,
+          "change": -4.99,
+          "baselineRank": 24,
+          "rank": 25,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3208",
+          "score": 52.35,
+          "change": -2.74,
+          "baselineRank": 7,
+          "rank": 7,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3209",
+          "score": 44.44,
+          "change": -5.44,
+          "baselineRank": 13,
+          "rank": 15,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3210",
+          "score": 35.13,
+          "change": -6.05,
+          "baselineRank": 20,
+          "rank": 21,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3211",
+          "score": 67.04,
+          "change": 3.94,
+          "baselineRank": 2,
+          "rank": 1,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3212",
+          "score": 31.5,
+          "change": -6.31,
+          "baselineRank": 23,
+          "rank": 26,
+          "orderMovement": 3
+        },
+        {
+          "regionId": "3213",
+          "score": 45.25,
+          "change": -4.48,
+          "baselineRank": 14,
+          "rank": 14,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3214",
+          "score": 48.96,
+          "change": -4.23,
+          "baselineRank": 10,
+          "rank": 10,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3215",
+          "score": 49.45,
+          "change": -4.94,
+          "baselineRank": 8,
+          "rank": 9,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3216",
+          "score": 33.48,
+          "change": -5.64,
+          "baselineRank": 21,
+          "rank": 23,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3217",
+          "score": 60.61,
+          "change": -0.7,
+          "baselineRank": 4,
+          "rank": 5,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3218",
+          "score": 51.1,
+          "change": -1.45,
+          "baselineRank": 11,
+          "rank": 8,
+          "orderMovement": -3
+        },
+        {
+          "regionId": "3271",
+          "score": 61.2,
+          "change": 9.7,
+          "baselineRank": 12,
+          "rank": 4,
+          "orderMovement": -8
+        },
+        {
+          "regionId": "3272",
+          "score": 63.51,
+          "change": 7.56,
+          "baselineRank": 6,
+          "rank": 2,
+          "orderMovement": -4
+        },
+        {
+          "regionId": "3273",
+          "score": 48.01,
+          "change": 2.45,
+          "baselineRank": 17,
+          "rank": 12,
+          "orderMovement": -5
+        },
+        {
+          "regionId": "3274",
+          "score": 44.32,
+          "change": 2.01,
+          "baselineRank": 19,
+          "rank": 16,
+          "orderMovement": -3
+        },
+        {
+          "regionId": "3275",
+          "score": 33.52,
+          "change": -1.54,
+          "baselineRank": 26,
+          "rank": 22,
+          "orderMovement": -4
+        },
+        {
+          "regionId": "3276",
+          "score": 27.21,
+          "change": 0.42,
+          "baselineRank": 27,
+          "rank": 27,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3277",
+          "score": 39.17,
+          "change": 0.17,
+          "baselineRank": 22,
+          "rank": 19,
+          "orderMovement": -3
+        },
+        {
+          "regionId": "3278",
+          "score": 46.37,
+          "change": -2.22,
+          "baselineRank": 15,
+          "rank": 13,
+          "orderMovement": -2
+        },
+        {
+          "regionId": "3279",
+          "score": 32.86,
+          "change": -3.53,
+          "baselineRank": 25,
+          "rank": 24,
+          "orderMovement": -1
+        }
+      ]
+    },
+    {
+      "id": "resilience_40",
+      "label": "Resilience 40%, other domains 20%",
+      "dimensionWeights": {
+        "socioeconomic": 0.2,
+        "basic_services": 0.2,
+        "health": 0.2,
+        "resilience": 0.4
+      },
+      "indicatorWeights": {
+        "poverty": 0.25,
+        "unemployment": 0.5,
+        "hdi": 0.25,
+        "sanitation": 0.3333333333333333,
+        "drinking_water": 0.3333333333333333,
+        "puskesmas_per_100k": 0.3333333333333333,
+        "dbd_incidence": 1,
+        "disaster_risk": 1
+      },
+      "maxAbsoluteScoreChange": 10.3,
+      "meanAbsoluteScoreChange": 3.28,
+      "maxOrderMovement": 8,
+      "spearman": 0.924908,
+      "orderReversals": 40,
+      "categoryChanges": 2,
+      "regions": [
+        {
+          "regionId": "3201",
+          "score": 44.96,
+          "change": -2.11,
+          "baselineRank": 16,
+          "rank": 16,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3202",
+          "score": 67.62,
+          "change": 6.65,
+          "baselineRank": 5,
+          "rank": 2,
+          "orderMovement": -3
+        },
+        {
+          "regionId": "3203",
+          "score": 76.39,
+          "change": 5.9,
+          "baselineRank": 1,
+          "rank": 1,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3204",
+          "score": 47.6,
+          "change": 2.18,
+          "baselineRank": 18,
+          "rank": 14,
+          "orderMovement": -4
+        },
+        {
+          "regionId": "3205",
+          "score": 63.59,
+          "change": 1.35,
+          "baselineRank": 3,
+          "rank": 3,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3206",
+          "score": 58.51,
+          "change": 5.03,
+          "baselineRank": 9,
+          "rank": 5,
+          "orderMovement": -4
+        },
+        {
+          "regionId": "3207",
+          "score": 38.17,
+          "change": 1.48,
+          "baselineRank": 24,
+          "rank": 23,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3208",
+          "score": 54.31,
+          "change": -0.77,
+          "baselineRank": 7,
+          "rank": 9,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3209",
+          "score": 53.23,
+          "change": 3.35,
+          "baselineRank": 13,
+          "rank": 10,
+          "orderMovement": -3
+        },
+        {
+          "regionId": "3210",
+          "score": 42.37,
+          "change": 1.19,
+          "baselineRank": 20,
+          "rank": 18,
+          "orderMovement": -2
+        },
+        {
+          "regionId": "3211",
+          "score": 62.25,
+          "change": -0.86,
+          "baselineRank": 2,
+          "rank": 4,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3212",
+          "score": 38.16,
+          "change": 0.35,
+          "baselineRank": 23,
+          "rank": 24,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3213",
+          "score": 52.93,
+          "change": 3.2,
+          "baselineRank": 14,
+          "rank": 11,
+          "orderMovement": -3
+        },
+        {
+          "regionId": "3214",
+          "score": 51.5,
+          "change": -1.7,
+          "baselineRank": 10,
+          "rank": 12,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3215",
+          "score": 58.11,
+          "change": 3.73,
+          "baselineRank": 8,
+          "rank": 6,
+          "orderMovement": -2
+        },
+        {
+          "regionId": "3216",
+          "score": 40.07,
+          "change": 0.95,
+          "baselineRank": 21,
+          "rank": 21,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3217",
+          "score": 56.47,
+          "change": -4.84,
+          "baselineRank": 4,
+          "rank": 7,
+          "orderMovement": 3
+        },
+        {
+          "regionId": "3218",
+          "score": 55.9,
+          "change": 3.36,
+          "baselineRank": 11,
+          "rank": 8,
+          "orderMovement": -3
+        },
+        {
+          "regionId": "3271",
+          "score": 41.2,
+          "change": -10.3,
+          "baselineRank": 12,
+          "rank": 20,
+          "orderMovement": 8
+        },
+        {
+          "regionId": "3272",
+          "score": 48.22,
+          "change": -7.73,
+          "baselineRank": 6,
+          "rank": 13,
+          "orderMovement": 7
+        },
+        {
+          "regionId": "3273",
+          "score": 41.98,
+          "change": -3.58,
+          "baselineRank": 17,
+          "rank": 19,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3274",
+          "score": 44.34,
+          "change": 2.02,
+          "baselineRank": 19,
+          "rank": 17,
+          "orderMovement": -2
+        },
+        {
+          "regionId": "3275",
+          "score": 35.95,
+          "change": 0.89,
+          "baselineRank": 26,
+          "rank": 25,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3276",
+          "score": 24.21,
+          "change": -2.57,
+          "baselineRank": 27,
+          "rank": 27,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3277",
+          "score": 32.7,
+          "change": -6.3,
+          "baselineRank": 22,
+          "rank": 26,
+          "orderMovement": 4
+        },
+        {
+          "regionId": "3278",
+          "score": 46.01,
+          "change": -2.58,
+          "baselineRank": 15,
+          "rank": 15,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3279",
+          "score": 39.98,
+          "change": 3.59,
+          "baselineRank": 25,
+          "rank": 22,
+          "orderMovement": -3
+        }
+      ]
+    },
+    {
+      "id": "equal_socioeconomic",
+      "label": "Equal socioeconomic inputs",
+      "dimensionWeights": {
+        "socioeconomic": 0.25,
+        "basic_services": 0.25,
+        "health": 0.25,
+        "resilience": 0.25
+      },
+      "indicatorWeights": {
+        "poverty": 0.3333333333333333,
+        "unemployment": 0.3333333333333333,
+        "hdi": 0.3333333333333333,
+        "sanitation": 0.3333333333333333,
+        "drinking_water": 0.3333333333333333,
+        "puskesmas_per_100k": 0.3333333333333333,
+        "dbd_incidence": 1,
+        "disaster_risk": 1
+      },
+      "maxAbsoluteScoreChange": 3.18,
+      "meanAbsoluteScoreChange": 1.29,
+      "maxOrderMovement": 4,
+      "spearman": 0.97619,
+      "orderReversals": 18,
+      "categoryChanges": 1,
+      "regions": [
+        {
+          "regionId": "3201",
+          "score": 46.31,
+          "change": -0.76,
+          "baselineRank": 16,
+          "rank": 16,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3202",
+          "score": 61.15,
+          "change": 0.18,
+          "baselineRank": 5,
+          "rank": 5,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3203",
+          "score": 71.38,
+          "change": 0.89,
+          "baselineRank": 1,
+          "rank": 1,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3204",
+          "score": 45.24,
+          "change": -0.18,
+          "baselineRank": 18,
+          "rank": 17,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3205",
+          "score": 63.07,
+          "change": 0.83,
+          "baselineRank": 3,
+          "rank": 3,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3206",
+          "score": 55.99,
+          "change": 2.51,
+          "baselineRank": 9,
+          "rank": 6,
+          "orderMovement": -3
+        },
+        {
+          "regionId": "3207",
+          "score": 38.24,
+          "change": 1.55,
+          "baselineRank": 24,
+          "rank": 22,
+          "orderMovement": -2
+        },
+        {
+          "regionId": "3208",
+          "score": 55.17,
+          "change": 0.09,
+          "baselineRank": 7,
+          "rank": 8,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3209",
+          "score": 50.51,
+          "change": 0.63,
+          "baselineRank": 13,
+          "rank": 12,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3210",
+          "score": 43.59,
+          "change": 2.41,
+          "baselineRank": 20,
+          "rank": 18,
+          "orderMovement": -2
+        },
+        {
+          "regionId": "3211",
+          "score": 63.36,
+          "change": 0.26,
+          "baselineRank": 2,
+          "rank": 2,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3212",
+          "score": 39.42,
+          "change": 1.6,
+          "baselineRank": 23,
+          "rank": 21,
+          "orderMovement": -2
+        },
+        {
+          "regionId": "3213",
+          "score": 50.06,
+          "change": 0.32,
+          "baselineRank": 14,
+          "rank": 13,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3214",
+          "score": 52.98,
+          "change": -0.21,
+          "baselineRank": 10,
+          "rank": 11,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3215",
+          "score": 53.51,
+          "change": -0.88,
+          "baselineRank": 8,
+          "rank": 10,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3216",
+          "score": 37.25,
+          "change": -1.87,
+          "baselineRank": 21,
+          "rank": 23,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3217",
+          "score": 61.78,
+          "change": 0.48,
+          "baselineRank": 4,
+          "rank": 4,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3218",
+          "score": 55.71,
+          "change": 3.16,
+          "baselineRank": 11,
+          "rank": 7,
+          "orderMovement": -4
+        },
+        {
+          "regionId": "3271",
+          "score": 49.45,
+          "change": -2.05,
+          "baselineRank": 12,
+          "rank": 14,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3272",
+          "score": 54.64,
+          "change": -1.31,
+          "baselineRank": 6,
+          "rank": 9,
+          "orderMovement": 3
+        },
+        {
+          "regionId": "3273",
+          "score": 42.51,
+          "change": -3.05,
+          "baselineRank": 17,
+          "rank": 19,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3274",
+          "score": 41.73,
+          "change": -0.59,
+          "baselineRank": 19,
+          "rank": 20,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3275",
+          "score": 32.5,
+          "change": -2.55,
+          "baselineRank": 26,
+          "rank": 26,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3276",
+          "score": 24.36,
+          "change": -2.42,
+          "baselineRank": 27,
+          "rank": 27,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3277",
+          "score": 35.82,
+          "change": -3.18,
+          "baselineRank": 22,
+          "rank": 25,
+          "orderMovement": 3
+        },
+        {
+          "regionId": "3278",
+          "score": 49.29,
+          "change": 0.7,
+          "baselineRank": 15,
+          "rank": 15,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3279",
+          "score": 36.59,
+          "change": 0.21,
+          "baselineRank": 25,
+          "rank": 24,
+          "orderMovement": -1
+        }
+      ]
+    },
+    {
+      "id": "facility_half_services",
+      "label": "Facilities half of basic services; sanitation and water one quarter each",
+      "dimensionWeights": {
+        "socioeconomic": 0.25,
+        "basic_services": 0.25,
+        "health": 0.25,
+        "resilience": 0.25
+      },
+      "indicatorWeights": {
+        "poverty": 0.25,
+        "unemployment": 0.5,
+        "hdi": 0.25,
+        "sanitation": 0.25,
+        "drinking_water": 0.25,
+        "puskesmas_per_100k": 0.5,
+        "dbd_incidence": 1,
+        "disaster_risk": 1
+      },
+      "maxAbsoluteScoreChange": 3.95,
+      "meanAbsoluteScoreChange": 1.79,
+      "maxOrderMovement": 2,
+      "spearman": 0.989011,
+      "orderReversals": 13,
+      "categoryChanges": 0,
+      "regions": [
+        {
+          "regionId": "3201",
+          "score": 49.13,
+          "change": 2.06,
+          "baselineRank": 16,
+          "rank": 16,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3202",
+          "score": 61.39,
+          "change": 0.42,
+          "baselineRank": 5,
+          "rank": 5,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3203",
+          "score": 71.51,
+          "change": 1.02,
+          "baselineRank": 1,
+          "rank": 1,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3204",
+          "score": 47.84,
+          "change": 2.42,
+          "baselineRank": 18,
+          "rank": 17,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3205",
+          "score": 61.84,
+          "change": -0.41,
+          "baselineRank": 3,
+          "rank": 4,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3206",
+          "score": 54.18,
+          "change": 0.7,
+          "baselineRank": 9,
+          "rank": 10,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3207",
+          "score": 38.03,
+          "change": 1.34,
+          "baselineRank": 24,
+          "rank": 25,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3208",
+          "score": 57.02,
+          "change": 1.93,
+          "baselineRank": 7,
+          "rank": 7,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3209",
+          "score": 52.73,
+          "change": 2.85,
+          "baselineRank": 13,
+          "rank": 14,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3210",
+          "score": 43.34,
+          "change": 2.15,
+          "baselineRank": 20,
+          "rank": 19,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3211",
+          "score": 64.59,
+          "change": 1.49,
+          "baselineRank": 2,
+          "rank": 2,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3212",
+          "score": 40.8,
+          "change": 2.99,
+          "baselineRank": 23,
+          "rank": 23,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3213",
+          "score": 52.77,
+          "change": 3.04,
+          "baselineRank": 14,
+          "rank": 12,
+          "orderMovement": -2
+        },
+        {
+          "regionId": "3214",
+          "score": 54.63,
+          "change": 1.44,
+          "baselineRank": 10,
+          "rank": 9,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3215",
+          "score": 57.44,
+          "change": 3.05,
+          "baselineRank": 8,
+          "rank": 6,
+          "orderMovement": -2
+        },
+        {
+          "regionId": "3216",
+          "score": 42.72,
+          "change": 3.6,
+          "baselineRank": 21,
+          "rank": 20,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3217",
+          "score": 62.91,
+          "change": 1.6,
+          "baselineRank": 4,
+          "rank": 3,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3218",
+          "score": 52.75,
+          "change": 0.21,
+          "baselineRank": 11,
+          "rank": 13,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3271",
+          "score": 54.07,
+          "change": 2.58,
+          "baselineRank": 12,
+          "rank": 11,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3272",
+          "score": 55.71,
+          "change": -0.23,
+          "baselineRank": 6,
+          "rank": 8,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3273",
+          "score": 46.48,
+          "change": 0.91,
+          "baselineRank": 17,
+          "rank": 18,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3274",
+          "score": 42.11,
+          "change": -0.21,
+          "baselineRank": 19,
+          "rank": 21,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3275",
+          "score": 38.91,
+          "change": 3.86,
+          "baselineRank": 26,
+          "rank": 24,
+          "orderMovement": -2
+        },
+        {
+          "regionId": "3276",
+          "score": 30.73,
+          "change": 3.95,
+          "baselineRank": 27,
+          "rank": 27,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3277",
+          "score": 41.52,
+          "change": 2.52,
+          "baselineRank": 22,
+          "rank": 22,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3278",
+          "score": 49.5,
+          "change": 0.91,
+          "baselineRank": 15,
+          "rank": 15,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3279",
+          "score": 36.81,
+          "change": 0.42,
+          "baselineRank": 25,
+          "rank": 26,
+          "orderMovement": 1
+        }
+      ]
+    },
+    {
+      "id": "household_services_80",
+      "label": "Household water and sanitation 80% of basic services",
+      "dimensionWeights": {
+        "socioeconomic": 0.25,
+        "basic_services": 0.25,
+        "health": 0.25,
+        "resilience": 0.25
+      },
+      "indicatorWeights": {
+        "poverty": 0.25,
+        "unemployment": 0.5,
+        "hdi": 0.25,
+        "sanitation": 0.4,
+        "drinking_water": 0.4,
+        "puskesmas_per_100k": 0.2,
+        "dbd_incidence": 1,
+        "disaster_risk": 1
+      },
+      "maxAbsoluteScoreChange": 3.16,
+      "meanAbsoluteScoreChange": 1.43,
+      "maxOrderMovement": 3,
+      "spearman": 0.989621,
+      "orderReversals": 12,
+      "categoryChanges": 1,
+      "regions": [
+        {
+          "regionId": "3201",
+          "score": 45.42,
+          "change": -1.65,
+          "baselineRank": 16,
+          "rank": 16,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3202",
+          "score": 60.63,
+          "change": -0.34,
+          "baselineRank": 5,
+          "rank": 4,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3203",
+          "score": 69.66,
+          "change": -0.82,
+          "baselineRank": 1,
+          "rank": 1,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3204",
+          "score": 43.49,
+          "change": -1.93,
+          "baselineRank": 18,
+          "rank": 18,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3205",
+          "score": 62.57,
+          "change": 0.32,
+          "baselineRank": 3,
+          "rank": 2,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3206",
+          "score": 52.93,
+          "change": -0.56,
+          "baselineRank": 9,
+          "rank": 8,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3207",
+          "score": 35.62,
+          "change": -1.07,
+          "baselineRank": 24,
+          "rank": 24,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3208",
+          "score": 53.54,
+          "change": -1.55,
+          "baselineRank": 7,
+          "rank": 7,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3209",
+          "score": 47.6,
+          "change": -2.28,
+          "baselineRank": 13,
+          "rank": 14,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3210",
+          "score": 39.46,
+          "change": -1.72,
+          "baselineRank": 20,
+          "rank": 20,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3211",
+          "score": 61.91,
+          "change": -1.19,
+          "baselineRank": 2,
+          "rank": 3,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3212",
+          "score": 35.42,
+          "change": -2.39,
+          "baselineRank": 23,
+          "rank": 25,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3213",
+          "score": 47.3,
+          "change": -2.43,
+          "baselineRank": 14,
+          "rank": 15,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3214",
+          "score": 52.04,
+          "change": -1.15,
+          "baselineRank": 10,
+          "rank": 10,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3215",
+          "score": 51.95,
+          "change": -2.44,
+          "baselineRank": 8,
+          "rank": 11,
+          "orderMovement": 3
+        },
+        {
+          "regionId": "3216",
+          "score": 36.24,
+          "change": -2.88,
+          "baselineRank": 21,
+          "rank": 22,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3217",
+          "score": 60.02,
+          "change": -1.28,
+          "baselineRank": 4,
+          "rank": 5,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3218",
+          "score": 52.37,
+          "change": -0.17,
+          "baselineRank": 11,
+          "rank": 9,
+          "orderMovement": -2
+        },
+        {
+          "regionId": "3271",
+          "score": 49.43,
+          "change": -2.06,
+          "baselineRank": 12,
+          "rank": 12,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3272",
+          "score": 56.13,
+          "change": 0.18,
+          "baselineRank": 6,
+          "rank": 6,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3273",
+          "score": 44.83,
+          "change": -0.73,
+          "baselineRank": 17,
+          "rank": 17,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3274",
+          "score": 42.48,
+          "change": 0.17,
+          "baselineRank": 19,
+          "rank": 19,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3275",
+          "score": 31.97,
+          "change": -3.08,
+          "baselineRank": 26,
+          "rank": 26,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3276",
+          "score": 23.62,
+          "change": -3.16,
+          "baselineRank": 27,
+          "rank": 27,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3277",
+          "score": 36.98,
+          "change": -2.01,
+          "baselineRank": 22,
+          "rank": 21,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3278",
+          "score": 47.86,
+          "change": -0.73,
+          "baselineRank": 15,
+          "rank": 13,
+          "orderMovement": -2
+        },
+        {
+          "regionId": "3279",
+          "score": 36.04,
+          "change": -0.34,
+          "baselineRank": 25,
+          "rank": 23,
+          "orderMovement": -2
+        }
+      ]
+    },
+    {
+      "id": "eight_equal_indicators",
+      "label": "Eight equal indicators (diagnostic, not selected)",
+      "dimensionWeights": {
+        "socioeconomic": 0.375,
+        "basic_services": 0.375,
+        "health": 0.125,
+        "resilience": 0.125
+      },
+      "indicatorWeights": {
+        "poverty": 0.3333333333333333,
+        "unemployment": 0.3333333333333333,
+        "hdi": 0.3333333333333333,
+        "sanitation": 0.3333333333333333,
+        "drinking_water": 0.3333333333333333,
+        "puskesmas_per_100k": 0.3333333333333333,
+        "dbd_incidence": 1,
+        "disaster_risk": 1
+      },
+      "maxAbsoluteScoreChange": 10.65,
+      "meanAbsoluteScoreChange": 4.99,
+      "maxOrderMovement": 7,
+      "spearman": 0.896215,
+      "orderReversals": 46,
+      "categoryChanges": 4,
+      "regions": [
+        {
+          "regionId": "3201",
+          "score": 55.06,
+          "change": 7.99,
+          "baselineRank": 16,
+          "rank": 10,
+          "orderMovement": -6
+        },
+        {
+          "regionId": "3202",
+          "score": 68.16,
+          "change": 7.19,
+          "baselineRank": 5,
+          "rank": 4,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3203",
+          "score": 76.01,
+          "change": 5.53,
+          "baselineRank": 1,
+          "rank": 1,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3204",
+          "score": 50.66,
+          "change": 5.24,
+          "baselineRank": 18,
+          "rank": 17,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3205",
+          "score": 72.87,
+          "change": 10.63,
+          "baselineRank": 3,
+          "rank": 2,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3206",
+          "score": 64.14,
+          "change": 10.65,
+          "baselineRank": 9,
+          "rank": 5,
+          "orderMovement": -4
+        },
+        {
+          "regionId": "3207",
+          "score": 43.42,
+          "change": 6.72,
+          "baselineRank": 24,
+          "rank": 20,
+          "orderMovement": -4
+        },
+        {
+          "regionId": "3208",
+          "score": 59.6,
+          "change": 4.52,
+          "baselineRank": 7,
+          "rank": 8,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3209",
+          "score": 53.44,
+          "change": 3.56,
+          "baselineRank": 13,
+          "rank": 14,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3210",
+          "score": 50.87,
+          "change": 9.69,
+          "baselineRank": 20,
+          "rank": 16,
+          "orderMovement": -4
+        },
+        {
+          "regionId": "3211",
+          "score": 59.63,
+          "change": -3.47,
+          "baselineRank": 2,
+          "rank": 7,
+          "orderMovement": 5
+        },
+        {
+          "regionId": "3212",
+          "score": 47.67,
+          "change": 9.86,
+          "baselineRank": 23,
+          "rank": 19,
+          "orderMovement": -4
+        },
+        {
+          "regionId": "3213",
+          "score": 51.82,
+          "change": 2.09,
+          "baselineRank": 14,
+          "rank": 15,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3214",
+          "score": 60.29,
+          "change": 7.09,
+          "baselineRank": 10,
+          "rank": 6,
+          "orderMovement": -4
+        },
+        {
+          "regionId": "3215",
+          "score": 54.58,
+          "change": 0.19,
+          "baselineRank": 8,
+          "rank": 12,
+          "orderMovement": 4
+        },
+        {
+          "regionId": "3216",
+          "score": 42.17,
+          "change": 3.05,
+          "baselineRank": 21,
+          "rank": 22,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3217",
+          "score": 68.94,
+          "change": 7.63,
+          "baselineRank": 4,
+          "rank": 3,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3218",
+          "score": 54.89,
+          "change": 2.35,
+          "baselineRank": 11,
+          "rank": 11,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3271",
+          "score": 49.17,
+          "change": -2.32,
+          "baselineRank": 12,
+          "rank": 18,
+          "orderMovement": 6
+        },
+        {
+          "regionId": "3272",
+          "score": 54.19,
+          "change": -1.75,
+          "baselineRank": 6,
+          "rank": 13,
+          "orderMovement": 7
+        },
+        {
+          "regionId": "3273",
+          "score": 42.4,
+          "change": -3.16,
+          "baselineRank": 17,
+          "rank": 21,
+          "orderMovement": 4
+        },
+        {
+          "regionId": "3274",
+          "score": 36.4,
+          "change": -5.92,
+          "baselineRank": 19,
+          "rank": 25,
+          "orderMovement": 6
+        },
+        {
+          "regionId": "3275",
+          "score": 32.04,
+          "change": -3.02,
+          "baselineRank": 26,
+          "rank": 26,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3276",
+          "score": 25.84,
+          "change": -0.95,
+          "baselineRank": 27,
+          "rank": 27,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3277",
+          "score": 41.88,
+          "change": 2.89,
+          "baselineRank": 22,
+          "rank": 23,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3278",
+          "score": 55.64,
+          "change": 7.05,
+          "baselineRank": 15,
+          "rank": 9,
+          "orderMovement": -6
+        },
+        {
+          "regionId": "3279",
+          "score": 36.62,
+          "change": 0.24,
+          "baselineRank": 25,
+          "rank": 24,
+          "orderMovement": -1
+        }
+      ]
+    },
+    {
+      "id": "without_hdi",
+      "label": "Deprivation represented by poverty only",
+      "dimensionWeights": {
+        "socioeconomic": 0.25,
+        "basic_services": 0.25,
+        "health": 0.25,
+        "resilience": 0.25
+      },
+      "indicatorWeights": {
+        "poverty": 0.5,
+        "unemployment": 0.5,
+        "sanitation": 0.3333333333333333,
+        "drinking_water": 0.3333333333333333,
+        "puskesmas_per_100k": 0.3333333333333333,
+        "dbd_incidence": 1,
+        "disaster_risk": 1
+      },
+      "maxAbsoluteScoreChange": 2.65,
+      "meanAbsoluteScoreChange": 0.97,
+      "maxOrderMovement": 2,
+      "spearman": 0.991453,
+      "orderReversals": 11,
+      "categoryChanges": 0,
+      "regions": [
+        {
+          "regionId": "3201",
+          "score": 45.95,
+          "change": -1.11,
+          "baselineRank": 16,
+          "rank": 17,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3202",
+          "score": 58.32,
+          "change": -2.65,
+          "baselineRank": 5,
+          "rank": 5,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3203",
+          "score": 69.26,
+          "change": -1.22,
+          "baselineRank": 1,
+          "rank": 1,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3204",
+          "score": 44.17,
+          "change": -1.25,
+          "baselineRank": 18,
+          "rank": 19,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3205",
+          "score": 61.16,
+          "change": -1.08,
+          "baselineRank": 3,
+          "rank": 4,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3206",
+          "score": 52.8,
+          "change": -0.69,
+          "baselineRank": 9,
+          "rank": 10,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3207",
+          "score": 35.72,
+          "change": -0.98,
+          "baselineRank": 24,
+          "rank": 25,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3208",
+          "score": 56.24,
+          "change": 1.16,
+          "baselineRank": 7,
+          "rank": 7,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3209",
+          "score": 50.79,
+          "change": 0.91,
+          "baselineRank": 13,
+          "rank": 14,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3210",
+          "score": 41.66,
+          "change": 0.48,
+          "baselineRank": 20,
+          "rank": 20,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3211",
+          "score": 63.74,
+          "change": 0.64,
+          "baselineRank": 2,
+          "rank": 2,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3212",
+          "score": 38.64,
+          "change": 0.83,
+          "baselineRank": 23,
+          "rank": 22,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3213",
+          "score": 49.4,
+          "change": -0.33,
+          "baselineRank": 14,
+          "rank": 15,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3214",
+          "score": 53.01,
+          "change": -0.18,
+          "baselineRank": 10,
+          "rank": 9,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3215",
+          "score": 53.75,
+          "change": -0.63,
+          "baselineRank": 8,
+          "rank": 8,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3216",
+          "score": 37.79,
+          "change": -1.33,
+          "baselineRank": 21,
+          "rank": 23,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3217",
+          "score": 61.16,
+          "change": -0.14,
+          "baselineRank": 4,
+          "rank": 3,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3218",
+          "score": 51.51,
+          "change": -1.03,
+          "baselineRank": 11,
+          "rank": 12,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3271",
+          "score": 52.21,
+          "change": 0.71,
+          "baselineRank": 12,
+          "rank": 11,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3272",
+          "score": 56.69,
+          "change": 0.75,
+          "baselineRank": 6,
+          "rank": 6,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3273",
+          "score": 46.57,
+          "change": 1.01,
+          "baselineRank": 17,
+          "rank": 16,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3274",
+          "score": 44.25,
+          "change": 1.93,
+          "baselineRank": 19,
+          "rank": 18,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3275",
+          "score": 36.07,
+          "change": 1.01,
+          "baselineRank": 26,
+          "rank": 24,
+          "orderMovement": -2
+        },
+        {
+          "regionId": "3276",
+          "score": 26.47,
+          "change": -0.31,
+          "baselineRank": 27,
+          "rank": 27,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3277",
+          "score": 38.97,
+          "change": -0.03,
+          "baselineRank": 22,
+          "rank": 21,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3278",
+          "score": 51.22,
+          "change": 2.63,
+          "baselineRank": 15,
+          "rank": 13,
+          "orderMovement": -2
+        },
+        {
+          "regionId": "3279",
+          "score": 35.14,
+          "change": -1.25,
+          "baselineRank": 25,
+          "rank": 26,
+          "orderMovement": 1
+        }
+      ]
+    },
+    {
+      "id": "without_poverty",
+      "label": "Deprivation represented by HDI only",
+      "dimensionWeights": {
+        "socioeconomic": 0.25,
+        "basic_services": 0.25,
+        "health": 0.25,
+        "resilience": 0.25
+      },
+      "indicatorWeights": {
+        "unemployment": 0.5,
+        "hdi": 0.5,
+        "sanitation": 0.3333333333333333,
+        "drinking_water": 0.3333333333333333,
+        "puskesmas_per_100k": 0.3333333333333333,
+        "dbd_incidence": 1,
+        "disaster_risk": 1
+      },
+      "maxAbsoluteScoreChange": 2.65,
+      "meanAbsoluteScoreChange": 0.97,
+      "maxOrderMovement": 3,
+      "spearman": 0.985958,
+      "orderReversals": 15,
+      "categoryChanges": 0,
+      "regions": [
+        {
+          "regionId": "3201",
+          "score": 48.18,
+          "change": 1.11,
+          "baselineRank": 16,
+          "rank": 15,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3202",
+          "score": 63.62,
+          "change": 2.65,
+          "baselineRank": 5,
+          "rank": 2,
+          "orderMovement": -3
+        },
+        {
+          "regionId": "3203",
+          "score": 71.71,
+          "change": 1.22,
+          "baselineRank": 1,
+          "rank": 1,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3204",
+          "score": 46.67,
+          "change": 1.25,
+          "baselineRank": 18,
+          "rank": 16,
+          "orderMovement": -2
+        },
+        {
+          "regionId": "3205",
+          "score": 63.33,
+          "change": 1.08,
+          "baselineRank": 3,
+          "rank": 3,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3206",
+          "score": 54.17,
+          "change": 0.69,
+          "baselineRank": 9,
+          "rank": 8,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3207",
+          "score": 37.67,
+          "change": 0.98,
+          "baselineRank": 24,
+          "rank": 23,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3208",
+          "score": 53.93,
+          "change": -1.16,
+          "baselineRank": 7,
+          "rank": 9,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3209",
+          "score": 48.97,
+          "change": -0.91,
+          "baselineRank": 13,
+          "rank": 14,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3210",
+          "score": 40.7,
+          "change": -0.48,
+          "baselineRank": 20,
+          "rank": 19,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3211",
+          "score": 62.46,
+          "change": -0.64,
+          "baselineRank": 2,
+          "rank": 4,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3212",
+          "score": 36.98,
+          "change": -0.83,
+          "baselineRank": 23,
+          "rank": 25,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3213",
+          "score": 50.06,
+          "change": 0.33,
+          "baselineRank": 14,
+          "rank": 13,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3214",
+          "score": 53.38,
+          "change": 0.18,
+          "baselineRank": 10,
+          "rank": 11,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3215",
+          "score": 55.02,
+          "change": 0.63,
+          "baselineRank": 8,
+          "rank": 7,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3216",
+          "score": 40.45,
+          "change": 1.33,
+          "baselineRank": 21,
+          "rank": 20,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3217",
+          "score": 61.45,
+          "change": 0.14,
+          "baselineRank": 4,
+          "rank": 5,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3218",
+          "score": 53.57,
+          "change": 1.03,
+          "baselineRank": 11,
+          "rank": 10,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3271",
+          "score": 50.78,
+          "change": -0.71,
+          "baselineRank": 12,
+          "rank": 12,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3272",
+          "score": 55.2,
+          "change": -0.75,
+          "baselineRank": 6,
+          "rank": 6,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3273",
+          "score": 44.55,
+          "change": -1.01,
+          "baselineRank": 17,
+          "rank": 18,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3274",
+          "score": 40.39,
+          "change": -1.93,
+          "baselineRank": 19,
+          "rank": 21,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3275",
+          "score": 34.05,
+          "change": -1.01,
+          "baselineRank": 26,
+          "rank": 26,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3276",
+          "score": 27.1,
+          "change": 0.31,
+          "baselineRank": 27,
+          "rank": 27,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3277",
+          "score": 39.03,
+          "change": 0.03,
+          "baselineRank": 22,
+          "rank": 22,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3278",
+          "score": 45.96,
+          "change": -2.63,
+          "baselineRank": 15,
+          "rank": 17,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3279",
+          "score": 37.63,
+          "change": 1.25,
+          "baselineRank": 25,
+          "rank": 24,
+          "orderMovement": -1
+        }
+      ]
+    }
+  ],
+  "correlations": [
+    {
+      "a": "poverty",
+      "b": "unemployment",
+      "pearson": -0.250364
+    },
+    {
+      "a": "poverty",
+      "b": "hdi",
+      "pearson": -0.77629
+    },
+    {
+      "a": "poverty",
+      "b": "sanitation",
+      "pearson": -0.137821
+    },
+    {
+      "a": "poverty",
+      "b": "drinking_water",
+      "pearson": -0.259968
+    },
+    {
+      "a": "poverty",
+      "b": "puskesmas_per_100k",
+      "pearson": 0.130188
+    },
+    {
+      "a": "poverty",
+      "b": "dbd_incidence",
+      "pearson": -0.080538
+    },
+    {
+      "a": "poverty",
+      "b": "disaster_risk",
+      "pearson": 0.42658
+    },
+    {
+      "a": "unemployment",
+      "b": "hdi",
+      "pearson": 0.38095
+    },
+    {
+      "a": "unemployment",
+      "b": "sanitation",
+      "pearson": -0.032734
+    },
+    {
+      "a": "unemployment",
+      "b": "drinking_water",
+      "pearson": 0.414248
+    },
+    {
+      "a": "unemployment",
+      "b": "puskesmas_per_100k",
+      "pearson": -0.165889
+    },
+    {
+      "a": "unemployment",
+      "b": "dbd_incidence",
+      "pearson": 0.35256
+    },
+    {
+      "a": "unemployment",
+      "b": "disaster_risk",
+      "pearson": -0.354219
+    },
+    {
+      "a": "hdi",
+      "b": "sanitation",
+      "pearson": 0.225105
+    },
+    {
+      "a": "hdi",
+      "b": "drinking_water",
+      "pearson": 0.613925
+    },
+    {
+      "a": "hdi",
+      "b": "puskesmas_per_100k",
+      "pearson": 0.132982
+    },
+    {
+      "a": "hdi",
+      "b": "dbd_incidence",
+      "pearson": 0.39757
+    },
+    {
+      "a": "hdi",
+      "b": "disaster_risk",
+      "pearson": -0.710749
+    },
+    {
+      "a": "sanitation",
+      "b": "drinking_water",
+      "pearson": 0.404139
+    },
+    {
+      "a": "sanitation",
+      "b": "puskesmas_per_100k",
+      "pearson": 0.094397
+    },
+    {
+      "a": "sanitation",
+      "b": "dbd_incidence",
+      "pearson": -0.184875
+    },
+    {
+      "a": "sanitation",
+      "b": "disaster_risk",
+      "pearson": -0.111257
+    },
+    {
+      "a": "drinking_water",
+      "b": "puskesmas_per_100k",
+      "pearson": 0.182669
+    },
+    {
+      "a": "drinking_water",
+      "b": "dbd_incidence",
+      "pearson": 0.315268
+    },
+    {
+      "a": "drinking_water",
+      "b": "disaster_risk",
+      "pearson": -0.569506
+    },
+    {
+      "a": "puskesmas_per_100k",
+      "b": "dbd_incidence",
+      "pearson": 0.33119
+    },
+    {
+      "a": "puskesmas_per_100k",
+      "b": "disaster_risk",
+      "pearson": -0.046194
+    },
+    {
+      "a": "dbd_incidence",
+      "b": "disaster_risk",
+      "pearson": -0.510283
+    }
+  ],
+  "decision": "Retain four equal 25% domain budgets after ten computational sensitivity scenarios. This prevents indicator-count dominance and reflects equal conceptual attention, not estimated causal importance or source reliability. Within socioeconomic, poverty and HDI share half the budget (25% each) because both capture deprivation; unemployment receives 50%. Their raw regional correlation is -0.776290, and HDI also correlates with disaster risk (-0.710749); the cap limits, but does not eliminate, overlapping constructs. Basic services uses equal thirds for sanitation, drinking-water and facility availability; there is no verified basis to privilege one proxy. Public health (published DBD) and resilience (official IRBI) are singletons, explicitly carrying their domain budgets despite source limitations. Raising one domain to 40% shifts scores by up to 12.19 points, ranks by eight places, and categories for up to five regions. Eight equal indicators shifts scores by up to 10.65 points and seven ranks (Spearman 0.896215), so indicator-count weighting is not selected. Facility-half versus household-services-80% configurations move scores by up to 3.95/3.16 points and ranks by two/three places. Poverty-only or HDI-only deprivation changes scores by up to 2.65 points and ranks by up to three places. Retain balanced transparent project trade-offs, not a data-optimized rank order; fine league-table interpretations are unsupported and independent substantive review remains required.",
+  "sourceVerification": {
+    "mode": "validated_transcriptions",
+    "artifacts": [
+      {
+        "artifactId": "sha256:500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81",
+        "state": "bytes_verified"
+      },
+      {
+        "artifactId": "sha256:6480ae4145a9d763d0dd2d8973f65aea5803ab0cec485034e551dca5c98a7148",
+        "state": "fingerprinted_transcription_only"
+      },
+      {
+        "artifactId": "sha256:a3d00a7af58f9fd2e14d51be60fe174c829effa5612a54ce4cc662a113455279",
+        "state": "bytes_verified"
+      },
+      {
+        "artifactId": "sha256:6d1d364e6f51e9d14c93690325bc00e67b468850e2fbbbbc42226a58d5be1aba",
+        "state": "bytes_verified"
+      },
+      {
+        "artifactId": "sha256:b199b7620b0aa019561c712113fe61dbf3822591c83823592f512b0021785b25",
+        "state": "bytes_verified"
+      },
+      {
+        "artifactId": "sha256:697c73f6df81246bf214e8c6b688551848c49132a3b6c980605536fc7837d56d",
+        "state": "bytes_verified"
+      },
+      {
+        "artifactId": "sha256:503ca9c7af20e86a8be1068223e81fea39bada2ca37f6c337012ee60c55e452f",
+        "state": "bytes_verified"
+      },
+      {
+        "artifactId": "sha256:a387fbb697a9ed4db3dfebc3db49a61939d4b88181d14701a69f95a937dcdf99",
+        "state": "bytes_verified"
+      }
+    ]
+  },
+  "limitations": [
+    "27-region descriptive sensitivity, not confidence intervals, sampling uncertainty, causal validation or independent review.",
+    "Scores aggregate full precision before rounding to two decimals; sensitivity ranks use unrounded scores and average tied ranks. Rank 1 means highest modeled pressure, not a product league table.",
+    "Singleton DBD and IRBI dimensions receive whole domain budgets; this is a conceptual choice, not higher source reliability. Public-health reporting and risk-model baselines remain limitations.",
+    "Leave-one-input-out cases are explicit diagnostics only, never production missing-data reweighting.",
+    "Correlations describe raw regional inputs; negative HDI/poverty correlation is directional overlap, not proof of causal independence."
+  ],
+  "coreDataFingerprint": "sha256:ac04a9010fc9e98c179247c3537de8aa9d2efcc7bf84429faa76418e193ddd4d"
+}

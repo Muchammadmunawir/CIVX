@@ -1,0 +1,153 @@
+{
+  "sources": [
+    {
+      "id": "context-whoosh-2023",
+      "publisher": "Sekretariat Kabinet Republik Indonesia",
+      "title": "President Jokowi Officiates Operation of Whoosh High Speed Train",
+      "url": "https://setkab.go.id/en/president-jokowi-officiates-operation-of-whoosh-high-speed-train/",
+      "table": null,
+      "page": "HTML article; named excerpts in local snapshot",
+      "dataYear": 2023,
+      "referencePeriod": "2023-10-02 official statement; evidence of presence on this date, not full-year service frequency",
+      "artifactId": "sha256:6d1d364e6f51e9d14c93690325bc00e67b468850e2fbbbbc42226a58d5be1aba",
+      "accessedAt": "2026-10-27"
+    },
+    {
+      "id": "context-cisumdawu-2023",
+      "publisher": "Sekretariat Kabinet Republik Indonesia",
+      "title": "President Jokowi Inaugurates Cisumdawu Toll Road",
+      "url": "https://setkab.go.id/en/president-jokowi-inaugurates-cisumdawu-toll-road/",
+      "table": null,
+      "page": "HTML article; named excerpts in local snapshot",
+      "dataYear": 2023,
+      "referencePeriod": "2023-07-11 official statement; evidence of presence on this date, not full-year service frequency",
+      "artifactId": "sha256:b199b7620b0aa019561c712113fe61dbf3822591c83823592f512b0021785b25",
+      "accessedAt": "2026-10-27"
+    },
+    {
+      "id": "context-kertajati-2023",
+      "publisher": "Sekretariat Kabinet Republik Indonesia",
+      "title": "Press Statement of President of the Republic of Indonesia After Inspection to West Java International Airport (BIJB) of Kertajati, Majalengka City, West Java Province, July 11, 2023",
+      "url": "https://setkab.go.id/en/press-statement-of-president-of-the-republic-of-indonesia-after-inspection-to-west-java-international-airport-bijb-of-kertajati-majalengka-city-west-java-province-july-11-2023/",
+      "table": null,
+      "page": "HTML article; named excerpts in local snapshot",
+      "dataYear": 2023,
+      "referencePeriod": "2023-07-11 official statement; evidence of presence on this date, not full-year service frequency",
+      "artifactId": "sha256:697c73f6df81246bf214e8c6b688551848c49132a3b6c980605536fc7837d56d",
+      "accessedAt": "2026-10-27"
+    },
+    {
+      "id": "context-cisumdawu-tariff-2023",
+      "publisher": "Badan Pengatur Jalan Tol, Kementerian PUPR",
+      "title": "Cek Tarif Terbaru Jalan Tol Cisumdawu, Seksi 4 hingga 6 Mulai Bertarif",
+      "url": "https://bpjt.pu.go.id/cek-tarif-terbaru-jalan-tol-cisumdawu-seksi-4-hingga-6-mulai-bertarif/",
+      "table": null,
+      "page": "HTML article; named excerpts in local snapshot",
+      "dataYear": 2023,
+      "referencePeriod": "2023-08-14 official statement; evidence of presence on this date, not full-year service frequency",
+      "artifactId": "sha256:503ca9c7af20e86a8be1068223e81fea39bada2ca37f6c337012ee60c55e452f",
+      "accessedAt": "2026-10-27"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "sha256:6d1d364e6f51e9d14c93690325bc00e67b468850e2fbbbbc42226a58d5be1aba",
+      "localPath": "data/raw/v2/context-evidence-whoosh-2023.json",
+      "bytes": 1799,
+      "url": "https://setkab.go.id/en/president-jokowi-officiates-operation-of-whoosh-high-speed-train/",
+      "retrievedAt": "2026-10-27T09:04:24.424Z",
+      "redistribution": "Short attributed excerpts from an official public statement for research traceability; not a full-article mirror. No blanket reuse licence is asserted. Galura material is excluded."
+    },
+    {
+      "id": "sha256:b199b7620b0aa019561c712113fe61dbf3822591c83823592f512b0021785b25",
+      "localPath": "data/raw/v2/context-evidence-cisumdawu-2023.json",
+      "bytes": 1764,
+      "url": "https://setkab.go.id/en/president-jokowi-inaugurates-cisumdawu-toll-road/",
+      "retrievedAt": "2026-10-27T09:04:57.199Z",
+      "redistribution": "Short attributed excerpts from an official public statement for research traceability; not a full-article mirror. No blanket reuse licence is asserted. Galura material is excluded."
+    },
+    {
+      "id": "sha256:697c73f6df81246bf214e8c6b688551848c49132a3b6c980605536fc7837d56d",
+      "localPath": "data/raw/v2/context-evidence-kertajati-2023.json",
+      "bytes": 2268,
+      "url": "https://setkab.go.id/en/press-statement-of-president-of-the-republic-of-indonesia-after-inspection-to-west-java-international-airport-bijb-of-kertajati-majalengka-city-west-java-province-july-11-2023/",
+      "retrievedAt": "2026-10-27T09:04:57.742Z",
+      "redistribution": "Short attributed excerpts from an official public statement for research traceability; not a full-article mirror. No blanket reuse licence is asserted. Galura material is excluded."
+    },
+    {
+      "id": "sha256:503ca9c7af20e86a8be1068223e81fea39bada2ca37f6c337012ee60c55e452f",
+      "localPath": "data/raw/v2/context-evidence-cisumdawu-tariff-2023.json",
+      "bytes": 1540,
+      "url": "https://bpjt.pu.go.id/cek-tarif-terbaru-jalan-tol-cisumdawu-seksi-4-hingga-6-mulai-bertarif/",
+      "retrievedAt": "2026-10-27T09:07:20.766Z",
+      "redistribution": "Short attributed excerpts from an official public statement for research traceability; not a full-article mirror. No blanket reuse licence is asserted. Galura material is excluded."
+    },
+    {
+      "id": "sha256:a387fbb697a9ed4db3dfebc3db49a61939d4b88181d14701a69f95a937dcdf99",
+      "localPath": "data/raw/v2/context-evidence-metadata-findings.json",
+      "bytes": 7976,
+      "url": "https://galura.jabarprov.go.id/dataset",
+      "retrievedAt": "2026-10-27T09:10:48.706Z",
+      "redistribution": "Galura terms restrict personal noncommercial use and prohibit sublicensing/transfer. No original responses or numeric production rows are redistributed. This document records researcher-authored metadata/quality findings and links to the originals."
+    }
+  ],
+  "observations": [
+    {
+      "regionId": "3217",
+      "indicatorId": "high_speed_rail",
+      "value": null,
+      "unit": "verified presence",
+      "period": "2023",
+      "sourceId": "context-whoosh-2023",
+      "locator": "context-evidence-whoosh-2023.json excerpts operation, location, stops",
+      "denominator": {
+        "definition": "Not applicable: qualitative presence at the stated official-source date; no population denominator and no measure of service adequacy."
+      },
+      "derivation": null,
+      "presence": "verified_present",
+      "whyAssigned": "Official statement confirms operational Whoosh on 2 October 2023 and explicitly locates Padalarang Station in West Bandung regency. Canonical BPS code 3217 is Kabupaten Bandung Barat. This verifies a local high-speed/interregional rail access point, not universal access, affordability, or full-year operation."
+    },
+    {
+      "regionId": "3210",
+      "indicatorId": "operational_airport",
+      "value": null,
+      "unit": "verified presence",
+      "period": "2023",
+      "sourceId": "context-kertajati-2023",
+      "locator": "context-evidence-kertajati-2023.json excerpts location_heading, existing_flights; context-evidence-cisumdawu-2023.json excerpt operation_and_airport_geography",
+      "supportingProvenance": [
+        {
+          "sourceId": "context-cisumdawu-2023",
+          "locator": "context-evidence-cisumdawu-2023.json excerpt operation_and_airport_geography; explicitly Majalengka regency"
+        }
+      ],
+      "denominator": {
+        "definition": "Not applicable: qualitative presence at the stated official-source date; no population denominator and no measure of service adequacy."
+      },
+      "derivation": null,
+      "presence": "verified_present",
+      "whyAssigned": "President confirms actual Hajj, Umrah and Kuala Lumpur flights at Kertajati on 11 July 2023. The contemporaneous Cisumdawu statement explicitly places the airport in Majalengka regency, mapped to canonical code 3210. The English airport heading uses City loosely; no Kota Majalengka is created. Planned October flight transfers are not treated as completed evidence."
+    },
+    {
+      "regionId": "3211",
+      "indicatorId": "toll_road",
+      "value": null,
+      "unit": "verified presence",
+      "period": "2023",
+      "sourceId": "context-cisumdawu-tariff-2023",
+      "locator": "context-evidence-cisumdawu-tariff-2023.json excerpts active_operation, effective_date; context-evidence-cisumdawu-2023.json excerpts location, inauguration",
+      "supportingProvenance": [
+        {
+          "sourceId": "context-cisumdawu-2023",
+          "locator": "context-evidence-cisumdawu-2023.json excerpts location and inauguration; explicitly Sumedang regency"
+        }
+      ],
+      "denominator": {
+        "definition": "Not applicable: qualitative presence at the stated official-source date; no population denominator and no measure of service adequacy."
+      },
+      "derivation": null,
+      "presence": "verified_present",
+      "whyAssigned": "BPJT confirms Cisumdawu sections were already operating free before tariffs began on 14 August 2023. Setkab locates the inaugurated road/twin-tunnel site in Rancakalong, Sumedang regency, mapped to canonical code 3211. This verifies operating toll-road infrastructure within Sumedang, not equitable access or a province-wide road inventory."
+    }
+  ]
+}

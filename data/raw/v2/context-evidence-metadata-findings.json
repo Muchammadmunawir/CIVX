@@ -1,0 +1,161 @@
+{
+  "auditedAt": "2026-10-27",
+  "kind": "Metadata and quality findings only; not original Galura response or production observations",
+  "sourceUrl": "https://galura.jabarprov.go.id/dataset",
+  "termsUrl": "https://galura.jabarprov.go.id/ketentuan-penggunaan",
+  "redistribution": "Galura terms restrict personal noncommercial use and prohibit sublicensing/transfer. No original responses or numeric production rows are redistributed. This document records researcher-authored metadata/quality findings and links to the originals.",
+  "recoveredFrom": {
+    "sessionId": "ContextAdvantages",
+    "catalogToolResultMessageId": "6d0c42c7",
+    "rowProbeToolResultMessageId": "e22c2987",
+    "inspectedAt": "2026-10-27T09:10:48.706Z",
+    "inspectionLimit": "Historical API fetched tables but printed only first two rows and pagination. Catalogue year ranges and total row counts do not establish actual coverage of all 27 regions in each year."
+  },
+  "metadataClarifications": {
+    "accessedAt": "2026-10-27",
+    "urls": [
+      "https://galura.jabarprov.go.id/api/datasets/jumlah-penumpang-angkutan-umum-berdasarkan-kabupatenkota-di-jawa-barat",
+      "https://galura.jabarprov.go.id/api/datasets/jumlah-moda-transportasi-angkutan-kota-dalam-provinsi-berdasarkan-kabupatenkota-di-jawa-barat",
+      "https://galura.jabarprov.go.id/api/datasets/jumlah-moda-transportasi-angkutan-kotadesa-berdasarkan-kabupatenkota-di-jawa-barat"
+    ],
+    "method": "Three targeted metadata-only API reads; no new production data fetch.",
+    "findings": [
+      "Passenger variable documentation explicitly mentions type-C terminals despite broader dataset title and coverage field.",
+      "AKDP metadata contains repeated title/column revisions and a spelling mismatch against the sampled response.",
+      "Urban/rural mode unit description still references goods transport; cross-table duplicate samples remain unresolved."
+    ]
+  },
+  "datasets": [
+    {
+      "url": "https://galura.jabarprov.go.id/dataset/jumlah-titik-layanan-akses-internet-publik-wifi-berdasarkan-kabupatenkota-di-jawa-barat",
+      "metadataUrl": "https://galura.jabarprov.go.id/api/datasets/jumlah-titik-layanan-akses-internet-publik-wifi-berdasarkan-kabupatenkota-di-jawa-barat",
+      "catalogYears": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "totalRowsReported": 134,
+      "firstSampledYear": 2019,
+      "sampleRowsInspected": 2,
+      "finding": "Regional public WiFi access-point counts, not household internet subscriptions; year-by-region completeness not established."
+    },
+    {
+      "url": "https://galura.jabarprov.go.id/dataset/jumlah-penumpang-angkutan-umum-berdasarkan-kabupatenkota-di-jawa-barat",
+      "metadataUrl": "https://galura.jabarprov.go.id/api/datasets/jumlah-penumpang-angkutan-umum-berdasarkan-kabupatenkota-di-jawa-barat",
+      "catalogYears": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "totalRowsReported": 108,
+      "firstSampledYear": 2022,
+      "sampleRowsInspected": 2,
+      "finding": "Generic title and all-public-passenger business metadata conflict with the variable description specifying type-C terminal entry/exit passengers. Producer clarification required."
+    },
+    {
+      "url": "https://galura.jabarprov.go.id/dataset/jumlah-penumpang-masuk-dan-keluar-melalui-terminal-tipe-c-berdasarkan-kabupatenkota-di-jawa-barat",
+      "metadataUrl": "https://galura.jabarprov.go.id/api/datasets/jumlah-penumpang-masuk-dan-keluar-melalui-terminal-tipe-c-berdasarkan-kabupatenkota-di-jawa-barat",
+      "catalogYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "totalRowsReported": 162,
+      "firstSampledYear": 2020,
+      "sampleRowsInspected": 2,
+      "finding": "Type-C terminal entry/exit passenger movements; not all public transport, unique users, or modal share."
+    },
+    {
+      "url": "https://galura.jabarprov.go.id/dataset/jumlah-moda-transportasi-angkutan-kota-dalam-provinsi-berdasarkan-kabupatenkota-di-jawa-barat",
+      "metadataUrl": "https://galura.jabarprov.go.id/api/datasets/jumlah-moda-transportasi-angkutan-kota-dalam-provinsi-berdasarkan-kabupatenkota-di-jawa-barat",
+      "catalogYears": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "totalRowsReported": 108,
+      "firstSampledYear": 2022,
+      "sampleRowsInspected": 2,
+      "finding": "First two sampled regional rows equal the corresponding urban/rural-mode table rows; concepts cannot be assumed independent. Schema spelling and geography-key differences also need clarification."
+    },
+    {
+      "url": "https://galura.jabarprov.go.id/dataset/jumlah-moda-transportasi-angkutan-kotadesa-berdasarkan-kabupatenkota-di-jawa-barat",
+      "metadataUrl": "https://galura.jabarprov.go.id/api/datasets/jumlah-moda-transportasi-angkutan-kotadesa-berdasarkan-kabupatenkota-di-jawa-barat",
+      "catalogYears": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "totalRowsReported": 108,
+      "firstSampledYear": 2022,
+      "sampleRowsInspected": 2,
+      "finding": "First two sampled regional rows equal AKDP rows. Unit description refers to goods transport despite urban/rural passenger-transport title."
+    },
+    {
+      "url": "https://galura.jabarprov.go.id/dataset/daftar-terminal-berdasarkan-tipe-di-jawa-barat",
+      "metadataUrl": "https://galura.jabarprov.go.id/api/datasets/daftar-terminal-berdasarkan-tipe-di-jawa-barat",
+      "catalogYears": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "totalRowsReported": 186,
+      "firstSampledYear": 2016,
+      "sampleRowsInspected": 2,
+      "finding": "Sampled registry rows contain name, type, address, year, but no kabupaten/kota code or verified current service status. Names alone are unsafe geographic joins."
+    },
+    {
+      "url": "https://galura.jabarprov.go.id/dataset/daftar-stasiun-berdasarkan-kabupatenkota-di-jawa-barat",
+      "metadataUrl": "https://galura.jabarprov.go.id/api/datasets/daftar-stasiun-berdasarkan-kabupatenkota-di-jawa-barat",
+      "catalogYears": [
+        2021
+      ],
+      "totalRowsReported": 141,
+      "firstSampledYear": 2021,
+      "sampleRowsInspected": 2,
+      "finding": "Station registry includes kabupaten/kota codes, status, DAOP, coordinates, class and year. Operational status is specific to 2021; no current or 2023 operation inferred."
+    },
+    {
+      "url": "https://galura.jabarprov.go.id/dataset/jumlah-penumpang-kereta-api-jarak-jauh-daop-2-berdasarkan--stasiun-di-jawa-barat-",
+      "metadataUrl": "https://galura.jabarprov.go.id/api/datasets/jumlah-penumpang-kereta-api-jarak-jauh-daop-2-berdasarkan--stasiun-di-jawa-barat-",
+      "catalogYears": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "totalRowsReported": 68,
+      "firstSampledYear": 2022,
+      "sampleRowsInspected": 2,
+      "finding": "DAOP 2 long-distance passenger boarding/alighting by station; no regional code in sampled rows. Does not cover all rail regions, commuter services, or unique people."
+    },
+    {
+      "url": "https://galura.jabarprov.go.id/dataset/daftar-rumah-sakit-berdasarkan-jenis-dan-kelas-di-jawa-barat",
+      "metadataUrl": "https://galura.jabarprov.go.id/api/datasets/daftar-rumah-sakit-berdasarkan-jenis-dan-kelas-di-jawa-barat",
+      "catalogYears": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "totalRowsReported": 1917,
+      "firstSampledYear": 2019,
+      "sampleRowsInspected": 2,
+      "finding": "Hospital register includes regional code, name, type and class; no beds, staffing, referral hierarchy, annual service readiness, or catchment denominator established."
+    }
+  ],
+  "coverageRule": "No missing row, uninspected region, or unobserved year establishes absence of service. No numeric Galura observation enters production."
+}

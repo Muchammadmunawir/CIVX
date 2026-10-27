@@ -1,6 +1,6 @@
 # CIVX Tasks
 
-**Status:** 27-region Jawa Barat 2023 project release supports geographic orientation and same-release comparison; 2020 boundary crosswalk review, independent method review and rights clearance remain gated
+**Status:** One current CIVX — Jawa Barat 2023 product supersedes the separate methodology-product model. §18 records the current cutover; earlier milestones are historical.
 **Learning rule:** Keep milestones small, reviewable, and ordered by dependency.
 
 ## 1. Foundation completed
@@ -209,3 +209,40 @@ Display shapes do not enter the scoring pipeline. CIVX positions, categories and
 
 The committed release has no unavailable scores or missing display outlines, so those branches are not represented by production observations. The §15 boundary, rights, independent review and sensitivity gates remain open. This cutover changes presentation and interaction only, not the 2023 release or methodology version.
 
+
+## 17. Separate CIVX v2 analytical release
+
+This additive record supersedes future-only v2 statements, not completed v1 work or its remaining review gates.
+
+- [x] Audit 34 candidate concepts with official sources, actual year windows/coverage, classifications, eligibility reasons and detailed JSON diagnostics in `data/raw/v2`; summarize in `docs/V2-SOURCE-AUDIT.md`.
+- [x] Release five complete 2023 inputs across all 27 regions, with separate policy, typed v2 boundary and processed release; retain protected v1 artifacts under `data/releases/civx-v1-integrity.json`.
+- [x] Separate pressure, context and advantages. Keep density unscored; exclude healthcare access, DBD, road condition and disaster impact from core scoring.
+- [x] Publish only three targeted dated positive advantages: Whoosh `3217`, Kertajati `3210`, Cisumdawu `3211`; retain provenance and assignment reasons without fabricated absence.
+- [x] Store six sensitivity alternatives and regional results in `data/processed/civx-jabar-2023-v2-sensitivity.json`; document the 50/50 dimension decision and shared poverty/HDI deprivation budget in `docs/METHODOLOGY-V2.md`.
+- [x] Record full-precision arithmetic followed by independent two-decimal publication rounding, rights/acquisition limits and unresolved formal review.
+- [x] Pass 16 new behavioral regressions alongside all 11 existing tests: 27 total, zero failures. Cover v1 fingerprints/reproduction, v2 isolation, missingness, advantages, geography/year/unit mismatches, normalization, dimension weights, duplicates, provenance and read-boundary classification/layer integrity.
+- [x] Integrate `/v2` overview and `/v2/regions/[id]` evidence hierarchy with explicit version navigation and progressive disclosure; keep v1 Explore/Compare default and publish no unsupported map.
+- [x] Run final `npm test`, `npm run lint`, `npm run build`, source-verified immutable v2 regeneration and production-browser smoke. Check new pages at 1440/768/390/320px in both themes without document overflow or computed text-contrast failures. Exercise source/capability disclosure, missing evidence, keyboard focus, version switching and preserved routes. Taste source lint passes; standalone inspector cannot locate local Chrome, so managed Chromium supplies visual proof instead. See `.taste-skill/v2/critique.md`; no formal accessibility certification is claimed.
+- [ ] Obtain independent transcription/methodology review, resolve publication/reuse rights, certify effective-boundary compatibility and assess uncertainty/optional coverage before official-grade claims.
+
+Only overall, socioeconomic and basic-services layer descriptors exist. No v2 map is complete or released. Restricted source publications remain uncommitted: the BPS book stays ignored, and the original health PDF was acquired only through a temporary/environment-supplied artifact. Documentation and source discovery do not establish redistribution permission.
+
+## 18. Unified CIVX current release
+
+The explicit product decision is one **CIVX**, not separate methodology products. Current methodology: [METHODOLOGY-CURRENT.md](METHODOLOGY-CURRENT.md). The archived four-input methodology document remains byte-identical for reproducibility; this current decision supersedes it for production.
+
+- [x] Reuse the five verified foundation indicators without changing their observations.
+- [x] Verify all-27 official Puskesmas totals, exact population, published DBD incidence and BNPB IRBI 2023 observations; generate facility availability in the pipeline.
+- [x] Withhold road condition from Core because road-network scope and denominator meaning are not comparable; publish no infrastructure score/layer.
+- [x] Use explicit dimension budgets and a common complete scoring contract, with traceable raw numerators, denominators, formulas, sources and metadata.
+- [x] Cut all production pages over to one current read boundary; remove product switching and competing version routes.
+- [x] Derive indicator/dimension counts and pressure explanations from current configuration; expose only validated map layers.
+- [x] Preserve progressive regional disclosure, Context Signals, verified Regional Advantages, direct/intercepted records and signed comparison differences.
+- [x] Keep original release artifacts and scoring code available for archived reproduction; remove obsolete UI read boundaries and comparison helpers.
+- [x] Review ten full-precision sensitivity scenarios and generate the current 27/27 release from frozen audited transcriptions. Retain equal 25% dimension budgets; report up to eight-place movement and reject fine-rank claims.
+- [x] Pass all 41 tests, lint and the production build (37 generated pages). Explicit `data:replay` succeeds. Strict `data:build` rebuilds the foundational archive, then times out after 45 seconds while acquiring the health-profile original for the dimensional archive; do not claim full original-source regeneration.
+- [x] Verify Home, Explore, map/layers, standalone/intercepted regional records, Compare, Methodology and Sources in managed Chromium. Check all six canonical surfaces at 1440/768/390/320px in Light and Dark: 48 combinations, no document overflow or hydration errors. Exercise empty-result recovery, map layers, signed swap, identical-pair rejection, positive advantages, derivation disclosure, source-verification receipts, modal focus wrap/restoration, Escape, Back/Forward and direct reload.
+
+Browser smoke caught an SVG title hydration mismatch: separate static/dynamic title children did not survive browser parsing as React expected. A single title string fixed the cause; development and rebuilt production smoke passed. Temporary diagnostics were removed. No dependency was added and TypeScript remains `strict: true`, `noEmit: true`.
+
+Remaining external gates: independent source/method review, publication/reuse rights, certified effective-boundary compatibility, uncertainty and formal accessibility review. DBD source population vintage remains unresolved; use the official reported-incidence series without inventing a replacement denominator. Puskesmas supply is not measured healthcare access; IRBI is modeled risk, not actual disaster impact. Missing optional evidence is not zero or verified absence.

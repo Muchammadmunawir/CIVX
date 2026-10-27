@@ -10,7 +10,7 @@ export function SiteHeader() {
       <div className="civx-container civx-header-inner">
         <Link className="civx-wordmark" href="/" aria-label="CIVX Civic Index home">
           <span>CIV<span className="civx-wordmark-x">X</span></span>
-          <span className="civx-brand-name">Civic Index</span>
+          <span className="civx-brand-name">Jawa Barat</span>
         </Link>
         <Suspense fallback={<NavigationLinks />}><SiteNavigation /></Suspense>
         <ThemeToggle />

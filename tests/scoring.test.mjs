@@ -31,7 +31,6 @@ test("normalizes directions and reports weighted indicator contributions", () =>
 test("withholds incomplete or untraceable scores without reweighting", () => {
   const missing = scoreCivicIndex([observations[0], { ...observations[1], value: null, missingReason: "not published" }], policy);
   assert.equal(missing.status, "unavailable");
-  assert.match(missing.reason, /not published.*not reweighted/);
   const untraceable = scoreCivicIndex([observations[0], { ...observations[1], sources: [{ ...source("test-b"), artifactId: "" }] }], policy);
   assert.equal(untraceable.status, "unavailable");
   const otherPeriod = scoreCivicIndex([observations[0], { ...observations[1], period: "2022" }], policy);

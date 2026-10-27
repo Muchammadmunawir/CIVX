@@ -1,0 +1,1174 @@
+{
+  "baseline": "Equal dimension budgets with a capped poverty/HDI deprivation allocation",
+  "referenceSetId": "civx-v2-bps-jabar-27-kabkota-2023-revised-2024-02-29",
+  "scenarios": [
+    {
+      "id": "socioeconomic_60",
+      "label": "Socioeconomic 60% / basic services 40%",
+      "dimensionWeights": {
+        "socioeconomic": 0.6,
+        "basic_services": 0.4
+      },
+      "indicatorWeights": {
+        "poverty": 0.25,
+        "unemployment": 0.5,
+        "hdi": 0.25,
+        "sanitation": 0.5,
+        "drinking_water": 0.5
+      },
+      "maxAbsoluteScoreChange": 6.69,
+      "meanAbsoluteScoreChange": 2.96,
+      "maxOrderMovement": 8,
+      "spearman": 0.943367,
+      "orderReversals": 30,
+      "categoryChanges": 1,
+      "regions": [
+        {
+          "regionId": "3201",
+          "score": 59.28,
+          "change": 2.21,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3202",
+          "score": 71.83,
+          "change": -1.31,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3203",
+          "score": 75.71,
+          "change": 0.95,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3204",
+          "score": 48.09,
+          "change": 1.33,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3205",
+          "score": 81.01,
+          "change": -1.63,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3206",
+          "score": 62.87,
+          "change": -1.61,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3207",
+          "score": 40.26,
+          "change": 0.15,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3208",
+          "score": 62.81,
+          "change": 6.69,
+          "orderMovement": -3
+        },
+        {
+          "regionId": "3209",
+          "score": 50.11,
+          "change": 6.39,
+          "orderMovement": -5
+        },
+        {
+          "regionId": "3210",
+          "score": 47.33,
+          "change": 2.62,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3211",
+          "score": 52.2,
+          "change": 2.78,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3212",
+          "score": 47.44,
+          "change": 6.67,
+          "orderMovement": -4.5
+        },
+        {
+          "regionId": "3213",
+          "score": 47.02,
+          "change": 6.25,
+          "orderMovement": -2.5
+        },
+        {
+          "regionId": "3214",
+          "score": 63.07,
+          "change": 0.82,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3215",
+          "score": 50.57,
+          "change": 5.35,
+          "orderMovement": -2
+        },
+        {
+          "regionId": "3216",
+          "score": 41.01,
+          "change": 4.56,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3217",
+          "score": 70.77,
+          "change": 2.04,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3218",
+          "score": 45.13,
+          "change": -1.79,
+          "orderMovement": 8
+        },
+        {
+          "regionId": "3271",
+          "score": 46.72,
+          "change": 4.05,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3272",
+          "score": 58.27,
+          "change": 0.99,
+          "orderMovement": 3
+        },
+        {
+          "regionId": "3273",
+          "score": 44.71,
+          "change": -0.01,
+          "orderMovement": 6
+        },
+        {
+          "regionId": "3274",
+          "score": 38.69,
+          "change": 5.62,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3275",
+          "score": 25.05,
+          "change": 3.8,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3276",
+          "score": 19.38,
+          "change": 3.04,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3277",
+          "score": 47.76,
+          "change": 3.51,
+          "orderMovement": -2
+        },
+        {
+          "regionId": "3278",
+          "score": 58.41,
+          "change": 1.48,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3279",
+          "score": 36.82,
+          "change": 2.3,
+          "orderMovement": 1
+        }
+      ]
+    },
+    {
+      "id": "services_60",
+      "label": "Socioeconomic 40% / basic services 60%",
+      "dimensionWeights": {
+        "socioeconomic": 0.4,
+        "basic_services": 0.6
+      },
+      "indicatorWeights": {
+        "poverty": 0.25,
+        "unemployment": 0.5,
+        "hdi": 0.25,
+        "sanitation": 0.5,
+        "drinking_water": 0.5
+      },
+      "maxAbsoluteScoreChange": 6.7,
+      "meanAbsoluteScoreChange": 2.96,
+      "maxOrderMovement": 5,
+      "spearman": 0.98214,
+      "orderReversals": 13,
+      "categoryChanges": 2,
+      "regions": [
+        {
+          "regionId": "3201",
+          "score": 54.86,
+          "change": -2.21,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3202",
+          "score": 74.46,
+          "change": 1.32,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3203",
+          "score": 73.82,
+          "change": -0.94,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3204",
+          "score": 45.43,
+          "change": -1.33,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3205",
+          "score": 84.27,
+          "change": 1.63,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3206",
+          "score": 66.08,
+          "change": 1.6,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3207",
+          "score": 39.96,
+          "change": -0.15,
+          "orderMovement": -5
+        },
+        {
+          "regionId": "3208",
+          "score": 49.42,
+          "change": -6.7,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3209",
+          "score": 37.34,
+          "change": -6.38,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3210",
+          "score": 42.09,
+          "change": -2.62,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3211",
+          "score": 46.63,
+          "change": -2.79,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3212",
+          "score": 34.1,
+          "change": -6.67,
+          "orderMovement": 1.5
+        },
+        {
+          "regionId": "3213",
+          "score": 34.52,
+          "change": -6.25,
+          "orderMovement": 0.5
+        },
+        {
+          "regionId": "3214",
+          "score": 61.43,
+          "change": -0.82,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3215",
+          "score": 39.87,
+          "change": -5.35,
+          "orderMovement": 4
+        },
+        {
+          "regionId": "3216",
+          "score": 31.9,
+          "change": -4.55,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3217",
+          "score": 66.69,
+          "change": -2.04,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3218",
+          "score": 48.71,
+          "change": 1.79,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3271",
+          "score": 38.63,
+          "change": -4.04,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3272",
+          "score": 56.3,
+          "change": -0.98,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3273",
+          "score": 44.74,
+          "change": 0.02,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3274",
+          "score": 27.46,
+          "change": -5.61,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3275",
+          "score": 17.46,
+          "change": -3.79,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3276",
+          "score": 13.3,
+          "change": -3.04,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3277",
+          "score": 40.73,
+          "change": -3.52,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3278",
+          "score": 55.45,
+          "change": -1.48,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3279",
+          "score": 32.23,
+          "change": -2.29,
+          "orderMovement": -1
+        }
+      ]
+    },
+    {
+      "id": "equal_within_socioeconomic",
+      "label": "Equal socioeconomic inputs, equal dimension budgets",
+      "dimensionWeights": {
+        "socioeconomic": 0.5,
+        "basic_services": 0.5
+      },
+      "indicatorWeights": {
+        "poverty": 0.3333333333333333,
+        "unemployment": 0.3333333333333333,
+        "hdi": 0.3333333333333333,
+        "sanitation": 0.5,
+        "drinking_water": 0.5
+      },
+      "maxAbsoluteScoreChange": 6.37,
+      "meanAbsoluteScoreChange": 2.58,
+      "maxOrderMovement": 5,
+      "spearman": 0.956495,
+      "orderReversals": 25,
+      "categoryChanges": 2,
+      "regions": [
+        {
+          "regionId": "3201",
+          "score": 55.56,
+          "change": -1.51,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3202",
+          "score": 73.5,
+          "change": 0.36,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3203",
+          "score": 76.55,
+          "change": 1.79,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3204",
+          "score": 46.41,
+          "change": -0.35,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3205",
+          "score": 84.3,
+          "change": 1.66,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3206",
+          "score": 69.49,
+          "change": 5.01,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3207",
+          "score": 43.22,
+          "change": 3.11,
+          "orderMovement": -4
+        },
+        {
+          "regionId": "3208",
+          "score": 56.29,
+          "change": 0.17,
+          "orderMovement": -2
+        },
+        {
+          "regionId": "3209",
+          "score": 44.98,
+          "change": 1.26,
+          "orderMovement": -3
+        },
+        {
+          "regionId": "3210",
+          "score": 49.53,
+          "change": 4.82,
+          "orderMovement": -3
+        },
+        {
+          "regionId": "3211",
+          "score": 49.94,
+          "change": 0.52,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3212",
+          "score": 43.97,
+          "change": 3.2,
+          "orderMovement": -4.5
+        },
+        {
+          "regionId": "3213",
+          "score": 41.42,
+          "change": 0.65,
+          "orderMovement": -1.5
+        },
+        {
+          "regionId": "3214",
+          "score": 61.83,
+          "change": -0.42,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3215",
+          "score": 43.46,
+          "change": -1.76,
+          "orderMovement": 3
+        },
+        {
+          "regionId": "3216",
+          "score": 32.71,
+          "change": -3.74,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3217",
+          "score": 69.68,
+          "change": 0.95,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3218",
+          "score": 53.25,
+          "change": 6.33,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3271",
+          "score": 38.58,
+          "change": -4.09,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3272",
+          "score": 54.67,
+          "change": -2.61,
+          "orderMovement": 3
+        },
+        {
+          "regionId": "3273",
+          "score": 38.63,
+          "change": -6.09,
+          "orderMovement": 5
+        },
+        {
+          "regionId": "3274",
+          "score": 31.9,
+          "change": -1.17,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3275",
+          "score": 16.15,
+          "change": -5.1,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3276",
+          "score": 11.51,
+          "change": -4.83,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3277",
+          "score": 37.88,
+          "change": -6.37,
+          "orderMovement": 5
+        },
+        {
+          "regionId": "3278",
+          "score": 58.34,
+          "change": 1.41,
+          "orderMovement": -2
+        },
+        {
+          "regionId": "3279",
+          "score": 34.95,
+          "change": 0.43,
+          "orderMovement": -1
+        }
+      ]
+    },
+    {
+      "id": "five_equal_indicators",
+      "label": "Five equal indicators (diagnostic comparator, not selected)",
+      "dimensionWeights": {
+        "socioeconomic": 0.6,
+        "basic_services": 0.4
+      },
+      "indicatorWeights": {
+        "poverty": 0.3333333333333333,
+        "unemployment": 0.3333333333333333,
+        "hdi": 0.3333333333333333,
+        "sanitation": 0.5,
+        "drinking_water": 0.5
+      },
+      "maxAbsoluteScoreChange": 10.51,
+      "meanAbsoluteScoreChange": 3.72,
+      "maxOrderMovement": 7,
+      "spearman": 0.931766,
+      "orderReversals": 34,
+      "categoryChanges": 2,
+      "regions": [
+        {
+          "regionId": "3201",
+          "score": 57.47,
+          "change": 0.4,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3202",
+          "score": 72.25,
+          "change": -0.89,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3203",
+          "score": 77.85,
+          "change": 3.09,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3204",
+          "score": 47.66,
+          "change": 0.9,
+          "orderMovement": 5
+        },
+        {
+          "regionId": "3205",
+          "score": 83,
+          "change": 0.36,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3206",
+          "score": 68.89,
+          "change": 4.41,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3207",
+          "score": 43.99,
+          "change": 3.88,
+          "orderMovement": -3
+        },
+        {
+          "regionId": "3208",
+          "score": 63.02,
+          "change": 6.9,
+          "orderMovement": -4
+        },
+        {
+          "regionId": "3209",
+          "score": 51.62,
+          "change": 7.9,
+          "orderMovement": -4
+        },
+        {
+          "regionId": "3210",
+          "score": 53.11,
+          "change": 8.4,
+          "orderMovement": -5
+        },
+        {
+          "regionId": "3211",
+          "score": 52.83,
+          "change": 3.41,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3212",
+          "score": 51.28,
+          "change": 10.51,
+          "orderMovement": -5.5
+        },
+        {
+          "regionId": "3213",
+          "score": 47.79,
+          "change": 7.02,
+          "orderMovement": -3.5
+        },
+        {
+          "regionId": "3214",
+          "score": 62.56,
+          "change": 0.31,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3215",
+          "score": 48.45,
+          "change": 3.23,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3216",
+          "score": 36.52,
+          "change": 0.07,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3217",
+          "score": 71.91,
+          "change": 3.18,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3218",
+          "score": 52.72,
+          "change": 5.8,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3271",
+          "score": 41.8,
+          "change": -0.87,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3272",
+          "score": 55.14,
+          "change": -2.14,
+          "orderMovement": 3
+        },
+        {
+          "regionId": "3273",
+          "score": 37.4,
+          "change": -7.32,
+          "orderMovement": 7
+        },
+        {
+          "regionId": "3274",
+          "score": 37.28,
+          "change": 4.21,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3275",
+          "score": 18.92,
+          "change": -2.33,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3276",
+          "score": 13.58,
+          "change": -2.76,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3277",
+          "score": 40.12,
+          "change": -4.13,
+          "orderMovement": 4
+        },
+        {
+          "regionId": "3278",
+          "score": 60.1,
+          "change": 3.17,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3279",
+          "score": 37.33,
+          "change": 2.81,
+          "orderMovement": -1
+        }
+      ]
+    },
+    {
+      "id": "without_hdi",
+      "label": "Deprivation represented by poverty only",
+      "dimensionWeights": {
+        "socioeconomic": 0.5,
+        "basic_services": 0.5
+      },
+      "indicatorWeights": {
+        "poverty": 0.5,
+        "unemployment": 0.5,
+        "sanitation": 0.5,
+        "drinking_water": 0.5
+      },
+      "maxAbsoluteScoreChange": 5.3,
+      "meanAbsoluteScoreChange": 1.95,
+      "maxOrderMovement": 5,
+      "spearman": 0.968707,
+      "orderReversals": 19,
+      "categoryChanges": 2,
+      "regions": [
+        {
+          "regionId": "3201",
+          "score": 54.84,
+          "change": -2.23,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3202",
+          "score": 67.84,
+          "change": -5.3,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3203",
+          "score": 72.31,
+          "change": -2.45,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3204",
+          "score": 44.26,
+          "change": -2.5,
+          "orderMovement": 3
+        },
+        {
+          "regionId": "3205",
+          "score": 80.47,
+          "change": -2.17,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3206",
+          "score": 63.1,
+          "change": -1.38,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3207",
+          "score": 38.16,
+          "change": -1.95,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3208",
+          "score": 58.43,
+          "change": 2.31,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3209",
+          "score": 45.54,
+          "change": 1.82,
+          "orderMovement": -4
+        },
+        {
+          "regionId": "3210",
+          "score": 45.66,
+          "change": 0.95,
+          "orderMovement": -3
+        },
+        {
+          "regionId": "3211",
+          "score": 50.7,
+          "change": 1.28,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3212",
+          "score": 42.43,
+          "change": 1.66,
+          "orderMovement": -0.5
+        },
+        {
+          "regionId": "3213",
+          "score": 40.1,
+          "change": -0.67,
+          "orderMovement": 0.5
+        },
+        {
+          "regionId": "3214",
+          "score": 61.89,
+          "change": -0.36,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3215",
+          "score": 43.95,
+          "change": -1.27,
+          "orderMovement": 5
+        },
+        {
+          "regionId": "3216",
+          "score": 33.8,
+          "change": -2.65,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3217",
+          "score": 68.45,
+          "change": -0.28,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3218",
+          "score": 44.86,
+          "change": -2.06,
+          "orderMovement": 3
+        },
+        {
+          "regionId": "3271",
+          "score": 44.1,
+          "change": 1.43,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3272",
+          "score": 58.78,
+          "change": 1.5,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3273",
+          "score": 46.75,
+          "change": 2.03,
+          "orderMovement": -3
+        },
+        {
+          "regionId": "3274",
+          "score": 36.94,
+          "change": 3.87,
+          "orderMovement": -2
+        },
+        {
+          "regionId": "3275",
+          "score": 23.27,
+          "change": 2.02,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3276",
+          "score": 15.71,
+          "change": -0.63,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3277",
+          "score": 44.19,
+          "change": -0.06,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3278",
+          "score": 62.19,
+          "change": 5.26,
+          "orderMovement": -3
+        },
+        {
+          "regionId": "3279",
+          "score": 32.03,
+          "change": -2.49,
+          "orderMovement": 1
+        }
+      ]
+    },
+    {
+      "id": "without_poverty",
+      "label": "Deprivation represented by HDI only",
+      "dimensionWeights": {
+        "socioeconomic": 0.5,
+        "basic_services": 0.5
+      },
+      "indicatorWeights": {
+        "unemployment": 0.5,
+        "hdi": 0.5,
+        "sanitation": 0.5,
+        "drinking_water": 0.5
+      },
+      "maxAbsoluteScoreChange": 5.3,
+      "meanAbsoluteScoreChange": 1.95,
+      "maxOrderMovement": 4,
+      "spearman": 0.984583,
+      "orderReversals": 15,
+      "categoryChanges": 0,
+      "regions": [
+        {
+          "regionId": "3201",
+          "score": 59.3,
+          "change": 2.23,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3202",
+          "score": 78.44,
+          "change": 5.3,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3203",
+          "score": 77.21,
+          "change": 2.45,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3204",
+          "score": 49.27,
+          "change": 2.51,
+          "orderMovement": -2
+        },
+        {
+          "regionId": "3205",
+          "score": 84.81,
+          "change": 2.17,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3206",
+          "score": 65.86,
+          "change": 1.38,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3207",
+          "score": 42.06,
+          "change": 1.95,
+          "orderMovement": -4
+        },
+        {
+          "regionId": "3208",
+          "score": 53.81,
+          "change": -2.31,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3209",
+          "score": 41.91,
+          "change": -1.81,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3210",
+          "score": 43.75,
+          "change": -0.96,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3211",
+          "score": 48.14,
+          "change": -1.28,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3212",
+          "score": 39.1,
+          "change": -1.67,
+          "orderMovement": 2.5
+        },
+        {
+          "regionId": "3213",
+          "score": 41.44,
+          "change": 0.67,
+          "orderMovement": -0.5
+        },
+        {
+          "regionId": "3214",
+          "score": 62.61,
+          "change": 0.36,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3215",
+          "score": 46.49,
+          "change": 1.27,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3216",
+          "score": 39.11,
+          "change": 2.66,
+          "orderMovement": -1
+        },
+        {
+          "regionId": "3217",
+          "score": 69.02,
+          "change": 0.29,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3218",
+          "score": 48.98,
+          "change": 2.06,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3271",
+          "score": 41.25,
+          "change": -1.42,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3272",
+          "score": 55.79,
+          "change": -1.49,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3273",
+          "score": 42.7,
+          "change": -2.02,
+          "orderMovement": 2
+        },
+        {
+          "regionId": "3274",
+          "score": 29.21,
+          "change": -3.86,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3275",
+          "score": 19.24,
+          "change": -2.01,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3276",
+          "score": 16.97,
+          "change": 0.63,
+          "orderMovement": 0
+        },
+        {
+          "regionId": "3277",
+          "score": 44.3,
+          "change": 0.05,
+          "orderMovement": -2
+        },
+        {
+          "regionId": "3278",
+          "score": 51.67,
+          "change": -5.26,
+          "orderMovement": 1
+        },
+        {
+          "regionId": "3279",
+          "score": 37.02,
+          "change": 2.5,
+          "orderMovement": 0
+        }
+      ]
+    }
+  ],
+  "correlations": [
+    {
+      "a": "poverty",
+      "b": "unemployment",
+      "pearson": -0.250364
+    },
+    {
+      "a": "poverty",
+      "b": "hdi",
+      "pearson": -0.77629
+    },
+    {
+      "a": "poverty",
+      "b": "sanitation",
+      "pearson": -0.137821
+    },
+    {
+      "a": "poverty",
+      "b": "drinking_water",
+      "pearson": -0.259968
+    },
+    {
+      "a": "unemployment",
+      "b": "hdi",
+      "pearson": 0.38095
+    },
+    {
+      "a": "unemployment",
+      "b": "sanitation",
+      "pearson": -0.032734
+    },
+    {
+      "a": "unemployment",
+      "b": "drinking_water",
+      "pearson": 0.414248
+    },
+    {
+      "a": "hdi",
+      "b": "sanitation",
+      "pearson": 0.225105
+    },
+    {
+      "a": "hdi",
+      "b": "drinking_water",
+      "pearson": 0.613925
+    },
+    {
+      "a": "sanitation",
+      "b": "drinking_water",
+      "pearson": 0.404139
+    }
+  ],
+  "decision": "Equal dimension budgets prevent indicator-count dominance; the poverty/HDI pair shares one deprivation allocation. Alternative weights and single-indicator substitutions change scores and fine ordering, so no precise league-table interpretation is warranted. Weights remain explicit project trade-offs, not externally approved importance coefficients.",
+  "limitations": [
+    "27-region descriptive sensitivity, not sampling uncertainty or causal validation.",
+    "Comparisons use two-decimal released scores and average tied ranks; ties are not arbitrarily broken.",
+    "Fixed min-max reference and additive aggregation remain modeling assumptions; this analysis does not claim full methodological robustness.",
+    "Leave-one-indicator-out scenarios are declared diagnostics, never a missing-data production rule."
+  ],
+  "coreDataFingerprint": "sha256:6aedcdd48c0883fb0f625e005001177d0ada26b8da0e89e31a130adfb2d2e26d"
+}

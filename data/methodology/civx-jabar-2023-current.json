@@ -1,0 +1,174 @@
+{
+  "modelVersion": "CIVX v2",
+  "releaseId": "civx-jabar-2023-current",
+  "methodologyVersion": "civx-jabar-2023-dimensional-8inputs-current",
+  "referenceSetId": "civx-bps-jabar-27-kabkota-2023-current",
+  "period": "2023",
+  "boundaryReference": "BPS kabupaten/kota code, Peraturan BPS No. 3 Tahun 2019",
+  "referenceRegionIds": [
+    "3201",
+    "3202",
+    "3203",
+    "3204",
+    "3205",
+    "3206",
+    "3207",
+    "3208",
+    "3209",
+    "3210",
+    "3211",
+    "3212",
+    "3213",
+    "3214",
+    "3215",
+    "3216",
+    "3217",
+    "3218",
+    "3271",
+    "3272",
+    "3273",
+    "3274",
+    "3275",
+    "3276",
+    "3277",
+    "3278",
+    "3279"
+  ],
+  "status": "project_validated",
+  "normalization": "fixed_min_max",
+  "rounding": "full_precision_then_two_decimals",
+  "dimensions": [
+    {
+      "id": "socioeconomic",
+      "label": "Socioeconomic",
+      "weight": 0.25,
+      "indicators": [
+        {
+          "id": "poverty",
+          "label": "Poverty",
+          "unit": "%",
+          "sourceId": "bps-jabar-poverty-2023",
+          "direction": "higher",
+          "minimum": 2.38,
+          "maximum": 12.13,
+          "minimumRegion": "Kota Depok",
+          "maximumRegion": "Kabupaten Indramayu",
+          "withinDimensionWeight": 0.25
+        },
+        {
+          "id": "unemployment",
+          "label": "Open unemployment",
+          "unit": "%",
+          "sourceId": "bps-jabar-unemployment-2023",
+          "direction": "higher",
+          "minimum": 1.52,
+          "maximum": 10.52,
+          "minimumRegion": "Kabupaten Pangandaran",
+          "maximumRegion": "Kota Cimahi",
+          "withinDimensionWeight": 0.5
+        },
+        {
+          "id": "hdi",
+          "label": "Human Development Index",
+          "unit": "index points",
+          "sourceId": "bps-jabar-hdi-2023",
+          "direction": "lower",
+          "minimum": 68.18,
+          "maximum": 83.29,
+          "minimumRegion": "Kabupaten Cianjur",
+          "maximumRegion": "Kota Bandung",
+          "withinDimensionWeight": 0.25
+        }
+      ]
+    },
+    {
+      "id": "basic_services",
+      "label": "Basic services",
+      "weight": 0.25,
+      "indicators": [
+        {
+          "id": "sanitation",
+          "label": "Improved sanitation",
+          "unit": "%",
+          "sourceId": "bps-jabar-sanitation-2023",
+          "direction": "lower",
+          "minimum": 44.76,
+          "maximum": 98.52,
+          "minimumRegion": "Kota Sukabumi",
+          "maximumRegion": "Kota Bekasi",
+          "withinDimensionWeight": 0.3333333333333333
+        },
+        {
+          "id": "drinking_water",
+          "label": "Improved drinking-water source",
+          "unit": "%",
+          "sourceId": "bps-jabar-water-2023",
+          "direction": "lower",
+          "minimum": 81.13,
+          "maximum": 99.61,
+          "minimumRegion": "Kabupaten Garut",
+          "maximumRegion": "Kota Bogor",
+          "withinDimensionWeight": 0.3333333333333333
+        },
+        {
+          "id": "puskesmas_per_100k",
+          "label": "Puskesmas availability",
+          "unit": "facilities per 100,000 population",
+          "sourceId": "bps-jabar-puskesmas-2023",
+          "direction": "lower",
+          "minimum": 1.5753285023259262,
+          "maximum": 6.433124744137084,
+          "minimumRegion": "Kabupaten Bekasi",
+          "maximumRegion": "Kota Cirebon",
+          "withinDimensionWeight": 0.3333333333333333
+        }
+      ]
+    },
+    {
+      "id": "health",
+      "label": "Public health",
+      "weight": 0.25,
+      "indicators": [
+        {
+          "id": "dbd_incidence",
+          "label": "Published DBD incidence",
+          "unit": "cases per 100,000 population",
+          "sourceId": "bps-jabar-dbd-2023",
+          "direction": "higher",
+          "minimum": 4,
+          "maximum": 132,
+          "minimumRegion": "Kabupaten Sukabumi",
+          "maximumRegion": "Kota Bogor",
+          "withinDimensionWeight": 1
+        }
+      ]
+    },
+    {
+      "id": "resilience",
+      "label": "Resilience",
+      "weight": 0.25,
+      "indicators": [
+        {
+          "id": "disaster_risk",
+          "label": "Disaster risk index",
+          "unit": "index points",
+          "sourceId": "bnpb-irbi-2023",
+          "direction": "higher",
+          "minimum": 63.49,
+          "maximum": 185.14,
+          "minimumRegion": "Kota Bogor",
+          "maximumRegion": "Kabupaten Cianjur",
+          "withinDimensionWeight": 1
+        }
+      ]
+    }
+  ],
+  "unsupportedDimensions": [
+    {
+      "id": "infrastructure",
+      "label": "Infrastructure",
+      "reason": "Retain Context, not ninth core input: Galura condition data describe province UPTD-managed network located within regions, not a common kabupaten/kota-administered road network. Authority field absent; Subang condition sum 45.68 km does not reconcile with BPS provincial 167.86 km. BPS condition total 1319.864 km differs from district/city authority total 1152.00 km and all-authority 1365.72 km. Geographic 27/27 presence does not establish same network denominator."
+    }
+  ],
+  "weightDecision": "Retain four equal 25% domain budgets after ten computational sensitivity scenarios. This prevents indicator-count dominance and reflects equal conceptual attention, not estimated causal importance or source reliability. Within socioeconomic, poverty and HDI share half the budget (25% each) because both capture deprivation; unemployment receives 50%. Their raw regional correlation is -0.776290, and HDI also correlates with disaster risk (-0.710749); the cap limits, but does not eliminate, overlapping constructs. Basic services uses equal thirds for sanitation, drinking-water and facility availability; there is no verified basis to privilege one proxy. Public health (published DBD) and resilience (official IRBI) are singletons, explicitly carrying their domain budgets despite source limitations. Raising one domain to 40% shifts scores by up to 12.19 points, ranks by eight places, and categories for up to five regions. Eight equal indicators shifts scores by up to 10.65 points and seven ranks (Spearman 0.896215), so indicator-count weighting is not selected. Facility-half versus household-services-80% configurations move scores by up to 3.95/3.16 points and ranks by two/three places. Poverty-only or HDI-only deprivation changes scores by up to 2.65 points and ranks by up to three places. Retain balanced transparent project trade-offs, not a data-optimized rank order; fine league-table interpretations are unsupported and independent substantive review remains required."
+}

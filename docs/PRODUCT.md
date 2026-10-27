@@ -1,7 +1,7 @@
 # CIVX Product
 
-**Status:** Four-indicator 2023 Jawa Barat project release covers 27 complete kabupaten/kota records; independent review and publication-rights confirmation remain pending
-**Current presentation:** Home introduces the 27-region release; Explore combines a compact analytical toolbar, theme-aware approximate 2020 ADM2 map and scannable regional records. Regional details open contextually above Explore while direct URLs remain standalone. Compare exposes named score and indicator differences with source context. Light, Dark and System themes, responsive navigation and reduced-motion interactions share one visual system. The analytical release and methodology remain unchanged.
+**Status:** One current product: **CIVX — Jawa Barat 2023**, using a common complete analytical contract for all 27 kabupaten/kota.
+**Current presentation:** Home, Explore/map, regional records, Compare, Methodology and Sources consume one current processed release. Context Signals and Regional Advantages remain separate, non-scoring evidence. Earlier release descriptions below are historical unless superseded by §11.
 **Product:** CIVX (Civic Index)
 
 ## 1. Problem statement
@@ -106,7 +106,7 @@ Future features must not expand coverage or visual polish before the underlying 
 
 ## 10. Current interaction model
 
-Explore is the primary workspace. Its scope stays the 2023 Jawa Barat release: 27 published kabupaten/kota, four indicators, equal weights and fixed reference ranges. Search and category filtering affect the map and regional list; sort changes list order, not release positions or normalization. One indicator preview supports scanning; the shared regional record exposes the full breakdown and evidence.
+Explore is the primary workspace. Its scope stays the 2023 Jawa Barat release: 27 published kabupaten/kota with the same validated core indicators, fixed reference ranges and explicit dimension weights. Counts, inputs and map layers derive from the current methodology. Search and category filtering affect the map and regional list, never normalization or weights.
 
 Opening a region from Explore dims the existing workspace and presents a substantial accessible dialog, or a near-fullscreen sheet on mobile. Closing preserves filters and context. Back closes and Forward reopens; refresh or direct access shows the standalone record. Explicit close animates; browser history remains immediate. The native dialog and explicit Tab wrap retain focus, Escape dismisses, background scrolling is locked and focus returns to the originating control.
 
@@ -114,5 +114,19 @@ Theme preference is a compact header control, not a settings system. Light and D
 
 Home remains an introduction and release snapshot rather than a second exploration workspace. Compare emphasizes descriptive numerical differences, never causes or significance. Methodology and Sources remain the evidence layer, with readable formulas, source-period and artifact details, section anchors and links back to the workspace.
 
-Remaining limits: approximate 2020 display boundaries are not certified 2023 geography; tiny city shapes are easier to select through the dropdown or regional list; formal assistive-technology review and sensitivity analysis are not complete. No confidence diagnostic, additional geography/year, authentication, recommendation system or new scoring method is introduced.
+Remaining limits include approximate 2020 display boundaries, independent source/method review, publication rights and optional evidence coverage. Weight sensitivity describes fine-order instability, not sampling uncertainty. No confidence diagnostic, additional geography/year, authentication or recommendation system is introduced.
 
+
+## 11. Unified current product contract
+
+This decision supersedes the separate v1/v2 product and route model. Users see **CIVX**, one **Civic Index**, and its scored dimensions. No release tabs or competing version navigation remain.
+
+Canonical routes are `/`, `/explore`, `/regions/[id]`, `/compare`, `/methodology` and `/sources`. The regional hierarchy is region name, Civic Index/category, pressure dimensions, complete common core indicators, Context Signals, Regional Advantages and sources/provenance. Native disclosure keeps detailed evidence below the first viewport.
+
+Only complete, source-validated 2023 administrative-region indicators can affect every region's score. Dimension budgets prevent indicator-count dominance. Unsupported dimensions have no zero score or map layer. The current policy and sensitivity decision are documented in [METHODOLOGY-CURRENT.md](METHODOLOGY-CURRENT.md).
+
+Context includes density, traffic, mobility, crime and partial sector evidence, with actual coverage and geography states. Density has no automatic performance direction. Police jurisdictions do not become administrative regions.
+
+Verified positives remain Whoosh in Bandung Barat `3217`, Kertajati in Majalengka `3210`, and Cisumdawu in Sumedang `3211`. Missing optional evidence means **No comparable verified data**, never no advantage or zero score. Advantages do not offset pressure.
+
+Internal release IDs, methodology versions, source manifests, hashes and archived outputs remain available for reproducibility. [METHODOLOGY.md](METHODOLOGY.md), [METHODOLOGY-V2.md](METHODOLOGY-V2.md) and [V2-SOURCE-AUDIT.md](V2-SOURCE-AUDIT.md) document historical decisions, not alternative current products.

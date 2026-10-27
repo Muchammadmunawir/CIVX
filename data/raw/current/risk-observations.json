@@ -1,0 +1,380 @@
+{
+  "sources": [
+    {
+      "id": "bnpb-irbi-2023",
+      "publisher": "Badan Nasional Penanggulangan Bencana",
+      "title": "Indeks Risiko Bencana Indonesia Tahun 2023 (IRBI), Volume 02 Nomor 02, Januari 2024",
+      "url": "https://inarisk.bnpb.go.id/pdf/BUKU%20IRBI%202023.pdf",
+      "table": "Tabel nilai indeks risiko Provinsi Jawa Barat dari Tahun 2015 sampai dengan Tahun 2023",
+      "page": "printed/PDF 101; method printed/PDF 17 and 20–21",
+      "dataYear": 2023,
+      "referencePeriod": "2023 official annual risk index; hazard/vulnerability baseline IRBI 2013, capacity updated through IKD assessment",
+      "artifactId": "sha256:a3d00a7af58f9fd2e14d51be60fe174c829effa5612a54ce4cc662a113455279",
+      "accessedAt": "2026-10-27"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "sha256:a3d00a7af58f9fd2e14d51be60fe174c829effa5612a54ce4cc662a113455279",
+      "localPath": null,
+      "bytes": 97147315,
+      "url": "https://inarisk.bnpb.go.id/pdf/BUKU%20IRBI%202023.pdf",
+      "retrievedAt": "2026-10-27",
+      "redistribution": "Original book not committed or redistributed; a temporary verification copy may be kept outside the repository and removed after checks. PDF page 5 restricts quotation/reproduction without written permission. This input contains attributed factual numeric index observations and original audit metadata only, not book text, tables as images, or excerpts. Reacquire original and verify fingerprint."
+    }
+  ],
+  "observations": [
+    {
+      "regionId": "3201",
+      "indicatorId": "disaster_risk",
+      "value": 107.93,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bnpb-irbi-2023",
+      "locator": "printed/PDF 101; Jawa Barat district/city table; BOGOR; 2023 column; risk class SEDANG",
+      "denominator": {
+        "definition": "Published composite risk index; no population denominator and no outcome-rate conversion."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3202",
+      "indicatorId": "disaster_risk",
+      "value": 178.12,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bnpb-irbi-2023",
+      "locator": "printed/PDF 101; Jawa Barat district/city table; SUKABUMI; 2023 column; risk class TINGGI",
+      "denominator": {
+        "definition": "Published composite risk index; no population denominator and no outcome-rate conversion."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3203",
+      "indicatorId": "disaster_risk",
+      "value": 185.14,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bnpb-irbi-2023",
+      "locator": "printed/PDF 101; Jawa Barat district/city table; CIANJUR; 2023 column; risk class TINGGI",
+      "denominator": {
+        "definition": "Published composite risk index; no population denominator and no outcome-rate conversion."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3204",
+      "indicatorId": "disaster_risk",
+      "value": 132.0,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bnpb-irbi-2023",
+      "locator": "printed/PDF 101; Jawa Barat district/city table; BANDUNG; 2023 column; risk class SEDANG",
+      "denominator": {
+        "definition": "Published composite risk index; no population denominator and no outcome-rate conversion."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3205",
+      "indicatorId": "disaster_risk",
+      "value": 147.39,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bnpb-irbi-2023",
+      "locator": "printed/PDF 101; Jawa Barat district/city table; GARUT; 2023 column; risk class TINGGI",
+      "denominator": {
+        "definition": "Published composite risk index; no population denominator and no outcome-rate conversion."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3206",
+      "indicatorId": "disaster_risk",
+      "value": 159.14,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bnpb-irbi-2023",
+      "locator": "printed/PDF 101; Jawa Barat district/city table; TASIKMALAYA; 2023 column; risk class TINGGI",
+      "denominator": {
+        "definition": "Published composite risk index; no population denominator and no outcome-rate conversion."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3207",
+      "indicatorId": "disaster_risk",
+      "value": 117.12,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bnpb-irbi-2023",
+      "locator": "printed/PDF 101; Jawa Barat district/city table; CIAMIS; 2023 column; risk class SEDANG",
+      "denominator": {
+        "definition": "Published composite risk index; no population denominator and no outcome-rate conversion."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3208",
+      "indicatorId": "disaster_risk",
+      "value": 125.8,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bnpb-irbi-2023",
+      "locator": "printed/PDF 101; Jawa Barat district/city table; KUNINGAN; 2023 column; risk class SEDANG",
+      "denominator": {
+        "definition": "Published composite risk index; no population denominator and no outcome-rate conversion."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3209",
+      "indicatorId": "disaster_risk",
+      "value": 144.56,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bnpb-irbi-2023",
+      "locator": "printed/PDF 101; Jawa Barat district/city table; CIREBON; 2023 column; risk class TINGGI",
+      "denominator": {
+        "definition": "Published composite risk index; no population denominator and no outcome-rate conversion."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3210",
+      "indicatorId": "disaster_risk",
+      "value": 120.84,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bnpb-irbi-2023",
+      "locator": "printed/PDF 101; Jawa Barat district/city table; MAJALENGKA; 2023 column; risk class SEDANG",
+      "denominator": {
+        "definition": "Published composite risk index; no population denominator and no outcome-rate conversion."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3211",
+      "indicatorId": "disaster_risk",
+      "value": 135.05,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bnpb-irbi-2023",
+      "locator": "printed/PDF 101; Jawa Barat district/city table; SUMEDANG; 2023 column; risk class SEDANG",
+      "denominator": {
+        "definition": "Published composite risk index; no population denominator and no outcome-rate conversion."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3212",
+      "indicatorId": "disaster_risk",
+      "value": 111.6,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bnpb-irbi-2023",
+      "locator": "printed/PDF 101; Jawa Barat district/city table; INDRAMAYU; 2023 column; risk class SEDANG",
+      "denominator": {
+        "definition": "Published composite risk index; no population denominator and no outcome-rate conversion."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3213",
+      "indicatorId": "disaster_risk",
+      "value": 143.43,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bnpb-irbi-2023",
+      "locator": "printed/PDF 101; Jawa Barat district/city table; SUBANG; 2023 column; risk class SEDANG",
+      "denominator": {
+        "definition": "Published composite risk index; no population denominator and no outcome-rate conversion."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3214",
+      "indicatorId": "disaster_risk",
+      "value": 117.89,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bnpb-irbi-2023",
+      "locator": "printed/PDF 101; Jawa Barat district/city table; PURWAKARTA; 2023 column; risk class SEDANG",
+      "denominator": {
+        "definition": "Published composite risk index; no population denominator and no outcome-rate conversion."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3215",
+      "indicatorId": "disaster_risk",
+      "value": 152.32,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bnpb-irbi-2023",
+      "locator": "printed/PDF 101; Jawa Barat district/city table; KARAWANG; 2023 column; risk class TINGGI",
+      "denominator": {
+        "definition": "Published composite risk index; no population denominator and no outcome-rate conversion."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3216",
+      "indicatorId": "disaster_risk",
+      "value": 116.85,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bnpb-irbi-2023",
+      "locator": "printed/PDF 101; Jawa Barat district/city table; BEKASI; 2023 column; risk class SEDANG",
+      "denominator": {
+        "definition": "Published composite risk index; no population denominator and no outcome-rate conversion."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3217",
+      "indicatorId": "disaster_risk",
+      "value": 108.64,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bnpb-irbi-2023",
+      "locator": "printed/PDF 101; Jawa Barat district/city table; BANDUNG BARAT; 2023 column; risk class SEDANG",
+      "denominator": {
+        "definition": "Published composite risk index; no population denominator and no outcome-rate conversion."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3218",
+      "indicatorId": "disaster_risk",
+      "value": 147.85,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bnpb-irbi-2023",
+      "locator": "printed/PDF 101; Jawa Barat district/city table; PANGANDARAN; 2023 column; risk class TINGGI",
+      "denominator": {
+        "definition": "Published composite risk index; no population denominator and no outcome-rate conversion."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3271",
+      "indicatorId": "disaster_risk",
+      "value": 63.49,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bnpb-irbi-2023",
+      "locator": "printed/PDF 101; Jawa Barat district/city table; KOTA BOGOR; 2023 column; risk class SEDANG",
+      "denominator": {
+        "definition": "Published composite risk index; no population denominator and no outcome-rate conversion."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3272",
+      "indicatorId": "disaster_risk",
+      "value": 84.55,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bnpb-irbi-2023",
+      "locator": "printed/PDF 101; Jawa Barat district/city table; KOTA SUKABUMI; 2023 column; risk class SEDANG",
+      "denominator": {
+        "definition": "Published composite risk index; no population denominator and no outcome-rate conversion."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3273",
+      "indicatorId": "disaster_risk",
+      "value": 97.15,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bnpb-irbi-2023",
+      "locator": "printed/PDF 101; Jawa Barat district/city table; KOTA BANDUNG; 2023 column; risk class SEDANG",
+      "denominator": {
+        "definition": "Published composite risk index; no population denominator and no outcome-rate conversion."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3274",
+      "indicatorId": "disaster_risk",
+      "value": 127.28,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bnpb-irbi-2023",
+      "locator": "printed/PDF 101; Jawa Barat district/city table; KOTA CIREBON; 2023 column; risk class SEDANG",
+      "denominator": {
+        "definition": "Published composite risk index; no population denominator and no outcome-rate conversion."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3275",
+      "indicatorId": "disaster_risk",
+      "value": 111.58,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bnpb-irbi-2023",
+      "locator": "printed/PDF 101; Jawa Barat district/city table; KOTA BEKASI; 2023 column; risk class SEDANG",
+      "denominator": {
+        "definition": "Published composite risk index; no population denominator and no outcome-rate conversion."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3276",
+      "indicatorId": "disaster_risk",
+      "value": 80.44,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bnpb-irbi-2023",
+      "locator": "printed/PDF 101; Jawa Barat district/city table; KOTA DEPOK; 2023 column; risk class SEDANG",
+      "denominator": {
+        "definition": "Published composite risk index; no population denominator and no outcome-rate conversion."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3277",
+      "indicatorId": "disaster_risk",
+      "value": 72.63,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bnpb-irbi-2023",
+      "locator": "printed/PDF 101; Jawa Barat district/city table; KOTA CIMAHI; 2023 column; risk class SEDANG",
+      "denominator": {
+        "definition": "Published composite risk index; no population denominator and no outcome-rate conversion."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3278",
+      "indicatorId": "disaster_risk",
+      "value": 106.93,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bnpb-irbi-2023",
+      "locator": "printed/PDF 101; Jawa Barat district/city table; KOTA TASIKMALAYA; 2023 column; risk class SEDANG",
+      "denominator": {
+        "definition": "Published composite risk index; no population denominator and no outcome-rate conversion."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3279",
+      "indicatorId": "disaster_risk",
+      "value": 129.6,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bnpb-irbi-2023",
+      "locator": "printed/PDF 101; Jawa Barat district/city table; KOTA BANJAR; 2023 column; risk class SEDANG",
+      "denominator": {
+        "definition": "Published composite risk index; no population denominator and no outcome-rate conversion."
+      },
+      "derivation": null
+    }
+  ],
+  "geographyMapping": "Published unprefixed names map to Kabupaten; names beginning KOTA map to Kota. All 27 names match the BPS cohort one-to-one; no spatial interpolation or cross-boundary redistribution."
+}

@@ -21,6 +21,16 @@
 .technical summary:focus-visible, .sourceLink:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .technical dl { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); display: grid; gap: var(--space-3); grid-template-columns: 1fr; margin: var(--space-2) 0 0; padding: var(--space-4); }
 .technical dd { font-size: .8125rem; }
+.auditList { display: grid; gap: var(--space-3); }
+.audit { background: var(--background-elevated); border: 1px solid var(--border); border-radius: var(--radius-sm); min-width: 0; padding: var(--space-4); scroll-margin-top: 7rem; }
+.audit > summary { color: var(--accent); cursor: pointer; font-size: .9375rem; font-weight: 600; line-height: 1.6; min-height: var(--control-height); padding-block: var(--space-2); overflow-wrap: anywhere; }
+.audit > summary:hover { text-decoration: underline; text-underline-offset: 3px; }
+.audit > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.audit .facts { grid-template-columns: 1fr; }
+.audit h3 { font-size: .9375rem; line-height: 1.5; margin: var(--space-4) 0 var(--space-2); }
+.evidenceList, .note { color: var(--muted); font-size: .875rem; line-height: 1.7; overflow-wrap: anywhere; }
+.evidenceList { padding-left: var(--space-5); }
+.evidenceList li + li { margin-top: var(--space-2); }
 @media (max-width: 1050px) {
   .records { grid-template-columns: 1fr; }
 }
