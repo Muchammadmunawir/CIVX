@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PressureBadge } from "@/components/data/pressure-badge";
 import { IndicatorSystem } from "@/components/landing/indicator-system";
 import { LandingHero } from "@/components/landing/landing-hero";
 import { getPublishedContext } from "@/lib/civx/coverage";
@@ -6,19 +7,19 @@ import { regionalData, release } from "@/lib/civx/data";
 import styles from "./landing.module.css";
 
 export function LandingPage() {
-  const { ordered: published } = getPublishedContext(regionalData);
+  const { ordered: published, median } = getPublishedContext(regionalData);
   const sample = published.length <= 3
     ? published
     : [published[0], published[Math.floor(published.length / 2)], published[published.length - 1]];
   return (
     <main className={styles.page}>
-      <LandingHero />
+      <LandingHero published={published} median={median} />
       <section className={`civx-container ${styles.previewSection}`} aria-labelledby="preview-title">
         <div className={styles.sectionHeading}>
           <div><span className="civx-eyebrow">Open a regional record</span><h2 id="preview-title">Across the published release</h2></div>
           <Link className="civx-text-link" href="/explore">Explore all {published.length} scored regions ↗</Link>
         </div>
-        <p className={styles.previewIntro}>{published.length > 3 ? "A small sample of published results, from higher through middle to lower modeled pressure." : "Browse the scored records in this release."} CIVX scores are descriptive modeled values, not official BPS rankings.</p>
+        <p className={styles.previewIntro}>{published.length > 3 ? "Three records spanning the published score range. Open a record to inspect the observations behind its score." : "Open a scored record to inspect its observations and sources."}</p>
         <div className={styles.previewGrid}>
           {sample.map((region) => (
             <Link className={styles.previewCard} href={`/regions/${region.id}`} key={region.id}>
@@ -26,7 +27,7 @@ export function LandingPage() {
               <h3>{region.name}</h3>
               <div className={styles.previewResult}>
                 <strong>{region.civicIndex.status === "available" ? region.civicIndex.score.toFixed(2) : "—"} <small>/ 100</small></strong>
-                <span>{region.category ? `${region.category} relative pressure` : "Score unavailable"}</span>
+                <PressureBadge category={region.category ?? undefined} />
               </div>
               <span className={styles.previewLink}>View regional record <span aria-hidden="true">↗</span></span>
             </Link>

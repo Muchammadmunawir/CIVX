@@ -1,8 +1,10 @@
 import Link from "next/link";
+import { PressureBadge } from "@/components/data/pressure-badge";
 import type { RegionalData } from "@/lib/civx/types";
 import styles from "@/components/explore/explore.module.css";
 
 const decimal = new Intl.NumberFormat("en-US", { maximumFractionDigits: 2 });
+const scoreFormat = new Intl.NumberFormat("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
 export function RegionList({
   regions,
@@ -14,60 +16,59 @@ export function RegionList({
   publishedCount: number;
 }) {
   return (
-    <ul className={styles.regionList} aria-label="Published regional Civic Index results">
-      {regions.map((region) => (
-        <li id={`region-${region.id}`} key={region.id}>
-          <Link className={styles.regionCard} href={`/regions/${region.id}`} aria-label={`Open ${region.name} regional record`}>
-            <article>
-              <div className={styles.cardTop}>
-                <span className={styles.cardEyebrow}>{region.province} <span aria-hidden="true">/</span> ID {region.id}</span>
-                <span className={styles.cardYear}>{region.period}</span>
-              </div>
-              <div className={styles.cardHeading}>
-                <div>
-                  <h3>{region.name}</h3>
-                  <span className={styles.category}>{region.category ? `${region.category} relative pressure` : "Score unavailable"}</span>
+    <ul className={styles.regionList} aria-label="Regional Civic Index results">
+      {regions.map((region) => {
+        const result = region.civicIndex;
+        const position = positionById.get(region.id);
+        const preview = result.status === "available"
+          ? result.components.reduce<(typeof result.components)[number] | undefined>(
+            (highest, component) => !highest || component.score > highest.score ? component : highest,
+            undefined,
+          )
+          : undefined;
+        return (
+          <li id={`region-${region.id}`} key={region.id}>
+            <Link className={styles.regionCard} href={`/regions/${region.id}`} scroll={false}>
+              <article>
+                <div className={styles.cardTop}>
+                  <span className={styles.cardId}>ID {region.id} · {region.period}</span>
+                  <span className={styles.positionNote}>
+                    {position !== undefined ? `Position ${position} / ${publishedCount}` : "No release position"}
+                  </span>
                 </div>
-                <div className={styles.cardScore}>
-                  <strong>{region.civicIndex.status === "available" ? decimal.format(region.civicIndex.score) : "—"}</strong>
-                  <span>CIVX score / 100</span>
-                </div>
-              </div>
-              {region.civicIndex.status === "available" ? (
-                <>
-                  <div className={styles.scoreContext}>
-                    <span className={styles.scoreTrack} aria-hidden="true"><span style={{ width: `${region.civicIndex.score}%` }} /></span>
-                    {publishedCount >= 3 && positionById.has(region.id) && (
-                      <span className={styles.positionNote}>CIVX model position {positionById.get(region.id)} of {publishedCount} published scores</span>
-                    )}
+                <div className={styles.cardHeading}>
+                  <div>
+                    <h3>{region.name}</h3>
+                    <PressureBadge category={region.category} />
                   </div>
-                  <div className={styles.indicators}>
-                    <div className={styles.indicatorsHeading}>
-                      <span>2023 indicator preview</span>
-                      <span>Observation / normalized pressure</span>
+                  <div className={styles.cardScore}>
+                    {result.status === "available"
+                      ? <strong>{scoreFormat.format(result.score)}</strong>
+                      : <span className={styles.unavailableScore}>—</span>}
+                    <span>{result.status === "available" ? "CIVX / 100" : "Score unavailable"}</span>
+                  </div>
+                </div>
+                {preview ? (
+                  <div className={styles.indicatorPreview}>
+                    <span className={styles.previewLabel}>Highest indicator pressure</span>
+                    <div>
+                      <span>{preview.label}</span>
+                      <strong>{decimal.format(preview.value)} {preview.unit}</strong>
                     </div>
-                    <ul className={styles.indicatorList} aria-label={`Indicators for ${region.name}`}>
-                      {region.civicIndex.components.map((component) => (
-                        <li className={styles.indicator} key={component.indicatorId}>
-                          <span className={styles.indicatorLabel}>{component.label}</span>
-                          <span className={styles.indicatorValue}>{decimal.format(component.value)} {component.unit}</span>
-                          <span className={styles.indicatorScore}>{decimal.format(component.score)}/100</span>
-                        </li>
-                      ))}
-                    </ul>
+                    <p>Normalized pressure {scoreFormat.format(preview.score)}/100</p>
                   </div>
-                </>
-              ) : (
-                <p className={styles.missingReason}>{region.civicIndex.reason}</p>
-              )}
-              <div className={styles.cardFoot}>
-                <span>View record, calculation &amp; BPS sources</span>
-                <span aria-hidden="true">↗</span>
-              </div>
-            </article>
-          </Link>
-        </li>
-      ))}
+                ) : result.status === "unavailable" ? (
+                  <p className={styles.missingReason}>{result.reason}</p>
+                ) : null}
+                <div className={styles.cardFoot}>
+                  <span>Open record &amp; sources</span>
+                  <span aria-hidden="true">↗</span>
+                </div>
+              </article>
+            </Link>
+          </li>
+        );
+      })}
     </ul>
   );
 }

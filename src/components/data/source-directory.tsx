@@ -34,12 +34,12 @@ export function SourceDirectory({ indicators, sources, publication }: SourceDire
                     <div><dt>Table</dt><dd className="civx-mono">{source.table}</dd></div>
                     <div><dt>Page</dt><dd className="civx-mono">{source.page}</dd></div>
                     <div><dt>Unit</dt><dd>{indicator.unit}</dd></div>
+                    <div><dt>Reference period</dt><dd>{source.referencePeriod}</dd></div>
                     <div><dt>Original link</dt><dd><a className={styles.sourceLink} href={source.url} target="_blank" rel="noopener noreferrer" aria-label={`Open BPS publication for ${indicator.label} (opens in a new tab)`}>View publication <span aria-hidden="true">↗</span></a></dd></div>
                   </dl>
                   <details className={styles.technical}>
-                    <summary>Survey window &amp; artifact record</summary>
+                    <summary>Source identifier &amp; PDF fingerprint</summary>
                     <dl>
-                      <div><dt>Reference period</dt><dd>{source.referencePeriod}</dd></div>
                       <div><dt>Source record</dt><dd className="civx-mono">{source.id}</dd></div>
                       <div><dt>PDF SHA-256</dt><dd className="civx-mono">{source.artifactId.slice(7)}</dd></div>
                       <div><dt>Accessed</dt><dd className="civx-mono">{source.accessedAt}</dd></div>

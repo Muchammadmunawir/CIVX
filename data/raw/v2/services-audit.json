@@ -1,0 +1,278 @@
+{
+  "auditedAt": "2026-10-27",
+  "candidates": [
+    {
+      "id": "poverty",
+      "label": "Persentase penduduk miskin",
+      "institution": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "sourceUrl": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "years": [
+        2023
+      ],
+      "coverage": "All 27 Jawa Barat kabupaten/kota: 18 kabupaten (3201–3218) and nine kota (3271–3279); 27 actual 2023 values inspected, with kabupaten and kota kept distinct.",
+      "classification": "core",
+      "status": "available",
+      "unit": "%",
+      "definition": "Share of persons whose monthly per-capita expenditure falls below the local BPS food and non-food poverty line. Source already publishes the percentage; do not divide poor-person counts by a different population projection.",
+      "reason": "All 27 existing v1 percentages independently matched to table 4.6.2. Higher poverty denotes greater basic-needs deprivation; no scoring applied.",
+      "limitations": [
+        "Regional aggregates do not identify within-region inequality; no missing values filled or imputed.",
+        "Table 4.6.2 labels 2023 only; March reference is corroborated by the chapter narrative, not printed in every district row.",
+        "Susenas survey estimates have sampling uncertainty; yearbook does not provide district standard errors here.",
+        "Local poverty lines differ with local consumption needs and prices."
+      ],
+      "evidence": [
+        "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html — 4.6.2; printed 307 / PDF 383, percentage 2023 column (7)",
+        "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html — technical notes items 5–6; printed 160 / PDF 236",
+        "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html — poverty chapter narrative; printed 163 / PDF 239, March 2023",
+        "data/raw/civx-jabar-2023.json — immutable v1 observation/source reference; 27 values matched without rewriting"
+      ]
+    },
+    {
+      "id": "unemployment",
+      "label": "Tingkat Pengangguran Terbuka (TPT)",
+      "institution": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "sourceUrl": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "years": [
+        2023
+      ],
+      "coverage": "All 27 Jawa Barat kabupaten/kota: 18 kabupaten (3201–3218) and nine kota (3271–3279); 27 actual 2023 values inspected, with kabupaten and kota kept distinct.",
+      "classification": "core",
+      "status": "available",
+      "unit": "%",
+      "definition": "Unemployed persons as a percentage of the labour force aged 15 years and over, from August 2023 Sakernas. Denominator is economically active persons, not all residents.",
+      "reason": "All 27 existing v1 TPT values independently matched to table 3.2.16, 2023 TPT column. Higher TPT denotes greater open-unemployment burden; no scoring applied.",
+      "limitations": [
+        "Regional aggregates do not identify within-region inequality; no missing values filled or imputed.",
+        "TPT excludes people outside the labour force; low TPT does not prove adequate employment, wages, hours, or job quality.",
+        "2023 TPT uses SP2020 population-projection weights; do not mix alternative survey waves or weights.",
+        "District survey standard errors are not supplied in this table."
+      ],
+      "evidence": [
+        "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html — 3.2.16; printed 147 / PDF 223, TPT 2023 column (4), August Sakernas source and weighting note",
+        "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html — technical notes items 12–14; printed 102–103 / PDF 178–179, working-age and labour-force concepts",
+        "data/raw/civx-jabar-2023.json — 27 immutable v1 values independently matched"
+      ]
+    },
+    {
+      "id": "hdi",
+      "label": "Indeks Pembangunan Manusia (IPM)",
+      "institution": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "sourceUrl": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "years": [
+        2023
+      ],
+      "coverage": "All 27 Jawa Barat kabupaten/kota: 18 kabupaten (3201–3218) and nine kota (3271–3279); 27 actual 2023 values inspected, with kabupaten and kota kept distinct.",
+      "classification": "core",
+      "status": "available",
+      "unit": "index points",
+      "definition": "BPS human-development composite covering long and healthy life, education, and adjusted per-capita expenditure. This 2020–2023 series uses life expectancy from Long Form SP2020.",
+      "reason": "All 27 existing v1 IPM values independently matched to table 4.6.5. Lower IPM indicates greater human-development shortfall; no scoring applied.",
+      "limitations": [
+        "Regional aggregates do not identify within-region inequality; no missing values filled or imputed.",
+        "IPM already combines education, health and expenditure; adding component indicators can double-count the same dimensions.",
+        "Do not mix with older IPM series using a different life-expectancy base.",
+        "Composite outcome is not a direct measure of current public-service access."
+      ],
+      "evidence": [
+        "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html — 4.6.5; printed 311 / PDF 387, 2023 column (5) and LF SP2020 note",
+        "https://app-diskes.jabarprov.go.id/drive/s/TyZTzEqnm5TfrM4/download/Profil%20Kesehatan%20Jawa%20Barat%20Tahun%202023.pdf — printed 8 / PDF 25, human-development dimensions and geometric-mean method",
+        "data/raw/civx-jabar-2023.json — 27 immutable v1 values independently matched"
+      ]
+    },
+    {
+      "id": "sanitation",
+      "label": "Akses rumah tangga terhadap sanitasi layak",
+      "institution": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "sourceUrl": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "years": [
+        2023
+      ],
+      "coverage": "All 27 Jawa Barat kabupaten/kota: 18 kabupaten (3201–3218) and nine kota (3271–3279); 27 actual 2023 values inspected, with kabupaten and kota kept distinct.",
+      "classification": "core",
+      "status": "available",
+      "unit": "%",
+      "definition": "Percentage of households with improved sanitation, not safely managed sanitation. Contemporary 2023 Susenas methodological notes define own/shared/communal facilities, goose-neck toilets, and septic tank or wastewater treatment; rural earth pits are also included under the 2019 national concept.",
+      "reason": "All 27 existing v1 values independently matched to table 4.3.8. Lower improved-sanitation coverage indicates greater household-service shortfall; no scoring applied.",
+      "limitations": [
+        "Regional aggregates do not identify within-region inequality; no missing values filled or imputed.",
+        "Household share, not population share; English yearbook title says household population, while Indonesian title explicitly identifies rumah tangga.",
+        "Yearbook table identifies Susenas and year only, without district sampling errors or the full operational rule.",
+        "Operational rule cross-checked in BPS Jawa Timur 2023 Susenas methodology, a national-concept explanation rather than an independent Jawa Barat observation source.",
+        "Improved sanitation does not establish safe containment, desludging, treatment, or compliance with safely managed sanitation."
+      ],
+      "evidence": [
+        "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html — 4.3.8; printed 261 / PDF 337, 2023 column (6), Susenas source",
+        "https://web-api.bps.go.id/download.php?f=CASiYmXQqaM7PyJgl18DHHhCbjJSdFBKa2MrU284ZldHUGh6eGl4cWtCRmJyTUYvRS96d1I3bjd6c1BENmRaS1EwYVZPUUs3blp6UHc1SG4vQWFrV3VSREZPRFBIUXUyazE3YnE5aHNhcjk0TDhtUk85bm12QTl1YW90azB4YmI2SXNheUp4cElLczNiM3ZLQXdseTlSZ2ErUWlVTkZvVlJMUC9lQVBBTWVsczJEdlVVZTcyNUwzMnkyaFpZRk9pbnFFd1RrZzNzSDJGNnYvRndGRzh2ZG8wQzRNRVVUOTZCbFRCcGVpU0ZzWXJETGs2Z083ZzJjUGluTkgrcEhveVMwN2E4OCswR2t6TE5nQmtKaXNXeHJCaGFxS0RWWjZxcUVRcXM1QWl2eVRNUGVhZExmWWgvWFpFTmVBPQ%3D%3D — Statistik Perumahan dan Pemukiman Provinsi Jawa Timur 2023, printed 9 / PDF 23; Surat Bappenas 661/Dt.2.4/01/2019 concept",
+        "data/raw/civx-jabar-2023.json — 27 immutable v1 values independently matched"
+      ]
+    },
+    {
+      "id": "drinking_water",
+      "label": "Akses rumah tangga terhadap sumber air minum layak",
+      "institution": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "sourceUrl": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "years": [
+        2023
+      ],
+      "coverage": "All 27 Jawa Barat kabupaten/kota: 18 kabupaten (3201–3218) and nine kota (3271–3279); 27 actual 2023 values inspected, with kabupaten and kota kept distinct.",
+      "classification": "core",
+      "status": "available",
+      "unit": "%",
+      "definition": "Percentage of households with access to an improved drinking-water source. Contemporary 2023 Susenas notes identify piped/protected water; bottled/refill-water households qualify when their bathing/washing source is also improved. This is improved-source access, not laboratory-tested drinking-water safety.",
+      "reason": "All 27 official 2023 values transcribed from table 4.3.9, 2023 column (5). Lower improved-source coverage indicates greater basic-service shortfall; no scoring applied.",
+      "limitations": [
+        "Regional aggregates do not identify within-region inequality; no missing values filled or imputed.",
+        "Households are the denominator, not persons, piped-water customers, or water-service connections.",
+        "Yearbook table labels 2023 Susenas only; no within-year survey date or standard errors are given in this table.",
+        "Operational rule cross-checked in contemporary BPS Jawa Timur 2023 Susenas methodology under the national 2019 Bappenas concept; that publication supplies definitions only, not Jawa Barat values.",
+        "Do not apply the older SIRUSA indicator 1002615 (created 2015, associated activity 2002), which explicitly excludes bottled water and differs from the contemporary 2023 operational concept.",
+        "Improved-source access does not establish safe quality, reliability, affordability, travel time, or safely managed water."
+      ],
+      "evidence": [
+        "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html — 4.3.9; printed 262 / PDF 338, 2023 column (5); 18 kabupaten then nine kota; Susenas source",
+        "https://web-api.bps.go.id/download.php?f=CASiYmXQqaM7PyJgl18DHHhCbjJSdFBKa2MrU284ZldHUGh6eGl4cWtCRmJyTUYvRS96d1I3bjd6c1BENmRaS1EwYVZPUUs3blp6UHc1SG4vQWFrV3VSREZPRFBIUXUyazE3YnE5aHNhcjk0TDhtUk85bm12QTl1YW90azB4YmI2SXNheUp4cElLczNiM3ZLQXdseTlSZ2ErUWlVTkZvVlJMUC9lQVBBTWVsczJEdlVVZTcyNUwzMnkyaFpZRk9pbnFFd1RrZzNzSDJGNnYvRndGRzh2ZG8wQzRNRVVUOTZCbFRCcGVpU0ZzWXJETGs2Z083ZzJjUGluTkgrcEhveVMwN2E4OCswR2t6TE5nQmtKaXNXeHJCaGFxS0RWWjZxcUVRcXM1QWl2eVRNUGVhZExmWWgvWFpFTmVBPQ%3D%3D — printed 10 / PDF 24, improved-water rule and bottled/refill-water bathing/washing condition; printed 5 / PDF 19, Susenas March 2023 methodology",
+        "https://sirusa.web.bps.go.id/metadata/indikator/3a02b430-cac6-1e0a-2de1-c11b91b95fcd — older metadata inspected and not substituted for 2023 methodology"
+      ]
+    },
+    {
+      "id": "puskesmas_count",
+      "label": "Jumlah Puskesmas",
+      "institution": "Dinas Kesehatan Provinsi Jawa Barat, reproduced by Badan Pusat Statistik Provinsi Jawa Barat",
+      "sourceUrl": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "years": [
+        2023
+      ],
+      "coverage": "All 27 Jawa Barat kabupaten/kota: 18 kabupaten (3201–3218) and nine kota (3271–3279); 27 actual 2023 values inspected, with kabupaten and kota kept distinct.",
+      "classification": "context",
+      "status": "available",
+      "unit": "facilities",
+      "definition": "Total Puskesmas facilities, with and without inpatient care, as published for 2023. Excludes Puskesmas pembantu, mobile units, private primary clinics, Posyandu, and hospitals.",
+      "reason": "All 27 published total counts verified; sum is 1,106, matching the provincial total. Raw counts support the separately documented per-population ratio but do not measure actual access.",
+      "limitations": [
+        "Regional aggregates do not identify within-region inequality; no missing values filled or imputed.",
+        "Absolute counts scale with region size and population and have no defensible standalone deprivation direction.",
+        "Exact facility inventory date is not stated.",
+        "Facility numbers do not measure staffing, opening hours, workload, distance, service quality, or utilization.",
+        "Inpatient/non-inpatient categories change in some rows; use the published total, not an assumed stable facility category."
+      ],
+      "evidence": [
+        "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html — 4.2.7; printed 235–237 / PDF 311–313; total 2023 column (11), PDF 312; Dinas Kesehatan source on PDF 313",
+        "https://app-diskes.jabarprov.go.id/drive/s/TyZTzEqnm5TfrM4/download/Profil%20Kesehatan%20Jawa%20Barat%20Tahun%202023.pdf — printed 12 / PDF 30, Puskesmas primary-care and public-health role; appendix table 4 / PDF 183, 280 inpatient + 826 non-inpatient facilities"
+      ]
+    },
+    {
+      "id": "puskesmas_per_100k",
+      "label": "Ketersediaan Puskesmas per 100.000 penduduk",
+      "institution": "Dinas Kesehatan Provinsi Jawa Barat, reproduced by Badan Pusat Statistik Provinsi Jawa Barat",
+      "sourceUrl": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "years": [
+        2023
+      ],
+      "coverage": "All 27 Jawa Barat kabupaten/kota: 18 kabupaten (3201–3218) and nine kota (3271–3279); 27 actual 2023 values inspected, with kabupaten and kota kept distinct.",
+      "classification": "context",
+      "status": "available",
+      "unit": "facilities per 100,000 population",
+      "definition": "Derived facility availability: published 2023 total Puskesmas count / 2023 population in exact persons from health-profile appendix table 1 * 100000. Population counts match the SP2020-based yearbook projection series rounded to 0.01 thousand.",
+      "reason": "Both numerator and denominator have all 27 regions and year 2023. Every derived row identifies the exact denominator and source. Keep as context: facility availability is not observed primary-healthcare access, and a single deprivation direction ignores catchment geography and other providers.",
+      "limitations": [
+        "Regional aggregates do not identify within-region inequality; no missing values filled or imputed.",
+        "This transparent derived ratio is not a claim to reproduce the health profile narrative ratio, which uses conflicting population figures.",
+        "Health-profile table 1 population source names BPS and Kementerian Kesehatan; yearbook identifies the corroborating 2020–2035 SP2020 projection series. No exact within-year date is supplied in the appendix.",
+        "BPS annual resident-population denominator differs conceptually from patient catchments, daytime population, and cross-boundary utilization.",
+        "Same-year count and population do not establish matched census dates.",
+        "A rural region may need more facilities per resident to meet travel-distance needs; private clinics and hospitals can substitute for urban residents."
+      ],
+      "evidence": [
+        "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html — 4.2.7; printed 236 / PDF 312, total 2023 column (11)",
+        "https://app-diskes.jabarprov.go.id/drive/s/TyZTzEqnm5TfrM4/download/Profil%20Kesehatan%20Jawa%20Barat%20Tahun%202023.pdf — appendix table 1 / PDF 180, exact population column (7); printed 2 / PDF 19, different narrative population figure I.1; printed 15–16 / PDF 33–34, narrative ratio context",
+        "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html — 3.1.1; population printed 111 / PDF 187, footnote 2 and projection basis printed 115 / PDF 191"
+      ]
+    },
+    {
+      "id": "dbd_incidence",
+      "label": "Angka kesakitan DBD per 100.000 penduduk",
+      "institution": "Dinas Kesehatan Provinsi Jawa Barat, reproduced by Badan Pusat Statistik Provinsi Jawa Barat",
+      "sourceUrl": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "years": [
+        2023
+      ],
+      "coverage": "All 27 Jawa Barat kabupaten/kota: 18 kabupaten (3201–3218) and nine kota (3271–3279); 27 actual 2023 values inspected, with kabupaten and kota kept distinct.",
+      "classification": "context",
+      "status": "not_comparable",
+      "unit": "cases per 100,000 population",
+      "definition": "Publisher-reported annual 2023 dengue haemorrhagic fever incidence per 100,000 population, taken verbatim from the explicitly labelled DBD column. Not case count, case fatality, malaria incidence, or all dengue infection prevalence.",
+      "reason": "All 27 published rates exist and their units are explicit, but core comparability fails: the population base cannot be reconciled with official 2023 cases and available population counts. Preserve rates only as published context; do not compute or score a replacement rate.",
+      "limitations": [
+        "Regional aggregates do not identify within-region inequality; no missing values filled or imputed.",
+        "Bogor: health-profile table 72 reports 1,881 cases, while table 1 reports 5,627,021 people. Their ratio gives 33.42798969472479 per 100,000, not the published 31.",
+        "Province: 19,328 cases / 49,860,330 people * 100000 = 38.76428415134838, not the published 38; do not infer an unreported population base or rounding rule.",
+        "Health-profile narrative figure I.1 uses different district population counts than its appendix table 1; even narrative district populations do not reconcile all published rates.",
+        "Disease surveillance reflects diagnosis and reporting as well as transmission; stronger case detection can raise recorded incidence.",
+        "Higher published incidence describes disease burden, not necessarily worse municipal governance or weaker healthcare.",
+        "Units are not ambiguous here, but population-vintage/denominator comparability remains unresolved. No core classification and no imputation."
+      ],
+      "evidence": [
+        "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html — 4.2.6; printed 233–234 / PDF 309–310; DBD column (7) explicitly per 100,000 population",
+        "https://app-diskes.jabarprov.go.id/drive/s/TyZTzEqnm5TfrM4/download/Profil%20Kesehatan%20Jawa%20Barat%20Tahun%202023.pdf — appendix table 72 / PDF 271, 2023 cases including hospital-found cases; Bogor 1,881 and province 19,328",
+        "https://app-diskes.jabarprov.go.id/drive/s/TyZTzEqnm5TfrM4/download/Profil%20Kesehatan%20Jawa%20Barat%20Tahun%202023.pdf — appendix table 1 / PDF 180, exact population; narrative printed 2 / PDF 19, conflicting district populations",
+        "https://app-diskes.jabarprov.go.id/drive/s/TyZTzEqnm5TfrM4/download/Profil%20Kesehatan%20Jawa%20Barat%20Tahun%202023.pdf — printed 105–107 / PDF 127–129, annual incidence interpretation and published rate confirmation"
+      ]
+    },
+    {
+      "id": "population",
+      "label": "Penduduk sebagai penyebut dan konteks",
+      "institution": "Badan Pusat Statistik Provinsi Jawa Barat; exact counts reproduced in Dinas Kesehatan appendix",
+      "sourceUrl": "https://app-diskes.jabarprov.go.id/drive/s/TyZTzEqnm5TfrM4/download/Profil%20Kesehatan%20Jawa%20Barat%20Tahun%202023.pdf",
+      "years": [
+        2023
+      ],
+      "coverage": "All 27 Jawa Barat kabupaten/kota: 18 kabupaten (3201–3218) and nine kota (3271–3279); 27 actual 2023 values inspected, with kabupaten and kota kept distinct.",
+      "classification": "context",
+      "status": "available",
+      "unit": "persons",
+      "definition": "2023 resident population in exact persons from health-profile appendix table 1. The 27 counts match the yearbook table 3.1.1 SP2020-based Jawa Barat population projections 2020–2035 when expressed in the yearbook unit of 0.01 thousand persons.",
+      "reason": "All 27 exact counts acquired; total is 49,860,330. Retain this explicit projection-series denominator for Puskesmas availability. Population size alone is neither civic deprivation nor advantage.",
+      "limitations": [
+        "Regional aggregates do not identify within-region inequality; no missing values filled or imputed.",
+        "Projection, not a new 2023 census or registered-population count.",
+        "The health-profile narrative figure I.1 differs from its appendix; do not mix the versions.",
+        "Exact persons are as published in the appendix, not extra precision inferred from the rounded yearbook.",
+        "The appendix does not state the exact within-year reference date; do not label June or December without further evidence.",
+        "This denominator cannot be assumed to underlie DBD incidence, poverty estimates, TPT, or household access percentages."
+      ],
+      "evidence": [
+        "https://app-diskes.jabarprov.go.id/drive/s/TyZTzEqnm5TfrM4/download/Profil%20Kesehatan%20Jawa%20Barat%20Tahun%202023.pdf — appendix table 1 / PDF 180, population column (7), all 27 rows and 49,860,330 total",
+        "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html — 3.1.1; population printed 111 / PDF 187, units thousand; source/footnote 2 printed 115 / PDF 191",
+        "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html — technical notes items 4–6; printed 100–101 / PDF 176–177, SP2020-based district projections and resident concept",
+        "https://app-diskes.jabarprov.go.id/drive/s/TyZTzEqnm5TfrM4/download/Profil%20Kesehatan%20Jawa%20Barat%20Tahun%202023.pdf — printed 2 / PDF 19, alternative narrative population figures not used"
+      ]
+    },
+    {
+      "id": "population_density",
+      "label": "Kepadatan penduduk",
+      "institution": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "sourceUrl": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "years": [
+        2023
+      ],
+      "coverage": "All 27 Jawa Barat kabupaten/kota: 18 kabupaten (3201–3218) and nine kota (3271–3279); 27 actual 2023 values inspected, with kabupaten and kota kept distinct.",
+      "classification": "context",
+      "status": "available",
+      "unit": "persons per km²",
+      "definition": "Official 2023 population density per square kilometre, using yearbook population projections and administrative areas under Kepmendagri 100.1.1-6117 Tahun 2022. The superscript 5 after km in the PDF header is an area-basis footnote, not a fifth-power unit.",
+      "reason": "All 27 published 2023 densities acquired directly. Keep as settlement context: high density can support efficient services and create congestion or exposure; no single deprivation direction is defensible.",
+      "limitations": [
+        "Regional aggregates do not identify within-region inequality; no missing values filled or imputed.",
+        "Use the yearbook administrative-area version consistently. Health-profile appendix densities use different area figures and must not be merged.",
+        "Density is an administrative-region average, not built-up-area crowding or household overcrowding.",
+        "Population is projected; units and boundaries differ from alternative density releases."
+      ],
+      "evidence": [
+        "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html — 3.1.1; printed 114 / PDF 190, 2023 density column (13); printed 115 / PDF 191, area footnote 5",
+        "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html — technical notes item 8; printed 101–102 / PDF 177–178, persons per square kilometre definition",
+        "https://app-diskes.jabarprov.go.id/drive/s/TyZTzEqnm5TfrM4/download/Profil%20Kesehatan%20Jawa%20Barat%20Tahun%202023.pdf — appendix table 1 / PDF 180, alternative areas/densities inspected and excluded"
+      ]
+    }
+  ]
+}
