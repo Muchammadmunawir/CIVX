@@ -15,7 +15,7 @@ export default function SourcesRoute() {
       <header className={styles.intro}>
         <div className={styles.introCopy}>
           <span className="civx-eyebrow">Sources / {release.period}</span>
-          <h1>Follow the evidence<span className={styles.accent}>.</span></h1>
+          <h1>Follow the evidence</h1>
           <p className={styles.lead}>Every indicator points back to its published BPS table. Find the year, unit, page, and original publication in one place.</p>
           <p className={styles.release}>CIVX release {release.releaseId} <span aria-hidden="true">·</span> {release.methodology.indicators.length} cited indicator tables</p>
         </div>
@@ -30,13 +30,24 @@ export default function SourcesRoute() {
           </dl>
         </div>
       </header>
+      <nav className={styles.contents} aria-label="On this page">
+        <span>On this page</span>
+        <a href="#source-table-heading">Indicator catalog</a>
+        <a href="#source-artifact-heading">Publication fingerprint</a>
+        <Link href="/explore">Explore results <span aria-hidden="true">↗</span></Link>
+      </nav>
 
       <section className={styles.section} aria-labelledby="source-table-heading">
         <div className={styles.sectionHeading}>
           <span className="civx-eyebrow">01 / Data catalog</span>
           <h2 id="source-table-heading">Four indicators, four cited tables</h2>
-          <p>Publication, organization, data year, table and page, unit, and original link appear on each record. Expand a record for its survey window and preserved fingerprint.</p>
+          <p>Each record keeps the publication, organization, year, table, page, unit, and survey window together. Expand its artifact record to inspect the source identifier, access date, and PDF fingerprint.</p>
         </div>
+        <nav className={styles.indicatorNav} aria-label="Jump to an indicator source">
+          {release.methodology.indicators.map((indicator) => (
+            <a key={indicator.id} href={`#source-${indicator.id}`}>{indicator.label}</a>
+          ))}
+        </nav>
         <SourceDirectory indicators={release.methodology.indicators} sources={release.sources} publication={release.artifact.publication} />
       </section>
 

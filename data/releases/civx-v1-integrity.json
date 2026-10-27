@@ -1,0 +1,16 @@
+{
+  "releaseId": "civx-jabar-2023-v1",
+  "modelVersion": "CIVX v1",
+  "capturedAt": "2026-10-27",
+  "files": {
+    "data/raw/civx-jabar-2023.json": "d57d83cab5602fcfa5a13d0331a0468cb252cc8a3d8c88803e812311173dbff1",
+    "data/methodology/civx-jabar-2023.json": "05bb6ab8b07d4a2320c533416510a6f71a80be2278ed4f023f33cd7c567fa157",
+    "data/processed/civx-jabar-2023.json": "786ae3cd84d913b7bd4dd3a607de97d892dd0db18b448de347dba6b2eca0c2f7",
+    "docs/METHODOLOGY.md": "408cbcc3e041228ec3f1a2950a9378d4f6b19c7225149fdfaba73fce7517e98f"
+  },
+  "restrictedArtifact": {
+    "path": "data/raw/bps-jabar-dalam-angka-2024.pdf",
+    "sha256": "500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81",
+    "redistribution": "Not included in the repository; original required for regeneration."
+  }
+}

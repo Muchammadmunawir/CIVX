@@ -32,7 +32,7 @@
 .identity h1 {
   margin: 1rem 0 .85rem;
   max-width: 13ch;
-  font-size: clamp(2.8rem, 5vw, 5.25rem);
+  font-size: clamp(2rem, 3vw, 3rem);
   font-weight: 680;
   letter-spacing: -.065em;
   line-height: 1.02;
@@ -54,8 +54,7 @@
 }
 
 .releaseNote {
-  margin: auto 0 0;
-  padding-top: 2rem;
+  margin: 1.25rem 0 0;
   max-width: 31ch;
   color: var(--muted);
   font-size: .88rem;
@@ -68,7 +67,7 @@
   background: var(--surface);
   border: 1px solid var(--line-strong);
   border-radius: .9rem;
-  box-shadow: 0 1.25rem 3rem rgba(0, 0, 0, .12);
+  box-shadow: none;
 }
 
 .resultLabel {
@@ -88,7 +87,7 @@
 .score {
   margin: .85rem 0 0;
   color: var(--ink);
-  font-size: clamp(3.5rem, 6vw, 6rem);
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
   line-height: 1;
   letter-spacing: -.075em;
   font-variant-numeric: tabular-nums;
@@ -101,18 +100,6 @@
   font-weight: 550;
 }
 
-.category {
-  display: block;
-  margin: 0;
-  padding-left: .85rem;
-  border-left: 3px solid var(--cobalt);
-  color: var(--cobalt);
-  font-size: clamp(1.25rem, 2.4vw, 2rem);
-  font-weight: 750;
-  letter-spacing: -.035em;
-  line-height: 1.2;
-  text-transform: capitalize;
-}
 
 .interpretation {
   margin: 1rem 0 0;
@@ -130,10 +117,11 @@
 
 .heroInsights {
   display: grid;
+  grid-column: 1 / -1;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: .75rem;
-  margin-top: 1.5rem;
-  padding-top: 1.2rem;
+  margin-top: 0;
+  padding-top: var(--space-4);
   border-top: 1px solid var(--line);
 }
 
@@ -150,11 +138,9 @@
 
 .heroInsight > span {
   color: var(--muted);
-  font-size: .68rem;
+  font-size: .75rem;
   font-weight: 700;
   line-height: 1.4;
-  letter-spacing: .06em;
-  text-transform: uppercase;
 }
 
 .heroInsight strong {
@@ -188,7 +174,7 @@
 .sectionHeading h2,
 .provenance h2 {
   margin: .32rem 0 0;
-  font-size: clamp(1.5rem, 2.6vw, 2.2rem);
+  font-size: clamp(1.4rem, 2.2vw, 1.8rem);
   line-height: 1.13;
   letter-spacing: -.045em;
 }
@@ -325,7 +311,7 @@
   border: 1px solid var(--line);
   border-radius: .8rem;
   background: var(--surface);
-  transition: border-color .2s ease, box-shadow .2s ease;
+  transition: border-color var(--duration-standard) var(--ease-standard), background-color var(--duration-standard) var(--ease-standard);
 }
 
 .indicatorTop {
@@ -380,7 +366,7 @@
 .metrics dt {
   min-height: 2.7em;
   color: var(--muted);
-  font-size: .68rem;
+  font-size: .75rem;
   line-height: 1.35;
 }
 
@@ -454,9 +440,7 @@
   margin: 0 0 .45rem;
   color: var(--muted);
   font-size: .72rem;
-  font-weight: 700;
-  letter-spacing: .06em;
-  text-transform: uppercase;
+  font-weight: 650;
 }
 
 .sources ul {
@@ -504,6 +488,7 @@
   color: var(--muted);
   font-size: .86rem;
   line-height: 1.65;
+  overflow-wrap: anywhere;
 }
 
 @media (max-width: 1050px) {
@@ -530,18 +515,9 @@
 
 .indicator:hover {
   border-color: var(--line-strong);
-  box-shadow: 0 .75rem 2rem rgba(0, 0, 0, .1);
+  background: var(--panel-hover);
 }
 
-.barTrack span,
-.scaleFill {
-  animation: reveal-bar .55s ease-out both;
-  transform-origin: left;
-}
-
-@keyframes reveal-bar {
-  from { transform: scaleX(0); }
-}
 
 .readingGuide {
   margin: -.35rem 0 1rem;
@@ -554,6 +530,8 @@
   cursor: pointer;
   font-weight: 650;
   width: fit-content;
+  align-content: center;
+  min-height: var(--control-height);
 }
 
 .readingGuide summary:hover {
@@ -610,12 +588,19 @@
 
 
 @media (prefers-reduced-motion: reduce) {
-  .barTrack span,
-  .scaleFill {
-    animation: none;
-  }
-
   .indicator {
     transition: none;
   }
+}
+
+.contextual { padding: var(--space-6); }
+.contextual .hero { gap: var(--space-5); padding: var(--space-5); }
+.contextual .identity h1 { font-size: clamp(1.8rem, 3vw, 2.5rem); }
+.contextual .section { margin-top: var(--space-8); }
+.contextual .heroInsights { gap: var(--space-2); }
+.contextual .heroInsight { padding: var(--space-3); }
+.contextual .provenance { margin-top: var(--space-8); }
+@media (max-width: 620px) {
+  .contextual { padding: var(--space-4); }
+  .contextual .hero { padding: var(--space-4); }
 }

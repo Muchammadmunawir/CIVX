@@ -1,7 +1,7 @@
 # CIVX Product
 
 **Status:** Four-indicator 2023 Jawa Barat project release covers 27 complete kabupaten/kota records; independent review and publication-rights confirmation remain pending
-**Current presentation:** Existing Home and Explore surfaces display release-derived counts, search/sort, compact scores, indicator previews, score distribution and published median; region detail preserves sourced observations and contributions. This is broader geographic coverage under the same methodology, not a new index or official BPS ranking.
+**Current presentation:** Home introduces the 27-region release; Explore combines a compact analytical toolbar, theme-aware approximate 2020 ADM2 map and scannable regional records. Regional details open contextually above Explore while direct URLs remain standalone. Compare exposes named score and indicator differences with source context. Light, Dark and System themes, responsive navigation and reduced-motion interactions share one visual system. The analytical release and methodology remain unchanged.
 **Product:** CIVX (Civic Index)
 
 ## 1. Problem statement
@@ -72,15 +72,15 @@ These are product requirements, not an instruction to build the UI in this docum
 
 After the MVP has demonstrated reliable data and scoring:
 
-- interactive Java map with explicit data-coverage and boundary states;
-- region detail pages with trends, indicator histories, and source change notes;
-- side-by-side comparison of comparable regions and periods;
-- saved views and shareable release-specific links;
+- geographic exploration beyond the current Jawa Barat release, only after approved coverage and boundary review;
+- region detail histories and source-change notes for approved comparable periods;
+- comparison across additional approved periods; the current two-region same-release tool is already available;
+- saved analytical views; current regional URLs and comparison pairs are already shareable;
 - release-to-release change and revision explanations;
 - richer uncertainty and sensitivity exploration;
 - source update monitoring and data-quality alerts;
 - documented scenario analysis, if a defensible scenario model is approved;
-- accessibility, localization, and broader geography coverage.
+- formal accessibility evaluation, localization and broader approved geography coverage.
 
 Future features must not expand coverage or visual polish before the underlying data and methodology are trustworthy.
 
@@ -103,3 +103,16 @@ Future features must not expand coverage or visual polish before the underlying 
 - Whether the MVP shows an aggregate index, a dimension profile, or both.
 - Language and labels for unavailable, partial, low-confidence, and non-comparable results.
 - Product owner and methodology/data release approvers.
+
+## 10. Current interaction model
+
+Explore is the primary workspace. Its scope stays the 2023 Jawa Barat release: 27 published kabupaten/kota, four indicators, equal weights and fixed reference ranges. Search and category filtering affect the map and regional list; sort changes list order, not release positions or normalization. One indicator preview supports scanning; the shared regional record exposes the full breakdown and evidence.
+
+Opening a region from Explore dims the existing workspace and presents a substantial accessible dialog, or a near-fullscreen sheet on mobile. Closing preserves filters and context. Back closes and Forward reopens; refresh or direct access shows the standalone record. Explicit close animates; browser history remains immediate. The native dialog and explicit Tab wrap retain focus, Escape dismisses, background scrolling is locked and focus returns to the originating control.
+
+Theme preference is a compact header control, not a settings system. Light and Dark use intentional surface hierarchies and legible map boundaries; System follows OS changes. Preferences persist when local storage is permitted. Motion communicates inspection, selection, navigation and dismissal, not decorative scrolling; reduced motion preserves all actions without travel.
+
+Home remains an introduction and release snapshot rather than a second exploration workspace. Compare emphasizes descriptive numerical differences, never causes or significance. Methodology and Sources remain the evidence layer, with readable formulas, source-period and artifact details, section anchors and links back to the workspace.
+
+Remaining limits: approximate 2020 display boundaries are not certified 2023 geography; tiny city shapes are easier to select through the dropdown or regional list; formal assistive-technology review and sensitivity analysis are not complete. No confidence diagnostic, additional geography/year, authentication, recommendation system or new scoring method is introduced.
+

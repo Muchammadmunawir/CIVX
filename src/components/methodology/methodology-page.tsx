@@ -2,6 +2,16 @@ import Link from "next/link";
 import { release, regionalData } from "@/lib/civx/data";
 import styles from "./methodology-page.module.css";
 
+const sections = [
+  ["method-steps", "Calculation"],
+  ["method-why", "Indicators"],
+  ["method-direction", "Direction"],
+  ["method-normalization", "Formulas"],
+  ["method-weights", "Weights"],
+  ["method-missing", "Missing data"],
+  ["method-limits", "Limits"],
+] as const;
+
 export function MethodologyPage() {
   const { methodology } = release;
 
@@ -10,7 +20,7 @@ export function MethodologyPage() {
       <header className={styles.intro}>
         <div className={styles.introCopy}>
           <span className="civx-eyebrow">Methodology / {release.period}</span>
-          <h1>How the index is made<span className={styles.accent}>.</span></h1>
+          <h1>How the index is made</h1>
           <p className={styles.lead}>Four BPS observations become one 0–100 relative pressure score. See the path from published tables to the Civic Index.</p>
           <p className={styles.release}>Release {release.releaseId} <span aria-hidden="true">·</span> Method {methodology.methodologyVersion}</p>
         </div>
@@ -24,6 +34,10 @@ export function MethodologyPage() {
           <p className={styles.disclaimer}>CIVX is a project-defined analytical index using BPS observations. It is not an official BPS index.</p>
         </div>
       </header>
+      <nav className={styles.contents} aria-label="On this page">
+        <span>On this page</span>
+        <ul>{sections.map(([id, label]) => <li key={id}><a href={`#${id}`}>{label}</a></li>)}</ul>
+      </nav>
 
       <section className={styles.section} aria-labelledby="method-steps">
         <div className={styles.sectionHeading}>
@@ -57,6 +71,7 @@ export function MethodologyPage() {
                 <strong className="civx-mono">{indicator.minimum}–{indicator.maximum} {indicator.unit}</strong>
               </div>
               <p className={styles.extrema}>Min {indicator.minimumRegion} <span aria-hidden="true">·</span> Max {indicator.maximumRegion}</p>
+              <Link className={styles.indicatorSource} href={`/sources#source-${indicator.id}`}>Inspect the BPS source <span aria-hidden="true">↗</span></Link>
             </article>
           ))}
         </div>

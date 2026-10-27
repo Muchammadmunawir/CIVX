@@ -1,18 +1,20 @@
 # CIVX Architecture
 
-**Status:** 2023 Jawa Barat four-indicator release covers 27 complete regional records; source traceability and derived relative context available; map and historical expansion deferred
+**Status:** 2023 Jawa Barat four-indicator release covers 27 complete records; geographic display and same-release comparison available; boundary crosswalk review and later periods deferred
 
-## 1. Existing project baseline
+## 1. Application baseline
 
-The repository is a small Next.js + TypeScript starter project:
+The current application is a Next.js App Router interface over a validated, versioned 2023 release:
 
 - Next `16.4.2`;
 - React `19.3.0` and React DOM `19.3.0`;
 - TypeScript with `strict: true`, `noEmit: true`, and the `@/*` path alias to `src/*`;
 - Tailwind CSS and ESLint already present;
-- starter files under `src/app/`, with no CIVX data pipeline or Python code yet.
+- server-rendered Home, regional detail, comparison and evidence content;
+- small client boundaries for Explore interaction, active navigation, theme preference and contextual dialog lifecycle;
+- versioned raw transcription, fixed methodology, processed release and separately licensed display geometry.
 
-No packages are added by this foundation work. The target architecture below is a plan, not an assertion that the proposed directories or services already exist.
+No packages were added for the product-quality pass. The Python and storage sections below describe future expansion, not additional services required by this release.
 
 ## 2. Architectural decisions
 
@@ -123,7 +125,7 @@ data/                     # location to be decided; raw/processed/release artifa
 tests/                    # contract, data-quality, and methodology tests
 ```
 
-Whether `data/` lives in this repository, object storage, a database, or a separate pipeline repository is unresolved. The project must maintain one authoritative source of truth.
+The current release stores its versioned JSON in this repository. Future production storage, object storage and database decisions remain open; expansion must preserve one authoritative source of truth.
 
 ## 8. Future scalability
 
@@ -164,6 +166,21 @@ Scalability must not weaken provenance, reproducibility, or release review.
 - `data/methodology/civx-jabar-2023.json` fixes the all-27 2023 reference extrema, directions, and four equal weights. Expanding coverage did not change this policy.
 - `scripts/build-civic-release.mjs` checks artifact integrity, all 27 BPS geographic identities, source linkage, units, periods, and complete observations; it applies the shared scorer and writes `data/processed/civx-jabar-2023.json` with publication and exclusion counts.
 - `src/lib/civx/types.ts` defines release, source, observation, policy, component, and result contracts; `src/lib/civx/scoring.ts` handles normalization, missingness, provenance, and aggregation; `src/lib/civx/data.ts` validates the read boundary. `src/lib/civx/coverage.ts` describes published score ordering and median without refitting score ranges. UI components never calculate scores.
-- `/explore` searches and sorts published records and shows score context; `/regions/[id]` exposes the source-backed Civic Index, component breakdown, position and median among published records. `/methodology` and `/sources` explain calculation limits and citations. No map or added indicator is implied.
+- `/explore` filters and sorts published records alongside an accessible SVG map using a separately licensed, simplified 2020 ADM2 display subset; `/compare` restricts pairs to compatible published results; `/regions/[id]` exposes the source-backed Civic Index, components, relative position and published median. `/methodology` and `/sources` retain scoring and source context. Map geometry is not an analytical input, and its year mismatch is explicit in `docs/DATA.md` §9.
 
 All 27 have complete released scores; no exclusion is recorded for this dataset. External transcription/methodology review and permission assessment remain pending before a formal public release.
+
+## 12. Presentation system and contextual routing
+
+`src/app/globals.css` owns semantic theme roles for page/elevated/panel/hover surfaces, three text tiers, borders, CIVX blue accent states, pressure categories, success/warning, shadows, map states and backdrop. Spacing, radii, 44px control height, 140/200/300ms motion durations and a shared easing curve are also centralized. Existing brand-role variable names resolve to these tokens rather than defining separate palettes. `PressureBadge` is the small shared categorical primitive; the application does not introduce a general component library.
+
+The root layout runs a fixed synchronous theme bootstrap before visible content and suppresses hydration differences only on `<html>`, whose theme attributes the bootstrap owns. `ThemeToggle` uses `useSyncExternalStore` with a stable server snapshot; the local preference store handles local storage, denied storage, cross-tab updates and OS color-scheme changes. The server-rendered header isolates `usePathname` in a navigation island behind Suspense, which is required for fallback dynamic parameters with Cache Components.
+
+The Explore layout renders `children` beside its `@detail` slot. `src/app/explore/@detail/(..)regions/[id]/page.tsx` intercepts only soft navigation within Explore; `default.tsx` and the slot's null `page.tsx` cover inactive and return navigation. `/regions/[id]` stays the canonical standalone URL. Both routes render `src/components/regions/region-detail.tsx` on the server, using the same validated record and provenance.
+
+`RegionOverlay` owns only interaction: native `showModal`, focus cycling, origin restoration, scroll locking, backdrop/Escape/button dismissal and CSS exit completion before explicit `router.back()`. Browser Back remains immediate; Forward reactivates the same route. Next.js may retain routes through React Activity, so activation clears closing state, pending close completion is scoped to an activation, and regional label IDs distinguish cached records. The backdrop uses a 60% scrim; entry uses 16px translation and 0.97 scale, without blur or animation dependencies. Reduced motion removes travel and exit waiting.
+
+Explore retains its local filters, map inspection and selection while detail is open. Map SVG links keep real hrefs and modified-click behavior while ordinary activation uses the Next router. The selector and list remain equivalent non-map navigation. Approximate 2020 geoBoundaries geometry, credit, adaptation and CC BY 3.0 IGO licensing remain separate from the 2023 analytical release.
+
+Comparison remains server-rendered and uses the existing compatibility guard. Its presentation formats pairwise differences from the displayed released values, preserves units and source periods, and scales contribution bars from published weights. It does not normalize observations or calculate new Civic Index scores. Methodology and Sources add reading anchors without changing the method, source manifest or version.
+
