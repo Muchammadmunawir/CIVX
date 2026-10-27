@@ -1,0 +1,57 @@
+{
+  "status": "approved",
+  "releaseId": "civx-jabar-2023-v1",
+  "methodologyVersion": "civx-jabar-2023-equal4-v1",
+  "referenceSetId": "bps-jabar-27-kabkota-2023-revised-2024-02-29",
+  "period": "2023",
+  "indicators": [
+    {
+      "id": "poverty",
+      "label": "Poor residents",
+      "unit": "%",
+      "direction": "higher",
+      "minimum": 2.38,
+      "maximum": 12.13,
+      "minimumRegion": "Kota Depok",
+      "maximumRegion": "Kabupaten Indramayu",
+      "sourceId": "bps-jabar-poverty-2023",
+      "weight": 0.25
+    },
+    {
+      "id": "unemployment",
+      "label": "Open unemployment",
+      "unit": "%",
+      "direction": "higher",
+      "minimum": 1.52,
+      "maximum": 10.52,
+      "minimumRegion": "Kabupaten Pangandaran",
+      "maximumRegion": "Kota Cimahi",
+      "sourceId": "bps-jabar-unemployment-2023",
+      "weight": 0.25
+    },
+    {
+      "id": "hdi",
+      "label": "Human Development Index",
+      "unit": "index points",
+      "direction": "lower",
+      "minimum": 68.18,
+      "maximum": 83.29,
+      "minimumRegion": "Kabupaten Cianjur",
+      "maximumRegion": "Kota Bandung",
+      "sourceId": "bps-jabar-hdi-2023",
+      "weight": 0.25
+    },
+    {
+      "id": "sanitation",
+      "label": "Households with improved sanitation",
+      "unit": "%",
+      "direction": "lower",
+      "minimum": 44.76,
+      "maximum": 98.52,
+      "minimumRegion": "Kota Sukabumi",
+      "maximumRegion": "Kota Bekasi",
+      "sourceId": "bps-jabar-sanitation-2023",
+      "weight": 0.25
+    }
+  ]
+}

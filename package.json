@@ -2,10 +2,13 @@
   "name": "civx",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
+    "data:build": "node scripts/build-civic-release.mjs",
     "build": "next build",
     "start": "next start",
+    "test": "node --test tests/*.test.mjs",
     "lint": "eslint"
   },
   "dependencies": {

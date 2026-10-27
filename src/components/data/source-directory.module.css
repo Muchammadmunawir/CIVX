@@ -1,0 +1,223 @@
+.records {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.records > li {
+  min-width: 0;
+}
+
+.record {
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 0;
+  padding: clamp(18px, 2vw, 24px);
+}
+
+.recordIntro {
+  min-height: 116px;
+}
+
+.identity {
+  align-items: flex-start;
+  display: flex;
+  gap: 15px;
+  min-width: 0;
+}
+
+.identity > div {
+  min-width: 0;
+}
+
+.number {
+  background: var(--cobalt-soft);
+  border: 1px solid var(--line-strong);
+  color: var(--cobalt);
+  flex: none;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 12px;
+}
+
+.recordLabel {
+  color: var(--cobalt);
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.67rem;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.recordIntro h3 {
+  font-size: clamp(1.06rem, 1.7vw, 1.24rem);
+  font-weight: 650;
+  letter-spacing: -0.03em;
+  line-height: 1.26;
+  margin: 7px 0 6px;
+}
+
+.recordIntro p {
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.facts {
+  border-top: 1px solid var(--line-strong);
+  display: grid;
+  gap: 16px 12px;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  margin: 18px 0 0;
+  padding-top: 18px;
+}
+
+.facts > div,
+.technical dl > div {
+  min-width: 0;
+}
+
+.facts > div:nth-child(1),
+.facts > div:nth-child(2),
+.facts > div:nth-child(6),
+.facts > div:nth-child(7) {
+  grid-column: span 3;
+}
+
+.facts > div:nth-child(3),
+.facts > div:nth-child(4),
+.facts > div:nth-child(5) {
+  grid-column: span 2;
+}
+
+.facts dt,
+.technical dt {
+  color: var(--muted);
+  font-size: 0.67rem;
+  font-weight: 650;
+  letter-spacing: 0.055em;
+  line-height: 1.4;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.facts dd,
+.technical dd {
+  color: var(--ink);
+  font-size: 0.81rem;
+  line-height: 1.5;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.sourceLink {
+  color: var(--cobalt);
+  font-size: 0.81rem;
+  font-weight: 650;
+  text-decoration: underline;
+  text-decoration-color: var(--line-strong);
+  text-underline-offset: 3px;
+}
+
+.sourceLink:hover {
+  text-decoration-color: currentColor;
+}
+
+.technical {
+  border-top: 1px solid var(--line);
+  margin-top: 19px;
+  padding-top: 17px;
+}
+
+.technical summary {
+  color: var(--cobalt);
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 640;
+  line-height: 1.5;
+  width: fit-content;
+}
+
+.technical summary::marker {
+  color: var(--cobalt);
+}
+
+.technical summary:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.technical summary:focus-visible,
+.sourceLink:focus-visible {
+  outline: 2px solid var(--cobalt);
+  outline-offset: 4px;
+}
+
+.technical[open] summary {
+  margin-bottom: 16px;
+}
+
+.technical dl {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  display: grid;
+  gap: 14px 20px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+  padding: 16px;
+}
+
+.technical dd {
+  font-size: 0.76rem;
+}
+
+@media (max-width: 1050px) {
+  .records {
+    grid-template-columns: 1fr;
+  }
+
+  .recordIntro {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .record {
+    padding: 18px;
+  }
+
+  .identity {
+    gap: 11px;
+  }
+
+  .number {
+    padding: 10px;
+  }
+
+  .facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .facts > div:nth-child(n) {
+    grid-column: auto;
+  }
+
+  .facts > div:nth-child(1),
+  .facts > div:nth-child(2),
+  .facts > div:nth-child(7) {
+    grid-column: 1 / -1;
+  }
+
+  .technical dl {
+    grid-template-columns: 1fr;
+  }
+}
