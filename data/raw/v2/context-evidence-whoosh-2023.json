@@ -1,0 +1,30 @@
+{
+  "url": "https://setkab.go.id/en/president-jokowi-officiates-operation-of-whoosh-high-speed-train/",
+  "publisher": "Sekretariat Kabinet Republik Indonesia",
+  "title": "President Jokowi Officiates Operation of Whoosh High Speed Train",
+  "publishedAt": "2023-10-02",
+  "retrievedAt": "2026-10-27T09:04:24.424Z",
+  "recoveredAt": "2026-10-27",
+  "retrieval": {
+    "method": "Recovered exact excerpts from successful historical read tool result; no new HTTP fetch",
+    "sessionId": "ContextAdvantages",
+    "toolResultMessageId": "ed34f366",
+    "originalResponseSha256": null,
+    "checksumNote": "Historical output contained no response checksum; manifest hash identifies this excerpt snapshot, not original HTML."
+  },
+  "excerpts": [
+    {
+      "id": "operation",
+      "text": "President Joko “Jokowi” Widodo Monday (10/02) inaugurated the operation of the Jakarta-Bandung High Speed Train (KCJB), at KCJB Halim Station, East Jakarta."
+    },
+    {
+      "id": "location",
+      "text": "Following his remarks, President Jokowi pressed the siren button to mark the official inauguration of the KCJB. Afterward, President Jokowi and First Lady *Ibu* Iriana along with a limited entourage departed for Padalarang Station, West Bandung regency."
+    },
+    {
+      "id": "stops",
+      "text": "For the record, *Whoosh* is the first high-speed train in Indonesia and Southeast Asia that can travel up to 350 kilometers per hour. The train that connects Jakarta and Bandung runs for 142.3 kilometers and stops at four stations: Halim, Karawang, Padalarang, and Tegalluar."
+    }
+  ],
+  "redistribution": "Short attributed excerpts from an official public statement for research traceability; not a full-article mirror. No blanket reuse licence is asserted. Galura material is excluded."
+}

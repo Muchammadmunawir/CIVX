@@ -1,0 +1,30 @@
+{
+  "url": "https://setkab.go.id/en/president-jokowi-inaugurates-cisumdawu-toll-road/",
+  "publisher": "Sekretariat Kabinet Republik Indonesia",
+  "title": "President Jokowi Inaugurates Cisumdawu Toll Road",
+  "publishedAt": "2023-07-11",
+  "retrievedAt": "2026-10-27T09:04:57.199Z",
+  "recoveredAt": "2026-10-27",
+  "retrieval": {
+    "method": "Recovered exact excerpts from successful historical read tool result; no new HTTP fetch",
+    "sessionId": "ContextAdvantages",
+    "toolResultMessageId": "4347860b",
+    "originalResponseSha256": null,
+    "checksumNote": "Historical output contained no response checksum; manifest hash identifies this excerpt snapshot, not original HTML."
+  },
+  "excerpts": [
+    {
+      "id": "inauguration",
+      "text": "President Joko “Jokowi” Widodo Tuesday (07/11) inaugurated Cileunyi-Sumedang-Dawuan (Cisumdawu) toll road."
+    },
+    {
+      "id": "location",
+      "text": "The inauguration ceremony took place in front of the iconic twin tunnels spanning 472 meters on kilometer 169 situated in Rancakalong village, Sumedang regency, West Java province."
+    },
+    {
+      "id": "operation_and_airport_geography",
+      "text": "“Thank God, today [the construction of] Cisumdawu toll road, Cileunyi-Sumedang-Dawuan toll road is finished and it is ready to operate. The toll road connects us to Bandung through Cipularang and Cipali toll roads,” he said, while expressing hope that the toll road can boost connectivity to Kertajati International Airport in the neighboring Majalengka regency."
+    }
+  ],
+  "redistribution": "Short attributed excerpts from an official public statement for research traceability; not a full-article mirror. No blanket reuse licence is asserted. Galura material is excluded."
+}

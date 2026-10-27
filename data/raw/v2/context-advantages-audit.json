@@ -1,0 +1,653 @@
+{
+  "auditedAt": "2026-10-27",
+  "candidates": [
+    {
+      "id": "traffic_congestion",
+      "label": "Kemacetan lalu lintas / historical Waze",
+      "institution": "Open Data Jawa Barat; historical Waze analysis",
+      "sourceUrl": "https://opendata.jabarprov.go.id/en/article/menilik-tren-mudik-sebelum-dan-ketika-pandemi",
+      "years": [
+        2019,
+        2020,
+        2021
+      ],
+      "coverage": "Historical holiday analysis discovered through indexed article; no comparable 2023 kabupaten/kota Waze panel recovered.",
+      "classification": "context",
+      "status": "historical",
+      "unit": "Waze congestion measure; definition not independently recovered",
+      "definition": "Historical traffic conditions from a Waze-based mudik article, not a general annual deprivation measure.",
+      "reason": "Retain historical context only. The old article now redirected to a JavaScript shell; no raw traffic observations were recovered.",
+      "limitations": [
+        "Indexed historical research identifies 31 May–17 June 2019 and a September–December 2019 baseline; article also discusses 2020–2021. These are discovery metadata, not verified production rows.",
+        "No 2018 series was established; do not relabel historical evidence as 2023.",
+        "Crowdsourced road observations depend on app activity, road coverage, temporal aggregation and event timing. Congestion is not proof of deprivation.",
+        "Missing or uninspected records never imply service absence or disadvantage."
+      ],
+      "evidence": [
+        "https://opendata.jabarprov.go.id/en/article/menilik-tren-mudik-sebelum-dan-ketika-pandemi",
+        "Historical ContextAdvantages web-search results; direct article reads returned redirected application shell, not article body."
+      ]
+    },
+    {
+      "id": "mobility_intensity",
+      "label": "Intensitas mobilitas / traffic activity",
+      "institution": "Dinas Perhubungan Provinsi Jawa Barat / Galura Data",
+      "sourceUrl": "https://galura.jabarprov.go.id/dataset/jumlah-penumpang-angkutan-umum-berdasarkan-kabupatenkota-di-jawa-barat",
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "coverage": "Passenger-count catalogue claims kabupaten/kota 2022–2025; no general trip-intensity or origin-destination panel established.",
+      "classification": "context",
+      "status": "not_comparable",
+      "unit": "passenger movements / proxy only",
+      "definition": "Intensity of actual trips or movement; distinct from vehicle ownership, fleet stocks, terminal counts and congestion.",
+      "reason": "Available transport proxies do not measure a consistent region-wide mobility intensity.",
+      "limitations": [
+        "Motor-vehicle data by service branch do not automatically match administrative kabupaten/kota.",
+        "High activity may reflect economic centrality or transit traffic; no monotonic deprivation direction.",
+        "Passenger catalogue unit description narrows to type-C terminals.",
+        "Catalog year ranges and pagination totals are metadata, not proof of a complete 27-region panel. Historical output exposed only two sampled rows per inspected table.",
+        "Galura terms restrict redistribution: no original API responses or numeric production rows included; permission required before a production-data import.",
+        "Missing or uninspected records never imply service absence or disadvantage."
+      ],
+      "evidence": [
+        "https://galura.jabarprov.go.id/dataset/jumlah-penumpang-angkutan-umum-berdasarkan-kabupatenkota-di-jawa-barat",
+        "https://galura.jabarprov.go.id/api/datasets/jumlah-penumpang-angkutan-umum-berdasarkan-kabupatenkota-di-jawa-barat",
+        "data/raw/v2/context-evidence-metadata-findings.json — researcher-authored coverage and quality findings; originals linked, no Galura production rows.",
+        "https://galura.jabarprov.go.id/ketentuan-penggunaan"
+      ]
+    },
+    {
+      "id": "reported_crime",
+      "label": "Tindak pidana / reported crime",
+      "institution": "BPS Provinsi Jawa Barat; originating police administrative statistics",
+      "sourceUrl": "https://jabar.bps.go.id/id/statistics-table/3/VlVneFlXOVJOSFpNUzNKcU4zVlFla2syVEZjd1VUMDkjMyMzMjAw/jumlah-kejahatan-yang-dilaporkan-risiko-penduduk-terkena-kejahatan-per-100-000-penduduk-persentase-penyelesaian-kejahatan-dan-selang-waktu-terjadinya-kejahatan-menurut-kabupaten-kota-di-provinsi-jawa-barat.html?year=2023",
+      "years": [
+        2023
+      ],
+      "coverage": "2023 statistical-table heading recovered; numeric rows and complete matching of police jurisdiction to all 27 civil regions not recovered.",
+      "classification": "context",
+      "status": "incompatible_geography",
+      "unit": "reported cases; risk per 100,000 if denominator aligned",
+      "definition": "Police-recorded offences, incident risk, clear-up rate and intervals between incidents, not total victimization.",
+      "reason": "The recovered heading mixes Kepolisian Daerah and kabupaten/kota; jurisdiction and coverage must be reconciled before any regional comparison.",
+      "limitations": [
+        "Polda Jabar is not coterminous with the whole province: some West Java localities fall under Polda Metro Jaya.",
+        "Polres/Polresta names and boundaries cannot be equated to civil region names without a documented crosswalk.",
+        "Reporting propensity, enforcement, offence definitions and population denominator affect comparisons.",
+        "Do not treat jurisdiction omissions, unreported crime or empty rows as zero crime.",
+        "Missing or uninspected records never imply service absence or disadvantage."
+      ],
+      "evidence": [
+        "https://jabar.bps.go.id/id/statistics-table/3/VlVneFlXOVJOSFpNUzNKcU4zVlFla2syVEZjd1VUMDkjMyMzMjAw/jumlah-kejahatan-yang-dilaporkan-risiko-penduduk-terkena-kejahatan-per-100-000-penduduk-persentase-penyelesaian-kejahatan-dan-selang-waktu-terjadinya-kejahatan-menurut-kabupaten-kota-di-provinsi-jawa-barat.html?year=2023",
+        "https://tribratanews.metro.polri.go.id/kapolres-metro-bekasi-kota-pimpin-sertijab-pejabat-utama-dan-kapolsek-jajaran",
+        "https://galura.jabarprov.go.id/dataset/daftar-status-tindak-kejahatan-berdasarkan-jenis-kriminalitas-di-jawa-barat — legacy candidate located; current catalogue search for kriminalitas yielded no result."
+      ]
+    },
+    {
+      "id": "public_transport_passengers",
+      "label": "Penumpang angkutan umum",
+      "institution": "Dinas Perhubungan Provinsi Jawa Barat / Galura Data",
+      "sourceUrl": "https://galura.jabarprov.go.id/dataset/jumlah-penumpang-angkutan-umum-berdasarkan-kabupatenkota-di-jawa-barat",
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "coverage": "108 total rows reported; first displayed year 2022; kabupaten/kota codes present in sample. Complete annual regional coverage not established.",
+      "classification": "context",
+      "status": "not_comparable",
+      "unit": "orang",
+      "definition": "Dataset title and business coverage say public-transport passengers, but variable unit description says passengers entering and leaving type-C terminals.",
+      "reason": "Unresolved scope conflict prevents treating this as all public transit usage.",
+      "limitations": [
+        "Counts are not unique users or population modal share.",
+        "Do not aggregate with the separate type-C series until producer confirms definitions and overlap.",
+        "Catalog year ranges and pagination totals are metadata, not proof of a complete 27-region panel. Historical output exposed only two sampled rows per inspected table.",
+        "Galura terms restrict redistribution: no original API responses or numeric production rows included; permission required before a production-data import.",
+        "Missing or uninspected records never imply service absence or disadvantage."
+      ],
+      "evidence": [
+        "https://galura.jabarprov.go.id/dataset/jumlah-penumpang-angkutan-umum-berdasarkan-kabupatenkota-di-jawa-barat",
+        "https://galura.jabarprov.go.id/api/datasets/jumlah-penumpang-angkutan-umum-berdasarkan-kabupatenkota-di-jawa-barat",
+        "data/raw/v2/context-evidence-metadata-findings.json — researcher-authored coverage and quality findings; originals linked, no Galura production rows.",
+        "https://galura.jabarprov.go.id/ketentuan-penggunaan"
+      ]
+    },
+    {
+      "id": "terminal_passengers",
+      "label": "Penumpang masuk dan keluar terminal tipe C",
+      "institution": "Dinas Perhubungan Provinsi Jawa Barat / Galura Data",
+      "sourceUrl": "https://galura.jabarprov.go.id/dataset/jumlah-penumpang-masuk-dan-keluar-melalui-terminal-tipe-c-berdasarkan-kabupatenkota-di-jawa-barat",
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "coverage": "162 total rows reported; first displayed year 2020; regional codes in samples only.",
+      "classification": "context",
+      "status": "partial_coverage",
+      "unit": "orang",
+      "definition": "Passenger movements entering and leaving type-C terminals by kabupaten/kota, not all transit journeys.",
+      "reason": "Terminal-specific usage can provide context only after coverage, counting method and redistribution permission are resolved.",
+      "limitations": [
+        "Excludes uncounted bus stops, type-A/B terminals, rail and other modes.",
+        "Entry and exit movements may count the same trip or person more than once; boarding/alighting definitions not recovered.",
+        "COVID-period activity and subsequent service changes limit trend comparability.",
+        "Catalog year ranges and pagination totals are metadata, not proof of a complete 27-region panel. Historical output exposed only two sampled rows per inspected table.",
+        "Galura terms restrict redistribution: no original API responses or numeric production rows included; permission required before a production-data import.",
+        "Missing or uninspected records never imply service absence or disadvantage."
+      ],
+      "evidence": [
+        "https://galura.jabarprov.go.id/dataset/jumlah-penumpang-masuk-dan-keluar-melalui-terminal-tipe-c-berdasarkan-kabupatenkota-di-jawa-barat",
+        "https://galura.jabarprov.go.id/dataset/jumlah-penumpang-angkutan-umum-berdasarkan-kabupatenkota-di-jawa-barat",
+        "data/raw/v2/context-evidence-metadata-findings.json — researcher-authored coverage and quality findings; originals linked, no Galura production rows.",
+        "https://galura.jabarprov.go.id/ketentuan-penggunaan"
+      ]
+    },
+    {
+      "id": "public_transport_modes",
+      "label": "Moda dan armada angkutan umum",
+      "institution": "Dinas Perhubungan Provinsi Jawa Barat / Galura Data",
+      "sourceUrl": "https://galura.jabarprov.go.id/dataset/jumlah-moda-transportasi-angkutan-kota-dalam-provinsi-berdasarkan-kabupatenkota-di-jawa-barat",
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "coverage": "AKDP and urban/rural mode tables each report 108 rows; first two regional samples inspected.",
+      "classification": "context",
+      "status": "not_comparable",
+      "unit": "unit",
+      "definition": "Administrative mode/fleet counts, distinct from active routes, frequencies, vehicle condition, passenger capacity and ridership.",
+      "reason": "Sample equality across differently named concepts and inconsistent descriptions prevent a defensible combined mode-supply measure.",
+      "limitations": [
+        "Do not add AKDP and urban/rural counts or interpret them as independent evidence.",
+        "Fleet stock or permits do not establish operation or service adequacy.",
+        "Catalog year ranges and pagination totals are metadata, not proof of a complete 27-region panel. Historical output exposed only two sampled rows per inspected table.",
+        "Galura terms restrict redistribution: no original API responses or numeric production rows included; permission required before a production-data import.",
+        "Missing or uninspected records never imply service absence or disadvantage."
+      ],
+      "evidence": [
+        "https://galura.jabarprov.go.id/dataset/jumlah-moda-transportasi-angkutan-kota-dalam-provinsi-berdasarkan-kabupatenkota-di-jawa-barat",
+        "https://galura.jabarprov.go.id/dataset/jumlah-moda-transportasi-angkutan-kotadesa-berdasarkan-kabupatenkota-di-jawa-barat",
+        "https://galura.jabarprov.go.id/api/datasets/jumlah-moda-transportasi-angkutan-kota-dalam-provinsi-berdasarkan-kabupatenkota-di-jawa-barat",
+        "https://galura.jabarprov.go.id/api/datasets/jumlah-moda-transportasi-angkutan-kotadesa-berdasarkan-kabupatenkota-di-jawa-barat",
+        "data/raw/v2/context-evidence-metadata-findings.json — researcher-authored coverage and quality findings; originals linked, no Galura production rows.",
+        "https://galura.jabarprov.go.id/ketentuan-penggunaan"
+      ]
+    },
+    {
+      "id": "akdp",
+      "label": "Angkutan AKDP / provincial road transit",
+      "institution": "Dinas Perhubungan Provinsi Jawa Barat / Galura Data",
+      "sourceUrl": "https://galura.jabarprov.go.id/dataset/jumlah-moda-transportasi-angkutan-kota-dalam-provinsi-berdasarkan-kabupatenkota-di-jawa-barat",
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "coverage": "108 rows reported; first sample year 2022; sampled field uses kode_kabupaten, unlike metadata kode_kabupaten_kota.",
+      "classification": "context",
+      "status": "not_comparable",
+      "unit": "unit",
+      "definition": "Published catalogue calls this angkutan kota dalam provinsi and uses an AKDP-labelled count. Preserve source terminology pending clarification.",
+      "reason": "First two sampled region-year counts exactly match urban/rural table samples; underlying source semantics require producer confirmation.",
+      "limitations": [
+        "Matching samples are a warning, not proof that the entire datasets duplicate. No production values are redistributed.",
+        "Actual response count-field spelling differs from documented spelling.",
+        "Do not infer inter-city route operation or distinguish urban/rural service from this ambiguous inventory alone.",
+        "Catalog year ranges and pagination totals are metadata, not proof of a complete 27-region panel. Historical output exposed only two sampled rows per inspected table.",
+        "Galura terms restrict redistribution: no original API responses or numeric production rows included; permission required before a production-data import.",
+        "Missing or uninspected records never imply service absence or disadvantage."
+      ],
+      "evidence": [
+        "https://galura.jabarprov.go.id/dataset/jumlah-moda-transportasi-angkutan-kota-dalam-provinsi-berdasarkan-kabupatenkota-di-jawa-barat",
+        "https://galura.jabarprov.go.id/api/datasets/jumlah-moda-transportasi-angkutan-kota-dalam-provinsi-berdasarkan-kabupatenkota-di-jawa-barat",
+        "https://galura.jabarprov.go.id/dataset/jumlah-moda-transportasi-angkutan-kotadesa-berdasarkan-kabupatenkota-di-jawa-barat",
+        "data/raw/v2/context-evidence-metadata-findings.json — researcher-authored coverage and quality findings; originals linked, no Galura production rows.",
+        "https://galura.jabarprov.go.id/ketentuan-penggunaan"
+      ]
+    },
+    {
+      "id": "urban_transit",
+      "label": "Angkutan kota/desa / urban transit",
+      "institution": "Dinas Perhubungan Provinsi Jawa Barat / Galura Data",
+      "sourceUrl": "https://galura.jabarprov.go.id/dataset/jumlah-moda-transportasi-angkutan-kotadesa-berdasarkan-kabupatenkota-di-jawa-barat",
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "coverage": "108 rows reported; first sample year 2022; sampled regional codes present.",
+      "classification": "context",
+      "status": "not_comparable",
+      "unit": "unit",
+      "definition": "Urban/rural road-transport inventory as titled by the publisher, not observed transit availability for every resident.",
+      "reason": "First two regional samples equal AKDP samples. Unit description still refers to goods transport despite the passenger-mode title.",
+      "limitations": [
+        "No numeric advantage assigned from unresolved data.",
+        "Vehicle numbers do not prove running routes, schedules, affordability or accessible stops.",
+        "Catalog year ranges and pagination totals are metadata, not proof of a complete 27-region panel. Historical output exposed only two sampled rows per inspected table.",
+        "Galura terms restrict redistribution: no original API responses or numeric production rows included; permission required before a production-data import.",
+        "Missing or uninspected records never imply service absence or disadvantage."
+      ],
+      "evidence": [
+        "https://galura.jabarprov.go.id/dataset/jumlah-moda-transportasi-angkutan-kotadesa-berdasarkan-kabupatenkota-di-jawa-barat",
+        "https://galura.jabarprov.go.id/api/datasets/jumlah-moda-transportasi-angkutan-kotadesa-berdasarkan-kabupatenkota-di-jawa-barat",
+        "https://galura.jabarprov.go.id/api/datasets/jumlah-moda-transportasi-angkutan-kota-dalam-provinsi-berdasarkan-kabupatenkota-di-jawa-barat",
+        "data/raw/v2/context-evidence-metadata-findings.json — researcher-authored coverage and quality findings; originals linked, no Galura production rows.",
+        "https://galura.jabarprov.go.id/ketentuan-penggunaan"
+      ]
+    },
+    {
+      "id": "railway",
+      "label": "Layanan kereta api",
+      "institution": "Dinas Perhubungan Provinsi Jawa Barat / Galura Data; Pemerintah Provinsi Jawa Barat",
+      "sourceUrl": "https://galura.jabarprov.go.id/dataset/jumlah-penumpang-kereta-api-jarak-jauh-daop-2-berdasarkan--stasiun-di-jawa-barat-",
+      "years": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "coverage": "2021 station register; 2022–2025 DAOP 1/2/3 long-distance passenger catalogues. DAOP 2 probe reported 68 rows, first year 2022. Feeder operation dated 2023 separately documented.",
+      "classification": "context",
+      "status": "partial_coverage",
+      "unit": "station status / passenger movements",
+      "definition": "Rail infrastructure register and long-distance station passenger movements, not one comparable all-rail service measure.",
+      "reason": "Station status, long-distance use, feeder and commuter service are separate concepts and years.",
+      "limitations": [
+        "DAOP areas cross civil boundaries; geographic station crosswalk required.",
+        "DAOP 2 is not the whole province. Do not treat passengers as unique users or commuter ridership.",
+        "2021 station status is not evidence of 2023 operation.",
+        "Catalog year ranges and pagination totals are metadata, not proof of a complete 27-region panel. Historical output exposed only two sampled rows per inspected table.",
+        "Galura terms restrict redistribution: no original API responses or numeric production rows included; permission required before a production-data import.",
+        "Missing or uninspected records never imply service absence or disadvantage."
+      ],
+      "evidence": [
+        "https://galura.jabarprov.go.id/dataset/daftar-stasiun-berdasarkan-kabupatenkota-di-jawa-barat",
+        "https://galura.jabarprov.go.id/dataset/jumlah-penumpang-kereta-api-jarak-jauh-daop-2-berdasarkan--stasiun-di-jawa-barat-",
+        "https://jabarprov.go.id/berita/ka-feeder-kcjb-whoosh-resmi-beroperasi-10824",
+        "data/raw/v2/context-evidence-metadata-findings.json — researcher-authored coverage and quality findings; originals linked, no Galura production rows.",
+        "https://galura.jabarprov.go.id/ketentuan-penggunaan"
+      ]
+    },
+    {
+      "id": "commuter_rail",
+      "label": "KRL / commuter rail / LRT",
+      "institution": "KAI Commuter; Sekretariat Kabinet Republik Indonesia",
+      "sourceUrl": "https://setkab.go.id/presiden-jokowi-resmikan-lrt-terintegrasi-jabodebek/",
+      "years": [
+        2023
+      ],
+      "coverage": "Official LRT inauguration and listed stations in Jabodebek, 28 August 2023; no audited 27-region KRL panel. KRL article direct fetch failed after redirect.",
+      "classification": "advantage",
+      "status": "partial_coverage",
+      "unit": "verified service presence; no numeric inventory",
+      "definition": "Operational metropolitan passenger rail; KRL, LRT and Whoosh must remain distinct service types.",
+      "reason": "Official LRT statement confirms operation but does not itself provide an unambiguous civil-region code for every station; no code-level KRL/LRT observation assigned.",
+      "limitations": [
+        "Bogor, Bekasi and Cibubur labels are not sufficient to distinguish kabupaten, kota or exact station boundaries.",
+        "Do not infer services throughout all regions named by a metropolitan system.",
+        "Failed KRL page fetch is an evidence-access gap, not service absence.",
+        "Missing or uninspected records never imply service absence or disadvantage."
+      ],
+      "evidence": [
+        "https://setkab.go.id/presiden-jokowi-resmikan-lrt-terintegrasi-jabodebek/",
+        "https://commuterline.id/informasi-publik/berita/tingkatkan-layanan-skybridge-bojonggede-dan-bangunan-baru-stasiun-manggarai-siap-dioperasikan"
+      ]
+    },
+    {
+      "id": "brt",
+      "label": "BRT / Trans Metro Pasundan / Metro Jabar Trans",
+      "institution": "PPID Provinsi Jawa Barat; Dinas Perhubungan",
+      "sourceUrl": "https://ppid.jabarprov.go.id/pages/berita/149",
+      "years": [
+        2024
+      ],
+      "coverage": "Official statement dates rebranding to Metro Jabar Trans on 31 December 2024 in Kota Bandung and refers to five existing corridors; no 2023 region-by-region operation evidence recovered.",
+      "classification": "advantage",
+      "status": "partial_coverage",
+      "unit": "service/corridor presence",
+      "definition": "Integrated bus service and corridor operation; a programme announcement or budget is not proof of delivered service in every region.",
+      "reason": "Keep verified statement in its actual 2024 period. Do not backdate MJT rebranding or count all Bandung Raya as served in 2023.",
+      "limitations": [
+        "No province-wide corridor/stop/frequency inventory established.",
+        "BRT branding alone does not establish segregated lanes or service quality.",
+        "No 2023 advantage observation assigned from this 2024 statement.",
+        "Missing or uninspected records never imply service absence or disadvantage."
+      ],
+      "evidence": [
+        "https://ppid.jabarprov.go.id/pages/berita/149"
+      ]
+    },
+    {
+      "id": "major_terminals",
+      "label": "Terminal besar / intercity bus terminals",
+      "institution": "Dinas Perhubungan Provinsi Jawa Barat / Galura Data; Sekretariat Kabinet Republik Indonesia",
+      "sourceUrl": "https://galura.jabarprov.go.id/dataset/daftar-terminal-berdasarkan-tipe-di-jawa-barat",
+      "years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2024
+      ],
+      "coverage": "Galura terminal register reports 186 rows, first year 2016, catalogue 2016–2022. Separate Setkab statement explicitly locates Leuwipanjang in Kota Bandung and Banjar terminal in Kota Banjar on 3 February 2024.",
+      "classification": "advantage",
+      "status": "partial_coverage",
+      "unit": "terminal inventory / dated inauguration",
+      "definition": "Terminal facilities by type and location, with active service evidence required before a service-presence claim.",
+      "reason": "Historical inventory is not a current operational register. Official terminal revitalization statement provides specific 2024 evidence, not a 2023 inventory.",
+      "limitations": [
+        "Sample terminal register lacks regional codes; similarly spelled terminal names must not override addresses.",
+        "Terminal facility counts and terminal passengers are not total transit usage.",
+        "Revitalization dates do not establish first-ever operation, annual ridership or full provincial coverage.",
+        "Catalog year ranges and pagination totals are metadata, not proof of a complete 27-region panel. Historical output exposed only two sampled rows per inspected table.",
+        "Galura terms restrict redistribution: no original API responses or numeric production rows included; permission required before a production-data import.",
+        "Missing or uninspected records never imply service absence or disadvantage."
+      ],
+      "evidence": [
+        "https://galura.jabarprov.go.id/dataset/daftar-terminal-berdasarkan-tipe-di-jawa-barat",
+        "https://setkab.go.id/en/president-jokowi-inaugurates-two-public-transportation-terminals-in-w-java/",
+        "data/raw/v2/context-evidence-metadata-findings.json — researcher-authored coverage and quality findings; originals linked, no Galura production rows.",
+        "https://galura.jabarprov.go.id/ketentuan-penggunaan"
+      ]
+    },
+    {
+      "id": "toll_road",
+      "label": "Jalan tol operasional",
+      "institution": "Badan Pengatur Jalan Tol, Kementerian PUPR; Sekretariat Kabinet Republik Indonesia",
+      "sourceUrl": "https://bpjt.pu.go.id/cek-tarif-terbaru-jalan-tol-cisumdawu-seksi-4-hingga-6-mulai-bertarif/",
+      "years": [
+        2023
+      ],
+      "coverage": "Verified Cisumdawu infrastructure in Kabupaten Sumedang (3211); no exhaustive inventory for all 27 regions.",
+      "classification": "advantage",
+      "status": "partial_coverage",
+      "unit": "verified presence",
+      "definition": "Operational toll-road infrastructure physically located within a region; not a measure of free public access.",
+      "reason": "Setkab explicitly locates the road inauguration/tunnels in Sumedang; BPJT confirms operation before tariffs began on 14 August 2023.",
+      "limitations": [
+        "Inauguration alone says ready to operate; actual-operation claim also relies on BPJT tariff statement.",
+        "A road serving or connecting a destination does not prove that road physically lies within every destination region.",
+        "No capacity, congestion relief, affordability or equitable-access claim assigned.",
+        "Missing or uninspected records never imply service absence or disadvantage."
+      ],
+      "evidence": [
+        "data/raw/v2/context-evidence-cisumdawu-2023.json — location and inauguration",
+        "data/raw/v2/context-evidence-cisumdawu-tariff-2023.json — active_operation and effective_date",
+        "https://setkab.go.id/en/president-jokowi-inaugurates-cisumdawu-toll-road/",
+        "https://bpjt.pu.go.id/cek-tarif-terbaru-jalan-tol-cisumdawu-seksi-4-hingga-6-mulai-bertarif/"
+      ]
+    },
+    {
+      "id": "public_wifi",
+      "label": "WiFi publik",
+      "institution": "Dinas Komunikasi dan Informatika Provinsi Jawa Barat / Galura Data",
+      "sourceUrl": "https://galura.jabarprov.go.id/dataset/jumlah-titik-layanan-akses-internet-publik-wifi-berdasarkan-kabupatenkota-di-jawa-barat",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "coverage": "134 total rows reported across catalogue 2019–2023; first displayed year 2019. No verified complete 27-by-5 panel.",
+      "classification": "advantage",
+      "status": "partial_coverage",
+      "unit": "titik",
+      "definition": "Government-reported public internet/WiFi access points by kabupaten/kota, not household connectivity, uptime or internet quality.",
+      "reason": "Potential local asset only. Numeric rows withheld under terms; active service and annual completeness need further evidence.",
+      "limitations": [
+        "A public hotspot count does not establish working access, bandwidth, affordability, or population served.",
+        "Do not fill an absent region-year with zero or infer a universal service.",
+        "Catalog year ranges and pagination totals are metadata, not proof of a complete 27-region panel. Historical output exposed only two sampled rows per inspected table.",
+        "Galura terms restrict redistribution: no original API responses or numeric production rows included; permission required before a production-data import.",
+        "Missing or uninspected records never imply service absence or disadvantage."
+      ],
+      "evidence": [
+        "https://galura.jabarprov.go.id/dataset/jumlah-titik-layanan-akses-internet-publik-wifi-berdasarkan-kabupatenkota-di-jawa-barat",
+        "data/raw/v2/context-evidence-metadata-findings.json — researcher-authored coverage and quality findings; originals linked, no Galura production rows.",
+        "https://galura.jabarprov.go.id/ketentuan-penggunaan"
+      ]
+    },
+    {
+      "id": "digital_infrastructure",
+      "label": "Infrastruktur digital / internet desa",
+      "institution": "Dinas Komunikasi dan Informatika Provinsi Jawa Barat / Galura Data",
+      "sourceUrl": "https://galura.jabarprov.go.id/dataset/status-desa-yang-memiliki-akses-internet-berdasarkan-desakelurahan-di-jawa-barat",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "coverage": "Village-status internet catalogues report 2019–2023; annual regional aggregation and service quality not inspected. Separate government intranet register catalogue is 2022 only.",
+      "classification": "advantage",
+      "status": "partial_coverage",
+      "unit": "village status / network point",
+      "definition": "Presence of village internet facilities or government networks, not general household connectivity.",
+      "reason": "Catalogue discovery identifies possible assets but no verified code-level production presence is assigned.",
+      "limitations": [
+        "Office internet, village availability, household internet and government intranet are not interchangeable.",
+        "Village-count aggregates require a contemporaneous village denominator and geography mapping.",
+        "Catalogue metadata alone does not prove a working connection.",
+        "Catalog year ranges and pagination totals are metadata, not proof of a complete 27-region panel. Historical output exposed only two sampled rows per inspected table.",
+        "Galura terms restrict redistribution: no original API responses or numeric production rows included; permission required before a production-data import.",
+        "Missing or uninspected records never imply service absence or disadvantage."
+      ],
+      "evidence": [
+        "https://galura.jabarprov.go.id/dataset/status-desa-yang-memiliki-akses-internet-berdasarkan-desakelurahan-di-jawa-barat",
+        "https://galura.jabarprov.go.id/dataset/daftar-titik-jaringan-intra-dan-internet-pemerintah-daerah-berdasarkan-status-di-jawa-barat",
+        "data/raw/v2/context-evidence-metadata-findings.json — researcher-authored coverage and quality findings; originals linked, no Galura production rows.",
+        "https://galura.jabarprov.go.id/ketentuan-penggunaan"
+      ]
+    },
+    {
+      "id": "internet_programs",
+      "label": "Program Desa Digital / internet deployment",
+      "institution": "Dinas Komunikasi dan Informatika Provinsi Jawa Barat",
+      "sourceUrl": "https://desadigital.jabarprov.go.id/desadigital-level1",
+      "years": [],
+      "coverage": "Programme overview and eligibility criteria read; no dated region-by-region completion/uptime list recovered.",
+      "classification": "advantage",
+      "status": "partial_coverage",
+      "unit": "programme / verified installation presence",
+      "definition": "Desa Digital Level 1 builds internet infrastructure with partners and village institutions.",
+      "reason": "Official programme description supports programme existence, not an actual-year kabupaten/kota advantage record.",
+      "limitations": [
+        "No date assigned from an undated live programme page.",
+        "Eligibility, intention, funding and illustrative photographs do not establish commissioned service at a coded location.",
+        "Programme participation does not imply all villages or households have access.",
+        "Missing or uninspected records never imply service absence or disadvantage."
+      ],
+      "evidence": [
+        "https://desadigital.jabarprov.go.id/desadigital-level1"
+      ]
+    },
+    {
+      "id": "healthcare_availability",
+      "label": "Ketersediaan rumah sakit / high healthcare availability",
+      "institution": "Dinas Kesehatan Provinsi Jawa Barat / Galura Data",
+      "sourceUrl": "https://galura.jabarprov.go.id/dataset/daftar-rumah-sakit-berdasarkan-jenis-dan-kelas-di-jawa-barat",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "coverage": "Hospital register reports 1,917 rows across catalogue 2019–2023; first displayed year 2019. Regional codes, class and type present in samples.",
+      "classification": "context",
+      "status": "partial_coverage",
+      "unit": "hospital inventory; beds/staff require separate denominators",
+      "definition": "Facility availability differs from care capacity, referral access, staffing and health outcomes.",
+      "reason": "A hospital register alone cannot establish unusually high healthcare availability or adequate provision per resident.",
+      "limitations": [
+        "No normative high-availability threshold or province-wide beds/staff comparison established.",
+        "Inventory counts need deduplication by facility/year and active status before aggregation.",
+        "Referral hospitals serve nonresident patients; local population alone may misstate effective capacity.",
+        "Numeric source rows withheld under Galura terms.",
+        "Catalog year ranges and pagination totals are metadata, not proof of a complete 27-region panel. Historical output exposed only two sampled rows per inspected table.",
+        "Galura terms restrict redistribution: no original API responses or numeric production rows included; permission required before a production-data import.",
+        "Missing or uninspected records never imply service absence or disadvantage."
+      ],
+      "evidence": [
+        "https://galura.jabarprov.go.id/dataset/daftar-rumah-sakit-berdasarkan-jenis-dan-kelas-di-jawa-barat",
+        "https://galura.jabarprov.go.id/dataset/jumlah-tempat-tidur-di-rumah-sakit-berdasarkan-kabupatenkota-di-jawa-barat",
+        "data/raw/v2/context-evidence-metadata-findings.json — researcher-authored coverage and quality findings; originals linked, no Galura production rows.",
+        "https://galura.jabarprov.go.id/ketentuan-penggunaan"
+      ]
+    },
+    {
+      "id": "referral_hospitals",
+      "label": "Rumah sakit rujukan tersier",
+      "institution": "RSUP Dr. Hasan Sadikin; Kementerian Kesehatan",
+      "sourceUrl": "https://ppid.rshs.go.id/profil/",
+      "years": [],
+      "coverage": "Official undated profile explicitly describes a top tertiary referral hospital and its location in Kota Bandung. A separate 2023 commemoration article does not date the profile service claims.",
+      "classification": "advantage",
+      "status": "partial_coverage",
+      "unit": "facility/service presence",
+      "definition": "Tertiary referral function at an identified hospital, distinct from general hospital density or patient need.",
+      "reason": "Profile supports institutional role and geography but not a defensible actual-year service observation. No artificial 2023 date assigned.",
+      "limitations": [
+        "No dated referral capacity, operational readiness, catchment or waiting-time series recovered.",
+        "Do not use a ceremonial 2023 article as evidence of year-specific tertiary service provision.",
+        "No claim that absence from this shortlist means no referral facilities elsewhere.",
+        "Missing or uninspected records never imply service absence or disadvantage."
+      ],
+      "evidence": [
+        "https://ppid.rshs.go.id/profil/",
+        "https://keslan.kemkes.go.id/read/1459/mengenang-dr-hasan-sadikin-rshs-gelar-upacara-tabur-bunga"
+      ]
+    },
+    {
+      "id": "operational_airport",
+      "label": "Bandara dengan penerbangan aktual",
+      "institution": "Sekretariat Kabinet Republik Indonesia",
+      "sourceUrl": "https://setkab.go.id/en/press-statement-of-president-of-the-republic-of-indonesia-after-inspection-to-west-java-international-airport-bijb-of-kertajati-majalengka-city-west-java-province-july-11-2023/",
+      "years": [
+        2023
+      ],
+      "coverage": "Verified Kertajati in Kabupaten Majalengka (3210), 11 July 2023; not a province-wide airport or route inventory.",
+      "classification": "advantage",
+      "status": "partial_coverage",
+      "unit": "verified presence",
+      "definition": "Airport serving actual passenger flights at a stated date, not planned expansion or merely a physical runway.",
+      "reason": "Presidential statement explicitly describes existing Hajj, Umrah and Kuala Lumpur flights. Contemporaneous Setkab article explicitly places Kertajati in Majalengka regency.",
+      "limitations": [
+        "English airport heading calls Majalengka City; corroborating statement says regency. Use existing Kabupaten Majalengka code 3210.",
+        "Planned October transfer of jet flights is prospective in this statement and not used as proof of completed transfer.",
+        "Local airport presence does not prove affordability, high frequency, annual capacity or equal access.",
+        "Missing or uninspected records never imply service absence or disadvantage."
+      ],
+      "evidence": [
+        "data/raw/v2/context-evidence-kertajati-2023.json — existing_flights and location_heading",
+        "data/raw/v2/context-evidence-cisumdawu-2023.json — operation_and_airport_geography",
+        "https://setkab.go.id/en/press-statement-of-president-of-the-republic-of-indonesia-after-inspection-to-west-java-international-airport-bijb-of-kertajati-majalengka-city-west-java-province-july-11-2023/",
+        "https://setkab.go.id/en/president-jokowi-inaugurates-cisumdawu-toll-road/"
+      ]
+    },
+    {
+      "id": "major_stations",
+      "label": "Stasiun besar / active station access",
+      "institution": "Dinas Perhubungan Provinsi Jawa Barat / Galura Data; Sekretariat Kabinet Republik Indonesia",
+      "sourceUrl": "https://galura.jabarprov.go.id/dataset/daftar-stasiun-berdasarkan-kabupatenkota-di-jawa-barat",
+      "years": [
+        2021,
+        2023
+      ],
+      "coverage": "2021 registry reports 141 station rows and operational-status field. Independent official 2 October 2023 statement verifies Padalarang in Kabupaten Bandung Barat.",
+      "classification": "advantage",
+      "status": "partial_coverage",
+      "unit": "station status / verified access-point presence",
+      "definition": "Rail station within a region, requiring operational evidence and a specific period; major status must not be inferred from name alone.",
+      "reason": "2021 catalogue is historical. Padalarang has separate 2023 operational evidence and appears once as high_speed_rail, not as a duplicate additive advantage.",
+      "limitations": [
+        "Registry class and active status apply to 2021 only.",
+        "No complete station inventory or comparable definition of major station established for 2023.",
+        "Do not assign every named station to a kabupaten/kota without geographic corroboration.",
+        "Catalog year ranges and pagination totals are metadata, not proof of a complete 27-region panel. Historical output exposed only two sampled rows per inspected table.",
+        "Galura terms restrict redistribution: no original API responses or numeric production rows included; permission required before a production-data import.",
+        "Missing or uninspected records never imply service absence or disadvantage."
+      ],
+      "evidence": [
+        "https://galura.jabarprov.go.id/dataset/daftar-stasiun-berdasarkan-kabupatenkota-di-jawa-barat",
+        "data/raw/v2/context-evidence-whoosh-2023.json — location and stops",
+        "https://setkab.go.id/en/president-jokowi-officiates-operation-of-whoosh-high-speed-train/",
+        "data/raw/v2/context-evidence-metadata-findings.json — researcher-authored coverage and quality findings; originals linked, no Galura production rows.",
+        "https://galura.jabarprov.go.id/ketentuan-penggunaan"
+      ]
+    },
+    {
+      "id": "interregional_connections",
+      "label": "Konektivitas antardaerah",
+      "institution": "Sekretariat Kabinet Republik Indonesia; BPJT; Pemerintah Provinsi Jawa Barat",
+      "sourceUrl": "https://setkab.go.id/en/president-jokowi-officiates-operation-of-whoosh-high-speed-train/",
+      "years": [
+        2023
+      ],
+      "coverage": "Targeted evidence: Whoosh Padalarang, operational Kertajati flights, Cisumdawu. Separate feeder report describes Bandung–Padalarang operation from 3 October 2023 and stops at Cimahi.",
+      "classification": "advantage",
+      "status": "partial_coverage",
+      "unit": "verified connection presence",
+      "definition": "Operating interregional transport links, not a comparable accessibility/travel-time index.",
+      "reason": "Official sources support specific connections; no province-wide connectivity score, full network matrix or inferred absence.",
+      "limitations": [
+        "Local infrastructure, route endpoints and regions traversed are different geographic facts.",
+        "Airport and Whoosh evidence are already represented by their specific indicators; do not count this umbrella concept again.",
+        "Network presence does not establish frequencies, transfers, fares or equitable access.",
+        "Missing or uninspected records never imply service absence or disadvantage."
+      ],
+      "evidence": [
+        "data/raw/v2/context-evidence-whoosh-2023.json",
+        "data/raw/v2/context-evidence-kertajati-2023.json",
+        "data/raw/v2/context-evidence-cisumdawu-tariff-2023.json",
+        "https://jabarprov.go.id/berita/ka-feeder-kcjb-whoosh-resmi-beroperasi-10824"
+      ]
+    },
+    {
+      "id": "high_speed_rail",
+      "label": "Kereta cepat Whoosh",
+      "institution": "Sekretariat Kabinet Republik Indonesia",
+      "sourceUrl": "https://setkab.go.id/en/president-jokowi-officiates-operation-of-whoosh-high-speed-train/",
+      "years": [
+        2023
+      ],
+      "coverage": "Verified Padalarang Station within Kabupaten Bandung Barat (3217) on 2 October 2023. Other stops named, but no extra regional codes assigned without explicit local geography evidence.",
+      "classification": "advantage",
+      "status": "partial_coverage",
+      "unit": "verified presence",
+      "definition": "Operational Jakarta–Bandung high-speed rail access through a station explicitly placed within the region.",
+      "reason": "Official statement both commences operation and explicitly names Padalarang, West Bandung regency; one qualitative observation assigned.",
+      "limitations": [
+        "Does not establish full-year operation; public trial and initial free service are not annual ridership.",
+        "Not KRL commuter rail or BRT.",
+        "Do not infer coverage of an entire region, access time, service adequacy or affordability.",
+        "Missing or uninspected records never imply service absence or disadvantage."
+      ],
+      "evidence": [
+        "data/raw/v2/context-evidence-whoosh-2023.json — operation, location, stops",
+        "https://setkab.go.id/en/president-jokowi-officiates-operation-of-whoosh-high-speed-train/"
+      ]
+    }
+  ]
+}

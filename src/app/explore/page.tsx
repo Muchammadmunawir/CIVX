@@ -3,7 +3,7 @@ import { ExplorePage } from "@/components/explore/explore-page";
 
 export const metadata: Metadata = {
   title: "Explore",
-  description: "Explore published 2023 Jawa Barat CIVX modeled regional results and their BPS source evidence.",
+  description: "Explore current Jawa Barat Civic Index scores, validated pressure dimensions, Context Signals, Regional Advantages and public source evidence.",
 };
 
 export default function ExploreRoute() {

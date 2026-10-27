@@ -1,0 +1,33 @@
+.links { display: flex; gap: 8px 24px; flex-wrap: wrap; align-items: center; margin-block: 16px; }
+.links a { display: inline-flex; align-items: center; min-height: var(--control-height); color: var(--accent); text-decoration: underline; text-underline-offset: 4px; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; align-items: start; margin-top: var(--space-8); }
+.panel { min-width: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 20px; margin-bottom: 16px; }
+.panel h2 { margin: 0 0 12px; font-size: 18px; line-height: 1.3; font-weight: 600; }
+.note { color: var(--muted); font-size: .875rem; line-height: 1.6; }
+.disclosure { border-top: 1px solid var(--line); padding-block: 8px; overflow-wrap: anywhere; }
+.disclosure summary { min-height: var(--control-height); padding-block: 10px; line-height: 1.5; }
+.disclosure summary:hover { text-decoration: underline; text-underline-offset: 4px; }
+.disclosure summary strong { font-weight: 500; }
+.dimensionLine { display: inline-flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 16px; width: calc(100% - 24px); align-items: baseline; }
+.dimensionLine span:last-child { font-variant-numeric: tabular-nums; }
+.dimensionLine small { color: var(--muted); margin-left: 8px; font-size: 12px; }
+.keyValues { margin: 0; }
+.keyValues > div { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding-block: 10px; }
+.keyValues dt { max-width: 65%; }
+.keyValues dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; }
+.keyValues dd small { color: var(--muted); display: block; font-size: 12px; }
+.status { color: var(--muted); font-size: 12px; display: block; margin-top: 4px; }
+.evidence { overflow-wrap: anywhere; color: var(--muted); font-size: 13px; line-height: 1.6; }
+.evidence p { margin-block: 8px; }
+.evidence dl { margin: 12px 0; }
+.evidence dl > div { margin-block: 8px; }
+.evidence dt { font-weight: 600; color: var(--ink); }
+.evidence dd { margin: 0; }
+.evidence li { margin-block: 8px; }
+.evidence a { color: var(--accent); text-decoration: underline; text-underline-offset: 4px; }
+@media (max-width: 640px) {
+  .grid { grid-template-columns: 1fr; }
+  .panel { padding: 16px; }
+  .dimensionLine small { display: block; margin-left: 0; }
+  .links { gap: 4px 16px; margin-block: 8px; }
+}

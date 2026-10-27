@@ -1,0 +1,39 @@
+{
+  "modelVersion": "CIVX v2",
+  "releaseId": "civx-jabar-2023-v2",
+  "methodologyVersion": "civx-jabar-2023-dimensional-5inputs-v2",
+  "referenceSetId": "civx-v2-bps-jabar-27-kabkota-2023-revised-2024-02-29",
+  "period": "2023",
+  "boundaryReference": "BPS kabupaten/kota code, Peraturan BPS No. 3 Tahun 2019",
+  "referenceRegionIds": ["3201", "3202", "3203", "3204", "3205", "3206", "3207", "3208", "3209", "3210", "3211", "3212", "3213", "3214", "3215", "3216", "3217", "3218", "3271", "3272", "3273", "3274", "3275", "3276", "3277", "3278", "3279"],
+  "status": "project_validated",
+  "normalization": "fixed_min_max",
+  "rounding": "full_precision_then_two_decimals",
+  "dimensions": [
+    {
+      "id": "socioeconomic",
+      "label": "Socioeconomic",
+      "weight": 0.5,
+      "indicators": [
+        { "id": "poverty", "label": "Poverty", "unit": "%", "sourceId": "bps-jabar-poverty-2023", "direction": "higher", "minimum": 2.38, "maximum": 12.13, "minimumRegion": "Kota Depok", "maximumRegion": "Kabupaten Indramayu", "withinDimensionWeight": 0.25 },
+        { "id": "unemployment", "label": "Open unemployment", "unit": "%", "sourceId": "bps-jabar-unemployment-2023", "direction": "higher", "minimum": 1.52, "maximum": 10.52, "minimumRegion": "Kabupaten Pangandaran", "maximumRegion": "Kota Cimahi", "withinDimensionWeight": 0.5 },
+        { "id": "hdi", "label": "Human Development Index", "unit": "index points", "sourceId": "bps-jabar-hdi-2023", "direction": "lower", "minimum": 68.18, "maximum": 83.29, "minimumRegion": "Kabupaten Cianjur", "maximumRegion": "Kota Bandung", "withinDimensionWeight": 0.25 }
+      ]
+    },
+    {
+      "id": "basic_services",
+      "label": "Basic services",
+      "weight": 0.5,
+      "indicators": [
+        { "id": "sanitation", "label": "Improved sanitation", "unit": "%", "sourceId": "bps-jabar-sanitation-2023", "direction": "lower", "minimum": 44.76, "maximum": 98.52, "minimumRegion": "Kota Sukabumi", "maximumRegion": "Kota Bekasi", "withinDimensionWeight": 0.5 },
+        { "id": "drinking_water", "label": "Improved drinking-water source", "unit": "%", "sourceId": "bps-jabar-water-2023", "direction": "lower", "minimum": 81.13, "maximum": 99.61, "minimumRegion": "Kabupaten Garut", "maximumRegion": "Kota Bogor", "withinDimensionWeight": 0.5 }
+      ]
+    }
+  ],
+  "unsupportedDimensions": [
+    { "id": "health", "label": "Public health", "reason": "DBD published rates have an unresolved population base; Puskesmas supply is not measured healthcare access." },
+    { "id": "infrastructure", "label": "Infrastructure", "reason": "Road-condition networks and authority denominators do not reconcile." },
+    { "id": "resilience", "label": "Resilience", "reason": "Disaster outcome totals, overlap, repeated persons and reporting completeness remain unresolved." }
+  ],
+  "weightDecision": "After six sensitivity scenarios, retain equal dimension budgets and a shared poverty/HDI deprivation allocation as explicit project trade-offs, not externally approved importance coefficients. A 60/40 or 40/60 dimension split changes scores by up to 6.70 points and modeled order by up to eight places; fine rankings are not stable enough to emphasize. Five equal indicator weights shift scores by up to 10.51 points and are not selected. Independent substantive review remains required."
+}

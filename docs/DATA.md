@@ -1,11 +1,11 @@
 # CIVX Data
 
-**Status:** All 27 Jawa Barat kabupaten/kota have complete 2023 records in the four-indicator project release; external review and rights confirmation remain outstanding
+**Status:** The current CIVX release uses one complete 2023 core contract across all 27 Jawa Barat kabupaten/kota. §10 supersedes the historical four- and five-input release descriptions.
 **Geographic unit:** `kabupaten/kota` (Indonesian regencies and cities)
 
 ## 1. Data policy
 
-CIVX may use public data only when its publisher, definition, geography, period, unit, access path, revision behavior, and usage terms can be documented. The four selected 2023 inputs are reviewed in §8; other candidate sources below are not approved production inputs.
+CIVX may use public data only when its publisher, definition, geography, period, unit, access path, revision behavior, and usage terms can be documented. Current eligibility decisions are in §10 and [METHODOLOGY-CURRENT.md](METHODOLOGY-CURRENT.md); §8 preserves the original source review.
 
 CIVX must never fabricate, silently interpolate, silently substitute, or present an unverified value as a production observation. Synthetic fixtures may be used later for software tests only when clearly labeled and excluded from production releases.
 
@@ -24,7 +24,7 @@ The following are **other candidate indicators** for future assessment; the four
 | Basic services and infrastructure | drinking-water, sanitation, electricity, internet, road or transport access | Same service definition, household/unit basis, and urban/rural coverage? |
 | Demographic and environmental context | population density, dependency context, disaster or environmental exposure where suitable | Same boundary, reference date, event definition, and exposure denominator? |
 
-The current index deliberately uses four documented indicators rather than maximizing the number of dimensions.
+Indicator count follows validation, not a target. Only a complete common core enters the current release; other observations remain context, advantages or rejected candidates.
 
 ## 3. Candidate public data sources
 
@@ -57,7 +57,7 @@ A region-indicator-period observation is eligible only when all applicable check
 
 “Not available,” “not applicable,” “withheld,” “incompatible,” and “failed validation” must remain distinct statuses. Missing must never become zero.
 
-The 2023 release requires all four comparable observations per region, with no partial result; alternative coverage thresholds remain open for future releases.
+The current release requires every configured core observation for every one of the 27 regions. An invalid or missing core input withholds the whole score; no partial result or per-region reweighting is permitted.
 
 ## 5. Data quality and confidence inputs
 
@@ -138,3 +138,24 @@ The Explore map uses **2020-represented ADM2 boundaries**, not inferred 2023 sta
 `scripts/build-jabar-map.mjs` reads the commit-pinned [simplified source GeoJSON](https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/9469f09/releaseData/gbOpen/IDN/ADM2/geoBoundaries-IDN-ADM2_simplified.geojson) (SHA-256 `146653d488331086ddc43d159a261b01ea6dd08c7ed422e34a9886c3c690430c`), checks its checksum, uniquely matches the published BPS-coded names to source `shapeID`s, and projects only the 27 shapes into `data/geography/jabar-adm2-2020.json`. The local file is **adapted display geometry**, not an input to validation, normalization or scoring. It is rendered as lightweight SVG without a mapping package or runtime source fetch.
 
 The geometry's represented year (2020) and the CIVX observations' period (2023) differ. The map is for approximate regional orientation only: coastlines, district boundaries and tiny city shapes may not match a certified 2023 boundary register. Matching names and 2019 BPS identifiers does **not** establish a formally approved 2023 crosswalk; review effective boundaries before using the map for area measurements or official administrative claims. The regional list remains the equivalent non-map access path.
+
+## 10. Unified current release
+
+One production release, `data/processed/civx-jabar-2023-current.json`, powers every application surface through `src/lib/civx/current.ts`. Historical four- and five-input releases remain reproducible artifacts, not selectable products. Their audit decisions apply to those releases; current decisions explicitly supersede them.
+
+The common core retains poverty, unemployment, HDI, improved sanitation and improved drinking water, and adds Puskesmas availability per 100,000 residents, published DBD incidence per 100,000 residents and the official BNPB 2023 disaster risk index. All eight have 27 administrative-region observations. The exact configuration, weights, extrema and provenance are versioned, never embedded in React.
+
+New source evidence:
+
+- BPS *Provinsi Jawa Barat Dalam Angka 2024*, table 4.2.7, printed 235–237 / PDF 311–313: total Puskesmas, originating from Dinas Kesehatan. Explicit published totals are the numerator. Subcategory dashes mean **negligible** under this book's legend, not automatically missing or zero; original symbols remain recorded. The pipeline does not impute them.
+- Dinas Kesehatan [*Profil Kesehatan Jawa Barat Tahun 2023*](https://app-diskes.jabarprov.go.id/drive/s/TyZTzEqnm5TfrM4/download/Profil%20Kesehatan%20Jawa%20Barat%20Tahun%202023.pdf), appendix table 1 / PDF 180: exact 2023 population. These counts agree with the rounded BPS SP2020-based projection series. The pipeline records numerator, denominator, formula, derived rate and both source references.
+- BPS table 4.2.6, printed 233–234 / PDF 309–310: the publisher's **DBD incidence**, not raw cases or a replacement rate. All 27 share the same table, year, unit and indicator definition. Different case/population tables do not reproduce every rate; their unresolved population vintage remains a visible limitation, not a fabricated denominator.
+- BNPB [*IRBI 2023*](https://inarisk.bnpb.go.id/pdf/BUKU%20IRBI%202023.pdf), PDF/printed page 101: all 27 Jawa Barat regional risk indices. This measures modeled **disaster risk**, not actual disaster impact. Source methodology and source-artifact fingerprint remain linked to the release.
+
+Road condition remains Context. The audited UPTD series represents the provincial managed road network located within regions, not a universal measure of kabupaten/kota-owned or all roads. Network/authority definitions and denominator totals conflict across inspected sources; 27 place labels alone do not establish comparability. No damaged-road proportion or infrastructure score is fabricated.
+
+`data/raw/current/` holds current raw transcriptions and eligibility findings. The current builder validates the common cohort, observations, reference endpoints and derived rates before scoring. Strict `npm run data:build` verifies original source bytes; explicit `npm run data:replay` verifies frozen audited-input/policy hashes and all available original artifacts, recording unavailable original re-verification honestly. The current release uses replay because the health-profile original could not be reacquired. BPS, IRBI and local capability snapshots were byte-verified; the unchanged prior health-profile transcription remains linked to its archived fingerprint. Sources exposes every artifact's build-verification receipt. Restricted originals remain outside redistributed outputs.
+
+Context and Regional Advantages reuse the existing dated evidence and classifications. Density never carries a deprivation direction. Historical traffic keeps its real period; police-jurisdiction crime remains incompatible geography; partial mobility/transit/digital/healthcare evidence stays non-scoring. Whoosh `3217`, Kertajati `3210` and Cisumdawu `3211` remain the three verified positives. Missing optional evidence means no comparable verified data, not absence.
+
+Earlier raw/methodology/processed files remain archived. `data/releases/civx-v1-integrity.json` pins the original four-input artifacts, including `docs/METHODOLOGY.md`; they remain unchanged. The five-input audit and method are retained in [V2-SOURCE-AUDIT.md](V2-SOURCE-AUDIT.md) and [METHODOLOGY-V2.md](METHODOLOGY-V2.md). Rights clearance, independent review and certified effective-boundary compatibility remain unresolved.

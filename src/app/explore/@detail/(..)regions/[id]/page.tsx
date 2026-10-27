@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { RegionDetail } from "@/components/regions/region-detail";
 import { RegionOverlay } from "@/components/regions/region-overlay";
-import { getRegionDetail } from "@/lib/civx/data";
+import { getCurrentRegion } from "@/lib/civx/current";
 
 export default function ContextualRegionPage({ params }: { params: Promise<{ id: string }> }) {
   return (
@@ -14,6 +14,6 @@ export default function ContextualRegionPage({ params }: { params: Promise<{ id:
 
 async function ContextualRecord({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  if (!getRegionDetail(id)) notFound();
+  if (!getCurrentRegion(id)) notFound();
   return <RegionOverlay id={id}><RegionDetail id={id} contextual /></RegionOverlay>;
 }

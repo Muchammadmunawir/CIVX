@@ -1,6 +1,6 @@
 # CIVX Architecture
 
-**Status:** 2023 Jawa Barat four-indicator release covers 27 complete records; geographic display and same-release comparison available; boundary crosswalk review and later periods deferred
+**Status:** One current CIVX — Jawa Barat 2023 release powers all production routes. §13 supersedes historical release-specific architecture below.
 
 ## 1. Application baseline
 
@@ -184,3 +184,19 @@ Explore retains its local filters, map inspection and selection while detail is 
 
 Comparison remains server-rendered and uses the existing compatibility guard. Its presentation formats pairwise differences from the displayed released values, preserves units and source periods, and scales contribution bars from published weights. It does not normalize observations or calculate new Civic Index scores. Methodology and Sources add reading anchors without changing the method, source manifest or version.
 
+
+## 13. Unified current release boundary
+
+`src/lib/civx/current.ts` is the sole production read entry point. It validates `data/processed/civx-jabar-2023-current.json`, exports the current regions and methodology-derived indicators/dimensions, and indexes regional identity. Existing `v2` contract/type names remain internal implementation identifiers; they do not define a second user-facing product.
+
+The data flow remains **raw artifacts → validated observations → versioned methodology → processed release → UI**. The current builder generates Puskesmas availability from explicit facility totals and exact 2023 population, preserving both source references, original facility subcategory symbols, numerator, denominator and formula. Published DBD incidence remains an official rate, not a recomputed replacement. BNPB disaster risk is distinct from disaster impact.
+
+All 27 regions share the same complete core indicator IDs, units, year, geography convention, reference endpoints and weights. Dimension weights and every dimension's internal weights sum to one. Missing, invalid or incompatible core evidence withholds the whole result; no silent imputation, clipping or per-region reweighting occurs. Full precision precedes independent publication rounding. Context and advantages never enter the aggregate.
+
+`CandidateAudit` retains institution/URL, years, coverage, classification, status, definition, reason, limitations and evidence. Observations retain analytical kind, identity, geographic level/reference, actual period, unit/value, coverage/comparability, verification, missingness, provenance and derivation. Advantages additionally require presence and assignment reason. Sources/artifacts preserve revision, retrieval, checksum and rights information.
+
+Home, Explore, canonical/intercepted region detail, Compare, Methodology and Sources consume this boundary. Counts, pressure explanations and selectable map layers derive from current configuration. Only complete validated pressure layers appear; an unsupported infrastructure dimension has no map layer or zero score. Compare displays explicit score, dimension and indicator differences from the same release, without rescoring in React.
+
+The old product switch and competing versioned routes are removed. Internal release/version metadata remains in provenance and release history. Four-input raw/policy/output/document hashes remain pinned by `data/releases/civx-v1-integrity.json`; the five-input release and its builder remain archived. Current weights, sensitivity and eligibility decisions are in [METHODOLOGY-CURRENT.md](METHODOLOGY-CURRENT.md).
+
+No dependencies were added. Normal web builds consume committed processed JSON without downloading restricted books. Data regeneration verifies the original artifacts separately. Approximate 2020 display boundaries remain separate from 2023 scoring, with license attribution and effective-boundary caveats intact.

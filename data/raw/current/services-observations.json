@@ -1,0 +1,3603 @@
+{
+  "sources": [
+    {
+      "id": "bps-jabar-poverty-2023",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "title": "Jumlah dan Persentase Penduduk Miskin Menurut Kabupaten/Kota di Provinsi Jawa Barat, 2022 dan 2023",
+      "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "table": "4.6.2",
+      "page": "printed 307 / PDF 383",
+      "dataYear": 2023,
+      "referencePeriod": "2023 Susenas (March indicated in provincial companion table; district table labels year only)",
+      "artifactId": "sha256:500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81",
+      "accessedAt": "2026-10-27"
+    },
+    {
+      "id": "bps-jabar-unemployment-2023",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "title": "Tingkat Pengangguran Terbuka dan Tingkat Partisipasi Angkatan Kerja Menurut Kabupaten/Kota di Provinsi Jawa Barat, 2021–2023",
+      "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "table": "3.2.16",
+      "page": "printed 147 / PDF 223",
+      "dataYear": 2023,
+      "referencePeriod": "August 2023 Sakernas",
+      "artifactId": "sha256:500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81",
+      "accessedAt": "2026-10-27"
+    },
+    {
+      "id": "bps-jabar-hdi-2023",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "title": "Indeks Pembangunan Manusia Menurut Kabupaten/Kota di Provinsi Jawa Barat, 2020–2023",
+      "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "table": "4.6.5",
+      "page": "printed 311 / PDF 387",
+      "dataYear": 2023,
+      "referencePeriod": "2023 IPM, life expectancy from Long Form SP2020",
+      "artifactId": "sha256:500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81",
+      "accessedAt": "2026-10-27"
+    },
+    {
+      "id": "bps-jabar-sanitation-2023",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "title": "Persentase Rumah Tangga yang Memiliki Akses Terhadap Sanitasi Layak Menurut Kabupaten/Kota di Provinsi Jawa Barat, 2019–2023",
+      "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "table": "4.3.8",
+      "page": "printed 261 / PDF 337",
+      "dataYear": 2023,
+      "referencePeriod": "2023 Susenas",
+      "artifactId": "sha256:500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81",
+      "accessedAt": "2026-10-27"
+    },
+    {
+      "id": "bps-jabar-water-2023",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "title": "Persentase Rumah Tangga yang Memiliki Akses Terhadap Sumber Air Minum Layak Menurut Kabupaten/Kota di Provinsi Jawa Barat, 2020–2023",
+      "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "table": "4.3.9",
+      "page": "printed 262 / PDF 338",
+      "dataYear": 2023,
+      "referencePeriod": "2023 Susenas; district table labels year only",
+      "artifactId": "sha256:500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81",
+      "accessedAt": "2026-10-27"
+    },
+    {
+      "id": "bps-jabar-puskesmas-2023",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat; originating health tables: Dinas Kesehatan Provinsi Jawa Barat",
+      "title": "Jumlah Rumah Sakit Umum, Rumah Sakit Khusus, dan Puskesmas Menurut Kabupaten/Kota di Provinsi Jawa Barat, 2022 dan 2023",
+      "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "table": "4.2.7",
+      "page": "printed 235–237 / PDF 311–313; Puskesmas totals printed 236 / PDF 312",
+      "dataYear": 2023,
+      "referencePeriod": "2023 facility count; precise inventory date not stated",
+      "artifactId": "sha256:500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81",
+      "accessedAt": "2026-10-27"
+    },
+    {
+      "id": "bps-jabar-dbd-2023",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat; originating health tables: Dinas Kesehatan Provinsi Jawa Barat",
+      "title": "Kasus Penyakit Menurut Kabupaten/Kota dan Jenis Penyakit di Provinsi Jawa Barat, 2023: Angka Kesakitan DBD per 100.000 Penduduk",
+      "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "table": "4.2.6",
+      "page": "printed 233–234 / PDF 309–310; DBD column (7), PDF 310",
+      "dataYear": 2023,
+      "referencePeriod": "2023 annual published incidence rate; population series underlying rate is not identified and conflicts with available population/case evidence",
+      "artifactId": "sha256:500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81",
+      "accessedAt": "2026-10-27"
+    },
+    {
+      "id": "bps-jabar-density-2023",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "title": "Penduduk, Laju Pertumbuhan Penduduk, Distribusi Persentase Penduduk, Kepadatan Penduduk, Rasio Jenis Kelamin Penduduk Menurut Kabupaten/Kota, 2020, 2022, 2023 dan 2024",
+      "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "table": "3.1.1",
+      "page": "printed 111–115 / PDF 187–191; density printed 114 / PDF 190",
+      "dataYear": 2023,
+      "referencePeriod": "2023 SP2020-based Jawa Barat population projections 2020–2035; area basis Kepmendagri 100.1.1-6117 Tahun 2022",
+      "artifactId": "sha256:500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81",
+      "accessedAt": "2026-10-27"
+    },
+    {
+      "id": "diskes-jabar-population-2023",
+      "publisher": "Dinas Kesehatan Provinsi Jawa Barat; table sources BPS Provinsi Jawa Barat and Kementerian Kesehatan",
+      "title": "Profil Kesehatan Provinsi Jawa Barat Tahun 2023: Luas Wilayah, Jumlah Desa/Kelurahan, Jumlah Penduduk, Jumlah Rumah Tangga, dan Kepadatan Penduduk Menurut Kabupaten/Kota",
+      "url": "https://app-diskes.jabarprov.go.id/drive/s/TyZTzEqnm5TfrM4/download/Profil%20Kesehatan%20Jawa%20Barat%20Tahun%202023.pdf",
+      "table": "appendix table 1",
+      "page": "PDF 180 (unnumbered appendix)",
+      "dataYear": 2023,
+      "referencePeriod": "2023 population, exact persons. All 27 appendix counts agree with rounded population in yearbook table 3.1.1 (SP2020-based Jawa Barat projections 2020–2035). No within-year reference date stated in the appendix. Not the different population displayed in profile narrative figure I.1.",
+      "artifactId": "sha256:6480ae4145a9d763d0dd2d8973f65aea5803ab0cec485034e551dca5c98a7148",
+      "accessedAt": "2026-10-27"
+    },
+    {
+      "id": "diskes-jabar-dbd-cases-2023",
+      "publisher": "Dinas Kesehatan Provinsi Jawa Barat",
+      "title": "Profil Kesehatan Provinsi Jawa Barat Tahun 2023: Kasus Demam Berdarah Dengue (DBD) Menurut Jenis Kelamin, Per Kabupaten/Kota",
+      "url": "https://app-diskes.jabarprov.go.id/drive/s/TyZTzEqnm5TfrM4/download/Profil%20Kesehatan%20Jawa%20Barat%20Tahun%202023.pdf",
+      "table": "appendix table 72",
+      "page": "PDF 271 (unnumbered appendix); interpretation printed 105–107 / PDF 127–129",
+      "dataYear": 2023,
+      "referencePeriod": "2023 reported DBD cases, including cases found at hospitals within Puskesmas working areas; used to audit denominator inconsistency, not to recompute accepted incidence",
+      "artifactId": "sha256:6480ae4145a9d763d0dd2d8973f65aea5803ab0cec485034e551dca5c98a7148",
+      "accessedAt": "2026-10-27"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "sha256:500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81",
+      "localPath": "data/raw/bps-jabar-dalam-angka-2024.pdf",
+      "bytes": 11915084,
+      "url": "https://webapi.bps.go.id/download.php?f=AQADdxpu9GSSGVFQgng5pYyTGigK3q-V5Io_qhChet4CMxry7bE7Kv4VzCn64iAiIj4MgQlS_myNdpmSwEDTfk3ejH1RPMhmIHuWViDP5-DDP5E09Fw4On73vdACtMkpg6SZlaLWhDE8fDMc6rVCyiVOdcrr8IrzPdNXcLci2LqsOnBq4MaArWKf0Qq84UKw7X6Mg3ISxJErC8TGrO6VI2xFX2v3ycG0_8qUAZCl663iKionLUi6AHZpfLHid6v3UUNlLnPNCQMqrwElvXMolsZyGM_FtrjX958Eh_7rwP8f",
+      "retrievedAt": "2026-10-26",
+      "redistribution": "Do not commit or distribute the full book without resolving the publication's commercial-reproduction restriction. Existing ignored artifact reused by reference only; no new book copy or page images persisted."
+    },
+    {
+      "id": "sha256:6480ae4145a9d763d0dd2d8973f65aea5803ab0cec485034e551dca5c98a7148",
+      "localPath": null,
+      "bytes": 23078018,
+      "url": "https://app-diskes.jabarprov.go.id/drive/s/TyZTzEqnm5TfrM4/download/Profil%20Kesehatan%20Jawa%20Barat%20Tahun%202023.pdf",
+      "retrievedAt": "2026-10-27",
+      "redistribution": "Official PDF inspected in memory. No express redistribution permission established; original PDF not persisted or redistributed. Reacquire from URL and compare SHA-256."
+    }
+  ],
+  "observations": [
+    {
+      "regionId": "3201",
+      "indicatorId": "poverty",
+      "value": 7.27,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-poverty-2023",
+      "locator": "4.6.2; printed 307 / PDF 383; Kabupaten Bogor (kabupaten block), 2023 percentage column (7)",
+      "denominator": {
+        "definition": "Susenas weighted total population; no population count substituted"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3202",
+      "indicatorId": "poverty",
+      "value": 7.01,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-poverty-2023",
+      "locator": "4.6.2; printed 307 / PDF 383; Kabupaten Sukabumi (kabupaten block), 2023 percentage column (7)",
+      "denominator": {
+        "definition": "Susenas weighted total population; no population count substituted"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3203",
+      "indicatorId": "poverty",
+      "value": 10.22,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-poverty-2023",
+      "locator": "4.6.2; printed 307 / PDF 383; Kabupaten Cianjur (kabupaten block), 2023 percentage column (7)",
+      "denominator": {
+        "definition": "Susenas weighted total population; no population count substituted"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3204",
+      "indicatorId": "poverty",
+      "value": 6.4,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-poverty-2023",
+      "locator": "4.6.2; printed 307 / PDF 383; Kabupaten Bandung (kabupaten block), 2023 percentage column (7)",
+      "denominator": {
+        "definition": "Susenas weighted total population; no population count substituted"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3205",
+      "indicatorId": "poverty",
+      "value": 9.77,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-poverty-2023",
+      "locator": "4.6.2; printed 307 / PDF 383; Kabupaten Garut (kabupaten block), 2023 percentage column (7)",
+      "denominator": {
+        "definition": "Susenas weighted total population; no population count substituted"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3206",
+      "indicatorId": "poverty",
+      "value": 10.28,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-poverty-2023",
+      "locator": "4.6.2; printed 307 / PDF 383; Kabupaten Tasikmalaya (kabupaten block), 2023 percentage column (7)",
+      "denominator": {
+        "definition": "Susenas weighted total population; no population count substituted"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3207",
+      "indicatorId": "poverty",
+      "value": 7.42,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-poverty-2023",
+      "locator": "4.6.2; printed 307 / PDF 383; Kabupaten Ciamis (kabupaten block), 2023 percentage column (7)",
+      "denominator": {
+        "definition": "Susenas weighted total population; no population count substituted"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3208",
+      "indicatorId": "poverty",
+      "value": 12.12,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-poverty-2023",
+      "locator": "4.6.2; printed 307 / PDF 383; Kabupaten Kuningan (kabupaten block), 2023 percentage column (7)",
+      "denominator": {
+        "definition": "Susenas weighted total population; no population count substituted"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3209",
+      "indicatorId": "poverty",
+      "value": 11.2,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-poverty-2023",
+      "locator": "4.6.2; printed 307 / PDF 383; Kabupaten Cirebon (kabupaten block), 2023 percentage column (7)",
+      "denominator": {
+        "definition": "Susenas weighted total population; no population count substituted"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3210",
+      "indicatorId": "poverty",
+      "value": 11.21,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-poverty-2023",
+      "locator": "4.6.2; printed 307 / PDF 383; Kabupaten Majalengka (kabupaten block), 2023 percentage column (7)",
+      "denominator": {
+        "definition": "Susenas weighted total population; no population count substituted"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3211",
+      "indicatorId": "poverty",
+      "value": 9.36,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-poverty-2023",
+      "locator": "4.6.2; printed 307 / PDF 383; Kabupaten Sumedang (kabupaten block), 2023 percentage column (7)",
+      "denominator": {
+        "definition": "Susenas weighted total population; no population count substituted"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3212",
+      "indicatorId": "poverty",
+      "value": 12.13,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-poverty-2023",
+      "locator": "4.6.2; printed 307 / PDF 383; Kabupaten Indramayu (kabupaten block), 2023 percentage column (7)",
+      "denominator": {
+        "definition": "Susenas weighted total population; no population count substituted"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3213",
+      "indicatorId": "poverty",
+      "value": 9.52,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-poverty-2023",
+      "locator": "4.6.2; printed 307 / PDF 383; Kabupaten Subang (kabupaten block), 2023 percentage column (7)",
+      "denominator": {
+        "definition": "Susenas weighted total population; no population count substituted"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3214",
+      "indicatorId": "poverty",
+      "value": 8.46,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-poverty-2023",
+      "locator": "4.6.2; printed 307 / PDF 383; Kabupaten Purwakarta (kabupaten block), 2023 percentage column (7)",
+      "denominator": {
+        "definition": "Susenas weighted total population; no population count substituted"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3215",
+      "indicatorId": "poverty",
+      "value": 7.87,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-poverty-2023",
+      "locator": "4.6.2; printed 307 / PDF 383; Kabupaten Karawang (kabupaten block), 2023 percentage column (7)",
+      "denominator": {
+        "definition": "Susenas weighted total population; no population count substituted"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3216",
+      "indicatorId": "poverty",
+      "value": 4.93,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-poverty-2023",
+      "locator": "4.6.2; printed 307 / PDF 383; Kabupaten Bekasi (kabupaten block), 2023 percentage column (7)",
+      "denominator": {
+        "definition": "Susenas weighted total population; no population count substituted"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3217",
+      "indicatorId": "poverty",
+      "value": 10.52,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-poverty-2023",
+      "locator": "4.6.2; printed 307 / PDF 383; Kabupaten Bandung Barat (kabupaten block), 2023 percentage column (7)",
+      "denominator": {
+        "definition": "Susenas weighted total population; no population count substituted"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3218",
+      "indicatorId": "poverty",
+      "value": 8.98,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-poverty-2023",
+      "locator": "4.6.2; printed 307 / PDF 383; Kabupaten Pangandaran (kabupaten block), 2023 percentage column (7)",
+      "denominator": {
+        "definition": "Susenas weighted total population; no population count substituted"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3271",
+      "indicatorId": "poverty",
+      "value": 6.67,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-poverty-2023",
+      "locator": "4.6.2; printed 307 / PDF 383; Kota Bogor (kota block), 2023 percentage column (7)",
+      "denominator": {
+        "definition": "Susenas weighted total population; no population count substituted"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3272",
+      "indicatorId": "poverty",
+      "value": 7.5,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-poverty-2023",
+      "locator": "4.6.2; printed 307 / PDF 383; Kota Sukabumi (kota block), 2023 percentage column (7)",
+      "denominator": {
+        "definition": "Susenas weighted total population; no population count substituted"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3273",
+      "indicatorId": "poverty",
+      "value": 3.96,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-poverty-2023",
+      "locator": "4.6.2; printed 307 / PDF 383; Kota Bandung (kota block), 2023 percentage column (7)",
+      "denominator": {
+        "definition": "Susenas weighted total population; no population count substituted"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3274",
+      "indicatorId": "poverty",
+      "value": 9.16,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-poverty-2023",
+      "locator": "4.6.2; printed 307 / PDF 383; Kota Cirebon (kota block), 2023 percentage column (7)",
+      "denominator": {
+        "definition": "Susenas weighted total population; no population count substituted"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3275",
+      "indicatorId": "poverty",
+      "value": 4.1,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-poverty-2023",
+      "locator": "4.6.2; printed 307 / PDF 383; Kota Bekasi (kota block), 2023 percentage column (7)",
+      "denominator": {
+        "definition": "Susenas weighted total population; no population count substituted"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3276",
+      "indicatorId": "poverty",
+      "value": 2.38,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-poverty-2023",
+      "locator": "4.6.2; printed 307 / PDF 383; Kota Depok (kota block), 2023 percentage column (7)",
+      "denominator": {
+        "definition": "Susenas weighted total population; no population count substituted"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3277",
+      "indicatorId": "poverty",
+      "value": 4.66,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-poverty-2023",
+      "locator": "4.6.2; printed 307 / PDF 383; Kota Cimahi (kota block), 2023 percentage column (7)",
+      "denominator": {
+        "definition": "Susenas weighted total population; no population count substituted"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3278",
+      "indicatorId": "poverty",
+      "value": 11.53,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-poverty-2023",
+      "locator": "4.6.2; printed 307 / PDF 383; Kota Tasikmalaya (kota block), 2023 percentage column (7)",
+      "denominator": {
+        "definition": "Susenas weighted total population; no population count substituted"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3279",
+      "indicatorId": "poverty",
+      "value": 6.14,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-poverty-2023",
+      "locator": "4.6.2; printed 307 / PDF 383; Kota Banjar (kota block), 2023 percentage column (7)",
+      "denominator": {
+        "definition": "Susenas weighted total population; no population count substituted"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3201",
+      "indicatorId": "unemployment",
+      "value": 8.47,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-unemployment-2023",
+      "locator": "3.2.16; printed 147 / PDF 223; Kabupaten Bogor (kabupaten block), TPT 2023 column (4)",
+      "denominator": {
+        "definition": "August Sakernas labour force aged 15+; not total population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3202",
+      "indicatorId": "unemployment",
+      "value": 7.32,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-unemployment-2023",
+      "locator": "3.2.16; printed 147 / PDF 223; Kabupaten Sukabumi (kabupaten block), TPT 2023 column (4)",
+      "denominator": {
+        "definition": "August Sakernas labour force aged 15+; not total population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3203",
+      "indicatorId": "unemployment",
+      "value": 7.71,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-unemployment-2023",
+      "locator": "3.2.16; printed 147 / PDF 223; Kabupaten Cianjur (kabupaten block), TPT 2023 column (4)",
+      "denominator": {
+        "definition": "August Sakernas labour force aged 15+; not total population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3204",
+      "indicatorId": "unemployment",
+      "value": 6.52,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-unemployment-2023",
+      "locator": "3.2.16; printed 147 / PDF 223; Kabupaten Bandung (kabupaten block), TPT 2023 column (4)",
+      "denominator": {
+        "definition": "August Sakernas labour force aged 15+; not total population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3205",
+      "indicatorId": "unemployment",
+      "value": 7.33,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-unemployment-2023",
+      "locator": "3.2.16; printed 147 / PDF 223; Kabupaten Garut (kabupaten block), TPT 2023 column (4)",
+      "denominator": {
+        "definition": "August Sakernas labour force aged 15+; not total population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3206",
+      "indicatorId": "unemployment",
+      "value": 3.89,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-unemployment-2023",
+      "locator": "3.2.16; printed 147 / PDF 223; Kabupaten Tasikmalaya (kabupaten block), TPT 2023 column (4)",
+      "denominator": {
+        "definition": "August Sakernas labour force aged 15+; not total population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3207",
+      "indicatorId": "unemployment",
+      "value": 3.52,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-unemployment-2023",
+      "locator": "3.2.16; printed 147 / PDF 223; Kabupaten Ciamis (kabupaten block), TPT 2023 column (4)",
+      "denominator": {
+        "definition": "August Sakernas labour force aged 15+; not total population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3208",
+      "indicatorId": "unemployment",
+      "value": 9.49,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-unemployment-2023",
+      "locator": "3.2.16; printed 147 / PDF 223; Kabupaten Kuningan (kabupaten block), TPT 2023 column (4)",
+      "denominator": {
+        "definition": "August Sakernas labour force aged 15+; not total population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3209",
+      "indicatorId": "unemployment",
+      "value": 7.65,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-unemployment-2023",
+      "locator": "3.2.16; printed 147 / PDF 223; Kabupaten Cirebon (kabupaten block), TPT 2023 column (4)",
+      "denominator": {
+        "definition": "August Sakernas labour force aged 15+; not total population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3210",
+      "indicatorId": "unemployment",
+      "value": 4.12,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-unemployment-2023",
+      "locator": "3.2.16; printed 147 / PDF 223; Kabupaten Majalengka (kabupaten block), TPT 2023 column (4)",
+      "denominator": {
+        "definition": "August Sakernas labour force aged 15+; not total population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3211",
+      "indicatorId": "unemployment",
+      "value": 6.94,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-unemployment-2023",
+      "locator": "3.2.16; printed 147 / PDF 223; Kabupaten Sumedang (kabupaten block), TPT 2023 column (4)",
+      "denominator": {
+        "definition": "August Sakernas labour force aged 15+; not total population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3212",
+      "indicatorId": "unemployment",
+      "value": 6.46,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-unemployment-2023",
+      "locator": "3.2.16; printed 147 / PDF 223; Kabupaten Indramayu (kabupaten block), TPT 2023 column (4)",
+      "denominator": {
+        "definition": "August Sakernas labour force aged 15+; not total population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3213",
+      "indicatorId": "unemployment",
+      "value": 7.65,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-unemployment-2023",
+      "locator": "3.2.16; printed 147 / PDF 223; Kabupaten Subang (kabupaten block), TPT 2023 column (4)",
+      "denominator": {
+        "definition": "August Sakernas labour force aged 15+; not total population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3214",
+      "indicatorId": "unemployment",
+      "value": 7.72,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-unemployment-2023",
+      "locator": "3.2.16; printed 147 / PDF 223; Kabupaten Purwakarta (kabupaten block), TPT 2023 column (4)",
+      "denominator": {
+        "definition": "August Sakernas labour force aged 15+; not total population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3215",
+      "indicatorId": "unemployment",
+      "value": 8.95,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-unemployment-2023",
+      "locator": "3.2.16; printed 147 / PDF 223; Kabupaten Karawang (kabupaten block), TPT 2023 column (4)",
+      "denominator": {
+        "definition": "August Sakernas labour force aged 15+; not total population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3216",
+      "indicatorId": "unemployment",
+      "value": 8.87,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-unemployment-2023",
+      "locator": "3.2.16; printed 147 / PDF 223; Kabupaten Bekasi (kabupaten block), TPT 2023 column (4)",
+      "denominator": {
+        "definition": "August Sakernas labour force aged 15+; not total population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3217",
+      "indicatorId": "unemployment",
+      "value": 8.11,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-unemployment-2023",
+      "locator": "3.2.16; printed 147 / PDF 223; Kabupaten Bandung Barat (kabupaten block), TPT 2023 column (4)",
+      "denominator": {
+        "definition": "August Sakernas labour force aged 15+; not total population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3218",
+      "indicatorId": "unemployment",
+      "value": 1.52,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-unemployment-2023",
+      "locator": "3.2.16; printed 147 / PDF 223; Kabupaten Pangandaran (kabupaten block), TPT 2023 column (4)",
+      "denominator": {
+        "definition": "August Sakernas labour force aged 15+; not total population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3271",
+      "indicatorId": "unemployment",
+      "value": 9.39,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-unemployment-2023",
+      "locator": "3.2.16; printed 147 / PDF 223; Kota Bogor (kota block), TPT 2023 column (4)",
+      "denominator": {
+        "definition": "August Sakernas labour force aged 15+; not total population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3272",
+      "indicatorId": "unemployment",
+      "value": 8.53,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-unemployment-2023",
+      "locator": "3.2.16; printed 147 / PDF 223; Kota Sukabumi (kota block), TPT 2023 column (4)",
+      "denominator": {
+        "definition": "August Sakernas labour force aged 15+; not total population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3273",
+      "indicatorId": "unemployment",
+      "value": 8.83,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-unemployment-2023",
+      "locator": "3.2.16; printed 147 / PDF 223; Kota Bandung (kota block), TPT 2023 column (4)",
+      "denominator": {
+        "definition": "August Sakernas labour force aged 15+; not total population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3274",
+      "indicatorId": "unemployment",
+      "value": 7.66,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-unemployment-2023",
+      "locator": "3.2.16; printed 147 / PDF 223; Kota Cirebon (kota block), TPT 2023 column (4)",
+      "denominator": {
+        "definition": "August Sakernas labour force aged 15+; not total population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3275",
+      "indicatorId": "unemployment",
+      "value": 7.9,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-unemployment-2023",
+      "locator": "3.2.16; printed 147 / PDF 223; Kota Bekasi (kota block), TPT 2023 column (4)",
+      "denominator": {
+        "definition": "August Sakernas labour force aged 15+; not total population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3276",
+      "indicatorId": "unemployment",
+      "value": 6.97,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-unemployment-2023",
+      "locator": "3.2.16; printed 147 / PDF 223; Kota Depok (kota block), TPT 2023 column (4)",
+      "denominator": {
+        "definition": "August Sakernas labour force aged 15+; not total population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3277",
+      "indicatorId": "unemployment",
+      "value": 10.52,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-unemployment-2023",
+      "locator": "3.2.16; printed 147 / PDF 223; Kota Cimahi (kota block), TPT 2023 column (4)",
+      "denominator": {
+        "definition": "August Sakernas labour force aged 15+; not total population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3278",
+      "indicatorId": "unemployment",
+      "value": 6.55,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-unemployment-2023",
+      "locator": "3.2.16; printed 147 / PDF 223; Kota Tasikmalaya (kota block), TPT 2023 column (4)",
+      "denominator": {
+        "definition": "August Sakernas labour force aged 15+; not total population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3279",
+      "indicatorId": "unemployment",
+      "value": 5.43,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-unemployment-2023",
+      "locator": "3.2.16; printed 147 / PDF 223; Kota Banjar (kota block), TPT 2023 column (4)",
+      "denominator": {
+        "definition": "August Sakernas labour force aged 15+; not total population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3201",
+      "indicatorId": "hdi",
+      "value": 73.02,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bps-jabar-hdi-2023",
+      "locator": "4.6.5; printed 311 / PDF 387; Kabupaten Bogor (kabupaten block), 2023 column (5)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3202",
+      "indicatorId": "hdi",
+      "value": 69.71,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bps-jabar-hdi-2023",
+      "locator": "4.6.5; printed 311 / PDF 387; Kabupaten Sukabumi (kabupaten block), 2023 column (5)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3203",
+      "indicatorId": "hdi",
+      "value": 68.18,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bps-jabar-hdi-2023",
+      "locator": "4.6.5; printed 311 / PDF 387; Kabupaten Cianjur (kabupaten block), 2023 column (5)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3204",
+      "indicatorId": "hdi",
+      "value": 74.03,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bps-jabar-hdi-2023",
+      "locator": "4.6.5; printed 311 / PDF 387; Kabupaten Bandung (kabupaten block), 2023 column (5)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3205",
+      "indicatorId": "hdi",
+      "value": 69.22,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bps-jabar-hdi-2023",
+      "locator": "4.6.5; printed 311 / PDF 387; Kabupaten Garut (kabupaten block), 2023 column (5)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3206",
+      "indicatorId": "hdi",
+      "value": 69.38,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bps-jabar-hdi-2023",
+      "locator": "4.6.5; printed 311 / PDF 387; Kabupaten Tasikmalaya (kabupaten block), 2023 column (5)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3207",
+      "indicatorId": "hdi",
+      "value": 73.12,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bps-jabar-hdi-2023",
+      "locator": "4.6.5; printed 311 / PDF 387; Kabupaten Ciamis (kabupaten block), 2023 column (5)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3208",
+      "indicatorId": "hdi",
+      "value": 70.99,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bps-jabar-hdi-2023",
+      "locator": "4.6.5; printed 311 / PDF 387; Kabupaten Kuningan (kabupaten block), 2023 column (5)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3209",
+      "indicatorId": "hdi",
+      "value": 71.81,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bps-jabar-hdi-2023",
+      "locator": "4.6.5; printed 311 / PDF 387; Kabupaten Cirebon (kabupaten block), 2023 column (5)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3210",
+      "indicatorId": "hdi",
+      "value": 70.76,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bps-jabar-hdi-2023",
+      "locator": "4.6.5; printed 311 / PDF 387; Kabupaten Majalengka (kabupaten block), 2023 column (5)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3211",
+      "indicatorId": "hdi",
+      "value": 74.02,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bps-jabar-hdi-2023",
+      "locator": "4.6.5; printed 311 / PDF 387; Kabupaten Sumedang (kabupaten block), 2023 column (5)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3212",
+      "indicatorId": "hdi",
+      "value": 70.19,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bps-jabar-hdi-2023",
+      "locator": "4.6.5; printed 311 / PDF 387; Kabupaten Indramayu (kabupaten block), 2023 column (5)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3213",
+      "indicatorId": "hdi",
+      "value": 71.42,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bps-jabar-hdi-2023",
+      "locator": "4.6.5; printed 311 / PDF 387; Kabupaten Subang (kabupaten block), 2023 column (5)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3214",
+      "indicatorId": "hdi",
+      "value": 73.43,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bps-jabar-hdi-2023",
+      "locator": "4.6.5; printed 311 / PDF 387; Kabupaten Purwakarta (kabupaten block), 2023 column (5)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3215",
+      "indicatorId": "hdi",
+      "value": 73.25,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bps-jabar-hdi-2023",
+      "locator": "4.6.5; printed 311 / PDF 387; Kabupaten Karawang (kabupaten block), 2023 column (5)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3216",
+      "indicatorId": "hdi",
+      "value": 76.13,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bps-jabar-hdi-2023",
+      "locator": "4.6.5; printed 311 / PDF 387; Kabupaten Bekasi (kabupaten block), 2023 column (5)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3217",
+      "indicatorId": "hdi",
+      "value": 70.33,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bps-jabar-hdi-2023",
+      "locator": "4.6.5; printed 311 / PDF 387; Kabupaten Bandung Barat (kabupaten block), 2023 column (5)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3218",
+      "indicatorId": "hdi",
+      "value": 70.57,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bps-jabar-hdi-2023",
+      "locator": "4.6.5; printed 311 / PDF 387; Kabupaten Pangandaran (kabupaten block), 2023 column (5)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3271",
+      "indicatorId": "hdi",
+      "value": 78.36,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bps-jabar-hdi-2023",
+      "locator": "4.6.5; printed 311 / PDF 387; Kota Bogor (kota block), 2023 column (5)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3272",
+      "indicatorId": "hdi",
+      "value": 77.16,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bps-jabar-hdi-2023",
+      "locator": "4.6.5; printed 311 / PDF 387; Kota Sukabumi (kota block), 2023 column (5)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3273",
+      "indicatorId": "hdi",
+      "value": 83.29,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bps-jabar-hdi-2023",
+      "locator": "4.6.5; printed 311 / PDF 387; Kota Bandung (kota block), 2023 column (5)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3274",
+      "indicatorId": "hdi",
+      "value": 77.45,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bps-jabar-hdi-2023",
+      "locator": "4.6.5; printed 311 / PDF 387; Kota Cirebon (kota block), 2023 column (5)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3275",
+      "indicatorId": "hdi",
+      "value": 83.06,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bps-jabar-hdi-2023",
+      "locator": "4.6.5; printed 311 / PDF 387; Kota Bekasi (kota block), 2023 column (5)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3276",
+      "indicatorId": "hdi",
+      "value": 82.53,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bps-jabar-hdi-2023",
+      "locator": "4.6.5; printed 311 / PDF 387; Kota Depok (kota block), 2023 column (5)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3277",
+      "indicatorId": "hdi",
+      "value": 79.69,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bps-jabar-hdi-2023",
+      "locator": "4.6.5; printed 311 / PDF 387; Kota Cimahi (kota block), 2023 column (5)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3278",
+      "indicatorId": "hdi",
+      "value": 75.47,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bps-jabar-hdi-2023",
+      "locator": "4.6.5; printed 311 / PDF 387; Kota Tasikmalaya (kota block), 2023 column (5)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3279",
+      "indicatorId": "hdi",
+      "value": 74.45,
+      "unit": "index points",
+      "period": "2023",
+      "sourceId": "bps-jabar-hdi-2023",
+      "locator": "4.6.5; printed 311 / PDF 387; Kota Banjar (kota block), 2023 column (5)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3201",
+      "indicatorId": "sanitation",
+      "value": 71.49,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-sanitation-2023",
+      "locator": "4.3.8; printed 261 / PDF 337; Kabupaten Bogor (kabupaten block), 2023 column (6)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3202",
+      "indicatorId": "sanitation",
+      "value": 53.21,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-sanitation-2023",
+      "locator": "4.3.8; printed 261 / PDF 337; Kabupaten Sukabumi (kabupaten block), 2023 column (6)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3203",
+      "indicatorId": "sanitation",
+      "value": 63.83,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-sanitation-2023",
+      "locator": "4.3.8; printed 261 / PDF 337; Kabupaten Cianjur (kabupaten block), 2023 column (6)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3204",
+      "indicatorId": "sanitation",
+      "value": 66.67,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-sanitation-2023",
+      "locator": "4.3.8; printed 261 / PDF 337; Kabupaten Bandung (kabupaten block), 2023 column (6)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3205",
+      "indicatorId": "sanitation",
+      "value": 54.68,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-sanitation-2023",
+      "locator": "4.3.8; printed 261 / PDF 337; Kabupaten Garut (kabupaten block), 2023 column (6)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3206",
+      "indicatorId": "sanitation",
+      "value": 51.33,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-sanitation-2023",
+      "locator": "4.3.8; printed 261 / PDF 337; Kabupaten Tasikmalaya (kabupaten block), 2023 column (6)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3207",
+      "indicatorId": "sanitation",
+      "value": 71.38,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-sanitation-2023",
+      "locator": "4.3.8; printed 261 / PDF 337; Kabupaten Ciamis (kabupaten block), 2023 column (6)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3208",
+      "indicatorId": "sanitation",
+      "value": 83.03,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-sanitation-2023",
+      "locator": "4.3.8; printed 261 / PDF 337; Kabupaten Kuningan (kabupaten block), 2023 column (6)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3209",
+      "indicatorId": "sanitation",
+      "value": 89.02,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-sanitation-2023",
+      "locator": "4.3.8; printed 261 / PDF 337; Kabupaten Cirebon (kabupaten block), 2023 column (6)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3210",
+      "indicatorId": "sanitation",
+      "value": 82.67,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-sanitation-2023",
+      "locator": "4.3.8; printed 261 / PDF 337; Kabupaten Majalengka (kabupaten block), 2023 column (6)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3211",
+      "indicatorId": "sanitation",
+      "value": 72.55,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-sanitation-2023",
+      "locator": "4.3.8; printed 261 / PDF 337; Kabupaten Sumedang (kabupaten block), 2023 column (6)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3212",
+      "indicatorId": "sanitation",
+      "value": 95.9,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-sanitation-2023",
+      "locator": "4.3.8; printed 261 / PDF 337; Kabupaten Indramayu (kabupaten block), 2023 column (6)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3213",
+      "indicatorId": "sanitation",
+      "value": 89.4,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-sanitation-2023",
+      "locator": "4.3.8; printed 261 / PDF 337; Kabupaten Subang (kabupaten block), 2023 column (6)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3214",
+      "indicatorId": "sanitation",
+      "value": 77.33,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-sanitation-2023",
+      "locator": "4.3.8; printed 261 / PDF 337; Kabupaten Purwakarta (kabupaten block), 2023 column (6)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3215",
+      "indicatorId": "sanitation",
+      "value": 83.02,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-sanitation-2023",
+      "locator": "4.3.8; printed 261 / PDF 337; Kabupaten Karawang (kabupaten block), 2023 column (6)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3216",
+      "indicatorId": "sanitation",
+      "value": 91.54,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-sanitation-2023",
+      "locator": "4.3.8; printed 261 / PDF 337; Kabupaten Bekasi (kabupaten block), 2023 column (6)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3217",
+      "indicatorId": "sanitation",
+      "value": 56.93,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-sanitation-2023",
+      "locator": "4.3.8; printed 261 / PDF 337; Kabupaten Bandung Barat (kabupaten block), 2023 column (6)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3218",
+      "indicatorId": "sanitation",
+      "value": 86.91,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-sanitation-2023",
+      "locator": "4.3.8; printed 261 / PDF 337; Kabupaten Pangandaran (kabupaten block), 2023 column (6)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3271",
+      "indicatorId": "sanitation",
+      "value": 74.36,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-sanitation-2023",
+      "locator": "4.3.8; printed 261 / PDF 337; Kota Bogor (kota block), 2023 column (6)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3272",
+      "indicatorId": "sanitation",
+      "value": 44.76,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-sanitation-2023",
+      "locator": "4.3.8; printed 261 / PDF 337; Kota Sukabumi (kota block), 2023 column (6)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3273",
+      "indicatorId": "sanitation",
+      "value": 56.01,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-sanitation-2023",
+      "locator": "4.3.8; printed 261 / PDF 337; Kota Bandung (kota block), 2023 column (6)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3274",
+      "indicatorId": "sanitation",
+      "value": 93.27,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-sanitation-2023",
+      "locator": "4.3.8; printed 261 / PDF 337; Kota Cirebon (kota block), 2023 column (6)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3275",
+      "indicatorId": "sanitation",
+      "value": 98.52,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-sanitation-2023",
+      "locator": "4.3.8; printed 261 / PDF 337; Kota Bekasi (kota block), 2023 column (6)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3276",
+      "indicatorId": "sanitation",
+      "value": 97.43,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-sanitation-2023",
+      "locator": "4.3.8; printed 261 / PDF 337; Kota Depok (kota block), 2023 column (6)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3277",
+      "indicatorId": "sanitation",
+      "value": 76.37,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-sanitation-2023",
+      "locator": "4.3.8; printed 261 / PDF 337; Kota Cimahi (kota block), 2023 column (6)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3278",
+      "indicatorId": "sanitation",
+      "value": 56.25,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-sanitation-2023",
+      "locator": "4.3.8; printed 261 / PDF 337; Kota Tasikmalaya (kota block), 2023 column (6)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3279",
+      "indicatorId": "sanitation",
+      "value": 89.06,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-sanitation-2023",
+      "locator": "4.3.8; printed 261 / PDF 337; Kota Banjar (kota block), 2023 column (6)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3201",
+      "indicatorId": "drinking_water",
+      "value": 91.9,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-water-2023",
+      "locator": "4.3.9; printed 262 / PDF 338; Kabupaten Bogor (kabupaten block), 2023 column (5)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3202",
+      "indicatorId": "drinking_water",
+      "value": 85.72,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-water-2023",
+      "locator": "4.3.9; printed 262 / PDF 338; Kabupaten Sukabumi (kabupaten block), 2023 column (5)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3203",
+      "indicatorId": "drinking_water",
+      "value": 85.65,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-water-2023",
+      "locator": "4.3.9; printed 262 / PDF 338; Kabupaten Cianjur (kabupaten block), 2023 column (5)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3204",
+      "indicatorId": "drinking_water",
+      "value": 95.73,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-water-2023",
+      "locator": "4.3.9; printed 262 / PDF 338; Kabupaten Bandung (kabupaten block), 2023 column (5)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3205",
+      "indicatorId": "drinking_water",
+      "value": 81.13,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-water-2023",
+      "locator": "4.3.9; printed 262 / PDF 338; Kabupaten Garut (kabupaten block), 2023 column (5)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3206",
+      "indicatorId": "drinking_water",
+      "value": 89.03,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-water-2023",
+      "locator": "4.3.9; printed 262 / PDF 338; Kabupaten Tasikmalaya (kabupaten block), 2023 column (5)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3207",
+      "indicatorId": "drinking_water",
+      "value": 94.39,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-water-2023",
+      "locator": "4.3.9; printed 262 / PDF 338; Kabupaten Ciamis (kabupaten block), 2023 column (5)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3208",
+      "indicatorId": "drinking_water",
+      "value": 96.57,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-water-2023",
+      "locator": "4.3.9; printed 262 / PDF 338; Kabupaten Kuningan (kabupaten block), 2023 column (5)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3209",
+      "indicatorId": "drinking_water",
+      "value": 98.52,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-water-2023",
+      "locator": "4.3.9; printed 262 / PDF 338; Kabupaten Cirebon (kabupaten block), 2023 column (5)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3210",
+      "indicatorId": "drinking_water",
+      "value": 93.38,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-water-2023",
+      "locator": "4.3.9; printed 262 / PDF 338; Kabupaten Majalengka (kabupaten block), 2023 column (5)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3211",
+      "indicatorId": "drinking_water",
+      "value": 95.42,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-water-2023",
+      "locator": "4.3.9; printed 262 / PDF 338; Kabupaten Sumedang (kabupaten block), 2023 column (5)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3212",
+      "indicatorId": "drinking_water",
+      "value": 97.77,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-water-2023",
+      "locator": "4.3.9; printed 262 / PDF 338; Kabupaten Indramayu (kabupaten block), 2023 column (5)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3213",
+      "indicatorId": "drinking_water",
+      "value": 99.22,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-water-2023",
+      "locator": "4.3.9; printed 262 / PDF 338; Kabupaten Subang (kabupaten block), 2023 column (5)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3214",
+      "indicatorId": "drinking_water",
+      "value": 85.4,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-water-2023",
+      "locator": "4.3.9; printed 262 / PDF 338; Kabupaten Purwakarta (kabupaten block), 2023 column (5)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3215",
+      "indicatorId": "drinking_water",
+      "value": 98.11,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-water-2023",
+      "locator": "4.3.9; printed 262 / PDF 338; Kabupaten Karawang (kabupaten block), 2023 column (5)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3216",
+      "indicatorId": "drinking_water",
+      "value": 96.95,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-water-2023",
+      "locator": "4.3.9; printed 262 / PDF 338; Kabupaten Bekasi (kabupaten block), 2023 column (5)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3217",
+      "indicatorId": "drinking_water",
+      "value": 92.27,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-water-2023",
+      "locator": "4.3.9; printed 262 / PDF 338; Kabupaten Bandung Barat (kabupaten block), 2023 column (5)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3218",
+      "indicatorId": "drinking_water",
+      "value": 82.95,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-water-2023",
+      "locator": "4.3.9; printed 262 / PDF 338; Kabupaten Pangandaran (kabupaten block), 2023 column (5)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3271",
+      "indicatorId": "drinking_water",
+      "value": 99.61,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-water-2023",
+      "locator": "4.3.9; printed 262 / PDF 338; Kota Bogor (kota block), 2023 column (5)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3272",
+      "indicatorId": "drinking_water",
+      "value": 98.74,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-water-2023",
+      "locator": "4.3.9; printed 262 / PDF 338; Kota Sukabumi (kota block), 2023 column (5)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3273",
+      "indicatorId": "drinking_water",
+      "value": 97.67,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-water-2023",
+      "locator": "4.3.9; printed 262 / PDF 338; Kota Bandung (kota block), 2023 column (5)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3274",
+      "indicatorId": "drinking_water",
+      "value": 99.57,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-water-2023",
+      "locator": "4.3.9; printed 262 / PDF 338; Kota Cirebon (kota block), 2023 column (5)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3275",
+      "indicatorId": "drinking_water",
+      "value": 98.77,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-water-2023",
+      "locator": "4.3.9; printed 262 / PDF 338; Kota Bekasi (kota block), 2023 column (5)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3276",
+      "indicatorId": "drinking_water",
+      "value": 99.56,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-water-2023",
+      "locator": "4.3.9; printed 262 / PDF 338; Kota Depok (kota block), 2023 column (5)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3277",
+      "indicatorId": "drinking_water",
+      "value": 97.36,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-water-2023",
+      "locator": "4.3.9; printed 262 / PDF 338; Kota Cimahi (kota block), 2023 column (5)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3278",
+      "indicatorId": "drinking_water",
+      "value": 95.84,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-water-2023",
+      "locator": "4.3.9; printed 262 / PDF 338; Kota Tasikmalaya (kota block), 2023 column (5)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3279",
+      "indicatorId": "drinking_water",
+      "value": 94.34,
+      "unit": "%",
+      "period": "2023",
+      "sourceId": "bps-jabar-water-2023",
+      "locator": "4.3.9; printed 262 / PDF 338; Kota Banjar (kota block), 2023 column (5)",
+      "denominator": {
+        "definition": "Susenas weighted households; not population"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3201",
+      "indicatorId": "dbd_incidence",
+      "value": 31,
+      "unit": "cases per 100,000 population",
+      "period": "2023",
+      "sourceId": "bps-jabar-dbd-2023",
+      "locator": "4.2.6; printed 233–234 / PDF 309–310; DBD column (7), PDF 310; Kabupaten Bogor (kabupaten block), 2023 DBD incidence column (7)",
+      "denominator": {
+        "definition": "Officially published BPS/Dinas Kesehatan DBD incidence per 100,000 population, same table/column/year for all 27 regions. Underlying population vintage and case basis unresolved; retain published rate without recalculation or denominator substitution."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3202",
+      "indicatorId": "dbd_incidence",
+      "value": 4,
+      "unit": "cases per 100,000 population",
+      "period": "2023",
+      "sourceId": "bps-jabar-dbd-2023",
+      "locator": "4.2.6; printed 233–234 / PDF 309–310; DBD column (7), PDF 310; Kabupaten Sukabumi (kabupaten block), 2023 DBD incidence column (7)",
+      "denominator": {
+        "definition": "Officially published BPS/Dinas Kesehatan DBD incidence per 100,000 population, same table/column/year for all 27 regions. Underlying population vintage and case basis unresolved; retain published rate without recalculation or denominator substitution."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3203",
+      "indicatorId": "dbd_incidence",
+      "value": 35,
+      "unit": "cases per 100,000 population",
+      "period": "2023",
+      "sourceId": "bps-jabar-dbd-2023",
+      "locator": "4.2.6; printed 233–234 / PDF 309–310; DBD column (7), PDF 310; Kabupaten Cianjur (kabupaten block), 2023 DBD incidence column (7)",
+      "denominator": {
+        "definition": "Officially published BPS/Dinas Kesehatan DBD incidence per 100,000 population, same table/column/year for all 27 regions. Underlying population vintage and case basis unresolved; retain published rate without recalculation or denominator substitution."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3204",
+      "indicatorId": "dbd_incidence",
+      "value": 20,
+      "unit": "cases per 100,000 population",
+      "period": "2023",
+      "sourceId": "bps-jabar-dbd-2023",
+      "locator": "4.2.6; printed 233–234 / PDF 309–310; DBD column (7), PDF 310; Kabupaten Bandung (kabupaten block), 2023 DBD incidence column (7)",
+      "denominator": {
+        "definition": "Officially published BPS/Dinas Kesehatan DBD incidence per 100,000 population, same table/column/year for all 27 regions. Underlying population vintage and case basis unresolved; retain published rate without recalculation or denominator substitution."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3205",
+      "indicatorId": "dbd_incidence",
+      "value": 27,
+      "unit": "cases per 100,000 population",
+      "period": "2023",
+      "sourceId": "bps-jabar-dbd-2023",
+      "locator": "4.2.6; printed 233–234 / PDF 309–310; DBD column (7), PDF 310; Kabupaten Garut (kabupaten block), 2023 DBD incidence column (7)",
+      "denominator": {
+        "definition": "Officially published BPS/Dinas Kesehatan DBD incidence per 100,000 population, same table/column/year for all 27 regions. Underlying population vintage and case basis unresolved; retain published rate without recalculation or denominator substitution."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3206",
+      "indicatorId": "dbd_incidence",
+      "value": 5,
+      "unit": "cases per 100,000 population",
+      "period": "2023",
+      "sourceId": "bps-jabar-dbd-2023",
+      "locator": "4.2.6; printed 233–234 / PDF 309–310; DBD column (7), PDF 310; Kabupaten Tasikmalaya (kabupaten block), 2023 DBD incidence column (7)",
+      "denominator": {
+        "definition": "Officially published BPS/Dinas Kesehatan DBD incidence per 100,000 population, same table/column/year for all 27 regions. Underlying population vintage and case basis unresolved; retain published rate without recalculation or denominator substitution."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3207",
+      "indicatorId": "dbd_incidence",
+      "value": 19,
+      "unit": "cases per 100,000 population",
+      "period": "2023",
+      "sourceId": "bps-jabar-dbd-2023",
+      "locator": "4.2.6; printed 233–234 / PDF 309–310; DBD column (7), PDF 310; Kabupaten Ciamis (kabupaten block), 2023 DBD incidence column (7)",
+      "denominator": {
+        "definition": "Officially published BPS/Dinas Kesehatan DBD incidence per 100,000 population, same table/column/year for all 27 regions. Underlying population vintage and case basis unresolved; retain published rate without recalculation or denominator substitution."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3208",
+      "indicatorId": "dbd_incidence",
+      "value": 57,
+      "unit": "cases per 100,000 population",
+      "period": "2023",
+      "sourceId": "bps-jabar-dbd-2023",
+      "locator": "4.2.6; printed 233–234 / PDF 309–310; DBD column (7), PDF 310; Kabupaten Kuningan (kabupaten block), 2023 DBD incidence column (7)",
+      "denominator": {
+        "definition": "Officially published BPS/Dinas Kesehatan DBD incidence per 100,000 population, same table/column/year for all 27 regions. Underlying population vintage and case basis unresolved; retain published rate without recalculation or denominator substitution."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3209",
+      "indicatorId": "dbd_incidence",
+      "value": 33,
+      "unit": "cases per 100,000 population",
+      "period": "2023",
+      "sourceId": "bps-jabar-dbd-2023",
+      "locator": "4.2.6; printed 233–234 / PDF 309–310; DBD column (7), PDF 310; Kabupaten Cirebon (kabupaten block), 2023 DBD incidence column (7)",
+      "denominator": {
+        "definition": "Officially published BPS/Dinas Kesehatan DBD incidence per 100,000 population, same table/column/year for all 27 regions. Underlying population vintage and case basis unresolved; retain published rate without recalculation or denominator substitution."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3210",
+      "indicatorId": "dbd_incidence",
+      "value": 18,
+      "unit": "cases per 100,000 population",
+      "period": "2023",
+      "sourceId": "bps-jabar-dbd-2023",
+      "locator": "4.2.6; printed 233–234 / PDF 309–310; DBD column (7), PDF 310; Kabupaten Majalengka (kabupaten block), 2023 DBD incidence column (7)",
+      "denominator": {
+        "definition": "Officially published BPS/Dinas Kesehatan DBD incidence per 100,000 population, same table/column/year for all 27 regions. Underlying population vintage and case basis unresolved; retain published rate without recalculation or denominator substitution."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3211",
+      "indicatorId": "dbd_incidence",
+      "value": 110,
+      "unit": "cases per 100,000 population",
+      "period": "2023",
+      "sourceId": "bps-jabar-dbd-2023",
+      "locator": "4.2.6; printed 233–234 / PDF 309–310; DBD column (7), PDF 310; Kabupaten Sumedang (kabupaten block), 2023 DBD incidence column (7)",
+      "denominator": {
+        "definition": "Officially published BPS/Dinas Kesehatan DBD incidence per 100,000 population, same table/column/year for all 27 regions. Underlying population vintage and case basis unresolved; retain published rate without recalculation or denominator substitution."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3212",
+      "indicatorId": "dbd_incidence",
+      "value": 12,
+      "unit": "cases per 100,000 population",
+      "period": "2023",
+      "sourceId": "bps-jabar-dbd-2023",
+      "locator": "4.2.6; printed 233–234 / PDF 309–310; DBD column (7), PDF 310; Kabupaten Indramayu (kabupaten block), 2023 DBD incidence column (7)",
+      "denominator": {
+        "definition": "Officially published BPS/Dinas Kesehatan DBD incidence per 100,000 population, same table/column/year for all 27 regions. Underlying population vintage and case basis unresolved; retain published rate without recalculation or denominator substitution."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3213",
+      "indicatorId": "dbd_incidence",
+      "value": 39,
+      "unit": "cases per 100,000 population",
+      "period": "2023",
+      "sourceId": "bps-jabar-dbd-2023",
+      "locator": "4.2.6; printed 233–234 / PDF 309–310; DBD column (7), PDF 310; Kabupaten Subang (kabupaten block), 2023 DBD incidence column (7)",
+      "denominator": {
+        "definition": "Officially published BPS/Dinas Kesehatan DBD incidence per 100,000 population, same table/column/year for all 27 regions. Underlying population vintage and case basis unresolved; retain published rate without recalculation or denominator substitution."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3214",
+      "indicatorId": "dbd_incidence",
+      "value": 45,
+      "unit": "cases per 100,000 population",
+      "period": "2023",
+      "sourceId": "bps-jabar-dbd-2023",
+      "locator": "4.2.6; printed 233–234 / PDF 309–310; DBD column (7), PDF 310; Kabupaten Purwakarta (kabupaten block), 2023 DBD incidence column (7)",
+      "denominator": {
+        "definition": "Officially published BPS/Dinas Kesehatan DBD incidence per 100,000 population, same table/column/year for all 27 regions. Underlying population vintage and case basis unresolved; retain published rate without recalculation or denominator substitution."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3215",
+      "indicatorId": "dbd_incidence",
+      "value": 42,
+      "unit": "cases per 100,000 population",
+      "period": "2023",
+      "sourceId": "bps-jabar-dbd-2023",
+      "locator": "4.2.6; printed 233–234 / PDF 309–310; DBD column (7), PDF 310; Kabupaten Karawang (kabupaten block), 2023 DBD incidence column (7)",
+      "denominator": {
+        "definition": "Officially published BPS/Dinas Kesehatan DBD incidence per 100,000 population, same table/column/year for all 27 regions. Underlying population vintage and case basis unresolved; retain published rate without recalculation or denominator substitution."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3216",
+      "indicatorId": "dbd_incidence",
+      "value": 18,
+      "unit": "cases per 100,000 population",
+      "period": "2023",
+      "sourceId": "bps-jabar-dbd-2023",
+      "locator": "4.2.6; printed 233–234 / PDF 309–310; DBD column (7), PDF 310; Kabupaten Bekasi (kabupaten block), 2023 DBD incidence column (7)",
+      "denominator": {
+        "definition": "Officially published BPS/Dinas Kesehatan DBD incidence per 100,000 population, same table/column/year for all 27 regions. Underlying population vintage and case basis unresolved; retain published rate without recalculation or denominator substitution."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3217",
+      "indicatorId": "dbd_incidence",
+      "value": 78,
+      "unit": "cases per 100,000 population",
+      "period": "2023",
+      "sourceId": "bps-jabar-dbd-2023",
+      "locator": "4.2.6; printed 233–234 / PDF 309–310; DBD column (7), PDF 310; Kabupaten Bandung Barat (kabupaten block), 2023 DBD incidence column (7)",
+      "denominator": {
+        "definition": "Officially published BPS/Dinas Kesehatan DBD incidence per 100,000 population, same table/column/year for all 27 regions. Underlying population vintage and case basis unresolved; retain published rate without recalculation or denominator substitution."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3218",
+      "indicatorId": "dbd_incidence",
+      "value": 62,
+      "unit": "cases per 100,000 population",
+      "period": "2023",
+      "sourceId": "bps-jabar-dbd-2023",
+      "locator": "4.2.6; printed 233–234 / PDF 309–310; DBD column (7), PDF 310; Kabupaten Pangandaran (kabupaten block), 2023 DBD incidence column (7)",
+      "denominator": {
+        "definition": "Officially published BPS/Dinas Kesehatan DBD incidence per 100,000 population, same table/column/year for all 27 regions. Underlying population vintage and case basis unresolved; retain published rate without recalculation or denominator substitution."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3271",
+      "indicatorId": "dbd_incidence",
+      "value": 132,
+      "unit": "cases per 100,000 population",
+      "period": "2023",
+      "sourceId": "bps-jabar-dbd-2023",
+      "locator": "4.2.6; printed 233–234 / PDF 309–310; DBD column (7), PDF 310; Kota Bogor (kota block), 2023 DBD incidence column (7)",
+      "denominator": {
+        "definition": "Officially published BPS/Dinas Kesehatan DBD incidence per 100,000 population, same table/column/year for all 27 regions. Underlying population vintage and case basis unresolved; retain published rate without recalculation or denominator substitution."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3272",
+      "indicatorId": "dbd_incidence",
+      "value": 124,
+      "unit": "cases per 100,000 population",
+      "period": "2023",
+      "sourceId": "bps-jabar-dbd-2023",
+      "locator": "4.2.6; printed 233–234 / PDF 309–310; DBD column (7), PDF 310; Kota Sukabumi (kota block), 2023 DBD incidence column (7)",
+      "denominator": {
+        "definition": "Officially published BPS/Dinas Kesehatan DBD incidence per 100,000 population, same table/column/year for all 27 regions. Underlying population vintage and case basis unresolved; retain published rate without recalculation or denominator substitution."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3273",
+      "indicatorId": "dbd_incidence",
+      "value": 78,
+      "unit": "cases per 100,000 population",
+      "period": "2023",
+      "sourceId": "bps-jabar-dbd-2023",
+      "locator": "4.2.6; printed 233–234 / PDF 309–310; DBD column (7), PDF 310; Kota Bandung (kota block), 2023 DBD incidence column (7)",
+      "denominator": {
+        "definition": "Officially published BPS/Dinas Kesehatan DBD incidence per 100,000 population, same table/column/year for all 27 regions. Underlying population vintage and case basis unresolved; retain published rate without recalculation or denominator substitution."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3274",
+      "indicatorId": "dbd_incidence",
+      "value": 71,
+      "unit": "cases per 100,000 population",
+      "period": "2023",
+      "sourceId": "bps-jabar-dbd-2023",
+      "locator": "4.2.6; printed 233–234 / PDF 309–310; DBD column (7), PDF 310; Kota Cirebon (kota block), 2023 DBD incidence column (7)",
+      "denominator": {
+        "definition": "Officially published BPS/Dinas Kesehatan DBD incidence per 100,000 population, same table/column/year for all 27 regions. Underlying population vintage and case basis unresolved; retain published rate without recalculation or denominator substitution."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3275",
+      "indicatorId": "dbd_incidence",
+      "value": 39,
+      "unit": "cases per 100,000 population",
+      "period": "2023",
+      "sourceId": "bps-jabar-dbd-2023",
+      "locator": "4.2.6; printed 233–234 / PDF 309–310; DBD column (7), PDF 310; Kota Bekasi (kota block), 2023 DBD incidence column (7)",
+      "denominator": {
+        "definition": "Officially published BPS/Dinas Kesehatan DBD incidence per 100,000 population, same table/column/year for all 27 regions. Underlying population vintage and case basis unresolved; retain published rate without recalculation or denominator substitution."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3276",
+      "indicatorId": "dbd_incidence",
+      "value": 41,
+      "unit": "cases per 100,000 population",
+      "period": "2023",
+      "sourceId": "bps-jabar-dbd-2023",
+      "locator": "4.2.6; printed 233–234 / PDF 309–310; DBD column (7), PDF 310; Kota Depok (kota block), 2023 DBD incidence column (7)",
+      "denominator": {
+        "definition": "Officially published BPS/Dinas Kesehatan DBD incidence per 100,000 population, same table/column/year for all 27 regions. Underlying population vintage and case basis unresolved; retain published rate without recalculation or denominator substitution."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3277",
+      "indicatorId": "dbd_incidence",
+      "value": 55,
+      "unit": "cases per 100,000 population",
+      "period": "2023",
+      "sourceId": "bps-jabar-dbd-2023",
+      "locator": "4.2.6; printed 233–234 / PDF 309–310; DBD column (7), PDF 310; Kota Cimahi (kota block), 2023 DBD incidence column (7)",
+      "denominator": {
+        "definition": "Officially published BPS/Dinas Kesehatan DBD incidence per 100,000 population, same table/column/year for all 27 regions. Underlying population vintage and case basis unresolved; retain published rate without recalculation or denominator substitution."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3278",
+      "indicatorId": "dbd_incidence",
+      "value": 52,
+      "unit": "cases per 100,000 population",
+      "period": "2023",
+      "sourceId": "bps-jabar-dbd-2023",
+      "locator": "4.2.6; printed 233–234 / PDF 309–310; DBD column (7), PDF 310; Kota Tasikmalaya (kota block), 2023 DBD incidence column (7)",
+      "denominator": {
+        "definition": "Officially published BPS/Dinas Kesehatan DBD incidence per 100,000 population, same table/column/year for all 27 regions. Underlying population vintage and case basis unresolved; retain published rate without recalculation or denominator substitution."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3279",
+      "indicatorId": "dbd_incidence",
+      "value": 28,
+      "unit": "cases per 100,000 population",
+      "period": "2023",
+      "sourceId": "bps-jabar-dbd-2023",
+      "locator": "4.2.6; printed 233–234 / PDF 309–310; DBD column (7), PDF 310; Kota Banjar (kota block), 2023 DBD incidence column (7)",
+      "denominator": {
+        "definition": "Officially published BPS/Dinas Kesehatan DBD incidence per 100,000 population, same table/column/year for all 27 regions. Underlying population vintage and case basis unresolved; retain published rate without recalculation or denominator substitution."
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3201",
+      "indicatorId": "puskesmas_count",
+      "value": 101,
+      "unit": "facilities",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "locator": "4.2.7; printed 235–237 / PDF 311–313; Puskesmas totals printed 236 / PDF 312; Kabupaten Bogor (kabupaten block), Jumlah/Total 2023 column (11)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3202",
+      "indicatorId": "puskesmas_count",
+      "value": 58,
+      "unit": "facilities",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "locator": "4.2.7; printed 235–237 / PDF 311–313; Puskesmas totals printed 236 / PDF 312; Kabupaten Sukabumi (kabupaten block), Jumlah/Total 2023 column (11)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3203",
+      "indicatorId": "puskesmas_count",
+      "value": 47,
+      "unit": "facilities",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "locator": "4.2.7; printed 235–237 / PDF 311–313; Puskesmas totals printed 236 / PDF 312; Kabupaten Cianjur (kabupaten block), Jumlah/Total 2023 column (11)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3204",
+      "indicatorId": "puskesmas_count",
+      "value": 62,
+      "unit": "facilities",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "locator": "4.2.7; printed 235–237 / PDF 311–313; Puskesmas totals printed 236 / PDF 312; Kabupaten Bandung (kabupaten block), Jumlah/Total 2023 column (11)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3205",
+      "indicatorId": "puskesmas_count",
+      "value": 67,
+      "unit": "facilities",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "locator": "4.2.7; printed 235–237 / PDF 311–313; Puskesmas totals printed 236 / PDF 312; Kabupaten Garut (kabupaten block), Jumlah/Total 2023 column (11)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3206",
+      "indicatorId": "puskesmas_count",
+      "value": 40,
+      "unit": "facilities",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "locator": "4.2.7; printed 235–237 / PDF 311–313; Puskesmas totals printed 236 / PDF 312; Kabupaten Tasikmalaya (kabupaten block), Jumlah/Total 2023 column (11)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3207",
+      "indicatorId": "puskesmas_count",
+      "value": 37,
+      "unit": "facilities",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "locator": "4.2.7; printed 235–237 / PDF 311–313; Puskesmas totals printed 236 / PDF 312; Kabupaten Ciamis (kabupaten block), Jumlah/Total 2023 column (11)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3208",
+      "indicatorId": "puskesmas_count",
+      "value": 37,
+      "unit": "facilities",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "locator": "4.2.7; printed 235–237 / PDF 311–313; Puskesmas totals printed 236 / PDF 312; Kabupaten Kuningan (kabupaten block), Jumlah/Total 2023 column (11)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3209",
+      "indicatorId": "puskesmas_count",
+      "value": 60,
+      "unit": "facilities",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "locator": "4.2.7; printed 235–237 / PDF 311–313; Puskesmas totals printed 236 / PDF 312; Kabupaten Cirebon (kabupaten block), Jumlah/Total 2023 column (11)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3210",
+      "indicatorId": "puskesmas_count",
+      "value": 32,
+      "unit": "facilities",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "locator": "4.2.7; printed 235–237 / PDF 311–313; Puskesmas totals printed 236 / PDF 312; Kabupaten Majalengka (kabupaten block), Jumlah/Total 2023 column (11)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3211",
+      "indicatorId": "puskesmas_count",
+      "value": 35,
+      "unit": "facilities",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "locator": "4.2.7; printed 235–237 / PDF 311–313; Puskesmas totals printed 236 / PDF 312; Kabupaten Sumedang (kabupaten block), Jumlah/Total 2023 column (11)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3212",
+      "indicatorId": "puskesmas_count",
+      "value": 49,
+      "unit": "facilities",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "locator": "4.2.7; printed 235–237 / PDF 311–313; Puskesmas totals printed 236 / PDF 312; Kabupaten Indramayu (kabupaten block), Jumlah/Total 2023 column (11)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3213",
+      "indicatorId": "puskesmas_count",
+      "value": 40,
+      "unit": "facilities",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "locator": "4.2.7; printed 235–237 / PDF 311–313; Puskesmas totals printed 236 / PDF 312; Kabupaten Subang (kabupaten block), Jumlah/Total 2023 column (11)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3214",
+      "indicatorId": "puskesmas_count",
+      "value": 20,
+      "unit": "facilities",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "locator": "4.2.7; printed 235–237 / PDF 311–313; Puskesmas totals printed 236 / PDF 312; Kabupaten Purwakarta (kabupaten block), Jumlah/Total 2023 column (11)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3215",
+      "indicatorId": "puskesmas_count",
+      "value": 50,
+      "unit": "facilities",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "locator": "4.2.7; printed 235–237 / PDF 311–313; Puskesmas totals printed 236 / PDF 312; Kabupaten Karawang (kabupaten block), Jumlah/Total 2023 column (11)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3216",
+      "indicatorId": "puskesmas_count",
+      "value": 51,
+      "unit": "facilities",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "locator": "4.2.7; printed 235–237 / PDF 311–313; Puskesmas totals printed 236 / PDF 312; Kabupaten Bekasi (kabupaten block), Jumlah/Total 2023 column (11)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3217",
+      "indicatorId": "puskesmas_count",
+      "value": 32,
+      "unit": "facilities",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "locator": "4.2.7; printed 235–237 / PDF 311–313; Puskesmas totals printed 236 / PDF 312; Kabupaten Bandung Barat (kabupaten block), Jumlah/Total 2023 column (11)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3218",
+      "indicatorId": "puskesmas_count",
+      "value": 15,
+      "unit": "facilities",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "locator": "4.2.7; printed 235–237 / PDF 311–313; Puskesmas totals printed 236 / PDF 312; Kabupaten Pangandaran (kabupaten block), Jumlah/Total 2023 column (11)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3271",
+      "indicatorId": "puskesmas_count",
+      "value": 25,
+      "unit": "facilities",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "locator": "4.2.7; printed 235–237 / PDF 311–313; Puskesmas totals printed 236 / PDF 312; Kota Bogor (kota block), Jumlah/Total 2023 column (11)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3272",
+      "indicatorId": "puskesmas_count",
+      "value": 15,
+      "unit": "facilities",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "locator": "4.2.7; printed 235–237 / PDF 311–313; Puskesmas totals printed 236 / PDF 312; Kota Sukabumi (kota block), Jumlah/Total 2023 column (11)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3273",
+      "indicatorId": "puskesmas_count",
+      "value": 80,
+      "unit": "facilities",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "locator": "4.2.7; printed 235–237 / PDF 311–313; Puskesmas totals printed 236 / PDF 312; Kota Bandung (kota block), Jumlah/Total 2023 column (11)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3274",
+      "indicatorId": "puskesmas_count",
+      "value": 22,
+      "unit": "facilities",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "locator": "4.2.7; printed 235–237 / PDF 311–313; Puskesmas totals printed 236 / PDF 312; Kota Cirebon (kota block), Jumlah/Total 2023 column (11)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3275",
+      "indicatorId": "puskesmas_count",
+      "value": 48,
+      "unit": "facilities",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "locator": "4.2.7; printed 235–237 / PDF 311–313; Puskesmas totals printed 236 / PDF 312; Kota Bekasi (kota block), Jumlah/Total 2023 column (11)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3276",
+      "indicatorId": "puskesmas_count",
+      "value": 38,
+      "unit": "facilities",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "locator": "4.2.7; printed 235–237 / PDF 311–313; Puskesmas totals printed 236 / PDF 312; Kota Depok (kota block), Jumlah/Total 2023 column (11)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3277",
+      "indicatorId": "puskesmas_count",
+      "value": 13,
+      "unit": "facilities",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "locator": "4.2.7; printed 235–237 / PDF 311–313; Puskesmas totals printed 236 / PDF 312; Kota Cimahi (kota block), Jumlah/Total 2023 column (11)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3278",
+      "indicatorId": "puskesmas_count",
+      "value": 22,
+      "unit": "facilities",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "locator": "4.2.7; printed 235–237 / PDF 311–313; Puskesmas totals printed 236 / PDF 312; Kota Tasikmalaya (kota block), Jumlah/Total 2023 column (11)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3279",
+      "indicatorId": "puskesmas_count",
+      "value": 10,
+      "unit": "facilities",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "locator": "4.2.7; printed 235–237 / PDF 311–313; Puskesmas totals printed 236 / PDF 312; Kota Banjar (kota block), Jumlah/Total 2023 column (11)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3201",
+      "indicatorId": "population",
+      "value": 5627021,
+      "unit": "persons",
+      "period": "2023",
+      "sourceId": "diskes-jabar-population-2023",
+      "locator": "appendix table 1; PDF 180 (unnumbered appendix); Kabupaten Bogor (kabupaten block), JUMLAH PENDUDUK column (7)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3202",
+      "indicatorId": "population",
+      "value": 2802404,
+      "unit": "persons",
+      "period": "2023",
+      "sourceId": "diskes-jabar-population-2023",
+      "locator": "appendix table 1; PDF 180 (unnumbered appendix); Kabupaten Sukabumi (kabupaten block), JUMLAH PENDUDUK column (7)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3203",
+      "indicatorId": "population",
+      "value": 2558142,
+      "unit": "persons",
+      "period": "2023",
+      "sourceId": "diskes-jabar-population-2023",
+      "locator": "appendix table 1; PDF 180 (unnumbered appendix); Kabupaten Cianjur (kabupaten block), JUMLAH PENDUDUK column (7)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3204",
+      "indicatorId": "population",
+      "value": 3721111,
+      "unit": "persons",
+      "period": "2023",
+      "sourceId": "diskes-jabar-population-2023",
+      "locator": "appendix table 1; PDF 180 (unnumbered appendix); Kabupaten Bandung (kabupaten block), JUMLAH PENDUDUK column (7)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3205",
+      "indicatorId": "population",
+      "value": 2683665,
+      "unit": "persons",
+      "period": "2023",
+      "sourceId": "diskes-jabar-population-2023",
+      "locator": "appendix table 1; PDF 180 (unnumbered appendix); Kabupaten Garut (kabupaten block), JUMLAH PENDUDUK column (7)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3206",
+      "indicatorId": "population",
+      "value": 1907045,
+      "unit": "persons",
+      "period": "2023",
+      "sourceId": "diskes-jabar-population-2023",
+      "locator": "appendix table 1; PDF 180 (unnumbered appendix); Kabupaten Tasikmalaya (kabupaten block), JUMLAH PENDUDUK column (7)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3207",
+      "indicatorId": "population",
+      "value": 1251544,
+      "unit": "persons",
+      "period": "2023",
+      "sourceId": "diskes-jabar-population-2023",
+      "locator": "appendix table 1; PDF 180 (unnumbered appendix); Kabupaten Ciamis (kabupaten block), JUMLAH PENDUDUK column (7)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3208",
+      "indicatorId": "population",
+      "value": 1201764,
+      "unit": "persons",
+      "period": "2023",
+      "sourceId": "diskes-jabar-population-2023",
+      "locator": "appendix table 1; PDF 180 (unnumbered appendix); Kabupaten Kuningan (kabupaten block), JUMLAH PENDUDUK column (7)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3209",
+      "indicatorId": "population",
+      "value": 2360441,
+      "unit": "persons",
+      "period": "2023",
+      "sourceId": "diskes-jabar-population-2023",
+      "locator": "appendix table 1; PDF 180 (unnumbered appendix); Kabupaten Cirebon (kabupaten block), JUMLAH PENDUDUK column (7)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3210",
+      "indicatorId": "population",
+      "value": 1340617,
+      "unit": "persons",
+      "period": "2023",
+      "sourceId": "diskes-jabar-population-2023",
+      "locator": "appendix table 1; PDF 180 (unnumbered appendix); Kabupaten Majalengka (kabupaten block), JUMLAH PENDUDUK column (7)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3211",
+      "indicatorId": "population",
+      "value": 1178235,
+      "unit": "persons",
+      "period": "2023",
+      "sourceId": "diskes-jabar-population-2023",
+      "locator": "appendix table 1; PDF 180 (unnumbered appendix); Kabupaten Sumedang (kabupaten block), JUMLAH PENDUDUK column (7)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3212",
+      "indicatorId": "population",
+      "value": 1894325,
+      "unit": "persons",
+      "period": "2023",
+      "sourceId": "diskes-jabar-population-2023",
+      "locator": "appendix table 1; PDF 180 (unnumbered appendix); Kabupaten Indramayu (kabupaten block), JUMLAH PENDUDUK column (7)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3213",
+      "indicatorId": "population",
+      "value": 1649821,
+      "unit": "persons",
+      "period": "2023",
+      "sourceId": "diskes-jabar-population-2023",
+      "locator": "appendix table 1; PDF 180 (unnumbered appendix); Kabupaten Subang (kabupaten block), JUMLAH PENDUDUK column (7)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3214",
+      "indicatorId": "population",
+      "value": 1037068,
+      "unit": "persons",
+      "period": "2023",
+      "sourceId": "diskes-jabar-population-2023",
+      "locator": "appendix table 1; PDF 180 (unnumbered appendix); Kabupaten Purwakarta (kabupaten block), JUMLAH PENDUDUK column (7)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3215",
+      "indicatorId": "population",
+      "value": 2526002,
+      "unit": "persons",
+      "period": "2023",
+      "sourceId": "diskes-jabar-population-2023",
+      "locator": "appendix table 1; PDF 180 (unnumbered appendix); Kabupaten Karawang (kabupaten block), JUMLAH PENDUDUK column (7)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3216",
+      "indicatorId": "population",
+      "value": 3237420,
+      "unit": "persons",
+      "period": "2023",
+      "sourceId": "diskes-jabar-population-2023",
+      "locator": "appendix table 1; PDF 180 (unnumbered appendix); Kabupaten Bekasi (kabupaten block), JUMLAH PENDUDUK column (7)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3217",
+      "indicatorId": "population",
+      "value": 1859636,
+      "unit": "persons",
+      "period": "2023",
+      "sourceId": "diskes-jabar-population-2023",
+      "locator": "appendix table 1; PDF 180 (unnumbered appendix); Kabupaten Bandung Barat (kabupaten block), JUMLAH PENDUDUK column (7)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3218",
+      "indicatorId": "population",
+      "value": 431464,
+      "unit": "persons",
+      "period": "2023",
+      "sourceId": "diskes-jabar-population-2023",
+      "locator": "appendix table 1; PDF 180 (unnumbered appendix); Kabupaten Pangandaran (kabupaten block), JUMLAH PENDUDUK column (7)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3271",
+      "indicatorId": "population",
+      "value": 1070719,
+      "unit": "persons",
+      "period": "2023",
+      "sourceId": "diskes-jabar-population-2023",
+      "locator": "appendix table 1; PDF 180 (unnumbered appendix); Kota Bogor (kota block), JUMLAH PENDUDUK column (7)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3272",
+      "indicatorId": "population",
+      "value": 360644,
+      "unit": "persons",
+      "period": "2023",
+      "sourceId": "diskes-jabar-population-2023",
+      "locator": "appendix table 1; PDF 180 (unnumbered appendix); Kota Sukabumi (kota block), JUMLAH PENDUDUK column (7)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3273",
+      "indicatorId": "population",
+      "value": 2506603,
+      "unit": "persons",
+      "period": "2023",
+      "sourceId": "diskes-jabar-population-2023",
+      "locator": "appendix table 1; PDF 180 (unnumbered appendix); Kota Bandung (kota block), JUMLAH PENDUDUK column (7)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3274",
+      "indicatorId": "population",
+      "value": 341980,
+      "unit": "persons",
+      "period": "2023",
+      "sourceId": "diskes-jabar-population-2023",
+      "locator": "appendix table 1; PDF 180 (unnumbered appendix); Kota Cirebon (kota block), JUMLAH PENDUDUK column (7)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3275",
+      "indicatorId": "population",
+      "value": 2627207,
+      "unit": "persons",
+      "period": "2023",
+      "sourceId": "diskes-jabar-population-2023",
+      "locator": "appendix table 1; PDF 180 (unnumbered appendix); Kota Bekasi (kota block), JUMLAH PENDUDUK column (7)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3276",
+      "indicatorId": "population",
+      "value": 2145400,
+      "unit": "persons",
+      "period": "2023",
+      "sourceId": "diskes-jabar-population-2023",
+      "locator": "appendix table 1; PDF 180 (unnumbered appendix); Kota Depok (kota block), JUMLAH PENDUDUK column (7)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3277",
+      "indicatorId": "population",
+      "value": 590782,
+      "unit": "persons",
+      "period": "2023",
+      "sourceId": "diskes-jabar-population-2023",
+      "locator": "appendix table 1; PDF 180 (unnumbered appendix); Kota Cimahi (kota block), JUMLAH PENDUDUK column (7)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3278",
+      "indicatorId": "population",
+      "value": 741760,
+      "unit": "persons",
+      "period": "2023",
+      "sourceId": "diskes-jabar-population-2023",
+      "locator": "appendix table 1; PDF 180 (unnumbered appendix); Kota Tasikmalaya (kota block), JUMLAH PENDUDUK column (7)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3279",
+      "indicatorId": "population",
+      "value": 207510,
+      "unit": "persons",
+      "period": "2023",
+      "sourceId": "diskes-jabar-population-2023",
+      "locator": "appendix table 1; PDF 180 (unnumbered appendix); Kota Banjar (kota block), JUMLAH PENDUDUK column (7)",
+      "denominator": null,
+      "derivation": null
+    },
+    {
+      "regionId": "3201",
+      "indicatorId": "population_density",
+      "value": 1880.83,
+      "unit": "persons per km²",
+      "period": "2023",
+      "sourceId": "bps-jabar-density-2023",
+      "locator": "3.1.1; printed 111–115 / PDF 187–191; density printed 114 / PDF 190; Kabupaten Bogor (kabupaten block), 2023 column (13)",
+      "denominator": {
+        "definition": "Official administrative land area under Kepmendagri 100.1.1-6117 Tahun 2022; not the older areas in health appendix"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3202",
+      "indicatorId": "population_density",
+      "value": 672.98,
+      "unit": "persons per km²",
+      "period": "2023",
+      "sourceId": "bps-jabar-density-2023",
+      "locator": "3.1.1; printed 111–115 / PDF 187–191; density printed 114 / PDF 190; Kabupaten Sukabumi (kabupaten block), 2023 column (13)",
+      "denominator": {
+        "definition": "Official administrative land area under Kepmendagri 100.1.1-6117 Tahun 2022; not the older areas in health appendix"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3203",
+      "indicatorId": "population_density",
+      "value": 704.35,
+      "unit": "persons per km²",
+      "period": "2023",
+      "sourceId": "bps-jabar-density-2023",
+      "locator": "3.1.1; printed 111–115 / PDF 187–191; density printed 114 / PDF 190; Kabupaten Cianjur (kabupaten block), 2023 column (13)",
+      "denominator": {
+        "definition": "Official administrative land area under Kepmendagri 100.1.1-6117 Tahun 2022; not the older areas in health appendix"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3204",
+      "indicatorId": "population_density",
+      "value": 2137.54,
+      "unit": "persons per km²",
+      "period": "2023",
+      "sourceId": "bps-jabar-density-2023",
+      "locator": "3.1.1; printed 111–115 / PDF 187–191; density printed 114 / PDF 190; Kabupaten Bandung (kabupaten block), 2023 column (13)",
+      "denominator": {
+        "definition": "Official administrative land area under Kepmendagri 100.1.1-6117 Tahun 2022; not the older areas in health appendix"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3205",
+      "indicatorId": "population_density",
+      "value": 865.35,
+      "unit": "persons per km²",
+      "period": "2023",
+      "sourceId": "bps-jabar-density-2023",
+      "locator": "3.1.1; printed 111–115 / PDF 187–191; density printed 114 / PDF 190; Kabupaten Garut (kabupaten block), 2023 column (13)",
+      "denominator": {
+        "definition": "Official administrative land area under Kepmendagri 100.1.1-6117 Tahun 2022; not the older areas in health appendix"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3206",
+      "indicatorId": "population_density",
+      "value": 704.78,
+      "unit": "persons per km²",
+      "period": "2023",
+      "sourceId": "bps-jabar-density-2023",
+      "locator": "3.1.1; printed 111–115 / PDF 187–191; density printed 114 / PDF 190; Kabupaten Tasikmalaya (kabupaten block), 2023 column (13)",
+      "denominator": {
+        "definition": "Official administrative land area under Kepmendagri 100.1.1-6117 Tahun 2022; not the older areas in health appendix"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3207",
+      "indicatorId": "population_density",
+      "value": 784.2,
+      "unit": "persons per km²",
+      "period": "2023",
+      "sourceId": "bps-jabar-density-2023",
+      "locator": "3.1.1; printed 111–115 / PDF 187–191; density printed 114 / PDF 190; Kabupaten Ciamis (kabupaten block), 2023 column (13)",
+      "denominator": {
+        "definition": "Official administrative land area under Kepmendagri 100.1.1-6117 Tahun 2022; not the older areas in health appendix"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3208",
+      "indicatorId": "population_density",
+      "value": 1007.43,
+      "unit": "persons per km²",
+      "period": "2023",
+      "sourceId": "bps-jabar-density-2023",
+      "locator": "3.1.1; printed 111–115 / PDF 187–191; density printed 114 / PDF 190; Kabupaten Kuningan (kabupaten block), 2023 column (13)",
+      "denominator": {
+        "definition": "Official administrative land area under Kepmendagri 100.1.1-6117 Tahun 2022; not the older areas in health appendix"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3209",
+      "indicatorId": "population_density",
+      "value": 2202.01,
+      "unit": "persons per km²",
+      "period": "2023",
+      "sourceId": "bps-jabar-density-2023",
+      "locator": "3.1.1; printed 111–115 / PDF 187–191; density printed 114 / PDF 190; Kabupaten Cirebon (kabupaten block), 2023 column (13)",
+      "denominator": {
+        "definition": "Official administrative land area under Kepmendagri 100.1.1-6117 Tahun 2022; not the older areas in health appendix"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3210",
+      "indicatorId": "population_density",
+      "value": 1007.85,
+      "unit": "persons per km²",
+      "period": "2023",
+      "sourceId": "bps-jabar-density-2023",
+      "locator": "3.1.1; printed 111–115 / PDF 187–191; density printed 114 / PDF 190; Kabupaten Majalengka (kabupaten block), 2023 column (13)",
+      "denominator": {
+        "definition": "Official administrative land area under Kepmendagri 100.1.1-6117 Tahun 2022; not the older areas in health appendix"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3211",
+      "indicatorId": "population_density",
+      "value": 752.29,
+      "unit": "persons per km²",
+      "period": "2023",
+      "sourceId": "bps-jabar-density-2023",
+      "locator": "3.1.1; printed 111–115 / PDF 187–191; density printed 114 / PDF 190; Kabupaten Sumedang (kabupaten block), 2023 column (13)",
+      "denominator": {
+        "definition": "Official administrative land area under Kepmendagri 100.1.1-6117 Tahun 2022; not the older areas in health appendix"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3212",
+      "indicatorId": "population_density",
+      "value": 912.46,
+      "unit": "persons per km²",
+      "period": "2023",
+      "sourceId": "bps-jabar-density-2023",
+      "locator": "3.1.1; printed 111–115 / PDF 187–191; density printed 114 / PDF 190; Kabupaten Indramayu (kabupaten block), 2023 column (13)",
+      "denominator": {
+        "definition": "Official administrative land area under Kepmendagri 100.1.1-6117 Tahun 2022; not the older areas in health appendix"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3213",
+      "indicatorId": "population_density",
+      "value": 761.85,
+      "unit": "persons per km²",
+      "period": "2023",
+      "sourceId": "bps-jabar-density-2023",
+      "locator": "3.1.1; printed 111–115 / PDF 187–191; density printed 114 / PDF 190; Kabupaten Subang (kabupaten block), 2023 column (13)",
+      "denominator": {
+        "definition": "Official administrative land area under Kepmendagri 100.1.1-6117 Tahun 2022; not the older areas in health appendix"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3214",
+      "indicatorId": "population_density",
+      "value": 1044.28,
+      "unit": "persons per km²",
+      "period": "2023",
+      "sourceId": "bps-jabar-density-2023",
+      "locator": "3.1.1; printed 111–115 / PDF 187–191; density printed 114 / PDF 190; Kabupaten Purwakarta (kabupaten block), 2023 column (13)",
+      "denominator": {
+        "definition": "Official administrative land area under Kepmendagri 100.1.1-6117 Tahun 2022; not the older areas in health appendix"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3215",
+      "indicatorId": "population_density",
+      "value": 1319.95,
+      "unit": "persons per km²",
+      "period": "2023",
+      "sourceId": "bps-jabar-density-2023",
+      "locator": "3.1.1; printed 111–115 / PDF 187–191; density printed 114 / PDF 190; Kabupaten Karawang (kabupaten block), 2023 column (13)",
+      "denominator": {
+        "definition": "Official administrative land area under Kepmendagri 100.1.1-6117 Tahun 2022; not the older areas in health appendix"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3216",
+      "indicatorId": "population_density",
+      "value": 2587.82,
+      "unit": "persons per km²",
+      "period": "2023",
+      "sourceId": "bps-jabar-density-2023",
+      "locator": "3.1.1; printed 111–115 / PDF 187–191; density printed 114 / PDF 190; Kabupaten Bekasi (kabupaten block), 2023 column (13)",
+      "denominator": {
+        "definition": "Official administrative land area under Kepmendagri 100.1.1-6117 Tahun 2022; not the older areas in health appendix"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3217",
+      "indicatorId": "population_density",
+      "value": 1448.95,
+      "unit": "persons per km²",
+      "period": "2023",
+      "sourceId": "bps-jabar-density-2023",
+      "locator": "3.1.1; printed 111–115 / PDF 187–191; density printed 114 / PDF 190; Kabupaten Bandung Barat (kabupaten block), 2023 column (13)",
+      "denominator": {
+        "definition": "Official administrative land area under Kepmendagri 100.1.1-6117 Tahun 2022; not the older areas in health appendix"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3218",
+      "indicatorId": "population_density",
+      "value": 382.44,
+      "unit": "persons per km²",
+      "period": "2023",
+      "sourceId": "bps-jabar-density-2023",
+      "locator": "3.1.1; printed 111–115 / PDF 187–191; density printed 114 / PDF 190; Kabupaten Pangandaran (kabupaten block), 2023 column (13)",
+      "denominator": {
+        "definition": "Official administrative land area under Kepmendagri 100.1.1-6117 Tahun 2022; not the older areas in health appendix"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3271",
+      "indicatorId": "population_density",
+      "value": 9614.07,
+      "unit": "persons per km²",
+      "period": "2023",
+      "sourceId": "bps-jabar-density-2023",
+      "locator": "3.1.1; printed 111–115 / PDF 187–191; density printed 114 / PDF 190; Kota Bogor (kota block), 2023 column (13)",
+      "denominator": {
+        "definition": "Official administrative land area under Kepmendagri 100.1.1-6117 Tahun 2022; not the older areas in health appendix"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3272",
+      "indicatorId": "population_density",
+      "value": 7465.2,
+      "unit": "persons per km²",
+      "period": "2023",
+      "sourceId": "bps-jabar-density-2023",
+      "locator": "3.1.1; printed 111–115 / PDF 187–191; density printed 114 / PDF 190; Kota Sukabumi (kota block), 2023 column (13)",
+      "denominator": {
+        "definition": "Official administrative land area under Kepmendagri 100.1.1-6117 Tahun 2022; not the older areas in health appendix"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3273",
+      "indicatorId": "population_density",
+      "value": 15046.54,
+      "unit": "persons per km²",
+      "period": "2023",
+      "sourceId": "bps-jabar-density-2023",
+      "locator": "3.1.1; printed 111–115 / PDF 187–191; density printed 114 / PDF 190; Kota Bandung (kota block), 2023 column (13)",
+      "denominator": {
+        "definition": "Official administrative land area under Kepmendagri 100.1.1-6117 Tahun 2022; not the older areas in health appendix"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3274",
+      "indicatorId": "population_density",
+      "value": 8670.89,
+      "unit": "persons per km²",
+      "period": "2023",
+      "sourceId": "bps-jabar-density-2023",
+      "locator": "3.1.1; printed 111–115 / PDF 187–191; density printed 114 / PDF 190; Kota Cirebon (kota block), 2023 column (13)",
+      "denominator": {
+        "definition": "Official administrative land area under Kepmendagri 100.1.1-6117 Tahun 2022; not the older areas in health appendix"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3275",
+      "indicatorId": "population_density",
+      "value": 12331.99,
+      "unit": "persons per km²",
+      "period": "2023",
+      "sourceId": "bps-jabar-density-2023",
+      "locator": "3.1.1; printed 111–115 / PDF 187–191; density printed 114 / PDF 190; Kota Bekasi (kota block), 2023 column (13)",
+      "denominator": {
+        "definition": "Official administrative land area under Kepmendagri 100.1.1-6117 Tahun 2022; not the older areas in health appendix"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3276",
+      "indicatorId": "population_density",
+      "value": 10731.83,
+      "unit": "persons per km²",
+      "period": "2023",
+      "sourceId": "bps-jabar-density-2023",
+      "locator": "3.1.1; printed 111–115 / PDF 187–191; density printed 114 / PDF 190; Kota Depok (kota block), 2023 column (13)",
+      "denominator": {
+        "definition": "Official administrative land area under Kepmendagri 100.1.1-6117 Tahun 2022; not the older areas in health appendix"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3277",
+      "indicatorId": "population_density",
+      "value": 13923.69,
+      "unit": "persons per km²",
+      "period": "2023",
+      "sourceId": "bps-jabar-density-2023",
+      "locator": "3.1.1; printed 111–115 / PDF 187–191; density printed 114 / PDF 190; Kota Cimahi (kota block), 2023 column (13)",
+      "denominator": {
+        "definition": "Official administrative land area under Kepmendagri 100.1.1-6117 Tahun 2022; not the older areas in health appendix"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3278",
+      "indicatorId": "population_density",
+      "value": 4032.62,
+      "unit": "persons per km²",
+      "period": "2023",
+      "sourceId": "bps-jabar-density-2023",
+      "locator": "3.1.1; printed 111–115 / PDF 187–191; density printed 114 / PDF 190; Kota Tasikmalaya (kota block), 2023 column (13)",
+      "denominator": {
+        "definition": "Official administrative land area under Kepmendagri 100.1.1-6117 Tahun 2022; not the older areas in health appendix"
+      },
+      "derivation": null
+    },
+    {
+      "regionId": "3279",
+      "indicatorId": "population_density",
+      "value": 1583.92,
+      "unit": "persons per km²",
+      "period": "2023",
+      "sourceId": "bps-jabar-density-2023",
+      "locator": "3.1.1; printed 111–115 / PDF 187–191; density printed 114 / PDF 190; Kota Banjar (kota block), 2023 column (13)",
+      "denominator": {
+        "definition": "Official administrative land area under Kepmendagri 100.1.1-6117 Tahun 2022; not the older areas in health appendix"
+      },
+      "derivation": null
+    }
+  ],
+  "facilityBreakdown": [
+    {
+      "regionId": "3201",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "inpatient": {
+        "published": "30",
+        "value": 30,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Bogor; 2023 inpatient column (7)"
+      },
+      "nonInpatient": {
+        "published": "71",
+        "value": 71,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Bogor; 2023 non-inpatient column (9)"
+      },
+      "total": 101,
+      "symbolRule": "PDF 73 / printed lxxi: dash means negligible, zero is separately 0. Preserve dash as null; never silently recode it. Core numerator uses explicit published total, not imputed category sums."
+    },
+    {
+      "regionId": "3202",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "inpatient": {
+        "published": "10",
+        "value": 10,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Sukabumi; 2023 inpatient column (7)"
+      },
+      "nonInpatient": {
+        "published": "48",
+        "value": 48,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Sukabumi; 2023 non-inpatient column (9)"
+      },
+      "total": 58,
+      "symbolRule": "PDF 73 / printed lxxi: dash means negligible, zero is separately 0. Preserve dash as null; never silently recode it. Core numerator uses explicit published total, not imputed category sums."
+    },
+    {
+      "regionId": "3203",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "inpatient": {
+        "published": "8",
+        "value": 8,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Cianjur; 2023 inpatient column (7)"
+      },
+      "nonInpatient": {
+        "published": "39",
+        "value": 39,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Cianjur; 2023 non-inpatient column (9)"
+      },
+      "total": 47,
+      "symbolRule": "PDF 73 / printed lxxi: dash means negligible, zero is separately 0. Preserve dash as null; never silently recode it. Core numerator uses explicit published total, not imputed category sums."
+    },
+    {
+      "regionId": "3204",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "inpatient": {
+        "published": "5",
+        "value": 5,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Bandung; 2023 inpatient column (7)"
+      },
+      "nonInpatient": {
+        "published": "57",
+        "value": 57,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Bandung; 2023 non-inpatient column (9)"
+      },
+      "total": 62,
+      "symbolRule": "PDF 73 / printed lxxi: dash means negligible, zero is separately 0. Preserve dash as null; never silently recode it. Core numerator uses explicit published total, not imputed category sums."
+    },
+    {
+      "regionId": "3205",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "inpatient": {
+        "published": "33",
+        "value": 33,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Garut; 2023 inpatient column (7)"
+      },
+      "nonInpatient": {
+        "published": "34",
+        "value": 34,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Garut; 2023 non-inpatient column (9)"
+      },
+      "total": 67,
+      "symbolRule": "PDF 73 / printed lxxi: dash means negligible, zero is separately 0. Preserve dash as null; never silently recode it. Core numerator uses explicit published total, not imputed category sums."
+    },
+    {
+      "regionId": "3206",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "inpatient": {
+        "published": "19",
+        "value": 19,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Tasikmalaya; 2023 inpatient column (7)"
+      },
+      "nonInpatient": {
+        "published": "21",
+        "value": 21,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Tasikmalaya; 2023 non-inpatient column (9)"
+      },
+      "total": 40,
+      "symbolRule": "PDF 73 / printed lxxi: dash means negligible, zero is separately 0. Preserve dash as null; never silently recode it. Core numerator uses explicit published total, not imputed category sums."
+    },
+    {
+      "regionId": "3207",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "inpatient": {
+        "published": "23",
+        "value": 23,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Ciamis; 2023 inpatient column (7)"
+      },
+      "nonInpatient": {
+        "published": "14",
+        "value": 14,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Ciamis; 2023 non-inpatient column (9)"
+      },
+      "total": 37,
+      "symbolRule": "PDF 73 / printed lxxi: dash means negligible, zero is separately 0. Preserve dash as null; never silently recode it. Core numerator uses explicit published total, not imputed category sums."
+    },
+    {
+      "regionId": "3208",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "inpatient": {
+        "published": "6",
+        "value": 6,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Kuningan; 2023 inpatient column (7)"
+      },
+      "nonInpatient": {
+        "published": "31",
+        "value": 31,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Kuningan; 2023 non-inpatient column (9)"
+      },
+      "total": 37,
+      "symbolRule": "PDF 73 / printed lxxi: dash means negligible, zero is separately 0. Preserve dash as null; never silently recode it. Core numerator uses explicit published total, not imputed category sums."
+    },
+    {
+      "regionId": "3209",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "inpatient": {
+        "published": "11",
+        "value": 11,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Cirebon; 2023 inpatient column (7)"
+      },
+      "nonInpatient": {
+        "published": "49",
+        "value": 49,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Cirebon; 2023 non-inpatient column (9)"
+      },
+      "total": 60,
+      "symbolRule": "PDF 73 / printed lxxi: dash means negligible, zero is separately 0. Preserve dash as null; never silently recode it. Core numerator uses explicit published total, not imputed category sums."
+    },
+    {
+      "regionId": "3210",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "inpatient": {
+        "published": "9",
+        "value": 9,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Majalengka; 2023 inpatient column (7)"
+      },
+      "nonInpatient": {
+        "published": "23",
+        "value": 23,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Majalengka; 2023 non-inpatient column (9)"
+      },
+      "total": 32,
+      "symbolRule": "PDF 73 / printed lxxi: dash means negligible, zero is separately 0. Preserve dash as null; never silently recode it. Core numerator uses explicit published total, not imputed category sums."
+    },
+    {
+      "regionId": "3211",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "inpatient": {
+        "published": "17",
+        "value": 17,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Sumedang; 2023 inpatient column (7)"
+      },
+      "nonInpatient": {
+        "published": "18",
+        "value": 18,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Sumedang; 2023 non-inpatient column (9)"
+      },
+      "total": 35,
+      "symbolRule": "PDF 73 / printed lxxi: dash means negligible, zero is separately 0. Preserve dash as null; never silently recode it. Core numerator uses explicit published total, not imputed category sums."
+    },
+    {
+      "regionId": "3212",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "inpatient": {
+        "published": "10",
+        "value": 10,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Indramayu; 2023 inpatient column (7)"
+      },
+      "nonInpatient": {
+        "published": "39",
+        "value": 39,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Indramayu; 2023 non-inpatient column (9)"
+      },
+      "total": 49,
+      "symbolRule": "PDF 73 / printed lxxi: dash means negligible, zero is separately 0. Preserve dash as null; never silently recode it. Core numerator uses explicit published total, not imputed category sums."
+    },
+    {
+      "regionId": "3213",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "inpatient": {
+        "published": "25",
+        "value": 25,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Subang; 2023 inpatient column (7)"
+      },
+      "nonInpatient": {
+        "published": "15",
+        "value": 15,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Subang; 2023 non-inpatient column (9)"
+      },
+      "total": 40,
+      "symbolRule": "PDF 73 / printed lxxi: dash means negligible, zero is separately 0. Preserve dash as null; never silently recode it. Core numerator uses explicit published total, not imputed category sums."
+    },
+    {
+      "regionId": "3214",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "inpatient": {
+        "published": "7",
+        "value": 7,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Purwakarta; 2023 inpatient column (7)"
+      },
+      "nonInpatient": {
+        "published": "13",
+        "value": 13,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Purwakarta; 2023 non-inpatient column (9)"
+      },
+      "total": 20,
+      "symbolRule": "PDF 73 / printed lxxi: dash means negligible, zero is separately 0. Preserve dash as null; never silently recode it. Core numerator uses explicit published total, not imputed category sums."
+    },
+    {
+      "regionId": "3215",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "inpatient": {
+        "published": "35",
+        "value": 35,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Karawang; 2023 inpatient column (7)"
+      },
+      "nonInpatient": {
+        "published": "15",
+        "value": 15,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Karawang; 2023 non-inpatient column (9)"
+      },
+      "total": 50,
+      "symbolRule": "PDF 73 / printed lxxi: dash means negligible, zero is separately 0. Preserve dash as null; never silently recode it. Core numerator uses explicit published total, not imputed category sums."
+    },
+    {
+      "regionId": "3216",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "inpatient": {
+        "published": "4",
+        "value": 4,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Bekasi; 2023 inpatient column (7)"
+      },
+      "nonInpatient": {
+        "published": "47",
+        "value": 47,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Bekasi; 2023 non-inpatient column (9)"
+      },
+      "total": 51,
+      "symbolRule": "PDF 73 / printed lxxi: dash means negligible, zero is separately 0. Preserve dash as null; never silently recode it. Core numerator uses explicit published total, not imputed category sums."
+    },
+    {
+      "regionId": "3217",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "inpatient": {
+        "published": "6",
+        "value": 6,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Bandung Barat; 2023 inpatient column (7)"
+      },
+      "nonInpatient": {
+        "published": "26",
+        "value": 26,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Bandung Barat; 2023 non-inpatient column (9)"
+      },
+      "total": 32,
+      "symbolRule": "PDF 73 / printed lxxi: dash means negligible, zero is separately 0. Preserve dash as null; never silently recode it. Core numerator uses explicit published total, not imputed category sums."
+    },
+    {
+      "regionId": "3218",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "inpatient": {
+        "published": "11",
+        "value": 11,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Pangandaran; 2023 inpatient column (7)"
+      },
+      "nonInpatient": {
+        "published": "4",
+        "value": 4,
+        "locator": "4.2.7; printed 236 / PDF 312; Kabupaten Pangandaran; 2023 non-inpatient column (9)"
+      },
+      "total": 15,
+      "symbolRule": "PDF 73 / printed lxxi: dash means negligible, zero is separately 0. Preserve dash as null; never silently recode it. Core numerator uses explicit published total, not imputed category sums."
+    },
+    {
+      "regionId": "3271",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "inpatient": {
+        "published": "-",
+        "value": null,
+        "locator": "4.2.7; printed 236 / PDF 312; Kota Bogor; 2023 inpatient column (7)"
+      },
+      "nonInpatient": {
+        "published": "25",
+        "value": 25,
+        "locator": "4.2.7; printed 236 / PDF 312; Kota Bogor; 2023 non-inpatient column (9)"
+      },
+      "total": 25,
+      "symbolRule": "PDF 73 / printed lxxi: dash means negligible, zero is separately 0. Preserve dash as null; never silently recode it. Core numerator uses explicit published total, not imputed category sums."
+    },
+    {
+      "regionId": "3272",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "inpatient": {
+        "published": "-",
+        "value": null,
+        "locator": "4.2.7; printed 236 / PDF 312; Kota Sukabumi; 2023 inpatient column (7)"
+      },
+      "nonInpatient": {
+        "published": "15",
+        "value": 15,
+        "locator": "4.2.7; printed 236 / PDF 312; Kota Sukabumi; 2023 non-inpatient column (9)"
+      },
+      "total": 15,
+      "symbolRule": "PDF 73 / printed lxxi: dash means negligible, zero is separately 0. Preserve dash as null; never silently recode it. Core numerator uses explicit published total, not imputed category sums."
+    },
+    {
+      "regionId": "3273",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "inpatient": {
+        "published": "-",
+        "value": null,
+        "locator": "4.2.7; printed 236 / PDF 312; Kota Bandung; 2023 inpatient column (7)"
+      },
+      "nonInpatient": {
+        "published": "80",
+        "value": 80,
+        "locator": "4.2.7; printed 236 / PDF 312; Kota Bandung; 2023 non-inpatient column (9)"
+      },
+      "total": 80,
+      "symbolRule": "PDF 73 / printed lxxi: dash means negligible, zero is separately 0. Preserve dash as null; never silently recode it. Core numerator uses explicit published total, not imputed category sums."
+    },
+    {
+      "regionId": "3274",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "inpatient": {
+        "published": "-",
+        "value": null,
+        "locator": "4.2.7; printed 236 / PDF 312; Kota Cirebon; 2023 inpatient column (7)"
+      },
+      "nonInpatient": {
+        "published": "22",
+        "value": 22,
+        "locator": "4.2.7; printed 236 / PDF 312; Kota Cirebon; 2023 non-inpatient column (9)"
+      },
+      "total": 22,
+      "symbolRule": "PDF 73 / printed lxxi: dash means negligible, zero is separately 0. Preserve dash as null; never silently recode it. Core numerator uses explicit published total, not imputed category sums."
+    },
+    {
+      "regionId": "3275",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "inpatient": {
+        "published": "-",
+        "value": null,
+        "locator": "4.2.7; printed 236 / PDF 312; Kota Bekasi; 2023 inpatient column (7)"
+      },
+      "nonInpatient": {
+        "published": "48",
+        "value": 48,
+        "locator": "4.2.7; printed 236 / PDF 312; Kota Bekasi; 2023 non-inpatient column (9)"
+      },
+      "total": 48,
+      "symbolRule": "PDF 73 / printed lxxi: dash means negligible, zero is separately 0. Preserve dash as null; never silently recode it. Core numerator uses explicit published total, not imputed category sums."
+    },
+    {
+      "regionId": "3276",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "inpatient": {
+        "published": "-",
+        "value": null,
+        "locator": "4.2.7; printed 236 / PDF 312; Kota Depok; 2023 inpatient column (7)"
+      },
+      "nonInpatient": {
+        "published": "38",
+        "value": 38,
+        "locator": "4.2.7; printed 236 / PDF 312; Kota Depok; 2023 non-inpatient column (9)"
+      },
+      "total": 38,
+      "symbolRule": "PDF 73 / printed lxxi: dash means negligible, zero is separately 0. Preserve dash as null; never silently recode it. Core numerator uses explicit published total, not imputed category sums."
+    },
+    {
+      "regionId": "3277",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "inpatient": {
+        "published": "-",
+        "value": null,
+        "locator": "4.2.7; printed 236 / PDF 312; Kota Cimahi; 2023 inpatient column (7)"
+      },
+      "nonInpatient": {
+        "published": "13",
+        "value": 13,
+        "locator": "4.2.7; printed 236 / PDF 312; Kota Cimahi; 2023 non-inpatient column (9)"
+      },
+      "total": 13,
+      "symbolRule": "PDF 73 / printed lxxi: dash means negligible, zero is separately 0. Preserve dash as null; never silently recode it. Core numerator uses explicit published total, not imputed category sums."
+    },
+    {
+      "regionId": "3278",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "inpatient": {
+        "published": "9",
+        "value": 9,
+        "locator": "4.2.7; printed 236 / PDF 312; Kota Tasikmalaya; 2023 inpatient column (7)"
+      },
+      "nonInpatient": {
+        "published": "13",
+        "value": 13,
+        "locator": "4.2.7; printed 236 / PDF 312; Kota Tasikmalaya; 2023 non-inpatient column (9)"
+      },
+      "total": 22,
+      "symbolRule": "PDF 73 / printed lxxi: dash means negligible, zero is separately 0. Preserve dash as null; never silently recode it. Core numerator uses explicit published total, not imputed category sums."
+    },
+    {
+      "regionId": "3279",
+      "period": "2023",
+      "sourceId": "bps-jabar-puskesmas-2023",
+      "inpatient": {
+        "published": "2",
+        "value": 2,
+        "locator": "4.2.7; printed 236 / PDF 312; Kota Banjar; 2023 inpatient column (7)"
+      },
+      "nonInpatient": {
+        "published": "8",
+        "value": 8,
+        "locator": "4.2.7; printed 236 / PDF 312; Kota Banjar; 2023 non-inpatient column (9)"
+      },
+      "total": 10,
+      "symbolRule": "PDF 73 / printed lxxi: dash means negligible, zero is separately 0. Preserve dash as null; never silently recode it. Core numerator uses explicit published total, not imputed category sums."
+    }
+  ],
+  "inputDecision": "Derived per-100000 ratios are deliberately absent. Builder must calculate from explicit total facility count and exact-person population rows, preserving both source references. Published BPS DBD rates are retained without substitution."
+}

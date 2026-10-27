@@ -1,0 +1,18 @@
+{
+  "description": "Byte fingerprints of superseded dimensional release inputs and generated artifacts before current-product cutover. Existing foundational archive remains separately protected by civx-v1-integrity.json.",
+  "files": {
+    "data/methodology/civx-jabar-2023-v2.json": "c6a2e38260f51a5030b07f62a7763c590c324cb0dbc8386aedf9baed004ff68e",
+    "data/processed/civx-jabar-2023-v2-sensitivity.json": "0f67c5c6ad7e3b4791c050e93819a0c93c8c93a8d2918cf69197f4f1badb6e57",
+    "data/processed/civx-jabar-2023-v2.json": "c1cd0a9ff4ad74dd630bd39df8d24d1a6c948a17d4b64efd8b6f5348affb1c72",
+    "data/raw/v2/context-advantages-audit.json": "97d331584d782c63161864e7a643978b75679c36497d306d51a86375d1a0c19c",
+    "data/raw/v2/context-advantages-observations.json": "8f43349e1471ae9ffa7f0b37b0e6e75461191b5176140459b2ee6f71968569dd",
+    "data/raw/v2/context-evidence-cisumdawu-2023.json": "b199b7620b0aa019561c712113fe61dbf3822591c83823592f512b0021785b25",
+    "data/raw/v2/context-evidence-cisumdawu-tariff-2023.json": "503ca9c7af20e86a8be1068223e81fea39bada2ca37f6c337012ee60c55e452f",
+    "data/raw/v2/context-evidence-kertajati-2023.json": "697c73f6df81246bf214e8c6b688551848c49132a3b6c980605536fc7837d56d",
+    "data/raw/v2/context-evidence-metadata-findings.json": "a387fbb697a9ed4db3dfebc3db49a61939d4b88181d14701a69f95a937dcdf99",
+    "data/raw/v2/context-evidence-whoosh-2023.json": "6d1d364e6f51e9d14c93690325bc00e67b468850e2fbbbbc42226a58d5be1aba",
+    "data/raw/v2/infrastructure-audit.json": "297da2a15d1903c2c374a3af45f5a7d4e6bbe6048efdd7991e91b7af72260d5c",
+    "data/raw/v2/services-audit.json": "e6fb6ce05bf62b6889e5ba0009cde49215d9b7cae2d21b7c05387e142046a614",
+    "data/raw/v2/services-observations.json": "a1a64f4dcfe23aa6dbd3e2b98f1a9938330e9d8bb995e158dfba465eacd38d73"
+  }
+}

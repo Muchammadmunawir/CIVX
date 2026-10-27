@@ -1,0 +1,9 @@
+{
+  "description": "Frozen, explicitly audited current transcriptions. Replay verifies these bytes and available local original artifacts. Replay does not claim remote originals were reacquired.",
+  "files": {
+    "data/raw/current/source-audit.json": "fb2aded67672e169679dd6edd298006461d991bbe6fb7624dfe173066357382e",
+    "data/raw/current/services-observations.json": "f2a003771697cdafc64cdd7365e7ca9872b450f52424f2bcc42ad7dd1ded37b4",
+    "data/raw/current/risk-observations.json": "132ceaf04c5b3128a989d3b4dd44e5a03e50904d853b42991da7907bb9fe3a73",
+    "data/methodology/civx-jabar-2023-current.json": "c92da906b5c382347e7a87ac37d623e94a327e10a937ae078f341668a784a421"
+  }
+}

@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
-import { getRegionDetail, regionalData } from "@/lib/civx/data";
+import { civicRelease, currentRegions, getCurrentRegion } from "@/lib/civx/current";
 import { RegionDetail } from "@/components/regions/region-detail";
 
 export function generateStaticParams() {
-  return regionalData.map(({ id }) => ({ id }));
+  return currentRegions.map(({ id }) => ({ id }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
-  const detail = getRegionDetail((await params).id);
-  if (!detail) notFound();
+  const region = getCurrentRegion((await params).id);
+  if (!region) notFound();
   return {
-    title: `${detail.region.name} | Civic Index`,
-    description: `${detail.region.period} Civic Index result, indicator inputs, and sources for ${detail.region.name}.`,
+    title: `${region.name} | Civic Index`,
+    description: `${civicRelease.period} Civic Index, pressure dimensions, core observations, Context Signals and Regional Advantages for ${region.name}.`,
   };
 }
 

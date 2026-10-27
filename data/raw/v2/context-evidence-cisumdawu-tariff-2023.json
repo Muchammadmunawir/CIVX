@@ -1,0 +1,26 @@
+{
+  "url": "https://bpjt.pu.go.id/cek-tarif-terbaru-jalan-tol-cisumdawu-seksi-4-hingga-6-mulai-bertarif/",
+  "publisher": "Badan Pengatur Jalan Tol, Kementerian PUPR",
+  "title": "Cek Tarif Terbaru Jalan Tol Cisumdawu, Seksi 4 hingga 6 Mulai Bertarif",
+  "publishedAt": "2023-08-14",
+  "retrievedAt": "2026-10-27T09:07:20.766Z",
+  "recoveredAt": "2026-10-27",
+  "retrieval": {
+    "method": "Recovered exact excerpts from successful historical read tool result; no new HTTP fetch",
+    "sessionId": "ContextAdvantages",
+    "toolResultMessageId": "0cd1d2f9",
+    "originalResponseSha256": null,
+    "checksumNote": "Historical output contained no response checksum; manifest hash identifies this excerpt snapshot, not original HTML."
+  },
+  "excerpts": [
+    {
+      "id": "active_operation",
+      "text": "#SobatBPJT – Saat ini keseluruhan Jalan Tol Cileunyi – Sumedang – Dawuan (Cisumdawu) dari Cileunyi hingga Dawuan mulai bertarif."
+    },
+    {
+      "id": "effective_date",
+      "text": "Khususnya dari Seksi 4 hingga 6 Cimalaka – Dawuan mulai diberlakukan tarifnya sejak Senin, 14 Agustus 2023 Pukul 00.00 WIB berdasarkan Surat Keputusan Menteri PUPR Nomor : 959/KPTS/M/2023 Tanggal 10 Agustus 2023. Sebelumnya ruas ini beroperasi secara gratis setelah beberapa waktu lalu diresmikan oleh Presiden Jokowi."
+    }
+  ],
+  "redistribution": "Short attributed excerpts from an official public statement for research traceability; not a full-article mirror. No blanket reuse licence is asserted. Galura material is excluded."
+}

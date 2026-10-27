@@ -1,0 +1,27 @@
+{
+  "url": "https://setkab.go.id/en/press-statement-of-president-of-the-republic-of-indonesia-after-inspection-to-west-java-international-airport-bijb-of-kertajati-majalengka-city-west-java-province-july-11-2023/",
+  "publisher": "Sekretariat Kabinet Republik Indonesia",
+  "title": "Press Statement of President of the Republic of Indonesia After Inspection to West Java International Airport (BIJB) of Kertajati, Majalengka City, West Java Province, July 11, 2023",
+  "publishedAt": "2023-07-11",
+  "retrievedAt": "2026-10-27T09:04:57.742Z",
+  "recoveredAt": "2026-10-27",
+  "retrieval": {
+    "method": "Recovered exact excerpts from successful historical read tool result; no new HTTP fetch",
+    "sessionId": "ContextAdvantages",
+    "toolResultMessageId": "8575f4ed",
+    "originalResponseSha256": null,
+    "checksumNote": "Historical output contained no response checksum; manifest hash identifies this excerpt snapshot, not original HTML."
+  },
+  "excerpts": [
+    {
+      "id": "location_heading",
+      "text": "Press Statement of President of the Republic of Indonesia After Inspection to West Java International Airport (BIJB) of Kertajati, Majalengka City, West Java Province, July 11, 2023"
+    },
+    {
+      "id": "existing_flights",
+      "text": "This morning, I am back at Kertajati Airport in West Java province. I am very pleased because the activities at Kertajati Airport have been running very well. Currently, the airport is used for Hajj embarkation for approximately 8,000 pilgrims from seven regencies/cities in West Java province. And secondly, I am also pleased that Kertajati Airport also serves Umrah flights up to four times a week, as well as international flights from Kuala Lumpur to Kertajati twice a week."
+    }
+  ],
+  "redistribution": "Short attributed excerpts from an official public statement for research traceability; not a full-article mirror. No blanket reuse licence is asserted. Galura material is excluded.",
+  "geographyNote": "English heading says Majalengka City. The contemporaneous Cisumdawu statement explicitly identifies Kertajati in Majalengka regency; see context-evidence-cisumdawu-2023.json excerpt operation_and_airport_geography. Map to Kabupaten Majalengka 3210, not a nonexistent Kota Majalengka."
+}

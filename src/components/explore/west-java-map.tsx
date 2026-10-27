@@ -5,17 +5,19 @@ import { useRouter } from "next/navigation";
 import { useMemo, useState } from "react";
 import { PressureBadge } from "@/components/data/pressure-badge";
 import geometry from "../../../data/geography/jabar-adm2-2020.json";
-import type { RegionalData } from "@/lib/civx/types";
+import { categoryForScore } from "@/lib/civx/current";
+import type { V2Region } from "@/lib/civx/v2/types";
+import { scoreForLayer, type PressureLayerId } from "./pressure-layer";
 import styles from "./explore.module.css";
 
 const pathsById = new Map(geometry.regions.map((shape) => [shape.id, shape]));
 const scoreFormat = new Intl.NumberFormat("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
-export function WestJavaMap({ regions, visibleIds, positionById, publishedCount }: {
-  regions: readonly RegionalData[];
+export function WestJavaMap({ regions, visibleIds, layer, layerLabel }: {
+  regions: readonly V2Region[];
   visibleIds: ReadonlySet<string>;
-  positionById: ReadonlyMap<string, number>;
-  publishedCount: number;
+  layer: PressureLayerId;
+  layerLabel: string;
 }) {
   const router = useRouter();
   const [inspectedId, setInspectedId] = useState<string | null>(null);
@@ -25,7 +27,7 @@ export function WestJavaMap({ regions, visibleIds, positionById, publishedCount 
     ?? shown.find((region) => region.id === selectedId)
     ?? shown[0];
   const missingGeometry = shown.filter((region) => !pathsById.has(region.id));
-  const position = active ? positionById.get(active.id) : undefined;
+  const activeScore = active ? scoreForLayer(active, layer) : undefined;
 
   return (
     <section className={styles.geoSection} aria-labelledby="geography-title">
@@ -36,22 +38,22 @@ export function WestJavaMap({ regions, visibleIds, positionById, publishedCount 
       <div className={styles.geoGrid}>
         <div className={styles.mapSurface}>
           <svg className={styles.mapSvg} viewBox={geometry.viewBox} role="group" aria-label="Interactive Jawa Barat region map">
-            <title>Jawa Barat regional CIVX scores</title>
+            <title>{`Jawa Barat · ${layerLabel}`}</title>
             <desc>Approximate 2020 ADM2 boundaries. Each matching region links to its 2023 record. A region selector and the regional list provide keyboard and non-map alternatives.</desc>
             {regions.map((region) => {
               const shape = pathsById.get(region.id);
               if (!shape) return null;
-              const result = region.civicIndex;
+              const score = scoreForLayer(region, layer);
+              const category = score === undefined ? undefined : categoryForScore(score);
               const isVisible = visibleIds.has(region.id);
-              const regionPosition = positionById.get(region.id);
               return (
                 <a
                   key={region.id}
                   href={`/regions/${region.id}`}
-                  aria-label={`${region.name}, ${result.status === "available" ? `CIVX ${scoreFormat.format(result.score)} of 100, ${region.category ?? "uncategorized"} relative pressure${regionPosition !== undefined ? `, release position ${regionPosition} of ${publishedCount}` : ""}` : "score unavailable"}. Open regional record`}
+                  aria-label={`${region.name}, ${score === undefined ? "score unavailable" : `${layerLabel} ${scoreFormat.format(score)} of 100, ${category} relative pressure`}. Open regional record`}
                   aria-hidden={!isVisible}
                   tabIndex={isVisible ? 0 : -1}
-                  className={`${styles.mapRegion} ${result.status === "available" && region.category ? styles[`map${region.category}`] : styles.mapUnavailable} ${isVisible ? "" : styles.mapDimmed} ${active?.id === region.id ? styles.mapActive : ""} ${selectedId === region.id ? styles.mapSelected : ""}`}
+                  className={`${styles.mapRegion} ${category ? styles[`map${category}`] : styles.mapUnavailable} ${isVisible ? "" : styles.mapDimmed} ${active?.id === region.id ? styles.mapActive : ""} ${selectedId === region.id ? styles.mapSelected : ""}`}
                   onMouseEnter={() => { if (isVisible) setInspectedId(region.id); }}
                   onFocus={() => setInspectedId(region.id)}
                   onClick={(event) => {
@@ -87,13 +89,12 @@ export function WestJavaMap({ regions, visibleIds, positionById, publishedCount 
             <h3>{active?.name ?? "No matching region"}</h3>
             {active && (
               <>
-                <PressureBadge category={active.category} />
-                {active.civicIndex.status === "available" ? (
-                  <>
-                    <strong className={styles.mapScore}>{scoreFormat.format(active.civicIndex.score)} <small>/ 100</small></strong>
-                    {position !== undefined && <p>Release position {position} of {publishedCount}</p>}
-                  </>
-                ) : <p className={styles.missingReason}>Score unavailable. {active.civicIndex.reason}</p>}
+                <PressureBadge category={activeScore === undefined ? undefined : categoryForScore(activeScore)} />
+                {activeScore !== undefined ? <>
+                  <p>{layerLabel}</p>
+                  <strong className={styles.mapScore}>{scoreFormat.format(activeScore)} <small>/ 100</small></strong>
+                  {layer !== "overall" && active.pressure.status === "available" && <p>Civic Index: {scoreFormat.format(active.pressure.score)} / 100</p>}
+                </> : <p className={styles.missingReason}>Score unavailable. {active.pressure.status === "unavailable" ? active.pressure.reason : "No validated dimension score."}</p>}
                 {!pathsById.has(active.id) && <p>Display outline unavailable. The regional record remains accessible.</p>}
                 <Link className={styles.mapRecordLink} href={`/regions/${active.id}`} scroll={false}>Open regional record <span aria-hidden="true">↗</span></Link>
               </>
@@ -103,7 +104,7 @@ export function WestJavaMap({ regions, visibleIds, positionById, publishedCount 
             <li><i className={styles.mapLowerKey} aria-hidden="true" />Lower</li>
             <li><i className={styles.mapModerateKey} aria-hidden="true" />Moderate</li>
             <li><i className={styles.mapHigherKey} aria-hidden="true" />Higher</li>
-            {regions.some((region) => region.civicIndex.status !== "available") && <li><i className={styles.mapUnavailableKey} aria-hidden="true" />Unavailable</li>}
+            {regions.some((region) => scoreForLayer(region, layer) === undefined) && <li><i className={styles.mapUnavailableKey} aria-hidden="true" />Unavailable</li>}
           </ul>
         </aside>
       </div>
