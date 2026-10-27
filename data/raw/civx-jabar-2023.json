@@ -1,0 +1,320 @@
+{
+  "releaseId": "civx-jabar-2023-v1",
+  "period": "2023",
+  "artifact": {
+    "id": "sha256:500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81",
+    "localPath": "data/raw/bps-jabar-dalam-angka-2024.pdf",
+    "bytes": 11915084,
+    "publicationUrl": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+    "downloadUrl": "https://webapi.bps.go.id/download.php?f=AQADdxpu9GSSGVFQgng5pYyTGigK3q-V5Io_qhChet4CMxry7bE7Kv4VzCn64iAiIj4MgQlS_myNdpmSwEDTfk3ejH1RPMhmIHuWViDP5-DDP5E09Fw4On73vdACtMkpg6SZlaLWhDE8fDMc6rVCyiVOdcrr8IrzPdNXcLci2LqsOnBq4MaArWKf0Qq84UKw7X6Mg3ISxJErC8TGrO6VI2xFX2v3ycG0_8qUAZCl663iKionLUi6AHZpfLHid6v3UUNlLnPNCQMqrwElvXMolsZyGM_FtrjX958Eh_7rwP8f",
+    "publication": "Provinsi Jawa Barat Dalam Angka 2024",
+    "publicationNumber": "32000.24001",
+    "releasedAt": "2024-02-28",
+    "revisedAt": "2024-02-29",
+    "retrievedAt": "2026-10-26",
+    "redistribution": "Do not commit or distribute the full book without resolving the publication's commercial-reproduction restriction."
+  },
+  "sources": [
+    {
+      "id": "bps-jabar-poverty-2023",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "title": "Jumlah dan Persentase Penduduk Miskin Menurut Kabupaten/Kota di Provinsi Jawa Barat, 2022 dan 2023",
+      "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "table": "4.6.2",
+      "page": "printed 307 / PDF 383",
+      "dataYear": 2023,
+      "referencePeriod": "2023 Susenas (March indicated in provincial companion table; district table labels year only)",
+      "artifactId": "sha256:500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81",
+      "accessedAt": "2026-10-26"
+    },
+    {
+      "id": "bps-jabar-unemployment-2023",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "title": "Tingkat Pengangguran Terbuka dan Tingkat Partisipasi Angkatan Kerja Menurut Kabupaten/Kota di Provinsi Jawa Barat, 2021–2023",
+      "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "table": "3.2.16",
+      "page": "printed 147 / PDF 223",
+      "dataYear": 2023,
+      "referencePeriod": "August 2023 Sakernas",
+      "artifactId": "sha256:500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81",
+      "accessedAt": "2026-10-26"
+    },
+    {
+      "id": "bps-jabar-hdi-2023",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "title": "Indeks Pembangunan Manusia Menurut Kabupaten/Kota di Provinsi Jawa Barat, 2020–2023",
+      "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "table": "4.6.5",
+      "page": "printed 311 / PDF 387",
+      "dataYear": 2023,
+      "referencePeriod": "2023 IPM, life expectancy from Long Form SP2020",
+      "artifactId": "sha256:500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81",
+      "accessedAt": "2026-10-26"
+    },
+    {
+      "id": "bps-jabar-sanitation-2023",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "title": "Persentase Rumah Tangga yang Memiliki Akses Terhadap Sanitasi Layak Menurut Kabupaten/Kota di Provinsi Jawa Barat, 2019–2023",
+      "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "table": "4.3.8",
+      "page": "printed 261 / PDF 337",
+      "dataYear": 2023,
+      "referencePeriod": "2023 Susenas",
+      "artifactId": "sha256:500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81",
+      "accessedAt": "2026-10-26"
+    }
+  ],
+  "regions": [
+    {
+      "id": "3201",
+      "name": "Kabupaten Bogor",
+      "province": "Jawa Barat",
+      "type": "kabupaten",
+      "boundaryReference": "BPS kabupaten/kota code, Peraturan BPS No. 3 Tahun 2019",
+      "observations": [
+        { "indicatorId": "poverty", "value": 7.27, "unit": "%", "period": "2023", "sourceId": "bps-jabar-poverty-2023" },
+        { "indicatorId": "unemployment", "value": 8.47, "unit": "%", "period": "2023", "sourceId": "bps-jabar-unemployment-2023" },
+        { "indicatorId": "hdi", "value": 73.02, "unit": "index points", "period": "2023", "sourceId": "bps-jabar-hdi-2023" },
+        { "indicatorId": "sanitation", "value": 71.49, "unit": "%", "period": "2023", "sourceId": "bps-jabar-sanitation-2023" }
+      ]
+    },
+    {
+      "id": "3202", "name": "Kabupaten Sukabumi", "province": "Jawa Barat", "type": "kabupaten", "boundaryReference": "BPS kabupaten/kota code, Peraturan BPS No. 3 Tahun 2019",
+      "observations": [
+        { "indicatorId": "poverty", "value": 7.01, "unit": "%", "period": "2023", "sourceId": "bps-jabar-poverty-2023" },
+        { "indicatorId": "unemployment", "value": 7.32, "unit": "%", "period": "2023", "sourceId": "bps-jabar-unemployment-2023" },
+        { "indicatorId": "hdi", "value": 69.71, "unit": "index points", "period": "2023", "sourceId": "bps-jabar-hdi-2023" },
+        { "indicatorId": "sanitation", "value": 53.21, "unit": "%", "period": "2023", "sourceId": "bps-jabar-sanitation-2023" }
+      ]
+    },
+    {
+      "id": "3203", "name": "Kabupaten Cianjur", "province": "Jawa Barat", "type": "kabupaten", "boundaryReference": "BPS kabupaten/kota code, Peraturan BPS No. 3 Tahun 2019",
+      "observations": [
+        { "indicatorId": "poverty", "value": 10.22, "unit": "%", "period": "2023", "sourceId": "bps-jabar-poverty-2023" },
+        { "indicatorId": "unemployment", "value": 7.71, "unit": "%", "period": "2023", "sourceId": "bps-jabar-unemployment-2023" },
+        { "indicatorId": "hdi", "value": 68.18, "unit": "index points", "period": "2023", "sourceId": "bps-jabar-hdi-2023" },
+        { "indicatorId": "sanitation", "value": 63.83, "unit": "%", "period": "2023", "sourceId": "bps-jabar-sanitation-2023" }
+      ]
+    },
+    {
+      "id": "3204",
+      "name": "Kabupaten Bandung",
+      "province": "Jawa Barat",
+      "type": "kabupaten",
+      "boundaryReference": "BPS kabupaten/kota code, Peraturan BPS No. 3 Tahun 2019",
+      "observations": [
+        { "indicatorId": "poverty", "value": 6.40, "unit": "%", "period": "2023", "sourceId": "bps-jabar-poverty-2023" },
+        { "indicatorId": "unemployment", "value": 6.52, "unit": "%", "period": "2023", "sourceId": "bps-jabar-unemployment-2023" },
+        { "indicatorId": "hdi", "value": 74.03, "unit": "index points", "period": "2023", "sourceId": "bps-jabar-hdi-2023" },
+        { "indicatorId": "sanitation", "value": 66.67, "unit": "%", "period": "2023", "sourceId": "bps-jabar-sanitation-2023" }
+      ]
+    },
+    {
+      "id": "3205", "name": "Kabupaten Garut", "province": "Jawa Barat", "type": "kabupaten", "boundaryReference": "BPS kabupaten/kota code, Peraturan BPS No. 3 Tahun 2019",
+      "observations": [
+        { "indicatorId": "poverty", "value": 9.77, "unit": "%", "period": "2023", "sourceId": "bps-jabar-poverty-2023" },
+        { "indicatorId": "unemployment", "value": 7.33, "unit": "%", "period": "2023", "sourceId": "bps-jabar-unemployment-2023" },
+        { "indicatorId": "hdi", "value": 69.22, "unit": "index points", "period": "2023", "sourceId": "bps-jabar-hdi-2023" },
+        { "indicatorId": "sanitation", "value": 54.68, "unit": "%", "period": "2023", "sourceId": "bps-jabar-sanitation-2023" }
+      ]
+    },
+    {
+      "id": "3206", "name": "Kabupaten Tasikmalaya", "province": "Jawa Barat", "type": "kabupaten", "boundaryReference": "BPS kabupaten/kota code, Peraturan BPS No. 3 Tahun 2019",
+      "observations": [
+        { "indicatorId": "poverty", "value": 10.28, "unit": "%", "period": "2023", "sourceId": "bps-jabar-poverty-2023" },
+        { "indicatorId": "unemployment", "value": 3.89, "unit": "%", "period": "2023", "sourceId": "bps-jabar-unemployment-2023" },
+        { "indicatorId": "hdi", "value": 69.38, "unit": "index points", "period": "2023", "sourceId": "bps-jabar-hdi-2023" },
+        { "indicatorId": "sanitation", "value": 51.33, "unit": "%", "period": "2023", "sourceId": "bps-jabar-sanitation-2023" }
+      ]
+    },
+    {
+      "id": "3207", "name": "Kabupaten Ciamis", "province": "Jawa Barat", "type": "kabupaten", "boundaryReference": "BPS kabupaten/kota code, Peraturan BPS No. 3 Tahun 2019",
+      "observations": [
+        { "indicatorId": "poverty", "value": 7.42, "unit": "%", "period": "2023", "sourceId": "bps-jabar-poverty-2023" },
+        { "indicatorId": "unemployment", "value": 3.52, "unit": "%", "period": "2023", "sourceId": "bps-jabar-unemployment-2023" },
+        { "indicatorId": "hdi", "value": 73.12, "unit": "index points", "period": "2023", "sourceId": "bps-jabar-hdi-2023" },
+        { "indicatorId": "sanitation", "value": 71.38, "unit": "%", "period": "2023", "sourceId": "bps-jabar-sanitation-2023" }
+      ]
+    },
+    {
+      "id": "3208", "name": "Kabupaten Kuningan", "province": "Jawa Barat", "type": "kabupaten", "boundaryReference": "BPS kabupaten/kota code, Peraturan BPS No. 3 Tahun 2019",
+      "observations": [
+        { "indicatorId": "poverty", "value": 12.12, "unit": "%", "period": "2023", "sourceId": "bps-jabar-poverty-2023" },
+        { "indicatorId": "unemployment", "value": 9.49, "unit": "%", "period": "2023", "sourceId": "bps-jabar-unemployment-2023" },
+        { "indicatorId": "hdi", "value": 70.99, "unit": "index points", "period": "2023", "sourceId": "bps-jabar-hdi-2023" },
+        { "indicatorId": "sanitation", "value": 83.03, "unit": "%", "period": "2023", "sourceId": "bps-jabar-sanitation-2023" }
+      ]
+    },
+    {
+      "id": "3209", "name": "Kabupaten Cirebon", "province": "Jawa Barat", "type": "kabupaten", "boundaryReference": "BPS kabupaten/kota code, Peraturan BPS No. 3 Tahun 2019",
+      "observations": [
+        { "indicatorId": "poverty", "value": 11.20, "unit": "%", "period": "2023", "sourceId": "bps-jabar-poverty-2023" },
+        { "indicatorId": "unemployment", "value": 7.65, "unit": "%", "period": "2023", "sourceId": "bps-jabar-unemployment-2023" },
+        { "indicatorId": "hdi", "value": 71.81, "unit": "index points", "period": "2023", "sourceId": "bps-jabar-hdi-2023" },
+        { "indicatorId": "sanitation", "value": 89.02, "unit": "%", "period": "2023", "sourceId": "bps-jabar-sanitation-2023" }
+      ]
+    },
+    {
+      "id": "3210", "name": "Kabupaten Majalengka", "province": "Jawa Barat", "type": "kabupaten", "boundaryReference": "BPS kabupaten/kota code, Peraturan BPS No. 3 Tahun 2019",
+      "observations": [
+        { "indicatorId": "poverty", "value": 11.21, "unit": "%", "period": "2023", "sourceId": "bps-jabar-poverty-2023" },
+        { "indicatorId": "unemployment", "value": 4.12, "unit": "%", "period": "2023", "sourceId": "bps-jabar-unemployment-2023" },
+        { "indicatorId": "hdi", "value": 70.76, "unit": "index points", "period": "2023", "sourceId": "bps-jabar-hdi-2023" },
+        { "indicatorId": "sanitation", "value": 82.67, "unit": "%", "period": "2023", "sourceId": "bps-jabar-sanitation-2023" }
+      ]
+    },
+    {
+      "id": "3211", "name": "Kabupaten Sumedang", "province": "Jawa Barat", "type": "kabupaten", "boundaryReference": "BPS kabupaten/kota code, Peraturan BPS No. 3 Tahun 2019",
+      "observations": [
+        { "indicatorId": "poverty", "value": 9.36, "unit": "%", "period": "2023", "sourceId": "bps-jabar-poverty-2023" },
+        { "indicatorId": "unemployment", "value": 6.94, "unit": "%", "period": "2023", "sourceId": "bps-jabar-unemployment-2023" },
+        { "indicatorId": "hdi", "value": 74.02, "unit": "index points", "period": "2023", "sourceId": "bps-jabar-hdi-2023" },
+        { "indicatorId": "sanitation", "value": 72.55, "unit": "%", "period": "2023", "sourceId": "bps-jabar-sanitation-2023" }
+      ]
+    },
+    {
+      "id": "3212", "name": "Kabupaten Indramayu", "province": "Jawa Barat", "type": "kabupaten", "boundaryReference": "BPS kabupaten/kota code, Peraturan BPS No. 3 Tahun 2019",
+      "observations": [
+        { "indicatorId": "poverty", "value": 12.13, "unit": "%", "period": "2023", "sourceId": "bps-jabar-poverty-2023" },
+        { "indicatorId": "unemployment", "value": 6.46, "unit": "%", "period": "2023", "sourceId": "bps-jabar-unemployment-2023" },
+        { "indicatorId": "hdi", "value": 70.19, "unit": "index points", "period": "2023", "sourceId": "bps-jabar-hdi-2023" },
+        { "indicatorId": "sanitation", "value": 95.90, "unit": "%", "period": "2023", "sourceId": "bps-jabar-sanitation-2023" }
+      ]
+    },
+    {
+      "id": "3213", "name": "Kabupaten Subang", "province": "Jawa Barat", "type": "kabupaten", "boundaryReference": "BPS kabupaten/kota code, Peraturan BPS No. 3 Tahun 2019",
+      "observations": [
+        { "indicatorId": "poverty", "value": 9.52, "unit": "%", "period": "2023", "sourceId": "bps-jabar-poverty-2023" },
+        { "indicatorId": "unemployment", "value": 7.65, "unit": "%", "period": "2023", "sourceId": "bps-jabar-unemployment-2023" },
+        { "indicatorId": "hdi", "value": 71.42, "unit": "index points", "period": "2023", "sourceId": "bps-jabar-hdi-2023" },
+        { "indicatorId": "sanitation", "value": 89.40, "unit": "%", "period": "2023", "sourceId": "bps-jabar-sanitation-2023" }
+      ]
+    },
+    {
+      "id": "3214", "name": "Kabupaten Purwakarta", "province": "Jawa Barat", "type": "kabupaten", "boundaryReference": "BPS kabupaten/kota code, Peraturan BPS No. 3 Tahun 2019",
+      "observations": [
+        { "indicatorId": "poverty", "value": 8.46, "unit": "%", "period": "2023", "sourceId": "bps-jabar-poverty-2023" },
+        { "indicatorId": "unemployment", "value": 7.72, "unit": "%", "period": "2023", "sourceId": "bps-jabar-unemployment-2023" },
+        { "indicatorId": "hdi", "value": 73.43, "unit": "index points", "period": "2023", "sourceId": "bps-jabar-hdi-2023" },
+        { "indicatorId": "sanitation", "value": 77.33, "unit": "%", "period": "2023", "sourceId": "bps-jabar-sanitation-2023" }
+      ]
+    },
+    {
+      "id": "3215", "name": "Kabupaten Karawang", "province": "Jawa Barat", "type": "kabupaten", "boundaryReference": "BPS kabupaten/kota code, Peraturan BPS No. 3 Tahun 2019",
+      "observations": [
+        { "indicatorId": "poverty", "value": 7.87, "unit": "%", "period": "2023", "sourceId": "bps-jabar-poverty-2023" },
+        { "indicatorId": "unemployment", "value": 8.95, "unit": "%", "period": "2023", "sourceId": "bps-jabar-unemployment-2023" },
+        { "indicatorId": "hdi", "value": 73.25, "unit": "index points", "period": "2023", "sourceId": "bps-jabar-hdi-2023" },
+        { "indicatorId": "sanitation", "value": 83.02, "unit": "%", "period": "2023", "sourceId": "bps-jabar-sanitation-2023" }
+      ]
+    },
+    {
+      "id": "3216", "name": "Kabupaten Bekasi", "province": "Jawa Barat", "type": "kabupaten", "boundaryReference": "BPS kabupaten/kota code, Peraturan BPS No. 3 Tahun 2019",
+      "observations": [
+        { "indicatorId": "poverty", "value": 4.93, "unit": "%", "period": "2023", "sourceId": "bps-jabar-poverty-2023" },
+        { "indicatorId": "unemployment", "value": 8.87, "unit": "%", "period": "2023", "sourceId": "bps-jabar-unemployment-2023" },
+        { "indicatorId": "hdi", "value": 76.13, "unit": "index points", "period": "2023", "sourceId": "bps-jabar-hdi-2023" },
+        { "indicatorId": "sanitation", "value": 91.54, "unit": "%", "period": "2023", "sourceId": "bps-jabar-sanitation-2023" }
+      ]
+    },
+    {
+      "id": "3217", "name": "Kabupaten Bandung Barat", "province": "Jawa Barat", "type": "kabupaten", "boundaryReference": "BPS kabupaten/kota code, Peraturan BPS No. 3 Tahun 2019",
+      "observations": [
+        { "indicatorId": "poverty", "value": 10.52, "unit": "%", "period": "2023", "sourceId": "bps-jabar-poverty-2023" },
+        { "indicatorId": "unemployment", "value": 8.11, "unit": "%", "period": "2023", "sourceId": "bps-jabar-unemployment-2023" },
+        { "indicatorId": "hdi", "value": 70.33, "unit": "index points", "period": "2023", "sourceId": "bps-jabar-hdi-2023" },
+        { "indicatorId": "sanitation", "value": 56.93, "unit": "%", "period": "2023", "sourceId": "bps-jabar-sanitation-2023" }
+      ]
+    },
+    {
+      "id": "3218", "name": "Kabupaten Pangandaran", "province": "Jawa Barat", "type": "kabupaten", "boundaryReference": "BPS kabupaten/kota code, Peraturan BPS No. 3 Tahun 2019",
+      "observations": [
+        { "indicatorId": "poverty", "value": 8.98, "unit": "%", "period": "2023", "sourceId": "bps-jabar-poverty-2023" },
+        { "indicatorId": "unemployment", "value": 1.52, "unit": "%", "period": "2023", "sourceId": "bps-jabar-unemployment-2023" },
+        { "indicatorId": "hdi", "value": 70.57, "unit": "index points", "period": "2023", "sourceId": "bps-jabar-hdi-2023" },
+        { "indicatorId": "sanitation", "value": 86.91, "unit": "%", "period": "2023", "sourceId": "bps-jabar-sanitation-2023" }
+      ]
+    },
+    {
+      "id": "3271", "name": "Kota Bogor", "province": "Jawa Barat", "type": "kota", "boundaryReference": "BPS kabupaten/kota code, Peraturan BPS No. 3 Tahun 2019",
+      "observations": [
+        { "indicatorId": "poverty", "value": 6.67, "unit": "%", "period": "2023", "sourceId": "bps-jabar-poverty-2023" },
+        { "indicatorId": "unemployment", "value": 9.39, "unit": "%", "period": "2023", "sourceId": "bps-jabar-unemployment-2023" },
+        { "indicatorId": "hdi", "value": 78.36, "unit": "index points", "period": "2023", "sourceId": "bps-jabar-hdi-2023" },
+        { "indicatorId": "sanitation", "value": 74.36, "unit": "%", "period": "2023", "sourceId": "bps-jabar-sanitation-2023" }
+      ]
+    },
+    {
+      "id": "3272", "name": "Kota Sukabumi", "province": "Jawa Barat", "type": "kota", "boundaryReference": "BPS kabupaten/kota code, Peraturan BPS No. 3 Tahun 2019",
+      "observations": [
+        { "indicatorId": "poverty", "value": 7.50, "unit": "%", "period": "2023", "sourceId": "bps-jabar-poverty-2023" },
+        { "indicatorId": "unemployment", "value": 8.53, "unit": "%", "period": "2023", "sourceId": "bps-jabar-unemployment-2023" },
+        { "indicatorId": "hdi", "value": 77.16, "unit": "index points", "period": "2023", "sourceId": "bps-jabar-hdi-2023" },
+        { "indicatorId": "sanitation", "value": 44.76, "unit": "%", "period": "2023", "sourceId": "bps-jabar-sanitation-2023" }
+      ]
+    },
+    {
+      "id": "3273", "name": "Kota Bandung", "province": "Jawa Barat", "type": "kota", "boundaryReference": "BPS kabupaten/kota code, Peraturan BPS No. 3 Tahun 2019",
+      "observations": [
+        { "indicatorId": "poverty", "value": 3.96, "unit": "%", "period": "2023", "sourceId": "bps-jabar-poverty-2023" },
+        { "indicatorId": "unemployment", "value": 8.83, "unit": "%", "period": "2023", "sourceId": "bps-jabar-unemployment-2023" },
+        { "indicatorId": "hdi", "value": 83.29, "unit": "index points", "period": "2023", "sourceId": "bps-jabar-hdi-2023" },
+        { "indicatorId": "sanitation", "value": 56.01, "unit": "%", "period": "2023", "sourceId": "bps-jabar-sanitation-2023" }
+      ]
+    },
+    {
+      "id": "3274", "name": "Kota Cirebon", "province": "Jawa Barat", "type": "kota", "boundaryReference": "BPS kabupaten/kota code, Peraturan BPS No. 3 Tahun 2019",
+      "observations": [
+        { "indicatorId": "poverty", "value": 9.16, "unit": "%", "period": "2023", "sourceId": "bps-jabar-poverty-2023" },
+        { "indicatorId": "unemployment", "value": 7.66, "unit": "%", "period": "2023", "sourceId": "bps-jabar-unemployment-2023" },
+        { "indicatorId": "hdi", "value": 77.45, "unit": "index points", "period": "2023", "sourceId": "bps-jabar-hdi-2023" },
+        { "indicatorId": "sanitation", "value": 93.27, "unit": "%", "period": "2023", "sourceId": "bps-jabar-sanitation-2023" }
+      ]
+    },
+    {
+      "id": "3275", "name": "Kota Bekasi", "province": "Jawa Barat", "type": "kota", "boundaryReference": "BPS kabupaten/kota code, Peraturan BPS No. 3 Tahun 2019",
+      "observations": [
+        { "indicatorId": "poverty", "value": 4.10, "unit": "%", "period": "2023", "sourceId": "bps-jabar-poverty-2023" },
+        { "indicatorId": "unemployment", "value": 7.90, "unit": "%", "period": "2023", "sourceId": "bps-jabar-unemployment-2023" },
+        { "indicatorId": "hdi", "value": 83.06, "unit": "index points", "period": "2023", "sourceId": "bps-jabar-hdi-2023" },
+        { "indicatorId": "sanitation", "value": 98.52, "unit": "%", "period": "2023", "sourceId": "bps-jabar-sanitation-2023" }
+      ]
+    },
+    {
+      "id": "3276", "name": "Kota Depok", "province": "Jawa Barat", "type": "kota", "boundaryReference": "BPS kabupaten/kota code, Peraturan BPS No. 3 Tahun 2019",
+      "observations": [
+        { "indicatorId": "poverty", "value": 2.38, "unit": "%", "period": "2023", "sourceId": "bps-jabar-poverty-2023" },
+        { "indicatorId": "unemployment", "value": 6.97, "unit": "%", "period": "2023", "sourceId": "bps-jabar-unemployment-2023" },
+        { "indicatorId": "hdi", "value": 82.53, "unit": "index points", "period": "2023", "sourceId": "bps-jabar-hdi-2023" },
+        { "indicatorId": "sanitation", "value": 97.43, "unit": "%", "period": "2023", "sourceId": "bps-jabar-sanitation-2023" }
+      ]
+    },
+    {
+      "id": "3277", "name": "Kota Cimahi", "province": "Jawa Barat", "type": "kota", "boundaryReference": "BPS kabupaten/kota code, Peraturan BPS No. 3 Tahun 2019",
+      "observations": [
+        { "indicatorId": "poverty", "value": 4.66, "unit": "%", "period": "2023", "sourceId": "bps-jabar-poverty-2023" },
+        { "indicatorId": "unemployment", "value": 10.52, "unit": "%", "period": "2023", "sourceId": "bps-jabar-unemployment-2023" },
+        { "indicatorId": "hdi", "value": 79.69, "unit": "index points", "period": "2023", "sourceId": "bps-jabar-hdi-2023" },
+        { "indicatorId": "sanitation", "value": 76.37, "unit": "%", "period": "2023", "sourceId": "bps-jabar-sanitation-2023" }
+      ]
+    },
+    {
+      "id": "3278", "name": "Kota Tasikmalaya", "province": "Jawa Barat", "type": "kota", "boundaryReference": "BPS kabupaten/kota code, Peraturan BPS No. 3 Tahun 2019",
+      "observations": [
+        { "indicatorId": "poverty", "value": 11.53, "unit": "%", "period": "2023", "sourceId": "bps-jabar-poverty-2023" },
+        { "indicatorId": "unemployment", "value": 6.55, "unit": "%", "period": "2023", "sourceId": "bps-jabar-unemployment-2023" },
+        { "indicatorId": "hdi", "value": 75.47, "unit": "index points", "period": "2023", "sourceId": "bps-jabar-hdi-2023" },
+        { "indicatorId": "sanitation", "value": 56.25, "unit": "%", "period": "2023", "sourceId": "bps-jabar-sanitation-2023" }
+      ]
+    },
+    {
+      "id": "3279", "name": "Kota Banjar", "province": "Jawa Barat", "type": "kota", "boundaryReference": "BPS kabupaten/kota code, Peraturan BPS No. 3 Tahun 2019",
+      "observations": [
+        { "indicatorId": "poverty", "value": 6.14, "unit": "%", "period": "2023", "sourceId": "bps-jabar-poverty-2023" },
+        { "indicatorId": "unemployment", "value": 5.43, "unit": "%", "period": "2023", "sourceId": "bps-jabar-unemployment-2023" },
+        { "indicatorId": "hdi", "value": 74.45, "unit": "index points", "period": "2023", "sourceId": "bps-jabar-hdi-2023" },
+        { "indicatorId": "sanitation", "value": 89.06, "unit": "%", "period": "2023", "sourceId": "bps-jabar-sanitation-2023" }
+      ]
+    }
+  ]
+}
