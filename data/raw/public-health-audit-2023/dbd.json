@@ -1,0 +1,2172 @@
+{
+  "auditId": "civx-public-health-dbd-2023",
+  "accessedAt": "2026-10-29",
+  "scope": {
+    "referenceYear": 2023,
+    "province": "Jawa Barat",
+    "regionIds": [
+      "3201",
+      "3202",
+      "3203",
+      "3204",
+      "3205",
+      "3206",
+      "3207",
+      "3208",
+      "3209",
+      "3210",
+      "3211",
+      "3212",
+      "3213",
+      "3214",
+      "3215",
+      "3216",
+      "3217",
+      "3218",
+      "3271",
+      "3272",
+      "3273",
+      "3274",
+      "3275",
+      "3276",
+      "3277",
+      "3278",
+      "3279"
+    ],
+    "canonicalRegistry": "data/raw/civx-jabar-2023.json regions",
+    "purpose": "Research and next-methodology recommendation only. No production scoring cutover, frontend, weights or recommendation-engine change."
+  },
+  "artifacts": [
+    {
+      "id": "dbd_bps_table",
+      "publisher": "BPS Provinsi Jawa Barat; originating Dinas Kesehatan",
+      "title": "Provinsi Jawa Barat Dalam Angka 2024, table4.2.6 continuation",
+      "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "accessedAt": "2026-10-29",
+      "representation": "Selected pdftotext extracted text from official PDF; hash covers retained UTF-8 text, not original PDF bytes. Full publication not redistributed.",
+      "sha256": "61768f114346c61cceadb1d0d7ac924e137636f135be323ffb26ff0a9201908e",
+      "bytes": 5596,
+      "content": "PROVINSI JAWA BARAT DALAM ANGKA 2024\n\n\n\n\nLanjutan Tabel/Continued Table 4.2.6\n\n\n                                                                             Angka Kesakitan\n                                       Penemuan Kasus Baru\n                                                                             Malaria per 1.000    Angka Kesakitan DBD\n                                         Kusta per 100.000\n      Kabupaten/Kota                                                             Penduduk         per 100.000 Penduduk\n                                             Penduduk\n    Regency/Municipality                                                      Annual Parasite     DHF Incidence Rate per\n                                       New Case Detection Rate\n                                                                            Incidence per 1,000    100,000 Population\n                                       per 100,000 Population\n                                                                                Population\n                 (1)\n Kabupaten/Regency\n                                                     (5)                                o.\n                                                                                       (6)\n                                                                                           id              (7)\n\n Bogor                                              3,62                             0,0040                  31\n Sukabumi                                          0,73                           .g 0,0110                   4\n Cianjur\n Bandung\n                                                    0,38\n                                                    0,10   ba                        0,0020\n                                                                                     0,0010\n                                                                                                             35\n                                                                                                             20\n Garut\n Tasikmalaya\n                                                    0,65\n                                                    1,15\n                                                              r.b                    0,0130\n                                                                                     0,0070\n                                                                                                             27\n                                                                                                              5\n Ciamis\n Kuningan\n                                                    0,00\n                                                    6,51\n                                                                 ps                  0,0020\n                                                                                     0,0040\n                                                                                                             19\n                                                                                                             57\n Cirebon                                            7,86                                -                    33\n Majalengka                                    //j a5,16                             0,0080                  18\n Sumedang                                           1,26                             0,0020                 110\n Indramayu                               s:        13,04                             0,0020                  12\n Subang                                             6,55                             0,0040                  39\n Purwakarta                ht tp                    3,73                             0,0040                  45\n Karawang                                           7,30                             0,0070                  42\n Bekasi                                            11,02                             0,0002                  18\n Bandung Barat                                      0,47                                -                    78\n Pangandaran                                        1,16                             0,0220                  62\n Kota/ Municipality\n Bogor                                              2,31                            0,0610                  132\n Sukabumi                                           0,56                            0,0120                  124\n Bandung                                            0,16                            0,0090                   78\n Cirebon                                            4,03                            0,0560                   71\n Bekasi                                             4,84                            0,0090                   39\n Depok                                              1,90                            0,0600                   41\n Cimahi                                             0,36                            0,0830                   55\n Tasikmalaya                                        0,74                            0,0130                   52\n Banjar                                             0,49                            0,0110                   28\n          Jawa Barat                                3,59                            0,0100                   38\n\nCatatan/Note       :-\nSumber/ Source     : Dinas Kesehatan Provinsi Jawa Barat/Health Service of Jawa Barat Province\n\n\n\n\n234              JAWA BARAT PROVINCE IN FIGURES 2024\n\f",
+      "originalFileSha256": "500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81",
+      "originalAcquiredAt": "2026-10-26",
+      "pdfPages": [
+        310
+      ],
+      "printedPages": [
+        234
+      ]
+    },
+    {
+      "id": "dbd_bps_population",
+      "publisher": "BPS Provinsi Jawa Barat",
+      "title": "Provinsi Jawa Barat Dalam Angka 2024, table3.1.3",
+      "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "accessedAt": "2026-10-29",
+      "representation": "Selected pdftotext extracted text from official PDF; hash covers retained UTF-8 text, not original PDF bytes. Full publication not redistributed.",
+      "sha256": "15642c92ddbd7710e3335845b0aaaf7e9b8170d52c2e67b549354bfd71ed6c81",
+      "bytes": 6407,
+      "content": "                                                                      PENDUDUK DAN KETENAGAKERJAAN\n\n\nTabel                         Jumlah Penduduk Menurut Kabupaten/Kota dan Jenis\n      3.1.3\nTable                         Kelamin di Provinsi Jawa Barat, 2023\n                              Population by Regency/Municipality and Sex in Jawa Barat\n                              Province, 2023\n                                                                                     Jenis Kelamin/Sex\n             Kabupaten/Kota\n           Regency/Municipality                            Laki-Laki                     Perempuan               Jumlah\n                                                             Male                          Female                 Total\n                     (1)                                        (2)                             (3)                (4)\n Kabupaten/Regency\n Bogor                                                         2.886.435                       2.740.586           5.627.021\n Sukabumi                                                      1.421.474                    o. 1.380.930\n                                                                                               id                  2.802.404\n Cianjur                                                       1.309.539                       1.248.603           2.558.142\n Bandung                                                       1.894.101             .g        1.827.010           3.721.111\n Garut                                                         1.372.689                       1.310.976           2.683.665\n Tasikmalaya                                              ba     965.602                         941.443           1.907.045\n Ciamis\n Kuningan\n                                                             r.b 625.771\n                                                                 608.669\n                                                                                                 625.773\n                                                                                                 593.095\n                                                                                                                   1.251.544\n                                                                                                                   1.201.764\n Cirebon\n Majalengka\n                                                                ps\n                                                               1.195.535\n                                                                 672.694\n                                                                                               1.164.906\n                                                                                                 667.923\n                                                                                                                   2.360.441\n                                                                                                                   1.340.617\n Sumedang\n Indramayu\n                                               //j a             593.815\n                                                                 950.963\n                                                                                                 584.420\n                                                                                                 943.362\n                                                                                                                   1.178.235\n                                                                                                                   1.894.325\n Subang\n Purwakarta\n                                         s:                      826.509\n                                                                 526.035\n                                                                                                 823.312\n                                                                                                 511.033\n                                                                                                                   1.649.821\n                                                                                                                   1.037.068\n Karawang                  ht tp                               1.277.610                       1.248.392           2.526.002\n Bekasi                                                        1.640.191                       1.597.229           3.237.420\n Bandung Barat                                                   948.045                         911.591           1.859.636\n Pangandaran                                                     215.696                         215.768             431.464\n Kota/ Municipality\n Bogor                                                           542.408                         528.311           1.070.719\n Sukabumi                                                        181.305                         179.339             360.644\n Bandung                                                       1.259.236                       1.247.367           2.506.603\n Cirebon                                                         171.638                         170.342             341.980\n Bekasi                                                        1.320.682                       1.306.525           2.627.207\n Depok                                                         1.080.541                       1.064.859           2.145.400\n Cimahi                                                          297.844                         292.938             590.782\n Tasikmalaya                                                     375.737                         366.023             741.760\n Banjar                                                          104.152                         103.358             207.510\n                 Jawa Barat                                 25.264.916                      24.595.414           49.860.330\nCatatan/Note:    Proyeksi Penduduk Provinsi Jawa Barat 2020 -2035 /Jawa Barat population projection 2020 -2035\nSumber/Source:   Badan Pusat Statistik /BPS-Statistics Indonesia\n\n\n\n\nPOPULATION AND EMPLOYMENT                                                                                                      117\n\f",
+      "originalFileSha256": "500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81",
+      "pdfPages": [
+        193
+      ],
+      "printedPages": [
+        117
+      ]
+    },
+    {
+      "id": "dbd_api_meta",
+      "publisher": "Dinas Kesehatan Provinsi Jawa Barat via Galura Data",
+      "title": "Jumlah Kasus Penyakit Demam Berdarah Dengue (DBD) Berdasarkan Kabupaten/Kota di Jawa Barat",
+      "url": "https://galura.jabarprov.go.id/api/datasets/jumlah-kasus-penyakit-demam-berdarah-dengue-dbd-berdasarkan-kabupatenkota-di-jawa-barat",
+      "accessedAt": "2026-10-29",
+      "representation": "Original browser fetch Response.text() decoded UTF-8 response body, not compressed transfer bytes.",
+      "sha256": "30cd0e086eb9527e4e5e3c10705874a875b19552d76c1397b682955c9bff6733",
+      "bytes": 9148,
+      "content": "{\"code\":200,\"message\":\"Success to get a dataset\",\"data\":{\"id\":18509,\"name\":\"Jumlah Kasus Penyakit Demam Berdarah Dengue (DBD) Berdasarkan Kabupaten/Kota di Jawa Barat\",\"slug\":\"jumlah-kasus-penyakit-demam-berdarah-dengue-dbd-berdasarkan-kabupatenkota-di-jawa-barat\",\"deskripsi\":\"<p><span style=\\\"color:#535353;\\\"><span>Dataset ini berisi jumlah kasus penyakit demam berdarah dengue (dbd) berdasarkan kabupaten/kota di Provinsi Jawa Barat dari tahun 2016 s.d. 2025.</span></span></p><p><span style=\\\"color:#535353;\\\"><span>&nbsp;</span></span></p><p><span style=\\\"color:#535353;\\\"><span>Dataset terkait topik Kesehatan ini dihasilkan oleh Dinas Kesehatan yang dikeluarkan dalam periode 1 tahun sekali.</span></span></p><p><span style=\\\"color:#535353;\\\"><span>&nbsp;</span></span></p><p><span style=\\\"color:#535353;\\\"><span>Penjelasan mengenai variabel di dalam dataset ini:</span></span></p><ul><li><span>kode_provinsi: menyatakan kode Provinsi Jawa Barat sesuai ketentuan BPS merujuk pada aturan Peraturan Badan Pusat Statistik Nomor 3 Tahun 2019 dengan tipe data numerik.</span></li><li><span>nama_provinsi: menyatakan lingkup data berasal dari wilayah Provinsi Jawa Barat sesuai ketentuan BPS merujuk pada aturan Peraturan Badan Pusat Statistik Nomor 3 Tahun 2019 dengan tipe data teks.</span></li><li><span>kode_kabupaten_kota: menyatakan kode dari setiap kabupaten dan kota di Provinsi Jawa Barat sesuai ketentuan BPS merujuk pada aturan Peraturan Badan Pusat Statistik Nomor 3 Tahun 2019 dengan tipe data numerik.</span></li><li><span>nama_kabupaten_kota: menyatakan lingkup data berasal dari setiap kabupaten dan kota di Provinsi Jawa Barat sesuai penamaan BPS merujuk pada aturan Peraturan Badan Pusat Statistik Nomor 3 Tahun 2019 dengan tipe data teks.</span></li><li><span>jumlah_kasus: menyatakan jumlah kasus penyakit demam berdarah dengue (dbd) dengan tipe data numerik.</span></li><li><span>satuan: menyatakan satuan dari pengukuran jumlah kasus penyakit demam berdarah dengue (dbd) dalam orang dengan tipe data teks.</span></li><li><span>tahun: menyatakan tahun produksi data dengan tipe data numerik.</span></li></ul><p>&nbsp;</p>\",\"periode\":null,\"satuan\":null,\"image\":null,\"topik_name\":\"Kesehatan\",\"topik_image\":\"static/upload/20260429140627_data-kesehatan-jawa-barat.svg\",\"topik_slug\":\"kesehatan\",\"topik_id\":2,\"organisasi_name\":\"DINAS KESEHATAN\",\"organisasi_slug\":\"dinkes\",\"organisasi_image\":\"static/upload/1208_logodinkesjabarsq.png\",\"organisasi_notelp\":\"(022) 4230353\",\"organisasi_alamat\":\"Jl. Pasteur No.25 Kelurahan Pasir Kaliki Kecamatan Cicendo Kota Bandung 40171\",\"organisasi_website\":\"http://www.diskes.jabarprov.go.id/\",\"organisasi_email\":\"dinkes@jabarprov.go.id\",\"organisasi_id\":1004,\"kode_wilayah\":\"32\",\"nama_wilayah\":\"JAWA BARAT\",\"wilayah_image\":\"-\",\"wilayah_id\":10001,\"klasifikasi\":\"public\",\"kategori\":\"agregat\",\"data_tetap\":\"tetap\",\"tags\":\"dbd, dda, kesehatan, data agregat, demam berdarah\",\"priority_level\":\"non-priority\",\"data_score_status\":\"sangat_baik\",\"count_view_opendata\":27316,\"count_download_opendata\":1716,\"count_share_opendata\":78,\"count_view_satudata\":70,\"count_download_satudata\":12,\"count_share_satudata\":0,\"schema\":\"dinkes\",\"table\":\"18509_jumlah_kasus_penyakit_demam_berdarah_dengue_dbd\",\"validate\":\"approve\",\"validate_discontinue\":null,\"timestamp_discontinue_submit\":null,\"timestamp_discontinue_approved\":null,\"username\":\"walidata\",\"user_name\":\"Walidata Pemprov Jabar\",\"cuid\":41,\"cdate\":\"2022-05-23T05:10:10+07:07\",\"mdate\":\"2026-10-26T15:43:17.115549+07:07\",\"is_highlight\":null,\"is_realtime\":false,\"is_active\":true,\"is_deleted\":false,\"history_draft\":[{\"id\":31124,\"dataset_id\":18509,\"type\":\"verification-edit\",\"notes\":\"Update Dataset Tahun 2023\",\"username\":\"mreza.dinkesjabar@gmail.com\",\"cuid\":7656,\"cdate\":\"2024-04-29T15:24:06+07:07\"},{\"id\":25650,\"dataset_id\":18509,\"type\":\"verification-edit\",\"notes\":\"update tahun 2021\",\"username\":\"198504272020121006\",\"cuid\":1734,\"cdate\":\"2023-03-07T09:53:59+07:07\"},{\"id\":27193,\"dataset_id\":18509,\"type\":\"verification-edit\",\"notes\":\"update  data tahun 2022\",\"username\":\"198504272020121006\",\"cuid\":1734,\"cdate\":\"2023-09-25T13:37:59+07:07\"},{\"id\":28132,\"dataset_id\":18509,\"type\":\"verification-edit\",\"notes\":\"update dimensi dataset 2021 menjadi 2022\",\"username\":\"198504272020121006\",\"cuid\":1734,\"cdate\":\"2023-10-26T07:46:59+07:07\"},{\"id\":51915,\"dataset_id\":18509,\"type\":\"verification-edit\",\"notes\":\"Update data tahun 2024\",\"username\":\"197107071998031007\",\"cuid\":2820,\"cdate\":\"2025-04-24T11:24:39+07:07\"},{\"id\":52356,\"dataset_id\":18509,\"type\":\"approve\",\"notes\":null,\"username\":\"198910272020121003\",\"cuid\":1733,\"cdate\":\"2025-04-28T11:10:52+07:07\"},{\"id\":52453,\"dataset_id\":18509,\"type\":\"verification-edit\",\"notes\":\"Update data tahun 2024\",\"username\":\"198910272020121003\",\"cuid\":1733,\"cdate\":\"2025-04-29T11:48:08+07:07\"},{\"id\":52748,\"dataset_id\":18509,\"type\":\"approve\",\"notes\":null,\"username\":\"198910272020121003\",\"cuid\":1733,\"cdate\":\"2025-05-05T10:11:02+07:07\"},{\"id\":81820,\"dataset_id\":18509,\"type\":\"approve\",\"notes\":null,\"username\":\"198303292009121001\",\"cuid\":1731,\"cdate\":\"2026-10-26T15:43:17.255527+07:07\"},{\"id\":81695,\"dataset_id\":18509,\"type\":\"verification-edit\",\"notes\":\"Update dataset tahun 2025\",\"username\":\"199501182024212043\",\"cuid\":15264,\"cdate\":\"2026-10-23T16:11:13.000134+07:07\"},{\"id\":31193,\"dataset_id\":18509,\"type\":\"approve\",\"notes\":null,\"username\":\"walidata\",\"cuid\":7,\"cdate\":\"2024-05-02T17:36:37+07:07\"},{\"id\":14813,\"dataset_id\":18509,\"type\":\"preview\",\"notes\":null,\"username\":\"walidata\",\"cuid\":7,\"cdate\":\"2022-05-23T05:10:10+07:07\"},{\"id\":14814,\"dataset_id\":18509,\"type\":\"verification-new\",\"notes\":null,\"username\":\"walidata\",\"cuid\":7,\"cdate\":\"2022-05-23T05:13:10+07:07\"},{\"id\":14815,\"dataset_id\":18509,\"type\":\"approve\",\"notes\":null,\"username\":\"walidata\",\"cuid\":7,\"cdate\":\"2022-05-23T05:13:10+07:07\"},{\"id\":14820,\"dataset_id\":18509,\"type\":\"verification-edit\",\"notes\":\"Mengubah satuan pada deskripsi, metadata, dan baris data\",\"username\":\"walidata\",\"cuid\":7,\"cdate\":\"2022-05-23T05:48:10+07:07\"},{\"id\":14821,\"dataset_id\":18509,\"type\":\"approve\",\"notes\":null,\"username\":\"walidata\",\"cuid\":7,\"cdate\":\"2022-05-23T05:48:10+07:07\"},{\"id\":25653,\"dataset_id\":18509,\"type\":\"approve\",\"notes\":null,\"username\":\"walidata\",\"cuid\":7,\"cdate\":\"2023-03-07T17:11:59+07:07\"},{\"id\":27211,\"dataset_id\":18509,\"type\":\"revision-edit\",\"notes\":\"Mohon dimensi dataset ditambah tahun 2022\",\"username\":\"walidata\",\"cuid\":7,\"cdate\":\"2023-09-26T20:56:59+07:07\"},{\"id\":28158,\"dataset_id\":18509,\"type\":\"approve\",\"notes\":null,\"username\":\"walidata\",\"cuid\":7,\"cdate\":\"2023-10-27T14:16:59+07:07\"}],\"history_discontinue\":[],\"metadata\":[{\"id\":811893,\"dataset_id\":18509,\"type\":\"bisnis\",\"key\":\"Pengukuran Dataset\",\"value\":\"Jumlah Kasus Penyakit Demam Berdarah Dengue (DBD)\",\"cuid\":null,\"cdate\":\"2026-10-23T16:11:12.769689+07:07\",\"muid\":null,\"mdate\":null},{\"id\":811894,\"dataset_id\":18509,\"type\":\"bisnis\",\"key\":\"Tingkat Penyajian Dataset\",\"value\":\"Kabupaten/Kota\",\"cuid\":null,\"cdate\":\"2026-10-23T16:11:12.769704+07:07\",\"muid\":null,\"mdate\":null},{\"id\":811895,\"dataset_id\":18509,\"type\":\"bisnis\",\"key\":\"Cakupan Dataset\",\"value\":\"Seluruh Kasus Penyakit Demam Berdarah Dengue (DBD)\",\"cuid\":null,\"cdate\":\"2026-10-23T16:11:12.769706+07:07\",\"muid\":null,\"mdate\":null},{\"id\":811896,\"dataset_id\":18509,\"type\":\"bisnis\",\"key\":\"Produsen\",\"value\":\"DINAS KESEHATAN\",\"cuid\":null,\"cdate\":\"2026-10-23T16:11:12.769708+07:07\",\"muid\":null,\"mdate\":null},{\"id\":811897,\"dataset_id\":18509,\"type\":\"bisnis\",\"key\":\"Kontak Produsen\",\"value\":\"(022) 4230353 — diskes@jabarprov.go.id\",\"cuid\":null,\"cdate\":\"2026-10-23T16:11:12.769710+07:07\",\"muid\":null,\"mdate\":null},{\"id\":811898,\"dataset_id\":18509,\"type\":\"bisnis\",\"key\":\"Kode Indikator\",\"value\":\"None\",\"cuid\":null,\"cdate\":\"2026-10-23T16:11:12.769712+07:07\",\"muid\":null,\"mdate\":null},{\"id\":811899,\"dataset_id\":18509,\"type\":\"bisnis\",\"key\":\"Satuan Dataset\",\"value\":\"Orang\",\"cuid\":null,\"cdate\":\"2026-10-23T16:11:12.769714+07:07\",\"muid\":null,\"mdate\":null},{\"id\":811900,\"dataset_id\":18509,\"type\":\"bisnis\",\"key\":\"Frekuensi Dataset\",\"value\":\"Tahunan\",\"cuid\":null,\"cdate\":\"2026-10-23T16:11:12.769716+07:07\",\"muid\":null,\"mdate\":null},{\"id\":811901,\"dataset_id\":18509,\"type\":\"bisnis\",\"key\":\"Dimensi Dataset Awal\",\"value\":\"2016\",\"cuid\":null,\"cdate\":\"2026-10-23T16:11:12.769718+07:07\",\"muid\":null,\"mdate\":null},{\"id\":811902,\"dataset_id\":18509,\"type\":\"bisnis\",\"key\":\"Dimensi Dataset Akhir\",\"value\":\"2025\",\"cuid\":null,\"cdate\":\"2026-10-23T16:11:12.769720+07:07\",\"muid\":null,\"mdate\":null},{\"id\":811903,\"dataset_id\":18509,\"type\":\"bisnis\",\"key\":\"Sumber External\",\"value\":\"None\",\"cuid\":null,\"cdate\":\"2026-10-23T16:11:12.769721+07:07\",\"muid\":null,\"mdate\":null},{\"id\":811904,\"dataset_id\":18509,\"type\":\"custom\",\"key\":\"Definisi\",\"value\":\"Penyakit infeksi yang disebabkan oleh virus dengue dan ditularkan melalui gigitan nyamuk Aedes aegypti\",\"cuid\":null,\"cdate\":\"2026-10-23T16:11:12.769723+07:07\",\"muid\":null,\"mdate\":null},{\"id\":811905,\"dataset_id\":18509,\"type\":\"custom\",\"key\":\"Catatan\",\"value\":\"Nilai 0 pada Kabupaten Cianjur tahun 2017 menyatakan bahwa data tidak tersedia. \",\"cuid\":null,\"cdate\":\"2026-10-23T16:11:12.769724+07:07\",\"muid\":null,\"mdate\":null}],\"permission\":[],\"data_priority\":{}},\"error\":{}}",
+      "httpStatus": 200
+    },
+    {
+      "id": "dbd_api_cases",
+      "publisher": "Dinas Kesehatan Provinsi Jawa Barat via Galura Data",
+      "title": "Jumlah Kasus Penyakit Demam Berdarah Dengue (DBD) Berdasarkan Kabupaten/Kota di Jawa Barat",
+      "url": "https://galura.jabarprov.go.id/api/bigdata/jumlah-kasus-penyakit-demam-berdarah-dengue-dbd-berdasarkan-kabupatenkota-di-jawa-barat?per_page=1000&page=1",
+      "accessedAt": "2026-10-29",
+      "representation": "Original browser fetch Response.text() decoded UTF-8 response body, not compressed transfer bytes.",
+      "sha256": "f60e6b86e32a956334e2ec179a5c917145b7feebf3eb6bae677cb0d7213b3c4e",
+      "bytes": 48970,
+      "content": "{\"code\":200,\"message\":\"Success\",\"data\":[{\"id\":1,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3201,\"nama_kabupaten_kota\":\"KABUPATEN BOGOR\",\"jumlah_kasus\":3477,\"satuan\":\"ORANG\",\"tahun\":2016},{\"id\":2,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3202,\"nama_kabupaten_kota\":\"KABUPATEN SUKABUMI\",\"jumlah_kasus\":854,\"satuan\":\"ORANG\",\"tahun\":2016},{\"id\":3,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3203,\"nama_kabupaten_kota\":\"KABUPATEN CIANJUR\",\"jumlah_kasus\":799,\"satuan\":\"ORANG\",\"tahun\":2016},{\"id\":4,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3204,\"nama_kabupaten_kota\":\"KABUPATEN BANDUNG\",\"jumlah_kasus\":3466,\"satuan\":\"ORANG\",\"tahun\":2016},{\"id\":5,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3205,\"nama_kabupaten_kota\":\"KABUPATEN GARUT\",\"jumlah_kasus\":561,\"satuan\":\"ORANG\",\"tahun\":2016},{\"id\":6,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3206,\"nama_kabupaten_kota\":\"KABUPATEN TASIKMALAYA\",\"jumlah_kasus\":478,\"satuan\":\"ORANG\",\"tahun\":2016},{\"id\":7,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3207,\"nama_kabupaten_kota\":\"KABUPATEN CIAMIS\",\"jumlah_kasus\":748,\"satuan\":\"ORANG\",\"tahun\":2016},{\"id\":8,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3208,\"nama_kabupaten_kota\":\"KABUPATEN KUNINGAN\",\"jumlah_kasus\":1720,\"satuan\":\"ORANG\",\"tahun\":2016},{\"id\":9,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3209,\"nama_kabupaten_kota\":\"KABUPATEN CIREBON\",\"jumlah_kasus\":1877,\"satuan\":\"ORANG\",\"tahun\":2016},{\"id\":10,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3210,\"nama_kabupaten_kota\":\"KABUPATEN MAJALENGKA\",\"jumlah_kasus\":322,\"satuan\":\"ORANG\",\"tahun\":2016},{\"id\":11,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3211,\"nama_kabupaten_kota\":\"KABUPATEN SUMEDANG\",\"jumlah_kasus\":944,\"satuan\":\"ORANG\",\"tahun\":2016},{\"id\":12,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3212,\"nama_kabupaten_kota\":\"KABUPATEN INDRAMAYU\",\"jumlah_kasus\":911,\"satuan\":\"ORANG\",\"tahun\":2016},{\"id\":13,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3213,\"nama_kabupaten_kota\":\"KABUPATEN SUBANG\",\"jumlah_kasus\":699,\"satuan\":\"ORANG\",\"tahun\":2016},{\"id\":14,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3214,\"nama_kabupaten_kota\":\"KABUPATEN PURWAKARTA\",\"jumlah_kasus\":772,\"satuan\":\"ORANG\",\"tahun\":2016},{\"id\":15,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3215,\"nama_kabupaten_kota\":\"KABUPATEN KARAWANG\",\"jumlah_kasus\":1059,\"satuan\":\"ORANG\",\"tahun\":2016},{\"id\":16,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3216,\"nama_kabupaten_kota\":\"KABUPATEN BEKASI\",\"jumlah_kasus\":1802,\"satuan\":\"ORANG\",\"tahun\":2016},{\"id\":17,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3217,\"nama_kabupaten_kota\":\"KABUPATEN BANDUNG BARAT\",\"jumlah_kasus\":1545,\"satuan\":\"ORANG\",\"tahun\":2016},{\"id\":18,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3218,\"nama_kabupaten_kota\":\"KABUPATEN PANGANDARAN\",\"jumlah_kasus\":137,\"satuan\":\"ORANG\",\"tahun\":2016},{\"id\":19,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3271,\"nama_kabupaten_kota\":\"KOTA BOGOR\",\"jumlah_kasus\":1229,\"satuan\":\"ORANG\",\"tahun\":2016},{\"id\":20,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3272,\"nama_kabupaten_kota\":\"KOTA SUKABUMI\",\"jumlah_kasus\":844,\"satuan\":\"ORANG\",\"tahun\":2016},{\"id\":21,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3273,\"nama_kabupaten_kota\":\"KOTA BANDUNG\",\"jumlah_kasus\":3881,\"satuan\":\"ORANG\",\"tahun\":2016},{\"id\":22,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3274,\"nama_kabupaten_kota\":\"KOTA CIREBON\",\"jumlah_kasus\":310,\"satuan\":\"ORANG\",\"tahun\":2016},{\"id\":23,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3275,\"nama_kabupaten_kota\":\"KOTA BEKASI\",\"jumlah_kasus\":3813,\"satuan\":\"ORANG\",\"tahun\":2016},{\"id\":24,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3276,\"nama_kabupaten_kota\":\"KOTA DEPOK\",\"jumlah_kasus\":2827,\"satuan\":\"ORANG\",\"tahun\":2016},{\"id\":25,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3277,\"nama_kabupaten_kota\":\"KOTA CIMAHI\",\"jumlah_kasus\":1080,\"satuan\":\"ORANG\",\"tahun\":2016},{\"id\":26,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3278,\"nama_kabupaten_kota\":\"KOTA TASIKMALAYA\",\"jumlah_kasus\":754,\"satuan\":\"ORANG\",\"tahun\":2016},{\"id\":27,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3279,\"nama_kabupaten_kota\":\"KOTA BANJAR\",\"jumlah_kasus\":370,\"satuan\":\"ORANG\",\"tahun\":2016},{\"id\":28,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3201,\"nama_kabupaten_kota\":\"KABUPATEN BOGOR\",\"jumlah_kasus\":277,\"satuan\":\"ORANG\",\"tahun\":2017},{\"id\":29,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3202,\"nama_kabupaten_kota\":\"KABUPATEN SUKABUMI\",\"jumlah_kasus\":256,\"satuan\":\"ORANG\",\"tahun\":2017},{\"id\":30,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3203,\"nama_kabupaten_kota\":\"KABUPATEN CIANJUR\",\"jumlah_kasus\":0,\"satuan\":\"ORANG\",\"tahun\":2017},{\"id\":31,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3204,\"nama_kabupaten_kota\":\"KABUPATEN BANDUNG\",\"jumlah_kasus\":1013,\"satuan\":\"ORANG\",\"tahun\":2017},{\"id\":32,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3205,\"nama_kabupaten_kota\":\"KABUPATEN GARUT\",\"jumlah_kasus\":406,\"satuan\":\"ORANG\",\"tahun\":2017},{\"id\":33,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3206,\"nama_kabupaten_kota\":\"KABUPATEN TASIKMALAYA\",\"jumlah_kasus\":224,\"satuan\":\"ORANG\",\"tahun\":2017},{\"id\":34,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3207,\"nama_kabupaten_kota\":\"KABUPATEN CIAMIS\",\"jumlah_kasus\":47,\"satuan\":\"ORANG\",\"tahun\":2017},{\"id\":35,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3208,\"nama_kabupaten_kota\":\"KABUPATEN KUNINGAN\",\"jumlah_kasus\":728,\"satuan\":\"ORANG\",\"tahun\":2017},{\"id\":36,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3209,\"nama_kabupaten_kota\":\"KABUPATEN CIREBON\",\"jumlah_kasus\":274,\"satuan\":\"ORANG\",\"tahun\":2017},{\"id\":37,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3210,\"nama_kabupaten_kota\":\"KABUPATEN MAJALENGKA\",\"jumlah_kasus\":112,\"satuan\":\"ORANG\",\"tahun\":2017},{\"id\":38,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3211,\"nama_kabupaten_kota\":\"KABUPATEN SUMEDANG\",\"jumlah_kasus\":184,\"satuan\":\"ORANG\",\"tahun\":2017},{\"id\":39,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3212,\"nama_kabupaten_kota\":\"KABUPATEN INDRAMAYU\",\"jumlah_kasus\":113,\"satuan\":\"ORANG\",\"tahun\":2017},{\"id\":40,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3213,\"nama_kabupaten_kota\":\"KABUPATEN SUBANG\",\"jumlah_kasus\":104,\"satuan\":\"ORANG\",\"tahun\":2017},{\"id\":41,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3214,\"nama_kabupaten_kota\":\"KABUPATEN PURWAKARTA\",\"jumlah_kasus\":122,\"satuan\":\"ORANG\",\"tahun\":2017},{\"id\":42,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3215,\"nama_kabupaten_kota\":\"KABUPATEN KARAWANG\",\"jumlah_kasus\":102,\"satuan\":\"ORANG\",\"tahun\":2017},{\"id\":43,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3216,\"nama_kabupaten_kota\":\"KABUPATEN BEKASI\",\"jumlah_kasus\":332,\"satuan\":\"ORANG\",\"tahun\":2017},{\"id\":44,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3217,\"nama_kabupaten_kota\":\"KABUPATEN BANDUNG BARAT\",\"jumlah_kasus\":201,\"satuan\":\"ORANG\",\"tahun\":2017},{\"id\":45,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3218,\"nama_kabupaten_kota\":\"KABUPATEN PANGANDARAN\",\"jumlah_kasus\":175,\"satuan\":\"ORANG\",\"tahun\":2017},{\"id\":46,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3271,\"nama_kabupaten_kota\":\"KOTA BOGOR\",\"jumlah_kasus\":855,\"satuan\":\"ORANG\",\"tahun\":2017},{\"id\":47,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3272,\"nama_kabupaten_kota\":\"KOTA SUKABUMI\",\"jumlah_kasus\":352,\"satuan\":\"ORANG\",\"tahun\":2017},{\"id\":48,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3273,\"nama_kabupaten_kota\":\"KOTA BANDUNG\",\"jumlah_kasus\":1786,\"satuan\":\"ORANG\",\"tahun\":2017},{\"id\":49,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3274,\"nama_kabupaten_kota\":\"KOTA CIREBON\",\"jumlah_kasus\":53,\"satuan\":\"ORANG\",\"tahun\":2017},{\"id\":50,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3275,\"nama_kabupaten_kota\":\"KOTA BEKASI\",\"jumlah_kasus\":699,\"satuan\":\"ORANG\",\"tahun\":2017},{\"id\":51,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3276,\"nama_kabupaten_kota\":\"KOTA DEPOK\",\"jumlah_kasus\":548,\"satuan\":\"ORANG\",\"tahun\":2017},{\"id\":52,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3277,\"nama_kabupaten_kota\":\"KOTA CIMAHI\",\"jumlah_kasus\":313,\"satuan\":\"ORANG\",\"tahun\":2017},{\"id\":53,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3278,\"nama_kabupaten_kota\":\"KOTA TASIKMALAYA\",\"jumlah_kasus\":298,\"satuan\":\"ORANG\",\"tahun\":2017},{\"id\":54,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3279,\"nama_kabupaten_kota\":\"KOTA BANJAR\",\"jumlah_kasus\":63,\"satuan\":\"ORANG\",\"tahun\":2017},{\"id\":55,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3201,\"nama_kabupaten_kota\":\"KABUPATEN BOGOR\",\"jumlah_kasus\":741,\"satuan\":\"ORANG\",\"tahun\":2018},{\"id\":56,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3202,\"nama_kabupaten_kota\":\"KABUPATEN SUKABUMI\",\"jumlah_kasus\":233,\"satuan\":\"ORANG\",\"tahun\":2018},{\"id\":57,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3203,\"nama_kabupaten_kota\":\"KABUPATEN CIANJUR\",\"jumlah_kasus\":113,\"satuan\":\"ORANG\",\"tahun\":2018},{\"id\":58,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3204,\"nama_kabupaten_kota\":\"KABUPATEN BANDUNG\",\"jumlah_kasus\":1774,\"satuan\":\"ORANG\",\"tahun\":2018},{\"id\":59,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3205,\"nama_kabupaten_kota\":\"KABUPATEN GARUT\",\"jumlah_kasus\":331,\"satuan\":\"ORANG\",\"tahun\":2018},{\"id\":60,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3206,\"nama_kabupaten_kota\":\"KABUPATEN TASIKMALAYA\",\"jumlah_kasus\":196,\"satuan\":\"ORANG\",\"tahun\":2018},{\"id\":61,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3207,\"nama_kabupaten_kota\":\"KABUPATEN CIAMIS\",\"jumlah_kasus\":29,\"satuan\":\"ORANG\",\"tahun\":2018},{\"id\":62,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3208,\"nama_kabupaten_kota\":\"KABUPATEN KUNINGAN\",\"jumlah_kasus\":352,\"satuan\":\"ORANG\",\"tahun\":2018},{\"id\":63,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3209,\"nama_kabupaten_kota\":\"KABUPATEN CIREBON\",\"jumlah_kasus\":215,\"satuan\":\"ORANG\",\"tahun\":2018},{\"id\":64,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3210,\"nama_kabupaten_kota\":\"KABUPATEN MAJALENGKA\",\"jumlah_kasus\":108,\"satuan\":\"ORANG\",\"tahun\":2018},{\"id\":65,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3211,\"nama_kabupaten_kota\":\"KABUPATEN SUMEDANG\",\"jumlah_kasus\":408,\"satuan\":\"ORANG\",\"tahun\":2018},{\"id\":66,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3212,\"nama_kabupaten_kota\":\"KABUPATEN INDRAMAYU\",\"jumlah_kasus\":911,\"satuan\":\"ORANG\",\"tahun\":2018},{\"id\":67,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3213,\"nama_kabupaten_kota\":\"KABUPATEN SUBANG\",\"jumlah_kasus\":143,\"satuan\":\"ORANG\",\"tahun\":2018},{\"id\":68,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3214,\"nama_kabupaten_kota\":\"KABUPATEN PURWAKARTA\",\"jumlah_kasus\":263,\"satuan\":\"ORANG\",\"tahun\":2018},{\"id\":69,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3215,\"nama_kabupaten_kota\":\"KABUPATEN KARAWANG\",\"jumlah_kasus\":60,\"satuan\":\"ORANG\",\"tahun\":2018},{\"id\":70,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3216,\"nama_kabupaten_kota\":\"KABUPATEN BEKASI\",\"jumlah_kasus\":181,\"satuan\":\"ORANG\",\"tahun\":2018},{\"id\":71,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3217,\"nama_kabupaten_kota\":\"KABUPATEN BANDUNG BARAT\",\"jumlah_kasus\":419,\"satuan\":\"ORANG\",\"tahun\":2018},{\"id\":72,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3218,\"nama_kabupaten_kota\":\"KABUPATEN PANGANDARAN\",\"jumlah_kasus\":75,\"satuan\":\"ORANG\",\"tahun\":2018},{\"id\":73,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3271,\"nama_kabupaten_kota\":\"KOTA BOGOR\",\"jumlah_kasus\":727,\"satuan\":\"ORANG\",\"tahun\":2018},{\"id\":74,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3272,\"nama_kabupaten_kota\":\"KOTA SUKABUMI\",\"jumlah_kasus\":238,\"satuan\":\"ORANG\",\"tahun\":2018},{\"id\":75,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3273,\"nama_kabupaten_kota\":\"KOTA BANDUNG\",\"jumlah_kasus\":2826,\"satuan\":\"ORANG\",\"tahun\":2018},{\"id\":76,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3274,\"nama_kabupaten_kota\":\"KOTA CIREBON\",\"jumlah_kasus\":24,\"satuan\":\"ORANG\",\"tahun\":2018},{\"id\":77,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3275,\"nama_kabupaten_kota\":\"KOTA BEKASI\",\"jumlah_kasus\":626,\"satuan\":\"ORANG\",\"tahun\":2018},{\"id\":78,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3276,\"nama_kabupaten_kota\":\"KOTA DEPOK\",\"jumlah_kasus\":891,\"satuan\":\"ORANG\",\"tahun\":2018},{\"id\":79,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3277,\"nama_kabupaten_kota\":\"KOTA CIMAHI\",\"jumlah_kasus\":288,\"satuan\":\"ORANG\",\"tahun\":2018},{\"id\":80,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3278,\"nama_kabupaten_kota\":\"KOTA TASIKMALAYA\",\"jumlah_kasus\":223,\"satuan\":\"ORANG\",\"tahun\":2018},{\"id\":81,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3279,\"nama_kabupaten_kota\":\"KOTA BANJAR\",\"jumlah_kasus\":97,\"satuan\":\"ORANG\",\"tahun\":2018},{\"id\":82,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3201,\"nama_kabupaten_kota\":\"KABUPATEN BOGOR\",\"jumlah_kasus\":1210,\"satuan\":\"ORANG\",\"tahun\":2019},{\"id\":83,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3202,\"nama_kabupaten_kota\":\"KABUPATEN SUKABUMI\",\"jumlah_kasus\":616,\"satuan\":\"ORANG\",\"tahun\":2019},{\"id\":84,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3203,\"nama_kabupaten_kota\":\"KABUPATEN CIANJUR\",\"jumlah_kasus\":643,\"satuan\":\"ORANG\",\"tahun\":2019},{\"id\":85,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3204,\"nama_kabupaten_kota\":\"KABUPATEN BANDUNG\",\"jumlah_kasus\":2635,\"satuan\":\"ORANG\",\"tahun\":2019},{\"id\":86,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3205,\"nama_kabupaten_kota\":\"KABUPATEN GARUT\",\"jumlah_kasus\":769,\"satuan\":\"ORANG\",\"tahun\":2019},{\"id\":87,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3206,\"nama_kabupaten_kota\":\"KABUPATEN TASIKMALAYA\",\"jumlah_kasus\":210,\"satuan\":\"ORANG\",\"tahun\":2019},{\"id\":88,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3207,\"nama_kabupaten_kota\":\"KABUPATEN CIAMIS\",\"jumlah_kasus\":404,\"satuan\":\"ORANG\",\"tahun\":2019},{\"id\":89,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3208,\"nama_kabupaten_kota\":\"KABUPATEN KUNINGAN\",\"jumlah_kasus\":505,\"satuan\":\"ORANG\",\"tahun\":2019},{\"id\":90,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3209,\"nama_kabupaten_kota\":\"KABUPATEN CIREBON\",\"jumlah_kasus\":1291,\"satuan\":\"ORANG\",\"tahun\":2019},{\"id\":91,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3210,\"nama_kabupaten_kota\":\"KABUPATEN MAJALENGKA\",\"jumlah_kasus\":457,\"satuan\":\"ORANG\",\"tahun\":2019},{\"id\":92,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3211,\"nama_kabupaten_kota\":\"KABUPATEN SUMEDANG\",\"jumlah_kasus\":663,\"satuan\":\"ORANG\",\"tahun\":2019},{\"id\":93,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3212,\"nama_kabupaten_kota\":\"KABUPATEN INDRAMAYU\",\"jumlah_kasus\":222,\"satuan\":\"ORANG\",\"tahun\":2019},{\"id\":94,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3213,\"nama_kabupaten_kota\":\"KABUPATEN SUBANG\",\"jumlah_kasus\":270,\"satuan\":\"ORANG\",\"tahun\":2019},{\"id\":95,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3214,\"nama_kabupaten_kota\":\"KABUPATEN PURWAKARTA\",\"jumlah_kasus\":544,\"satuan\":\"ORANG\",\"tahun\":2019},{\"id\":96,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3215,\"nama_kabupaten_kota\":\"KABUPATEN KARAWANG\",\"jumlah_kasus\":199,\"satuan\":\"ORANG\",\"tahun\":2019},{\"id\":97,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3216,\"nama_kabupaten_kota\":\"KABUPATEN BEKASI\",\"jumlah_kasus\":511,\"satuan\":\"ORANG\",\"tahun\":2019},{\"id\":98,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3217,\"nama_kabupaten_kota\":\"KABUPATEN BANDUNG BARAT\",\"jumlah_kasus\":1706,\"satuan\":\"ORANG\",\"tahun\":2019},{\"id\":99,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3218,\"nama_kabupaten_kota\":\"KABUPATEN PANGANDARAN\",\"jumlah_kasus\":158,\"satuan\":\"ORANG\",\"tahun\":2019},{\"id\":100,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3271,\"nama_kabupaten_kota\":\"KOTA BOGOR\",\"jumlah_kasus\":611,\"satuan\":\"ORANG\",\"tahun\":2019},{\"id\":101,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3272,\"nama_kabupaten_kota\":\"KOTA SUKABUMI\",\"jumlah_kasus\":786,\"satuan\":\"ORANG\",\"tahun\":2019},{\"id\":102,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3273,\"nama_kabupaten_kota\":\"KOTA BANDUNG\",\"jumlah_kasus\":4424,\"satuan\":\"ORANG\",\"tahun\":2019},{\"id\":103,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3274,\"nama_kabupaten_kota\":\"KOTA CIREBON\",\"jumlah_kasus\":135,\"satuan\":\"ORANG\",\"tahun\":2019},{\"id\":104,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3275,\"nama_kabupaten_kota\":\"KOTA BEKASI\",\"jumlah_kasus\":2373,\"satuan\":\"ORANG\",\"tahun\":2019},{\"id\":105,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3276,\"nama_kabupaten_kota\":\"KOTA DEPOK\",\"jumlah_kasus\":2200,\"satuan\":\"ORANG\",\"tahun\":2019},{\"id\":106,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3277,\"nama_kabupaten_kota\":\"KOTA CIMAHI\",\"jumlah_kasus\":1020,\"satuan\":\"ORANG\",\"tahun\":2019},{\"id\":107,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3278,\"nama_kabupaten_kota\":\"KOTA TASIKMALAYA\",\"jumlah_kasus\":658,\"satuan\":\"ORANG\",\"tahun\":2019},{\"id\":108,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3279,\"nama_kabupaten_kota\":\"KOTA BANJAR\",\"jumlah_kasus\":62,\"satuan\":\"ORANG\",\"tahun\":2019},{\"id\":109,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3201,\"nama_kabupaten_kota\":\"KABUPATEN BOGOR\",\"jumlah_kasus\":1296,\"satuan\":\"ORANG\",\"tahun\":2020},{\"id\":110,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3202,\"nama_kabupaten_kota\":\"KABUPATEN SUKABUMI\",\"jumlah_kasus\":561,\"satuan\":\"ORANG\",\"tahun\":2020},{\"id\":111,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3203,\"nama_kabupaten_kota\":\"KABUPATEN CIANJUR\",\"jumlah_kasus\":684,\"satuan\":\"ORANG\",\"tahun\":2020},{\"id\":112,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3204,\"nama_kabupaten_kota\":\"KABUPATEN BANDUNG\",\"jumlah_kasus\":2303,\"satuan\":\"ORANG\",\"tahun\":2020},{\"id\":113,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3205,\"nama_kabupaten_kota\":\"KABUPATEN GARUT\",\"jumlah_kasus\":651,\"satuan\":\"ORANG\",\"tahun\":2020},{\"id\":114,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3206,\"nama_kabupaten_kota\":\"KABUPATEN TASIKMALAYA\",\"jumlah_kasus\":179,\"satuan\":\"ORANG\",\"tahun\":2020},{\"id\":115,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3207,\"nama_kabupaten_kota\":\"KABUPATEN CIAMIS\",\"jumlah_kasus\":1457,\"satuan\":\"ORANG\",\"tahun\":2020},{\"id\":116,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3208,\"nama_kabupaten_kota\":\"KABUPATEN KUNINGAN\",\"jumlah_kasus\":362,\"satuan\":\"ORANG\",\"tahun\":2020},{\"id\":117,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3209,\"nama_kabupaten_kota\":\"KABUPATEN CIREBON\",\"jumlah_kasus\":880,\"satuan\":\"ORANG\",\"tahun\":2020},{\"id\":118,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3210,\"nama_kabupaten_kota\":\"KABUPATEN MAJALENGKA\",\"jumlah_kasus\":1153,\"satuan\":\"ORANG\",\"tahun\":2020},{\"id\":119,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3211,\"nama_kabupaten_kota\":\"KABUPATEN SUMEDANG\",\"jumlah_kasus\":707,\"satuan\":\"ORANG\",\"tahun\":2020},{\"id\":120,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3212,\"nama_kabupaten_kota\":\"KABUPATEN INDRAMAYU\",\"jumlah_kasus\":214,\"satuan\":\"ORANG\",\"tahun\":2020},{\"id\":121,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3213,\"nama_kabupaten_kota\":\"KABUPATEN SUBANG\",\"jumlah_kasus\":283,\"satuan\":\"ORANG\",\"tahun\":2020},{\"id\":122,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3214,\"nama_kabupaten_kota\":\"KABUPATEN PURWAKARTA\",\"jumlah_kasus\":534,\"satuan\":\"ORANG\",\"tahun\":2020},{\"id\":123,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3215,\"nama_kabupaten_kota\":\"KABUPATEN KARAWANG\",\"jumlah_kasus\":1329,\"satuan\":\"ORANG\",\"tahun\":2020},{\"id\":124,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3216,\"nama_kabupaten_kota\":\"KABUPATEN BEKASI\",\"jumlah_kasus\":317,\"satuan\":\"ORANG\",\"tahun\":2020},{\"id\":125,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3217,\"nama_kabupaten_kota\":\"KABUPATEN BANDUNG BARAT\",\"jumlah_kasus\":968,\"satuan\":\"ORANG\",\"tahun\":2020},{\"id\":126,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3218,\"nama_kabupaten_kota\":\"KABUPATEN PANGANDARAN\",\"jumlah_kasus\":196,\"satuan\":\"ORANG\",\"tahun\":2020},{\"id\":127,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3271,\"nama_kabupaten_kota\":\"KOTA BOGOR\",\"jumlah_kasus\":241,\"satuan\":\"ORANG\",\"tahun\":2020},{\"id\":128,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3272,\"nama_kabupaten_kota\":\"KOTA SUKABUMI\",\"jumlah_kasus\":651,\"satuan\":\"ORANG\",\"tahun\":2020},{\"id\":129,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3273,\"nama_kabupaten_kota\":\"KOTA BANDUNG\",\"jumlah_kasus\":4424,\"satuan\":\"ORANG\",\"tahun\":2020},{\"id\":130,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3274,\"nama_kabupaten_kota\":\"KOTA CIREBON\",\"jumlah_kasus\":171,\"satuan\":\"ORANG\",\"tahun\":2020},{\"id\":131,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3275,\"nama_kabupaten_kota\":\"KOTA BEKASI\",\"jumlah_kasus\":1646,\"satuan\":\"ORANG\",\"tahun\":2020},{\"id\":132,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3276,\"nama_kabupaten_kota\":\"KOTA DEPOK\",\"jumlah_kasus\":1276,\"satuan\":\"ORANG\",\"tahun\":2020},{\"id\":133,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3277,\"nama_kabupaten_kota\":\"KOTA CIMAHI\",\"jumlah_kasus\":433,\"satuan\":\"ORANG\",\"tahun\":2020},{\"id\":134,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3278,\"nama_kabupaten_kota\":\"KOTA TASIKMALAYA\",\"jumlah_kasus\":1409,\"satuan\":\"ORANG\",\"tahun\":2020},{\"id\":135,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3279,\"nama_kabupaten_kota\":\"KOTA BANJAR\",\"jumlah_kasus\":146,\"satuan\":\"ORANG\",\"tahun\":2020},{\"id\":136,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3201,\"nama_kabupaten_kota\":\"KABUPATEN BOGOR\",\"jumlah_kasus\":2220,\"satuan\":\"ORANG\",\"tahun\":2021},{\"id\":137,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3202,\"nama_kabupaten_kota\":\"KABUPATEN SUKABUMI\",\"jumlah_kasus\":272,\"satuan\":\"ORANG\",\"tahun\":2021},{\"id\":138,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3203,\"nama_kabupaten_kota\":\"KABUPATEN CIANJUR\",\"jumlah_kasus\":430,\"satuan\":\"ORANG\",\"tahun\":2021},{\"id\":139,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3204,\"nama_kabupaten_kota\":\"KABUPATEN BANDUNG\",\"jumlah_kasus\":2026,\"satuan\":\"ORANG\",\"tahun\":2021},{\"id\":140,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3205,\"nama_kabupaten_kota\":\"KABUPATEN GARUT\",\"jumlah_kasus\":1011,\"satuan\":\"ORANG\",\"tahun\":2021},{\"id\":141,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3206,\"nama_kabupaten_kota\":\"KABUPATEN TASIKMALAYA\",\"jumlah_kasus\":48,\"satuan\":\"ORANG\",\"tahun\":2021},{\"id\":142,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3207,\"nama_kabupaten_kota\":\"KABUPATEN CIAMIS\",\"jumlah_kasus\":470,\"satuan\":\"ORANG\",\"tahun\":2021},{\"id\":143,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3208,\"nama_kabupaten_kota\":\"KABUPATEN KUNINGAN\",\"jumlah_kasus\":544,\"satuan\":\"ORANG\",\"tahun\":2021},{\"id\":144,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3209,\"nama_kabupaten_kota\":\"KABUPATEN CIREBON\",\"jumlah_kasus\":819,\"satuan\":\"ORANG\",\"tahun\":2021},{\"id\":145,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3210,\"nama_kabupaten_kota\":\"KABUPATEN MAJALENGKA\",\"jumlah_kasus\":447,\"satuan\":\"ORANG\",\"tahun\":2021},{\"id\":146,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3211,\"nama_kabupaten_kota\":\"KABUPATEN SUMEDANG\",\"jumlah_kasus\":1264,\"satuan\":\"ORANG\",\"tahun\":2021},{\"id\":147,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3212,\"nama_kabupaten_kota\":\"KABUPATEN INDRAMAYU\",\"jumlah_kasus\":188,\"satuan\":\"ORANG\",\"tahun\":2021},{\"id\":148,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3213,\"nama_kabupaten_kota\":\"KABUPATEN SUBANG\",\"jumlah_kasus\":287,\"satuan\":\"ORANG\",\"tahun\":2021},{\"id\":149,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3214,\"nama_kabupaten_kota\":\"KABUPATEN PURWAKARTA\",\"jumlah_kasus\":220,\"satuan\":\"ORANG\",\"tahun\":2021},{\"id\":150,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3215,\"nama_kabupaten_kota\":\"KABUPATEN KARAWANG\",\"jumlah_kasus\":929,\"satuan\":\"ORANG\",\"tahun\":2021},{\"id\":151,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3216,\"nama_kabupaten_kota\":\"KABUPATEN BEKASI\",\"jumlah_kasus\":370,\"satuan\":\"ORANG\",\"tahun\":2021},{\"id\":152,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3217,\"nama_kabupaten_kota\":\"KABUPATEN BANDUNG BARAT\",\"jumlah_kasus\":419,\"satuan\":\"ORANG\",\"tahun\":2021},{\"id\":153,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3218,\"nama_kabupaten_kota\":\"KABUPATEN PANGANDARAN\",\"jumlah_kasus\":79,\"satuan\":\"ORANG\",\"tahun\":2021},{\"id\":154,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3271,\"nama_kabupaten_kota\":\"KOTA BOGOR\",\"jumlah_kasus\":526,\"satuan\":\"ORANG\",\"tahun\":2021},{\"id\":155,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3272,\"nama_kabupaten_kota\":\"KOTA SUKABUMI\",\"jumlah_kasus\":449,\"satuan\":\"ORANG\",\"tahun\":2021},{\"id\":156,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3273,\"nama_kabupaten_kota\":\"KOTA BANDUNG\",\"jumlah_kasus\":3743,\"satuan\":\"ORANG\",\"tahun\":2021},{\"id\":157,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3274,\"nama_kabupaten_kota\":\"KOTA CIREBON\",\"jumlah_kasus\":166,\"satuan\":\"ORANG\",\"tahun\":2021},{\"id\":158,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3275,\"nama_kabupaten_kota\":\"KOTA BEKASI\",\"jumlah_kasus\":1844,\"satuan\":\"ORANG\",\"tahun\":2021},{\"id\":159,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3276,\"nama_kabupaten_kota\":\"KOTA DEPOK\",\"jumlah_kasus\":3155,\"satuan\":\"ORANG\",\"tahun\":2021},{\"id\":160,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3277,\"nama_kabupaten_kota\":\"KOTA CIMAHI\",\"jumlah_kasus\":590,\"satuan\":\"ORANG\",\"tahun\":2021},{\"id\":161,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3278,\"nama_kabupaten_kota\":\"KOTA TASIKMALAYA\",\"jumlah_kasus\":909,\"satuan\":\"ORANG\",\"tahun\":2021},{\"id\":162,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3279,\"nama_kabupaten_kota\":\"KOTA BANJAR\",\"jumlah_kasus\":29,\"satuan\":\"ORANG\",\"tahun\":2021},{\"id\":163,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3201,\"nama_kabupaten_kota\":\"KABUPATEN BOGOR\",\"jumlah_kasus\":1953,\"satuan\":\"ORANG\",\"tahun\":2022},{\"id\":164,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3202,\"nama_kabupaten_kota\":\"KABUPATEN SUKABUMI\",\"jumlah_kasus\":383,\"satuan\":\"ORANG\",\"tahun\":2022},{\"id\":165,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3203,\"nama_kabupaten_kota\":\"KABUPATEN CIANJUR\",\"jumlah_kasus\":819,\"satuan\":\"ORANG\",\"tahun\":2022},{\"id\":166,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3204,\"nama_kabupaten_kota\":\"KABUPATEN BANDUNG\",\"jumlah_kasus\":4191,\"satuan\":\"ORANG\",\"tahun\":2022},{\"id\":167,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3205,\"nama_kabupaten_kota\":\"KABUPATEN GARUT\",\"jumlah_kasus\":904,\"satuan\":\"ORANG\",\"tahun\":2022},{\"id\":168,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3206,\"nama_kabupaten_kota\":\"KABUPATEN TASIKMALAYA\",\"jumlah_kasus\":319,\"satuan\":\"ORANG\",\"tahun\":2022},{\"id\":169,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3207,\"nama_kabupaten_kota\":\"KABUPATEN CIAMIS\",\"jumlah_kasus\":702,\"satuan\":\"ORANG\",\"tahun\":2022},{\"id\":170,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3208,\"nama_kabupaten_kota\":\"KABUPATEN KUNINGAN\",\"jumlah_kasus\":1474,\"satuan\":\"ORANG\",\"tahun\":2022},{\"id\":171,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3209,\"nama_kabupaten_kota\":\"KABUPATEN CIREBON\",\"jumlah_kasus\":1815,\"satuan\":\"ORANG\",\"tahun\":2022},{\"id\":172,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3210,\"nama_kabupaten_kota\":\"KABUPATEN MAJALENGKA\",\"jumlah_kasus\":641,\"satuan\":\"ORANG\",\"tahun\":2022},{\"id\":173,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3211,\"nama_kabupaten_kota\":\"KABUPATEN SUMEDANG\",\"jumlah_kasus\":2186,\"satuan\":\"ORANG\",\"tahun\":2022},{\"id\":174,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3212,\"nama_kabupaten_kota\":\"KABUPATEN INDRAMAYU\",\"jumlah_kasus\":370,\"satuan\":\"ORANG\",\"tahun\":2022},{\"id\":175,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3213,\"nama_kabupaten_kota\":\"KABUPATEN SUBANG\",\"jumlah_kasus\":995,\"satuan\":\"ORANG\",\"tahun\":2022},{\"id\":176,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3214,\"nama_kabupaten_kota\":\"KABUPATEN PURWAKARTA\",\"jumlah_kasus\":412,\"satuan\":\"ORANG\",\"tahun\":2022},{\"id\":177,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3215,\"nama_kabupaten_kota\":\"KABUPATEN KARAWANG\",\"jumlah_kasus\":1320,\"satuan\":\"ORANG\",\"tahun\":2022},{\"id\":178,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3216,\"nama_kabupaten_kota\":\"KABUPATEN BEKASI\",\"jumlah_kasus\":1009,\"satuan\":\"ORANG\",\"tahun\":2022},{\"id\":179,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3217,\"nama_kabupaten_kota\":\"KABUPATEN BANDUNG BARAT\",\"jumlah_kasus\":1260,\"satuan\":\"ORANG\",\"tahun\":2022},{\"id\":180,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3218,\"nama_kabupaten_kota\":\"KABUPATEN PANGANDARAN\",\"jumlah_kasus\":502,\"satuan\":\"ORANG\",\"tahun\":2022},{\"id\":181,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3271,\"nama_kabupaten_kota\":\"KOTA BOGOR\",\"jumlah_kasus\":1531,\"satuan\":\"ORANG\",\"tahun\":2022},{\"id\":182,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3272,\"nama_kabupaten_kota\":\"KOTA SUKABUMI\",\"jumlah_kasus\":1028,\"satuan\":\"ORANG\",\"tahun\":2022},{\"id\":183,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3273,\"nama_kabupaten_kota\":\"KOTA BANDUNG\",\"jumlah_kasus\":5205,\"satuan\":\"ORANG\",\"tahun\":2022},{\"id\":184,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3274,\"nama_kabupaten_kota\":\"KOTA CIREBON\",\"jumlah_kasus\":270,\"satuan\":\"ORANG\",\"tahun\":2022},{\"id\":185,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3275,\"nama_kabupaten_kota\":\"KOTA BEKASI\",\"jumlah_kasus\":2442,\"satuan\":\"ORANG\",\"tahun\":2022},{\"id\":186,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3276,\"nama_kabupaten_kota\":\"KOTA DEPOK\",\"jumlah_kasus\":2234,\"satuan\":\"ORANG\",\"tahun\":2022},{\"id\":187,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3277,\"nama_kabupaten_kota\":\"KOTA CIMAHI\",\"jumlah_kasus\":675,\"satuan\":\"ORANG\",\"tahun\":2022},{\"id\":188,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3278,\"nama_kabupaten_kota\":\"KOTA TASIKMALAYA\",\"jumlah_kasus\":1855,\"satuan\":\"ORANG\",\"tahun\":2022},{\"id\":189,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3279,\"nama_kabupaten_kota\":\"KOTA BANJAR\",\"jumlah_kasus\":113,\"satuan\":\"ORANG\",\"tahun\":2022},{\"id\":190,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3201,\"nama_kabupaten_kota\":\"KABUPATEN BOGOR\",\"jumlah_kasus\":1881,\"satuan\":\"ORANG\",\"tahun\":2023},{\"id\":191,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3202,\"nama_kabupaten_kota\":\"KABUPATEN SUKABUMI\",\"jumlah_kasus\":113,\"satuan\":\"ORANG\",\"tahun\":2023},{\"id\":192,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3203,\"nama_kabupaten_kota\":\"KABUPATEN CIANJUR\",\"jumlah_kasus\":829,\"satuan\":\"ORANG\",\"tahun\":2023},{\"id\":193,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3204,\"nama_kabupaten_kota\":\"KABUPATEN BANDUNG\",\"jumlah_kasus\":1005,\"satuan\":\"ORANG\",\"tahun\":2023},{\"id\":194,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3205,\"nama_kabupaten_kota\":\"KABUPATEN GARUT\",\"jumlah_kasus\":730,\"satuan\":\"ORANG\",\"tahun\":2023},{\"id\":195,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3206,\"nama_kabupaten_kota\":\"KABUPATEN TASIKMALAYA\",\"jumlah_kasus\":88,\"satuan\":\"ORANG\",\"tahun\":2023},{\"id\":196,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3207,\"nama_kabupaten_kota\":\"KABUPATEN CIAMIS\",\"jumlah_kasus\":232,\"satuan\":\"ORANG\",\"tahun\":2023},{\"id\":197,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3208,\"nama_kabupaten_kota\":\"KABUPATEN KUNINGAN\",\"jumlah_kasus\":630,\"satuan\":\"ORANG\",\"tahun\":2023},{\"id\":198,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3209,\"nama_kabupaten_kota\":\"KABUPATEN CIREBON\",\"jumlah_kasus\":728,\"satuan\":\"ORANG\",\"tahun\":2023},{\"id\":199,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3210,\"nama_kabupaten_kota\":\"KABUPATEN MAJALENGKA\",\"jumlah_kasus\":253,\"satuan\":\"ORANG\",\"tahun\":2023},{\"id\":200,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3211,\"nama_kabupaten_kota\":\"KABUPATEN SUMEDANG\",\"jumlah_kasus\":1308,\"satuan\":\"ORANG\",\"tahun\":2023},{\"id\":201,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3212,\"nama_kabupaten_kota\":\"KABUPATEN INDRAMAYU\",\"jumlah_kasus\":218,\"satuan\":\"ORANG\",\"tahun\":2023},{\"id\":202,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3213,\"nama_kabupaten_kota\":\"KABUPATEN SUBANG\",\"jumlah_kasus\":618,\"satuan\":\"ORANG\",\"tahun\":2023},{\"id\":203,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3214,\"nama_kabupaten_kota\":\"KABUPATEN PURWAKARTA\",\"jumlah_kasus\":424,\"satuan\":\"ORANG\",\"tahun\":2023},{\"id\":204,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3215,\"nama_kabupaten_kota\":\"KABUPATEN KARAWANG\",\"jumlah_kasus\":991,\"satuan\":\"ORANG\",\"tahun\":2023},{\"id\":205,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3216,\"nama_kabupaten_kota\":\"KABUPATEN BEKASI\",\"jumlah_kasus\":726,\"satuan\":\"ORANG\",\"tahun\":2023},{\"id\":206,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3217,\"nama_kabupaten_kota\":\"KABUPATEN BANDUNG BARAT\",\"jumlah_kasus\":1322,\"satuan\":\"ORANG\",\"tahun\":2023},{\"id\":207,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3218,\"nama_kabupaten_kota\":\"KABUPATEN PANGANDARAN\",\"jumlah_kasus\":253,\"satuan\":\"ORANG\",\"tahun\":2023},{\"id\":208,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3271,\"nama_kabupaten_kota\":\"KOTA BOGOR\",\"jumlah_kasus\":1474,\"satuan\":\"ORANG\",\"tahun\":2023},{\"id\":209,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3272,\"nama_kabupaten_kota\":\"KOTA SUKABUMI\",\"jumlah_kasus\":415,\"satuan\":\"ORANG\",\"tahun\":2023},{\"id\":210,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3273,\"nama_kabupaten_kota\":\"KOTA BANDUNG\",\"jumlah_kasus\":1856,\"satuan\":\"ORANG\",\"tahun\":2023},{\"id\":211,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3274,\"nama_kabupaten_kota\":\"KOTA CIREBON\",\"jumlah_kasus\":227,\"satuan\":\"ORANG\",\"tahun\":2023},{\"id\":212,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3275,\"nama_kabupaten_kota\":\"KOTA BEKASI\",\"jumlah_kasus\":1220,\"satuan\":\"ORANG\",\"tahun\":2023},{\"id\":213,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3276,\"nama_kabupaten_kota\":\"KOTA DEPOK\",\"jumlah_kasus\":1031,\"satuan\":\"ORANG\",\"tahun\":2023},{\"id\":214,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3277,\"nama_kabupaten_kota\":\"KOTA CIMAHI\",\"jumlah_kasus\":350,\"satuan\":\"ORANG\",\"tahun\":2023},{\"id\":215,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3278,\"nama_kabupaten_kota\":\"KOTA TASIKMALAYA\",\"jumlah_kasus\":353,\"satuan\":\"ORANG\",\"tahun\":2023},{\"id\":216,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3279,\"nama_kabupaten_kota\":\"KOTA BANJAR\",\"jumlah_kasus\":53,\"satuan\":\"ORANG\",\"tahun\":2023},{\"id\":217,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3201,\"nama_kabupaten_kota\":\"KABUPATEN BOGOR\",\"jumlah_kasus\":3404,\"satuan\":\"ORANG\",\"tahun\":2024},{\"id\":218,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3202,\"nama_kabupaten_kota\":\"KABUPATEN SUKABUMI\",\"jumlah_kasus\":841,\"satuan\":\"ORANG\",\"tahun\":2024},{\"id\":219,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3203,\"nama_kabupaten_kota\":\"KABUPATEN CIANJUR\",\"jumlah_kasus\":1932,\"satuan\":\"ORANG\",\"tahun\":2024},{\"id\":220,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3204,\"nama_kabupaten_kota\":\"KABUPATEN BANDUNG\",\"jumlah_kasus\":3589,\"satuan\":\"ORANG\",\"tahun\":2024},{\"id\":221,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3205,\"nama_kabupaten_kota\":\"KABUPATEN GARUT\",\"jumlah_kasus\":3269,\"satuan\":\"ORANG\",\"tahun\":2024},{\"id\":222,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3206,\"nama_kabupaten_kota\":\"KABUPATEN TASIKMALAYA\",\"jumlah_kasus\":763,\"satuan\":\"ORANG\",\"tahun\":2024},{\"id\":223,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3207,\"nama_kabupaten_kota\":\"KABUPATEN CIAMIS\",\"jumlah_kasus\":1420,\"satuan\":\"ORANG\",\"tahun\":2024},{\"id\":224,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3208,\"nama_kabupaten_kota\":\"KABUPATEN KUNINGAN\",\"jumlah_kasus\":2165,\"satuan\":\"ORANG\",\"tahun\":2024},{\"id\":225,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3209,\"nama_kabupaten_kota\":\"KABUPATEN CIREBON\",\"jumlah_kasus\":1833,\"satuan\":\"ORANG\",\"tahun\":2024},{\"id\":226,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3210,\"nama_kabupaten_kota\":\"KABUPATEN MAJALENGKA\",\"jumlah_kasus\":1275,\"satuan\":\"ORANG\",\"tahun\":2024},{\"id\":227,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3211,\"nama_kabupaten_kota\":\"KABUPATEN SUMEDANG\",\"jumlah_kasus\":2303,\"satuan\":\"ORANG\",\"tahun\":2024},{\"id\":228,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3212,\"nama_kabupaten_kota\":\"KABUPATEN INDRAMAYU\",\"jumlah_kasus\":528,\"satuan\":\"ORANG\",\"tahun\":2024},{\"id\":229,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3213,\"nama_kabupaten_kota\":\"KABUPATEN SUBANG\",\"jumlah_kasus\":1929,\"satuan\":\"ORANG\",\"tahun\":2024},{\"id\":230,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3214,\"nama_kabupaten_kota\":\"KABUPATEN PURWAKARTA\",\"jumlah_kasus\":1088,\"satuan\":\"ORANG\",\"tahun\":2024},{\"id\":231,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3215,\"nama_kabupaten_kota\":\"KABUPATEN KARAWANG\",\"jumlah_kasus\":3279,\"satuan\":\"ORANG\",\"tahun\":2024},{\"id\":232,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3216,\"nama_kabupaten_kota\":\"KABUPATEN BEKASI\",\"jumlah_kasus\":1902,\"satuan\":\"ORANG\",\"tahun\":2024},{\"id\":233,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3217,\"nama_kabupaten_kota\":\"KABUPATEN BANDUNG BARAT\",\"jumlah_kasus\":3754,\"satuan\":\"ORANG\",\"tahun\":2024},{\"id\":234,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3218,\"nama_kabupaten_kota\":\"KABUPATEN PANGANDARAN\",\"jumlah_kasus\":890,\"satuan\":\"ORANG\",\"tahun\":2024},{\"id\":235,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3271,\"nama_kabupaten_kota\":\"KOTA BOGOR\",\"jumlah_kasus\":3117,\"satuan\":\"ORANG\",\"tahun\":2024},{\"id\":236,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3272,\"nama_kabupaten_kota\":\"KOTA SUKABUMI\",\"jumlah_kasus\":1631,\"satuan\":\"ORANG\",\"tahun\":2024},{\"id\":237,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3273,\"nama_kabupaten_kota\":\"KOTA BANDUNG\",\"jumlah_kasus\":7680,\"satuan\":\"ORANG\",\"tahun\":2024},{\"id\":238,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3274,\"nama_kabupaten_kota\":\"KOTA CIREBON\",\"jumlah_kasus\":597,\"satuan\":\"ORANG\",\"tahun\":2024},{\"id\":239,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3275,\"nama_kabupaten_kota\":\"KOTA BEKASI\",\"jumlah_kasus\":4167,\"satuan\":\"ORANG\",\"tahun\":2024},{\"id\":240,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3276,\"nama_kabupaten_kota\":\"KOTA DEPOK\",\"jumlah_kasus\":5040,\"satuan\":\"ORANG\",\"tahun\":2024},{\"id\":241,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3277,\"nama_kabupaten_kota\":\"KOTA CIMAHI\",\"jumlah_kasus\":850,\"satuan\":\"ORANG\",\"tahun\":2024},{\"id\":242,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3278,\"nama_kabupaten_kota\":\"KOTA TASIKMALAYA\",\"jumlah_kasus\":1777,\"satuan\":\"ORANG\",\"tahun\":2024},{\"id\":243,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3279,\"nama_kabupaten_kota\":\"KOTA BANJAR\",\"jumlah_kasus\":400,\"satuan\":\"ORANG\",\"tahun\":2024},{\"id\":244,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3201,\"nama_kabupaten_kota\":\"KABUPATEN BOGOR\",\"jumlah_kasus\":2213,\"satuan\":\"ORANG\",\"tahun\":2025},{\"id\":245,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3202,\"nama_kabupaten_kota\":\"KABUPATEN SUKABUMI\",\"jumlah_kasus\":294,\"satuan\":\"ORANG\",\"tahun\":2025},{\"id\":246,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3203,\"nama_kabupaten_kota\":\"KABUPATEN CIANJUR\",\"jumlah_kasus\":1240,\"satuan\":\"ORANG\",\"tahun\":2025},{\"id\":247,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3204,\"nama_kabupaten_kota\":\"KABUPATEN BANDUNG\",\"jumlah_kasus\":1854,\"satuan\":\"ORANG\",\"tahun\":2025},{\"id\":248,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3205,\"nama_kabupaten_kota\":\"KABUPATEN GARUT\",\"jumlah_kasus\":2480,\"satuan\":\"ORANG\",\"tahun\":2025},{\"id\":249,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3206,\"nama_kabupaten_kota\":\"KABUPATEN TASIKMALAYA\",\"jumlah_kasus\":846,\"satuan\":\"ORANG\",\"tahun\":2025},{\"id\":250,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3207,\"nama_kabupaten_kota\":\"KABUPATEN CIAMIS\",\"jumlah_kasus\":730,\"satuan\":\"ORANG\",\"tahun\":2025},{\"id\":251,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3208,\"nama_kabupaten_kota\":\"KABUPATEN KUNINGAN\",\"jumlah_kasus\":1289,\"satuan\":\"ORANG\",\"tahun\":2025},{\"id\":252,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3209,\"nama_kabupaten_kota\":\"KABUPATEN CIREBON\",\"jumlah_kasus\":1169,\"satuan\":\"ORANG\",\"tahun\":2025},{\"id\":253,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3210,\"nama_kabupaten_kota\":\"KABUPATEN MAJALENGKA\",\"jumlah_kasus\":1180,\"satuan\":\"ORANG\",\"tahun\":2025},{\"id\":254,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3211,\"nama_kabupaten_kota\":\"KABUPATEN SUMEDANG\",\"jumlah_kasus\":1445,\"satuan\":\"ORANG\",\"tahun\":2025},{\"id\":255,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3212,\"nama_kabupaten_kota\":\"KABUPATEN INDRAMAYU\",\"jumlah_kasus\":829,\"satuan\":\"ORANG\",\"tahun\":2025},{\"id\":256,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3213,\"nama_kabupaten_kota\":\"KABUPATEN SUBANG\",\"jumlah_kasus\":1255,\"satuan\":\"ORANG\",\"tahun\":2025},{\"id\":257,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3214,\"nama_kabupaten_kota\":\"KABUPATEN PURWAKARTA\",\"jumlah_kasus\":465,\"satuan\":\"ORANG\",\"tahun\":2025},{\"id\":258,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3215,\"nama_kabupaten_kota\":\"KABUPATEN KARAWANG\",\"jumlah_kasus\":7578,\"satuan\":\"ORANG\",\"tahun\":2025},{\"id\":259,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3216,\"nama_kabupaten_kota\":\"KABUPATEN BEKASI\",\"jumlah_kasus\":2771,\"satuan\":\"ORANG\",\"tahun\":2025},{\"id\":260,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3217,\"nama_kabupaten_kota\":\"KABUPATEN BANDUNG BARAT\",\"jumlah_kasus\":1855,\"satuan\":\"ORANG\",\"tahun\":2025},{\"id\":261,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3218,\"nama_kabupaten_kota\":\"KABUPATEN PANGANDARAN\",\"jumlah_kasus\":297,\"satuan\":\"ORANG\",\"tahun\":2025},{\"id\":262,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3271,\"nama_kabupaten_kota\":\"KOTA BOGOR\",\"jumlah_kasus\":779,\"satuan\":\"ORANG\",\"tahun\":2025},{\"id\":263,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3272,\"nama_kabupaten_kota\":\"KOTA SUKABUMI\",\"jumlah_kasus\":1012,\"satuan\":\"ORANG\",\"tahun\":2025},{\"id\":264,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3273,\"nama_kabupaten_kota\":\"KOTA BANDUNG\",\"jumlah_kasus\":4096,\"satuan\":\"ORANG\",\"tahun\":2025},{\"id\":265,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3274,\"nama_kabupaten_kota\":\"KOTA CIREBON\",\"jumlah_kasus\":1293,\"satuan\":\"ORANG\",\"tahun\":2025},{\"id\":266,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3275,\"nama_kabupaten_kota\":\"KOTA BEKASI\",\"jumlah_kasus\":4045,\"satuan\":\"ORANG\",\"tahun\":2025},{\"id\":267,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3276,\"nama_kabupaten_kota\":\"KOTA DEPOK\",\"jumlah_kasus\":3085,\"satuan\":\"ORANG\",\"tahun\":2025},{\"id\":268,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3277,\"nama_kabupaten_kota\":\"KOTA CIMAHI\",\"jumlah_kasus\":379,\"satuan\":\"ORANG\",\"tahun\":2025},{\"id\":269,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3278,\"nama_kabupaten_kota\":\"KOTA TASIKMALAYA\",\"jumlah_kasus\":699,\"satuan\":\"ORANG\",\"tahun\":2025},{\"id\":270,\"kode_provinsi\":32,\"nama_provinsi\":\"JAWA BARAT\",\"kode_kabupaten_kota\":3279,\"nama_kabupaten_kota\":\"KOTA BANJAR\",\"jumlah_kasus\":97,\"satuan\":\"ORANG\",\"tahun\":2025}],\"error\":{},\"pagination\":{\"page\":1,\"per_page\":1000,\"total_page\":1,\"total_data\":270,\"has_next\":false,\"has_previous\":false},\"source\":{\"rows\":270,\"cols\":8},\"metadata\":[\"id\",\"kode_provinsi\",\"nama_provinsi\",\"kode_kabupaten_kota\",\"nama_kabupaten_kota\",\"jumlah_kasus\",\"satuan\",\"tahun\"],\"metadata_filter\":[{\"key\":\"kode_provinsi\",\"type\":\"select\",\"value\":[\"32\"]},{\"key\":\"nama_provinsi\",\"type\":\"select\",\"value\":[\"JAWA BARAT\"]},{\"key\":\"kode_kabupaten_kota\",\"type\":\"select\",\"value\":[\"3201\",\"3202\",\"3203\",\"3204\",\"3205\",\"3206\",\"3207\",\"3208\",\"3209\",\"3210\",\"3211\",\"3212\",\"3213\",\"3214\",\"3215\",\"3216\",\"3217\",\"3218\",\"3271\",\"3272\",\"3273\",\"3274\",\"3275\",\"3276\",\"3277\",\"3278\",\"3279\"]},{\"key\":\"nama_kabupaten_kota\",\"type\":\"select\",\"value\":[\"KABUPATEN BANDUNG\",\"KABUPATEN BANDUNG BARAT\",\"KABUPATEN BEKASI\",\"KABUPATEN BOGOR\",\"KABUPATEN CIAMIS\",\"KABUPATEN CIANJUR\",\"KABUPATEN CIREBON\",\"KABUPATEN GARUT\",\"KABUPATEN INDRAMAYU\",\"KABUPATEN KARAWANG\",\"KABUPATEN KUNINGAN\",\"KABUPATEN MAJALENGKA\",\"KABUPATEN PANGANDARAN\",\"KABUPATEN PURWAKARTA\",\"KABUPATEN SUBANG\",\"KABUPATEN SUKABUMI\",\"KABUPATEN SUMEDANG\",\"KABUPATEN TASIKMALAYA\",\"KOTA BANDUNG\",\"KOTA BANJAR\",\"KOTA BEKASI\",\"KOTA BOGOR\",\"KOTA CIMAHI\",\"KOTA CIREBON\",\"KOTA DEPOK\",\"KOTA SUKABUMI\",\"KOTA TASIKMALAYA\"]},{\"key\":\"jumlah_kasus\",\"type\":\"free text\",\"value\":[]},{\"key\":\"satuan\",\"type\":\"select\",\"value\":[\"ORANG\"]},{\"key\":\"tahun\",\"type\":\"select\",\"value\":[\"2016\",\"2017\",\"2018\",\"2019\",\"2020\",\"2021\",\"2022\",\"2023\",\"2024\",\"2025\"]}]}",
+      "httpStatus": 200
+    }
+  ],
+  "series": [
+    {
+      "id": "dbd_published_incidence",
+      "name": "Published DBD incidence per 100,000",
+      "concept": "Reported dengue haemorrhagic fever (DBD), not all dengue infections.",
+      "family": "Infectious Disease",
+      "statisticType": "incidence",
+      "year": 2023,
+      "unit": "cases per 100,000 population",
+      "rawOrDerived": "published_rate",
+      "source": {
+        "publisher": "BPS Jawa Barat; originating Dinas Kesehatan",
+        "title": "Kasus Penyakit Menurut Kabupaten/Kota dan Jenis Penyakit di Provinsi Jawa Barat, 2023",
+        "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+        "table": "4.2.6 column(7), printed234",
+        "artifactId": "dbd_bps_table",
+        "pdfPage": 310,
+        "accessedAt": "2026-10-29"
+      },
+      "numerator": {
+        "definition": "Annual reported DBD cases underlying official rate; exact matched series not identified. Alternative Dinkes2023 cases retained separately.",
+        "sourceArtifactId": "dbd_api_cases"
+      },
+      "denominator": {
+        "definition": "Publisher-labelled population per100000; underlying population vintage is unidentified. BPS2023 exact population does not reconstruct most rates.",
+        "sourceArtifactId": "dbd_bps_table"
+      },
+      "formula": null,
+      "direction": "Higher published reported incidence means more recorded DBD pressure, conditional on ascertainment; not worse government performance.",
+      "detectionBias": "Diagnosis, care-seeking, hospital reporting and surveillance vary. Less screening-driven than asymptomatic HIV/TB, but not detection-free.",
+      "caveats": [
+        "Never replace this published series with a recomputed alternate rate without an approved source decision.",
+        "The current production indicator remains unchanged. Next-model recommendation is separate from existing production admission.",
+        "Annual outbreaks and climate create volatility; one year cannot represent total population health.",
+        "Integer publication rounding hides small regional differences."
+      ],
+      "uncertainty": "No district ascertainment probabilities or sampling confidence interval published for this administrative panel.",
+      "correlationEligible": true,
+      "recommendation": {
+        "status": "CONTEXT ONLY",
+        "reason": "REVIEW current indicator. CONTEXT ONLY for next model until numerator/population vintage and case attribution reconcile. Official common-rate label and full coverage do not resolve conflicting bases."
+      },
+      "observations": [
+        {
+          "regionId": "3201",
+          "value": 31,
+          "rawValue": 31,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_table",
+            "locator": "4.2.6 column(7), printed234; 2023; Kabupaten Bogor (3201)",
+            "row": {
+              "region": "Kabupaten Bogor",
+              "value": 31
+            }
+          }
+        },
+        {
+          "regionId": "3202",
+          "value": 4,
+          "rawValue": 4,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_table",
+            "locator": "4.2.6 column(7), printed234; 2023; Kabupaten Sukabumi (3202)",
+            "row": {
+              "region": "Kabupaten Sukabumi",
+              "value": 4
+            }
+          }
+        },
+        {
+          "regionId": "3203",
+          "value": 35,
+          "rawValue": 35,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_table",
+            "locator": "4.2.6 column(7), printed234; 2023; Kabupaten Cianjur (3203)",
+            "row": {
+              "region": "Kabupaten Cianjur",
+              "value": 35
+            }
+          }
+        },
+        {
+          "regionId": "3204",
+          "value": 20,
+          "rawValue": 20,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_table",
+            "locator": "4.2.6 column(7), printed234; 2023; Kabupaten Bandung (3204)",
+            "row": {
+              "region": "Kabupaten Bandung",
+              "value": 20
+            }
+          }
+        },
+        {
+          "regionId": "3205",
+          "value": 27,
+          "rawValue": 27,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_table",
+            "locator": "4.2.6 column(7), printed234; 2023; Kabupaten Garut (3205)",
+            "row": {
+              "region": "Kabupaten Garut",
+              "value": 27
+            }
+          }
+        },
+        {
+          "regionId": "3206",
+          "value": 5,
+          "rawValue": 5,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_table",
+            "locator": "4.2.6 column(7), printed234; 2023; Kabupaten Tasikmalaya (3206)",
+            "row": {
+              "region": "Kabupaten Tasikmalaya",
+              "value": 5
+            }
+          }
+        },
+        {
+          "regionId": "3207",
+          "value": 19,
+          "rawValue": 19,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_table",
+            "locator": "4.2.6 column(7), printed234; 2023; Kabupaten Ciamis (3207)",
+            "row": {
+              "region": "Kabupaten Ciamis",
+              "value": 19
+            }
+          }
+        },
+        {
+          "regionId": "3208",
+          "value": 57,
+          "rawValue": 57,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_table",
+            "locator": "4.2.6 column(7), printed234; 2023; Kabupaten Kuningan (3208)",
+            "row": {
+              "region": "Kabupaten Kuningan",
+              "value": 57
+            }
+          }
+        },
+        {
+          "regionId": "3209",
+          "value": 33,
+          "rawValue": 33,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_table",
+            "locator": "4.2.6 column(7), printed234; 2023; Kabupaten Cirebon (3209)",
+            "row": {
+              "region": "Kabupaten Cirebon",
+              "value": 33
+            }
+          }
+        },
+        {
+          "regionId": "3210",
+          "value": 18,
+          "rawValue": 18,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_table",
+            "locator": "4.2.6 column(7), printed234; 2023; Kabupaten Majalengka (3210)",
+            "row": {
+              "region": "Kabupaten Majalengka",
+              "value": 18
+            }
+          }
+        },
+        {
+          "regionId": "3211",
+          "value": 110,
+          "rawValue": 110,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_table",
+            "locator": "4.2.6 column(7), printed234; 2023; Kabupaten Sumedang (3211)",
+            "row": {
+              "region": "Kabupaten Sumedang",
+              "value": 110
+            }
+          }
+        },
+        {
+          "regionId": "3212",
+          "value": 12,
+          "rawValue": 12,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_table",
+            "locator": "4.2.6 column(7), printed234; 2023; Kabupaten Indramayu (3212)",
+            "row": {
+              "region": "Kabupaten Indramayu",
+              "value": 12
+            }
+          }
+        },
+        {
+          "regionId": "3213",
+          "value": 39,
+          "rawValue": 39,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_table",
+            "locator": "4.2.6 column(7), printed234; 2023; Kabupaten Subang (3213)",
+            "row": {
+              "region": "Kabupaten Subang",
+              "value": 39
+            }
+          }
+        },
+        {
+          "regionId": "3214",
+          "value": 45,
+          "rawValue": 45,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_table",
+            "locator": "4.2.6 column(7), printed234; 2023; Kabupaten Purwakarta (3214)",
+            "row": {
+              "region": "Kabupaten Purwakarta",
+              "value": 45
+            }
+          }
+        },
+        {
+          "regionId": "3215",
+          "value": 42,
+          "rawValue": 42,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_table",
+            "locator": "4.2.6 column(7), printed234; 2023; Kabupaten Karawang (3215)",
+            "row": {
+              "region": "Kabupaten Karawang",
+              "value": 42
+            }
+          }
+        },
+        {
+          "regionId": "3216",
+          "value": 18,
+          "rawValue": 18,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_table",
+            "locator": "4.2.6 column(7), printed234; 2023; Kabupaten Bekasi (3216)",
+            "row": {
+              "region": "Kabupaten Bekasi",
+              "value": 18
+            }
+          }
+        },
+        {
+          "regionId": "3217",
+          "value": 78,
+          "rawValue": 78,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_table",
+            "locator": "4.2.6 column(7), printed234; 2023; Kabupaten Bandung Barat (3217)",
+            "row": {
+              "region": "Kabupaten Bandung Barat",
+              "value": 78
+            }
+          }
+        },
+        {
+          "regionId": "3218",
+          "value": 62,
+          "rawValue": 62,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_table",
+            "locator": "4.2.6 column(7), printed234; 2023; Kabupaten Pangandaran (3218)",
+            "row": {
+              "region": "Kabupaten Pangandaran",
+              "value": 62
+            }
+          }
+        },
+        {
+          "regionId": "3271",
+          "value": 132,
+          "rawValue": 132,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_table",
+            "locator": "4.2.6 column(7), printed234; 2023; Kota Bogor (3271)",
+            "row": {
+              "region": "Kota Bogor",
+              "value": 132
+            }
+          }
+        },
+        {
+          "regionId": "3272",
+          "value": 124,
+          "rawValue": 124,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_table",
+            "locator": "4.2.6 column(7), printed234; 2023; Kota Sukabumi (3272)",
+            "row": {
+              "region": "Kota Sukabumi",
+              "value": 124
+            }
+          }
+        },
+        {
+          "regionId": "3273",
+          "value": 78,
+          "rawValue": 78,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_table",
+            "locator": "4.2.6 column(7), printed234; 2023; Kota Bandung (3273)",
+            "row": {
+              "region": "Kota Bandung",
+              "value": 78
+            }
+          }
+        },
+        {
+          "regionId": "3274",
+          "value": 71,
+          "rawValue": 71,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_table",
+            "locator": "4.2.6 column(7), printed234; 2023; Kota Cirebon (3274)",
+            "row": {
+              "region": "Kota Cirebon",
+              "value": 71
+            }
+          }
+        },
+        {
+          "regionId": "3275",
+          "value": 39,
+          "rawValue": 39,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_table",
+            "locator": "4.2.6 column(7), printed234; 2023; Kota Bekasi (3275)",
+            "row": {
+              "region": "Kota Bekasi",
+              "value": 39
+            }
+          }
+        },
+        {
+          "regionId": "3276",
+          "value": 41,
+          "rawValue": 41,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_table",
+            "locator": "4.2.6 column(7), printed234; 2023; Kota Depok (3276)",
+            "row": {
+              "region": "Kota Depok",
+              "value": 41
+            }
+          }
+        },
+        {
+          "regionId": "3277",
+          "value": 55,
+          "rawValue": 55,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_table",
+            "locator": "4.2.6 column(7), printed234; 2023; Kota Cimahi (3277)",
+            "row": {
+              "region": "Kota Cimahi",
+              "value": 55
+            }
+          }
+        },
+        {
+          "regionId": "3278",
+          "value": 52,
+          "rawValue": 52,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_table",
+            "locator": "4.2.6 column(7), printed234; 2023; Kota Tasikmalaya (3278)",
+            "row": {
+              "region": "Kota Tasikmalaya",
+              "value": 52
+            }
+          }
+        },
+        {
+          "regionId": "3279",
+          "value": 28,
+          "rawValue": 28,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_table",
+            "locator": "4.2.6 column(7), printed234; 2023; Kota Banjar (3279)",
+            "row": {
+              "region": "Kota Banjar",
+              "value": 28
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "population_2023_exact",
+      "name": "BPS exact 2023 resident population",
+      "concept": "Resident population projection, both sexes.",
+      "family": "General Population Health",
+      "statisticType": "count",
+      "year": 2023,
+      "unit": "persons",
+      "rawOrDerived": "published_count",
+      "source": {
+        "publisher": "BPS Provinsi Jawa Barat",
+        "title": "Jumlah Penduduk Menurut Kabupaten/Kota dan Jenis Kelamin di Provinsi Jawa Barat, 2023",
+        "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+        "table": "3.1.3, printed117",
+        "artifactId": "dbd_bps_population",
+        "pdfPage": 193,
+        "accessedAt": "2026-10-29"
+      },
+      "numerator": {
+        "definition": "Resident population projection, both sexes.",
+        "sourceArtifactId": "dbd_bps_population"
+      },
+      "denominator": null,
+      "formula": null,
+      "direction": "Recorded count or service output has no unqualified health-pressure direction.",
+      "detectionBias": "Population projection uncertainty; same official2023 vintage and BPS codes across27.",
+      "caveats": [
+        "SP2020-based projection2020–2035. Table does not label exact within-year date; do not invent one."
+      ],
+      "uncertainty": "No district ascertainment probabilities or sampling confidence interval published for this administrative panel.",
+      "correlationEligible": false,
+      "recommendation": {
+        "status": "CONTEXT ONLY",
+        "reason": "Supporting denominator only; never a health-pressure indicator."
+      },
+      "observations": [
+        {
+          "regionId": "3201",
+          "value": 5627021,
+          "rawValue": 5627021,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_population",
+            "locator": "3.1.3, printed117; 2023; Kabupaten Bogor (3201)",
+            "row": {
+              "region": "Kabupaten Bogor",
+              "value": 5627021
+            }
+          }
+        },
+        {
+          "regionId": "3202",
+          "value": 2802404,
+          "rawValue": 2802404,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_population",
+            "locator": "3.1.3, printed117; 2023; Kabupaten Sukabumi (3202)",
+            "row": {
+              "region": "Kabupaten Sukabumi",
+              "value": 2802404
+            }
+          }
+        },
+        {
+          "regionId": "3203",
+          "value": 2558142,
+          "rawValue": 2558142,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_population",
+            "locator": "3.1.3, printed117; 2023; Kabupaten Cianjur (3203)",
+            "row": {
+              "region": "Kabupaten Cianjur",
+              "value": 2558142
+            }
+          }
+        },
+        {
+          "regionId": "3204",
+          "value": 3721111,
+          "rawValue": 3721111,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_population",
+            "locator": "3.1.3, printed117; 2023; Kabupaten Bandung (3204)",
+            "row": {
+              "region": "Kabupaten Bandung",
+              "value": 3721111
+            }
+          }
+        },
+        {
+          "regionId": "3205",
+          "value": 2683665,
+          "rawValue": 2683665,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_population",
+            "locator": "3.1.3, printed117; 2023; Kabupaten Garut (3205)",
+            "row": {
+              "region": "Kabupaten Garut",
+              "value": 2683665
+            }
+          }
+        },
+        {
+          "regionId": "3206",
+          "value": 1907045,
+          "rawValue": 1907045,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_population",
+            "locator": "3.1.3, printed117; 2023; Kabupaten Tasikmalaya (3206)",
+            "row": {
+              "region": "Kabupaten Tasikmalaya",
+              "value": 1907045
+            }
+          }
+        },
+        {
+          "regionId": "3207",
+          "value": 1251544,
+          "rawValue": 1251544,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_population",
+            "locator": "3.1.3, printed117; 2023; Kabupaten Ciamis (3207)",
+            "row": {
+              "region": "Kabupaten Ciamis",
+              "value": 1251544
+            }
+          }
+        },
+        {
+          "regionId": "3208",
+          "value": 1201764,
+          "rawValue": 1201764,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_population",
+            "locator": "3.1.3, printed117; 2023; Kabupaten Kuningan (3208)",
+            "row": {
+              "region": "Kabupaten Kuningan",
+              "value": 1201764
+            }
+          }
+        },
+        {
+          "regionId": "3209",
+          "value": 2360441,
+          "rawValue": 2360441,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_population",
+            "locator": "3.1.3, printed117; 2023; Kabupaten Cirebon (3209)",
+            "row": {
+              "region": "Kabupaten Cirebon",
+              "value": 2360441
+            }
+          }
+        },
+        {
+          "regionId": "3210",
+          "value": 1340617,
+          "rawValue": 1340617,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_population",
+            "locator": "3.1.3, printed117; 2023; Kabupaten Majalengka (3210)",
+            "row": {
+              "region": "Kabupaten Majalengka",
+              "value": 1340617
+            }
+          }
+        },
+        {
+          "regionId": "3211",
+          "value": 1178235,
+          "rawValue": 1178235,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_population",
+            "locator": "3.1.3, printed117; 2023; Kabupaten Sumedang (3211)",
+            "row": {
+              "region": "Kabupaten Sumedang",
+              "value": 1178235
+            }
+          }
+        },
+        {
+          "regionId": "3212",
+          "value": 1894325,
+          "rawValue": 1894325,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_population",
+            "locator": "3.1.3, printed117; 2023; Kabupaten Indramayu (3212)",
+            "row": {
+              "region": "Kabupaten Indramayu",
+              "value": 1894325
+            }
+          }
+        },
+        {
+          "regionId": "3213",
+          "value": 1649821,
+          "rawValue": 1649821,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_population",
+            "locator": "3.1.3, printed117; 2023; Kabupaten Subang (3213)",
+            "row": {
+              "region": "Kabupaten Subang",
+              "value": 1649821
+            }
+          }
+        },
+        {
+          "regionId": "3214",
+          "value": 1037068,
+          "rawValue": 1037068,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_population",
+            "locator": "3.1.3, printed117; 2023; Kabupaten Purwakarta (3214)",
+            "row": {
+              "region": "Kabupaten Purwakarta",
+              "value": 1037068
+            }
+          }
+        },
+        {
+          "regionId": "3215",
+          "value": 2526002,
+          "rawValue": 2526002,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_population",
+            "locator": "3.1.3, printed117; 2023; Kabupaten Karawang (3215)",
+            "row": {
+              "region": "Kabupaten Karawang",
+              "value": 2526002
+            }
+          }
+        },
+        {
+          "regionId": "3216",
+          "value": 3237420,
+          "rawValue": 3237420,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_population",
+            "locator": "3.1.3, printed117; 2023; Kabupaten Bekasi (3216)",
+            "row": {
+              "region": "Kabupaten Bekasi",
+              "value": 3237420
+            }
+          }
+        },
+        {
+          "regionId": "3217",
+          "value": 1859636,
+          "rawValue": 1859636,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_population",
+            "locator": "3.1.3, printed117; 2023; Kabupaten Bandung Barat (3217)",
+            "row": {
+              "region": "Kabupaten Bandung Barat",
+              "value": 1859636
+            }
+          }
+        },
+        {
+          "regionId": "3218",
+          "value": 431464,
+          "rawValue": 431464,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_population",
+            "locator": "3.1.3, printed117; 2023; Kabupaten Pangandaran (3218)",
+            "row": {
+              "region": "Kabupaten Pangandaran",
+              "value": 431464
+            }
+          }
+        },
+        {
+          "regionId": "3271",
+          "value": 1070719,
+          "rawValue": 1070719,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_population",
+            "locator": "3.1.3, printed117; 2023; Kota Bogor (3271)",
+            "row": {
+              "region": "Kota Bogor",
+              "value": 1070719
+            }
+          }
+        },
+        {
+          "regionId": "3272",
+          "value": 360644,
+          "rawValue": 360644,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_population",
+            "locator": "3.1.3, printed117; 2023; Kota Sukabumi (3272)",
+            "row": {
+              "region": "Kota Sukabumi",
+              "value": 360644
+            }
+          }
+        },
+        {
+          "regionId": "3273",
+          "value": 2506603,
+          "rawValue": 2506603,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_population",
+            "locator": "3.1.3, printed117; 2023; Kota Bandung (3273)",
+            "row": {
+              "region": "Kota Bandung",
+              "value": 2506603
+            }
+          }
+        },
+        {
+          "regionId": "3274",
+          "value": 341980,
+          "rawValue": 341980,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_population",
+            "locator": "3.1.3, printed117; 2023; Kota Cirebon (3274)",
+            "row": {
+              "region": "Kota Cirebon",
+              "value": 341980
+            }
+          }
+        },
+        {
+          "regionId": "3275",
+          "value": 2627207,
+          "rawValue": 2627207,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_population",
+            "locator": "3.1.3, printed117; 2023; Kota Bekasi (3275)",
+            "row": {
+              "region": "Kota Bekasi",
+              "value": 2627207
+            }
+          }
+        },
+        {
+          "regionId": "3276",
+          "value": 2145400,
+          "rawValue": 2145400,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_population",
+            "locator": "3.1.3, printed117; 2023; Kota Depok (3276)",
+            "row": {
+              "region": "Kota Depok",
+              "value": 2145400
+            }
+          }
+        },
+        {
+          "regionId": "3277",
+          "value": 590782,
+          "rawValue": 590782,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_population",
+            "locator": "3.1.3, printed117; 2023; Kota Cimahi (3277)",
+            "row": {
+              "region": "Kota Cimahi",
+              "value": 590782
+            }
+          }
+        },
+        {
+          "regionId": "3278",
+          "value": 741760,
+          "rawValue": 741760,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_population",
+            "locator": "3.1.3, printed117; 2023; Kota Tasikmalaya (3278)",
+            "row": {
+              "region": "Kota Tasikmalaya",
+              "value": 741760
+            }
+          }
+        },
+        {
+          "regionId": "3279",
+          "value": 207510,
+          "rawValue": 207510,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_bps_population",
+            "locator": "3.1.3, printed117; 2023; Kota Banjar (3279)",
+            "row": {
+              "region": "Kota Banjar",
+              "value": 207510
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "dbd_cases_2023",
+      "name": "DBD recorded cases",
+      "concept": "Reported DBD cases in2023, not all dengue infections.",
+      "family": "Infectious Disease",
+      "statisticType": "count",
+      "year": 2023,
+      "unit": "reported cases",
+      "rawOrDerived": "published_count",
+      "source": {
+        "publisher": "Dinas Kesehatan Provinsi Jawa Barat",
+        "title": "Jumlah Kasus Penyakit Demam Berdarah Dengue (DBD) Berdasarkan Kabupaten/Kota di Jawa Barat",
+        "url": "https://galura.jabarprov.go.id/api/bigdata/jumlah-kasus-penyakit-demam-berdarah-dengue-dbd-berdasarkan-kabupatenkota-di-jawa-barat?per_page=1000&page=1",
+        "table": "API id18509, select tahun2023",
+        "artifactId": "dbd_api_cases",
+        "pdfPage": null,
+        "accessedAt": "2026-10-29"
+      },
+      "numerator": {
+        "definition": "Reported DBD cases in2023, not all dengue infections.",
+        "sourceArtifactId": "dbd_api_cases"
+      },
+      "denominator": null,
+      "formula": null,
+      "direction": "Recorded count or service output has no unqualified health-pressure direction.",
+      "detectionBias": "Administrative detection, attendance, referral, diagnostic and reporting intensity may change values independently of population burden.",
+      "caveats": [],
+      "uncertainty": "No district ascertainment probabilities or sampling confidence interval published for this administrative panel.",
+      "correlationEligible": false,
+      "recommendation": {
+        "status": "CONTEXT ONLY",
+        "reason": "Raw counts cannot compare differently sized districts. Can derive reported-case rate using consistent2023 population, but cannot relabel as official published incidence or resolve its vintage."
+      },
+      "observations": [
+        {
+          "regionId": "3201",
+          "value": 1881,
+          "rawValue": 1881,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Bogor (3201)",
+            "row": {
+              "id": 190,
+              "kode_provinsi": 32,
+              "nama_provinsi": "JAWA BARAT",
+              "kode_kabupaten_kota": 3201,
+              "nama_kabupaten_kota": "KABUPATEN BOGOR",
+              "jumlah_kasus": 1881,
+              "satuan": "ORANG",
+              "tahun": 2023
+            }
+          }
+        },
+        {
+          "regionId": "3202",
+          "value": 113,
+          "rawValue": 113,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Sukabumi (3202)",
+            "row": {
+              "id": 191,
+              "kode_provinsi": 32,
+              "nama_provinsi": "JAWA BARAT",
+              "kode_kabupaten_kota": 3202,
+              "nama_kabupaten_kota": "KABUPATEN SUKABUMI",
+              "jumlah_kasus": 113,
+              "satuan": "ORANG",
+              "tahun": 2023
+            }
+          }
+        },
+        {
+          "regionId": "3203",
+          "value": 829,
+          "rawValue": 829,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Cianjur (3203)",
+            "row": {
+              "id": 192,
+              "kode_provinsi": 32,
+              "nama_provinsi": "JAWA BARAT",
+              "kode_kabupaten_kota": 3203,
+              "nama_kabupaten_kota": "KABUPATEN CIANJUR",
+              "jumlah_kasus": 829,
+              "satuan": "ORANG",
+              "tahun": 2023
+            }
+          }
+        },
+        {
+          "regionId": "3204",
+          "value": 1005,
+          "rawValue": 1005,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Bandung (3204)",
+            "row": {
+              "id": 193,
+              "kode_provinsi": 32,
+              "nama_provinsi": "JAWA BARAT",
+              "kode_kabupaten_kota": 3204,
+              "nama_kabupaten_kota": "KABUPATEN BANDUNG",
+              "jumlah_kasus": 1005,
+              "satuan": "ORANG",
+              "tahun": 2023
+            }
+          }
+        },
+        {
+          "regionId": "3205",
+          "value": 730,
+          "rawValue": 730,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Garut (3205)",
+            "row": {
+              "id": 194,
+              "kode_provinsi": 32,
+              "nama_provinsi": "JAWA BARAT",
+              "kode_kabupaten_kota": 3205,
+              "nama_kabupaten_kota": "KABUPATEN GARUT",
+              "jumlah_kasus": 730,
+              "satuan": "ORANG",
+              "tahun": 2023
+            }
+          }
+        },
+        {
+          "regionId": "3206",
+          "value": 88,
+          "rawValue": 88,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Tasikmalaya (3206)",
+            "row": {
+              "id": 195,
+              "kode_provinsi": 32,
+              "nama_provinsi": "JAWA BARAT",
+              "kode_kabupaten_kota": 3206,
+              "nama_kabupaten_kota": "KABUPATEN TASIKMALAYA",
+              "jumlah_kasus": 88,
+              "satuan": "ORANG",
+              "tahun": 2023
+            }
+          }
+        },
+        {
+          "regionId": "3207",
+          "value": 232,
+          "rawValue": 232,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Ciamis (3207)",
+            "row": {
+              "id": 196,
+              "kode_provinsi": 32,
+              "nama_provinsi": "JAWA BARAT",
+              "kode_kabupaten_kota": 3207,
+              "nama_kabupaten_kota": "KABUPATEN CIAMIS",
+              "jumlah_kasus": 232,
+              "satuan": "ORANG",
+              "tahun": 2023
+            }
+          }
+        },
+        {
+          "regionId": "3208",
+          "value": 630,
+          "rawValue": 630,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Kuningan (3208)",
+            "row": {
+              "id": 197,
+              "kode_provinsi": 32,
+              "nama_provinsi": "JAWA BARAT",
+              "kode_kabupaten_kota": 3208,
+              "nama_kabupaten_kota": "KABUPATEN KUNINGAN",
+              "jumlah_kasus": 630,
+              "satuan": "ORANG",
+              "tahun": 2023
+            }
+          }
+        },
+        {
+          "regionId": "3209",
+          "value": 728,
+          "rawValue": 728,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Cirebon (3209)",
+            "row": {
+              "id": 198,
+              "kode_provinsi": 32,
+              "nama_provinsi": "JAWA BARAT",
+              "kode_kabupaten_kota": 3209,
+              "nama_kabupaten_kota": "KABUPATEN CIREBON",
+              "jumlah_kasus": 728,
+              "satuan": "ORANG",
+              "tahun": 2023
+            }
+          }
+        },
+        {
+          "regionId": "3210",
+          "value": 253,
+          "rawValue": 253,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Majalengka (3210)",
+            "row": {
+              "id": 199,
+              "kode_provinsi": 32,
+              "nama_provinsi": "JAWA BARAT",
+              "kode_kabupaten_kota": 3210,
+              "nama_kabupaten_kota": "KABUPATEN MAJALENGKA",
+              "jumlah_kasus": 253,
+              "satuan": "ORANG",
+              "tahun": 2023
+            }
+          }
+        },
+        {
+          "regionId": "3211",
+          "value": 1308,
+          "rawValue": 1308,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Sumedang (3211)",
+            "row": {
+              "id": 200,
+              "kode_provinsi": 32,
+              "nama_provinsi": "JAWA BARAT",
+              "kode_kabupaten_kota": 3211,
+              "nama_kabupaten_kota": "KABUPATEN SUMEDANG",
+              "jumlah_kasus": 1308,
+              "satuan": "ORANG",
+              "tahun": 2023
+            }
+          }
+        },
+        {
+          "regionId": "3212",
+          "value": 218,
+          "rawValue": 218,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Indramayu (3212)",
+            "row": {
+              "id": 201,
+              "kode_provinsi": 32,
+              "nama_provinsi": "JAWA BARAT",
+              "kode_kabupaten_kota": 3212,
+              "nama_kabupaten_kota": "KABUPATEN INDRAMAYU",
+              "jumlah_kasus": 218,
+              "satuan": "ORANG",
+              "tahun": 2023
+            }
+          }
+        },
+        {
+          "regionId": "3213",
+          "value": 618,
+          "rawValue": 618,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Subang (3213)",
+            "row": {
+              "id": 202,
+              "kode_provinsi": 32,
+              "nama_provinsi": "JAWA BARAT",
+              "kode_kabupaten_kota": 3213,
+              "nama_kabupaten_kota": "KABUPATEN SUBANG",
+              "jumlah_kasus": 618,
+              "satuan": "ORANG",
+              "tahun": 2023
+            }
+          }
+        },
+        {
+          "regionId": "3214",
+          "value": 424,
+          "rawValue": 424,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Purwakarta (3214)",
+            "row": {
+              "id": 203,
+              "kode_provinsi": 32,
+              "nama_provinsi": "JAWA BARAT",
+              "kode_kabupaten_kota": 3214,
+              "nama_kabupaten_kota": "KABUPATEN PURWAKARTA",
+              "jumlah_kasus": 424,
+              "satuan": "ORANG",
+              "tahun": 2023
+            }
+          }
+        },
+        {
+          "regionId": "3215",
+          "value": 991,
+          "rawValue": 991,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Karawang (3215)",
+            "row": {
+              "id": 204,
+              "kode_provinsi": 32,
+              "nama_provinsi": "JAWA BARAT",
+              "kode_kabupaten_kota": 3215,
+              "nama_kabupaten_kota": "KABUPATEN KARAWANG",
+              "jumlah_kasus": 991,
+              "satuan": "ORANG",
+              "tahun": 2023
+            }
+          }
+        },
+        {
+          "regionId": "3216",
+          "value": 726,
+          "rawValue": 726,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Bekasi (3216)",
+            "row": {
+              "id": 205,
+              "kode_provinsi": 32,
+              "nama_provinsi": "JAWA BARAT",
+              "kode_kabupaten_kota": 3216,
+              "nama_kabupaten_kota": "KABUPATEN BEKASI",
+              "jumlah_kasus": 726,
+              "satuan": "ORANG",
+              "tahun": 2023
+            }
+          }
+        },
+        {
+          "regionId": "3217",
+          "value": 1322,
+          "rawValue": 1322,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Bandung Barat (3217)",
+            "row": {
+              "id": 206,
+              "kode_provinsi": 32,
+              "nama_provinsi": "JAWA BARAT",
+              "kode_kabupaten_kota": 3217,
+              "nama_kabupaten_kota": "KABUPATEN BANDUNG BARAT",
+              "jumlah_kasus": 1322,
+              "satuan": "ORANG",
+              "tahun": 2023
+            }
+          }
+        },
+        {
+          "regionId": "3218",
+          "value": 253,
+          "rawValue": 253,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Pangandaran (3218)",
+            "row": {
+              "id": 207,
+              "kode_provinsi": 32,
+              "nama_provinsi": "JAWA BARAT",
+              "kode_kabupaten_kota": 3218,
+              "nama_kabupaten_kota": "KABUPATEN PANGANDARAN",
+              "jumlah_kasus": 253,
+              "satuan": "ORANG",
+              "tahun": 2023
+            }
+          }
+        },
+        {
+          "regionId": "3271",
+          "value": 1474,
+          "rawValue": 1474,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kota Bogor (3271)",
+            "row": {
+              "id": 208,
+              "kode_provinsi": 32,
+              "nama_provinsi": "JAWA BARAT",
+              "kode_kabupaten_kota": 3271,
+              "nama_kabupaten_kota": "KOTA BOGOR",
+              "jumlah_kasus": 1474,
+              "satuan": "ORANG",
+              "tahun": 2023
+            }
+          }
+        },
+        {
+          "regionId": "3272",
+          "value": 415,
+          "rawValue": 415,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kota Sukabumi (3272)",
+            "row": {
+              "id": 209,
+              "kode_provinsi": 32,
+              "nama_provinsi": "JAWA BARAT",
+              "kode_kabupaten_kota": 3272,
+              "nama_kabupaten_kota": "KOTA SUKABUMI",
+              "jumlah_kasus": 415,
+              "satuan": "ORANG",
+              "tahun": 2023
+            }
+          }
+        },
+        {
+          "regionId": "3273",
+          "value": 1856,
+          "rawValue": 1856,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kota Bandung (3273)",
+            "row": {
+              "id": 210,
+              "kode_provinsi": 32,
+              "nama_provinsi": "JAWA BARAT",
+              "kode_kabupaten_kota": 3273,
+              "nama_kabupaten_kota": "KOTA BANDUNG",
+              "jumlah_kasus": 1856,
+              "satuan": "ORANG",
+              "tahun": 2023
+            }
+          }
+        },
+        {
+          "regionId": "3274",
+          "value": 227,
+          "rawValue": 227,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kota Cirebon (3274)",
+            "row": {
+              "id": 211,
+              "kode_provinsi": 32,
+              "nama_provinsi": "JAWA BARAT",
+              "kode_kabupaten_kota": 3274,
+              "nama_kabupaten_kota": "KOTA CIREBON",
+              "jumlah_kasus": 227,
+              "satuan": "ORANG",
+              "tahun": 2023
+            }
+          }
+        },
+        {
+          "regionId": "3275",
+          "value": 1220,
+          "rawValue": 1220,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kota Bekasi (3275)",
+            "row": {
+              "id": 212,
+              "kode_provinsi": 32,
+              "nama_provinsi": "JAWA BARAT",
+              "kode_kabupaten_kota": 3275,
+              "nama_kabupaten_kota": "KOTA BEKASI",
+              "jumlah_kasus": 1220,
+              "satuan": "ORANG",
+              "tahun": 2023
+            }
+          }
+        },
+        {
+          "regionId": "3276",
+          "value": 1031,
+          "rawValue": 1031,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kota Depok (3276)",
+            "row": {
+              "id": 213,
+              "kode_provinsi": 32,
+              "nama_provinsi": "JAWA BARAT",
+              "kode_kabupaten_kota": 3276,
+              "nama_kabupaten_kota": "KOTA DEPOK",
+              "jumlah_kasus": 1031,
+              "satuan": "ORANG",
+              "tahun": 2023
+            }
+          }
+        },
+        {
+          "regionId": "3277",
+          "value": 350,
+          "rawValue": 350,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kota Cimahi (3277)",
+            "row": {
+              "id": 214,
+              "kode_provinsi": 32,
+              "nama_provinsi": "JAWA BARAT",
+              "kode_kabupaten_kota": 3277,
+              "nama_kabupaten_kota": "KOTA CIMAHI",
+              "jumlah_kasus": 350,
+              "satuan": "ORANG",
+              "tahun": 2023
+            }
+          }
+        },
+        {
+          "regionId": "3278",
+          "value": 353,
+          "rawValue": 353,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kota Tasikmalaya (3278)",
+            "row": {
+              "id": 215,
+              "kode_provinsi": 32,
+              "nama_provinsi": "JAWA BARAT",
+              "kode_kabupaten_kota": 3278,
+              "nama_kabupaten_kota": "KOTA TASIKMALAYA",
+              "jumlah_kasus": 353,
+              "satuan": "ORANG",
+              "tahun": 2023
+            }
+          }
+        },
+        {
+          "regionId": "3279",
+          "value": 53,
+          "rawValue": 53,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kota Banjar (3279)",
+            "row": {
+              "id": 216,
+              "kode_provinsi": 32,
+              "nama_provinsi": "JAWA BARAT",
+              "kode_kabupaten_kota": 3279,
+              "nama_kabupaten_kota": "KOTA BANJAR",
+              "jumlah_kasus": 53,
+              "satuan": "ORANG",
+              "tahun": 2023
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "dbd_reported_case_rate_diagnostic",
+      "name": "DBD cases / BPS2023 population (diagnostic, not replacement)",
+      "concept": "Reported case intensity from two explicit official2023 inputs.",
+      "family": "Infectious Disease",
+      "statisticType": "reported_case_rate",
+      "year": 2023,
+      "unit": "reported cases per 100,000 population",
+      "rawOrDerived": "derived_rate",
+      "source": {
+        "publisher": "Dinas Kesehatan Provinsi Jawa Barat",
+        "title": "Jumlah Kasus Penyakit Demam Berdarah Dengue (DBD) Berdasarkan Kabupaten/Kota di Jawa Barat",
+        "url": "https://galura.jabarprov.go.id/api/bigdata/jumlah-kasus-penyakit-demam-berdarah-dengue-dbd-berdasarkan-kabupatenkota-di-jawa-barat?per_page=1000&page=1",
+        "table": "API id18509, select tahun2023",
+        "artifactId": "dbd_api_cases",
+        "pdfPage": null,
+        "accessedAt": "2026-10-29"
+      },
+      "numerator": {
+        "definition": "Dinkes2023 reported DBD cases",
+        "seriesId": "dbd_cases_2023",
+        "sourceArtifactId": "dbd_api_cases"
+      },
+      "denominator": {
+        "definition": "BPS2023 both-sex resident population projection",
+        "year": 2023,
+        "unit": "persons",
+        "seriesId": "population_2023_exact",
+        "sourceArtifactId": "dbd_bps_population"
+      },
+      "formula": "reported DBD cases / BPS2023 population * 100000",
+      "direction": "Higher means greater reported-case intensity, not necessarily true infection incidence.",
+      "detectionBias": "Administrative detection, attendance, referral, diagnostic and reporting intensity may change values independently of population burden.",
+      "caveats": [],
+      "uncertainty": "No district ascertainment probabilities or sampling confidence interval published for this administrative panel.",
+      "correlationEligible": true,
+      "recommendation": {
+        "status": "CONTEXT ONLY",
+        "reason": "CONTEXT ONLY. Epidemiologically population-scaled reported-case rate, but source-edition/attribution conflicts block replacement of published DBD series."
+      },
+      "observations": [
+        {
+          "regionId": "3201",
+          "value": 33.42798969472479,
+          "rawValue": 33.42798969472479,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Bogor (3201)",
+            "row": {
+              "region": "Kabupaten Bogor",
+              "value": 33.42798969472479
+            }
+          },
+          "numerator": 1881,
+          "denominator": 5627021,
+          "denominatorSourceArtifactId": "dbd_bps_population"
+        },
+        {
+          "regionId": "3202",
+          "value": 4.032252309088911,
+          "rawValue": 4.032252309088911,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Sukabumi (3202)",
+            "row": {
+              "region": "Kabupaten Sukabumi",
+              "value": 4.032252309088911
+            }
+          },
+          "numerator": 113,
+          "denominator": 2802404,
+          "denominatorSourceArtifactId": "dbd_bps_population"
+        },
+        {
+          "regionId": "3203",
+          "value": 32.40633240844331,
+          "rawValue": 32.40633240844331,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Cianjur (3203)",
+            "row": {
+              "region": "Kabupaten Cianjur",
+              "value": 32.40633240844331
+            }
+          },
+          "numerator": 829,
+          "denominator": 2558142,
+          "denominatorSourceArtifactId": "dbd_bps_population"
+        },
+        {
+          "regionId": "3204",
+          "value": 27.00806291454353,
+          "rawValue": 27.00806291454353,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Bandung (3204)",
+            "row": {
+              "region": "Kabupaten Bandung",
+              "value": 27.00806291454353
+            }
+          },
+          "numerator": 1005,
+          "denominator": 3721111,
+          "denominatorSourceArtifactId": "dbd_bps_population"
+        },
+        {
+          "regionId": "3205",
+          "value": 27.20160675792247,
+          "rawValue": 27.20160675792247,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Garut (3205)",
+            "row": {
+              "region": "Kabupaten Garut",
+              "value": 27.20160675792247
+            }
+          },
+          "numerator": 730,
+          "denominator": 2683665,
+          "denominatorSourceArtifactId": "dbd_bps_population"
+        },
+        {
+          "regionId": "3206",
+          "value": 4.6144689821163105,
+          "rawValue": 4.6144689821163105,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Tasikmalaya (3206)",
+            "row": {
+              "region": "Kabupaten Tasikmalaya",
+              "value": 4.6144689821163105
+            }
+          },
+          "numerator": 88,
+          "denominator": 1907045,
+          "denominatorSourceArtifactId": "dbd_bps_population"
+        },
+        {
+          "regionId": "3207",
+          "value": 18.53710297041095,
+          "rawValue": 18.53710297041095,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Ciamis (3207)",
+            "row": {
+              "region": "Kabupaten Ciamis",
+              "value": 18.53710297041095
+            }
+          },
+          "numerator": 232,
+          "denominator": 1251544,
+          "denominatorSourceArtifactId": "dbd_bps_population"
+        },
+        {
+          "regionId": "3208",
+          "value": 52.42293828072733,
+          "rawValue": 52.42293828072733,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Kuningan (3208)",
+            "row": {
+              "region": "Kabupaten Kuningan",
+              "value": 52.42293828072733
+            }
+          },
+          "numerator": 630,
+          "denominator": 1201764,
+          "denominatorSourceArtifactId": "dbd_bps_population"
+        },
+        {
+          "regionId": "3209",
+          "value": 30.84169441218823,
+          "rawValue": 30.84169441218823,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Cirebon (3209)",
+            "row": {
+              "region": "Kabupaten Cirebon",
+              "value": 30.84169441218823
+            }
+          },
+          "numerator": 728,
+          "denominator": 2360441,
+          "denominatorSourceArtifactId": "dbd_bps_population"
+        },
+        {
+          "regionId": "3210",
+          "value": 18.871907487373353,
+          "rawValue": 18.871907487373353,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Majalengka (3210)",
+            "row": {
+              "region": "Kabupaten Majalengka",
+              "value": 18.871907487373353
+            }
+          },
+          "numerator": 253,
+          "denominator": 1340617,
+          "denominatorSourceArtifactId": "dbd_bps_population"
+        },
+        {
+          "regionId": "3211",
+          "value": 111.01350749213867,
+          "rawValue": 111.01350749213867,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Sumedang (3211)",
+            "row": {
+              "region": "Kabupaten Sumedang",
+              "value": 111.01350749213867
+            }
+          },
+          "numerator": 1308,
+          "denominator": 1178235,
+          "denominatorSourceArtifactId": "dbd_bps_population"
+        },
+        {
+          "regionId": "3212",
+          "value": 11.508056959603024,
+          "rawValue": 11.508056959603024,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Indramayu (3212)",
+            "row": {
+              "region": "Kabupaten Indramayu",
+              "value": 11.508056959603024
+            }
+          },
+          "numerator": 218,
+          "denominator": 1894325,
+          "denominatorSourceArtifactId": "dbd_bps_population"
+        },
+        {
+          "regionId": "3213",
+          "value": 37.45860914608312,
+          "rawValue": 37.45860914608312,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Subang (3213)",
+            "row": {
+              "region": "Kabupaten Subang",
+              "value": 37.45860914608312
+            }
+          },
+          "numerator": 618,
+          "denominator": 1649821,
+          "denominatorSourceArtifactId": "dbd_bps_population"
+        },
+        {
+          "regionId": "3214",
+          "value": 40.884493591548484,
+          "rawValue": 40.884493591548484,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Purwakarta (3214)",
+            "row": {
+              "region": "Kabupaten Purwakarta",
+              "value": 40.884493591548484
+            }
+          },
+          "numerator": 424,
+          "denominator": 1037068,
+          "denominatorSourceArtifactId": "dbd_bps_population"
+        },
+        {
+          "regionId": "3215",
+          "value": 39.23195626923494,
+          "rawValue": 39.23195626923494,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Karawang (3215)",
+            "row": {
+              "region": "Kabupaten Karawang",
+              "value": 39.23195626923494
+            }
+          },
+          "numerator": 991,
+          "denominator": 2526002,
+          "denominatorSourceArtifactId": "dbd_bps_population"
+        },
+        {
+          "regionId": "3216",
+          "value": 22.42526456252201,
+          "rawValue": 22.42526456252201,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Bekasi (3216)",
+            "row": {
+              "region": "Kabupaten Bekasi",
+              "value": 22.42526456252201
+            }
+          },
+          "numerator": 726,
+          "denominator": 3237420,
+          "denominatorSourceArtifactId": "dbd_bps_population"
+        },
+        {
+          "regionId": "3217",
+          "value": 71.08918089346517,
+          "rawValue": 71.08918089346517,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Bandung Barat (3217)",
+            "row": {
+              "region": "Kabupaten Bandung Barat",
+              "value": 71.08918089346517
+            }
+          },
+          "numerator": 1322,
+          "denominator": 1859636,
+          "denominatorSourceArtifactId": "dbd_bps_population"
+        },
+        {
+          "regionId": "3218",
+          "value": 58.637568835406896,
+          "rawValue": 58.637568835406896,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kabupaten Pangandaran (3218)",
+            "row": {
+              "region": "Kabupaten Pangandaran",
+              "value": 58.637568835406896
+            }
+          },
+          "numerator": 253,
+          "denominator": 431464,
+          "denominatorSourceArtifactId": "dbd_bps_population"
+        },
+        {
+          "regionId": "3271",
+          "value": 137.66450394547962,
+          "rawValue": 137.66450394547962,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kota Bogor (3271)",
+            "row": {
+              "region": "Kota Bogor",
+              "value": 137.66450394547962
+            }
+          },
+          "numerator": 1474,
+          "denominator": 1070719,
+          "denominatorSourceArtifactId": "dbd_bps_population"
+        },
+        {
+          "regionId": "3272",
+          "value": 115.07192688634777,
+          "rawValue": 115.07192688634777,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kota Sukabumi (3272)",
+            "row": {
+              "region": "Kota Sukabumi",
+              "value": 115.07192688634777
+            }
+          },
+          "numerator": 415,
+          "denominator": 360644,
+          "denominatorSourceArtifactId": "dbd_bps_population"
+        },
+        {
+          "regionId": "3273",
+          "value": 74.04443384133825,
+          "rawValue": 74.04443384133825,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kota Bandung (3273)",
+            "row": {
+              "region": "Kota Bandung",
+              "value": 74.04443384133825
+            }
+          },
+          "numerator": 1856,
+          "denominator": 2506603,
+          "denominatorSourceArtifactId": "dbd_bps_population"
+        },
+        {
+          "regionId": "3274",
+          "value": 66.37815076905082,
+          "rawValue": 66.37815076905082,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kota Cirebon (3274)",
+            "row": {
+              "region": "Kota Cirebon",
+              "value": 66.37815076905082
+            }
+          },
+          "numerator": 227,
+          "denominator": 341980,
+          "denominatorSourceArtifactId": "dbd_bps_population"
+        },
+        {
+          "regionId": "3275",
+          "value": 46.4371478912777,
+          "rawValue": 46.4371478912777,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kota Bekasi (3275)",
+            "row": {
+              "region": "Kota Bekasi",
+              "value": 46.4371478912777
+            }
+          },
+          "numerator": 1220,
+          "denominator": 2627207,
+          "denominatorSourceArtifactId": "dbd_bps_population"
+        },
+        {
+          "regionId": "3276",
+          "value": 48.05630651626736,
+          "rawValue": 48.05630651626736,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kota Depok (3276)",
+            "row": {
+              "region": "Kota Depok",
+              "value": 48.05630651626736
+            }
+          },
+          "numerator": 1031,
+          "denominator": 2145400,
+          "denominatorSourceArtifactId": "dbd_bps_population"
+        },
+        {
+          "regionId": "3277",
+          "value": 59.24351114285811,
+          "rawValue": 59.24351114285811,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kota Cimahi (3277)",
+            "row": {
+              "region": "Kota Cimahi",
+              "value": 59.24351114285811
+            }
+          },
+          "numerator": 350,
+          "denominator": 590782,
+          "denominatorSourceArtifactId": "dbd_bps_population"
+        },
+        {
+          "regionId": "3278",
+          "value": 47.58951682484901,
+          "rawValue": 47.58951682484901,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kota Tasikmalaya (3278)",
+            "row": {
+              "region": "Kota Tasikmalaya",
+              "value": 47.58951682484901
+            }
+          },
+          "numerator": 353,
+          "denominator": 741760,
+          "denominatorSourceArtifactId": "dbd_bps_population"
+        },
+        {
+          "regionId": "3279",
+          "value": 25.54093778613079,
+          "rawValue": 25.54093778613079,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "dbd_api_cases",
+            "locator": "API id18509, select tahun2023; 2023; Kota Banjar (3279)",
+            "row": {
+              "region": "Kota Banjar",
+              "value": 25.54093778613079
+            }
+          },
+          "numerator": 53,
+          "denominator": 207510,
+          "denominatorSourceArtifactId": "dbd_bps_population"
+        }
+      ]
+    }
+  ],
+  "investigations": [],
+  "notes": [
+    "Recovered original browser bodies and BPS original inspection from current interrupted session; no repeated DBD request.",
+    "Direct profile share timed out/HTTP502; PPID-linked alternate returned404. Prior profile hash6480ae4145a9d763d0dd2d8973f65aea5803ab0cec485034e551dca5c98a7148 remains historical, not fresh verification. Current independent BPS population and official API reproduce the documented discrepancy."
+  ],
+  "currentDecision": {
+    "decision": "REVIEW",
+    "nextModelStatus": "CONTEXT ONLY",
+    "productionAction": "None. Do not remove or modify current DBD indicator.",
+    "reason": "Same official rate definition and all27 values verified; exact numerator/denominator edition remains unresolved. New diagnostic case rate is not a correction."
+  },
+  "diagnostics": {
+    "publishedVersusRoundedDiagnosticMismatches": [
+      {
+        "regionId": "3201",
+        "published": 31,
+        "derivedDiagnostic": 33.42798969472479,
+        "difference": 2.4279896947247934
+      },
+      {
+        "regionId": "3203",
+        "published": 35,
+        "derivedDiagnostic": 32.40633240844331,
+        "difference": -2.593667591556688
+      },
+      {
+        "regionId": "3204",
+        "published": 20,
+        "derivedDiagnostic": 27.00806291454353,
+        "difference": 7.00806291454353
+      },
+      {
+        "regionId": "3208",
+        "published": 57,
+        "derivedDiagnostic": 52.42293828072733,
+        "difference": -4.57706171927267
+      },
+      {
+        "regionId": "3209",
+        "published": 33,
+        "derivedDiagnostic": 30.84169441218823,
+        "difference": -2.158305587811771
+      },
+      {
+        "regionId": "3210",
+        "published": 18,
+        "derivedDiagnostic": 18.871907487373353,
+        "difference": 0.8719074873733526
+      },
+      {
+        "regionId": "3211",
+        "published": 110,
+        "derivedDiagnostic": 111.01350749213867,
+        "difference": 1.0135074921386718
+      },
+      {
+        "regionId": "3213",
+        "published": 39,
+        "derivedDiagnostic": 37.45860914608312,
+        "difference": -1.5413908539168801
+      },
+      {
+        "regionId": "3214",
+        "published": 45,
+        "derivedDiagnostic": 40.884493591548484,
+        "difference": -4.115506408451516
+      },
+      {
+        "regionId": "3215",
+        "published": 42,
+        "derivedDiagnostic": 39.23195626923494,
+        "difference": -2.768043730765058
+      },
+      {
+        "regionId": "3216",
+        "published": 18,
+        "derivedDiagnostic": 22.42526456252201,
+        "difference": 4.42526456252201
+      },
+      {
+        "regionId": "3217",
+        "published": 78,
+        "derivedDiagnostic": 71.08918089346517,
+        "difference": -6.910819106534831
+      },
+      {
+        "regionId": "3218",
+        "published": 62,
+        "derivedDiagnostic": 58.637568835406896,
+        "difference": -3.3624311645931044
+      },
+      {
+        "regionId": "3271",
+        "published": 132,
+        "derivedDiagnostic": 137.66450394547962,
+        "difference": 5.664503945479623
+      },
+      {
+        "regionId": "3272",
+        "published": 124,
+        "derivedDiagnostic": 115.07192688634777,
+        "difference": -8.928073113652232
+      },
+      {
+        "regionId": "3273",
+        "published": 78,
+        "derivedDiagnostic": 74.04443384133825,
+        "difference": -3.955566158661753
+      },
+      {
+        "regionId": "3274",
+        "published": 71,
+        "derivedDiagnostic": 66.37815076905082,
+        "difference": -4.621849230949181
+      },
+      {
+        "regionId": "3275",
+        "published": 39,
+        "derivedDiagnostic": 46.4371478912777,
+        "difference": 7.4371478912776965
+      },
+      {
+        "regionId": "3276",
+        "published": 41,
+        "derivedDiagnostic": 48.05630651626736,
+        "difference": 7.056306516267362
+      },
+      {
+        "regionId": "3277",
+        "published": 55,
+        "derivedDiagnostic": 59.24351114285811,
+        "difference": 4.243511142858111
+      },
+      {
+        "regionId": "3278",
+        "published": 52,
+        "derivedDiagnostic": 47.58951682484901,
+        "difference": -4.410483175150993
+      },
+      {
+        "regionId": "3279",
+        "published": 28,
+        "derivedDiagnostic": 25.54093778613079,
+        "difference": -2.4590622138692098
+      }
+    ],
+    "provinceCases": 19328,
+    "provincePopulation": 49860330,
+    "derivedProvinceDiagnostic": 38.76428415134838,
+    "publishedProvinceRate": 38,
+    "noRoundingRuleAssumed": true
+  }
+}
