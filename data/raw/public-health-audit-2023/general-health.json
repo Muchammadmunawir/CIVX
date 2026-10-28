@@ -1,0 +1,1503 @@
+{
+  "auditId": "civx-public-health-general-health-2023",
+  "accessedAt": "2026-10-29",
+  "scope": {
+    "referenceYear": 2023,
+    "province": "Jawa Barat",
+    "regionIds": [
+      "3201",
+      "3202",
+      "3203",
+      "3204",
+      "3205",
+      "3206",
+      "3207",
+      "3208",
+      "3209",
+      "3210",
+      "3211",
+      "3212",
+      "3213",
+      "3214",
+      "3215",
+      "3216",
+      "3217",
+      "3218",
+      "3271",
+      "3272",
+      "3273",
+      "3274",
+      "3275",
+      "3276",
+      "3277",
+      "3278",
+      "3279"
+    ],
+    "canonicalRegistry": "data/raw/civx-jabar-2023.json regions",
+    "purpose": "Research and next-methodology recommendation only. No production scoring cutover, frontend, weights or recommendation-engine change."
+  },
+  "artifacts": [
+    {
+      "id": "general_welfare",
+      "publisher": "BPS Provinsi Jawa Barat",
+      "title": "Statistik Kesejahteraan Rakyat Provinsi Jawa Barat 2023: technical notes,4.1,4.2,9.7",
+      "url": "https://jabar.bps.go.id/id/publication/2023/12/28/8a2667bb40625076d8ee9c30/statistik-kesejahteraan-rakyat-provinsi-jawa-barat-2023.html",
+      "accessedAt": "2026-10-29",
+      "representation": "Selected pdftotext extracted text from official PDF; hash covers retained UTF-8 text, not original PDF bytes. Full publication not redistributed.",
+      "sha256": "04892936b841f4279ae0194dc768380f1ccae37412b2f16204f914414a5529cb",
+      "bytes": 43528,
+      "content": "PDF page93\n      IV. KESEHATAN/HEALTH\n\n\n                        PENJELASAN TEKNIS                                                          TECHNICAL NOTES\n1. Keluhan kesehatan adalah keadaan seseorang yang mengalami             1. Health complaints is the condition of a person experiencing\n   gangguan kesehatan atau kejiwaan, baik karena gangguan/penyakit          health or psychiatric disorders, either because of\n   yang sering dialami penduduk seperti panas, pilek, diare, pusing,        disorders/diseases that are often experienced by people, such as\n   sakit kepala, maupun karena penyakit akut, penyakit kronis        o. id  fever, cold, diarrhea, dizziness, headache, or because of acute\n   (meskipun selama sebulan terakhir tidak mempunyai keluhan),              illness, chronic disease (although during the past month did not\n   kecelakaan, kriminalitas, atau keluhan lainnya.           ps             have any complaints), accidents, crimes, or other complaints.\n\n2. Sakit adalah mempunyai keluhan kesehatan yang menyebabkan\n                                                               .g        2. Sick is health complaints that interfere with work, school, or daily\n                                                         .b\n   terganggunya pekerjaan, sekolah, atau kegiatan sehari-hari.              activities.\n                                                     ar\n3. Rawat jalan adalah upaya anggota rumah tangga yang mempunyai          3. Outpatient care is an effort by household members with health\n                                                ab\n   keluhan kesehatan untuk memeriksakan diri dan mendapatkan                complaints to check themselves and get treatment by visiting\n                                             //j\n   pengobatan dengan mendatangi tempat-tempat pelayanan                     modern or traditional health service facilities without staying\n                                         s:\n   kesehatan modern atau tradisional tanpa menginap, termasuk               overnight, including bringing health workers to the homes.\n                                  ht\n   mendatangkan petugas kesehatan ke rumah anggota rumah tangga.\n                                     tp\n4. Jaminan kesehatan adalah jaminan berupa perlindungan kesehatan        4. Health insurance is insurance in the form of health protection, so\n    agar peserta yang telah membayar iuran atau iurannya dibayar oleh       the participants who have paid contributions or whose\n    pemerintah memperoleh manfaat pemeliharaan kesehatan dan                contributions have been paid by the government receive health\n    perlindungan dalam memenuhi kebutuhan dasar kesehatan.                  care and protection benefits in meeting basic health needs.\n\n5. Rawat inap adalah upaya penyembuhan keluhan kesehatan dengan          5. Inpatient care is an effort to cure health complaints by staying one\n   menginap satu malam atau lebih di unit pelayanan kesehatan               night or more in the modern or traditional health care facilities,\n   modern atau tradisional, termasuk rawat inap untuk persalinan.           including inpatient for childbirth.\n\n6. Merokok tembakau adalah aktivitas membakar tembakau kemudian          6. Smoking tobacco is an activity to burn tobacco and then inhale the\n   menghisap asapnya, baik menggunakan rokok maupun pipa.                   smoke, using either cigarettes or pipes.\n\n7. Imunisasi adalah suatu upaya untuk menimbulkan/meningkatkan           7. Immunization is an attempt to actively raise/increase a person’s\n    kekebalan seseorang secara aktif terhadap suatu penyakit sehingga       immunity to a disease so that if one day they are exposed to the\n    bila suatu saat terpajan dengan penyakit tersebut tidak akan sakit      disease, they will not get sick or only experience mild pain. Children\n\n\n\n                                                                                                                       Kesehatan/Health              63\n\f\n\nPDF page95\n    Tabel      4.1            Persentase Penduduk yang Mempunyai Keluhan Kesehatan dalam Sebulan Terakhir menurut Kabupaten/Kota dan Jenis Kelamin, 2023\n    Table                     Percentage of Population Who Had Health Complaints within the Last Month by Regency/Municipality and Sex, 2023\n\n\n              Kabupaten/Kota                                     Laki-laki                                     Perempuan                                Laki-laki + Perempuan\n            Regency/Municipality                                  Male                                           Female                                     Male + Female\n\n                     (1)                                            (2)                                            (3)                                               (4)\n 01.   Kab. Bogor                                                  20,72                                          23,07                                          21,87\n 02.   Kab. Sukabumi                                               31,47                                          34,81                                          33,12\n 03.   Kab. Cianjur                                                32,77                                          35,71                                          34,20\n 04.\n 05.\n       Kab. Bandung\n       Kab. Garut\n                                                                   20,35\n                                                                   28,49\n                                                                                                         ps       24,14\n                                                                                                                  29,91\n                                                                                                                                                                 22,22\n                                                                                                                                                                 29,19\n 06.   Kab. Tasikmalaya                                            24,46                                   .g     29,94                                          27,23\n 07.   Kab. Ciamis                                                 34,89                                      o.  37,80                                          36,36\n 08.   Kab. Kuningan                                               34,61                                        id34,00                                          34,31\n 09.   Kab. Cirebon                                                23,23                                          29,82                                          26,44\n 10.   Kab. Majalengka                                             33,61\n                                                                                                     .b           37,68                                          35,65\n 11.   Kab. Sumedang                                               26,33                   ab                     31,09                                          28,71\n 12.   Kab. Indramayu                                              30,46                     ar                   34,76                                          32,54\n 13.   Kab. Subang                                                 19,27               //j                        20,96                                          20,11\n 14.   Kab. Purwakarta                                             25,79                                          27,87                                          26,81\n 15.   Kab. Karawang                                               16,87\n                                                                                   s:                             17,18                                          17,02\n 16.   Kab. Bekasi                                                 19,33      tp                                  18,91                                          19,13\n 17.\n 18.\n       Kab. Bandung Barat\n       Kab. Pangandaran\n                                                                   24,39\n                                                                   39,26\n                                                                             ht                                   28,16\n                                                                                                                  43,67\n                                                                                                                                                                 26,25\n                                                                                                                                                                 41,48\n 19.   Kota Bogor                                                  20,11                                          24,02                                          22,04\n 20.   Kota Sukabumi                                               21,97                                          24,81                                          23,37\n 21.   Kota Bandung                                                21,32                                          25,44                                          23,38\n 22.   Kota Cirebon                                                24,10                                          29,03                                          26,55\n 23.   Kota Bekasi                                                 23,04                                          25,21                                          24,13\n 24.   Kota Depok                                                  15,72                                          17,30                                          16,51\n 25.   Kota Cimahi                                                 19,73                                          22,90                                          21,30\n 26.   Kota Tasikmalaya                                            26,72                                          31,40                                          29,05\n 27.   Kota Banjar                                                 27,88                                          27,60                                          27,74\n                 Jawa Barat                                        23,91                                          26,66                                          25,27\n\nSumber/Source : Badan Pusat Statistik, Survei Sosial Ekonomi Nasional (Susenas) Maret/BPS-Statistics Indonesia, The March National Socio-Economic Survey (Susenas)\n\n\n\n\n                                                                                                                                                                                Kesehatan/Health   65\n\f\n\nPDF page96\n     Tabel      4.2            Angka Kesakitan menurut Kabupaten/Kota dan Jenis Kelamin, 2023\n     Table                     Morbidity Rate by Regency/Municipality and Sex, 2023\n\n\n               Kabupaten/Kota                                     Laki-laki                                     Perempuan                                 Laki-laki + Perempuan\n             Regency/Municipality                                  Male                                           Female                                      Male + Female\n\n                      (1)                                            (2)                                            (3)                                               (4)\n 01.   Kab. Bogor                                                   8,11                                            9,04                                              8,56\n 02.   Kab. Sukabumi                                               14,75                                           14,35                                             14,55\n 03.   Kab. Cianjur                                                16,10                                           15,78                                             15,95\n 04.\n 05.\n       Kab. Bandung\n       Kab. Garut\n                                                                   10,93\n                                                                   15,07\n                                                                                                         ps        12,05\n                                                                                                                   15,40\n                                                                                                                                                                     11,48\n                                                                                                                                                                     15,23\n 06.   Kab. Tasikmalaya                                            13,49                                   .g      15,56                                             14,53\n 07.   Kab. Ciamis                                                 19,64                                      o.   20,03                                             19,84\n 08.   Kab. Kuningan                                               15,99                                        id 16,24                                             16,11\n 09.   Kab. Cirebon                                                 9,24                                           12,04                                             10,61\n 10.   Kab. Majalengka                                             15,30\n                                                                                                     .b            15,63                                             15,47\n 11.   Kab. Sumedang                                               11,82                   ab                      15,64                                             13,73\n 12.   Kab. Indramayu                                              15,13                     ar                    17,17                                             16,12\n 13.   Kab. Subang                                                  7,78               //j                          8,98                                              8,37\n 14.   Kab. Purwakarta                                             11,80                                           10,60                                             11,21\n 15.   Kab. Karawang                                                7,72\n                                                                                   s:                               8,60                                              8,15\n 16.   Kab. Bekasi                                                  8,43      tp                                    7,15                                              7,79\n 17.\n 18.\n       Kab. Bandung Barat\n       Kab. Pangandaran\n                                                                   12,18\n                                                                   15,35\n                                                                           ht                                      12,13\n                                                                                                                   18,06\n                                                                                                                                                                     12,15\n                                                                                                                                                                     16,71\n 19.   Kota Bogor                                                  10,16                                           12,75                                             11,44\n 20.   Kota Sukabumi                                               10,43                                           11,31                                             10,86\n 21.   Kota Bandung                                                10,83                                           11,71                                             11,27\n 22.   Kota Cirebon                                                 6,89                                            9,03                                              7,96\n 23.   Kota Bekasi                                                  9,97                                           10,27                                             10,12\n 24.   Kota Depok                                                   6,73                                            6,77                                              6,75\n 25.   Kota Cimahi                                                  7,05                                            7,20                                              7,12\n 26.   Kota Tasikmalaya                                            14,35                                           15,45                                             14,90\n 27.   Kota Banjar                                                 12,12                                           11,33                                             11,72\n                  Jawa Barat                                       11,15                                           11,85                                             11,50\n\nSumber/Source : Badan Pusat Statistik, Survei Sosial Ekonomi Nasional (Susenas) Maret/BPS-Statistics Indonesia, The March National Socio-Economic Survey (Susenas)\n\n\n\n\n66     Statistik Kesejahteraan Rakyat Provinsi Jawa Barat/Jawa Barat Province Welfare Statistic 2023\n\f\n\nPDF page200\n   Tabel      9.7        Relative Standard Error Angka Kesakitan menurut Kabupaten/Kota dan Jenis Kelamin, 2023\n   Table                 Relative Standard Error Morbidity Rate by Regency/Municipality and Sex, 2023\n\n                                                          Laki-laki / Male                                 Perempuan / Female                           Laki-laki + Perempuan / Male + Female\n                                                                              Selang                                              Selang                                               Selang\n                                                                         Kepercayaan 95%                                     Kepercayaan 95%                                      Kepercayaan 95%\n                                                                              Confidence                                        Confidence                                           Confidence\n                                                         Relative            Interval 95%                         Relative     Interval 95%                        Relative         Interval 95%\n         Kabupaten/Kota               Estimasi Standard                                        Estimasi Standard                                Estimasi Standard\n                                                        Standard                                                 Standard                                         Standard\n       Regency/Municipality           Estimate   Error                       Batas    Batas    Estimate   Error              Batas    Batas     Estimate   Error                  Batas     Batas\n                                                        Error (%)                                                Error (%)                                        Error (%)\n                                                                             Bawah    Atas                                   Bawah    Atas                                        Bawah     Atas\n                                                                             Lower    Upper                                  Lower    Upper                                       Lower     Upper\n                                                                              Limit   Limit                                   Limit   Limit                                        Limit    Limit\n\n 01.   Kab. Bogor\n                 (1)                     (2)\n                                        8,11\n                                                    (3)\n                                                   0,78\n                                                                  (4)\n                                                                9,59\n                                                                               (5)\n                                                                              6,58\n                                                                                       (6)\n                                                                                       9,63\n                                                                                                 (7)\n                                                                                                9,04\n                                                                                                            ps\n                                                                                                           (8)\n                                                                                                          0,80\n                                                                                                                     (9)\n                                                                                                                   8,84\n                                                                                                                              (10)\n                                                                                                                              7,48\n                                                                                                                                       (11)\n                                                                                                                                      10,61\n                                                                                                                                                  (12)\n                                                                                                                                                 8,56\n                                                                                                                                                              (13)\n                                                                                                                                                              0,64\n                                                                                                                                                                         (14)\n                                                                                                                                                                        7,47\n                                                                                                                                                                                    (15)\n                                                                                                                                                                                    7,31    9,82\n                                                                                                                                                                                                (16)\n\n 02.   Kab. Sukabumi                   14,75       1,11         7,51         12,58    16,92    14,35      1,10.g   7,64      12,20    16,50     14,55         0,93      6,42       12,72   16,38\n 03.   Kab. Cianjur                    16,10       1,20         7,44         13,76    18,45    15,78      1,18   o.7,45      13,47    18,08     15,95         0,95      5,94       14,09   17,80\n 04.\n 05.\n       Kab. Bandung\n       Kab. Garut\n                                       10,93\n                                       15,07\n                                                   1,03\n                                                   1,04\n                                                                9,46\n                                                                6,87\n                                                                              8,90\n                                                                             13,04\n                                                                                      12,96\n                                                                                      17,10\n                                                                                               12,05\n                                                                                               15,40\n                                                                                                          1,09\n                                                                                                          1,21\n                                                                                                                   id\n                                                                                                                   9,03\n                                                                                                                   7,88\n                                                                                                                              9,92\n                                                                                                                             13,02\n                                                                                                                                      14,18\n                                                                                                                                      17,78\n                                                                                                                                                11,48\n                                                                                                                                                15,23\n                                                                                                                                                              0,88\n                                                                                                                                                              0,92\n                                                                                                                                                                        7,69\n                                                                                                                                                                        6,03\n                                                                                                                                                                                    9,75\n                                                                                                                                                                                   13,43\n                                                                                                                                                                                           13,21\n                                                                                                                                                                                           17,03\n 06.   Kab. Tasikmalaya                13,49       1,10         8,12         11,34    15,64    15,56     .b\n                                                                                                          1,27     8,14      13,07    18,04     14,53         1,02      7,01       12,54   16,53\n 07.   Kab. Ciamis                     19,64       1,37         7,00         16,94    22,33    ab\n                                                                                               20,03      1,41     7,03      17,27    22,79     19,84         1,22      6,17       17,44   22,23\n 08.\n 09.\n       Kab. Kuningan\n       Kab. Cirebon\n                                       15,99\n                                        9,24\n                                                   1,41\n                                                   1,18\n                                                                8,84\n                                                               12,78\n                                                                             13,22\n                                                                              6,92\n                                                                                      18,76\n                                                                                      11,55\n                                                                                                 ar\n                                                                                               16,24\n                                                                                               12,04\n                                                                                                          1,52\n                                                                                                          1,18\n                                                                                                                   9,38\n                                                                                                                   9,82\n                                                                                                                             13,25\n                                                                                                                              9,72\n                                                                                                                                      19,22\n                                                                                                                                      14,36\n                                                                                                                                                16,11\n                                                                                                                                                10,61\n                                                                                                                                                              1,29\n                                                                                                                                                              0,99\n                                                                                                                                                                        8,03\n                                                                                                                                                                        9,34\n                                                                                                                                                                                   13,58\n                                                                                                                                                                                    8,66\n                                                                                                                                                                                           18,65\n                                                                                                                                                                                           12,55\n 10.\n 11.\n       Kab. Majalengka\n       Kab. Sumedang\n                                       15,30\n                                       11,82\n                                                   1,27\n                                                   1,15\n                                                                8,32\n                                                                9,77\n                                                                             12,81\n                                                                              9,55\n                                                                                      17,80\n                                                                                      14,08\n                                                                                              //j\n                                                                                               15,63\n                                                                                               15,64\n                                                                                                          1,22\n                                                                                                          1,47\n                                                                                                                   7,82\n                                                                                                                   9,41\n                                                                                                                             13,23\n                                                                                                                             12,76\n                                                                                                                                      18,02\n                                                                                                                                      18,53\n                                                                                                                                                15,47\n                                                                                                                                                13,73\n                                                                                                                                                              0,99\n                                                                                                                                                              1,12\n                                                                                                                                                                        6,41\n                                                                                                                                                                        8,16\n                                                                                                                                                                                   13,52\n                                                                                                                                                                                   11,53\n                                                                                                                                                                                           17,41\n                                                                                                                                                                                           15,93\n 12.   Kab. Indramayu                  15,13       1,26         8,33         12,66\n                                                                                       s:\n                                                                                      17,61    17,17      1,49     8,66      14,26    20,09     16,12         1,15      7,14       13,87   18,38\n 13.   Kab. Subang                      7,78       0,91        11,73          5,99    tp\n                                                                                       9,57     8,98      1,06    11,86       6,89    11,06      8,37         0,83      9,90        6,75   10,00\n 14.\n 15.\n       Kab. Purwakarta\n       Kab. Karawang\n                                       11,80\n                                        7,72\n                                                   1,14\n                                                   0,85\n                                                                9,68\n                                                               11,00\n                                                                               ht\n                                                                              9,56\n                                                                              6,05\n                                                                                      14,04\n                                                                                       9,38\n                                                                                               10,60\n                                                                                                8,60\n                                                                                                          1,13\n                                                                                                          0,89\n                                                                                                                  10,68\n                                                                                                                  10,35\n                                                                                                                              8,38\n                                                                                                                              6,86\n                                                                                                                                      12,82\n                                                                                                                                      10,35\n                                                                                                                                                11,21\n                                                                                                                                                 8,15\n                                                                                                                                                              0,97\n                                                                                                                                                              0,69\n                                                                                                                                                                        8,63\n                                                                                                                                                                        8,43\n                                                                                                                                                                                    9,31\n                                                                                                                                                                                    6,80\n                                                                                                                                                                                           13,11\n                                                                                                                                                                                            9,50\n 16.   Kab. Bekasi                      8,43       0,87        10,29          6,73    10,13     7,15      0,73    10,17       5,72     8,57      7,79         0,64      8,15        6,55    9,04\n 17.   Kab. Bandung Barat              12,18       0,98         8,05         10,25    14,10    12,13      1,03     8,49      10,11    14,15     12,15         0,80      6,60       10,58   13,72\n 18.   Kab. Pangandaran                15,35       1,47         9,59         12,46    18,23    18,06      1,63     9,02      14,86    21,25     16,71         1,38      8,26       14,00   19,42\n 19.   Kota Bogor                      10,16       1,11        10,94          7,99    12,34    12,75      1,30    10,17      10,21    15,29     11,44         0,98      8,60        9,51   13,37\n 20.   Kota Sukabumi                   10,43       1,05        10,02          8,38    12,48    11,31      1,16    10,27       9,03    13,59     10,86         0,87      8,04        9,15   12,58\n 21.   Kota Bandung                    10,83       1,02         9,45          8,82    12,84    11,71      1,06     9,07       9,63    13,80     11,27         0,86      7,59        9,59   12,95\n 22.   Kota Cirebon                     6,89       1,06        15,41          4,81     8,97     9,03      1,16    12,83       6,76    11,31      7,96         0,94     11,81        6,11    9,80\n 23.   Kota Bekasi                      9,97       0,96         9,61          8,09    11,85    10,27      1,10    10,71       8,11    12,43     10,12         0,82      8,14        8,51   11,74\n 24.   Kota Depok                       6,73       0,72        10,67          5,32     8,14     6,77      0,79    11,62       5,23     8,31      6,75         0,62      9,19        5,53    7,97\n 25.   Kota Cimahi                      7,05       0,89        12,62          5,31     8,80     7,20      0,88    12,20       5,48     8,92      7,12         0,71      9,90        5,74    8,51\n 26.   Kota Tasikmalaya                14,35       1,48        10,33         11,44    17,25    15,45      1,31     8,51      12,88    18,03     14,90         1,19      8,02       12,56   17,24\n 27.   Kota Banjar                     12,12       1,34        11,09          9,49    14,76    11,33      1,25    10,99       8,89    13,77     11,72         1,00      8,50        9,77   13,68\n             Jawa Barat                11,15       0,23         2,06         10,70    11,61    11,85      0,24     2,03      11,38    12,32     11,50         0,19      1,69       11,12   11,88\nCatatan/Note : ¹Jika RSE >25% tetapi ≤50%, estimasi harus digunakan dengan hati-hati/If RSE >25% but ≤50%, estimate should be used with caution\n             ²Jika RSE >50%, estimasi dianggap tidak akurat/If RSE >50%, estimate considered unreliable\nSumber/Source : Badan Pusat Statistik, Survei Sosial Ekonomi Nasional (Susenas) Maret/BPS-Statistics Indonesia, The March National Socio-Economic Survey (Susenas)\n\n\n\n\n170        Statistik Kesejahteraan Rakyat Provinsi Jawa Barat 2023/Jawa Barat Province Welfare Statistics 2023\n\f",
+      "originalFileSha256": "780589a38fb683dd28d7a38b1b258042c287bc0cb33e8d4ec4d1a2c69f6b468f",
+      "originalFileBytes": 22323345,
+      "pdfPages": [
+        93,
+        95,
+        96,
+        200
+      ],
+      "acquisition": "Original official PDF acquired before interruption from fresh official publication-page download locator. Previously saved expiring locators returned400; never substituted another book."
+    },
+    {
+      "id": "general_life_ipm",
+      "publisher": "BPS Provinsi Jawa Barat",
+      "title": "Indeks Pembangunan Manusia Provinsi Jawa Barat 2023: appendix2",
+      "url": "https://jabar.bps.go.id/id/publication/2024/06/14/a2e7a86a8939c40c9d932c73/indeks-pembangunan-manusia-provinsi-jawa-barat-2023.html",
+      "accessedAt": "2026-10-29",
+      "representation": "Selected pdftotext extracted text from official PDF; hash covers retained UTF-8 text, not original PDF bytes. Full publication not redistributed.",
+      "sha256": "c0e0957c6c829487436df041d9d68a9a3328355f36dda6428afeec88da372f28",
+      "bytes": 2162,
+      "content": "PDF page86\n                           73,90       74,09       74,42   74,67\n                           73,90       74,15       74,40   74,65\n                           73,90       74,10       74,37   74,61\n                           74,19       74,38       74,67   74,92\n                           73,97       74,16       74,43   74,66\n                           73,06       73,22       73,64   73,87\n                           74,23       74,42       74,69   74,96\n                           74,25       74,43     .id\n                                                   74,67   74,91\n                           73,97       74,16       74,43   74,71\n                           73,95       74,14\n                                               .g o74,44   74,73\n                           74,30       74,49       74,77   75,04\n                           73,88\n                                      .bps\n                                       74,09       74,39   74,61\n                           73,99       74,22       74,46   74,87\n                           73,92   ba  74,11       74,40   74,67\n                           74,17      r74,35       74,63   74,90\n                             //j\n                           74,54\n                                 a     74,65       74,86   75,09\n                           74,05       74,23       74,59   74,78\n                          s:\n                           74,12       74,32       74,60   74,88\n                    ht tp  74,72       74,92       75,21   75,52\n                           74,23       74,38       74,64   74,89\n                           74,82       74,99       75,26   75,53\n                           74,43       74,59       74,87   75,17\n                           75,01       75,27       75,60   75,86\n                           74,80       74,97       75,24   75,53\n                           74,56       74,73       74,99   75,27\n                           74,34       74,52       74,80   75,08\n                           73,99       74,19       74,48   74,77\n                           74,19       74,37       74,65   74,91\n\n\n\n\n72   Indeks Pembangunan Manusia Provinsi Jawa Barat 2023\n\f",
+      "originalFileSha256": "2400d561c711cd2aea83f5f3b8b6f1983774fa108aa06704b4837d3177a809c7",
+      "originalFileBytes": 10147872,
+      "pdfPages": [
+        86
+      ],
+      "acquisition": "Original official PDF acquired before interruption from fresh official publication-page download locator. Previously saved expiring locators returned400; never substituted another book."
+    },
+    {
+      "id": "general_life_browser",
+      "publisher": "BPS Provinsi Jawa Barat",
+      "title": "Umur Harapan Hidup Saat Lahir (UHH) Hasil Long Form SP2020, selected2023",
+      "url": "https://jabar.bps.go.id/id/statistics-table/2/ODc1IzI=/umur-harapan-hidup-saat-lahir--uhh--hasil-long-form-sp2020.html",
+      "accessedAt": "2026-10-29",
+      "representation": "Recovered browser-rendered title/body/table after selecting2023 and waiting for numeric rows, not raw HTTP bytes.",
+      "sha256": "09bc6b8e74c9e09a3250ef8468aa8a826fdecef50403fc743daaa37033cd204c",
+      "bytes": 5195,
+      "content": "{\n  \"url\": \"https://jabar.bps.go.id/id/statistics-table/2/ODc1IzI=/umur-harapan-hidup-saat-lahir--uhh--hasil-long-form-sp2020.html\",\n  \"title\": \"Umur Harapan Hidup Saat Lahir (UHH) Hasil Long Form SP2020 - Tabel Statistik - Badan Pusat Statistik Provinsi Jawa Barat\",\n  \"text\": \"Badan Pusat Statistik\\nBADAN PUSAT STATISTIK\\nPROVINSI JAWA BARAT\\n\\nBeranda\\n\\nRencana Terbit\\n\\nProduk\\n\\nLayanan\\n\\nInformasi Publik\\n\\nSaksikan Rilis Berita Resmi Statistik di sini | Survei Kepuasan Masyarakat | Portal Layanan Terintegrasi BPS Provinsi Jawa Barat\\n\\nBeranda\\n\\nProduk - Tabel Statistik\\n\\nPembangunan Berkelanjutan\\n\\nUmur Harapan Hidup Saat Lahir (UHH) Hasil Long Form SP2020\\n\\nSubjek\\n\\nStatistik Demografi dan Sosial\\n\\nStatistik Ekonomi\\n\\nStatistik Lingkungan Hidup dan Multi-domain\\n\\nLingkungan\\nStatistik Regional dan Statistik Area Kecil\\nStatistik dan Indikator Multi-Domain\\nBuku Tahunan dan Ringkasan Sejenis\\nKondisi Tempat Tinggal, Kemiskinan, dan Permasalahan Sosial Lintas Sektor\\nGender dan Kelompok Populasi Khusus\\nMasyarakat Informasi\\nGlobalisasi\\nIndikator Millenium Development Goals (MDGs)\\nPembangunan Berkelanjutan\\nKewiraswastaan\\nUmur Harapan Hidup Saat Lahir (UHH) Hasil Long Form SP2020 (Tahun), 2023\\n\\nTerakhir Diperbarui : 5 November 2025\\n\\nKembali\\nUnduh\\n JSON\\n Bagikan\\noption 2023, selected.\\n2023\\nFreeze judul kolom\\n\\nWilayah Jawa Barat\\n\\n\\n\\n\\nUmur Harapan Hidup Saat Lahir (UHH) Hasil Long Form SP2020 (Tahun)\\n\\n\\n\\n\\n2023\\n\\n\\nProvinsi Jawa Barat\\t74,91\\nBogor\\t74,67\\nSukabumi\\t74,65\\nCianjur\\t74,61\\nBandung\\t74,92\\nGarut\\t74,66\\nTasikmalaya\\t73,87\\nCiamis\\t74,96\\nKuningan\\t74,91\\nCirebon\\t74,71\\nMajalengka\\t74,73\\nSumedang\\t75,04\\nIndramayu\\t74,61\\nSubang\\t74,87\\nPurwakarta\\t74,67\\nKarawang\\t74,90\\nBekasi\\t75,09\\nBandung Barat\\t74,78\\nPangandaran\\t74,88\\nKota Bogor\\t75,52\\nKota Sukabumi\\t74,89\\nKota Bandung\\t75,53\\nKota Cirebon\\t75,17\\nKota Bekasi\\t75,86\\nKota Depok\\t75,53\\nKota Cimahi\\t75,27\\nKota Tasikmalaya\\t75,08\\nKota Banjar\\t74,77\\n\\nKeterangan Data :\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\nHasil Long Form SP2020\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\nTabel Terkait\\nIndeks Umur Harapan Hidup (Long Form Sensus Penduduk 2020)\\nUmur Harapan Hidup saat Lahir (UHH) Provinsi Jawa Barat 2010-2017\\nIndeks Pembangunan Gender (IPG) Menurut Kabupaten/Kota (Umur Harapan Hidup/UHH Hasil LF SP2020)\\nIndeks Pembangunan Manusia (IPM) Menurut Kabupaten Kota (Umur Harapan Hidup/UHH Hasil LF SP2020*)\\n[Metode Baru] Komponen IPM Menurut Kabupaten/Kota di Jawa Barat (Umur Harapan Hidup/UHH Hasil SP2020)\\nIndeks Pembangunan Manusia (IPM) Menurut Kabupaten Kota dan Jenis Kelamin (Umur Harapan Hidup/UHH Hasil LF SP2020*)\\nIndeks Pembangunan Gender (IPG) Menurut Kabupaten/Kota (Umur Harapan Hidup/UHH Hasil SP2010)\\nIndeks Pembangunan Manusia (IPM) Menurut Kabupaten Kota (Umur Harapan Hidup/UHH Hasil SP2010*)\\n\\nBADAN PUSAT STATISTIK\\n\\nBadan Pusat Statistik Provinsi Jawa Barat (BPS-Statistics Jawa Barat Province)Jl. PHH. Mustofa No. 43 Bandung 40124\\n\\nJawa Barat - Indonesia\\n\\nTelp: +62 22 7272595\\n\\nMailbox: bps3200@bps.go.id; pst3200@bps.go.id\\n\\nWhatsapp : 0851-7992-8832 (Chat Only)\\n\\nManual\\n\\nS&K\\n\\nDaftar Tautan\\n\\nTentang Kami\\n\\nProfil BPS\\nPPID\\nKebijakan Diseminasi\\n\\nTautan Lainnya\\n\\nASEAN Stats\\nReformasi Birokrasi\\nLayanan Pengadaan Secara Elektronik\\nPoliteknik Statistika STIS\\nPusdiklat BPS\\nJDIH BPS\\nGovernment Public Relation\\n\\n28 Oktober 2026, 09:52 WIB\\n\\nBNPB Intensifkan Penanganan Karhutla, 51 Ribu Personel Dikerahkan di Empat Provinsi\\n\\n21 Oktober 2026, 16:44 WIB\\n\\nFCE Meeting 2026 Siapkan Jakarta Vision untuk Ekonomi Kreatif Global\\n\\n21 Oktober 2026, 16:40 WIB\\n\\nRatusan Hektar Karhutla Berangsur Padam, Inovasi OMC Dry Ice Efektif Urai Asap\\n\\n20 Oktober 2026, 14:07 WIB\\n\\nDua Tahun Pemerintahan Presiden Prabowo, Investasi Tembus Rp3.923,2 Triliun dan Serap 5,49 Juta Tenaga Kerja\\n\\n20 Oktober 2026, 08:40 WIB\\n\\nDua Tahun Asta Cita, Jutaan Umat Rasakan Manfaat Kinerja Kemenag\\n\\n19 Oktober 2026, 10:30 WIB\\n\\nIndonesia Siap Gelar WCCE 2026 Jakarta Perkuat Diplomasi Ekraf Global\\n\\n19 Oktober 2026, 09:35 WIB\\n\\nDua Hari OMC 2,4 Ton Dry Ice Disemai di Langit Sumsel\\n\\n16 Oktober 2026, 20:01 WIB\\n\\nPenumpang Internasional Kini Bisa Pesan Whoosh Lewat All Indonesia\\n\\n16 Oktober 2026, 18:14 WIB\\n\\nWCCE 2026 Perkuat Kepemimpinan Ekonomi Kreatif Indonesia di Tingkat Global\\n\\n16 Oktober 2026, 12:10 WIB\\n\\nBNPB Semai 1.600 Kilogram Dry Ice untuk Atasi Asap Karhutla Sumsel\\n\\nSumber dari Kementerian Komunikasi dan Digital\\n\\nHak Cipta © 2023 Badan Pusat Statistik\",\n  \"table\": \"Wilayah Jawa Barat\\n\\n\\n\\n\\nUmur Harapan Hidup Saat Lahir (UHH) Hasil Long Form SP2020 (Tahun)\\n\\n\\n\\n\\n2023\\n\\n\\nProvinsi Jawa Barat\\t74,91\\nBogor\\t74,67\\nSukabumi\\t74,65\\nCianjur\\t74,61\\nBandung\\t74,92\\nGarut\\t74,66\\nTasikmalaya\\t73,87\\nCiamis\\t74,96\\nKuningan\\t74,91\\nCirebon\\t74,71\\nMajalengka\\t74,73\\nSumedang\\t75,04\\nIndramayu\\t74,61\\nSubang\\t74,87\\nPurwakarta\\t74,67\\nKarawang\\t74,90\\nBekasi\\t75,09\\nBandung Barat\\t74,78\\nPangandaran\\t74,88\\nKota Bogor\\t75,52\\nKota Sukabumi\\t74,89\\nKota Bandung\\t75,53\\nKota Cirebon\\t75,17\\nKota Bekasi\\t75,86\\nKota Depok\\t75,53\\nKota Cimahi\\t75,27\\nKota Tasikmalaya\\t75,08\\nKota Banjar\\t74,77\"\n}"
+    },
+    {
+      "id": "general_disability_browser",
+      "publisher": "BPS Provinsi Jawa Barat",
+      "title": "Jumlah Penduduk Disabilitas Jawa Barat menurut Kabupaten/Kota, latest2022",
+      "url": "https://jabar.bps.go.id/id/statistics-table/2/ODk4IzI=/jumlah-penduduk-disabilitas-jawa-barat-menurut-kabupaten-kota.html",
+      "accessedAt": "2026-10-29",
+      "representation": "Recovered browser-rendered title/body/table, not raw HTTP bytes.",
+      "sha256": "6098b51cb0ed584be4672aecbffbb973867165e7739313e912bce7ca837eb429",
+      "bytes": 7217,
+      "content": "{\n  \"url\": \"https://jabar.bps.go.id/id/statistics-table/2/ODk4IzI=/jumlah-penduduk-disabilitas-jawa-barat-menurut-kabupaten-kota.html\",\n  \"title\": \"Jumlah Penduduk Disabilitas Jawa Barat menurut Kabupaten/Kota - Tabel Statistik - Badan Pusat Statistik Provinsi Jawa Barat\",\n  \"text\": \"Badan Pusat Statistik\\nBADAN PUSAT STATISTIK\\nPROVINSI JAWA BARAT\\n\\nBeranda\\n\\nRencana Terbit\\n\\nProduk\\n\\nLayanan\\n\\nInformasi Publik\\n\\nSaksikan Rilis Berita Resmi Statistik di sini | Survei Kepuasan Masyarakat | Portal Layanan Terintegrasi BPS Provinsi Jawa Barat\\n\\nBeranda\\n\\nProduk - Tabel Statistik\\n\\nKependudukan dan Migrasi\\n\\nJumlah Penduduk Disabilitas Jawa Barat menurut Kabupaten/Kota\\n\\nSubjek\\n\\nStatistik Demografi dan Sosial\\n\\nKependudukan dan Migrasi\\nTenaga Kerja\\nPendidikan\\nKesehatan\\nKonsumsi dan Pendapatan\\nPerlindungan Sosial\\nPemukiman dan Perumahan\\nHukum dan Kriminal\\nBudaya\\nAktivitas Politik dan Komunitas Lainnya\\nPenggunaan Waktu\\n\\nStatistik Ekonomi\\n\\nStatistik Lingkungan Hidup dan Multi-domain\\n\\nJumlah Penduduk Disabilitas Jawa Barat menurut Kabupaten/Kota (Jiwa), 2022\\n\\nTerakhir Diperbarui : 29 Februari 2024\\n\\nKembali\\nUnduh\\n JSON\\n Bagikan\\n2022\\nFreeze judul kolom\\n\\nKabupaten/Kota\\n\\n\\n\\n\\nJumlah Penduduk Disabilitas Jawa Barat menurut Kabupaten/Kota (Jiwa)\\n\\n\\n\\n\\nDisabilitas Fisik\\n\\n\\t\\n\\nDisabilitas Mental/ Jiwa\\n\\n\\t\\n\\nDisabilitas Fisik dan Mental\\n\\n\\t\\n\\nDisabilitas Netra/ Buta\\n\\n\\t\\n\\nDisabilitas Rungu/ Wicara\\n\\n\\t\\n\\nDisabilitas Lainnya\\n\\n\\t\\n\\nJumlah\\n\\n\\n\\n\\n2022\\n\\n\\t\\n\\n2022\\n\\n\\t\\n\\n2022\\n\\n\\t\\n\\n2022\\n\\n\\t\\n\\n2022\\n\\n\\t\\n\\n2022\\n\\n\\t\\n\\n2022\\n\\n\\nProvinsi Jawa Barat\\t16.308\\t26.351\\t2.073\\t5.979\\t10.019\\t11.835\\t72.565\\nBogor\\t546\\t1.459\\t81\\t351\\t630\\t683\\t3.750\\nSukabumi\\t287\\t1.038\\t51\\t222\\t331\\t213\\t2.142\\nCianjur\\t427\\t1.237\\t35\\t266\\t336\\t180\\t2.481\\nBandung\\t696\\t2.326\\t83\\t304\\t625\\t410\\t4.444\\nGarut\\t551\\t1.595\\t96\\t275\\t604\\t218\\t3.339\\nTasikmalaya\\t366\\t858\\t43\\t249\\t328\\t96\\t1.940\\nCiamis\\t5.082\\t1.452\\t87\\t937\\t703\\t278\\t8.539\\nKuningan\\t236\\t1.448\\t147\\t160\\t343\\t206\\t2.540\\nCirebon\\t198\\t994\\t30\\t119\\t348\\t137\\t1.826\\nMajalengka\\t308\\t700\\t58\\t134\\t303\\t97\\t1.600\\nSumedang\\t219\\t955\\t31\\t162\\t360\\t96\\t1.823\\nIndramayu\\t312\\t664\\t83\\t224\\t393\\t116\\t1.792\\nSubang\\t139\\t495\\t16\\t111\\t192\\t100\\t1.053\\nPurwakarta\\t119\\t421\\t19\\t89\\t174\\t49\\t871\\nKarawang\\t291\\t701\\t64\\t187\\t324\\t170\\t1.737\\nBekasi\\t257\\t798\\t88\\t241\\t459\\t293\\t2.136\\nBandung Barat\\t173\\t841\\t37\\t117\\t273\\t62\\t1.503\\nPangandaran\\t2.749\\t366\\t29\\t248\\t232\\t72\\t3.696\\nKota Bogor\\t70\\t603\\t22\\t101\\t196\\t70\\t1.062\\nKota Sukabumi\\t78\\t197\\t8\\t49\\t70\\t26\\t428\\nKota Bandung\\t1.917\\t2.831\\t650\\t702\\t1.155\\t1.765\\t9.020\\nKota Cirebon\\t96\\t327\\t41\\t50\\t150\\t54\\t718\\nKota Bekasi\\t228\\t1.118\\t73\\t220\\t501\\t5.804\\t7.944\\nKota Depok\\t271\\t1.152\\t88\\t176\\t457\\t318\\t2.462\\nKota Cimahi\\t317\\t738\\t33\\t123\\t220\\t96\\t1.527\\nKota Tasikmalaya\\t230\\t691\\t67\\t106\\t209\\t201\\t1.504\\nKota Banjar\\t145\\t346\\t13\\t56\\t103\\t25\\t688\\n\\nKeterangan Data :\\n\\nSumber: Dinas Kependudukan dan Pencatatan Sipil Provinsi Jawa Barat (Open Data Jabar)\\nTabel Terkait\\nJumlah dan Persentase Penduduk Miskin Menurut Kabupaten/Kota di Provinsi Jawa Barat\\nJumlah Kecamatan Menurut Kabupaten Kota di jawa Barat\\nPersentase Penduduk Miskin Menurut Kabupaten/Kota di Jawa Barat (Persen)\\nProyeksi Penduduk Menurut Kabupaten/Kota di Jawa Barat, 2010-2018\\nJumlah Kecamatan Menurut Kabupaten/Kota di Provinsi Jawa Barat\\nJumlah Penduduk Miskin Menurut Kabupaten/Kota di Jawa Barat (Ribu Orang), 2002-2016\\nJumlah Tenaga Kesehatan Menurut Kabupaten/Kota di Provinsi Jawa Barat\\nJumlah Ternak yang Keluar dari Jawa Barat Menurut Kabupaten/Kota dan Jenis Ternak di Provinsi Jawa Barat (Ekor), 2016\\n\\nBADAN PUSAT STATISTIK\\n\\nBadan Pusat Statistik Provinsi Jawa Barat (BPS-Statistics Jawa Barat Province)Jl. PHH. Mustofa No. 43 Bandung 40124\\n\\nJawa Barat - Indonesia\\n\\nTelp: +62 22 7272595\\n\\nMailbox: bps3200@bps.go.id; pst3200@bps.go.id\\n\\nWhatsapp : 0851-7992-8832 (Chat Only)\\n\\nManual\\n\\nS&K\\n\\nDaftar Tautan\\n\\nTentang Kami\\n\\nProfil BPS\\nPPID\\nKebijakan Diseminasi\\n\\nTautan Lainnya\\n\\nASEAN Stats\\nReformasi Birokrasi\\nLayanan Pengadaan Secara Elektronik\\nPoliteknik Statistika STIS\\nPusdiklat BPS\\nJDIH BPS\\nGovernment Public Relation\\n\\n28 Oktober 2026, 09:52 WIB\\n\\nBNPB Intensifkan Penanganan Karhutla, 51 Ribu Personel Dikerahkan di Empat Provinsi\\n\\n21 Oktober 2026, 16:44 WIB\\n\\nFCE Meeting 2026 Siapkan Jakarta Vision untuk Ekonomi Kreatif Global\\n\\n21 Oktober 2026, 16:40 WIB\\n\\nRatusan Hektar Karhutla Berangsur Padam, Inovasi OMC Dry Ice Efektif Urai Asap\\n\\n20 Oktober 2026, 14:07 WIB\\n\\nDua Tahun Pemerintahan Presiden Prabowo, Investasi Tembus Rp3.923,2 Triliun dan Serap 5,49 Juta Tenaga Kerja\\n\\n20 Oktober 2026, 08:40 WIB\\n\\nDua Tahun Asta Cita, Jutaan Umat Rasakan Manfaat Kinerja Kemenag\\n\\n19 Oktober 2026, 10:30 WIB\\n\\nIndonesia Siap Gelar WCCE 2026 Jakarta Perkuat Diplomasi Ekraf Global\\n\\n19 Oktober 2026, 09:35 WIB\\n\\nDua Hari OMC 2,4 Ton Dry Ice Disemai di Langit Sumsel\\n\\n16 Oktober 2026, 20:01 WIB\\n\\nPenumpang Internasional Kini Bisa Pesan Whoosh Lewat All Indonesia\\n\\n16 Oktober 2026, 18:14 WIB\\n\\nWCCE 2026 Perkuat Kepemimpinan Ekonomi Kreatif Indonesia di Tingkat Global\\n\\n16 Oktober 2026, 12:10 WIB\\n\\nBNPB Semai 1.600 Kilogram Dry Ice untuk Atasi Asap Karhutla Sumsel\\n\\nSumber dari Kementerian Komunikasi dan Digital\\n\\nHak Cipta © 2023 Badan Pusat Statistik\\n\\nTutup\",\n  \"table\": \"Kabupaten/Kota\\n\\n\\n\\n\\nJumlah Penduduk Disabilitas Jawa Barat menurut Kabupaten/Kota (Jiwa)\\n\\n\\n\\n\\nDisabilitas Fisik\\n\\n\\t\\n\\nDisabilitas Mental/ Jiwa\\n\\n\\t\\n\\nDisabilitas Fisik dan Mental\\n\\n\\t\\n\\nDisabilitas Netra/ Buta\\n\\n\\t\\n\\nDisabilitas Rungu/ Wicara\\n\\n\\t\\n\\nDisabilitas Lainnya\\n\\n\\t\\n\\nJumlah\\n\\n\\n\\n\\n2022\\n\\n\\t\\n\\n2022\\n\\n\\t\\n\\n2022\\n\\n\\t\\n\\n2022\\n\\n\\t\\n\\n2022\\n\\n\\t\\n\\n2022\\n\\n\\t\\n\\n2022\\n\\n\\nProvinsi Jawa Barat\\t16.308\\t26.351\\t2.073\\t5.979\\t10.019\\t11.835\\t72.565\\nBogor\\t546\\t1.459\\t81\\t351\\t630\\t683\\t3.750\\nSukabumi\\t287\\t1.038\\t51\\t222\\t331\\t213\\t2.142\\nCianjur\\t427\\t1.237\\t35\\t266\\t336\\t180\\t2.481\\nBandung\\t696\\t2.326\\t83\\t304\\t625\\t410\\t4.444\\nGarut\\t551\\t1.595\\t96\\t275\\t604\\t218\\t3.339\\nTasikmalaya\\t366\\t858\\t43\\t249\\t328\\t96\\t1.940\\nCiamis\\t5.082\\t1.452\\t87\\t937\\t703\\t278\\t8.539\\nKuningan\\t236\\t1.448\\t147\\t160\\t343\\t206\\t2.540\\nCirebon\\t198\\t994\\t30\\t119\\t348\\t137\\t1.826\\nMajalengka\\t308\\t700\\t58\\t134\\t303\\t97\\t1.600\\nSumedang\\t219\\t955\\t31\\t162\\t360\\t96\\t1.823\\nIndramayu\\t312\\t664\\t83\\t224\\t393\\t116\\t1.792\\nSubang\\t139\\t495\\t16\\t111\\t192\\t100\\t1.053\\nPurwakarta\\t119\\t421\\t19\\t89\\t174\\t49\\t871\\nKarawang\\t291\\t701\\t64\\t187\\t324\\t170\\t1.737\\nBekasi\\t257\\t798\\t88\\t241\\t459\\t293\\t2.136\\nBandung Barat\\t173\\t841\\t37\\t117\\t273\\t62\\t1.503\\nPangandaran\\t2.749\\t366\\t29\\t248\\t232\\t72\\t3.696\\nKota Bogor\\t70\\t603\\t22\\t101\\t196\\t70\\t1.062\\nKota Sukabumi\\t78\\t197\\t8\\t49\\t70\\t26\\t428\\nKota Bandung\\t1.917\\t2.831\\t650\\t702\\t1.155\\t1.765\\t9.020\\nKota Cirebon\\t96\\t327\\t41\\t50\\t150\\t54\\t718\\nKota Bekasi\\t228\\t1.118\\t73\\t220\\t501\\t5.804\\t7.944\\nKota Depok\\t271\\t1.152\\t88\\t176\\t457\\t318\\t2.462\\nKota Cimahi\\t317\\t738\\t33\\t123\\t220\\t96\\t1.527\\nKota Tasikmalaya\\t230\\t691\\t67\\t106\\t209\\t201\\t1.504\\nKota Banjar\\t145\\t346\\t13\\t56\\t103\\t25\\t688\"\n}"
+    }
+  ],
+  "series": [
+    {
+      "id": "life_expectancy_lfsp2020",
+      "name": "Life expectancy at birth (LFSP2020 basis)",
+      "concept": "Expected years of life under official mortality schedule, not IPM aggregate.",
+      "family": "General Population Health",
+      "statisticType": "modeled_life_expectancy",
+      "year": 2023,
+      "unit": "years",
+      "rawOrDerived": "published_rate",
+      "source": {
+        "publisher": "BPS Provinsi Jawa Barat",
+        "title": "Indeks Pembangunan Manusia Provinsi Jawa Barat 2023",
+        "url": "https://jabar.bps.go.id/id/publication/2024/06/14/a2e7a86a8939c40c9d932c73/indeks-pembangunan-manusia-provinsi-jawa-barat-2023.html",
+        "table": "Appendix2: Usia Harapan Hidup (UHH) Menurut Kabupaten/Kota Tahun2020–2023,2023 column, printed72",
+        "artifactId": "general_life_ipm",
+        "pdfPage": 86,
+        "accessedAt": "2026-10-29"
+      },
+      "numerator": {
+        "definition": "Not a simple case numerator. Official life-table mortality schedule/model; no new CIVX calculation."
+      },
+      "denominator": {
+        "definition": "Not general-population division. Synthetic life-table cohort at birth; LFSP2020-based BPS method."
+      },
+      "formula": "Official published estimate, no CIVX derivation.",
+      "direction": "Higher years imply lower broad mortality-related health pressure.",
+      "detectionBias": "Official demographic estimate, not healthcare screening/notification intensity. Modeling, mortality-data quality and limited short-term responsiveness remain.",
+      "caveats": [
+        "LFSP2020 basis updated series must not be mixed with SP2010-based UHH.",
+        "IPM contains UHH as a component. Production still has IPM; this recommendation only applies to a next model that follows the prior audit and removes aggregate IPM.",
+        "A 2023 estimate is not an observed2023 mortality cohort or real-time outbreak measure.",
+        "Narrow absolute spread is not a reason to inflate small differences or claim exact ranks. No district CI published in this appendix."
+      ],
+      "uncertainty": "District CIs not published in acquired official appendix; do not infer statistical significance of small differences.",
+      "correlationEligible": true,
+      "recommendation": {
+        "status": "CORE",
+        "reason": "Broad long-run health outcome,27 complete2023 estimates. Use standalone only in proposed HDI-free next methodology; do not add beside production IPM."
+      },
+      "observations": [
+        {
+          "regionId": "3201",
+          "value": 74.67,
+          "rawValue": 74.67,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_life_ipm",
+            "locator": "Appendix2: Usia Harapan Hidup (UHH) Menurut Kabupaten/Kota Tahun2020–2023,2023 column, printed72; 2023; Kabupaten Bogor (3201)",
+            "row": {
+              "region": "Kabupaten Bogor",
+              "value": 74.67
+            }
+          }
+        },
+        {
+          "regionId": "3202",
+          "value": 74.65,
+          "rawValue": 74.65,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_life_ipm",
+            "locator": "Appendix2: Usia Harapan Hidup (UHH) Menurut Kabupaten/Kota Tahun2020–2023,2023 column, printed72; 2023; Kabupaten Sukabumi (3202)",
+            "row": {
+              "region": "Kabupaten Sukabumi",
+              "value": 74.65
+            }
+          }
+        },
+        {
+          "regionId": "3203",
+          "value": 74.61,
+          "rawValue": 74.61,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_life_ipm",
+            "locator": "Appendix2: Usia Harapan Hidup (UHH) Menurut Kabupaten/Kota Tahun2020–2023,2023 column, printed72; 2023; Kabupaten Cianjur (3203)",
+            "row": {
+              "region": "Kabupaten Cianjur",
+              "value": 74.61
+            }
+          }
+        },
+        {
+          "regionId": "3204",
+          "value": 74.92,
+          "rawValue": 74.92,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_life_ipm",
+            "locator": "Appendix2: Usia Harapan Hidup (UHH) Menurut Kabupaten/Kota Tahun2020–2023,2023 column, printed72; 2023; Kabupaten Bandung (3204)",
+            "row": {
+              "region": "Kabupaten Bandung",
+              "value": 74.92
+            }
+          }
+        },
+        {
+          "regionId": "3205",
+          "value": 74.66,
+          "rawValue": 74.66,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_life_ipm",
+            "locator": "Appendix2: Usia Harapan Hidup (UHH) Menurut Kabupaten/Kota Tahun2020–2023,2023 column, printed72; 2023; Kabupaten Garut (3205)",
+            "row": {
+              "region": "Kabupaten Garut",
+              "value": 74.66
+            }
+          }
+        },
+        {
+          "regionId": "3206",
+          "value": 73.87,
+          "rawValue": 73.87,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_life_ipm",
+            "locator": "Appendix2: Usia Harapan Hidup (UHH) Menurut Kabupaten/Kota Tahun2020–2023,2023 column, printed72; 2023; Kabupaten Tasikmalaya (3206)",
+            "row": {
+              "region": "Kabupaten Tasikmalaya",
+              "value": 73.87
+            }
+          }
+        },
+        {
+          "regionId": "3207",
+          "value": 74.96,
+          "rawValue": 74.96,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_life_ipm",
+            "locator": "Appendix2: Usia Harapan Hidup (UHH) Menurut Kabupaten/Kota Tahun2020–2023,2023 column, printed72; 2023; Kabupaten Ciamis (3207)",
+            "row": {
+              "region": "Kabupaten Ciamis",
+              "value": 74.96
+            }
+          }
+        },
+        {
+          "regionId": "3208",
+          "value": 74.91,
+          "rawValue": 74.91,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_life_ipm",
+            "locator": "Appendix2: Usia Harapan Hidup (UHH) Menurut Kabupaten/Kota Tahun2020–2023,2023 column, printed72; 2023; Kabupaten Kuningan (3208)",
+            "row": {
+              "region": "Kabupaten Kuningan",
+              "value": 74.91
+            }
+          }
+        },
+        {
+          "regionId": "3209",
+          "value": 74.71,
+          "rawValue": 74.71,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_life_ipm",
+            "locator": "Appendix2: Usia Harapan Hidup (UHH) Menurut Kabupaten/Kota Tahun2020–2023,2023 column, printed72; 2023; Kabupaten Cirebon (3209)",
+            "row": {
+              "region": "Kabupaten Cirebon",
+              "value": 74.71
+            }
+          }
+        },
+        {
+          "regionId": "3210",
+          "value": 74.73,
+          "rawValue": 74.73,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_life_ipm",
+            "locator": "Appendix2: Usia Harapan Hidup (UHH) Menurut Kabupaten/Kota Tahun2020–2023,2023 column, printed72; 2023; Kabupaten Majalengka (3210)",
+            "row": {
+              "region": "Kabupaten Majalengka",
+              "value": 74.73
+            }
+          }
+        },
+        {
+          "regionId": "3211",
+          "value": 75.04,
+          "rawValue": 75.04,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_life_ipm",
+            "locator": "Appendix2: Usia Harapan Hidup (UHH) Menurut Kabupaten/Kota Tahun2020–2023,2023 column, printed72; 2023; Kabupaten Sumedang (3211)",
+            "row": {
+              "region": "Kabupaten Sumedang",
+              "value": 75.04
+            }
+          }
+        },
+        {
+          "regionId": "3212",
+          "value": 74.61,
+          "rawValue": 74.61,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_life_ipm",
+            "locator": "Appendix2: Usia Harapan Hidup (UHH) Menurut Kabupaten/Kota Tahun2020–2023,2023 column, printed72; 2023; Kabupaten Indramayu (3212)",
+            "row": {
+              "region": "Kabupaten Indramayu",
+              "value": 74.61
+            }
+          }
+        },
+        {
+          "regionId": "3213",
+          "value": 74.87,
+          "rawValue": 74.87,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_life_ipm",
+            "locator": "Appendix2: Usia Harapan Hidup (UHH) Menurut Kabupaten/Kota Tahun2020–2023,2023 column, printed72; 2023; Kabupaten Subang (3213)",
+            "row": {
+              "region": "Kabupaten Subang",
+              "value": 74.87
+            }
+          }
+        },
+        {
+          "regionId": "3214",
+          "value": 74.67,
+          "rawValue": 74.67,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_life_ipm",
+            "locator": "Appendix2: Usia Harapan Hidup (UHH) Menurut Kabupaten/Kota Tahun2020–2023,2023 column, printed72; 2023; Kabupaten Purwakarta (3214)",
+            "row": {
+              "region": "Kabupaten Purwakarta",
+              "value": 74.67
+            }
+          }
+        },
+        {
+          "regionId": "3215",
+          "value": 74.9,
+          "rawValue": 74.9,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_life_ipm",
+            "locator": "Appendix2: Usia Harapan Hidup (UHH) Menurut Kabupaten/Kota Tahun2020–2023,2023 column, printed72; 2023; Kabupaten Karawang (3215)",
+            "row": {
+              "region": "Kabupaten Karawang",
+              "value": 74.9
+            }
+          }
+        },
+        {
+          "regionId": "3216",
+          "value": 75.09,
+          "rawValue": 75.09,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_life_ipm",
+            "locator": "Appendix2: Usia Harapan Hidup (UHH) Menurut Kabupaten/Kota Tahun2020–2023,2023 column, printed72; 2023; Kabupaten Bekasi (3216)",
+            "row": {
+              "region": "Kabupaten Bekasi",
+              "value": 75.09
+            }
+          }
+        },
+        {
+          "regionId": "3217",
+          "value": 74.78,
+          "rawValue": 74.78,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_life_ipm",
+            "locator": "Appendix2: Usia Harapan Hidup (UHH) Menurut Kabupaten/Kota Tahun2020–2023,2023 column, printed72; 2023; Kabupaten Bandung Barat (3217)",
+            "row": {
+              "region": "Kabupaten Bandung Barat",
+              "value": 74.78
+            }
+          }
+        },
+        {
+          "regionId": "3218",
+          "value": 74.88,
+          "rawValue": 74.88,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_life_ipm",
+            "locator": "Appendix2: Usia Harapan Hidup (UHH) Menurut Kabupaten/Kota Tahun2020–2023,2023 column, printed72; 2023; Kabupaten Pangandaran (3218)",
+            "row": {
+              "region": "Kabupaten Pangandaran",
+              "value": 74.88
+            }
+          }
+        },
+        {
+          "regionId": "3271",
+          "value": 75.52,
+          "rawValue": 75.52,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_life_ipm",
+            "locator": "Appendix2: Usia Harapan Hidup (UHH) Menurut Kabupaten/Kota Tahun2020–2023,2023 column, printed72; 2023; Kota Bogor (3271)",
+            "row": {
+              "region": "Kota Bogor",
+              "value": 75.52
+            }
+          }
+        },
+        {
+          "regionId": "3272",
+          "value": 74.89,
+          "rawValue": 74.89,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_life_ipm",
+            "locator": "Appendix2: Usia Harapan Hidup (UHH) Menurut Kabupaten/Kota Tahun2020–2023,2023 column, printed72; 2023; Kota Sukabumi (3272)",
+            "row": {
+              "region": "Kota Sukabumi",
+              "value": 74.89
+            }
+          }
+        },
+        {
+          "regionId": "3273",
+          "value": 75.53,
+          "rawValue": 75.53,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_life_ipm",
+            "locator": "Appendix2: Usia Harapan Hidup (UHH) Menurut Kabupaten/Kota Tahun2020–2023,2023 column, printed72; 2023; Kota Bandung (3273)",
+            "row": {
+              "region": "Kota Bandung",
+              "value": 75.53
+            }
+          }
+        },
+        {
+          "regionId": "3274",
+          "value": 75.17,
+          "rawValue": 75.17,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_life_ipm",
+            "locator": "Appendix2: Usia Harapan Hidup (UHH) Menurut Kabupaten/Kota Tahun2020–2023,2023 column, printed72; 2023; Kota Cirebon (3274)",
+            "row": {
+              "region": "Kota Cirebon",
+              "value": 75.17
+            }
+          }
+        },
+        {
+          "regionId": "3275",
+          "value": 75.86,
+          "rawValue": 75.86,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_life_ipm",
+            "locator": "Appendix2: Usia Harapan Hidup (UHH) Menurut Kabupaten/Kota Tahun2020–2023,2023 column, printed72; 2023; Kota Bekasi (3275)",
+            "row": {
+              "region": "Kota Bekasi",
+              "value": 75.86
+            }
+          }
+        },
+        {
+          "regionId": "3276",
+          "value": 75.53,
+          "rawValue": 75.53,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_life_ipm",
+            "locator": "Appendix2: Usia Harapan Hidup (UHH) Menurut Kabupaten/Kota Tahun2020–2023,2023 column, printed72; 2023; Kota Depok (3276)",
+            "row": {
+              "region": "Kota Depok",
+              "value": 75.53
+            }
+          }
+        },
+        {
+          "regionId": "3277",
+          "value": 75.27,
+          "rawValue": 75.27,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_life_ipm",
+            "locator": "Appendix2: Usia Harapan Hidup (UHH) Menurut Kabupaten/Kota Tahun2020–2023,2023 column, printed72; 2023; Kota Cimahi (3277)",
+            "row": {
+              "region": "Kota Cimahi",
+              "value": 75.27
+            }
+          }
+        },
+        {
+          "regionId": "3278",
+          "value": 75.08,
+          "rawValue": 75.08,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_life_ipm",
+            "locator": "Appendix2: Usia Harapan Hidup (UHH) Menurut Kabupaten/Kota Tahun2020–2023,2023 column, printed72; 2023; Kota Tasikmalaya (3278)",
+            "row": {
+              "region": "Kota Tasikmalaya",
+              "value": 75.08
+            }
+          }
+        },
+        {
+          "regionId": "3279",
+          "value": 74.77,
+          "rawValue": 74.77,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_life_ipm",
+            "locator": "Appendix2: Usia Harapan Hidup (UHH) Menurut Kabupaten/Kota Tahun2020–2023,2023 column, printed72; 2023; Kota Banjar (3279)",
+            "row": {
+              "region": "Kota Banjar",
+              "value": 74.77
+            }
+          }
+        }
+      ],
+      "corroborationArtifactId": "general_life_browser"
+    },
+    {
+      "id": "morbidity_activity_limiting",
+      "name": "Activity-limiting morbidity in previous month",
+      "concept": "Residents with self-reported health complaints disrupting work, school or daily activities; March2023 Susenas reference month.",
+      "family": "General Population Health",
+      "statisticType": "survey_morbidity",
+      "year": 2023,
+      "unit": "percent of residents",
+      "rawOrDerived": "published_rate",
+      "source": {
+        "publisher": "BPS Provinsi Jawa Barat",
+        "title": "Statistik Kesejahteraan Rakyat Provinsi Jawa Barat 2023",
+        "url": "https://jabar.bps.go.id/id/publication/2023/12/28/8a2667bb40625076d8ee9c30/statistik-kesejahteraan-rakyat-provinsi-jawa-barat-2023.html",
+        "table": "4.2, both-sex column(4), printed66; precision9.7 printed170",
+        "artifactId": "general_welfare",
+        "pdfPage": 96,
+        "accessedAt": "2026-10-29"
+      },
+      "numerator": {
+        "definition": "Survey-weighted residents reporting complaints that interfered with usual activities during month before interview.",
+        "source": "Technical note sick/sakit, table4.2."
+      },
+      "denominator": {
+        "definition": "All survey-weighted residents represented by Susenas March2023, not only clinic users or complainants.",
+        "source": "BPS table4.2; rate of population."
+      },
+      "formula": "Published survey-weighted percent; no division by unrelated administrative population.",
+      "direction": "Higher means more reported activity-limiting illness in survey reference month.",
+      "detectionBias": "Self/proxy reporting, symptom awareness, age structure and recall differ; not chiefly screening intensity. This limitation is explicitly accepted for the literal functional outcome.",
+      "caveats": [
+        "Not diagnosed disease prevalence, yearly incidence, or disease-specific burden.",
+        "Reference month before March2023 interview, not whole-calendar2023 average.",
+        "Do not age-standardize without official age-specific data; age composition can differ.",
+        "Survey precision limits ranks; do not convert rounded percentages to integer case counts."
+      ],
+      "uncertainty": "Published standard errors, relative standard errors and95% confidence intervals retained for all27; complex survey. No independence or binomial-SE assumption.",
+      "correlationEligible": true,
+      "recommendation": {
+        "status": "CORE",
+        "reason": "Comparable population survey outcome, not service-use count;27/27 numeric values with published district precision. Distinct short-term functional morbidity beside long-run survival."
+      },
+      "observations": [
+        {
+          "regionId": "3201",
+          "value": 8.56,
+          "rawValue": 8.56,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.2, both-sex column(4), printed66; precision9.7 printed170; 2023; Kabupaten Bogor (3201)",
+            "row": "01. Kab. Bogor 8,11 9,04 8,56"
+          },
+          "uncertainty": {
+            "standardErrorPercentagePoints": 0.64,
+            "relativeStandardErrorPercent": 7.47,
+            "confidenceLevel": 0.95,
+            "lower": 7.31,
+            "upper": 9.82,
+            "sourceArtifactId": "general_welfare",
+            "locator": "9.7, both-sex columns12–16,PDF200,Kabupaten Bogor",
+            "sourceRow": "Kab. Bogor 8,11 0,78 9,59 6,58 9,63 9,04 0,80 8,84 7,48 10,61 8,56 0,64 7,47 7,31 9,82"
+          }
+        },
+        {
+          "regionId": "3202",
+          "value": 14.55,
+          "rawValue": 14.55,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.2, both-sex column(4), printed66; precision9.7 printed170; 2023; Kabupaten Sukabumi (3202)",
+            "row": "02. Kab. Sukabumi 14,75 14,35 14,55"
+          },
+          "uncertainty": {
+            "standardErrorPercentagePoints": 0.93,
+            "relativeStandardErrorPercent": 6.42,
+            "confidenceLevel": 0.95,
+            "lower": 12.72,
+            "upper": 16.38,
+            "sourceArtifactId": "general_welfare",
+            "locator": "9.7, both-sex columns12–16,PDF200,Kabupaten Sukabumi",
+            "sourceRow": "Kab. Sukabumi 14,75 1,11 7,51 12,58 16,92 14,35 1,10 7,64 12,20 16,50 14,55 0,93 6,42 12,72 16,38"
+          }
+        },
+        {
+          "regionId": "3203",
+          "value": 15.95,
+          "rawValue": 15.95,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.2, both-sex column(4), printed66; precision9.7 printed170; 2023; Kabupaten Cianjur (3203)",
+            "row": "03. Kab. Cianjur 16,10 15,78 15,95"
+          },
+          "uncertainty": {
+            "standardErrorPercentagePoints": 0.95,
+            "relativeStandardErrorPercent": 5.94,
+            "confidenceLevel": 0.95,
+            "lower": 14.09,
+            "upper": 17.8,
+            "sourceArtifactId": "general_welfare",
+            "locator": "9.7, both-sex columns12–16,PDF200,Kabupaten Cianjur",
+            "sourceRow": "Kab. Cianjur 16,10 1,20 7,44 13,76 18,45 15,78 1,18 7,45 13,47 18,08 15,95 0,95 5,94 14,09 17,80"
+          }
+        },
+        {
+          "regionId": "3204",
+          "value": 11.48,
+          "rawValue": 11.48,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.2, both-sex column(4), printed66; precision9.7 printed170; 2023; Kabupaten Bandung (3204)",
+            "row": "04. Kab. Bandung 10,93 12,05 11,48"
+          },
+          "uncertainty": {
+            "standardErrorPercentagePoints": 0.88,
+            "relativeStandardErrorPercent": 7.69,
+            "confidenceLevel": 0.95,
+            "lower": 9.75,
+            "upper": 13.21,
+            "sourceArtifactId": "general_welfare",
+            "locator": "9.7, both-sex columns12–16,PDF200,Kabupaten Bandung",
+            "sourceRow": "Kab. Bandung 10,93 1,03 9,46 8,90 12,96 12,05 1,09 9,03 9,92 14,18 11,48 0,88 7,69 9,75 13,21"
+          }
+        },
+        {
+          "regionId": "3205",
+          "value": 15.23,
+          "rawValue": 15.23,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.2, both-sex column(4), printed66; precision9.7 printed170; 2023; Kabupaten Garut (3205)",
+            "row": "05. Kab. Garut 15,07 15,40 15,23"
+          },
+          "uncertainty": {
+            "standardErrorPercentagePoints": 0.92,
+            "relativeStandardErrorPercent": 6.03,
+            "confidenceLevel": 0.95,
+            "lower": 13.43,
+            "upper": 17.03,
+            "sourceArtifactId": "general_welfare",
+            "locator": "9.7, both-sex columns12–16,PDF200,Kabupaten Garut",
+            "sourceRow": "Kab. Garut 15,07 1,04 6,87 13,04 17,10 15,40 1,21 7,88 13,02 17,78 15,23 0,92 6,03 13,43 17,03"
+          }
+        },
+        {
+          "regionId": "3206",
+          "value": 14.53,
+          "rawValue": 14.53,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.2, both-sex column(4), printed66; precision9.7 printed170; 2023; Kabupaten Tasikmalaya (3206)",
+            "row": "06. Kab. Tasikmalaya 13,49 15,56 14,53"
+          },
+          "uncertainty": {
+            "standardErrorPercentagePoints": 1.02,
+            "relativeStandardErrorPercent": 7.01,
+            "confidenceLevel": 0.95,
+            "lower": 12.54,
+            "upper": 16.53,
+            "sourceArtifactId": "general_welfare",
+            "locator": "9.7, both-sex columns12–16,PDF200,Kabupaten Tasikmalaya",
+            "sourceRow": "Kab. Tasikmalaya 13,49 1,10 8,12 11,34 15,64 15,56 1,27 8,14 13,07 18,04 14,53 1,02 7,01 12,54 16,53"
+          }
+        },
+        {
+          "regionId": "3207",
+          "value": 19.84,
+          "rawValue": 19.84,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.2, both-sex column(4), printed66; precision9.7 printed170; 2023; Kabupaten Ciamis (3207)",
+            "row": "07. Kab. Ciamis 19,64 20,03 19,84"
+          },
+          "uncertainty": {
+            "standardErrorPercentagePoints": 1.22,
+            "relativeStandardErrorPercent": 6.17,
+            "confidenceLevel": 0.95,
+            "lower": 17.44,
+            "upper": 22.23,
+            "sourceArtifactId": "general_welfare",
+            "locator": "9.7, both-sex columns12–16,PDF200,Kabupaten Ciamis",
+            "sourceRow": "Kab. Ciamis 19,64 1,37 7,00 16,94 22,33 20,03 1,41 7,03 17,27 22,79 19,84 1,22 6,17 17,44 22,23"
+          }
+        },
+        {
+          "regionId": "3208",
+          "value": 16.11,
+          "rawValue": 16.11,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.2, both-sex column(4), printed66; precision9.7 printed170; 2023; Kabupaten Kuningan (3208)",
+            "row": "08. Kab. Kuningan 15,99 16,24 16,11"
+          },
+          "uncertainty": {
+            "standardErrorPercentagePoints": 1.29,
+            "relativeStandardErrorPercent": 8.03,
+            "confidenceLevel": 0.95,
+            "lower": 13.58,
+            "upper": 18.65,
+            "sourceArtifactId": "general_welfare",
+            "locator": "9.7, both-sex columns12–16,PDF200,Kabupaten Kuningan",
+            "sourceRow": "Kab. Kuningan 15,99 1,41 8,84 13,22 18,76 16,24 1,52 9,38 13,25 19,22 16,11 1,29 8,03 13,58 18,65"
+          }
+        },
+        {
+          "regionId": "3209",
+          "value": 10.61,
+          "rawValue": 10.61,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.2, both-sex column(4), printed66; precision9.7 printed170; 2023; Kabupaten Cirebon (3209)",
+            "row": "09. Kab. Cirebon 9,24 12,04 10,61"
+          },
+          "uncertainty": {
+            "standardErrorPercentagePoints": 0.99,
+            "relativeStandardErrorPercent": 9.34,
+            "confidenceLevel": 0.95,
+            "lower": 8.66,
+            "upper": 12.55,
+            "sourceArtifactId": "general_welfare",
+            "locator": "9.7, both-sex columns12–16,PDF200,Kabupaten Cirebon",
+            "sourceRow": "Kab. Cirebon 9,24 1,18 12,78 6,92 11,55 12,04 1,18 9,82 9,72 14,36 10,61 0,99 9,34 8,66 12,55"
+          }
+        },
+        {
+          "regionId": "3210",
+          "value": 15.47,
+          "rawValue": 15.47,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.2, both-sex column(4), printed66; precision9.7 printed170; 2023; Kabupaten Majalengka (3210)",
+            "row": "10. Kab. Majalengka 15,30 15,63 15,47"
+          },
+          "uncertainty": {
+            "standardErrorPercentagePoints": 0.99,
+            "relativeStandardErrorPercent": 6.41,
+            "confidenceLevel": 0.95,
+            "lower": 13.52,
+            "upper": 17.41,
+            "sourceArtifactId": "general_welfare",
+            "locator": "9.7, both-sex columns12–16,PDF200,Kabupaten Majalengka",
+            "sourceRow": "Kab. Majalengka 15,30 1,27 8,32 12,81 17,80 15,63 1,22 7,82 13,23 18,02 15,47 0,99 6,41 13,52 17,41"
+          }
+        },
+        {
+          "regionId": "3211",
+          "value": 13.73,
+          "rawValue": 13.73,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.2, both-sex column(4), printed66; precision9.7 printed170; 2023; Kabupaten Sumedang (3211)",
+            "row": "11. Kab. Sumedang 11,82 15,64 13,73"
+          },
+          "uncertainty": {
+            "standardErrorPercentagePoints": 1.12,
+            "relativeStandardErrorPercent": 8.16,
+            "confidenceLevel": 0.95,
+            "lower": 11.53,
+            "upper": 15.93,
+            "sourceArtifactId": "general_welfare",
+            "locator": "9.7, both-sex columns12–16,PDF200,Kabupaten Sumedang",
+            "sourceRow": "Kab. Sumedang 11,82 1,15 9,77 9,55 14,08 15,64 1,47 9,41 12,76 18,53 13,73 1,12 8,16 11,53 15,93"
+          }
+        },
+        {
+          "regionId": "3212",
+          "value": 16.12,
+          "rawValue": 16.12,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.2, both-sex column(4), printed66; precision9.7 printed170; 2023; Kabupaten Indramayu (3212)",
+            "row": "12. Kab. Indramayu 15,13 17,17 16,12"
+          },
+          "uncertainty": {
+            "standardErrorPercentagePoints": 1.15,
+            "relativeStandardErrorPercent": 7.14,
+            "confidenceLevel": 0.95,
+            "lower": 13.87,
+            "upper": 18.38,
+            "sourceArtifactId": "general_welfare",
+            "locator": "9.7, both-sex columns12–16,PDF200,Kabupaten Indramayu",
+            "sourceRow": "Kab. Indramayu 15,13 1,26 8,33 12,66 17,61 17,17 1,49 8,66 14,26 20,09 16,12 1,15 7,14 13,87 18,38"
+          }
+        },
+        {
+          "regionId": "3213",
+          "value": 8.37,
+          "rawValue": 8.37,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.2, both-sex column(4), printed66; precision9.7 printed170; 2023; Kabupaten Subang (3213)",
+            "row": "13. Kab. Subang 7,78 8,98 8,37"
+          },
+          "uncertainty": {
+            "standardErrorPercentagePoints": 0.83,
+            "relativeStandardErrorPercent": 9.9,
+            "confidenceLevel": 0.95,
+            "lower": 6.75,
+            "upper": 10.0,
+            "sourceArtifactId": "general_welfare",
+            "locator": "9.7, both-sex columns12–16,PDF200,Kabupaten Subang",
+            "sourceRow": "Kab. Subang 7,78 0,91 11,73 5,99 9,57 8,98 1,06 11,86 6,89 11,06 8,37 0,83 9,90 6,75 10,00"
+          }
+        },
+        {
+          "regionId": "3214",
+          "value": 11.21,
+          "rawValue": 11.21,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.2, both-sex column(4), printed66; precision9.7 printed170; 2023; Kabupaten Purwakarta (3214)",
+            "row": "14. Kab. Purwakarta 11,80 10,60 11,21"
+          },
+          "uncertainty": {
+            "standardErrorPercentagePoints": 0.97,
+            "relativeStandardErrorPercent": 8.63,
+            "confidenceLevel": 0.95,
+            "lower": 9.31,
+            "upper": 13.11,
+            "sourceArtifactId": "general_welfare",
+            "locator": "9.7, both-sex columns12–16,PDF200,Kabupaten Purwakarta",
+            "sourceRow": "Kab. Purwakarta 11,80 1,14 9,68 9,56 14,04 10,60 1,13 10,68 8,38 12,82 11,21 0,97 8,63 9,31 13,11"
+          }
+        },
+        {
+          "regionId": "3215",
+          "value": 8.15,
+          "rawValue": 8.15,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.2, both-sex column(4), printed66; precision9.7 printed170; 2023; Kabupaten Karawang (3215)",
+            "row": "15. Kab. Karawang 7,72 8,60 8,15"
+          },
+          "uncertainty": {
+            "standardErrorPercentagePoints": 0.69,
+            "relativeStandardErrorPercent": 8.43,
+            "confidenceLevel": 0.95,
+            "lower": 6.8,
+            "upper": 9.5,
+            "sourceArtifactId": "general_welfare",
+            "locator": "9.7, both-sex columns12–16,PDF200,Kabupaten Karawang",
+            "sourceRow": "Kab. Karawang 7,72 0,85 11,00 6,05 9,38 8,60 0,89 10,35 6,86 10,35 8,15 0,69 8,43 6,80 9,50"
+          }
+        },
+        {
+          "regionId": "3216",
+          "value": 7.79,
+          "rawValue": 7.79,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.2, both-sex column(4), printed66; precision9.7 printed170; 2023; Kabupaten Bekasi (3216)",
+            "row": "16. Kab. Bekasi 8,43 7,15 7,79"
+          },
+          "uncertainty": {
+            "standardErrorPercentagePoints": 0.64,
+            "relativeStandardErrorPercent": 8.15,
+            "confidenceLevel": 0.95,
+            "lower": 6.55,
+            "upper": 9.04,
+            "sourceArtifactId": "general_welfare",
+            "locator": "9.7, both-sex columns12–16,PDF200,Kabupaten Bekasi",
+            "sourceRow": "Kab. Bekasi 8,43 0,87 10,29 6,73 10,13 7,15 0,73 10,17 5,72 8,57 7,79 0,64 8,15 6,55 9,04"
+          }
+        },
+        {
+          "regionId": "3217",
+          "value": 12.15,
+          "rawValue": 12.15,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.2, both-sex column(4), printed66; precision9.7 printed170; 2023; Kabupaten Bandung Barat (3217)",
+            "row": "17. Kab. Bandung Barat 12,18 12,13 12,15"
+          },
+          "uncertainty": {
+            "standardErrorPercentagePoints": 0.8,
+            "relativeStandardErrorPercent": 6.6,
+            "confidenceLevel": 0.95,
+            "lower": 10.58,
+            "upper": 13.72,
+            "sourceArtifactId": "general_welfare",
+            "locator": "9.7, both-sex columns12–16,PDF200,Kabupaten Bandung Barat",
+            "sourceRow": "Kab. Bandung Barat 12,18 0,98 8,05 10,25 14,10 12,13 1,03 8,49 10,11 14,15 12,15 0,80 6,60 10,58 13,72"
+          }
+        },
+        {
+          "regionId": "3218",
+          "value": 16.71,
+          "rawValue": 16.71,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.2, both-sex column(4), printed66; precision9.7 printed170; 2023; Kabupaten Pangandaran (3218)",
+            "row": "18. Kab. Pangandaran 15,35 18,06 16,71"
+          },
+          "uncertainty": {
+            "standardErrorPercentagePoints": 1.38,
+            "relativeStandardErrorPercent": 8.26,
+            "confidenceLevel": 0.95,
+            "lower": 14.0,
+            "upper": 19.42,
+            "sourceArtifactId": "general_welfare",
+            "locator": "9.7, both-sex columns12–16,PDF200,Kabupaten Pangandaran",
+            "sourceRow": "Kab. Pangandaran 15,35 1,47 9,59 12,46 18,23 18,06 1,63 9,02 14,86 21,25 16,71 1,38 8,26 14,00 19,42"
+          }
+        },
+        {
+          "regionId": "3271",
+          "value": 11.44,
+          "rawValue": 11.44,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.2, both-sex column(4), printed66; precision9.7 printed170; 2023; Kota Bogor (3271)",
+            "row": "19. Kota Bogor 10,16 12,75 11,44"
+          },
+          "uncertainty": {
+            "standardErrorPercentagePoints": 0.98,
+            "relativeStandardErrorPercent": 8.6,
+            "confidenceLevel": 0.95,
+            "lower": 9.51,
+            "upper": 13.37,
+            "sourceArtifactId": "general_welfare",
+            "locator": "9.7, both-sex columns12–16,PDF200,Kota Bogor",
+            "sourceRow": "Kota Bogor 10,16 1,11 10,94 7,99 12,34 12,75 1,30 10,17 10,21 15,29 11,44 0,98 8,60 9,51 13,37"
+          }
+        },
+        {
+          "regionId": "3272",
+          "value": 10.86,
+          "rawValue": 10.86,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.2, both-sex column(4), printed66; precision9.7 printed170; 2023; Kota Sukabumi (3272)",
+            "row": "20. Kota Sukabumi 10,43 11,31 10,86"
+          },
+          "uncertainty": {
+            "standardErrorPercentagePoints": 0.87,
+            "relativeStandardErrorPercent": 8.04,
+            "confidenceLevel": 0.95,
+            "lower": 9.15,
+            "upper": 12.58,
+            "sourceArtifactId": "general_welfare",
+            "locator": "9.7, both-sex columns12–16,PDF200,Kota Sukabumi",
+            "sourceRow": "Kota Sukabumi 10,43 1,05 10,02 8,38 12,48 11,31 1,16 10,27 9,03 13,59 10,86 0,87 8,04 9,15 12,58"
+          }
+        },
+        {
+          "regionId": "3273",
+          "value": 11.27,
+          "rawValue": 11.27,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.2, both-sex column(4), printed66; precision9.7 printed170; 2023; Kota Bandung (3273)",
+            "row": "21. Kota Bandung 10,83 11,71 11,27"
+          },
+          "uncertainty": {
+            "standardErrorPercentagePoints": 0.86,
+            "relativeStandardErrorPercent": 7.59,
+            "confidenceLevel": 0.95,
+            "lower": 9.59,
+            "upper": 12.95,
+            "sourceArtifactId": "general_welfare",
+            "locator": "9.7, both-sex columns12–16,PDF200,Kota Bandung",
+            "sourceRow": "Kota Bandung 10,83 1,02 9,45 8,82 12,84 11,71 1,06 9,07 9,63 13,80 11,27 0,86 7,59 9,59 12,95"
+          }
+        },
+        {
+          "regionId": "3274",
+          "value": 7.96,
+          "rawValue": 7.96,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.2, both-sex column(4), printed66; precision9.7 printed170; 2023; Kota Cirebon (3274)",
+            "row": "22. Kota Cirebon 6,89 9,03 7,96"
+          },
+          "uncertainty": {
+            "standardErrorPercentagePoints": 0.94,
+            "relativeStandardErrorPercent": 11.81,
+            "confidenceLevel": 0.95,
+            "lower": 6.11,
+            "upper": 9.8,
+            "sourceArtifactId": "general_welfare",
+            "locator": "9.7, both-sex columns12–16,PDF200,Kota Cirebon",
+            "sourceRow": "Kota Cirebon 6,89 1,06 15,41 4,81 8,97 9,03 1,16 12,83 6,76 11,31 7,96 0,94 11,81 6,11 9,80"
+          }
+        },
+        {
+          "regionId": "3275",
+          "value": 10.12,
+          "rawValue": 10.12,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.2, both-sex column(4), printed66; precision9.7 printed170; 2023; Kota Bekasi (3275)",
+            "row": "23. Kota Bekasi 9,97 10,27 10,12"
+          },
+          "uncertainty": {
+            "standardErrorPercentagePoints": 0.82,
+            "relativeStandardErrorPercent": 8.14,
+            "confidenceLevel": 0.95,
+            "lower": 8.51,
+            "upper": 11.74,
+            "sourceArtifactId": "general_welfare",
+            "locator": "9.7, both-sex columns12–16,PDF200,Kota Bekasi",
+            "sourceRow": "Kota Bekasi 9,97 0,96 9,61 8,09 11,85 10,27 1,10 10,71 8,11 12,43 10,12 0,82 8,14 8,51 11,74"
+          }
+        },
+        {
+          "regionId": "3276",
+          "value": 6.75,
+          "rawValue": 6.75,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.2, both-sex column(4), printed66; precision9.7 printed170; 2023; Kota Depok (3276)",
+            "row": "24. Kota Depok 6,73 6,77 6,75"
+          },
+          "uncertainty": {
+            "standardErrorPercentagePoints": 0.62,
+            "relativeStandardErrorPercent": 9.19,
+            "confidenceLevel": 0.95,
+            "lower": 5.53,
+            "upper": 7.97,
+            "sourceArtifactId": "general_welfare",
+            "locator": "9.7, both-sex columns12–16,PDF200,Kota Depok",
+            "sourceRow": "Kota Depok 6,73 0,72 10,67 5,32 8,14 6,77 0,79 11,62 5,23 8,31 6,75 0,62 9,19 5,53 7,97"
+          }
+        },
+        {
+          "regionId": "3277",
+          "value": 7.12,
+          "rawValue": 7.12,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.2, both-sex column(4), printed66; precision9.7 printed170; 2023; Kota Cimahi (3277)",
+            "row": "25. Kota Cimahi 7,05 7,20 7,12"
+          },
+          "uncertainty": {
+            "standardErrorPercentagePoints": 0.71,
+            "relativeStandardErrorPercent": 9.9,
+            "confidenceLevel": 0.95,
+            "lower": 5.74,
+            "upper": 8.51,
+            "sourceArtifactId": "general_welfare",
+            "locator": "9.7, both-sex columns12–16,PDF200,Kota Cimahi",
+            "sourceRow": "Kota Cimahi 7,05 0,89 12,62 5,31 8,80 7,20 0,88 12,20 5,48 8,92 7,12 0,71 9,90 5,74 8,51"
+          }
+        },
+        {
+          "regionId": "3278",
+          "value": 14.9,
+          "rawValue": 14.9,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.2, both-sex column(4), printed66; precision9.7 printed170; 2023; Kota Tasikmalaya (3278)",
+            "row": "26. Kota Tasikmalaya 14,35 15,45 14,90"
+          },
+          "uncertainty": {
+            "standardErrorPercentagePoints": 1.19,
+            "relativeStandardErrorPercent": 8.02,
+            "confidenceLevel": 0.95,
+            "lower": 12.56,
+            "upper": 17.24,
+            "sourceArtifactId": "general_welfare",
+            "locator": "9.7, both-sex columns12–16,PDF200,Kota Tasikmalaya",
+            "sourceRow": "Kota Tasikmalaya 14,35 1,48 10,33 11,44 17,25 15,45 1,31 8,51 12,88 18,03 14,90 1,19 8,02 12,56 17,24"
+          }
+        },
+        {
+          "regionId": "3279",
+          "value": 11.72,
+          "rawValue": 11.72,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.2, both-sex column(4), printed66; precision9.7 printed170; 2023; Kota Banjar (3279)",
+            "row": "27. Kota Banjar 12,12 11,33 11,72"
+          },
+          "uncertainty": {
+            "standardErrorPercentagePoints": 1.0,
+            "relativeStandardErrorPercent": 8.5,
+            "confidenceLevel": 0.95,
+            "lower": 9.77,
+            "upper": 13.68,
+            "sourceArtifactId": "general_welfare",
+            "locator": "9.7, both-sex columns12–16,PDF200,Kota Banjar",
+            "sourceRow": "Kota Banjar 12,12 1,34 11,09 9,49 14,76 11,33 1,25 10,99 8,89 13,77 11,72 1,00 8,50 9,77 13,68"
+          }
+        }
+      ]
+    },
+    {
+      "id": "health_complaints_month",
+      "name": "Any health complaint in previous month",
+      "concept": "Self-reported health/psychiatric complaint without required activity limitation.",
+      "family": "General Population Health",
+      "statisticType": "survey_morbidity",
+      "year": 2023,
+      "unit": "percent of residents",
+      "rawOrDerived": "published_rate",
+      "source": {
+        "publisher": "BPS Provinsi Jawa Barat",
+        "title": "Statistik Kesejahteraan Rakyat Provinsi Jawa Barat 2023",
+        "url": "https://jabar.bps.go.id/id/publication/2023/12/28/8a2667bb40625076d8ee9c30/statistik-kesejahteraan-rakyat-provinsi-jawa-barat-2023.html",
+        "table": "4.1,both-sex column(4),printed65",
+        "artifactId": "general_welfare",
+        "pdfPage": 95,
+        "accessedAt": "2026-10-29"
+      },
+      "numerator": {
+        "definition": "Survey-weighted residents reporting any health complaint in previous month."
+      },
+      "denominator": {
+        "definition": "All survey-weighted residents represented by Susenas March2023, not only clinic users or complainants.",
+        "source": "BPS table4.2; rate of population."
+      },
+      "formula": null,
+      "direction": "Higher means more reported complaints, not necessarily more objectively diagnosed disease.",
+      "detectionBias": "Self-report, awareness, age and recall; not a facility detection count.",
+      "caveats": [
+        "Sakit/activity-limiting morbidity is a subset of complaints. Distinct labels do not justify two independent inputs."
+      ],
+      "uncertainty": "No district ascertainment probabilities or sampling confidence interval published for this administrative panel.",
+      "correlationEligible": true,
+      "recommendation": {
+        "status": "CONTEXT ONLY",
+        "reason": "CONTEXT ONLY. Broader nested symptom construct from same survey; prefer activity-limiting morbidity rather than score both."
+      },
+      "observations": [
+        {
+          "regionId": "3201",
+          "value": 21.87,
+          "rawValue": 21.87,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.1,both-sex column(4),printed65; 2023; Kabupaten Bogor (3201)",
+            "row": "01. Kab. Bogor 20,72 23,07 21,87"
+          }
+        },
+        {
+          "regionId": "3202",
+          "value": 33.12,
+          "rawValue": 33.12,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.1,both-sex column(4),printed65; 2023; Kabupaten Sukabumi (3202)",
+            "row": "02. Kab. Sukabumi 31,47 34,81 33,12"
+          }
+        },
+        {
+          "regionId": "3203",
+          "value": 34.2,
+          "rawValue": 34.2,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.1,both-sex column(4),printed65; 2023; Kabupaten Cianjur (3203)",
+            "row": "03. Kab. Cianjur 32,77 35,71 34,20"
+          }
+        },
+        {
+          "regionId": "3204",
+          "value": 22.22,
+          "rawValue": 22.22,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.1,both-sex column(4),printed65; 2023; Kabupaten Bandung (3204)",
+            "row": "04. Kab. Bandung 20,35 24,14 22,22"
+          }
+        },
+        {
+          "regionId": "3205",
+          "value": 29.19,
+          "rawValue": 29.19,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.1,both-sex column(4),printed65; 2023; Kabupaten Garut (3205)",
+            "row": "05. Kab. Garut 28,49 29,91 29,19"
+          }
+        },
+        {
+          "regionId": "3206",
+          "value": 27.23,
+          "rawValue": 27.23,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.1,both-sex column(4),printed65; 2023; Kabupaten Tasikmalaya (3206)",
+            "row": "06. Kab. Tasikmalaya 24,46 29,94 27,23"
+          }
+        },
+        {
+          "regionId": "3207",
+          "value": 36.36,
+          "rawValue": 36.36,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.1,both-sex column(4),printed65; 2023; Kabupaten Ciamis (3207)",
+            "row": "07. Kab. Ciamis 34,89 37,80 36,36"
+          }
+        },
+        {
+          "regionId": "3208",
+          "value": 34.31,
+          "rawValue": 34.31,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.1,both-sex column(4),printed65; 2023; Kabupaten Kuningan (3208)",
+            "row": "08. Kab. Kuningan 34,61 34,00 34,31"
+          }
+        },
+        {
+          "regionId": "3209",
+          "value": 26.44,
+          "rawValue": 26.44,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.1,both-sex column(4),printed65; 2023; Kabupaten Cirebon (3209)",
+            "row": "09. Kab. Cirebon 23,23 29,82 26,44"
+          }
+        },
+        {
+          "regionId": "3210",
+          "value": 35.65,
+          "rawValue": 35.65,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.1,both-sex column(4),printed65; 2023; Kabupaten Majalengka (3210)",
+            "row": "10. Kab. Majalengka 33,61 37,68 35,65"
+          }
+        },
+        {
+          "regionId": "3211",
+          "value": 28.71,
+          "rawValue": 28.71,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.1,both-sex column(4),printed65; 2023; Kabupaten Sumedang (3211)",
+            "row": "11. Kab. Sumedang 26,33 31,09 28,71"
+          }
+        },
+        {
+          "regionId": "3212",
+          "value": 32.54,
+          "rawValue": 32.54,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.1,both-sex column(4),printed65; 2023; Kabupaten Indramayu (3212)",
+            "row": "12. Kab. Indramayu 30,46 34,76 32,54"
+          }
+        },
+        {
+          "regionId": "3213",
+          "value": 20.11,
+          "rawValue": 20.11,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.1,both-sex column(4),printed65; 2023; Kabupaten Subang (3213)",
+            "row": "13. Kab. Subang 19,27 20,96 20,11"
+          }
+        },
+        {
+          "regionId": "3214",
+          "value": 26.81,
+          "rawValue": 26.81,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.1,both-sex column(4),printed65; 2023; Kabupaten Purwakarta (3214)",
+            "row": "14. Kab. Purwakarta 25,79 27,87 26,81"
+          }
+        },
+        {
+          "regionId": "3215",
+          "value": 17.02,
+          "rawValue": 17.02,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.1,both-sex column(4),printed65; 2023; Kabupaten Karawang (3215)",
+            "row": "15. Kab. Karawang 16,87 17,18 17,02"
+          }
+        },
+        {
+          "regionId": "3216",
+          "value": 19.13,
+          "rawValue": 19.13,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.1,both-sex column(4),printed65; 2023; Kabupaten Bekasi (3216)",
+            "row": "16. Kab. Bekasi 19,33 18,91 19,13"
+          }
+        },
+        {
+          "regionId": "3217",
+          "value": 26.25,
+          "rawValue": 26.25,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.1,both-sex column(4),printed65; 2023; Kabupaten Bandung Barat (3217)",
+            "row": "17. Kab. Bandung Barat 24,39 28,16 26,25"
+          }
+        },
+        {
+          "regionId": "3218",
+          "value": 41.48,
+          "rawValue": 41.48,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.1,both-sex column(4),printed65; 2023; Kabupaten Pangandaran (3218)",
+            "row": "18. Kab. Pangandaran 39,26 43,67 41,48"
+          }
+        },
+        {
+          "regionId": "3271",
+          "value": 22.04,
+          "rawValue": 22.04,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.1,both-sex column(4),printed65; 2023; Kota Bogor (3271)",
+            "row": "19. Kota Bogor 20,11 24,02 22,04"
+          }
+        },
+        {
+          "regionId": "3272",
+          "value": 23.37,
+          "rawValue": 23.37,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.1,both-sex column(4),printed65; 2023; Kota Sukabumi (3272)",
+            "row": "20. Kota Sukabumi 21,97 24,81 23,37"
+          }
+        },
+        {
+          "regionId": "3273",
+          "value": 23.38,
+          "rawValue": 23.38,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.1,both-sex column(4),printed65; 2023; Kota Bandung (3273)",
+            "row": "21. Kota Bandung 21,32 25,44 23,38"
+          }
+        },
+        {
+          "regionId": "3274",
+          "value": 26.55,
+          "rawValue": 26.55,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.1,both-sex column(4),printed65; 2023; Kota Cirebon (3274)",
+            "row": "22. Kota Cirebon 24,10 29,03 26,55"
+          }
+        },
+        {
+          "regionId": "3275",
+          "value": 24.13,
+          "rawValue": 24.13,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.1,both-sex column(4),printed65; 2023; Kota Bekasi (3275)",
+            "row": "23. Kota Bekasi 23,04 25,21 24,13"
+          }
+        },
+        {
+          "regionId": "3276",
+          "value": 16.51,
+          "rawValue": 16.51,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.1,both-sex column(4),printed65; 2023; Kota Depok (3276)",
+            "row": "24. Kota Depok 15,72 17,30 16,51"
+          }
+        },
+        {
+          "regionId": "3277",
+          "value": 21.3,
+          "rawValue": 21.3,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.1,both-sex column(4),printed65; 2023; Kota Cimahi (3277)",
+            "row": "25. Kota Cimahi 19,73 22,90 21,30"
+          }
+        },
+        {
+          "regionId": "3278",
+          "value": 29.05,
+          "rawValue": 29.05,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.1,both-sex column(4),printed65; 2023; Kota Tasikmalaya (3278)",
+            "row": "26. Kota Tasikmalaya 26,72 31,40 29,05"
+          }
+        },
+        {
+          "regionId": "3279",
+          "value": 27.74,
+          "rawValue": 27.74,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "general_welfare",
+            "locator": "4.1,both-sex column(4),printed65; 2023; Kota Banjar (3279)",
+            "row": "27. Kota Banjar 27,88 27,60 27,74"
+          }
+        }
+      ]
+    }
+  ],
+  "investigations": [
+    {
+      "indicator": "Disability registry counts",
+      "concept": "Registered disability, not representative prevalence",
+      "source": {
+        "publisher": "BPS; originating Disdukcapil via Open Data Jabar",
+        "title": "Jumlah Penduduk Disabilitas Jawa Barat menurut Kabupaten/Kota",
+        "url": "https://jabar.bps.go.id/id/statistics-table/2/ODk4IzI=/jumlah-penduduk-disabilitas-jawa-barat-menurut-kabupaten-kota.html",
+        "table": "BPS variable898 selected latest2022",
+        "artifactId": "general_disability_browser",
+        "pdfPage": null,
+        "accessedAt": "2026-10-29"
+      },
+      "year": 2022,
+      "coverage": "27/27 published2022 rows; no2023 panel in inspected table",
+      "recommendation": {
+        "status": "REJECTED",
+        "reason": "Wrong reference year2022 and administrative-registration selection. Do not relabel registry counts as2023 prevalence."
+      },
+      "evidence": null,
+      "unit": "registered persons",
+      "rawOrDerived": "published_count",
+      "numerator": "Registered persons by disability category",
+      "denominator": "None; no valid2023 prevalence denominator.",
+      "direction": "No unqualified burden direction for registration counts.",
+      "detectionBias": "Registration and disclosure intensity."
+    }
+  ],
+  "notes": [
+    "Completed source acquisition recovered from current session; no repeated general-outcome search.",
+    "No IPM/HDI series admitted or reintroduced. UHH is a standalone demographic outcome, conditional on aggregate IPM exclusion in next method."
+  ]
+}
