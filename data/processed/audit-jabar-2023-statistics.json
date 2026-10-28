@@ -1,0 +1,1168 @@
+{
+  "auditId": "civx-jabar-2023-socioeconomic-education-audit",
+  "accessedAt": "2026-10-28",
+  "status": "Audit recommendations only; not production scoring",
+  "scope": {
+    "year": 2023,
+    "province": "Jawa Barat",
+    "geography": "kabupaten/kota",
+    "regions": [
+      {
+        "id": "3201",
+        "name": "Kabupaten Bogor"
+      },
+      {
+        "id": "3202",
+        "name": "Kabupaten Sukabumi"
+      },
+      {
+        "id": "3203",
+        "name": "Kabupaten Cianjur"
+      },
+      {
+        "id": "3204",
+        "name": "Kabupaten Bandung"
+      },
+      {
+        "id": "3205",
+        "name": "Kabupaten Garut"
+      },
+      {
+        "id": "3206",
+        "name": "Kabupaten Tasikmalaya"
+      },
+      {
+        "id": "3207",
+        "name": "Kabupaten Ciamis"
+      },
+      {
+        "id": "3208",
+        "name": "Kabupaten Kuningan"
+      },
+      {
+        "id": "3209",
+        "name": "Kabupaten Cirebon"
+      },
+      {
+        "id": "3210",
+        "name": "Kabupaten Majalengka"
+      },
+      {
+        "id": "3211",
+        "name": "Kabupaten Sumedang"
+      },
+      {
+        "id": "3212",
+        "name": "Kabupaten Indramayu"
+      },
+      {
+        "id": "3213",
+        "name": "Kabupaten Subang"
+      },
+      {
+        "id": "3214",
+        "name": "Kabupaten Purwakarta"
+      },
+      {
+        "id": "3215",
+        "name": "Kabupaten Karawang"
+      },
+      {
+        "id": "3216",
+        "name": "Kabupaten Bekasi"
+      },
+      {
+        "id": "3217",
+        "name": "Kabupaten Bandung Barat"
+      },
+      {
+        "id": "3218",
+        "name": "Kabupaten Pangandaran"
+      },
+      {
+        "id": "3271",
+        "name": "Kota Bogor"
+      },
+      {
+        "id": "3272",
+        "name": "Kota Sukabumi"
+      },
+      {
+        "id": "3273",
+        "name": "Kota Bandung"
+      },
+      {
+        "id": "3274",
+        "name": "Kota Cirebon"
+      },
+      {
+        "id": "3275",
+        "name": "Kota Bekasi"
+      },
+      {
+        "id": "3276",
+        "name": "Kota Depok"
+      },
+      {
+        "id": "3277",
+        "name": "Kota Cimahi"
+      },
+      {
+        "id": "3278",
+        "name": "Kota Tasikmalaya"
+      },
+      {
+        "id": "3279",
+        "name": "Kota Banjar"
+      }
+    ],
+    "candidateSeries": 10,
+    "observations": 270
+  },
+  "inputs": [
+    {
+      "path": "data/raw/audit-jabar-2023/socioeconomic.json",
+      "sha256": "353e2a7ec909319fb2dca6c996469a463ac7945d7c9ffec446c61435ae04694b"
+    },
+    {
+      "path": "data/raw/audit-jabar-2023/education.json",
+      "sha256": "7f2e54c54b398026552a6a66f62be09f01c9291e1280c1f97dbe46e67f888325"
+    }
+  ],
+  "method": {
+    "mean": "Unweighted arithmetic mean across the 27 regions, not the provincial population-weighted rate.",
+    "standardDeviation": "Population standard deviation: sqrt(sum((x-mean)^2)/27). Describes the complete regional cohort, not survey uncertainty.",
+    "coefficientOfVariation": "100 * population standard deviation / mean, for positive-mean ratio-scale series. Reported for between-region dispersion only; bounded near-ceiling percentages compress this statistic.",
+    "median": "Middle ordered observation, since n=27.",
+    "quartiles": "Type-7 linear interpolation at position (n-1)*p, zero-based.",
+    "outliers": "Outside Q1 - 1.5*IQR or Q3 + 1.5*IQR are screening flags; this list includes extreme points. Outside 3*IQR is extreme. Flags do not establish source errors. No deletion, winsorization, clipping or imputation.",
+    "correlation": "Pearson r on published untransformed values, joined by canonical region ID; Spearman rho uses average ranks for ties. All candidate pairs have n=27. No causal or significance claim.",
+    "redundancyFlag": "abs(Pearson r) >= 0.85 is possible redundancy, never automatic removal.",
+    "lowVarianceScreen": "CV < 2% together with mean >= 95% for a 0-100 percentage flags possible ceiling compression; practical screen, not universal admission threshold. Interpret absolute range, distribution and concept.",
+    "rounding": "Statistics computed from original published precision; JSON preserves computational precision, report rounds display only.",
+    "missingPolicy": "No zero fill, no year substitution, no per-region reweighting."
+  },
+  "admission": {
+    "socioeconomicCore": [
+      "poverty",
+      "unemployment",
+      "gini_ratio",
+      "expenditure_per_capita"
+    ],
+    "educationCore": [
+      "rls",
+      "hls",
+      "apm"
+    ],
+    "contextOnly": [
+      "labour_force_participation",
+      "apk",
+      "amh",
+      "expenditure_nominal_monthly",
+      "hdi"
+    ],
+    "productionChanges": false
+  },
+  "indicators": {
+    "poverty": {
+      "name": "Persentase penduduk miskin (P0)",
+      "dimension": "socioeconomic",
+      "unit": "percent",
+      "recommendation": "CORE",
+      "statistics": {
+        "observed": 27,
+        "missing": 0,
+        "min": 2.38,
+        "max": 12.13,
+        "minRegions": [
+          "3276"
+        ],
+        "maxRegions": [
+          "3212"
+        ],
+        "mean": 8.176666666666666,
+        "median": 8.46,
+        "populationStandardDeviation": 2.6252520161211472,
+        "coefficientOfVariationPercent": 32.106628815179135,
+        "uniqueValues": 27,
+        "q1": 6.535,
+        "q3": 10.25,
+        "iqr": 3.715,
+        "tukeyMildOutliers": [],
+        "tukeyExtremeOutliers": [],
+        "repeatedRoundedValues": []
+      },
+      "identityValidation": {
+        "expected": 27,
+        "observed": 27,
+        "missingRegionIds": [],
+        "unexpectedRegionIds": [],
+        "duplicateRegionIds": [],
+        "canonicalNamesMatch": true
+      }
+    },
+    "unemployment": {
+      "name": "Tingkat Pengangguran Terbuka (TPT)",
+      "dimension": "socioeconomic",
+      "unit": "percent",
+      "recommendation": "CORE",
+      "statistics": {
+        "observed": 27,
+        "missing": 0,
+        "min": 1.52,
+        "max": 10.52,
+        "minRegions": [
+          "3218"
+        ],
+        "maxRegions": [
+          "3277"
+        ],
+        "mean": 7.185925925925926,
+        "median": 7.65,
+        "populationStandardDeviation": 1.984915819204393,
+        "coefficientOfVariationPercent": 27.62226941476065,
+        "uniqueValues": 26,
+        "q1": 6.535,
+        "q3": 8.5,
+        "iqr": 1.9649999999999999,
+        "tukeyMildOutliers": [
+          {
+            "regionId": "3207",
+            "regionName": "Kabupaten Ciamis",
+            "value": 3.52,
+            "sourceRecord": {
+              "table": "3.2.16",
+              "printedPage": 147,
+              "pdfPage": 223,
+              "row": "Kabupaten Ciamis",
+              "column": "(4): TPT/UR, 2023",
+              "verbatimCell": "3,52",
+              "pdfCoordinates": {
+                "xMin": 247.793189,
+                "yMin": 244.680522,
+                "xMax": 259.67092
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          },
+          {
+            "regionId": "3218",
+            "regionName": "Kabupaten Pangandaran",
+            "value": 1.52,
+            "sourceRecord": {
+              "table": "3.2.16",
+              "printedPage": 147,
+              "pdfPage": 223,
+              "row": "Kabupaten Pangandaran",
+              "column": "(4): TPT/UR, 2023",
+              "verbatimCell": "1,52",
+              "pdfCoordinates": {
+                "xMin": 247.769411,
+                "yMin": 367.482793,
+                "xMax": 259.649784
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          }
+        ],
+        "tukeyExtremeOutliers": [],
+        "repeatedRoundedValues": [
+          {
+            "value": 7.65,
+            "regions": [
+              "3209",
+              "3213"
+            ]
+          }
+        ]
+      },
+      "identityValidation": {
+        "expected": 27,
+        "observed": 27,
+        "missingRegionIds": [],
+        "unexpectedRegionIds": [],
+        "duplicateRegionIds": [],
+        "canonicalNamesMatch": true
+      }
+    },
+    "gini_ratio": {
+      "name": "Gini Ratio pengeluaran penduduk",
+      "dimension": "socioeconomic",
+      "unit": "dimensionless coefficient0–1; not percent or0–100 index",
+      "recommendation": "CORE",
+      "statistics": {
+        "observed": 27,
+        "missing": 0,
+        "min": 0.319,
+        "max": 0.468,
+        "minRegions": [
+          "3203"
+        ],
+        "maxRegions": [
+          "3274"
+        ],
+        "mean": 0.3804074074074074,
+        "median": 0.369,
+        "populationStandardDeviation": 0.043596006663250336,
+        "coefficientOfVariationPercent": 11.460346411330534,
+        "uniqueValues": 26,
+        "q1": 0.346,
+        "q3": 0.403,
+        "iqr": 0.05700000000000005,
+        "tukeyMildOutliers": [],
+        "tukeyExtremeOutliers": [],
+        "repeatedRoundedValues": [
+          {
+            "value": 0.361,
+            "regions": [
+              "3205",
+              "3209"
+            ]
+          }
+        ]
+      },
+      "identityValidation": {
+        "expected": 27,
+        "observed": 27,
+        "missingRegionIds": [],
+        "unexpectedRegionIds": [],
+        "duplicateRegionIds": [],
+        "canonicalNamesMatch": true
+      }
+    },
+    "expenditure_per_capita": {
+      "name": "Pengeluaran riil per kapita disesuaikan (komponen IPM)",
+      "dimension": "socioeconomic",
+      "unit": "thousand rupiah per person per year, real and purchasing-power adjusted",
+      "recommendation": "CORE",
+      "statistics": {
+        "observed": 27,
+        "missing": 0,
+        "min": 8562,
+        "max": 18236,
+        "minRegions": [
+          "3206"
+        ],
+        "maxRegions": [
+          "3273"
+        ],
+        "mean": 11525.814814814816,
+        "median": 11136,
+        "populationStandardDeviation": 2323.761940969651,
+        "coefficientOfVariationPercent": 20.16136801003241,
+        "uniqueValues": 27,
+        "q1": 9880.5,
+        "q3": 12449.0,
+        "iqr": 2568.5,
+        "tukeyMildOutliers": [
+          {
+            "regionId": "3273",
+            "regionName": "Kota Bandung",
+            "value": 18236,
+            "sourceRecord": {
+              "table": "4.6.6",
+              "printedPage": 313,
+              "pdfPage": 389,
+              "row": "Kota Bandung",
+              "column": "(9): Pengeluaran Riil per Kapita (Ribu Rupiah/Orang/Tahun), 2023",
+              "verbatimCell": "18.236",
+              "pdfCoordinates": {
+                "xMin": 219.415037,
+                "yMin": 409.876956,
+                "xMax": 238.076646
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          },
+          {
+            "regionId": "3275",
+            "regionName": "Kota Bekasi",
+            "value": 16479,
+            "sourceRecord": {
+              "table": "4.6.6",
+              "printedPage": 313,
+              "pdfPage": 389,
+              "row": "Kota Bekasi",
+              "column": "(9): Pengeluaran Riil per Kapita (Ribu Rupiah/Orang/Tahun), 2023",
+              "verbatimCell": "16.479",
+              "pdfCoordinates": {
+                "xMin": 219.415037,
+                "yMin": 432.552853,
+                "xMax": 238.076646
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          }
+        ],
+        "tukeyExtremeOutliers": [],
+        "repeatedRoundedValues": []
+      },
+      "identityValidation": {
+        "expected": 27,
+        "observed": 27,
+        "missingRegionIds": [],
+        "unexpectedRegionIds": [],
+        "duplicateRegionIds": [],
+        "canonicalNamesMatch": true
+      }
+    },
+    "labour_force_participation": {
+      "name": "Tingkat Partisipasi Angkatan Kerja (TPAK)",
+      "dimension": "socioeconomic",
+      "unit": "percent",
+      "recommendation": "CONTEXT ONLY",
+      "statistics": {
+        "observed": 27,
+        "missing": 0,
+        "min": 61.95,
+        "max": 80.15,
+        "minRegions": [
+          "3208"
+        ],
+        "maxRegions": [
+          "3218"
+        ],
+        "mean": 66.96666666666667,
+        "median": 66.97,
+        "populationStandardDeviation": 3.5603277002732963,
+        "coefficientOfVariationPercent": 5.316566998914827,
+        "uniqueValues": 27,
+        "q1": 64.73,
+        "q3": 68.4,
+        "iqr": 3.6700000000000017,
+        "tukeyMildOutliers": [
+          {
+            "regionId": "3218",
+            "regionName": "Kabupaten Pangandaran",
+            "value": 80.15,
+            "sourceRecord": {
+              "table": "3.2.16",
+              "printedPage": 147,
+              "pdfPage": 223,
+              "row": "Kabupaten Pangandaran",
+              "column": "(7): TPAK/LFPR, 2023",
+              "verbatimCell": "80,15",
+              "pdfCoordinates": {
+                "xMin": 353.122517,
+                "yMin": 367.482793,
+                "xMax": 368.393508
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          }
+        ],
+        "tukeyExtremeOutliers": [
+          {
+            "regionId": "3218",
+            "regionName": "Kabupaten Pangandaran",
+            "value": 80.15,
+            "sourceRecord": {
+              "table": "3.2.16",
+              "printedPage": 147,
+              "pdfPage": 223,
+              "row": "Kabupaten Pangandaran",
+              "column": "(7): TPAK/LFPR, 2023",
+              "verbatimCell": "80,15",
+              "pdfCoordinates": {
+                "xMin": 353.122517,
+                "yMin": 367.482793,
+                "xMax": 368.393508
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          }
+        ],
+        "repeatedRoundedValues": []
+      },
+      "identityValidation": {
+        "expected": 27,
+        "observed": 27,
+        "missingRegionIds": [],
+        "unexpectedRegionIds": [],
+        "duplicateRegionIds": [],
+        "canonicalNamesMatch": true
+      }
+    },
+    "rls": {
+      "name": "Rata-rata Lama Sekolah (RLS), population 25+",
+      "dimension": "education",
+      "unit": "years",
+      "recommendation": "CORE",
+      "statistics": {
+        "observed": 27,
+        "missing": 0,
+        "min": 6.94,
+        "max": 11.66,
+        "minRegions": [
+          "3212"
+        ],
+        "maxRegions": [
+          "3275"
+        ],
+        "mean": 8.87,
+        "median": 8.23,
+        "populationStandardDeviation": 1.4290504487894,
+        "coefficientOfVariationPercent": 16.111053537648253,
+        "uniqueValues": 25,
+        "q1": 7.865,
+        "q3": 9.969999999999999,
+        "iqr": 2.1049999999999986,
+        "tukeyMildOutliers": [],
+        "tukeyExtremeOutliers": [],
+        "repeatedRoundedValues": [
+          {
+            "value": 8.04,
+            "regions": [
+              "3215",
+              "3218"
+            ]
+          },
+          {
+            "value": 10.37,
+            "regions": [
+              "3272",
+              "3274"
+            ]
+          }
+        ]
+      },
+      "identityValidation": {
+        "expected": 27,
+        "observed": 27,
+        "missingRegionIds": [],
+        "unexpectedRegionIds": [],
+        "duplicateRegionIds": [],
+        "canonicalNamesMatch": true
+      }
+    },
+    "hls": {
+      "name": "Harapan Lama Sekolah (HLS), age-7 entry expectation",
+      "dimension": "education",
+      "unit": "years",
+      "recommendation": "CORE",
+      "statistics": {
+        "observed": 27,
+        "missing": 0,
+        "min": 11.91,
+        "max": 14.29,
+        "minRegions": [
+          "3213",
+          "3217"
+        ],
+        "maxRegions": [
+          "3207"
+        ],
+        "mean": 12.884814814814815,
+        "median": 12.64,
+        "populationStandardDeviation": 0.7491099428302816,
+        "coefficientOfVariationPercent": 5.813897627531002,
+        "uniqueValues": 25,
+        "q1": 12.26,
+        "q3": 13.469999999999999,
+        "iqr": 1.209999999999999,
+        "tukeyMildOutliers": [],
+        "tukeyExtremeOutliers": [],
+        "repeatedRoundedValues": [
+          {
+            "value": 11.91,
+            "regions": [
+              "3213",
+              "3217"
+            ]
+          },
+          {
+            "value": 12.26,
+            "regions": [
+              "3208",
+              "3210"
+            ]
+          }
+        ]
+      },
+      "identityValidation": {
+        "expected": 27,
+        "observed": 27,
+        "missingRegionIds": [],
+        "unexpectedRegionIds": [],
+        "duplicateRegionIds": [],
+        "canonicalNamesMatch": true
+      }
+    },
+    "apm": {
+      "name": "Angka Partisipasi Murni (APM), upper secondary",
+      "dimension": "education",
+      "unit": "percent",
+      "recommendation": "CORE",
+      "statistics": {
+        "observed": 27,
+        "missing": 0,
+        "min": 49.52,
+        "max": 70.58,
+        "minRegions": [
+          "3204"
+        ],
+        "maxRegions": [
+          "3275"
+        ],
+        "mean": 60.58814814814815,
+        "median": 60.62,
+        "populationStandardDeviation": 5.5462546835760405,
+        "coefficientOfVariationPercent": 9.154025751066893,
+        "uniqueValues": 27,
+        "q1": 58.115,
+        "q3": 63.875,
+        "iqr": 5.759999999999998,
+        "tukeyMildOutliers": [],
+        "tukeyExtremeOutliers": [],
+        "repeatedRoundedValues": []
+      },
+      "identityValidation": {
+        "expected": 27,
+        "observed": 27,
+        "missingRegionIds": [],
+        "unexpectedRegionIds": [],
+        "duplicateRegionIds": [],
+        "canonicalNamesMatch": true
+      }
+    },
+    "apk": {
+      "name": "Angka Partisipasi Kasar (APK), upper secondary",
+      "dimension": "education",
+      "unit": "percent",
+      "recommendation": "CONTEXT ONLY",
+      "statistics": {
+        "observed": 27,
+        "missing": 0,
+        "min": 64.29,
+        "max": 103.08,
+        "minRegions": [
+          "3204"
+        ],
+        "maxRegions": [
+          "3275"
+        ],
+        "mean": 79.6337037037037,
+        "median": 77.51,
+        "populationStandardDeviation": 8.98813421422651,
+        "coefficientOfVariationPercent": 11.286846895466548,
+        "uniqueValues": 27,
+        "q1": 72.64,
+        "q3": 84.725,
+        "iqr": 12.084999999999994,
+        "tukeyMildOutliers": [
+          {
+            "regionId": "3275",
+            "regionName": "Kota Bekasi",
+            "value": 103.08,
+            "sourceRecord": {
+              "tableId": "100",
+              "selectedYear": 2023,
+              "rowLabel": "Kota Bekasi",
+              "columnLabel": "SMA/MA/Paket C; 2023",
+              "rawValue": "103,08"
+            }
+          }
+        ],
+        "tukeyExtremeOutliers": [],
+        "repeatedRoundedValues": []
+      },
+      "identityValidation": {
+        "expected": 27,
+        "observed": 27,
+        "missingRegionIds": [],
+        "unexpectedRegionIds": [],
+        "duplicateRegionIds": [],
+        "canonicalNamesMatch": true
+      }
+    },
+    "amh": {
+      "name": "Angka Melek Huruf / Angka Melek Aksara (AMH), population 15+",
+      "dimension": "education",
+      "unit": "percent",
+      "recommendation": "CONTEXT ONLY",
+      "statistics": {
+        "observed": 27,
+        "missing": 0,
+        "min": 92.52,
+        "max": 99.87,
+        "minRegions": [
+          "3212"
+        ],
+        "maxRegions": [
+          "3273"
+        ],
+        "mean": 98.51814814814814,
+        "median": 99.19,
+        "populationStandardDeviation": 1.7378595541366337,
+        "coefficientOfVariationPercent": 1.7639994120913656,
+        "uniqueValues": 24,
+        "q1": 98.18,
+        "q3": 99.58,
+        "iqr": 1.3999999999999915,
+        "tukeyMildOutliers": [
+          {
+            "regionId": "3209",
+            "regionName": "Kabupaten Cirebon",
+            "value": 93.7,
+            "sourceRecord": {
+              "tableId": "956",
+              "selectedYear": 2023,
+              "rowLabel": "Cirebon",
+              "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+              "rawValue": "93,70"
+            }
+          },
+          {
+            "regionId": "3212",
+            "regionName": "Kabupaten Indramayu",
+            "value": 92.52,
+            "sourceRecord": {
+              "tableId": "956",
+              "selectedYear": 2023,
+              "rowLabel": "Indramayu",
+              "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+              "rawValue": "92,52"
+            }
+          }
+        ],
+        "tukeyExtremeOutliers": [
+          {
+            "regionId": "3209",
+            "regionName": "Kabupaten Cirebon",
+            "value": 93.7,
+            "sourceRecord": {
+              "tableId": "956",
+              "selectedYear": 2023,
+              "rowLabel": "Cirebon",
+              "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+              "rawValue": "93,70"
+            }
+          },
+          {
+            "regionId": "3212",
+            "regionName": "Kabupaten Indramayu",
+            "value": 92.52,
+            "sourceRecord": {
+              "tableId": "956",
+              "selectedYear": 2023,
+              "rowLabel": "Indramayu",
+              "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+              "rawValue": "92,52"
+            }
+          }
+        ],
+        "repeatedRoundedValues": [
+          {
+            "value": 98.95,
+            "regions": [
+              "3203",
+              "3279"
+            ]
+          },
+          {
+            "value": 99.64,
+            "regions": [
+              "3272",
+              "3277"
+            ]
+          },
+          {
+            "value": 99.81,
+            "regions": [
+              "3204",
+              "3278"
+            ]
+          }
+        ]
+      },
+      "identityValidation": {
+        "expected": 27,
+        "observed": 27,
+        "missingRegionIds": [],
+        "unexpectedRegionIds": [],
+        "duplicateRegionIds": [],
+        "canonicalNamesMatch": true
+      }
+    }
+  },
+  "pairwiseCorrelations": {
+    "socioeconomic": [
+      {
+        "a": "poverty",
+        "b": "unemployment",
+        "n": 27,
+        "pearson": -0.250364356590604,
+        "spearman": -0.2653030102654628,
+        "possibleRedundancy": false
+      },
+      {
+        "a": "poverty",
+        "b": "gini_ratio",
+        "n": 27,
+        "pearson": -0.35711161918413703,
+        "spearman": -0.31872996860430747,
+        "possibleRedundancy": false
+      },
+      {
+        "a": "poverty",
+        "b": "expenditure_per_capita",
+        "n": 27,
+        "pearson": -0.7177114069743772,
+        "spearman": -0.652014652014652,
+        "possibleRedundancy": false
+      },
+      {
+        "a": "poverty",
+        "b": "labour_force_participation",
+        "n": 27,
+        "pearson": 0.17650724062347256,
+        "spearman": 0.14896214896214896,
+        "possibleRedundancy": false
+      },
+      {
+        "a": "unemployment",
+        "b": "gini_ratio",
+        "n": 27,
+        "pearson": 0.4327607913792273,
+        "spearman": 0.4853435114503817,
+        "possibleRedundancy": false
+      },
+      {
+        "a": "unemployment",
+        "b": "expenditure_per_capita",
+        "n": 27,
+        "pearson": 0.40006499120935696,
+        "spearman": 0.5171729567200162,
+        "possibleRedundancy": false
+      },
+      {
+        "a": "unemployment",
+        "b": "labour_force_participation",
+        "n": 27,
+        "pearson": -0.5534225441373618,
+        "spearman": -0.4002442421841447,
+        "possibleRedundancy": false
+      },
+      {
+        "a": "gini_ratio",
+        "b": "expenditure_per_capita",
+        "n": 27,
+        "pearson": 0.5807258746976717,
+        "spearman": 0.5849488695841505,
+        "possibleRedundancy": false
+      },
+      {
+        "a": "gini_ratio",
+        "b": "labour_force_participation",
+        "n": 27,
+        "pearson": -0.4039227934557347,
+        "spearman": -0.3907800381355494,
+        "possibleRedundancy": false
+      },
+      {
+        "a": "expenditure_per_capita",
+        "b": "labour_force_participation",
+        "n": 27,
+        "pearson": -0.37119813530841483,
+        "spearman": -0.3956043956043956,
+        "possibleRedundancy": false
+      }
+    ],
+    "education": [
+      {
+        "a": "rls",
+        "b": "hls",
+        "n": 27,
+        "pearson": 0.8201618456120459,
+        "spearman": 0.775198533903482,
+        "possibleRedundancy": false
+      },
+      {
+        "a": "rls",
+        "b": "apm",
+        "n": 27,
+        "pearson": 0.5784184694446163,
+        "spearman": 0.48335880115885144,
+        "possibleRedundancy": false
+      },
+      {
+        "a": "rls",
+        "b": "apk",
+        "n": 27,
+        "pearson": 0.674547112401952,
+        "spearman": 0.5822901034806884,
+        "possibleRedundancy": false
+      },
+      {
+        "a": "rls",
+        "b": "amh",
+        "n": 27,
+        "pearson": 0.46872080944154665,
+        "spearman": 0.5808767442129303,
+        "possibleRedundancy": false
+      },
+      {
+        "a": "hls",
+        "b": "apm",
+        "n": 27,
+        "pearson": 0.5240220511789067,
+        "spearman": 0.46717559429756333,
+        "possibleRedundancy": false
+      },
+      {
+        "a": "hls",
+        "b": "apk",
+        "n": 27,
+        "pearson": 0.7479412335718669,
+        "spearman": 0.6751145352888317,
+        "possibleRedundancy": false
+      },
+      {
+        "a": "hls",
+        "b": "amh",
+        "n": 27,
+        "pearson": 0.41953871497097833,
+        "spearman": 0.5929433397408876,
+        "possibleRedundancy": false
+      },
+      {
+        "a": "apm",
+        "b": "apk",
+        "n": 27,
+        "pearson": 0.7568301544464431,
+        "spearman": 0.7161172161172161,
+        "possibleRedundancy": false
+      },
+      {
+        "a": "apm",
+        "b": "amh",
+        "n": 27,
+        "pearson": 0.1457552287702485,
+        "spearman": 0.17834785807722994,
+        "possibleRedundancy": false
+      },
+      {
+        "a": "apk",
+        "b": "amh",
+        "n": 27,
+        "pearson": 0.19524346608383703,
+        "spearman": 0.2595816427493929,
+        "possibleRedundancy": false
+      }
+    ]
+  },
+  "additionalVerifiedVariant": {
+    "id": "expenditure_nominal_monthly",
+    "unit": "nominal rupiah per person per month",
+    "statistics": {
+      "observed": 27,
+      "missing": 0,
+      "min": 1039588,
+      "max": 2733270,
+      "minRegions": [
+        "3205"
+      ],
+      "maxRegions": [
+        "3271"
+      ],
+      "mean": 1587672.888888889,
+      "median": 1389002,
+      "populationStandardDeviation": 534329.9487050448,
+      "coefficientOfVariationPercent": 33.654914210885615,
+      "uniqueValues": 27,
+      "q1": 1237178.5,
+      "q3": 1799187.5,
+      "iqr": 562009.0,
+      "tukeyMildOutliers": [
+        {
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "value": 2733270,
+          "sourceRecord": {
+            "table": "11.3",
+            "printedPage": 681,
+            "pdfPage": 757,
+            "row": "Kota Bogor",
+            "column": "(7): Jumlah/Total, 2023",
+            "verbatimCell": "2.733.270",
+            "pdfCoordinates": {
+              "xMin": 347.019404,
+              "yMin": 391.375974,
+              "xMax": 374.170769
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": 2709214,
+          "sourceRecord": {
+            "table": "11.3",
+            "printedPage": 681,
+            "pdfPage": 757,
+            "row": "Kota Bekasi",
+            "column": "(7): Jumlah/Total, 2023",
+            "verbatimCell": "2.709.214",
+            "pdfCoordinates": {
+              "xMin": 347.019404,
+              "yMin": 431.061492,
+              "xMax": 374.177814
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        }
+      ],
+      "tukeyExtremeOutliers": [],
+      "repeatedRoundedValues": []
+    },
+    "recommendation": "CONTEXT ONLY",
+    "correlationsWithSocioeconomic": [
+      {
+        "a": "expenditure_nominal_monthly",
+        "b": "poverty",
+        "n": 27,
+        "pearson": -0.6961109265999209,
+        "spearman": -0.6153846153846154,
+        "possibleRedundancy": false
+      },
+      {
+        "a": "expenditure_nominal_monthly",
+        "b": "unemployment",
+        "n": 27,
+        "pearson": 0.40450959620377686,
+        "spearman": 0.34559609622612647,
+        "possibleRedundancy": false
+      },
+      {
+        "a": "expenditure_nominal_monthly",
+        "b": "gini_ratio",
+        "n": 27,
+        "pearson": 0.7539585037839416,
+        "spearman": 0.6472294381620036,
+        "possibleRedundancy": false
+      },
+      {
+        "a": "expenditure_nominal_monthly",
+        "b": "expenditure_per_capita",
+        "n": 27,
+        "pearson": 0.8404152900388981,
+        "spearman": 0.8711843711843712,
+        "possibleRedundancy": false
+      },
+      {
+        "a": "expenditure_nominal_monthly",
+        "b": "labour_force_participation",
+        "n": 27,
+        "pearson": -0.36110971860839797,
+        "spearman": -0.41025641025641024,
+        "possibleRedundancy": false
+      }
+    ]
+  },
+  "hdiDiagnostic": {
+    "recommendation": "REMOVE FROM CORE; CONTEXT ONLY in next model",
+    "source": {
+      "id": "bps-jabar-hdi-2023",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "title": "Indeks Pembangunan Manusia Menurut Kabupaten/Kota di Provinsi Jawa Barat, 2020–2023",
+      "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "table": "4.6.5",
+      "page": "printed 311 / PDF 387",
+      "dataYear": 2023,
+      "referencePeriod": "2023 IPM, life expectancy from Long Form SP2020",
+      "artifactId": "sha256:500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81",
+      "accessedAt": "2026-10-26"
+    },
+    "localAuditAccessedAt": "2026-10-28",
+    "originalPdfReverifiedAt": "2026-10-28",
+    "statistics": {
+      "observed": 27,
+      "missing": 0,
+      "min": 68.18,
+      "max": 83.29,
+      "minRegions": [
+        "3203"
+      ],
+      "maxRegions": [
+        "3273"
+      ],
+      "mean": 74.11185185185185,
+      "median": 73.25,
+      "populationStandardDeviation": 4.263704733225111,
+      "coefficientOfVariationPercent": 5.753067325517884,
+      "uniqueValues": 27,
+      "q1": 70.66499999999999,
+      "q3": 76.645,
+      "iqr": 5.980000000000004,
+      "tukeyMildOutliers": [],
+      "tukeyExtremeOutliers": [],
+      "repeatedRoundedValues": []
+    },
+    "componentCorrelations": [
+      {
+        "a": "hdi",
+        "b": "expenditure_per_capita",
+        "n": 27,
+        "pearson": 0.9220798473280186,
+        "spearman": 0.8986568986568987,
+        "possibleRedundancy": true
+      },
+      {
+        "a": "hdi",
+        "b": "rls",
+        "n": 27,
+        "pearson": 0.9539820054323067,
+        "spearman": 0.9184733252595232,
+        "possibleRedundancy": true
+      },
+      {
+        "a": "hdi",
+        "b": "hls",
+        "n": 27,
+        "pearson": 0.8434788903714362,
+        "spearman": 0.788091639792164,
+        "possibleRedundancy": false
+      }
+    ]
+  },
+  "qualityFindings": {
+    "missingCandidateObservations": 0,
+    "duplicateRegionRecords": 0,
+    "identicalTenIndicatorRegionalVectors": [],
+    "highCorrelationCandidatePairs": [],
+    "ceilingFlagIndicatorIds": [
+      "amh"
+    ],
+    "literacyRegionsAtLeast99Percent": 16,
+    "samePeriodWithinYear": false,
+    "sourceCaveats": [
+      "BPS live APM/APK headings say Tidak Ada Satuan; percent unit and upper-secondary grouping corroborated by official definitions and yearbook provincial figures. No rescaling.",
+      "Gini 2023 snapshot updated 2025-12-17; source does not expose district revision history.",
+      "Yearbook province TPAK 66.51 in age-group table conflicts with 66.49 in district tables; all 27 district TPAK cells agree across district tables.",
+      "RLS25+ differs from national education publication RLS15+; no mixing.",
+      "IPM portal publication number 32000.24023 differs from PDF imprint 32000.2403.",
+      "No candidate district uncertainty estimates were attached to selected cells; dispersion is not precision."
+    ]
+  },
+  "sourceEvidenceChecks": {
+    "originalBpsPdfSha256": "500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81",
+    "socioeconomicOriginalPdfCellsIndependentlyMatched": 135,
+    "schoolingComponentCrossCheck": {
+      "table": "4.6.6",
+      "printedPage": 312,
+      "pdfPage": 388,
+      "rlsMatches": 27,
+      "hlsMatches": 27
+    },
+    "giniRetainedResponseCellsMatched": 27,
+    "educationRetainedTableCellsMatched": 81,
+    "hdiOriginalPdfCellsMatched": 27
+  },
+  "unchangedProductionFiles": {
+    "data/raw/civx-jabar-2023.json": "d57d83cab5602fcfa5a13d0331a0468cb252cc8a3d8c88803e812311173dbff1",
+    "data/methodology/civx-jabar-2023-current.json": "c92da906b5c382347e7a87ac37d623e94a327e10a937ae078f341668a784a421",
+    "data/processed/civx-jabar-2023-current.json": "2a805661981eb5e97912e015dd399b8229420937e6f42e44a7fc2372aca9ce22",
+    "scripts/build-civic-current.mjs": "2339b30a53900c323e3f3575e4a967c3a2fd7a05184467adc6597dc9502e4797"
+  }
+}

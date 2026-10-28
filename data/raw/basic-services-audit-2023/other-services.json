@@ -1,0 +1,2826 @@
+{
+  "auditId": "basic-services-other-2023",
+  "accessedAt": "2026-10-28",
+  "scope": {
+    "referenceYear": 2023,
+    "province": "Jawa Barat",
+    "geography": "kabupaten/kota",
+    "regionIds": [
+      "3201",
+      "3202",
+      "3203",
+      "3204",
+      "3205",
+      "3206",
+      "3207",
+      "3208",
+      "3209",
+      "3210",
+      "3211",
+      "3212",
+      "3213",
+      "3214",
+      "3215",
+      "3216",
+      "3217",
+      "3218",
+      "3271",
+      "3272",
+      "3273",
+      "3274",
+      "3275",
+      "3276",
+      "3277",
+      "3278",
+      "3279"
+    ],
+    "productionChanges": false
+  },
+  "artifacts": [
+    {
+      "id": "sha256:780589a38fb683dd28d7a38b1b258042c287bc0cb33e8d4ec4d1a2c69f6b468f",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "title": "Statistik Kesejahteraan Rakyat Provinsi Jawa Barat 2023",
+      "url": "https://jabar.bps.go.id/id/publication/2023/12/28/8a2667bb40625076d8ee9c30/statistik-kesejahteraan-rakyat-provinsi-jawa-barat-2023.html",
+      "originalAcquiredAt": "2026-10-28",
+      "accessedAt": "2026-10-28",
+      "bytes": 22323345,
+      "sha256": "780589a38fb683dd28d7a38b1b258042c287bc0cb33e8d4ec4d1a2c69f6b468f",
+      "localPath": null,
+      "acquisition": "Direct official BPS download acquired by household audit, bytes independently verified and inspected in parent memory. No full PDF persisted in repository.",
+      "pagesUsed": [
+        {
+          "printed": 71,
+          "pdf": 101
+        },
+        {
+          "printed": 125,
+          "pdf": 155
+        },
+        {
+          "printed": 172,
+          "pdf": 202
+        }
+      ]
+    },
+    {
+      "id": "sha256:500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "title": "Provinsi Jawa Barat Dalam Angka 2024",
+      "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "localPath": "data/raw/bps-jabar-dalam-angka-2024.pdf",
+      "bytes": 11915084,
+      "sha256": "500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81",
+      "originalAcquiredAt": "2026-10-26",
+      "accessedAt": "2026-10-28",
+      "pagesUsed": [
+        {
+          "printed": 241,
+          "pdf": 317
+        },
+        {
+          "printed": 242,
+          "pdf": 318
+        },
+        {
+          "printed": 258,
+          "pdf": 334
+        },
+        {
+          "printed": 259,
+          "pdf": 335
+        }
+      ]
+    }
+  ],
+  "indicators": [
+    {
+      "id": "health_insurance_ownership",
+      "name": "Residents owning any health insurance",
+      "concept": "Formal financial protection/access entitlement, not facility capacity or health outcome",
+      "existingIndicator": false,
+      "source": {
+        "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+        "title": "Statistik Kesejahteraan Rakyat Provinsi Jawa Barat 2023",
+        "url": "https://jabar.bps.go.id/id/publication/2023/12/28/8a2667bb40625076d8ee9c30/statistik-kesejahteraan-rakyat-provinsi-jawa-barat-2023.html",
+        "referenceYear": 2023,
+        "referencePeriod": "Susenas Maret 2023; official household survey estimates",
+        "accessedAt": "2026-10-28",
+        "artifactId": "sha256:780589a38fb683dd28d7a38b1b258042c287bc0cb33e8d4ec4d1a2c69f6b468f",
+        "table": "4.7 Persentase Penduduk menurut Kabupaten/Kota dan Jenis Jaminan Kesehatan yang Dimiliki, 2023",
+        "pages": {
+          "printed": 71,
+          "pdf": 101
+        },
+        "unit": "percent of residents",
+        "denominator": "All resident persons in Susenas Maret 2023; not households and not active administrative JKN accounts"
+      },
+      "definition": "Complement of explicit Tidak Punya category: residents reporting any health-insurance ownership. Does not sum potentially overlapping insurer categories.",
+      "valueType": "derived_percentage",
+      "direction": "Higher means lower formal insurance exclusion; not proof of active benefits, affordability or realized treatment.",
+      "comparability": "Same household survey, March2023, person denominator, source table and complement rule across all27 canonical districts. Every source row name independently matched PDF coordinates.",
+      "transformation": "100 - published percentage reporting no insurance; retain two-decimal source precision. No administrative population denominator substituted.",
+      "limitations": [
+        "Ownership is self-reported, not verified active contribution/entitlement or successful reimbursement.",
+        "Does not measure needed care received, benefit completeness, travel time or quality.",
+        "Do not mix with administrative JKN registry percentages, especially registered versus active participants.",
+        "Source supplies no-insurance standard errors/RSE/95% intervals in table9.8 continuation, PDF202. Complement retains same standard error in percentage points.",
+        "Conceptually complements capacity, but any future healthcare subdimension must avoid dominance from indicator count."
+      ],
+      "preliminaryRecommendation": {
+        "status": "CORE",
+        "reason": "Potential next-model financial-access component: all27 official2023 observations, defensible direction for formal coverage, no sum of overlapping insurer shares, and meaningful variation. Final admission depends on integrated redundancy review."
+      },
+      "observations": [
+        {
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "value": 66.5,
+          "publishedNonePercent": 33.5,
+          "sourceRecord": {
+            "table": "4.7",
+            "pdfPage": 101,
+            "printedPage": 71,
+            "row": "Kabupaten Bogor",
+            "column": "(6) Tidak Punya",
+            "rawValue": "33,50",
+            "coordinates": {
+              "xMin": "689.020000",
+              "yMin": "145.550000",
+              "xMax": "708.454120",
+              "yMax": "154.070000"
+            }
+          },
+          "derivation": {
+            "formula": "100 - published percentage with no health insurance",
+            "publishedNonePercent": 33.5,
+            "denominator": "All resident persons, official survey weighted population; not administrative JKN registry"
+          },
+          "precision": {
+            "sourceTable": "9.8 continuation",
+            "printedPage": 172,
+            "pdfPage": 202,
+            "noneStandardErrorPercentagePoints": 1.68,
+            "noneRsePercent": 5.03,
+            "derivedAnyCoverageStandardErrorPercentagePoints": 1.68,
+            "note": "Complement 100-none has the same standard error in percentage points; its relative standard error differs."
+          }
+        },
+        {
+          "regionId": "3202",
+          "regionName": "Kabupaten Sukabumi",
+          "value": 65.57,
+          "publishedNonePercent": 34.43,
+          "sourceRecord": {
+            "table": "4.7",
+            "pdfPage": 101,
+            "printedPage": 71,
+            "row": "Kabupaten Sukabumi",
+            "column": "(6) Tidak Punya",
+            "rawValue": "34,43",
+            "coordinates": {
+              "xMin": "689.020000",
+              "yMin": "157.910000",
+              "xMax": "708.454120",
+              "yMax": "166.430000"
+            }
+          },
+          "derivation": {
+            "formula": "100 - published percentage with no health insurance",
+            "publishedNonePercent": 34.43,
+            "denominator": "All resident persons, official survey weighted population; not administrative JKN registry"
+          },
+          "precision": {
+            "sourceTable": "9.8 continuation",
+            "printedPage": 172,
+            "pdfPage": 202,
+            "noneStandardErrorPercentagePoints": 1.46,
+            "noneRsePercent": 4.24,
+            "derivedAnyCoverageStandardErrorPercentagePoints": 1.46,
+            "note": "Complement 100-none has the same standard error in percentage points; its relative standard error differs."
+          }
+        },
+        {
+          "regionId": "3203",
+          "regionName": "Kabupaten Cianjur",
+          "value": 46.03,
+          "publishedNonePercent": 53.97,
+          "sourceRecord": {
+            "table": "4.7",
+            "pdfPage": 101,
+            "printedPage": 71,
+            "row": "Kabupaten Cianjur",
+            "column": "(6) Tidak Punya",
+            "rawValue": "53,97",
+            "coordinates": {
+              "xMin": "689.020000",
+              "yMin": "170.270000",
+              "xMax": "708.454120",
+              "yMax": "178.790000"
+            }
+          },
+          "derivation": {
+            "formula": "100 - published percentage with no health insurance",
+            "publishedNonePercent": 53.97,
+            "denominator": "All resident persons, official survey weighted population; not administrative JKN registry"
+          },
+          "precision": {
+            "sourceTable": "9.8 continuation",
+            "printedPage": 172,
+            "pdfPage": 202,
+            "noneStandardErrorPercentagePoints": 1.68,
+            "noneRsePercent": 3.11,
+            "derivedAnyCoverageStandardErrorPercentagePoints": 1.68,
+            "note": "Complement 100-none has the same standard error in percentage points; its relative standard error differs."
+          }
+        },
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": 59.62,
+          "publishedNonePercent": 40.38,
+          "sourceRecord": {
+            "table": "4.7",
+            "pdfPage": 101,
+            "printedPage": 71,
+            "row": "Kabupaten Bandung",
+            "column": "(6) Tidak Punya",
+            "rawValue": "40,38",
+            "coordinates": {
+              "xMin": "689.020000",
+              "yMin": "182.630000",
+              "xMax": "708.454120",
+              "yMax": "191.150000"
+            }
+          },
+          "derivation": {
+            "formula": "100 - published percentage with no health insurance",
+            "publishedNonePercent": 40.38,
+            "denominator": "All resident persons, official survey weighted population; not administrative JKN registry"
+          },
+          "precision": {
+            "sourceTable": "9.8 continuation",
+            "printedPage": 172,
+            "pdfPage": 202,
+            "noneStandardErrorPercentagePoints": 1.82,
+            "noneRsePercent": 4.51,
+            "derivedAnyCoverageStandardErrorPercentagePoints": 1.82,
+            "note": "Complement 100-none has the same standard error in percentage points; its relative standard error differs."
+          }
+        },
+        {
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "value": 48.46,
+          "publishedNonePercent": 51.54,
+          "sourceRecord": {
+            "table": "4.7",
+            "pdfPage": 101,
+            "printedPage": 71,
+            "row": "Kabupaten Garut",
+            "column": "(6) Tidak Punya",
+            "rawValue": "51,54",
+            "coordinates": {
+              "xMin": "689.020000",
+              "yMin": "195.020000",
+              "xMax": "708.454120",
+              "yMax": "203.540000"
+            }
+          },
+          "derivation": {
+            "formula": "100 - published percentage with no health insurance",
+            "publishedNonePercent": 51.54,
+            "denominator": "All resident persons, official survey weighted population; not administrative JKN registry"
+          },
+          "precision": {
+            "sourceTable": "9.8 continuation",
+            "printedPage": 172,
+            "pdfPage": 202,
+            "noneStandardErrorPercentagePoints": 1.72,
+            "noneRsePercent": 3.35,
+            "derivedAnyCoverageStandardErrorPercentagePoints": 1.72,
+            "note": "Complement 100-none has the same standard error in percentage points; its relative standard error differs."
+          }
+        },
+        {
+          "regionId": "3206",
+          "regionName": "Kabupaten Tasikmalaya",
+          "value": 45.39,
+          "publishedNonePercent": 54.61,
+          "sourceRecord": {
+            "table": "4.7",
+            "pdfPage": 101,
+            "printedPage": 71,
+            "row": "Kabupaten Tasikmalaya",
+            "column": "(6) Tidak Punya",
+            "rawValue": "54,61",
+            "coordinates": {
+              "xMin": "689.020000",
+              "yMin": "207.380000",
+              "xMax": "708.454120",
+              "yMax": "215.900000"
+            }
+          },
+          "derivation": {
+            "formula": "100 - published percentage with no health insurance",
+            "publishedNonePercent": 54.61,
+            "denominator": "All resident persons, official survey weighted population; not administrative JKN registry"
+          },
+          "precision": {
+            "sourceTable": "9.8 continuation",
+            "printedPage": 172,
+            "pdfPage": 202,
+            "noneStandardErrorPercentagePoints": 1.81,
+            "noneRsePercent": 3.32,
+            "derivedAnyCoverageStandardErrorPercentagePoints": 1.81,
+            "note": "Complement 100-none has the same standard error in percentage points; its relative standard error differs."
+          }
+        },
+        {
+          "regionId": "3207",
+          "regionName": "Kabupaten Ciamis",
+          "value": 59.35,
+          "publishedNonePercent": 40.65,
+          "sourceRecord": {
+            "table": "4.7",
+            "pdfPage": 101,
+            "printedPage": 71,
+            "row": "Kabupaten Ciamis",
+            "column": "(6) Tidak Punya",
+            "rawValue": "40,65",
+            "coordinates": {
+              "xMin": "689.020000",
+              "yMin": "219.740000",
+              "xMax": "708.454120",
+              "yMax": "228.260000"
+            }
+          },
+          "derivation": {
+            "formula": "100 - published percentage with no health insurance",
+            "publishedNonePercent": 40.65,
+            "denominator": "All resident persons, official survey weighted population; not administrative JKN registry"
+          },
+          "precision": {
+            "sourceTable": "9.8 continuation",
+            "printedPage": 172,
+            "pdfPage": 202,
+            "noneStandardErrorPercentagePoints": 1.77,
+            "noneRsePercent": 4.36,
+            "derivedAnyCoverageStandardErrorPercentagePoints": 1.77,
+            "note": "Complement 100-none has the same standard error in percentage points; its relative standard error differs."
+          }
+        },
+        {
+          "regionId": "3208",
+          "regionName": "Kabupaten Kuningan",
+          "value": 70.09,
+          "publishedNonePercent": 29.91,
+          "sourceRecord": {
+            "table": "4.7",
+            "pdfPage": 101,
+            "printedPage": 71,
+            "row": "Kabupaten Kuningan",
+            "column": "(6) Tidak Punya",
+            "rawValue": "29,91",
+            "coordinates": {
+              "xMin": "689.020000",
+              "yMin": "232.100000",
+              "xMax": "708.454120",
+              "yMax": "240.620000"
+            }
+          },
+          "derivation": {
+            "formula": "100 - published percentage with no health insurance",
+            "publishedNonePercent": 29.91,
+            "denominator": "All resident persons, official survey weighted population; not administrative JKN registry"
+          },
+          "precision": {
+            "sourceTable": "9.8 continuation",
+            "printedPage": 172,
+            "pdfPage": 202,
+            "noneStandardErrorPercentagePoints": 1.89,
+            "noneRsePercent": 6.33,
+            "derivedAnyCoverageStandardErrorPercentagePoints": 1.89,
+            "note": "Complement 100-none has the same standard error in percentage points; its relative standard error differs."
+          }
+        },
+        {
+          "regionId": "3209",
+          "regionName": "Kabupaten Cirebon",
+          "value": 69.82,
+          "publishedNonePercent": 30.18,
+          "sourceRecord": {
+            "table": "4.7",
+            "pdfPage": 101,
+            "printedPage": 71,
+            "row": "Kabupaten Cirebon",
+            "column": "(6) Tidak Punya",
+            "rawValue": "30,18",
+            "coordinates": {
+              "xMin": "689.020000",
+              "yMin": "244.460000",
+              "xMax": "708.454120",
+              "yMax": "252.980000"
+            }
+          },
+          "derivation": {
+            "formula": "100 - published percentage with no health insurance",
+            "publishedNonePercent": 30.18,
+            "denominator": "All resident persons, official survey weighted population; not administrative JKN registry"
+          },
+          "precision": {
+            "sourceTable": "9.8 continuation",
+            "printedPage": 172,
+            "pdfPage": 202,
+            "noneStandardErrorPercentagePoints": 1.68,
+            "noneRsePercent": 5.58,
+            "derivedAnyCoverageStandardErrorPercentagePoints": 1.68,
+            "note": "Complement 100-none has the same standard error in percentage points; its relative standard error differs."
+          }
+        },
+        {
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "value": 57.42,
+          "publishedNonePercent": 42.58,
+          "sourceRecord": {
+            "table": "4.7",
+            "pdfPage": 101,
+            "printedPage": 71,
+            "row": "Kabupaten Majalengka",
+            "column": "(6) Tidak Punya",
+            "rawValue": "42,58",
+            "coordinates": {
+              "xMin": "689.020000",
+              "yMin": "256.820000",
+              "xMax": "708.454120",
+              "yMax": "265.340000"
+            }
+          },
+          "derivation": {
+            "formula": "100 - published percentage with no health insurance",
+            "publishedNonePercent": 42.58,
+            "denominator": "All resident persons, official survey weighted population; not administrative JKN registry"
+          },
+          "precision": {
+            "sourceTable": "9.8 continuation",
+            "printedPage": 172,
+            "pdfPage": 202,
+            "noneStandardErrorPercentagePoints": 1.77,
+            "noneRsePercent": 4.17,
+            "derivedAnyCoverageStandardErrorPercentagePoints": 1.77,
+            "note": "Complement 100-none has the same standard error in percentage points; its relative standard error differs."
+          }
+        },
+        {
+          "regionId": "3211",
+          "regionName": "Kabupaten Sumedang",
+          "value": 66.68,
+          "publishedNonePercent": 33.32,
+          "sourceRecord": {
+            "table": "4.7",
+            "pdfPage": 101,
+            "printedPage": 71,
+            "row": "Kabupaten Sumedang",
+            "column": "(6) Tidak Punya",
+            "rawValue": "33,32",
+            "coordinates": {
+              "xMin": "689.020000",
+              "yMin": "269.180000",
+              "xMax": "708.454120",
+              "yMax": "277.700000"
+            }
+          },
+          "derivation": {
+            "formula": "100 - published percentage with no health insurance",
+            "publishedNonePercent": 33.32,
+            "denominator": "All resident persons, official survey weighted population; not administrative JKN registry"
+          },
+          "precision": {
+            "sourceTable": "9.8 continuation",
+            "printedPage": 172,
+            "pdfPage": 202,
+            "noneStandardErrorPercentagePoints": 1.83,
+            "noneRsePercent": 5.5,
+            "derivedAnyCoverageStandardErrorPercentagePoints": 1.83,
+            "note": "Complement 100-none has the same standard error in percentage points; its relative standard error differs."
+          }
+        },
+        {
+          "regionId": "3212",
+          "regionName": "Kabupaten Indramayu",
+          "value": 59.02,
+          "publishedNonePercent": 40.98,
+          "sourceRecord": {
+            "table": "4.7",
+            "pdfPage": 101,
+            "printedPage": 71,
+            "row": "Kabupaten Indramayu",
+            "column": "(6) Tidak Punya",
+            "rawValue": "40,98",
+            "coordinates": {
+              "xMin": "689.020000",
+              "yMin": "281.540000",
+              "xMax": "708.454120",
+              "yMax": "290.060000"
+            }
+          },
+          "derivation": {
+            "formula": "100 - published percentage with no health insurance",
+            "publishedNonePercent": 40.98,
+            "denominator": "All resident persons, official survey weighted population; not administrative JKN registry"
+          },
+          "precision": {
+            "sourceTable": "9.8 continuation",
+            "printedPage": 172,
+            "pdfPage": 202,
+            "noneStandardErrorPercentagePoints": 1.82,
+            "noneRsePercent": 4.43,
+            "derivedAnyCoverageStandardErrorPercentagePoints": 1.82,
+            "note": "Complement 100-none has the same standard error in percentage points; its relative standard error differs."
+          }
+        },
+        {
+          "regionId": "3213",
+          "regionName": "Kabupaten Subang",
+          "value": 57.78,
+          "publishedNonePercent": 42.22,
+          "sourceRecord": {
+            "table": "4.7",
+            "pdfPage": 101,
+            "printedPage": 71,
+            "row": "Kabupaten Subang",
+            "column": "(6) Tidak Punya",
+            "rawValue": "42,22",
+            "coordinates": {
+              "xMin": "689.020000",
+              "yMin": "293.900000",
+              "xMax": "708.454120",
+              "yMax": "302.420000"
+            }
+          },
+          "derivation": {
+            "formula": "100 - published percentage with no health insurance",
+            "publishedNonePercent": 42.22,
+            "denominator": "All resident persons, official survey weighted population; not administrative JKN registry"
+          },
+          "precision": {
+            "sourceTable": "9.8 continuation",
+            "printedPage": 172,
+            "pdfPage": 202,
+            "noneStandardErrorPercentagePoints": 1.98,
+            "noneRsePercent": 4.68,
+            "derivedAnyCoverageStandardErrorPercentagePoints": 1.98,
+            "note": "Complement 100-none has the same standard error in percentage points; its relative standard error differs."
+          }
+        },
+        {
+          "regionId": "3214",
+          "regionName": "Kabupaten Purwakarta",
+          "value": 71.48,
+          "publishedNonePercent": 28.52,
+          "sourceRecord": {
+            "table": "4.7",
+            "pdfPage": 101,
+            "printedPage": 71,
+            "row": "Kabupaten Purwakarta",
+            "column": "(6) Tidak Punya",
+            "rawValue": "28,52",
+            "coordinates": {
+              "xMin": "689.020000",
+              "yMin": "306.280000",
+              "xMax": "708.454120",
+              "yMax": "314.800000"
+            }
+          },
+          "derivation": {
+            "formula": "100 - published percentage with no health insurance",
+            "publishedNonePercent": 28.52,
+            "denominator": "All resident persons, official survey weighted population; not administrative JKN registry"
+          },
+          "precision": {
+            "sourceTable": "9.8 continuation",
+            "printedPage": 172,
+            "pdfPage": 202,
+            "noneStandardErrorPercentagePoints": 1.76,
+            "noneRsePercent": 6.16,
+            "derivedAnyCoverageStandardErrorPercentagePoints": 1.76,
+            "note": "Complement 100-none has the same standard error in percentage points; its relative standard error differs."
+          }
+        },
+        {
+          "regionId": "3215",
+          "regionName": "Kabupaten Karawang",
+          "value": 72.46,
+          "publishedNonePercent": 27.54,
+          "sourceRecord": {
+            "table": "4.7",
+            "pdfPage": 101,
+            "printedPage": 71,
+            "row": "Kabupaten Karawang",
+            "column": "(6) Tidak Punya",
+            "rawValue": "27,54",
+            "coordinates": {
+              "xMin": "689.020000",
+              "yMin": "318.640000",
+              "xMax": "708.454120",
+              "yMax": "327.160000"
+            }
+          },
+          "derivation": {
+            "formula": "100 - published percentage with no health insurance",
+            "publishedNonePercent": 27.54,
+            "denominator": "All resident persons, official survey weighted population; not administrative JKN registry"
+          },
+          "precision": {
+            "sourceTable": "9.8 continuation",
+            "printedPage": 172,
+            "pdfPage": 202,
+            "noneStandardErrorPercentagePoints": 1.58,
+            "noneRsePercent": 5.72,
+            "derivedAnyCoverageStandardErrorPercentagePoints": 1.58,
+            "note": "Complement 100-none has the same standard error in percentage points; its relative standard error differs."
+          }
+        },
+        {
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "value": 87.09,
+          "publishedNonePercent": 12.91,
+          "sourceRecord": {
+            "table": "4.7",
+            "pdfPage": 101,
+            "printedPage": 71,
+            "row": "Kabupaten Bekasi",
+            "column": "(6) Tidak Punya",
+            "rawValue": "12,91",
+            "coordinates": {
+              "xMin": "689.020000",
+              "yMin": "331.000000",
+              "xMax": "708.454120",
+              "yMax": "339.520000"
+            }
+          },
+          "derivation": {
+            "formula": "100 - published percentage with no health insurance",
+            "publishedNonePercent": 12.91,
+            "denominator": "All resident persons, official survey weighted population; not administrative JKN registry"
+          },
+          "precision": {
+            "sourceTable": "9.8 continuation",
+            "printedPage": 172,
+            "pdfPage": 202,
+            "noneStandardErrorPercentagePoints": 1.33,
+            "noneRsePercent": 10.26,
+            "derivedAnyCoverageStandardErrorPercentagePoints": 1.33,
+            "note": "Complement 100-none has the same standard error in percentage points; its relative standard error differs."
+          }
+        },
+        {
+          "regionId": "3217",
+          "regionName": "Kabupaten Bandung Barat",
+          "value": 52.27,
+          "publishedNonePercent": 47.73,
+          "sourceRecord": {
+            "table": "4.7",
+            "pdfPage": 101,
+            "printedPage": 71,
+            "row": "Kabupaten Bandung Barat",
+            "column": "(6) Tidak Punya",
+            "rawValue": "47,73",
+            "coordinates": {
+              "xMin": "689.020000",
+              "yMin": "343.360000",
+              "xMax": "708.454120",
+              "yMax": "351.880000"
+            }
+          },
+          "derivation": {
+            "formula": "100 - published percentage with no health insurance",
+            "publishedNonePercent": 47.73,
+            "denominator": "All resident persons, official survey weighted population; not administrative JKN registry"
+          },
+          "precision": {
+            "sourceTable": "9.8 continuation",
+            "printedPage": 172,
+            "pdfPage": 202,
+            "noneStandardErrorPercentagePoints": 1.72,
+            "noneRsePercent": 3.6,
+            "derivedAnyCoverageStandardErrorPercentagePoints": 1.72,
+            "note": "Complement 100-none has the same standard error in percentage points; its relative standard error differs."
+          }
+        },
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": 76.78,
+          "publishedNonePercent": 23.22,
+          "sourceRecord": {
+            "table": "4.7",
+            "pdfPage": 101,
+            "printedPage": 71,
+            "row": "Kabupaten Pangandaran",
+            "column": "(6) Tidak Punya",
+            "rawValue": "23,22",
+            "coordinates": {
+              "xMin": "689.020000",
+              "yMin": "355.720000",
+              "xMax": "708.454120",
+              "yMax": "364.240000"
+            }
+          },
+          "derivation": {
+            "formula": "100 - published percentage with no health insurance",
+            "publishedNonePercent": 23.22,
+            "denominator": "All resident persons, official survey weighted population; not administrative JKN registry"
+          },
+          "precision": {
+            "sourceTable": "9.8 continuation",
+            "printedPage": 172,
+            "pdfPage": 202,
+            "noneStandardErrorPercentagePoints": 1.61,
+            "noneRsePercent": 6.92,
+            "derivedAnyCoverageStandardErrorPercentagePoints": 1.61,
+            "note": "Complement 100-none has the same standard error in percentage points; its relative standard error differs."
+          }
+        },
+        {
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "value": 88.47,
+          "publishedNonePercent": 11.53,
+          "sourceRecord": {
+            "table": "4.7",
+            "pdfPage": 101,
+            "printedPage": 71,
+            "row": "Kota Bogor",
+            "column": "(6) Tidak Punya",
+            "rawValue": "11,53",
+            "coordinates": {
+              "xMin": "689.020000",
+              "yMin": "368.080000",
+              "xMax": "708.454120",
+              "yMax": "376.600000"
+            }
+          },
+          "derivation": {
+            "formula": "100 - published percentage with no health insurance",
+            "publishedNonePercent": 11.53,
+            "denominator": "All resident persons, official survey weighted population; not administrative JKN registry"
+          },
+          "precision": {
+            "sourceTable": "9.8 continuation",
+            "printedPage": 172,
+            "pdfPage": 202,
+            "noneStandardErrorPercentagePoints": 1.21,
+            "noneRsePercent": 10.5,
+            "derivedAnyCoverageStandardErrorPercentagePoints": 1.21,
+            "note": "Complement 100-none has the same standard error in percentage points; its relative standard error differs."
+          }
+        },
+        {
+          "regionId": "3272",
+          "regionName": "Kota Sukabumi",
+          "value": 73.96,
+          "publishedNonePercent": 26.04,
+          "sourceRecord": {
+            "table": "4.7",
+            "pdfPage": 101,
+            "printedPage": 71,
+            "row": "Kota Sukabumi",
+            "column": "(6) Tidak Punya",
+            "rawValue": "26,04",
+            "coordinates": {
+              "xMin": "689.020000",
+              "yMin": "380.440000",
+              "xMax": "708.454120",
+              "yMax": "388.960000"
+            }
+          },
+          "derivation": {
+            "formula": "100 - published percentage with no health insurance",
+            "publishedNonePercent": 26.04,
+            "denominator": "All resident persons, official survey weighted population; not administrative JKN registry"
+          },
+          "precision": {
+            "sourceTable": "9.8 continuation",
+            "printedPage": 172,
+            "pdfPage": 202,
+            "noneStandardErrorPercentagePoints": 1.76,
+            "noneRsePercent": 6.76,
+            "derivedAnyCoverageStandardErrorPercentagePoints": 1.76,
+            "note": "Complement 100-none has the same standard error in percentage points; its relative standard error differs."
+          }
+        },
+        {
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "value": 78.34,
+          "publishedNonePercent": 21.66,
+          "sourceRecord": {
+            "table": "4.7",
+            "pdfPage": 101,
+            "printedPage": 71,
+            "row": "Kota Bandung",
+            "column": "(6) Tidak Punya",
+            "rawValue": "21,66",
+            "coordinates": {
+              "xMin": "689.020000",
+              "yMin": "392.800000",
+              "xMax": "708.454120",
+              "yMax": "401.320000"
+            }
+          },
+          "derivation": {
+            "formula": "100 - published percentage with no health insurance",
+            "publishedNonePercent": 21.66,
+            "denominator": "All resident persons, official survey weighted population; not administrative JKN registry"
+          },
+          "precision": {
+            "sourceTable": "9.8 continuation",
+            "printedPage": 172,
+            "pdfPage": 202,
+            "noneStandardErrorPercentagePoints": 1.54,
+            "noneRsePercent": 7.1,
+            "derivedAnyCoverageStandardErrorPercentagePoints": 1.54,
+            "note": "Complement 100-none has the same standard error in percentage points; its relative standard error differs."
+          }
+        },
+        {
+          "regionId": "3274",
+          "regionName": "Kota Cirebon",
+          "value": 92.24,
+          "publishedNonePercent": 7.76,
+          "sourceRecord": {
+            "table": "4.7",
+            "pdfPage": 101,
+            "printedPage": 71,
+            "row": "Kota Cirebon",
+            "column": "(6) Tidak Punya",
+            "rawValue": "7,76",
+            "coordinates": {
+              "xMin": "693.340000",
+              "yMin": "405.160000",
+              "xMax": "708.454480",
+              "yMax": "413.680000"
+            }
+          },
+          "derivation": {
+            "formula": "100 - published percentage with no health insurance",
+            "publishedNonePercent": 7.76,
+            "denominator": "All resident persons, official survey weighted population; not administrative JKN registry"
+          },
+          "precision": {
+            "sourceTable": "9.8 continuation",
+            "printedPage": 172,
+            "pdfPage": 202,
+            "noneStandardErrorPercentagePoints": 1.05,
+            "noneRsePercent": 13.5,
+            "derivedAnyCoverageStandardErrorPercentagePoints": 1.05,
+            "note": "Complement 100-none has the same standard error in percentage points; its relative standard error differs."
+          }
+        },
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": 86.56,
+          "publishedNonePercent": 13.44,
+          "sourceRecord": {
+            "table": "4.7",
+            "pdfPage": 101,
+            "printedPage": 71,
+            "row": "Kota Bekasi",
+            "column": "(6) Tidak Punya",
+            "rawValue": "13,44",
+            "coordinates": {
+              "xMin": "689.020000",
+              "yMin": "417.550000",
+              "xMax": "708.454120",
+              "yMax": "426.070000"
+            }
+          },
+          "derivation": {
+            "formula": "100 - published percentage with no health insurance",
+            "publishedNonePercent": 13.44,
+            "denominator": "All resident persons, official survey weighted population; not administrative JKN registry"
+          },
+          "precision": {
+            "sourceTable": "9.8 continuation",
+            "printedPage": 172,
+            "pdfPage": 202,
+            "noneStandardErrorPercentagePoints": 1.26,
+            "noneRsePercent": 9.36,
+            "derivedAnyCoverageStandardErrorPercentagePoints": 1.26,
+            "note": "Complement 100-none has the same standard error in percentage points; its relative standard error differs."
+          }
+        },
+        {
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "value": 85.44,
+          "publishedNonePercent": 14.56,
+          "sourceRecord": {
+            "table": "4.7",
+            "pdfPage": 101,
+            "printedPage": 71,
+            "row": "Kota Depok",
+            "column": "(6) Tidak Punya",
+            "rawValue": "14,56",
+            "coordinates": {
+              "xMin": "689.020000",
+              "yMin": "429.910000",
+              "xMax": "708.454120",
+              "yMax": "438.430000"
+            }
+          },
+          "derivation": {
+            "formula": "100 - published percentage with no health insurance",
+            "publishedNonePercent": 14.56,
+            "denominator": "All resident persons, official survey weighted population; not administrative JKN registry"
+          },
+          "precision": {
+            "sourceTable": "9.8 continuation",
+            "printedPage": 172,
+            "pdfPage": 202,
+            "noneStandardErrorPercentagePoints": 1.28,
+            "noneRsePercent": 8.76,
+            "derivedAnyCoverageStandardErrorPercentagePoints": 1.28,
+            "note": "Complement 100-none has the same standard error in percentage points; its relative standard error differs."
+          }
+        },
+        {
+          "regionId": "3277",
+          "regionName": "Kota Cimahi",
+          "value": 80.23,
+          "publishedNonePercent": 19.77,
+          "sourceRecord": {
+            "table": "4.7",
+            "pdfPage": 101,
+            "printedPage": 71,
+            "row": "Kota Cimahi",
+            "column": "(6) Tidak Punya",
+            "rawValue": "19,77",
+            "coordinates": {
+              "xMin": "689.020000",
+              "yMin": "442.270000",
+              "xMax": "708.454120",
+              "yMax": "450.790000"
+            }
+          },
+          "derivation": {
+            "formula": "100 - published percentage with no health insurance",
+            "publishedNonePercent": 19.77,
+            "denominator": "All resident persons, official survey weighted population; not administrative JKN registry"
+          },
+          "precision": {
+            "sourceTable": "9.8 continuation",
+            "printedPage": 172,
+            "pdfPage": 202,
+            "noneStandardErrorPercentagePoints": 1.57,
+            "noneRsePercent": 7.96,
+            "derivedAnyCoverageStandardErrorPercentagePoints": 1.57,
+            "note": "Complement 100-none has the same standard error in percentage points; its relative standard error differs."
+          }
+        },
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": 67.4,
+          "publishedNonePercent": 32.6,
+          "sourceRecord": {
+            "table": "4.7",
+            "pdfPage": 101,
+            "printedPage": 71,
+            "row": "Kota Tasikmalaya",
+            "column": "(6) Tidak Punya",
+            "rawValue": "32,60",
+            "coordinates": {
+              "xMin": "689.020000",
+              "yMin": "454.630000",
+              "xMax": "708.454120",
+              "yMax": "463.150000"
+            }
+          },
+          "derivation": {
+            "formula": "100 - published percentage with no health insurance",
+            "publishedNonePercent": 32.6,
+            "denominator": "All resident persons, official survey weighted population; not administrative JKN registry"
+          },
+          "precision": {
+            "sourceTable": "9.8 continuation",
+            "printedPage": 172,
+            "pdfPage": 202,
+            "noneStandardErrorPercentagePoints": 1.86,
+            "noneRsePercent": 5.71,
+            "derivedAnyCoverageStandardErrorPercentagePoints": 1.86,
+            "note": "Complement 100-none has the same standard error in percentage points; its relative standard error differs."
+          }
+        },
+        {
+          "regionId": "3279",
+          "regionName": "Kota Banjar",
+          "value": 86.29,
+          "publishedNonePercent": 13.71,
+          "sourceRecord": {
+            "table": "4.7",
+            "pdfPage": 101,
+            "printedPage": 71,
+            "row": "Kota Banjar",
+            "column": "(6) Tidak Punya",
+            "rawValue": "13,71",
+            "coordinates": {
+              "xMin": "689.020000",
+              "yMin": "466.990000",
+              "xMax": "708.454120",
+              "yMax": "475.510000"
+            }
+          },
+          "derivation": {
+            "formula": "100 - published percentage with no health insurance",
+            "publishedNonePercent": 13.71,
+            "denominator": "All resident persons, official survey weighted population; not administrative JKN registry"
+          },
+          "precision": {
+            "sourceTable": "9.8 continuation",
+            "printedPage": 172,
+            "pdfPage": 202,
+            "noneStandardErrorPercentagePoints": 1.62,
+            "noneRsePercent": 11.79,
+            "derivedAnyCoverageStandardErrorPercentagePoints": 1.62,
+            "note": "Complement 100-none has the same standard error in percentage points; its relative standard error differs."
+          }
+        }
+      ],
+      "coverage": {
+        "expectedRegions": 27,
+        "numericRecords": 27,
+        "missingRegionIds": [],
+        "duplicateRegionIds": [],
+        "unexpectedRegionIds": []
+      }
+    },
+    {
+      "id": "electric_or_gas_cooking",
+      "name": "Households using electricity or LPG/natural gas/biogas as main cooking fuel",
+      "concept": "Cooking energy use; potential cleaner-fuel proxy, not fully measured clean-energy access",
+      "existingIndicator": false,
+      "source": {
+        "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+        "title": "Statistik Kesejahteraan Rakyat Provinsi Jawa Barat 2023",
+        "url": "https://jabar.bps.go.id/id/publication/2023/12/28/8a2667bb40625076d8ee9c30/statistik-kesejahteraan-rakyat-provinsi-jawa-barat-2023.html",
+        "referenceYear": 2023,
+        "referencePeriod": "Susenas Maret 2023; official household survey estimates",
+        "accessedAt": "2026-10-28",
+        "artifactId": "sha256:780589a38fb683dd28d7a38b1b258042c287bc0cb33e8d4ec4d1a2c69f6b468f",
+        "table": "6.17 Persentase Rumah Tangga menurut Kabupaten/Kota dan Bahan Bakar Utama yang Digunakan untuk Memasak, 2023",
+        "pages": {
+          "printed": 125,
+          "pdf": 155
+        },
+        "unit": "percent of households",
+        "denominator": "All households, including households not cooking at home"
+      },
+      "definition": "Sum of mutually exclusive published electricity and LPG/natural-gas/biogas main-fuel shares. The label is literal, not a claim to measure SDG7.1.2 population access to clean fuels AND technologies.",
+      "valueType": "derived_percentage",
+      "direction": "Higher indicates more reliance on electricity/gaseous main cooking fuel; generic essential-service pressure direction remains qualified.",
+      "comparability": "Same Susenas2023 household main-fuel categories across27. No fuel category or non-cooking household silently recoded.",
+      "transformation": "Add published electricity and gas-category percentages; do not sum overlapping categories or annualize.",
+      "limitations": [
+        "Primary fuel use is not verified fuel affordability, continuous supply, appliance technology or emissions.",
+        "Population-based clean-cooking SDG measure is not the same household-denominator series.",
+        "Other/not-cooking households cannot automatically be classified deprived.",
+        "Source table6.17 differs from yearbook4.3.5 in several non-gas cells; one coherent source retained, not mixed."
+      ],
+      "preliminaryRecommendation": {
+        "status": "CONTEXT ONLY",
+        "reason": "Useful essential-energy context, but does not establish reliable clean-fuel-and-technology access; avoid presenting a constructed fuel-mix percentage as a complete service-quality metric."
+      },
+      "observations": [
+        {
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "value": 96.94,
+          "electricityPercent": 0.57,
+          "gasLpgBiogasPercent": 96.37,
+          "sourceRecord": {
+            "electricity": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Bogor",
+              "column": "(2) Listrik",
+              "rawValue": "0,57",
+              "coordinates": {
+                "xMin": "246.260000",
+                "yMin": "147.230000",
+                "xMax": "261.374480",
+                "yMax": "155.750000"
+              }
+            },
+            "gas": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Bogor",
+              "column": "(3) Elpiji/Gas Kota/Biogas",
+              "rawValue": "96,37",
+              "coordinates": {
+                "xMin": "341.690000",
+                "yMin": "147.230000",
+                "xMax": "361.124120",
+                "yMax": "155.750000"
+              }
+            }
+          },
+          "derivation": {
+            "formula": "published electricity cooking share + published LPG/natural-gas/biogas cooking share",
+            "denominator": "All households including those not cooking at home; mutually exclusive main-fuel categories"
+          }
+        },
+        {
+          "regionId": "3202",
+          "regionName": "Kabupaten Sukabumi",
+          "value": 85.32,
+          "electricityPercent": 0.85,
+          "gasLpgBiogasPercent": 84.47,
+          "sourceRecord": {
+            "electricity": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Sukabumi",
+              "column": "(2) Listrik",
+              "rawValue": "0,85",
+              "coordinates": {
+                "xMin": "246.260000",
+                "yMin": "159.590000",
+                "xMax": "261.374480",
+                "yMax": "168.110000"
+              }
+            },
+            "gas": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Sukabumi",
+              "column": "(3) Elpiji/Gas Kota/Biogas",
+              "rawValue": "84,47",
+              "coordinates": {
+                "xMin": "341.690000",
+                "yMin": "159.590000",
+                "xMax": "361.124120",
+                "yMax": "168.110000"
+              }
+            }
+          },
+          "derivation": {
+            "formula": "published electricity cooking share + published LPG/natural-gas/biogas cooking share",
+            "denominator": "All households including those not cooking at home; mutually exclusive main-fuel categories"
+          }
+        },
+        {
+          "regionId": "3203",
+          "regionName": "Kabupaten Cianjur",
+          "value": 81.68,
+          "electricityPercent": 0.36,
+          "gasLpgBiogasPercent": 81.32,
+          "sourceRecord": {
+            "electricity": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Cianjur",
+              "column": "(2) Listrik",
+              "rawValue": "0,36",
+              "coordinates": {
+                "xMin": "246.260000",
+                "yMin": "171.950000",
+                "xMax": "261.374480",
+                "yMax": "180.470000"
+              }
+            },
+            "gas": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Cianjur",
+              "column": "(3) Elpiji/Gas Kota/Biogas",
+              "rawValue": "81,32",
+              "coordinates": {
+                "xMin": "341.690000",
+                "yMin": "171.950000",
+                "xMax": "361.124120",
+                "yMax": "180.470000"
+              }
+            }
+          },
+          "derivation": {
+            "formula": "published electricity cooking share + published LPG/natural-gas/biogas cooking share",
+            "denominator": "All households including those not cooking at home; mutually exclusive main-fuel categories"
+          }
+        },
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": 97.52,
+          "electricityPercent": 0.08,
+          "gasLpgBiogasPercent": 97.44,
+          "sourceRecord": {
+            "electricity": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Bandung",
+              "column": "(2) Listrik",
+              "rawValue": "0,08",
+              "coordinates": {
+                "xMin": "246.260000",
+                "yMin": "184.310000",
+                "xMax": "261.374480",
+                "yMax": "192.830000"
+              }
+            },
+            "gas": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Bandung",
+              "column": "(3) Elpiji/Gas Kota/Biogas",
+              "rawValue": "97,44",
+              "coordinates": {
+                "xMin": "341.690000",
+                "yMin": "184.310000",
+                "xMax": "361.124120",
+                "yMax": "192.830000"
+              }
+            }
+          },
+          "derivation": {
+            "formula": "published electricity cooking share + published LPG/natural-gas/biogas cooking share",
+            "denominator": "All households including those not cooking at home; mutually exclusive main-fuel categories"
+          }
+        },
+        {
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "value": 85.19,
+          "electricityPercent": 0.62,
+          "gasLpgBiogasPercent": 84.57,
+          "sourceRecord": {
+            "electricity": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Garut",
+              "column": "(2) Listrik",
+              "rawValue": "0,62",
+              "coordinates": {
+                "xMin": "246.260000",
+                "yMin": "196.700000",
+                "xMax": "261.374480",
+                "yMax": "205.220000"
+              }
+            },
+            "gas": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Garut",
+              "column": "(3) Elpiji/Gas Kota/Biogas",
+              "rawValue": "84,57",
+              "coordinates": {
+                "xMin": "341.690000",
+                "yMin": "196.700000",
+                "xMax": "361.124120",
+                "yMax": "205.220000"
+              }
+            }
+          },
+          "derivation": {
+            "formula": "published electricity cooking share + published LPG/natural-gas/biogas cooking share",
+            "denominator": "All households including those not cooking at home; mutually exclusive main-fuel categories"
+          }
+        },
+        {
+          "regionId": "3206",
+          "regionName": "Kabupaten Tasikmalaya",
+          "value": 76.7,
+          "electricityPercent": 0.09,
+          "gasLpgBiogasPercent": 76.61,
+          "sourceRecord": {
+            "electricity": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Tasikmalaya",
+              "column": "(2) Listrik",
+              "rawValue": "0,09",
+              "coordinates": {
+                "xMin": "246.260000",
+                "yMin": "209.060000",
+                "xMax": "261.374480",
+                "yMax": "217.580000"
+              }
+            },
+            "gas": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Tasikmalaya",
+              "column": "(3) Elpiji/Gas Kota/Biogas",
+              "rawValue": "76,61",
+              "coordinates": {
+                "xMin": "341.690000",
+                "yMin": "209.060000",
+                "xMax": "361.124120",
+                "yMax": "217.580000"
+              }
+            }
+          },
+          "derivation": {
+            "formula": "published electricity cooking share + published LPG/natural-gas/biogas cooking share",
+            "denominator": "All households including those not cooking at home; mutually exclusive main-fuel categories"
+          }
+        },
+        {
+          "regionId": "3207",
+          "regionName": "Kabupaten Ciamis",
+          "value": 80.38,
+          "electricityPercent": 0.0,
+          "gasLpgBiogasPercent": 80.38,
+          "sourceRecord": {
+            "electricity": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Ciamis",
+              "column": "(2) Listrik",
+              "rawValue": "0,00",
+              "coordinates": {
+                "xMin": "246.260000",
+                "yMin": "221.420000",
+                "xMax": "261.374480",
+                "yMax": "229.940000"
+              }
+            },
+            "gas": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Ciamis",
+              "column": "(3) Elpiji/Gas Kota/Biogas",
+              "rawValue": "80,38",
+              "coordinates": {
+                "xMin": "341.690000",
+                "yMin": "221.420000",
+                "xMax": "361.124120",
+                "yMax": "229.940000"
+              }
+            }
+          },
+          "derivation": {
+            "formula": "published electricity cooking share + published LPG/natural-gas/biogas cooking share",
+            "denominator": "All households including those not cooking at home; mutually exclusive main-fuel categories"
+          }
+        },
+        {
+          "regionId": "3208",
+          "regionName": "Kabupaten Kuningan",
+          "value": 93.76,
+          "electricityPercent": 1.1,
+          "gasLpgBiogasPercent": 92.66,
+          "sourceRecord": {
+            "electricity": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Kuningan",
+              "column": "(2) Listrik",
+              "rawValue": "1,10",
+              "coordinates": {
+                "xMin": "246.260000",
+                "yMin": "233.780000",
+                "xMax": "261.374480",
+                "yMax": "242.300000"
+              }
+            },
+            "gas": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Kuningan",
+              "column": "(3) Elpiji/Gas Kota/Biogas",
+              "rawValue": "92,66",
+              "coordinates": {
+                "xMin": "341.690000",
+                "yMin": "233.780000",
+                "xMax": "361.124120",
+                "yMax": "242.300000"
+              }
+            }
+          },
+          "derivation": {
+            "formula": "published electricity cooking share + published LPG/natural-gas/biogas cooking share",
+            "denominator": "All households including those not cooking at home; mutually exclusive main-fuel categories"
+          }
+        },
+        {
+          "regionId": "3209",
+          "regionName": "Kabupaten Cirebon",
+          "value": 96.57,
+          "electricityPercent": 0.5,
+          "gasLpgBiogasPercent": 96.07,
+          "sourceRecord": {
+            "electricity": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Cirebon",
+              "column": "(2) Listrik",
+              "rawValue": "0,50",
+              "coordinates": {
+                "xMin": "246.260000",
+                "yMin": "246.140000",
+                "xMax": "261.374480",
+                "yMax": "254.660000"
+              }
+            },
+            "gas": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Cirebon",
+              "column": "(3) Elpiji/Gas Kota/Biogas",
+              "rawValue": "96,07",
+              "coordinates": {
+                "xMin": "341.690000",
+                "yMin": "246.140000",
+                "xMax": "361.124120",
+                "yMax": "254.660000"
+              }
+            }
+          },
+          "derivation": {
+            "formula": "published electricity cooking share + published LPG/natural-gas/biogas cooking share",
+            "denominator": "All households including those not cooking at home; mutually exclusive main-fuel categories"
+          }
+        },
+        {
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "value": 93.53,
+          "electricityPercent": 0.27,
+          "gasLpgBiogasPercent": 93.26,
+          "sourceRecord": {
+            "electricity": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Majalengka",
+              "column": "(2) Listrik",
+              "rawValue": "0,27",
+              "coordinates": {
+                "xMin": "246.260000",
+                "yMin": "258.500000",
+                "xMax": "261.374480",
+                "yMax": "267.020000"
+              }
+            },
+            "gas": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Majalengka",
+              "column": "(3) Elpiji/Gas Kota/Biogas",
+              "rawValue": "93,26",
+              "coordinates": {
+                "xMin": "341.690000",
+                "yMin": "258.500000",
+                "xMax": "361.124120",
+                "yMax": "267.020000"
+              }
+            }
+          },
+          "derivation": {
+            "formula": "published electricity cooking share + published LPG/natural-gas/biogas cooking share",
+            "denominator": "All households including those not cooking at home; mutually exclusive main-fuel categories"
+          }
+        },
+        {
+          "regionId": "3211",
+          "regionName": "Kabupaten Sumedang",
+          "value": 89.9,
+          "electricityPercent": 1.0,
+          "gasLpgBiogasPercent": 88.9,
+          "sourceRecord": {
+            "electricity": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Sumedang",
+              "column": "(2) Listrik",
+              "rawValue": "1,00",
+              "coordinates": {
+                "xMin": "246.260000",
+                "yMin": "270.860000",
+                "xMax": "261.374480",
+                "yMax": "279.380000"
+              }
+            },
+            "gas": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Sumedang",
+              "column": "(3) Elpiji/Gas Kota/Biogas",
+              "rawValue": "88,90",
+              "coordinates": {
+                "xMin": "341.690000",
+                "yMin": "270.860000",
+                "xMax": "361.124120",
+                "yMax": "279.380000"
+              }
+            }
+          },
+          "derivation": {
+            "formula": "published electricity cooking share + published LPG/natural-gas/biogas cooking share",
+            "denominator": "All households including those not cooking at home; mutually exclusive main-fuel categories"
+          }
+        },
+        {
+          "regionId": "3212",
+          "regionName": "Kabupaten Indramayu",
+          "value": 96.33,
+          "electricityPercent": 0.3,
+          "gasLpgBiogasPercent": 96.03,
+          "sourceRecord": {
+            "electricity": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Indramayu",
+              "column": "(2) Listrik",
+              "rawValue": "0,30",
+              "coordinates": {
+                "xMin": "246.260000",
+                "yMin": "283.220000",
+                "xMax": "261.374480",
+                "yMax": "291.740000"
+              }
+            },
+            "gas": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Indramayu",
+              "column": "(3) Elpiji/Gas Kota/Biogas",
+              "rawValue": "96,03",
+              "coordinates": {
+                "xMin": "341.690000",
+                "yMin": "283.220000",
+                "xMax": "361.124120",
+                "yMax": "291.740000"
+              }
+            }
+          },
+          "derivation": {
+            "formula": "published electricity cooking share + published LPG/natural-gas/biogas cooking share",
+            "denominator": "All households including those not cooking at home; mutually exclusive main-fuel categories"
+          }
+        },
+        {
+          "regionId": "3213",
+          "regionName": "Kabupaten Subang",
+          "value": 91.16,
+          "electricityPercent": 0.46,
+          "gasLpgBiogasPercent": 90.7,
+          "sourceRecord": {
+            "electricity": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Subang",
+              "column": "(2) Listrik",
+              "rawValue": "0,46",
+              "coordinates": {
+                "xMin": "246.260000",
+                "yMin": "295.580000",
+                "xMax": "261.374480",
+                "yMax": "304.100000"
+              }
+            },
+            "gas": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Subang",
+              "column": "(3) Elpiji/Gas Kota/Biogas",
+              "rawValue": "90,70",
+              "coordinates": {
+                "xMin": "341.690000",
+                "yMin": "295.580000",
+                "xMax": "361.124120",
+                "yMax": "304.100000"
+              }
+            }
+          },
+          "derivation": {
+            "formula": "published electricity cooking share + published LPG/natural-gas/biogas cooking share",
+            "denominator": "All households including those not cooking at home; mutually exclusive main-fuel categories"
+          }
+        },
+        {
+          "regionId": "3214",
+          "regionName": "Kabupaten Purwakarta",
+          "value": 91.68,
+          "electricityPercent": 0.12,
+          "gasLpgBiogasPercent": 91.56,
+          "sourceRecord": {
+            "electricity": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Purwakarta",
+              "column": "(2) Listrik",
+              "rawValue": "0,12",
+              "coordinates": {
+                "xMin": "246.260000",
+                "yMin": "307.960000",
+                "xMax": "261.374480",
+                "yMax": "316.480000"
+              }
+            },
+            "gas": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Purwakarta",
+              "column": "(3) Elpiji/Gas Kota/Biogas",
+              "rawValue": "91,56",
+              "coordinates": {
+                "xMin": "341.690000",
+                "yMin": "307.960000",
+                "xMax": "361.124120",
+                "yMax": "316.480000"
+              }
+            }
+          },
+          "derivation": {
+            "formula": "published electricity cooking share + published LPG/natural-gas/biogas cooking share",
+            "denominator": "All households including those not cooking at home; mutually exclusive main-fuel categories"
+          }
+        },
+        {
+          "regionId": "3215",
+          "regionName": "Kabupaten Karawang",
+          "value": 94.71,
+          "electricityPercent": 0.18,
+          "gasLpgBiogasPercent": 94.53,
+          "sourceRecord": {
+            "electricity": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Karawang",
+              "column": "(2) Listrik",
+              "rawValue": "0,18",
+              "coordinates": {
+                "xMin": "246.260000",
+                "yMin": "320.320000",
+                "xMax": "261.374480",
+                "yMax": "328.840000"
+              }
+            },
+            "gas": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Karawang",
+              "column": "(3) Elpiji/Gas Kota/Biogas",
+              "rawValue": "94,53",
+              "coordinates": {
+                "xMin": "341.690000",
+                "yMin": "320.320000",
+                "xMax": "361.124120",
+                "yMax": "328.840000"
+              }
+            }
+          },
+          "derivation": {
+            "formula": "published electricity cooking share + published LPG/natural-gas/biogas cooking share",
+            "denominator": "All households including those not cooking at home; mutually exclusive main-fuel categories"
+          }
+        },
+        {
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "value": 98.31,
+          "electricityPercent": 0.17,
+          "gasLpgBiogasPercent": 98.14,
+          "sourceRecord": {
+            "electricity": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Bekasi",
+              "column": "(2) Listrik",
+              "rawValue": "0,17",
+              "coordinates": {
+                "xMin": "246.260000",
+                "yMin": "332.680000",
+                "xMax": "261.374480",
+                "yMax": "341.200000"
+              }
+            },
+            "gas": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Bekasi",
+              "column": "(3) Elpiji/Gas Kota/Biogas",
+              "rawValue": "98,14",
+              "coordinates": {
+                "xMin": "341.690000",
+                "yMin": "332.680000",
+                "xMax": "361.124120",
+                "yMax": "341.200000"
+              }
+            }
+          },
+          "derivation": {
+            "formula": "published electricity cooking share + published LPG/natural-gas/biogas cooking share",
+            "denominator": "All households including those not cooking at home; mutually exclusive main-fuel categories"
+          }
+        },
+        {
+          "regionId": "3217",
+          "regionName": "Kabupaten Bandung Barat",
+          "value": 89.99,
+          "electricityPercent": 0.18,
+          "gasLpgBiogasPercent": 89.81,
+          "sourceRecord": {
+            "electricity": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Bandung Barat",
+              "column": "(2) Listrik",
+              "rawValue": "0,18",
+              "coordinates": {
+                "xMin": "246.260000",
+                "yMin": "345.040000",
+                "xMax": "261.374480",
+                "yMax": "353.560000"
+              }
+            },
+            "gas": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Bandung Barat",
+              "column": "(3) Elpiji/Gas Kota/Biogas",
+              "rawValue": "89,81",
+              "coordinates": {
+                "xMin": "341.690000",
+                "yMin": "345.040000",
+                "xMax": "361.124120",
+                "yMax": "353.560000"
+              }
+            }
+          },
+          "derivation": {
+            "formula": "published electricity cooking share + published LPG/natural-gas/biogas cooking share",
+            "denominator": "All households including those not cooking at home; mutually exclusive main-fuel categories"
+          }
+        },
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": 84.31,
+          "electricityPercent": 0.27,
+          "gasLpgBiogasPercent": 84.04,
+          "sourceRecord": {
+            "electricity": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Pangandaran",
+              "column": "(2) Listrik",
+              "rawValue": "0,27",
+              "coordinates": {
+                "xMin": "246.260000",
+                "yMin": "357.400000",
+                "xMax": "261.374480",
+                "yMax": "365.920000"
+              }
+            },
+            "gas": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kabupaten Pangandaran",
+              "column": "(3) Elpiji/Gas Kota/Biogas",
+              "rawValue": "84,04",
+              "coordinates": {
+                "xMin": "341.690000",
+                "yMin": "357.400000",
+                "xMax": "361.124120",
+                "yMax": "365.920000"
+              }
+            }
+          },
+          "derivation": {
+            "formula": "published electricity cooking share + published LPG/natural-gas/biogas cooking share",
+            "denominator": "All households including those not cooking at home; mutually exclusive main-fuel categories"
+          }
+        },
+        {
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "value": 98.95,
+          "electricityPercent": 0.2,
+          "gasLpgBiogasPercent": 98.75,
+          "sourceRecord": {
+            "electricity": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kota Bogor",
+              "column": "(2) Listrik",
+              "rawValue": "0,20",
+              "coordinates": {
+                "xMin": "246.260000",
+                "yMin": "369.760000",
+                "xMax": "261.374480",
+                "yMax": "378.280000"
+              }
+            },
+            "gas": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kota Bogor",
+              "column": "(3) Elpiji/Gas Kota/Biogas",
+              "rawValue": "98,75",
+              "coordinates": {
+                "xMin": "341.690000",
+                "yMin": "369.760000",
+                "xMax": "361.124120",
+                "yMax": "378.280000"
+              }
+            }
+          },
+          "derivation": {
+            "formula": "published electricity cooking share + published LPG/natural-gas/biogas cooking share",
+            "denominator": "All households including those not cooking at home; mutually exclusive main-fuel categories"
+          }
+        },
+        {
+          "regionId": "3272",
+          "regionName": "Kota Sukabumi",
+          "value": 97.62,
+          "electricityPercent": 0.2,
+          "gasLpgBiogasPercent": 97.42,
+          "sourceRecord": {
+            "electricity": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kota Sukabumi",
+              "column": "(2) Listrik",
+              "rawValue": "0,20",
+              "coordinates": {
+                "xMin": "246.260000",
+                "yMin": "382.120000",
+                "xMax": "261.374480",
+                "yMax": "390.640000"
+              }
+            },
+            "gas": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kota Sukabumi",
+              "column": "(3) Elpiji/Gas Kota/Biogas",
+              "rawValue": "97,42",
+              "coordinates": {
+                "xMin": "341.690000",
+                "yMin": "382.120000",
+                "xMax": "361.124120",
+                "yMax": "390.640000"
+              }
+            }
+          },
+          "derivation": {
+            "formula": "published electricity cooking share + published LPG/natural-gas/biogas cooking share",
+            "denominator": "All households including those not cooking at home; mutually exclusive main-fuel categories"
+          }
+        },
+        {
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "value": 99.11,
+          "electricityPercent": 0.14,
+          "gasLpgBiogasPercent": 98.97,
+          "sourceRecord": {
+            "electricity": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kota Bandung",
+              "column": "(2) Listrik",
+              "rawValue": "0,14",
+              "coordinates": {
+                "xMin": "246.260000",
+                "yMin": "394.480000",
+                "xMax": "261.374480",
+                "yMax": "403.000000"
+              }
+            },
+            "gas": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kota Bandung",
+              "column": "(3) Elpiji/Gas Kota/Biogas",
+              "rawValue": "98,97",
+              "coordinates": {
+                "xMin": "341.690000",
+                "yMin": "394.480000",
+                "xMax": "361.124120",
+                "yMax": "403.000000"
+              }
+            }
+          },
+          "derivation": {
+            "formula": "published electricity cooking share + published LPG/natural-gas/biogas cooking share",
+            "denominator": "All households including those not cooking at home; mutually exclusive main-fuel categories"
+          }
+        },
+        {
+          "regionId": "3274",
+          "regionName": "Kota Cirebon",
+          "value": 97.79,
+          "electricityPercent": 0.69,
+          "gasLpgBiogasPercent": 97.1,
+          "sourceRecord": {
+            "electricity": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kota Cirebon",
+              "column": "(2) Listrik",
+              "rawValue": "0,69",
+              "coordinates": {
+                "xMin": "246.260000",
+                "yMin": "406.840000",
+                "xMax": "261.374480",
+                "yMax": "415.360000"
+              }
+            },
+            "gas": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kota Cirebon",
+              "column": "(3) Elpiji/Gas Kota/Biogas",
+              "rawValue": "97,10",
+              "coordinates": {
+                "xMin": "341.690000",
+                "yMin": "406.840000",
+                "xMax": "361.124120",
+                "yMax": "415.360000"
+              }
+            }
+          },
+          "derivation": {
+            "formula": "published electricity cooking share + published LPG/natural-gas/biogas cooking share",
+            "denominator": "All households including those not cooking at home; mutually exclusive main-fuel categories"
+          }
+        },
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": 99.64,
+          "electricityPercent": 0.48,
+          "gasLpgBiogasPercent": 99.16,
+          "sourceRecord": {
+            "electricity": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kota Bekasi",
+              "column": "(2) Listrik",
+              "rawValue": "0,48",
+              "coordinates": {
+                "xMin": "246.260000",
+                "yMin": "419.230000",
+                "xMax": "261.374480",
+                "yMax": "427.750000"
+              }
+            },
+            "gas": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kota Bekasi",
+              "column": "(3) Elpiji/Gas Kota/Biogas",
+              "rawValue": "99,16",
+              "coordinates": {
+                "xMin": "341.690000",
+                "yMin": "419.230000",
+                "xMax": "361.124120",
+                "yMax": "427.750000"
+              }
+            }
+          },
+          "derivation": {
+            "formula": "published electricity cooking share + published LPG/natural-gas/biogas cooking share",
+            "denominator": "All households including those not cooking at home; mutually exclusive main-fuel categories"
+          }
+        },
+        {
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "value": 99.63,
+          "electricityPercent": 0.08,
+          "gasLpgBiogasPercent": 99.55,
+          "sourceRecord": {
+            "electricity": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kota Depok",
+              "column": "(2) Listrik",
+              "rawValue": "0,08",
+              "coordinates": {
+                "xMin": "246.260000",
+                "yMin": "431.590000",
+                "xMax": "261.374480",
+                "yMax": "440.110000"
+              }
+            },
+            "gas": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kota Depok",
+              "column": "(3) Elpiji/Gas Kota/Biogas",
+              "rawValue": "99,55",
+              "coordinates": {
+                "xMin": "341.690000",
+                "yMin": "431.590000",
+                "xMax": "361.124120",
+                "yMax": "440.110000"
+              }
+            }
+          },
+          "derivation": {
+            "formula": "published electricity cooking share + published LPG/natural-gas/biogas cooking share",
+            "denominator": "All households including those not cooking at home; mutually exclusive main-fuel categories"
+          }
+        },
+        {
+          "regionId": "3277",
+          "regionName": "Kota Cimahi",
+          "value": 99.23,
+          "electricityPercent": 0.56,
+          "gasLpgBiogasPercent": 98.67,
+          "sourceRecord": {
+            "electricity": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kota Cimahi",
+              "column": "(2) Listrik",
+              "rawValue": "0,56",
+              "coordinates": {
+                "xMin": "246.260000",
+                "yMin": "443.950000",
+                "xMax": "261.374480",
+                "yMax": "452.470000"
+              }
+            },
+            "gas": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kota Cimahi",
+              "column": "(3) Elpiji/Gas Kota/Biogas",
+              "rawValue": "98,67",
+              "coordinates": {
+                "xMin": "341.690000",
+                "yMin": "443.950000",
+                "xMax": "361.124120",
+                "yMax": "452.470000"
+              }
+            }
+          },
+          "derivation": {
+            "formula": "published electricity cooking share + published LPG/natural-gas/biogas cooking share",
+            "denominator": "All households including those not cooking at home; mutually exclusive main-fuel categories"
+          }
+        },
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": 95.07,
+          "electricityPercent": 0.08,
+          "gasLpgBiogasPercent": 94.99,
+          "sourceRecord": {
+            "electricity": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kota Tasikmalaya",
+              "column": "(2) Listrik",
+              "rawValue": "0,08",
+              "coordinates": {
+                "xMin": "246.260000",
+                "yMin": "456.310000",
+                "xMax": "261.374480",
+                "yMax": "464.830000"
+              }
+            },
+            "gas": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kota Tasikmalaya",
+              "column": "(3) Elpiji/Gas Kota/Biogas",
+              "rawValue": "94,99",
+              "coordinates": {
+                "xMin": "341.690000",
+                "yMin": "456.310000",
+                "xMax": "361.124120",
+                "yMax": "464.830000"
+              }
+            }
+          },
+          "derivation": {
+            "formula": "published electricity cooking share + published LPG/natural-gas/biogas cooking share",
+            "denominator": "All households including those not cooking at home; mutually exclusive main-fuel categories"
+          }
+        },
+        {
+          "regionId": "3279",
+          "regionName": "Kota Banjar",
+          "value": 90.39,
+          "electricityPercent": 0.44,
+          "gasLpgBiogasPercent": 89.95,
+          "sourceRecord": {
+            "electricity": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kota Banjar",
+              "column": "(2) Listrik",
+              "rawValue": "0,44",
+              "coordinates": {
+                "xMin": "246.260000",
+                "yMin": "468.670000",
+                "xMax": "261.374480",
+                "yMax": "477.190000"
+              }
+            },
+            "gas": {
+              "table": "6.17",
+              "pdfPage": 155,
+              "printedPage": 125,
+              "row": "Kota Banjar",
+              "column": "(3) Elpiji/Gas Kota/Biogas",
+              "rawValue": "89,95",
+              "coordinates": {
+                "xMin": "341.690000",
+                "yMin": "468.670000",
+                "xMax": "361.124120",
+                "yMax": "477.190000"
+              }
+            }
+          },
+          "derivation": {
+            "formula": "published electricity cooking share + published LPG/natural-gas/biogas cooking share",
+            "denominator": "All households including those not cooking at home; mutually exclusive main-fuel categories"
+          }
+        }
+      ],
+      "coverage": {
+        "expectedRegions": 27,
+        "numericRecords": 27,
+        "missingRegionIds": [],
+        "duplicateRegionIds": [],
+        "unexpectedRegionIds": []
+      }
+    },
+    {
+      "id": "gas_lpg_cooking",
+      "name": "Households using LPG/natural gas/biogas as main cooking fuel",
+      "concept": "Cooking fuel mix diagnostic",
+      "existingIndicator": false,
+      "source": {
+        "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+        "title": "Statistik Kesejahteraan Rakyat Provinsi Jawa Barat 2023",
+        "url": "https://jabar.bps.go.id/id/publication/2023/12/28/8a2667bb40625076d8ee9c30/statistik-kesejahteraan-rakyat-provinsi-jawa-barat-2023.html",
+        "referenceYear": 2023,
+        "referencePeriod": "Susenas Maret 2023; official household survey estimates",
+        "accessedAt": "2026-10-28",
+        "artifactId": "sha256:780589a38fb683dd28d7a38b1b258042c287bc0cb33e8d4ec4d1a2c69f6b468f",
+        "table": "6.17; column(3) Elpiji/Gas Kota/Biogas",
+        "pages": {
+          "printed": 125,
+          "pdf": 155
+        },
+        "unit": "percent of households",
+        "denominator": "All households, including households not cooking at home"
+      },
+      "definition": "Published LPG/natural-gas/biogas main cooking fuel share; electricity is separate and must not be called unserved.",
+      "valueType": "published_rate",
+      "direction": "Not unconditionally monotonic: switching from gas to electric cooking reduces this share without necessarily worsening access.",
+      "comparability": "Same published survey category across27; not a gas-grid connection ratio.",
+      "transformation": "Decimal-comma parsing only.",
+      "limitations": [
+        "Cannot represent all clean cooking access or LPG affordability.",
+        "Directly nested in electric_or_gas_cooking; never independently score both."
+      ],
+      "preliminaryRecommendation": {
+        "status": "CONTEXT ONLY",
+        "reason": "Fuel-mix context only; replacing electricity with gas has no unqualified welfare direction and duplicates the broader cooking proxy."
+      },
+      "observations": [
+        {
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "value": 96.37,
+          "sourceRecord": {
+            "table": "6.17",
+            "pdfPage": 155,
+            "printedPage": 125,
+            "row": "Kabupaten Bogor",
+            "column": "(3) Elpiji/Gas Kota/Biogas",
+            "rawValue": "96,37",
+            "coordinates": {
+              "xMin": "341.690000",
+              "yMin": "147.230000",
+              "xMax": "361.124120",
+              "yMax": "155.750000"
+            }
+          }
+        },
+        {
+          "regionId": "3202",
+          "regionName": "Kabupaten Sukabumi",
+          "value": 84.47,
+          "sourceRecord": {
+            "table": "6.17",
+            "pdfPage": 155,
+            "printedPage": 125,
+            "row": "Kabupaten Sukabumi",
+            "column": "(3) Elpiji/Gas Kota/Biogas",
+            "rawValue": "84,47",
+            "coordinates": {
+              "xMin": "341.690000",
+              "yMin": "159.590000",
+              "xMax": "361.124120",
+              "yMax": "168.110000"
+            }
+          }
+        },
+        {
+          "regionId": "3203",
+          "regionName": "Kabupaten Cianjur",
+          "value": 81.32,
+          "sourceRecord": {
+            "table": "6.17",
+            "pdfPage": 155,
+            "printedPage": 125,
+            "row": "Kabupaten Cianjur",
+            "column": "(3) Elpiji/Gas Kota/Biogas",
+            "rawValue": "81,32",
+            "coordinates": {
+              "xMin": "341.690000",
+              "yMin": "171.950000",
+              "xMax": "361.124120",
+              "yMax": "180.470000"
+            }
+          }
+        },
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": 97.44,
+          "sourceRecord": {
+            "table": "6.17",
+            "pdfPage": 155,
+            "printedPage": 125,
+            "row": "Kabupaten Bandung",
+            "column": "(3) Elpiji/Gas Kota/Biogas",
+            "rawValue": "97,44",
+            "coordinates": {
+              "xMin": "341.690000",
+              "yMin": "184.310000",
+              "xMax": "361.124120",
+              "yMax": "192.830000"
+            }
+          }
+        },
+        {
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "value": 84.57,
+          "sourceRecord": {
+            "table": "6.17",
+            "pdfPage": 155,
+            "printedPage": 125,
+            "row": "Kabupaten Garut",
+            "column": "(3) Elpiji/Gas Kota/Biogas",
+            "rawValue": "84,57",
+            "coordinates": {
+              "xMin": "341.690000",
+              "yMin": "196.700000",
+              "xMax": "361.124120",
+              "yMax": "205.220000"
+            }
+          }
+        },
+        {
+          "regionId": "3206",
+          "regionName": "Kabupaten Tasikmalaya",
+          "value": 76.61,
+          "sourceRecord": {
+            "table": "6.17",
+            "pdfPage": 155,
+            "printedPage": 125,
+            "row": "Kabupaten Tasikmalaya",
+            "column": "(3) Elpiji/Gas Kota/Biogas",
+            "rawValue": "76,61",
+            "coordinates": {
+              "xMin": "341.690000",
+              "yMin": "209.060000",
+              "xMax": "361.124120",
+              "yMax": "217.580000"
+            }
+          }
+        },
+        {
+          "regionId": "3207",
+          "regionName": "Kabupaten Ciamis",
+          "value": 80.38,
+          "sourceRecord": {
+            "table": "6.17",
+            "pdfPage": 155,
+            "printedPage": 125,
+            "row": "Kabupaten Ciamis",
+            "column": "(3) Elpiji/Gas Kota/Biogas",
+            "rawValue": "80,38",
+            "coordinates": {
+              "xMin": "341.690000",
+              "yMin": "221.420000",
+              "xMax": "361.124120",
+              "yMax": "229.940000"
+            }
+          }
+        },
+        {
+          "regionId": "3208",
+          "regionName": "Kabupaten Kuningan",
+          "value": 92.66,
+          "sourceRecord": {
+            "table": "6.17",
+            "pdfPage": 155,
+            "printedPage": 125,
+            "row": "Kabupaten Kuningan",
+            "column": "(3) Elpiji/Gas Kota/Biogas",
+            "rawValue": "92,66",
+            "coordinates": {
+              "xMin": "341.690000",
+              "yMin": "233.780000",
+              "xMax": "361.124120",
+              "yMax": "242.300000"
+            }
+          }
+        },
+        {
+          "regionId": "3209",
+          "regionName": "Kabupaten Cirebon",
+          "value": 96.07,
+          "sourceRecord": {
+            "table": "6.17",
+            "pdfPage": 155,
+            "printedPage": 125,
+            "row": "Kabupaten Cirebon",
+            "column": "(3) Elpiji/Gas Kota/Biogas",
+            "rawValue": "96,07",
+            "coordinates": {
+              "xMin": "341.690000",
+              "yMin": "246.140000",
+              "xMax": "361.124120",
+              "yMax": "254.660000"
+            }
+          }
+        },
+        {
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "value": 93.26,
+          "sourceRecord": {
+            "table": "6.17",
+            "pdfPage": 155,
+            "printedPage": 125,
+            "row": "Kabupaten Majalengka",
+            "column": "(3) Elpiji/Gas Kota/Biogas",
+            "rawValue": "93,26",
+            "coordinates": {
+              "xMin": "341.690000",
+              "yMin": "258.500000",
+              "xMax": "361.124120",
+              "yMax": "267.020000"
+            }
+          }
+        },
+        {
+          "regionId": "3211",
+          "regionName": "Kabupaten Sumedang",
+          "value": 88.9,
+          "sourceRecord": {
+            "table": "6.17",
+            "pdfPage": 155,
+            "printedPage": 125,
+            "row": "Kabupaten Sumedang",
+            "column": "(3) Elpiji/Gas Kota/Biogas",
+            "rawValue": "88,90",
+            "coordinates": {
+              "xMin": "341.690000",
+              "yMin": "270.860000",
+              "xMax": "361.124120",
+              "yMax": "279.380000"
+            }
+          }
+        },
+        {
+          "regionId": "3212",
+          "regionName": "Kabupaten Indramayu",
+          "value": 96.03,
+          "sourceRecord": {
+            "table": "6.17",
+            "pdfPage": 155,
+            "printedPage": 125,
+            "row": "Kabupaten Indramayu",
+            "column": "(3) Elpiji/Gas Kota/Biogas",
+            "rawValue": "96,03",
+            "coordinates": {
+              "xMin": "341.690000",
+              "yMin": "283.220000",
+              "xMax": "361.124120",
+              "yMax": "291.740000"
+            }
+          }
+        },
+        {
+          "regionId": "3213",
+          "regionName": "Kabupaten Subang",
+          "value": 90.7,
+          "sourceRecord": {
+            "table": "6.17",
+            "pdfPage": 155,
+            "printedPage": 125,
+            "row": "Kabupaten Subang",
+            "column": "(3) Elpiji/Gas Kota/Biogas",
+            "rawValue": "90,70",
+            "coordinates": {
+              "xMin": "341.690000",
+              "yMin": "295.580000",
+              "xMax": "361.124120",
+              "yMax": "304.100000"
+            }
+          }
+        },
+        {
+          "regionId": "3214",
+          "regionName": "Kabupaten Purwakarta",
+          "value": 91.56,
+          "sourceRecord": {
+            "table": "6.17",
+            "pdfPage": 155,
+            "printedPage": 125,
+            "row": "Kabupaten Purwakarta",
+            "column": "(3) Elpiji/Gas Kota/Biogas",
+            "rawValue": "91,56",
+            "coordinates": {
+              "xMin": "341.690000",
+              "yMin": "307.960000",
+              "xMax": "361.124120",
+              "yMax": "316.480000"
+            }
+          }
+        },
+        {
+          "regionId": "3215",
+          "regionName": "Kabupaten Karawang",
+          "value": 94.53,
+          "sourceRecord": {
+            "table": "6.17",
+            "pdfPage": 155,
+            "printedPage": 125,
+            "row": "Kabupaten Karawang",
+            "column": "(3) Elpiji/Gas Kota/Biogas",
+            "rawValue": "94,53",
+            "coordinates": {
+              "xMin": "341.690000",
+              "yMin": "320.320000",
+              "xMax": "361.124120",
+              "yMax": "328.840000"
+            }
+          }
+        },
+        {
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "value": 98.14,
+          "sourceRecord": {
+            "table": "6.17",
+            "pdfPage": 155,
+            "printedPage": 125,
+            "row": "Kabupaten Bekasi",
+            "column": "(3) Elpiji/Gas Kota/Biogas",
+            "rawValue": "98,14",
+            "coordinates": {
+              "xMin": "341.690000",
+              "yMin": "332.680000",
+              "xMax": "361.124120",
+              "yMax": "341.200000"
+            }
+          }
+        },
+        {
+          "regionId": "3217",
+          "regionName": "Kabupaten Bandung Barat",
+          "value": 89.81,
+          "sourceRecord": {
+            "table": "6.17",
+            "pdfPage": 155,
+            "printedPage": 125,
+            "row": "Kabupaten Bandung Barat",
+            "column": "(3) Elpiji/Gas Kota/Biogas",
+            "rawValue": "89,81",
+            "coordinates": {
+              "xMin": "341.690000",
+              "yMin": "345.040000",
+              "xMax": "361.124120",
+              "yMax": "353.560000"
+            }
+          }
+        },
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": 84.04,
+          "sourceRecord": {
+            "table": "6.17",
+            "pdfPage": 155,
+            "printedPage": 125,
+            "row": "Kabupaten Pangandaran",
+            "column": "(3) Elpiji/Gas Kota/Biogas",
+            "rawValue": "84,04",
+            "coordinates": {
+              "xMin": "341.690000",
+              "yMin": "357.400000",
+              "xMax": "361.124120",
+              "yMax": "365.920000"
+            }
+          }
+        },
+        {
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "value": 98.75,
+          "sourceRecord": {
+            "table": "6.17",
+            "pdfPage": 155,
+            "printedPage": 125,
+            "row": "Kota Bogor",
+            "column": "(3) Elpiji/Gas Kota/Biogas",
+            "rawValue": "98,75",
+            "coordinates": {
+              "xMin": "341.690000",
+              "yMin": "369.760000",
+              "xMax": "361.124120",
+              "yMax": "378.280000"
+            }
+          }
+        },
+        {
+          "regionId": "3272",
+          "regionName": "Kota Sukabumi",
+          "value": 97.42,
+          "sourceRecord": {
+            "table": "6.17",
+            "pdfPage": 155,
+            "printedPage": 125,
+            "row": "Kota Sukabumi",
+            "column": "(3) Elpiji/Gas Kota/Biogas",
+            "rawValue": "97,42",
+            "coordinates": {
+              "xMin": "341.690000",
+              "yMin": "382.120000",
+              "xMax": "361.124120",
+              "yMax": "390.640000"
+            }
+          }
+        },
+        {
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "value": 98.97,
+          "sourceRecord": {
+            "table": "6.17",
+            "pdfPage": 155,
+            "printedPage": 125,
+            "row": "Kota Bandung",
+            "column": "(3) Elpiji/Gas Kota/Biogas",
+            "rawValue": "98,97",
+            "coordinates": {
+              "xMin": "341.690000",
+              "yMin": "394.480000",
+              "xMax": "361.124120",
+              "yMax": "403.000000"
+            }
+          }
+        },
+        {
+          "regionId": "3274",
+          "regionName": "Kota Cirebon",
+          "value": 97.1,
+          "sourceRecord": {
+            "table": "6.17",
+            "pdfPage": 155,
+            "printedPage": 125,
+            "row": "Kota Cirebon",
+            "column": "(3) Elpiji/Gas Kota/Biogas",
+            "rawValue": "97,10",
+            "coordinates": {
+              "xMin": "341.690000",
+              "yMin": "406.840000",
+              "xMax": "361.124120",
+              "yMax": "415.360000"
+            }
+          }
+        },
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": 99.16,
+          "sourceRecord": {
+            "table": "6.17",
+            "pdfPage": 155,
+            "printedPage": 125,
+            "row": "Kota Bekasi",
+            "column": "(3) Elpiji/Gas Kota/Biogas",
+            "rawValue": "99,16",
+            "coordinates": {
+              "xMin": "341.690000",
+              "yMin": "419.230000",
+              "xMax": "361.124120",
+              "yMax": "427.750000"
+            }
+          }
+        },
+        {
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "value": 99.55,
+          "sourceRecord": {
+            "table": "6.17",
+            "pdfPage": 155,
+            "printedPage": 125,
+            "row": "Kota Depok",
+            "column": "(3) Elpiji/Gas Kota/Biogas",
+            "rawValue": "99,55",
+            "coordinates": {
+              "xMin": "341.690000",
+              "yMin": "431.590000",
+              "xMax": "361.124120",
+              "yMax": "440.110000"
+            }
+          }
+        },
+        {
+          "regionId": "3277",
+          "regionName": "Kota Cimahi",
+          "value": 98.67,
+          "sourceRecord": {
+            "table": "6.17",
+            "pdfPage": 155,
+            "printedPage": 125,
+            "row": "Kota Cimahi",
+            "column": "(3) Elpiji/Gas Kota/Biogas",
+            "rawValue": "98,67",
+            "coordinates": {
+              "xMin": "341.690000",
+              "yMin": "443.950000",
+              "xMax": "361.124120",
+              "yMax": "452.470000"
+            }
+          }
+        },
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": 94.99,
+          "sourceRecord": {
+            "table": "6.17",
+            "pdfPage": 155,
+            "printedPage": 125,
+            "row": "Kota Tasikmalaya",
+            "column": "(3) Elpiji/Gas Kota/Biogas",
+            "rawValue": "94,99",
+            "coordinates": {
+              "xMin": "341.690000",
+              "yMin": "456.310000",
+              "xMax": "361.124120",
+              "yMax": "464.830000"
+            }
+          }
+        },
+        {
+          "regionId": "3279",
+          "regionName": "Kota Banjar",
+          "value": 89.95,
+          "sourceRecord": {
+            "table": "6.17",
+            "pdfPage": 155,
+            "printedPage": 125,
+            "row": "Kota Banjar",
+            "column": "(3) Elpiji/Gas Kota/Biogas",
+            "rawValue": "89,95",
+            "coordinates": {
+              "xMin": "341.690000",
+              "yMin": "468.670000",
+              "xMax": "361.124120",
+              "yMax": "477.190000"
+            }
+          }
+        }
+      ],
+      "coverage": {
+        "expectedRegions": 27,
+        "numericRecords": 27,
+        "missingRegionIds": [],
+        "duplicateRegionIds": [],
+        "unexpectedRegionIds": []
+      }
+    }
+  ],
+  "failedDatasets": [
+    {
+      "id": "sum-insurer-categories",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "title": "Persentase Penduduk Menurut Kabupaten/Kota dan Jenis Jaminan Kesehatan yang Dimiliki di Provinsi Jawa Barat, 2022 dan 2023",
+      "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "locator": "Table4.2.11 printed241–242/PDF317–318",
+      "whatWasFound": "District percentages by PBI/nonPBI and grouped other insurers, with28rows including province.",
+      "coverage": "27 district labels inspected for2023; no union ownership percentage in this table.",
+      "reason": "Cannot safely sum overlapping insurance categories into any-insurance coverage. Welfare4.7 explicit no-insurance complement provides a valid alternative.",
+      "classification": "REJECTED as union-coverage derivation"
+    },
+    {
+      "id": "yearbook-gas-only-clean-cooking",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "title": "Distribusi Persentase Rumah Tangga Menurut Kabupaten/Kota dan Bahan Bakar Utama yang Digunakan untuk Memasak di Provinsi Jawa Barat, 2023",
+      "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "locator": "Table4.3.5 printed258/PDF334",
+      "whatWasFound": "All27 rows; gas/LPG separated, electricity merged into Others, which also includes non-cooking households. Several non-gas cells disagree with welfare6.17.",
+      "examples": [
+        {
+          "regionId": "3201",
+          "yearbookWoodKeroseneCharcoalBriquettesPercent": 2.61,
+          "welfareKeroseneBriquettesCharcoalFirewoodPercent": 3.01
+        },
+        {
+          "regionId": "3271",
+          "yearbookWoodKeroseneCharcoalBriquettesPercent": 0.01,
+          "welfareKeroseneBriquettesCharcoalFirewoodPercent": 0.85
+        }
+      ],
+      "coverage": "27/27gas cells; ambiguous negligible dashes in several alternative-fuel cells. No dash converted to zero.",
+      "reason": "Gas-only share cannot represent all cleaner cooking fuels; no separation of electric cooking or non-cooking in Others. Cross-publication differences prevent mixing residuals.",
+      "classification": "CONTEXT ONLY; rejected as complete clean-cooking measure"
+    },
+    {
+      "id": "homeownership-as-housing-quality",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "title": "Distribusi Persentase Rumah Tangga Menurut Kabupaten/Kota dan Status Penguasaan Bangunan Tempat Tinggal di Provinsi Jawa Barat, 2023",
+      "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "locator": "Table4.3.6 printed259/PDF335",
+      "whatWasFound": "All27 district labels with own/rent/other shares; urban renting much higher.",
+      "coverage": "27/27labels; numeric panel not adopted because concept fails first.",
+      "reason": "Tenure is not physical adequacy, affordability, security or household-service quality. Renting is not automatically deprivation.",
+      "classification": "REJECTED for direct Basic Services scoring"
+    }
+  ],
+  "findings": [
+    "New optional service areas were not admitted simply because values exist. Insurance ownership is a separate financial-access concept from facility capacity; cooking-fuel composition remains qualified context.",
+    "All source numeric values retained at published precision; official survey estimates only, no custom modeled data.",
+    "Survey publication supplies explicit uncertainty for insurance non-coverage: no-insurance RSE ranges3.11–13.50%; the union complement is not a sum of insurer shares.",
+    "Full source PDF bytes retained only in analysis memory; no full copyrighted book or temporary script added to repository."
+  ]
+}

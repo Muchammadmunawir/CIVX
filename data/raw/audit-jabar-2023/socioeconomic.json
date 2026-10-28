@@ -1,0 +1,3540 @@
+{
+  "auditId": "jabar-2023-socioeconomic-evidence-audit",
+  "accessedAt": "2026-10-28",
+  "scope": {
+    "year": 2023,
+    "province": "Jawa Barat",
+    "expectedRegions": 27,
+    "regionRegistry": "data/raw/civx-jabar-2023.json regions",
+    "regionIds": [
+      "3201",
+      "3202",
+      "3203",
+      "3204",
+      "3205",
+      "3206",
+      "3207",
+      "3208",
+      "3209",
+      "3210",
+      "3211",
+      "3212",
+      "3213",
+      "3214",
+      "3215",
+      "3216",
+      "3217",
+      "3218",
+      "3271",
+      "3272",
+      "3273",
+      "3274",
+      "3275",
+      "3276",
+      "3277",
+      "3278",
+      "3279"
+    ],
+    "candidates": [
+      "poverty",
+      "unemployment",
+      "gini_ratio",
+      "expenditure_per_capita",
+      "labour_force_participation"
+    ],
+    "purpose": "Evidence audit only; no production inputs, scoring, weights, UI or dependencies changed."
+  },
+  "artifacts": [
+    {
+      "id": "sha256:500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "title": "Provinsi Jawa Barat Dalam Angka 2024",
+      "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "localPath": "data/raw/bps-jabar-dalam-angka-2024.pdf",
+      "bytes": 11915084,
+      "sha256": "500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81",
+      "originalAcquiredAt": "2026-10-26",
+      "accessedAt": "2026-10-28",
+      "releasedAt": "2024-02-28",
+      "revisedAt": "2024-02-29",
+      "redistribution": "Existing official local artifact reused; no full PDF added."
+    },
+    {
+      "id": "sha256:9e17a4025e47cded3002139ed07f0019c0a778af8f16b04e7e6585874e7944de",
+      "title": "Gini Ratio Kabupaten/Kota di Provinsi Jawa Barat, 2023",
+      "url": "https://jabar.bps.go.id/id/statistics-table/2/OTUxIzI=/gini-ratio-kabupaten-kota-di-provinsi-jawa-barat.html",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "localPath": null,
+      "bytes": 5062,
+      "sha256": "9e17a4025e47cded3002139ed07f0019c0a778af8f16b04e7e6585874e7944de",
+      "originalAcquiredAt": "2026-10-28",
+      "accessedAt": "2026-10-28",
+      "sourceLastUpdated": "2025-12-17 15:59:49",
+      "byteRepresentation": "Exact decoded fetch response text encoded UTF-8, not compressed wire bytes; rawText preserved.",
+      "request": {
+        "method": "POST",
+        "url": "https://jabar.bps.go.id/id/statistics-table/2/OTUxIzI=/gini-ratio-kabupaten-kota-di-provinsi-jawa-barat.html",
+        "nextAction": "409405684ef06ec6bfa0c43c84b25cb8ccaa4c1366",
+        "body": "[{\"locale\":\"id\",\"id\":\"OTUxIzI=\",\"year\":\"123\"}]"
+      },
+      "apiLocator": "https://webapi.bps.go.id/v1/api/list/model/data/lang/ind/domain/3200/var/951/th/123/key/[WebAPI_KEY]",
+      "rawText": "0:{\"a\":\"$@1\",\"f\":\"\",\"b\":\"UJXuN0w06MGEXIwHF_FN3\"}\n1:{\"status\":true,\"response\":{\"status\":\"OK\",\"data-availability\":\"available\",\"last_update\":\"2025-12-17 15:59:49\",\"subject\":[{\"val\":563,\"label\":\"Kondisi Tempat Tinggal, Kemiskinan, dan Permasalahan Sosial Lintas Sektor\"}],\"var\":[{\"val\":951,\"label\":\"Gini Ratio Kabupaten/Kota di Provinsi Jawa Barat\",\"unit\":\"Tidak Ada Satuan\",\"subj\":\"Kemiskinan\",\"def\":\"-\",\"decimal\":3,\"note\":\"<p><br /></p><p><br /></p><p><br /></p><p>Sumber Data: Survei Sosial Ekonomi Nasional (SUSENAS) Maret<br /></p><p><br /></p><p><br /></p><p><br /></p>\"}],\"turvar\":[{\"val\":\"0\",\"label\":\"Tidak ada\"}],\"labelvervar\":\"27 Kabupaten/Kota\",\"vervar\":[{\"val\":3200,\"label\":\"Provinsi Jawa Barat\"},{\"val\":3201,\"label\":\"Kabupaten Bogor\"},{\"val\":3202,\"label\":\"Kabupaten Sukabumi\"},{\"val\":3203,\"label\":\"Kabupaten Cianjur\"},{\"val\":3204,\"label\":\"Kabupaten Bandung\"},{\"val\":3205,\"label\":\"Kabupaten Garut\"},{\"val\":3206,\"label\":\"Kabupaten Tasikmalaya\"},{\"val\":3207,\"label\":\"Kabupaten Ciamis\"},{\"val\":3208,\"label\":\"Kabupaten Kuningan\"},{\"val\":3209,\"label\":\"Kabupaten Cirebon\"},{\"val\":3210,\"label\":\"Kabupaten Majalengka\"},{\"val\":3211,\"label\":\"Kabupaten Sumedang\"},{\"val\":3212,\"label\":\"Kabupaten Indramayu\"},{\"val\":3213,\"label\":\"Kabupaten Subang\"},{\"val\":3214,\"label\":\"Kabupaten Purwakarta\"},{\"val\":3215,\"label\":\"Kabupaten Karawang\"},{\"val\":3216,\"label\":\"Kabupaten Bekasi\"},{\"val\":3217,\"label\":\"Kabupaten Bandung Barat\"},{\"val\":3218,\"label\":\"Kabupaten Pangandaran\"},{\"val\":3271,\"label\":\"Kota Bogor\"},{\"val\":3272,\"label\":\"Kota Sukabumi\"},{\"val\":3273,\"label\":\"Kota Bandung\"},{\"val\":3274,\"label\":\"Kota Cirebon\"},{\"val\":3275,\"label\":\"Kota Bekasi\"},{\"val\":3276,\"label\":\"Kota Depok\"},{\"val\":3277,\"label\":\"Kota Cimahi\"},{\"val\":3278,\"label\":\"Kota Tasikmalaya\"},{\"val\":3279,\"label\":\"Kota Banjar\"}],\"tahun\":[{\"val\":123,\"label\":\"2023\"}],\"turtahun\":[{\"val\":0,\"label\":\"Tahun\"}],\"datacontent\":{\"320095101230\":0.425,\"320195101230\":0.369,\"320295101230\":0.355,\"320395101230\":0.319,\"320495101230\":0.348,\"320595101230\":0.361,\"320695101230\":0.404,\"320795101230\":0.341,\"320895101230\":0.351,\"320995101230\":0.361,\"321095101230\":0.342,\"321195101230\":0.366,\"321295101230\":0.344,\"321395101230\":0.331,\"321495101230\":0.372,\"321595101230\":0.389,\"321695101230\":0.397,\"321795101230\":0.374,\"321895101230\":0.323,\"327195101230\":0.464,\"327295101230\":0.458,\"327395101230\":0.459,\"327495101230\":0.468,\"327595101230\":0.414,\"327695101230\":0.402,\"327795101230\":0.394,\"327895101230\":0.428,\"327995101230\":0.337},\"related\":[{\"id\":\"OTQ0IzI=\",\"title\":\"Gini Ratio Provinsi Jawa Barat\",\"tablesource\":\"2\",\"last_update\":\"2026-08-05 11:00:28\",\"url\":\"https://jabar.bps.go.id/id/statistics-table/2/OTQ0IzI=/gini-ratio-provinsi-jawa-barat.html\"},{\"id\":\"S3pkSVdHdG1iVU50TXlzdlNYY3pZVzFVV1haVlFUMDkjMyMzMjAw\",\"title\":\"Jumlah Kecamatan Menurut Kabupaten/Kota di Provinsi Jawa Barat\",\"tablesource\":\"3\",\"last_update\":\"2026-02-12 11:56:28\",\"url\":\"https://jabar.bps.go.id/id/statistics-table/3/S3pkSVdHdG1iVU50TXlzdlNYY3pZVzFVV1haVlFUMDkjMyMzMjAw/jumlah-kecamatan-menurut-kabupaten-kota-di-provinsi-jawa-barat.html\"},{\"id\":\"YVdwSFJHRjRVVkJqWlRWRU9EQkhNVFY0UjB4VVVUMDkjMyMzMjAw\",\"title\":\"Jumlah Tenaga Kesehatan Menurut Kabupaten/Kota di Provinsi Jawa Barat\",\"tablesource\":\"3\",\"last_update\":\"2026-02-23 10:23:13\",\"url\":\"https://jabar.bps.go.id/id/statistics-table/3/YVdwSFJHRjRVVkJqWlRWRU9EQkhNVFY0UjB4VVVUMDkjMyMzMjAw/jumlah-tenaga-kesehatan-menurut-kabupaten-kota-di-provinsi-jawa-barat.html\"},{\"id\":\"V25GaFNHaExaMnhITm1sWmRrUlJZelJzYUc1SGR6MDkjMyMzMjAw\",\"title\":\"Indeks Pembangunan Manusia Menurut Kabupaten/Kota di Provinsi Jawa Barat\",\"tablesource\":\"3\",\"last_update\":\"2026-02-12 11:44:36\",\"url\":\"https://jabar.bps.go.id/id/statistics-table/3/V25GaFNHaExaMnhITm1sWmRrUlJZelJzYUc1SGR6MDkjMyMzMjAw/indeks-pembangunan-manusia-menurut-kabupaten-kota-di-provinsi-jawa-barat.html\"},{\"id\":\"VkhwVUszTXJPVmQ2ZFRKamNIZG9RMVo2VEdsbVVUMDkjMyMzMjAw\",\"title\":\"Nikah dan Cerai Menurut Kabupaten/Kota (kejadian) di Provinsi Jawa Barat\",\"tablesource\":\"3\",\"last_update\":\"2026-02-09 11:04:16\",\"url\":\"https://jabar.bps.go.id/id/statistics-table/3/VkhwVUszTXJPVmQ2ZFRKamNIZG9RMVo2VEdsbVVUMDkjMyMzMjAw/nikah-dan-cerai-menurut-kabupaten-kota-kejadian-di-provinsi-jawa-barat.html\"},{\"id\":\"NjMyIzE=\",\"title\":\"Luas Daerah Kabupaten/Kota di Provinsi Jawa Barat, 2019-2021\",\"tablesource\":\"1\",\"last_update\":\"2022-07-08 00:00:00\",\"url\":\"https://jabar.bps.go.id/id/statistics-table/1/NjMyIzE=/luas-daerah-kabupaten-kota-di-provinsi-jawa-barat-2019-2021.html\"},{\"id\":\"MTAjMQ==\",\"title\":\"Luas Wilayah Menurut Kabupaten/Kota di Provinsi Jawa Barat, 2016\",\"tablesource\":\"1\",\"last_update\":\"2018-03-22 00:00:00\",\"url\":\"https://jabar.bps.go.id/id/statistics-table/1/MTAjMQ==/luas-wilayah-menurut-kabupaten-kota-di-provinsi-jawa-barat-2016.html\"},{\"id\":\"NjI5IzE=\",\"title\":\"Nikah dan Cerai Menurut Kabupaten/Kota di Provinsi Jawa Barat, 2021\",\"tablesource\":\"1\",\"last_update\":\"2022-07-08 00:00:00\",\"url\":\"https://jabar.bps.go.id/id/statistics-table/1/NjI5IzE=/nikah-dan-cerai-menurut-kabupaten-kota-di-provinsi-jawa-barat-2021.html\"}],\"metadata\":{\"indikator\":[]}}}\n"
+    },
+    {
+      "id": "sha256:d0fdbb2a76e55335c96871f186b53a4b92adacf8a5249111a307f3b0e10a09fb",
+      "title": "Booklet Ketimpangan Maret 2023 Provinsi Jawa Barat",
+      "url": "https://jabar.bps.go.id/id/publication/2023/12/20/0489b78c74a7313cf2eebf9d/booklet-tingkat-ketimpangan-pengeluaran-penduduk-provinsi-jawa-barat-maret-2023.html",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "localPath": null,
+      "bytes": 2345858,
+      "sha256": "d0fdbb2a76e55335c96871f186b53a4b92adacf8a5249111a307f3b0e10a09fb",
+      "originalAcquiredAt": "2026-10-28",
+      "accessedAt": "2026-10-28",
+      "downloadUrl": "https://webapi.bps.go.id/download.php?f=AQADN36HR0vvn2E1AUw2lIMgq8DYOEC8Jpv2YgXpIHsyY1KttEuYGYfrfaEkft80footscREgi-GR_tI16dMJul9SD_lt1edr7s3QVDAohdYyE5uP5gWTvA2MHEE5oXn-iAh1I6RGmiW6IW8cev0bMPdHkkrT_SsUTzL7cwEAGazO_nETvZuSvQNCtjJUPB9y0fcjR3g2sT2eJrv5XJqYAuYfql7LUszmLS7sBgKyrasrcN0pB2c0VbMlF1cCvOO8360lFstzDClstE1wvcXBXo38OnIIi--nESeMVEsQ7WB",
+      "releasedAt": "2023-12-20",
+      "pagesUsed": [
+        {
+          "printed": 8,
+          "pdf": 8
+        },
+        {
+          "printed": 9,
+          "pdf": 9
+        }
+      ],
+      "retention": "Read in memory; full PDF not written to repository."
+    },
+    {
+      "id": "sha256:2400d561c711cd2aea83f5f3b8b6f1983774fa108aa06704b4837d3177a809c7",
+      "title": "Indeks Pembangunan Manusia Provinsi Jawa Barat 2023",
+      "url": "https://jabar.bps.go.id/id/publication/2024/06/14/a2e7a86a8939c40c9d932c73/indeks-pembangunan-manusia-provinsi-jawa-barat-2023.html",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "localPath": null,
+      "bytes": 10147872,
+      "sha256": "2400d561c711cd2aea83f5f3b8b6f1983774fa108aa06704b4837d3177a809c7",
+      "originalAcquiredAt": "2026-10-28",
+      "accessedAt": "2026-10-28",
+      "downloadUrl": "https://webapi.bps.go.id/download.php?f=AQADEkG_WTasjOjSDW37qgcb--Gac-OPx-jVq183zR0dl7MiPn1Bx3_xF72ldQu64faB5joA4b-0QoqN8QrQ_PaMDTmg5ddAQG03aBhVswnn3Zf4YMpj7kouC_RXbQW1-gXJ7_JuuI9oB0e1rkDBPQGh-zpOzdSelugETWucPO6l6wMTWew_Gz3MZIB6gG4ZDb6b8gfRfyJNMmwDYYfN6n6dDIScomtDkyyy3ljhmevIb5EXOGxNKklCqDyK7qipy6VgcFGZWZ9JhGC0Enr4gOiuAXsv0ca7C9jiPDPV--sD",
+      "releasedAt": "2024-06-14",
+      "pagesUsed": [
+        {
+          "printed": 75,
+          "pdf": 89
+        }
+      ],
+      "retention": "Read in memory; appendix numeric expenditure cross-check only."
+    },
+    {
+      "id": "sha256:c846aabb490b660bf02676a625561a58dbaeaca3e65d1a3a781e88b5c91cc45e",
+      "title": "Indeks Pembangunan Manusia: Metode Baru (methodology booklet)",
+      "url": "https://searchengine.web.bps.go.id/filemenu/Booklet-IPM-Metode-Baru.pdf",
+      "publisher": "Badan Pusat Statistik (BPS-Statistics Indonesia)",
+      "localPath": null,
+      "bytes": 4282149,
+      "sha256": "c846aabb490b660bf02676a625561a58dbaeaca3e65d1a3a781e88b5c91cc45e",
+      "originalAcquiredAt": "2026-10-28",
+      "accessedAt": "2026-10-28",
+      "pagesUsed": [
+        {
+          "printed": null,
+          "pdf": 10
+        },
+        {
+          "printed": null,
+          "pdf": 11
+        }
+      ],
+      "retention": "Read in memory; expenditure methods only; historical SP2010 life expectancy not applied to 2023."
+    }
+  ],
+  "indicators": [
+    {
+      "id": "poverty",
+      "name": "Persentase penduduk miskin (P0)",
+      "dimension": "socioeconomic",
+      "source": {
+        "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+        "title": "Jumlah dan Persentase Penduduk Miskin Menurut Kabupaten/Kota di Provinsi Jawa Barat, 2022 dan 2023",
+        "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+        "table": "4.6.2",
+        "pages": {
+          "printed": [
+            307
+          ],
+          "pdf": [
+            383
+          ]
+        },
+        "referencePeriod": "March 2023 Susenas; district table labels year only, corroborated by companion table 4.6.1",
+        "unit": "percent",
+        "denominator": "All residents; poor persons / total population × 100",
+        "accessedAt": "2026-10-28",
+        "artifactId": "sha256:500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81"
+      },
+      "definition": "Basic-needs headcount rate: residents whose average monthly per-capita consumption expenditure is below applicable regional food and non-food poverty line. Not poverty gap, severity or raw number of poor persons. Definitions printed 160/PDF236; period printed306/PDF382.",
+      "valueType": "rate",
+      "direction": "LOWER_IS_BETTER",
+      "comparability": "Same March2023 Susenas concept, person denominator, percent unit and district geography across27. Regional poverty lines vary by design; do not impose one nominal cutoff.",
+      "limitations": [
+        "Rounded survey estimates; table supplies no sampling errors.",
+        "Measures incidence, not depth, vulnerability, debt or wealth.",
+        "March snapshot, not annual average; no September2023 poverty calculation."
+      ],
+      "redundancy": "Related to average expenditure and HDI living standards, but measures lower-tail deprivation. Distinct from labour-force unemployment; no merge warranted.",
+      "preliminaryRecommendation": {
+        "admission": "CORE",
+        "reason": "Direct deprivation outcome with27/27 official same-period rates; retain separately from TPT."
+      },
+      "observations": [
+        {
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "value": 7.27,
+          "sourceRecord": {
+            "table": "4.6.2",
+            "printedPage": 307,
+            "pdfPage": 383,
+            "row": "Kabupaten Bogor",
+            "column": "(7): Persentase Penduduk Miskin, 2023",
+            "verbatimCell": "7,27",
+            "pdfCoordinates": {
+              "xMin": 356.517842,
+              "yMin": 217.363228,
+              "xMax": 368.398216
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3202",
+          "regionName": "Kabupaten Sukabumi",
+          "value": 7.01,
+          "sourceRecord": {
+            "table": "4.6.2",
+            "printedPage": 307,
+            "pdfPage": 383,
+            "row": "Kabupaten Sukabumi",
+            "column": "(7): Persentase Penduduk Miskin, 2023",
+            "verbatimCell": "7,01",
+            "pdfCoordinates": {
+              "xMin": 356.491422,
+              "yMin": 227.284608,
+              "xMax": 368.377079
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3203",
+          "regionName": "Kabupaten Cianjur",
+          "value": 10.22,
+          "sourceRecord": {
+            "table": "4.6.2",
+            "printedPage": 307,
+            "pdfPage": 383,
+            "row": "Kabupaten Cianjur",
+            "column": "(7): Persentase Penduduk Miskin, 2023",
+            "verbatimCell": "10,22",
+            "pdfCoordinates": {
+              "xMin": 353.131628,
+              "yMin": 237.205987,
+              "xMax": 368.399096
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": 6.4,
+          "sourceRecord": {
+            "table": "4.6.2",
+            "printedPage": 307,
+            "pdfPage": 383,
+            "row": "Kabupaten Bandung",
+            "column": "(7): Persentase Penduduk Miskin, 2023",
+            "verbatimCell": "6,40",
+            "pdfCoordinates": {
+              "xMin": 356.517842,
+              "yMin": 247.127367,
+              "xMax": 368.398216
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "value": 9.77,
+          "sourceRecord": {
+            "table": "4.6.2",
+            "printedPage": 307,
+            "pdfPage": 383,
+            "row": "Kabupaten Garut",
+            "column": "(7): Persentase Penduduk Miskin, 2023",
+            "verbatimCell": "9,77",
+            "pdfCoordinates": {
+              "xMin": 356.500229,
+              "yMin": 257.048746,
+              "xMax": 368.380602
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3206",
+          "regionName": "Kabupaten Tasikmalaya",
+          "value": 10.28,
+          "sourceRecord": {
+            "table": "4.6.2",
+            "printedPage": 307,
+            "pdfPage": 383,
+            "row": "Kabupaten Tasikmalaya",
+            "column": "(7): Persentase Penduduk Miskin, 2023",
+            "verbatimCell": "10,28",
+            "pdfCoordinates": {
+              "xMin": 353.130747,
+              "yMin": 266.970126,
+              "xMax": 368.398216
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3207",
+          "regionName": "Kabupaten Ciamis",
+          "value": 7.42,
+          "sourceRecord": {
+            "table": "4.6.2",
+            "printedPage": 307,
+            "pdfPage": 383,
+            "row": "Kabupaten Ciamis",
+            "column": "(7): Persentase Penduduk Miskin, 2023",
+            "verbatimCell": "7,42",
+            "pdfCoordinates": {
+              "xMin": 356.525769,
+              "yMin": 276.891505,
+              "xMax": 368.4035
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3208",
+          "regionName": "Kabupaten Kuningan",
+          "value": 12.12,
+          "sourceRecord": {
+            "table": "4.6.2",
+            "printedPage": 307,
+            "pdfPage": 383,
+            "row": "Kabupaten Kuningan",
+            "column": "(7): Persentase Penduduk Miskin, 2023",
+            "verbatimCell": "12,12",
+            "pdfCoordinates": {
+              "xMin": 353.126344,
+              "yMin": 286.812885,
+              "xMax": 368.397335
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3209",
+          "regionName": "Kabupaten Cirebon",
+          "value": 11.2,
+          "sourceRecord": {
+            "table": "4.6.2",
+            "printedPage": 307,
+            "pdfPage": 383,
+            "row": "Kabupaten Cirebon",
+            "column": "(7): Persentase Penduduk Miskin, 2023",
+            "verbatimCell": "11,20",
+            "pdfCoordinates": {
+              "xMin": 353.132509,
+              "yMin": 296.734264,
+              "xMax": 368.399977
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "value": 11.21,
+          "sourceRecord": {
+            "table": "4.6.2",
+            "printedPage": 307,
+            "pdfPage": 383,
+            "row": "Kabupaten Majalengka",
+            "column": "(7): Persentase Penduduk Miskin, 2023",
+            "verbatimCell": "11,21",
+            "pdfCoordinates": {
+              "xMin": 353.127224,
+              "yMin": 306.655644,
+              "xMax": 368.398216
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3211",
+          "regionName": "Kabupaten Sumedang",
+          "value": 9.36,
+          "sourceRecord": {
+            "table": "4.6.2",
+            "printedPage": 307,
+            "pdfPage": 383,
+            "row": "Kabupaten Sumedang",
+            "column": "(7): Persentase Penduduk Miskin, 2023",
+            "verbatimCell": "9,36",
+            "pdfCoordinates": {
+              "xMin": 356.504632,
+              "yMin": 316.577023,
+              "xMax": 368.387647
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3212",
+          "regionName": "Kabupaten Indramayu",
+          "value": 12.13,
+          "sourceRecord": {
+            "table": "4.6.2",
+            "printedPage": 307,
+            "pdfPage": 383,
+            "row": "Kabupaten Indramayu",
+            "column": "(7): Persentase Penduduk Miskin, 2023",
+            "verbatimCell": "12,13",
+            "pdfCoordinates": {
+              "xMin": 353.126344,
+              "yMin": 326.498403,
+              "xMax": 368.397335
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3213",
+          "regionName": "Kabupaten Subang",
+          "value": 9.52,
+          "sourceRecord": {
+            "table": "4.6.2",
+            "printedPage": 307,
+            "pdfPage": 383,
+            "row": "Kabupaten Subang",
+            "column": "(7): Persentase Penduduk Miskin, 2023",
+            "verbatimCell": "9,52",
+            "pdfCoordinates": {
+              "xMin": 356.50199,
+              "yMin": 336.419783,
+              "xMax": 368.385005
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3214",
+          "regionName": "Kabupaten Purwakarta",
+          "value": 8.46,
+          "sourceRecord": {
+            "table": "4.6.2",
+            "printedPage": 307,
+            "pdfPage": 383,
+            "row": "Kabupaten Purwakarta",
+            "column": "(7): Persentase Penduduk Miskin, 2023",
+            "verbatimCell": "8,46",
+            "pdfCoordinates": {
+              "xMin": 356.499348,
+              "yMin": 346.341162,
+              "xMax": 368.382363
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3215",
+          "regionName": "Kabupaten Karawang",
+          "value": 7.87,
+          "sourceRecord": {
+            "table": "4.6.2",
+            "printedPage": 307,
+            "pdfPage": 383,
+            "row": "Kabupaten Karawang",
+            "column": "(7): Persentase Penduduk Miskin, 2023",
+            "verbatimCell": "7,87",
+            "pdfCoordinates": {
+              "xMin": 356.518723,
+              "yMin": 356.262542,
+              "xMax": 368.401738
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "value": 4.93,
+          "sourceRecord": {
+            "table": "4.6.2",
+            "printedPage": 307,
+            "pdfPage": 383,
+            "row": "Kabupaten Bekasi",
+            "column": "(7): Persentase Penduduk Miskin, 2023",
+            "verbatimCell": "4,93",
+            "pdfCoordinates": {
+              "xMin": 356.50111,
+              "yMin": 366.183921,
+              "xMax": 368.384125
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3217",
+          "regionName": "Kabupaten Bandung Barat",
+          "value": 10.52,
+          "sourceRecord": {
+            "table": "4.6.2",
+            "printedPage": 307,
+            "pdfPage": 383,
+            "row": "Kabupaten Bandung Barat",
+            "column": "(7): Persentase Penduduk Miskin, 2023",
+            "verbatimCell": "10,52",
+            "pdfCoordinates": {
+              "xMin": 353.126344,
+              "yMin": 376.105301,
+              "xMax": 368.397335
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": 8.98,
+          "sourceRecord": {
+            "table": "4.6.2",
+            "printedPage": 307,
+            "pdfPage": 383,
+            "row": "Kabupaten Pangandaran",
+            "column": "(7): Persentase Penduduk Miskin, 2023",
+            "verbatimCell": "8,98",
+            "pdfCoordinates": {
+              "xMin": 356.516962,
+              "yMin": 386.02668,
+              "xMax": 368.397335
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "value": 6.67,
+          "sourceRecord": {
+            "table": "4.6.2",
+            "printedPage": 307,
+            "pdfPage": 383,
+            "row": "Kota Bogor",
+            "column": "(7): Persentase Penduduk Miskin, 2023",
+            "verbatimCell": "6,67",
+            "pdfCoordinates": {
+              "xMin": 356.516962,
+              "yMin": 405.868539,
+              "xMax": 368.397335
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3272",
+          "regionName": "Kota Sukabumi",
+          "value": 7.5,
+          "sourceRecord": {
+            "table": "4.6.2",
+            "printedPage": 307,
+            "pdfPage": 383,
+            "row": "Kota Sukabumi",
+            "column": "(7): Persentase Penduduk Miskin, 2023",
+            "verbatimCell": "7,50",
+            "pdfCoordinates": {
+              "xMin": 356.487019,
+              "yMin": 415.789919,
+              "xMax": 368.372676
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "value": 3.96,
+          "sourceRecord": {
+            "table": "4.6.2",
+            "printedPage": 307,
+            "pdfPage": 383,
+            "row": "Kota Bandung",
+            "column": "(7): Persentase Penduduk Miskin, 2023",
+            "verbatimCell": "3,96",
+            "pdfCoordinates": {
+              "xMin": 356.517842,
+              "yMin": 425.709498,
+              "xMax": 368.398216
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3274",
+          "regionName": "Kota Cirebon",
+          "value": 9.16,
+          "sourceRecord": {
+            "table": "4.6.2",
+            "printedPage": 307,
+            "pdfPage": 383,
+            "row": "Kota Cirebon",
+            "column": "(7): Persentase Penduduk Miskin, 2023",
+            "verbatimCell": "9,16",
+            "pdfCoordinates": {
+              "xMin": 356.525769,
+              "yMin": 435.631778,
+              "xMax": 368.4035
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": 4.1,
+          "sourceRecord": {
+            "table": "4.6.2",
+            "printedPage": 307,
+            "pdfPage": 383,
+            "row": "Kota Bekasi",
+            "column": "(7): Persentase Penduduk Miskin, 2023",
+            "verbatimCell": "4,10",
+            "pdfCoordinates": {
+              "xMin": 356.50111,
+              "yMin": 445.553157,
+              "xMax": 368.384125
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "value": 2.38,
+          "sourceRecord": {
+            "table": "4.6.2",
+            "printedPage": 307,
+            "pdfPage": 383,
+            "row": "Kota Depok",
+            "column": "(7): Persentase Penduduk Miskin, 2023",
+            "verbatimCell": "2,38",
+            "pdfCoordinates": {
+              "xMin": 356.516962,
+              "yMin": 455.473637,
+              "xMax": 368.397335
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3277",
+          "regionName": "Kota Cimahi",
+          "value": 4.66,
+          "sourceRecord": {
+            "table": "4.6.2",
+            "printedPage": 307,
+            "pdfPage": 383,
+            "row": "Kota Cimahi",
+            "column": "(7): Persentase Penduduk Miskin, 2023",
+            "verbatimCell": "4,66",
+            "pdfCoordinates": {
+              "xMin": 356.525769,
+              "yMin": 465.395916,
+              "xMax": 368.4035
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": 11.53,
+          "sourceRecord": {
+            "table": "4.6.2",
+            "printedPage": 307,
+            "pdfPage": 383,
+            "row": "Kota Tasikmalaya",
+            "column": "(7): Persentase Penduduk Miskin, 2023",
+            "verbatimCell": "11,53",
+            "pdfCoordinates": {
+              "xMin": 353.132509,
+              "yMin": 475.316396,
+              "xMax": 368.399977
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3279",
+          "regionName": "Kota Banjar",
+          "value": 6.14,
+          "sourceRecord": {
+            "table": "4.6.2",
+            "printedPage": 307,
+            "pdfPage": 383,
+            "row": "Kota Banjar",
+            "column": "(7): Persentase Penduduk Miskin, 2023",
+            "verbatimCell": "6,14",
+            "pdfCoordinates": {
+              "xMin": 356.516962,
+              "yMin": 485.602267,
+              "xMax": 368.397335
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        }
+      ],
+      "acquisitionNotes": {
+        "method": "Re-read original official PDF table text and every numeric cell using pdftotext -bbox coordinate windows. Kept row order and kabupaten/kota sections; localized cells preserved. Previous transcription not used as extraction input.",
+        "coverage": {
+          "expectedRegions": 27,
+          "observedRegions": 27,
+          "missingRegions": [],
+          "year": 2023,
+          "geography": "18 kabupaten and 9 kota; province aggregate excluded"
+        },
+        "imputation": "None; original precision retained."
+      }
+    },
+    {
+      "id": "unemployment",
+      "name": "Tingkat Pengangguran Terbuka (TPT)",
+      "dimension": "socioeconomic",
+      "source": {
+        "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+        "title": "Tingkat Pengangguran Terbuka (TPT) dan Tingkat Partisipasi Angkatan Kerja (TPAK) Menurut Kabupaten/Kota di Provinsi Jawa Barat, 2021–2023",
+        "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+        "table": "3.2.16",
+        "pages": {
+          "printed": [
+            147
+          ],
+          "pdf": [
+            223
+          ]
+        },
+        "referencePeriod": "August2023 Sakernas; SP2020 population-projection weights",
+        "unit": "percent",
+        "denominator": "Unemployed aged15+ / labour force aged15+ × 100; not total working-age residents",
+        "accessedAt": "2026-10-28",
+        "artifactId": "sha256:500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81"
+      },
+      "definition": "Open unemployment percentage of labour force. Labour force includes employed, temporarily absent employed, and unemployed aged15+. Unemployed categories include seeking work, preparing business, discouraged persons, and jobs not yet started. Definitions printed102–103/PDF178–179; table3.2.2 footnote printed123/PDF199.",
+      "valueType": "rate",
+      "direction": "LOWER_IS_BETTER",
+      "comparability": "Same August2023 Sakernas, SP2020 projection weights, age15+ labour-force denominator and percent across27; do not substitute February provincial TPT.",
+      "limitations": [
+        "Low TPT does not ensure decent work: informal, unpaid, low-hours and low-pay work count as employed.",
+        "Excludes people outside labour force; interpret alongside TPAK.",
+        "Two-decimal survey estimates without row-level uncertainty."
+      ],
+      "redundancy": "Labour exclusion differs from consumption poverty. Do not merge poverty and TPT. Shares labour-force system with TPAK but measures different margin.",
+      "preliminaryRecommendation": {
+        "admission": "CORE",
+        "reason": "Complete comparable labour-market exclusion rate; separate from poverty, interpreted with unscored TPAK."
+      },
+      "observations": [
+        {
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "value": 8.47,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Bogor",
+            "column": "(4): TPT/UR, 2023",
+            "verbatimCell": "8,47",
+            "pdfCoordinates": {
+              "xMin": 247.769411,
+              "yMin": 176.651034,
+              "xMax": 259.649784
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3202",
+          "regionName": "Kabupaten Sukabumi",
+          "value": 7.32,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Sukabumi",
+            "column": "(4): TPT/UR, 2023",
+            "verbatimCell": "7,32",
+            "pdfCoordinates": {
+              "xMin": 247.708644,
+              "yMin": 187.989882,
+              "xMax": 259.594301
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3203",
+          "regionName": "Kabupaten Cianjur",
+          "value": 7.71,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Cianjur",
+            "column": "(4): TPT/UR, 2023",
+            "verbatimCell": "7,71",
+            "pdfCoordinates": {
+              "xMin": 247.792308,
+              "yMin": 199.32783,
+              "xMax": 259.670039
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": 6.52,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Bandung",
+            "column": "(4): TPT/UR, 2023",
+            "verbatimCell": "6,52",
+            "pdfCoordinates": {
+              "xMin": 247.769411,
+              "yMin": 210.665778,
+              "xMax": 259.649784
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "value": 7.33,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Garut",
+            "column": "(4): TPT/UR, 2023",
+            "verbatimCell": "7,33",
+            "pdfCoordinates": {
+              "xMin": 247.762365,
+              "yMin": 222.004626,
+              "xMax": 259.64538
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3206",
+          "regionName": "Kabupaten Tasikmalaya",
+          "value": 3.89,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Tasikmalaya",
+            "column": "(4): TPT/UR, 2023",
+            "verbatimCell": "3,89",
+            "pdfCoordinates": {
+              "xMin": 247.791428,
+              "yMin": 233.342574,
+              "xMax": 259.669159
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3207",
+          "regionName": "Kabupaten Ciamis",
+          "value": 3.52,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Ciamis",
+            "column": "(4): TPT/UR, 2023",
+            "verbatimCell": "3,52",
+            "pdfCoordinates": {
+              "xMin": 247.793189,
+              "yMin": 244.680522,
+              "xMax": 259.67092
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3208",
+          "regionName": "Kabupaten Kuningan",
+          "value": 9.49,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Kuningan",
+            "column": "(4): TPT/UR, 2023",
+            "verbatimCell": "9,49",
+            "pdfCoordinates": {
+              "xMin": 247.769411,
+              "yMin": 256.01847,
+              "xMax": 259.649784
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3209",
+          "regionName": "Kabupaten Cirebon",
+          "value": 7.65,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Cirebon",
+            "column": "(4): TPT/UR, 2023",
+            "verbatimCell": "7,65",
+            "pdfCoordinates": {
+              "xMin": 247.792308,
+              "yMin": 267.357318,
+              "xMax": 259.670039
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "value": 4.12,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Majalengka",
+            "column": "(4): TPT/UR, 2023",
+            "verbatimCell": "4,12",
+            "pdfCoordinates": {
+              "xMin": 247.770291,
+              "yMin": 278.695266,
+              "xMax": 259.650664
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3211",
+          "regionName": "Kabupaten Sumedang",
+          "value": 6.94,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Sumedang",
+            "column": "(4): TPT/UR, 2023",
+            "verbatimCell": "6,94",
+            "pdfCoordinates": {
+              "xMin": 247.738587,
+              "yMin": 290.033214,
+              "xMax": 259.621602
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3212",
+          "regionName": "Kabupaten Indramayu",
+          "value": 6.46,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Indramayu",
+            "column": "(4): TPT/UR, 2023",
+            "verbatimCell": "6,46",
+            "pdfCoordinates": {
+              "xMin": 247.769411,
+              "yMin": 301.371162,
+              "xMax": 259.649784
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3213",
+          "regionName": "Kabupaten Subang",
+          "value": 7.65,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Subang",
+            "column": "(4): TPT/UR, 2023",
+            "verbatimCell": "7,65",
+            "pdfCoordinates": {
+              "xMin": 247.736825,
+              "yMin": 311.750632,
+              "xMax": 259.619841
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3214",
+          "regionName": "Kabupaten Purwakarta",
+          "value": 7.72,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Purwakarta",
+            "column": "(4): TPT/UR, 2023",
+            "verbatimCell": "7,72",
+            "pdfCoordinates": {
+              "xMin": 247.737706,
+              "yMin": 322.130101,
+              "xMax": 259.620721
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3215",
+          "regionName": "Kabupaten Karawang",
+          "value": 8.95,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Karawang",
+            "column": "(4): TPT/UR, 2023",
+            "verbatimCell": "8,95",
+            "pdfCoordinates": {
+              "xMin": 247.754439,
+              "yMin": 333.468049,
+              "xMax": 259.637454
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "value": 8.87,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Bekasi",
+            "column": "(4): TPT/UR, 2023",
+            "verbatimCell": "8,87",
+            "pdfCoordinates": {
+              "xMin": 247.737706,
+              "yMin": 344.805997,
+              "xMax": 259.620721
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3217",
+          "regionName": "Kabupaten Bandung Barat",
+          "value": 8.11,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Bandung Barat",
+            "column": "(4): TPT/UR, 2023",
+            "verbatimCell": "8,11",
+            "pdfCoordinates": {
+              "xMin": 247.769411,
+              "yMin": 356.144845,
+              "xMax": 259.649784
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": 1.52,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Pangandaran",
+            "column": "(4): TPT/UR, 2023",
+            "verbatimCell": "1,52",
+            "pdfCoordinates": {
+              "xMin": 247.769411,
+              "yMin": 367.482793,
+              "xMax": 259.649784
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "value": 9.39,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kota Bogor",
+            "column": "(4): TPT/UR, 2023",
+            "verbatimCell": "9,39",
+            "pdfCoordinates": {
+              "xMin": 247.769411,
+              "yMin": 387.531648,
+              "xMax": 259.649784
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3272",
+          "regionName": "Kota Sukabumi",
+          "value": 8.53,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kota Sukabumi",
+            "column": "(4): TPT/UR, 2023",
+            "verbatimCell": "8,53",
+            "pdfCoordinates": {
+              "xMin": 247.711286,
+              "yMin": 398.869596,
+              "xMax": 259.596943
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "value": 8.83,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kota Bandung",
+            "column": "(4): TPT/UR, 2023",
+            "verbatimCell": "8,83",
+            "pdfCoordinates": {
+              "xMin": 247.769411,
+              "yMin": 410.207544,
+              "xMax": 259.649784
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3274",
+          "regionName": "Kota Cirebon",
+          "value": 7.66,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kota Cirebon",
+            "column": "(4): TPT/UR, 2023",
+            "verbatimCell": "7,66",
+            "pdfCoordinates": {
+              "xMin": 247.792308,
+              "yMin": 421.546392,
+              "xMax": 259.670039
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": 7.9,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kota Bekasi",
+            "column": "(4): TPT/UR, 2023",
+            "verbatimCell": "7,90",
+            "pdfCoordinates": {
+              "xMin": 247.736825,
+              "yMin": 432.88434,
+              "xMax": 259.619841
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "value": 6.97,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kota Depok",
+            "column": "(4): TPT/UR, 2023",
+            "verbatimCell": "6,97",
+            "pdfCoordinates": {
+              "xMin": 247.769411,
+              "yMin": 444.222288,
+              "xMax": 259.649784
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3277",
+          "regionName": "Kota Cimahi",
+          "value": 10.52,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kota Cimahi",
+            "column": "(4): TPT/UR, 2023",
+            "verbatimCell": "10,52",
+            "pdfCoordinates": {
+              "xMin": 244.40081,
+              "yMin": 455.560236,
+              "xMax": 259.668278
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": 6.55,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kota Tasikmalaya",
+            "column": "(4): TPT/UR, 2023",
+            "verbatimCell": "6,55",
+            "pdfCoordinates": {
+              "xMin": 247.791428,
+              "yMin": 466.1899,
+              "xMax": 259.669159
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3279",
+          "regionName": "Kota Banjar",
+          "value": 5.43,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kota Banjar",
+            "column": "(4): TPT/UR, 2023",
+            "verbatimCell": "5,43",
+            "pdfCoordinates": {
+              "xMin": 247.769411,
+              "yMin": 476.464971,
+              "xMax": 259.649784
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        }
+      ],
+      "acquisitionNotes": {
+        "method": "Re-read original official PDF table text and every numeric cell using pdftotext -bbox coordinate windows. Kept row order and kabupaten/kota sections; localized cells preserved. Previous transcription not used as extraction input.",
+        "coverage": {
+          "expectedRegions": 27,
+          "observedRegions": 27,
+          "missingRegions": [],
+          "year": 2023,
+          "geography": "18 kabupaten and 9 kota; province aggregate excluded"
+        },
+        "imputation": "None; original precision retained."
+      }
+    },
+    {
+      "id": "gini_ratio",
+      "name": "Gini Ratio pengeluaran penduduk",
+      "dimension": "socioeconomic",
+      "source": {
+        "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+        "title": "Gini Ratio Kabupaten/Kota di Provinsi Jawa Barat",
+        "url": "https://jabar.bps.go.id/id/statistics-table/2/OTUxIzI=/gini-ratio-kabupaten-kota-di-provinsi-jawa-barat.html",
+        "table": "Dynamic table variable951, source2, encoded idOTUxIzI=; year123",
+        "pages": null,
+        "referencePeriod": "March2023 Susenas; historical-year snapshot updated2025-12-17 15:59:49",
+        "unit": "dimensionless coefficient0–1; not percent or0–100 index",
+        "denominator": "Expenditure distribution across resident population; Lorenz cumulative population and expenditure shares, not a rate denominator",
+        "accessedAt": "2026-10-28",
+        "artifactId": "sha256:9e17a4025e47cded3002139ed07f0019c0a778af8f16b04e7e6585874e7944de"
+      },
+      "definition": "Expenditure-inequality Gini from Lorenz curve. Zero is equality, one maximum inequality. Original2023 inequality booklet printed8/PDF8 defines scale and rising inequality. Not income or wealth Gini.",
+      "valueType": "ratio",
+      "direction": "LOWER_IS_BETTER_FOR_EQUALITY_NOT_SUFFICIENT_FOR_WELFARE",
+      "comparability": "All27 values from official variable951/year123/turvar0/turtahun0, same March2023 note, three-decimal coefficient precision. Province3200 excluded;0.425 not copied to districts.",
+      "limitations": [
+        "Current table updated2025-12-17; metadata supplies no per-year revision log or explicit weighting/revision note. District values cannot be certified unchanged since first2023 release; use dated snapshot consistently.",
+        "Original2023 booklet confirms province0.425 and definition but has no all27 district table; cannot establish district revision history.",
+        "Low inequality can coexist with widespread poverty; Gini not living-standard level.",
+        "No standard errors; three decimals do not prove rank differences significant."
+      ],
+      "redundancy": "Distributional spread differs from poverty headcount and average expenditure. Pair with poverty, not replacement. Not HDI component.",
+      "preliminaryRecommendation": {
+        "admission": "CORE",
+        "reason": "All27 official same-series2023 values verified; adds distinct equality outcome. Preserve snapshot and disclose unavailable revision log."
+      },
+      "observations": [
+        {
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "value": 0.369,
+          "sourceRecord": {
+            "variable": 951,
+            "vervar": 3201,
+            "turvar": 0,
+            "tahun": 123,
+            "turtahun": 0,
+            "datacontentKey": "320195101230",
+            "row": "Kabupaten Bogor",
+            "column": "2023",
+            "sourceLastUpdated": "2025-12-17 15:59:49"
+          }
+        },
+        {
+          "regionId": "3202",
+          "regionName": "Kabupaten Sukabumi",
+          "value": 0.355,
+          "sourceRecord": {
+            "variable": 951,
+            "vervar": 3202,
+            "turvar": 0,
+            "tahun": 123,
+            "turtahun": 0,
+            "datacontentKey": "320295101230",
+            "row": "Kabupaten Sukabumi",
+            "column": "2023",
+            "sourceLastUpdated": "2025-12-17 15:59:49"
+          }
+        },
+        {
+          "regionId": "3203",
+          "regionName": "Kabupaten Cianjur",
+          "value": 0.319,
+          "sourceRecord": {
+            "variable": 951,
+            "vervar": 3203,
+            "turvar": 0,
+            "tahun": 123,
+            "turtahun": 0,
+            "datacontentKey": "320395101230",
+            "row": "Kabupaten Cianjur",
+            "column": "2023",
+            "sourceLastUpdated": "2025-12-17 15:59:49"
+          }
+        },
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": 0.348,
+          "sourceRecord": {
+            "variable": 951,
+            "vervar": 3204,
+            "turvar": 0,
+            "tahun": 123,
+            "turtahun": 0,
+            "datacontentKey": "320495101230",
+            "row": "Kabupaten Bandung",
+            "column": "2023",
+            "sourceLastUpdated": "2025-12-17 15:59:49"
+          }
+        },
+        {
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "value": 0.361,
+          "sourceRecord": {
+            "variable": 951,
+            "vervar": 3205,
+            "turvar": 0,
+            "tahun": 123,
+            "turtahun": 0,
+            "datacontentKey": "320595101230",
+            "row": "Kabupaten Garut",
+            "column": "2023",
+            "sourceLastUpdated": "2025-12-17 15:59:49"
+          }
+        },
+        {
+          "regionId": "3206",
+          "regionName": "Kabupaten Tasikmalaya",
+          "value": 0.404,
+          "sourceRecord": {
+            "variable": 951,
+            "vervar": 3206,
+            "turvar": 0,
+            "tahun": 123,
+            "turtahun": 0,
+            "datacontentKey": "320695101230",
+            "row": "Kabupaten Tasikmalaya",
+            "column": "2023",
+            "sourceLastUpdated": "2025-12-17 15:59:49"
+          }
+        },
+        {
+          "regionId": "3207",
+          "regionName": "Kabupaten Ciamis",
+          "value": 0.341,
+          "sourceRecord": {
+            "variable": 951,
+            "vervar": 3207,
+            "turvar": 0,
+            "tahun": 123,
+            "turtahun": 0,
+            "datacontentKey": "320795101230",
+            "row": "Kabupaten Ciamis",
+            "column": "2023",
+            "sourceLastUpdated": "2025-12-17 15:59:49"
+          }
+        },
+        {
+          "regionId": "3208",
+          "regionName": "Kabupaten Kuningan",
+          "value": 0.351,
+          "sourceRecord": {
+            "variable": 951,
+            "vervar": 3208,
+            "turvar": 0,
+            "tahun": 123,
+            "turtahun": 0,
+            "datacontentKey": "320895101230",
+            "row": "Kabupaten Kuningan",
+            "column": "2023",
+            "sourceLastUpdated": "2025-12-17 15:59:49"
+          }
+        },
+        {
+          "regionId": "3209",
+          "regionName": "Kabupaten Cirebon",
+          "value": 0.361,
+          "sourceRecord": {
+            "variable": 951,
+            "vervar": 3209,
+            "turvar": 0,
+            "tahun": 123,
+            "turtahun": 0,
+            "datacontentKey": "320995101230",
+            "row": "Kabupaten Cirebon",
+            "column": "2023",
+            "sourceLastUpdated": "2025-12-17 15:59:49"
+          }
+        },
+        {
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "value": 0.342,
+          "sourceRecord": {
+            "variable": 951,
+            "vervar": 3210,
+            "turvar": 0,
+            "tahun": 123,
+            "turtahun": 0,
+            "datacontentKey": "321095101230",
+            "row": "Kabupaten Majalengka",
+            "column": "2023",
+            "sourceLastUpdated": "2025-12-17 15:59:49"
+          }
+        },
+        {
+          "regionId": "3211",
+          "regionName": "Kabupaten Sumedang",
+          "value": 0.366,
+          "sourceRecord": {
+            "variable": 951,
+            "vervar": 3211,
+            "turvar": 0,
+            "tahun": 123,
+            "turtahun": 0,
+            "datacontentKey": "321195101230",
+            "row": "Kabupaten Sumedang",
+            "column": "2023",
+            "sourceLastUpdated": "2025-12-17 15:59:49"
+          }
+        },
+        {
+          "regionId": "3212",
+          "regionName": "Kabupaten Indramayu",
+          "value": 0.344,
+          "sourceRecord": {
+            "variable": 951,
+            "vervar": 3212,
+            "turvar": 0,
+            "tahun": 123,
+            "turtahun": 0,
+            "datacontentKey": "321295101230",
+            "row": "Kabupaten Indramayu",
+            "column": "2023",
+            "sourceLastUpdated": "2025-12-17 15:59:49"
+          }
+        },
+        {
+          "regionId": "3213",
+          "regionName": "Kabupaten Subang",
+          "value": 0.331,
+          "sourceRecord": {
+            "variable": 951,
+            "vervar": 3213,
+            "turvar": 0,
+            "tahun": 123,
+            "turtahun": 0,
+            "datacontentKey": "321395101230",
+            "row": "Kabupaten Subang",
+            "column": "2023",
+            "sourceLastUpdated": "2025-12-17 15:59:49"
+          }
+        },
+        {
+          "regionId": "3214",
+          "regionName": "Kabupaten Purwakarta",
+          "value": 0.372,
+          "sourceRecord": {
+            "variable": 951,
+            "vervar": 3214,
+            "turvar": 0,
+            "tahun": 123,
+            "turtahun": 0,
+            "datacontentKey": "321495101230",
+            "row": "Kabupaten Purwakarta",
+            "column": "2023",
+            "sourceLastUpdated": "2025-12-17 15:59:49"
+          }
+        },
+        {
+          "regionId": "3215",
+          "regionName": "Kabupaten Karawang",
+          "value": 0.389,
+          "sourceRecord": {
+            "variable": 951,
+            "vervar": 3215,
+            "turvar": 0,
+            "tahun": 123,
+            "turtahun": 0,
+            "datacontentKey": "321595101230",
+            "row": "Kabupaten Karawang",
+            "column": "2023",
+            "sourceLastUpdated": "2025-12-17 15:59:49"
+          }
+        },
+        {
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "value": 0.397,
+          "sourceRecord": {
+            "variable": 951,
+            "vervar": 3216,
+            "turvar": 0,
+            "tahun": 123,
+            "turtahun": 0,
+            "datacontentKey": "321695101230",
+            "row": "Kabupaten Bekasi",
+            "column": "2023",
+            "sourceLastUpdated": "2025-12-17 15:59:49"
+          }
+        },
+        {
+          "regionId": "3217",
+          "regionName": "Kabupaten Bandung Barat",
+          "value": 0.374,
+          "sourceRecord": {
+            "variable": 951,
+            "vervar": 3217,
+            "turvar": 0,
+            "tahun": 123,
+            "turtahun": 0,
+            "datacontentKey": "321795101230",
+            "row": "Kabupaten Bandung Barat",
+            "column": "2023",
+            "sourceLastUpdated": "2025-12-17 15:59:49"
+          }
+        },
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": 0.323,
+          "sourceRecord": {
+            "variable": 951,
+            "vervar": 3218,
+            "turvar": 0,
+            "tahun": 123,
+            "turtahun": 0,
+            "datacontentKey": "321895101230",
+            "row": "Kabupaten Pangandaran",
+            "column": "2023",
+            "sourceLastUpdated": "2025-12-17 15:59:49"
+          }
+        },
+        {
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "value": 0.464,
+          "sourceRecord": {
+            "variable": 951,
+            "vervar": 3271,
+            "turvar": 0,
+            "tahun": 123,
+            "turtahun": 0,
+            "datacontentKey": "327195101230",
+            "row": "Kota Bogor",
+            "column": "2023",
+            "sourceLastUpdated": "2025-12-17 15:59:49"
+          }
+        },
+        {
+          "regionId": "3272",
+          "regionName": "Kota Sukabumi",
+          "value": 0.458,
+          "sourceRecord": {
+            "variable": 951,
+            "vervar": 3272,
+            "turvar": 0,
+            "tahun": 123,
+            "turtahun": 0,
+            "datacontentKey": "327295101230",
+            "row": "Kota Sukabumi",
+            "column": "2023",
+            "sourceLastUpdated": "2025-12-17 15:59:49"
+          }
+        },
+        {
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "value": 0.459,
+          "sourceRecord": {
+            "variable": 951,
+            "vervar": 3273,
+            "turvar": 0,
+            "tahun": 123,
+            "turtahun": 0,
+            "datacontentKey": "327395101230",
+            "row": "Kota Bandung",
+            "column": "2023",
+            "sourceLastUpdated": "2025-12-17 15:59:49"
+          }
+        },
+        {
+          "regionId": "3274",
+          "regionName": "Kota Cirebon",
+          "value": 0.468,
+          "sourceRecord": {
+            "variable": 951,
+            "vervar": 3274,
+            "turvar": 0,
+            "tahun": 123,
+            "turtahun": 0,
+            "datacontentKey": "327495101230",
+            "row": "Kota Cirebon",
+            "column": "2023",
+            "sourceLastUpdated": "2025-12-17 15:59:49"
+          }
+        },
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": 0.414,
+          "sourceRecord": {
+            "variable": 951,
+            "vervar": 3275,
+            "turvar": 0,
+            "tahun": 123,
+            "turtahun": 0,
+            "datacontentKey": "327595101230",
+            "row": "Kota Bekasi",
+            "column": "2023",
+            "sourceLastUpdated": "2025-12-17 15:59:49"
+          }
+        },
+        {
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "value": 0.402,
+          "sourceRecord": {
+            "variable": 951,
+            "vervar": 3276,
+            "turvar": 0,
+            "tahun": 123,
+            "turtahun": 0,
+            "datacontentKey": "327695101230",
+            "row": "Kota Depok",
+            "column": "2023",
+            "sourceLastUpdated": "2025-12-17 15:59:49"
+          }
+        },
+        {
+          "regionId": "3277",
+          "regionName": "Kota Cimahi",
+          "value": 0.394,
+          "sourceRecord": {
+            "variable": 951,
+            "vervar": 3277,
+            "turvar": 0,
+            "tahun": 123,
+            "turtahun": 0,
+            "datacontentKey": "327795101230",
+            "row": "Kota Cimahi",
+            "column": "2023",
+            "sourceLastUpdated": "2025-12-17 15:59:49"
+          }
+        },
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": 0.428,
+          "sourceRecord": {
+            "variable": 951,
+            "vervar": 3278,
+            "turvar": 0,
+            "tahun": 123,
+            "turtahun": 0,
+            "datacontentKey": "327895101230",
+            "row": "Kota Tasikmalaya",
+            "column": "2023",
+            "sourceLastUpdated": "2025-12-17 15:59:49"
+          }
+        },
+        {
+          "regionId": "3279",
+          "regionName": "Kota Banjar",
+          "value": 0.337,
+          "sourceRecord": {
+            "variable": 951,
+            "vervar": 3279,
+            "turvar": 0,
+            "tahun": 123,
+            "turtahun": 0,
+            "datacontentKey": "327995101230",
+            "row": "Kota Banjar",
+            "column": "2023",
+            "sourceLastUpdated": "2025-12-17 15:59:49"
+          }
+        }
+      ],
+      "acquisitionNotes": {
+        "coverage": {
+          "expectedRegions": 27,
+          "observedRegions": 27,
+          "missingRegions": [],
+          "year": 2023,
+          "geography": "18 kabupaten and 9 kota; province aggregate excluded"
+        },
+        "method": "Static reader omitted values. Read every original rendered2023 district row; captured official selected-year server response. Exact decoded response text and hash preserved in artifact. Official JSON button exposes WebAPI locator recorded there. No credentials needed for public rendered data.",
+        "revisionCheck": "Original2023 booklet province0.425 agrees. Dynamic metadata def=\"-\" and blank revision note; no district revision-free claim.",
+        "officialAlternative": "Jabar Open Data district Gini URL redirected to Galura shell without readable records; primary BPS records obtained instead.",
+        "imputation": "None."
+      }
+    },
+    {
+      "id": "expenditure_per_capita",
+      "name": "Pengeluaran riil per kapita disesuaikan (komponen IPM)",
+      "dimension": "socioeconomic",
+      "source": {
+        "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+        "title": "Komponen Indeks Pembangunan Manusia Menurut Kabupaten/Kota di Provinsi Jawa Barat, 2022–2023; lanjutan",
+        "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+        "table": "4.6.6",
+        "pages": {
+          "printed": [
+            313
+          ],
+          "pdf": [
+            389
+          ]
+        },
+        "referencePeriod": "2023 IPM standard-of-living component; annual real adjusted measure based on Susenas",
+        "unit": "thousand rupiah per person per year, real and purchasing-power adjusted",
+        "denominator": "Per resident; consumption divided by household members, annualised and adjusted; not household total or percent",
+        "accessedAt": "2026-10-28",
+        "artifactId": "sha256:500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81"
+      },
+      "definition": "Canonical expenditure candidate is annual real adjusted IPM per-capita expenditure. Yearbook: Pengeluaran Riil per Kapita (Ribu Rupiah/Orang/Tahun). Official methods booklet PDF10–11: annual Susenas expenditure made real at2012=100 then adjusted using Rao-method PPP and96 commodities (66food,30nonfood). Cell11.153 means11153 thousand rupiah/person/year, not11.153rupiah.",
+      "valueType": "real_adjusted_measure",
+      "direction": "HIGHER_IS_BETTER_FOR_MATERIAL_LIVING_STANDARD",
+      "comparability": "Same2023 annual IPM component, person denominator, thousand-rupiah unit and adjustment across27. Numeric2023 cells match dedicated IPM appendix PDF89. Never mix with nominal monthly table11.3.",
+      "limitations": [
+        "PPP improves spatial comparability but uses standardised basket/index, not each household actual cost of living.",
+        "Mean consumption does not describe inequality, income, wealth, service quality or individual costs.",
+        "Not cash income. Monthly nominal expenditure×12 is not this real adjusted series.",
+        "Preserve publication vintage; mixed-edition HDI components are not automatically interchangeable."
+      ],
+      "redundancy": "Direct HDI component: never score alongside full HDI. In the proposed HDI-free model, mean real consumption differs from poverty headcount and expenditure inequality. Pearson r with poverty is -0.717711, below the absolute 0.85 redundancy flag.",
+      "preliminaryRecommendation": {
+        "admission": "CORE",
+        "reason": "Recommend for the next HDI-free model only. All 27 official 2023 real, purchasing-power-adjusted annual observations are comparable, vary adequately, and add mean material living standards beyond poverty and inequality. Nominal monthly expenditure remains context. No production change."
+      },
+      "observations": [
+        {
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "value": 11153,
+          "sourceRecord": {
+            "table": "4.6.6",
+            "printedPage": 313,
+            "pdfPage": 389,
+            "row": "Kabupaten Bogor",
+            "column": "(9): Pengeluaran Riil per Kapita (Ribu Rupiah/Orang/Tahun), 2023",
+            "verbatimCell": "11.153",
+            "pdfCoordinates": {
+              "xMin": 219.415037,
+              "yMin": 174.068697,
+              "xMax": 238.076646
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3202",
+          "regionName": "Kabupaten Sukabumi",
+          "value": 9482,
+          "sourceRecord": {
+            "table": "4.6.6",
+            "printedPage": 313,
+            "pdfPage": 389,
+            "row": "Kabupaten Sukabumi",
+            "column": "(9): Pengeluaran Riil per Kapita (Ribu Rupiah/Orang/Tahun), 2023",
+            "verbatimCell": "9.482",
+            "pdfCoordinates": {
+              "xMin": 222.751053,
+              "yMin": 185.406645,
+              "xMax": 238.032612
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3203",
+          "regionName": "Kabupaten Cianjur",
+          "value": 8626,
+          "sourceRecord": {
+            "table": "4.6.6",
+            "printedPage": 313,
+            "pdfPage": 389,
+            "row": "Kabupaten Cianjur",
+            "column": "(9): Pengeluaran Riil per Kapita (Ribu Rupiah/Orang/Tahun), 2023",
+            "verbatimCell": "8.626",
+            "pdfCoordinates": {
+              "xMin": 222.832076,
+              "yMin": 196.744593,
+              "xMax": 238.099544
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": 11018,
+          "sourceRecord": {
+            "table": "4.6.6",
+            "printedPage": 313,
+            "pdfPage": 389,
+            "row": "Kabupaten Bandung",
+            "column": "(9): Pengeluaran Riil per Kapita (Ribu Rupiah/Orang/Tahun), 2023",
+            "verbatimCell": "11.018",
+            "pdfCoordinates": {
+              "xMin": 219.415037,
+              "yMin": 208.083441,
+              "xMax": 238.076646
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "value": 8685,
+          "sourceRecord": {
+            "table": "4.6.6",
+            "printedPage": 313,
+            "pdfPage": 389,
+            "row": "Kabupaten Garut",
+            "column": "(9): Pengeluaran Riil per Kapita (Ribu Rupiah/Orang/Tahun), 2023",
+            "verbatimCell": "8.685",
+            "pdfCoordinates": {
+              "xMin": 222.796848,
+              "yMin": 219.421389,
+              "xMax": 238.071362
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3206",
+          "regionName": "Kabupaten Tasikmalaya",
+          "value": 8562,
+          "sourceRecord": {
+            "table": "4.6.6",
+            "printedPage": 313,
+            "pdfPage": 389,
+            "row": "Kabupaten Tasikmalaya",
+            "column": "(9): Pengeluaran Riil per Kapita (Ribu Rupiah/Orang/Tahun), 2023",
+            "verbatimCell": "8.562",
+            "pdfCoordinates": {
+              "xMin": 222.831195,
+              "yMin": 230.759337,
+              "xMax": 238.098663
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3207",
+          "regionName": "Kabupaten Ciamis",
+          "value": 9750,
+          "sourceRecord": {
+            "table": "4.6.6",
+            "printedPage": 313,
+            "pdfPage": 389,
+            "row": "Kabupaten Ciamis",
+            "column": "(9): Pengeluaran Riil per Kapita (Ribu Rupiah/Orang/Tahun), 2023",
+            "verbatimCell": "9.750",
+            "pdfCoordinates": {
+              "xMin": 222.832956,
+              "yMin": 242.098185,
+              "xMax": 238.100425
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3208",
+          "regionName": "Kabupaten Kuningan",
+          "value": 10011,
+          "sourceRecord": {
+            "table": "4.6.6",
+            "printedPage": 313,
+            "pdfPage": 389,
+            "row": "Kabupaten Kuningan",
+            "column": "(9): Pengeluaran Riil per Kapita (Ribu Rupiah/Orang/Tahun), 2023",
+            "verbatimCell": "10.011",
+            "pdfCoordinates": {
+              "xMin": 219.415918,
+              "yMin": 253.436133,
+              "xMax": 238.077527
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3209",
+          "regionName": "Kabupaten Cirebon",
+          "value": 11128,
+          "sourceRecord": {
+            "table": "4.6.6",
+            "printedPage": 313,
+            "pdfPage": 389,
+            "row": "Kabupaten Cirebon",
+            "column": "(9): Pengeluaran Riil per Kapita (Ribu Rupiah/Orang/Tahun), 2023",
+            "verbatimCell": "11.128",
+            "pdfCoordinates": {
+              "xMin": 219.440577,
+              "yMin": 264.774081,
+              "xMax": 238.097783
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "value": 10340,
+          "sourceRecord": {
+            "table": "4.6.6",
+            "printedPage": 313,
+            "pdfPage": 389,
+            "row": "Kabupaten Majalengka",
+            "column": "(9): Pengeluaran Riil per Kapita (Ribu Rupiah/Orang/Tahun), 2023",
+            "verbatimCell": "10.340",
+            "pdfCoordinates": {
+              "xMin": 219.416799,
+              "yMin": 276.112029,
+              "xMax": 238.078408
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3211",
+          "regionName": "Kabupaten Sumedang",
+          "value": 11136,
+          "sourceRecord": {
+            "table": "4.6.6",
+            "printedPage": 313,
+            "pdfPage": 389,
+            "row": "Kabupaten Sumedang",
+            "column": "(9): Pengeluaran Riil per Kapita (Ribu Rupiah/Orang/Tahun), 2023",
+            "verbatimCell": "11.136",
+            "pdfCoordinates": {
+              "xMin": 219.382452,
+              "yMin": 287.450877,
+              "xMax": 238.048465
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3212",
+          "regionName": "Kabupaten Indramayu",
+          "value": 10580,
+          "sourceRecord": {
+            "table": "4.6.6",
+            "printedPage": 313,
+            "pdfPage": 389,
+            "row": "Kabupaten Indramayu",
+            "column": "(9): Pengeluaran Riil per Kapita (Ribu Rupiah/Orang/Tahun), 2023",
+            "verbatimCell": "10.580",
+            "pdfCoordinates": {
+              "xMin": 219.415037,
+              "yMin": 298.788825,
+              "xMax": 238.076646
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3213",
+          "regionName": "Kabupaten Subang",
+          "value": 11537,
+          "sourceRecord": {
+            "table": "4.6.6",
+            "printedPage": 313,
+            "pdfPage": 389,
+            "row": "Kabupaten Subang",
+            "column": "(9): Pengeluaran Riil per Kapita (Ribu Rupiah/Orang/Tahun), 2023",
+            "verbatimCell": "11.537",
+            "pdfCoordinates": {
+              "xMin": 219.380691,
+              "yMin": 310.126773,
+              "xMax": 238.046703
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3214",
+          "regionName": "Kabupaten Purwakarta",
+          "value": 12619,
+          "sourceRecord": {
+            "table": "4.6.6",
+            "printedPage": 313,
+            "pdfPage": 389,
+            "row": "Kabupaten Purwakarta",
+            "column": "(9): Pengeluaran Riil per Kapita (Ribu Rupiah/Orang/Tahun), 2023",
+            "verbatimCell": "12.619",
+            "pdfCoordinates": {
+              "xMin": 219.380691,
+              "yMin": 321.465621,
+              "xMax": 238.046703
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3215",
+          "regionName": "Kabupaten Karawang",
+          "value": 12392,
+          "sourceRecord": {
+            "table": "4.6.6",
+            "printedPage": 313,
+            "pdfPage": 389,
+            "row": "Kabupaten Karawang",
+            "column": "(9): Pengeluaran Riil per Kapita (Ribu Rupiah/Orang/Tahun), 2023",
+            "verbatimCell": "12.392",
+            "pdfCoordinates": {
+              "xMin": 219.397424,
+              "yMin": 332.803569,
+              "xMax": 238.063436
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "value": 12123,
+          "sourceRecord": {
+            "table": "4.6.6",
+            "printedPage": 313,
+            "pdfPage": 389,
+            "row": "Kabupaten Bekasi",
+            "column": "(9): Pengeluaran Riil per Kapita (Ribu Rupiah/Orang/Tahun), 2023",
+            "verbatimCell": "12.123",
+            "pdfCoordinates": {
+              "xMin": 219.387736,
+              "yMin": 344.141517,
+              "xMax": 238.058152
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3217",
+          "regionName": "Kabupaten Bandung Barat",
+          "value": 9392,
+          "sourceRecord": {
+            "table": "4.6.6",
+            "printedPage": 313,
+            "pdfPage": 389,
+            "row": "Kabupaten Bandung Barat",
+            "column": "(9): Pengeluaran Riil per Kapita (Ribu Rupiah/Orang/Tahun), 2023",
+            "verbatimCell": "9.392",
+            "pdfCoordinates": {
+              "xMin": 222.806536,
+              "yMin": 355.479465,
+              "xMax": 238.077527
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": 9406,
+          "sourceRecord": {
+            "table": "4.6.6",
+            "printedPage": 313,
+            "pdfPage": 389,
+            "row": "Kabupaten Pangandaran",
+            "column": "(9): Pengeluaran Riil per Kapita (Ribu Rupiah/Orang/Tahun), 2023",
+            "verbatimCell": "9.406",
+            "pdfCoordinates": {
+              "xMin": 222.806536,
+              "yMin": 366.818313,
+              "xMax": 238.077527
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "value": 12656,
+          "sourceRecord": {
+            "table": "4.6.6",
+            "printedPage": 313,
+            "pdfPage": 389,
+            "row": "Kota Bogor",
+            "column": "(9): Pengeluaran Riil per Kapita (Ribu Rupiah/Orang/Tahun), 2023",
+            "verbatimCell": "12.656",
+            "pdfCoordinates": {
+              "xMin": 219.415037,
+              "yMin": 387.20016,
+              "xMax": 238.076646
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3272",
+          "regionName": "Kota Sukabumi",
+          "value": 11799,
+          "sourceRecord": {
+            "table": "4.6.6",
+            "printedPage": 313,
+            "pdfPage": 389,
+            "row": "Kota Sukabumi",
+            "column": "(9): Pengeluaran Riil per Kapita (Ribu Rupiah/Orang/Tahun), 2023",
+            "verbatimCell": "11.799",
+            "pdfCoordinates": {
+              "xMin": 219.415037,
+              "yMin": 398.538108,
+              "xMax": 238.076646
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "value": 18236,
+          "sourceRecord": {
+            "table": "4.6.6",
+            "printedPage": 313,
+            "pdfPage": 389,
+            "row": "Kota Bandung",
+            "column": "(9): Pengeluaran Riil per Kapita (Ribu Rupiah/Orang/Tahun), 2023",
+            "verbatimCell": "18.236",
+            "pdfCoordinates": {
+              "xMin": 219.415037,
+              "yMin": 409.876956,
+              "xMax": 238.076646
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3274",
+          "regionName": "Kota Cirebon",
+          "value": 12506,
+          "sourceRecord": {
+            "table": "4.6.6",
+            "printedPage": 313,
+            "pdfPage": 389,
+            "row": "Kota Cirebon",
+            "column": "(9): Pengeluaran Riil per Kapita (Ribu Rupiah/Orang/Tahun), 2023",
+            "verbatimCell": "12.506",
+            "pdfCoordinates": {
+              "xMin": 219.415037,
+              "yMin": 421.214905,
+              "xMax": 238.076646
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": 16479,
+          "sourceRecord": {
+            "table": "4.6.6",
+            "printedPage": 313,
+            "pdfPage": 389,
+            "row": "Kota Bekasi",
+            "column": "(9): Pengeluaran Riil per Kapita (Ribu Rupiah/Orang/Tahun), 2023",
+            "verbatimCell": "16.479",
+            "pdfCoordinates": {
+              "xMin": 219.415037,
+              "yMin": 432.552853,
+              "xMax": 238.076646
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "value": 16279,
+          "sourceRecord": {
+            "table": "4.6.6",
+            "printedPage": 313,
+            "pdfPage": 389,
+            "row": "Kota Depok",
+            "column": "(9): Pengeluaran Riil per Kapita (Ribu Rupiah/Orang/Tahun), 2023",
+            "verbatimCell": "16.279",
+            "pdfCoordinates": {
+              "xMin": 219.415037,
+              "yMin": 443.890801,
+              "xMax": 238.076646
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3277",
+          "regionName": "Kota Cimahi",
+          "value": 12883,
+          "sourceRecord": {
+            "table": "4.6.6",
+            "printedPage": 313,
+            "pdfPage": 389,
+            "row": "Kota Cimahi",
+            "column": "(9): Pengeluaran Riil per Kapita (Ribu Rupiah/Orang/Tahun), 2023",
+            "verbatimCell": "12.883",
+            "pdfCoordinates": {
+              "xMin": 219.415037,
+              "yMin": 455.229649,
+              "xMax": 238.076646
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": 11063,
+          "sourceRecord": {
+            "table": "4.6.6",
+            "printedPage": 313,
+            "pdfPage": 389,
+            "row": "Kota Tasikmalaya",
+            "column": "(9): Pengeluaran Riil per Kapita (Ribu Rupiah/Orang/Tahun), 2023",
+            "verbatimCell": "11.063",
+            "pdfCoordinates": {
+              "xMin": 219.415037,
+              "yMin": 466.567597,
+              "xMax": 238.076646
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3279",
+          "regionName": "Kota Banjar",
+          "value": 11356,
+          "sourceRecord": {
+            "table": "4.6.6",
+            "printedPage": 313,
+            "pdfPage": 389,
+            "row": "Kota Banjar",
+            "column": "(9): Pengeluaran Riil per Kapita (Ribu Rupiah/Orang/Tahun), 2023",
+            "verbatimCell": "11.356",
+            "pdfCoordinates": {
+              "xMin": 219.415037,
+              "yMin": 477.905545,
+              "xMax": 238.076646
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        }
+      ],
+      "acquisitionNotes": {
+        "coverage": {
+          "expectedRegions": 27,
+          "observedRegions": 27,
+          "missingRegions": [],
+          "year": 2023,
+          "geography": "18 kabupaten and 9 kota; province aggregate excluded"
+        },
+        "method": "Re-read original official PDF table text and every numeric cell using pdftotext -bbox coordinate windows. Kept row order and kabupaten/kota sections; localized cells preserved. Previous transcription not used as extraction input.",
+        "canonicalVariant": "Real adjusted annual IPM expenditure; not nominal monthly consumption.",
+        "methodSource": {
+          "url": "https://searchengine.web.bps.go.id/filemenu/Booklet-IPM-Metode-Baru.pdf",
+          "artifactId": "sha256:c846aabb490b660bf02676a625561a58dbaeaca3e65d1a3a781e88b5c91cc45e",
+          "pdfPages": [
+            10,
+            11
+          ]
+        },
+        "crossCheckSource": {
+          "url": "https://jabar.bps.go.id/id/publication/2024/06/14/a2e7a86a8939c40c9d932c73/indeks-pembangunan-manusia-provinsi-jawa-barat-2023.html",
+          "artifactId": "sha256:2400d561c711cd2aea83f5f3b8b6f1983774fa108aa06704b4837d3177a809c7",
+          "pdfPage": 89,
+          "printedPage": 75,
+          "column": "2023 expenditure; fourth numeric year column"
+        },
+        "imputation": "None; integer thousand-rupiah cells retained without rescaling."
+      }
+    },
+    {
+      "id": "labour_force_participation",
+      "name": "Tingkat Partisipasi Angkatan Kerja (TPAK)",
+      "dimension": "socioeconomic",
+      "source": {
+        "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+        "title": "Tingkat Pengangguran Terbuka (TPT) dan Tingkat Partisipasi Angkatan Kerja (TPAK) Menurut Kabupaten/Kota di Provinsi Jawa Barat, 2021–2023",
+        "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+        "table": "3.2.16",
+        "pages": {
+          "printed": [
+            147
+          ],
+          "pdf": [
+            223
+          ]
+        },
+        "referencePeriod": "August2023 Sakernas; SP2020 population-projection weights",
+        "unit": "percent",
+        "denominator": "Labour force aged15+ / all working-age residents aged15+ × 100",
+        "accessedAt": "2026-10-28",
+        "artifactId": "sha256:500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81"
+      },
+      "definition": "Economically active residents, employed plus unemployed, per100 working-age residents. Not employment-to-population ratio or formal employment rate. Definition printed107/PDF183; working-age definition printed102/PDF178.",
+      "valueType": "rate",
+      "direction": "NON_MONOTONIC_CONTEXT",
+      "comparability": "Same reference period, working-age denominator, weighting and unit across27; descriptive comparison valid without welfare ranking.",
+      "limitations": [
+        "Higher participation can mean access to work or economic necessity; lower participation can reflect schooling, care, age structure or discouraged workers.",
+        "All-sex aggregate hides gender/age composition; no automatic good/bad direction.",
+        "Age-group table3.2.1 printed120/PDF196 provincial TPAK66.51 conflicts with district tables3.2.2/3.2.16 provincial66.49. All27 district cells agree between district tables; do not mix provincial summaries."
+      ],
+      "redundancy": "Context for TPT denominator and exclusion outside labour force. Not monotonic independent welfare benefit.",
+      "preliminaryRecommendation": {
+        "admission": "CONTEXT ONLY",
+        "reason": "Complete records but structurally ambiguous welfare direction; interpret without scoring."
+      },
+      "observations": [
+        {
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "value": 64.22,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Bogor",
+            "column": "(7): TPAK/LFPR, 2023",
+            "verbatimCell": "64,22",
+            "pdfCoordinates": {
+              "xMin": 353.122517,
+              "yMin": 176.651034,
+              "xMax": 368.393508
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3202",
+          "regionName": "Kabupaten Sukabumi",
+          "value": 67.75,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Sukabumi",
+            "column": "(7): TPAK/LFPR, 2023",
+            "verbatimCell": "67,75",
+            "pdfCoordinates": {
+              "xMin": 353.082886,
+              "yMin": 187.989882,
+              "xMax": 368.360923
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3203",
+          "regionName": "Kabupaten Cianjur",
+          "value": 72.31,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Cianjur",
+            "column": "(7): TPAK/LFPR, 2023",
+            "verbatimCell": "72,31",
+            "pdfCoordinates": {
+              "xMin": 353.134846,
+              "yMin": 199.32783,
+              "xMax": 368.402315
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": 67.1,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Bandung",
+            "column": "(7): TPAK/LFPR, 2023",
+            "verbatimCell": "67,10",
+            "pdfCoordinates": {
+              "xMin": 353.122517,
+              "yMin": 210.665778,
+              "xMax": 368.393508
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "value": 70.1,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Garut",
+            "column": "(7): TPAK/LFPR, 2023",
+            "verbatimCell": "70,10",
+            "pdfCoordinates": {
+              "xMin": 353.12604,
+              "yMin": 222.004626,
+              "xMax": 368.400554
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3206",
+          "regionName": "Kabupaten Tasikmalaya",
+          "value": 68.37,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Tasikmalaya",
+            "column": "(7): TPAK/LFPR, 2023",
+            "verbatimCell": "68,37",
+            "pdfCoordinates": {
+              "xMin": 353.133966,
+              "yMin": 233.342574,
+              "xMax": 368.401434
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3207",
+          "regionName": "Kabupaten Ciamis",
+          "value": 66.26,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Ciamis",
+            "column": "(7): TPAK/LFPR, 2023",
+            "verbatimCell": "66,26",
+            "pdfCoordinates": {
+              "xMin": 353.135727,
+              "yMin": 244.680522,
+              "xMax": 368.403196
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3208",
+          "regionName": "Kabupaten Kuningan",
+          "value": 61.95,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Kuningan",
+            "column": "(7): TPAK/LFPR, 2023",
+            "verbatimCell": "61,95",
+            "pdfCoordinates": {
+              "xMin": 353.122517,
+              "yMin": 256.01847,
+              "xMax": 368.393508
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3209",
+          "regionName": "Kabupaten Cirebon",
+          "value": 66.16,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Cirebon",
+            "column": "(7): TPAK/LFPR, 2023",
+            "verbatimCell": "66,16",
+            "pdfCoordinates": {
+              "xMin": 353.134846,
+              "yMin": 267.357318,
+              "xMax": 368.402315
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "value": 68.5,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Majalengka",
+            "column": "(7): TPAK/LFPR, 2023",
+            "verbatimCell": "68,50",
+            "pdfCoordinates": {
+              "xMin": 353.123398,
+              "yMin": 278.695266,
+              "xMax": 368.394389
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3211",
+          "regionName": "Kabupaten Sumedang",
+          "value": 67.76,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Sumedang",
+            "column": "(7): TPAK/LFPR, 2023",
+            "verbatimCell": "67,76",
+            "pdfCoordinates": {
+              "xMin": 353.102261,
+              "yMin": 290.033214,
+              "xMax": 368.376775
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3212",
+          "regionName": "Kabupaten Indramayu",
+          "value": 63.88,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Indramayu",
+            "column": "(7): TPAK/LFPR, 2023",
+            "verbatimCell": "63,88",
+            "pdfCoordinates": {
+              "xMin": 353.122517,
+              "yMin": 301.371162,
+              "xMax": 368.393508
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3213",
+          "regionName": "Kabupaten Subang",
+          "value": 70.03,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Subang",
+            "column": "(7): TPAK/LFPR, 2023",
+            "verbatimCell": "70,03",
+            "pdfCoordinates": {
+              "xMin": 353.1005,
+              "yMin": 311.750632,
+              "xMax": 368.375014
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3214",
+          "regionName": "Kabupaten Purwakarta",
+          "value": 66.37,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Purwakarta",
+            "column": "(7): TPAK/LFPR, 2023",
+            "verbatimCell": "66,37",
+            "pdfCoordinates": {
+              "xMin": 353.101381,
+              "yMin": 322.130101,
+              "xMax": 368.375894
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3215",
+          "regionName": "Kabupaten Karawang",
+          "value": 63.4,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Karawang",
+            "column": "(7): TPAK/LFPR, 2023",
+            "verbatimCell": "63,40",
+            "pdfCoordinates": {
+              "xMin": 353.118113,
+              "yMin": 333.468049,
+              "xMax": 368.392627
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "value": 65.0,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Bekasi",
+            "column": "(7): TPAK/LFPR, 2023",
+            "verbatimCell": "65,00",
+            "pdfCoordinates": {
+              "xMin": 353.101381,
+              "yMin": 344.805997,
+              "xMax": 368.375894
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3217",
+          "regionName": "Kabupaten Bandung Barat",
+          "value": 67.01,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Bandung Barat",
+            "column": "(7): TPAK/LFPR, 2023",
+            "verbatimCell": "67,01",
+            "pdfCoordinates": {
+              "xMin": 353.122517,
+              "yMin": 356.144845,
+              "xMax": 368.393508
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": 80.15,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kabupaten Pangandaran",
+            "column": "(7): TPAK/LFPR, 2023",
+            "verbatimCell": "80,15",
+            "pdfCoordinates": {
+              "xMin": 353.122517,
+              "yMin": 367.482793,
+              "xMax": 368.393508
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "value": 64.81,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kota Bogor",
+            "column": "(7): TPAK/LFPR, 2023",
+            "verbatimCell": "64,81",
+            "pdfCoordinates": {
+              "xMin": 353.122517,
+              "yMin": 387.531648,
+              "xMax": 368.393508
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3272",
+          "regionName": "Kota Sukabumi",
+          "value": 62.57,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kota Sukabumi",
+            "column": "(7): TPAK/LFPR, 2023",
+            "verbatimCell": "62,57",
+            "pdfCoordinates": {
+              "xMin": 353.085528,
+              "yMin": 398.869596,
+              "xMax": 368.363565
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "value": 66.97,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kota Bandung",
+            "column": "(7): TPAK/LFPR, 2023",
+            "verbatimCell": "66,97",
+            "pdfCoordinates": {
+              "xMin": 353.122517,
+              "yMin": 410.207544,
+              "xMax": 368.393508
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3274",
+          "regionName": "Kota Cirebon",
+          "value": 68.71,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kota Cirebon",
+            "column": "(7): TPAK/LFPR, 2023",
+            "verbatimCell": "68,71",
+            "pdfCoordinates": {
+              "xMin": 353.134846,
+              "yMin": 421.546392,
+              "xMax": 368.402315
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": 64.65,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kota Bekasi",
+            "column": "(7): TPAK/LFPR, 2023",
+            "verbatimCell": "64,65",
+            "pdfCoordinates": {
+              "xMin": 353.1005,
+              "yMin": 432.88434,
+              "xMax": 368.375014
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "value": 62.76,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kota Depok",
+            "column": "(7): TPAK/LFPR, 2023",
+            "verbatimCell": "62,76",
+            "pdfCoordinates": {
+              "xMin": 353.122517,
+              "yMin": 444.222288,
+              "xMax": 368.393508
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3277",
+          "regionName": "Kota Cimahi",
+          "value": 68.43,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kota Cimahi",
+            "column": "(7): TPAK/LFPR, 2023",
+            "verbatimCell": "68,43",
+            "pdfCoordinates": {
+              "xMin": 353.132204,
+              "yMin": 455.560236,
+              "xMax": 368.399673
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": 65.44,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kota Tasikmalaya",
+            "column": "(7): TPAK/LFPR, 2023",
+            "verbatimCell": "65,44",
+            "pdfCoordinates": {
+              "xMin": 353.133966,
+              "yMin": 466.1899,
+              "xMax": 368.401434
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        },
+        {
+          "regionId": "3279",
+          "regionName": "Kota Banjar",
+          "value": 67.44,
+          "sourceRecord": {
+            "table": "3.2.16",
+            "printedPage": 147,
+            "pdfPage": 223,
+            "row": "Kota Banjar",
+            "column": "(7): TPAK/LFPR, 2023",
+            "verbatimCell": "67,44",
+            "pdfCoordinates": {
+              "xMin": 353.122517,
+              "yMin": 476.464971,
+              "xMax": 368.393508
+            },
+            "coordinateUnits": "PDF points, upper-left origin"
+          }
+        }
+      ],
+      "acquisitionNotes": {
+        "method": "Re-read original official PDF table text and every numeric cell using pdftotext -bbox coordinate windows. Kept row order and kabupaten/kota sections; localized cells preserved. Previous transcription not used as extraction input.",
+        "coverage": {
+          "expectedRegions": 27,
+          "observedRegions": 27,
+          "missingRegions": [],
+          "year": 2023,
+          "geography": "18 kabupaten and 9 kota; province aggregate excluded"
+        },
+        "imputation": "None; original precision retained."
+      }
+    }
+  ],
+  "findings": [
+    {
+      "id": "coverage",
+      "status": "COMPLETE",
+      "detail": "All five candidates have27/27 real numeric2023 observations; no missing values, imputation or province substitution. Extra nominal variant also27/27.",
+      "candidateCoverage": [
+        {
+          "indicatorId": "poverty",
+          "expectedRegions": 27,
+          "observedRegions": 27,
+          "missingRegions": [],
+          "year": 2023,
+          "geography": "18 kabupaten and 9 kota; province aggregate excluded"
+        },
+        {
+          "indicatorId": "unemployment",
+          "expectedRegions": 27,
+          "observedRegions": 27,
+          "missingRegions": [],
+          "year": 2023,
+          "geography": "18 kabupaten and 9 kota; province aggregate excluded"
+        },
+        {
+          "indicatorId": "gini_ratio",
+          "expectedRegions": 27,
+          "observedRegions": 27,
+          "missingRegions": [],
+          "year": 2023,
+          "geography": "18 kabupaten and 9 kota; province aggregate excluded"
+        },
+        {
+          "indicatorId": "expenditure_per_capita",
+          "expectedRegions": 27,
+          "observedRegions": 27,
+          "missingRegions": [],
+          "year": 2023,
+          "geography": "18 kabupaten and 9 kota; province aggregate excluded"
+        },
+        {
+          "indicatorId": "labour_force_participation",
+          "expectedRegions": 27,
+          "observedRegions": 27,
+          "missingRegions": [],
+          "year": 2023,
+          "geography": "18 kabupaten and 9 kota; province aggregate excluded"
+        }
+      ]
+    },
+    {
+      "id": "expenditure-variant-choice",
+      "canonicalIndicatorId": "expenditure_per_capita",
+      "detail": "Canonical: real adjusted annual IPM component, thousandrupiah/person/year. Nominal monthly rupiah/person/month is distinct; unit conversion or annualisation alone does not make equivalent.",
+      "extraVerifiedSeries": {
+        "id": "expenditure_nominal_monthly",
+        "name": "Rata-rata pengeluaran per kapita sebulan makanan dan bukan makanan (jumlah)",
+        "status": "Extra verified variant; not canonical candidate",
+        "source": {
+          "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+          "title": "Rata-rata Pengeluaran per Kapita Sebulan Makanan dan Bukan Makanan Menurut Kabupaten/Kota di Provinsi Jawa Barat (Rupiah), 2022 dan2023",
+          "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+          "table": "11.3",
+          "pages": {
+            "printed": [
+              681
+            ],
+            "pdf": [
+              757
+            ]
+          },
+          "referencePeriod": "March2023 Susenas; food last-week and nonfood last-month/year recall converted to monthly expenditure",
+          "unit": "nominal rupiah per person per month",
+          "denominator": "Household consumption divided by household members; not household expenditure total",
+          "accessedAt": "2026-10-28",
+          "artifactId": "sha256:500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81"
+        },
+        "definition": "Monthly household member consumption from purchases, gifts and own production divided by household members; technical notes printed673/PDF749. Published total copied, not recomputed: rounded components may differ by1rupiah.",
+        "valueType": "nominal_raw_measure",
+        "direction": "NO_UNQUALIFIED_WELFARE_DIRECTION_ACROSS_PRICES",
+        "comparability": "Same nominal unit and March2023 survey for27, but no spatial purchasing-power correction; higher spending may reflect higher prices.",
+        "preliminaryRecommendation": {
+          "admission": "CONTEXT ONLY",
+          "reason": "Useful nominal consumption description; not interchangeable with annual real adjusted IPM expenditure."
+        },
+        "observations": [
+          {
+            "regionId": "3201",
+            "regionName": "Kabupaten Bogor",
+            "value": 1248999,
+            "sourceRecord": {
+              "table": "11.3",
+              "printedPage": 681,
+              "pdfPage": 757,
+              "row": "Kabupaten Bogor",
+              "column": "(7): Jumlah/Total, 2023",
+              "verbatimCell": "1.248.999",
+              "pdfCoordinates": {
+                "xMin": 347.019404,
+                "yMin": 204.289031,
+                "xMax": 374.170769
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          },
+          {
+            "regionId": "3202",
+            "regionName": "Kabupaten Sukabumi",
+            "value": 1253479,
+            "sourceRecord": {
+              "table": "11.3",
+              "printedPage": 681,
+              "pdfPage": 757,
+              "row": "Kabupaten Sukabumi",
+              "column": "(7): Jumlah/Total, 2023",
+              "verbatimCell": "1.253.479",
+              "pdfCoordinates": {
+                "xMin": 347.009717,
+                "yMin": 214.209511,
+                "xMax": 374.175172
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          },
+          {
+            "regionId": "3203",
+            "regionName": "Kabupaten Cianjur",
+            "value": 1040537,
+            "sourceRecord": {
+              "table": "11.3",
+              "printedPage": 681,
+              "pdfPage": 757,
+              "row": "Kabupaten Cianjur",
+              "column": "(7): Jumlah/Total, 2023",
+              "verbatimCell": "1.040.537",
+              "pdfCoordinates": {
+                "xMin": 347.018524,
+                "yMin": 224.131791,
+                "xMax": 374.162843
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          },
+          {
+            "regionId": "3204",
+            "regionName": "Kabupaten Bandung",
+            "value": 1289023,
+            "sourceRecord": {
+              "table": "11.3",
+              "printedPage": 681,
+              "pdfPage": 757,
+              "row": "Kabupaten Bandung",
+              "column": "(7): Jumlah/Total, 2023",
+              "verbatimCell": "1.289.023",
+              "pdfCoordinates": {
+                "xMin": 347.019404,
+                "yMin": 234.05317,
+                "xMax": 374.170769
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          },
+          {
+            "regionId": "3205",
+            "regionName": "Kabupaten Garut",
+            "value": 1039588,
+            "sourceRecord": {
+              "table": "11.3",
+              "printedPage": 681,
+              "pdfPage": 757,
+              "row": "Kabupaten Garut",
+              "column": "(7): Jumlah/Total, 2023",
+              "verbatimCell": "1.039.588",
+              "pdfCoordinates": {
+                "xMin": 347.001791,
+                "yMin": 243.97365,
+                "xMax": 374.153155
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          },
+          {
+            "regionId": "3206",
+            "regionName": "Kabupaten Tasikmalaya",
+            "value": 1067692,
+            "sourceRecord": {
+              "table": "11.3",
+              "printedPage": 681,
+              "pdfPage": 757,
+              "row": "Kabupaten Tasikmalaya",
+              "column": "(7): Jumlah/Total, 2023",
+              "verbatimCell": "1.067.692",
+              "pdfCoordinates": {
+                "xMin": 347.017643,
+                "yMin": 253.895029,
+                "xMax": 374.161962
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          },
+          {
+            "regionId": "3207",
+            "regionName": "Kabupaten Ciamis",
+            "value": 1243666,
+            "sourceRecord": {
+              "table": "11.3",
+              "printedPage": 681,
+              "pdfPage": 757,
+              "row": "Kabupaten Ciamis",
+              "column": "(7): Jumlah/Total, 2023",
+              "verbatimCell": "1.243.666",
+              "pdfCoordinates": {
+                "xMin": 347.017643,
+                "yMin": 263.817309,
+                "xMax": 374.161962
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          },
+          {
+            "regionId": "3208",
+            "regionName": "Kabupaten Kuningan",
+            "value": 1121601,
+            "sourceRecord": {
+              "table": "11.3",
+              "printedPage": 681,
+              "pdfPage": 757,
+              "row": "Kabupaten Kuningan",
+              "column": "(7): Jumlah/Total, 2023",
+              "verbatimCell": "1.121.601",
+              "pdfCoordinates": {
+                "xMin": 347.019404,
+                "yMin": 273.736888,
+                "xMax": 374.170769
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          },
+          {
+            "regionId": "3209",
+            "regionName": "Kabupaten Cirebon",
+            "value": 1230691,
+            "sourceRecord": {
+              "table": "11.3",
+              "printedPage": 681,
+              "pdfPage": 757,
+              "row": "Kabupaten Cirebon",
+              "column": "(7): Jumlah/Total, 2023",
+              "verbatimCell": "1.230.691",
+              "pdfCoordinates": {
+                "xMin": 347.017643,
+                "yMin": 283.658268,
+                "xMax": 374.161962
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          },
+          {
+            "regionId": "3210",
+            "regionName": "Kabupaten Majalengka",
+            "value": 1142852,
+            "sourceRecord": {
+              "table": "11.3",
+              "printedPage": 681,
+              "pdfPage": 757,
+              "row": "Kabupaten Majalengka",
+              "column": "(7): Jumlah/Total, 2023",
+              "verbatimCell": "1.142.852",
+              "pdfCoordinates": {
+                "xMin": 347.020285,
+                "yMin": 293.580547,
+                "xMax": 374.17165
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          },
+          {
+            "regionId": "3211",
+            "regionName": "Kabupaten Sumedang",
+            "value": 1405938,
+            "sourceRecord": {
+              "table": "11.3",
+              "printedPage": 681,
+              "pdfPage": 757,
+              "row": "Kabupaten Sumedang",
+              "column": "(7): Jumlah/Total, 2023",
+              "verbatimCell": "1.405.938",
+              "pdfCoordinates": {
+                "xMin": 347.01412,
+                "yMin": 303.501027,
+                "xMax": 374.17253
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          },
+          {
+            "regionId": "3212",
+            "regionName": "Kabupaten Indramayu",
+            "value": 1469031,
+            "sourceRecord": {
+              "table": "11.3",
+              "printedPage": 681,
+              "pdfPage": 757,
+              "row": "Kabupaten Indramayu",
+              "column": "(7): Jumlah/Total, 2023",
+              "verbatimCell": "1.469.031",
+              "pdfCoordinates": {
+                "xMin": 347.019404,
+                "yMin": 313.422406,
+                "xMax": 374.170769
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          },
+          {
+            "regionId": "3213",
+            "regionName": "Kabupaten Subang",
+            "value": 1257902,
+            "sourceRecord": {
+              "table": "11.3",
+              "printedPage": 681,
+              "pdfPage": 757,
+              "row": "Kabupaten Subang",
+              "column": "(7): Jumlah/Total, 2023",
+              "verbatimCell": "1.257.902",
+              "pdfCoordinates": {
+                "xMin": 347.012359,
+                "yMin": 323.343786,
+                "xMax": 374.170769
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          },
+          {
+            "regionId": "3214",
+            "regionName": "Kabupaten Purwakarta",
+            "value": 1453118,
+            "sourceRecord": {
+              "table": "11.3",
+              "printedPage": 681,
+              "pdfPage": 757,
+              "row": "Kabupaten Purwakarta",
+              "column": "(7): Jumlah/Total, 2023",
+              "verbatimCell": "1.453.118",
+              "pdfCoordinates": {
+                "xMin": 347.012359,
+                "yMin": 333.265165,
+                "xMax": 374.170769
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          },
+          {
+            "regionId": "3215",
+            "regionName": "Kabupaten Karawang",
+            "value": 1486224,
+            "sourceRecord": {
+              "table": "11.3",
+              "printedPage": 681,
+              "pdfPage": 757,
+              "row": "Kabupaten Karawang",
+              "column": "(7): Jumlah/Total, 2023",
+              "verbatimCell": "1.486.224",
+              "pdfCoordinates": {
+                "xMin": 346.992984,
+                "yMin": 343.186545,
+                "xMax": 374.144348
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          },
+          {
+            "regionId": "3216",
+            "regionName": "Kabupaten Bekasi",
+            "value": 1770214,
+            "sourceRecord": {
+              "table": "11.3",
+              "printedPage": 681,
+              "pdfPage": 757,
+              "row": "Kabupaten Bekasi",
+              "column": "(7): Jumlah/Total, 2023",
+              "verbatimCell": "1.770.214",
+              "pdfCoordinates": {
+                "xMin": 347.011478,
+                "yMin": 353.107924,
+                "xMax": 374.169888
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          },
+          {
+            "regionId": "3217",
+            "regionName": "Kabupaten Bandung Barat",
+            "value": 1130470,
+            "sourceRecord": {
+              "table": "11.3",
+              "printedPage": 681,
+              "pdfPage": 757,
+              "row": "Kabupaten Bandung Barat",
+              "column": "(7): Jumlah/Total, 2023",
+              "verbatimCell": "1.130.470",
+              "pdfCoordinates": {
+                "xMin": 347.019404,
+                "yMin": 363.029304,
+                "xMax": 374.170769
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          },
+          {
+            "regionId": "3218",
+            "regionName": "Kabupaten Pangandaran",
+            "value": 1293640,
+            "sourceRecord": {
+              "table": "11.3",
+              "printedPage": 681,
+              "pdfPage": 757,
+              "row": "Kabupaten Pangandaran",
+              "column": "(7): Jumlah/Total, 2023",
+              "verbatimCell": "1.293.640",
+              "pdfCoordinates": {
+                "xMin": 347.019404,
+                "yMin": 372.950683,
+                "xMax": 374.170769
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          },
+          {
+            "regionId": "3271",
+            "regionName": "Kota Bogor",
+            "value": 2733270,
+            "sourceRecord": {
+              "table": "11.3",
+              "printedPage": 681,
+              "pdfPage": 757,
+              "row": "Kota Bogor",
+              "column": "(7): Jumlah/Total, 2023",
+              "verbatimCell": "2.733.270",
+              "pdfCoordinates": {
+                "xMin": 347.019404,
+                "yMin": 391.375974,
+                "xMax": 374.170769
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          },
+          {
+            "regionId": "3272",
+            "regionName": "Kota Sukabumi",
+            "value": 2273334,
+            "sourceRecord": {
+              "table": "11.3",
+              "printedPage": 681,
+              "pdfPage": 757,
+              "row": "Kota Sukabumi",
+              "column": "(7): Jumlah/Total, 2023",
+              "verbatimCell": "2.273.334",
+              "pdfCoordinates": {
+                "xMin": 346.972728,
+                "yMin": 401.297353,
+                "xMax": 374.131138
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          },
+          {
+            "regionId": "3273",
+            "regionName": "Kota Bandung",
+            "value": 2476783,
+            "sourceRecord": {
+              "table": "11.3",
+              "printedPage": 681,
+              "pdfPage": 757,
+              "row": "Kota Bandung",
+              "column": "(7): Jumlah/Total, 2023",
+              "verbatimCell": "2.476.783",
+              "pdfCoordinates": {
+                "xMin": 347.019404,
+                "yMin": 411.218733,
+                "xMax": 374.170769
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          },
+          {
+            "regionId": "3274",
+            "regionName": "Kota Cirebon",
+            "value": 1828161,
+            "sourceRecord": {
+              "table": "11.3",
+              "printedPage": 681,
+              "pdfPage": 757,
+              "row": "Kota Cirebon",
+              "column": "(7): Jumlah/Total, 2023",
+              "verbatimCell": "1.828.161",
+              "pdfCoordinates": {
+                "xMin": 347.015882,
+                "yMin": 421.140112,
+                "xMax": 374.160201
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          },
+          {
+            "regionId": "3275",
+            "regionName": "Kota Bekasi",
+            "value": 2709214,
+            "sourceRecord": {
+              "table": "11.3",
+              "printedPage": 681,
+              "pdfPage": 757,
+              "row": "Kota Bekasi",
+              "column": "(7): Jumlah/Total, 2023",
+              "verbatimCell": "2.709.214",
+              "pdfCoordinates": {
+                "xMin": 347.019404,
+                "yMin": 431.061492,
+                "xMax": 374.177814
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          },
+          {
+            "regionId": "3276",
+            "regionName": "Kota Depok",
+            "value": 2612174,
+            "sourceRecord": {
+              "table": "11.3",
+              "printedPage": 681,
+              "pdfPage": 757,
+              "row": "Kota Depok",
+              "column": "(7): Jumlah/Total, 2023",
+              "verbatimCell": "2.612.174",
+              "pdfCoordinates": {
+                "xMin": 347.020285,
+                "yMin": 440.982871,
+                "xMax": 374.17165
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          },
+          {
+            "regionId": "3277",
+            "regionName": "Kota Cimahi",
+            "value": 2183003,
+            "sourceRecord": {
+              "table": "11.3",
+              "printedPage": 681,
+              "pdfPage": 757,
+              "row": "Kota Cimahi",
+              "column": "(7): Jumlah/Total, 2023",
+              "verbatimCell": "2.183.003",
+              "pdfCoordinates": {
+                "xMin": 347.01412,
+                "yMin": 450.904251,
+                "xMax": 374.158439
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          },
+          {
+            "regionId": "3278",
+            "regionName": "Kota Tasikmalaya",
+            "value": 1717562,
+            "sourceRecord": {
+              "table": "11.3",
+              "printedPage": 681,
+              "pdfPage": 757,
+              "row": "Kota Tasikmalaya",
+              "column": "(7): Jumlah/Total, 2023",
+              "verbatimCell": "1.717.562",
+              "pdfCoordinates": {
+                "xMin": 347.015882,
+                "yMin": 460.825631,
+                "xMax": 374.160201
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          },
+          {
+            "regionId": "3279",
+            "regionName": "Kota Banjar",
+            "value": 1389002,
+            "sourceRecord": {
+              "table": "11.3",
+              "printedPage": 681,
+              "pdfPage": 757,
+              "row": "Kota Banjar",
+              "column": "(7): Jumlah/Total, 2023",
+              "verbatimCell": "1.389.002",
+              "pdfCoordinates": {
+                "xMin": 347.019404,
+                "yMin": 470.74701,
+                "xMax": 374.170769
+              },
+              "coordinateUnits": "PDF points, upper-left origin"
+            }
+          }
+        ],
+        "coverage": {
+          "expectedRegions": 27,
+          "observedRegions": 27,
+          "missingRegions": [],
+          "year": 2023,
+          "geography": "18 kabupaten and 9 kota; province aggregate excluded"
+        }
+      }
+    },
+    {
+      "id": "gini-vintage-and-scale",
+      "detail": "All27 current official2023 district cells verified. Scale0–1 established by original2023 booklet. Dynamic table updated2025-12-17; absent district revision history prevents certifying original-release values unchanged.",
+      "officialLocators": [
+        "https://jabar.bps.go.id/id/statistics-table/2/OTUxIzI=/gini-ratio-kabupaten-kota-di-provinsi-jawa-barat.html",
+        "https://jabar.bps.go.id/id/publication/2023/12/20/0489b78c74a7313cf2eebf9d/booklet-tingkat-ketimpangan-pengeluaran-penduduk-provinsi-jawa-barat-maret-2023.html"
+      ]
+    },
+    {
+      "id": "period-traps",
+      "detail": "Poverty/Gini March2023; TPT/TPAK August2023; IPM expenditure annual real adjusted. No September2023 poverty calculation. Do not label these same-date observations."
+    },
+    {
+      "id": "employment-source-conflict",
+      "detail": "Yearbook age-group table3.2.1 printed120/PDF196 gives provinceTPAK66.51 and working-age population38179806. District table3.2.2 printed123/PDF199 and canonical3.2.16 printed147/PDF223 give66.49, with district aggregate38186706. DistrictTPAK27/27 agree between district tables. Narrative printed108/PDF184 says employed25.50million, exceeding labour force25.39million printed107/PDF183; do not derive rates from inconsistent prose."
+    },
+    {
+      "id": "no-poverty-unemployment-merge",
+      "detail": "Consumption deprivation among all residents differs from unemployment among labour force; distinct periods and denominators. No merge or weighting proposed."
+    },
+    {
+      "id": "overlap-policy",
+      "detail": "For the proposed HDI-free model: poverty, TPT, Gini and real adjusted annual expenditure are CORE candidates; TPAK is CONTEXT ONLY because welfare direction is ambiguous. Current scoring remains unchanged."
+    },
+    {
+      "id": "ipm-publication-metadata-conflict",
+      "detail": "Dedicated IPM landing gives publication32000.24023; extracted copyright PDF4 prints32000.2403. Stable publication UUID, title and byte hash disambiguate; no correction invented."
+    }
+  ]
+}
