@@ -1,0 +1,628 @@
+{
+  "auditId": "resilience-current-risk-2023",
+  "accessedAt": "2026-10-29",
+  "scope": {
+    "referenceYear": 2023,
+    "province": "Jawa Barat",
+    "geography": "kabupaten/kota",
+    "productionChanges": false,
+    "regionIds": [
+      "3201",
+      "3202",
+      "3203",
+      "3204",
+      "3205",
+      "3206",
+      "3207",
+      "3208",
+      "3209",
+      "3210",
+      "3211",
+      "3212",
+      "3213",
+      "3214",
+      "3215",
+      "3216",
+      "3217",
+      "3218",
+      "3271",
+      "3272",
+      "3273",
+      "3274",
+      "3275",
+      "3276",
+      "3277",
+      "3278",
+      "3279"
+    ]
+  },
+  "artifacts": [
+    {
+      "id": "risk-irbi-2023-page101-facts",
+      "publisher": "Badan Nasional Penanggulangan Bencana",
+      "title": "Indeks Risiko Bencana Indonesia Tahun 2023 (IRBI), Volume 02 Nomor 02, Januari 2024",
+      "url": "https://inarisk.bnpb.go.id/IRBI-2023/files/basic-html/page101.html",
+      "accessedAt": "2026-10-29",
+      "content": "[\n  {\n    \"sourceRank\": 1,\n    \"sourceName\": \"CIANJUR\",\n    \"year\": 2023,\n    \"value\": 185.14,\n    \"riskClass\": \"TINGGI\"\n  },\n  {\n    \"sourceRank\": 2,\n    \"sourceName\": \"SUKABUMI\",\n    \"year\": 2023,\n    \"value\": 178.12,\n    \"riskClass\": \"TINGGI\"\n  },\n  {\n    \"sourceRank\": 3,\n    \"sourceName\": \"TASIKMALAYA\",\n    \"year\": 2023,\n    \"value\": 159.14,\n    \"riskClass\": \"TINGGI\"\n  },\n  {\n    \"sourceRank\": 4,\n    \"sourceName\": \"KARAWANG\",\n    \"year\": 2023,\n    \"value\": 152.32,\n    \"riskClass\": \"TINGGI\"\n  },\n  {\n    \"sourceRank\": 5,\n    \"sourceName\": \"PANGANDARAN\",\n    \"year\": 2023,\n    \"value\": 147.85,\n    \"riskClass\": \"TINGGI\"\n  },\n  {\n    \"sourceRank\": 6,\n    \"sourceName\": \"GARUT\",\n    \"year\": 2023,\n    \"value\": 147.39,\n    \"riskClass\": \"TINGGI\"\n  },\n  {\n    \"sourceRank\": 7,\n    \"sourceName\": \"CIREBON\",\n    \"year\": 2023,\n    \"value\": 144.56,\n    \"riskClass\": \"TINGGI\"\n  },\n  {\n    \"sourceRank\": 8,\n    \"sourceName\": \"SUBANG\",\n    \"year\": 2023,\n    \"value\": 143.43,\n    \"riskClass\": \"SEDANG\"\n  },\n  {\n    \"sourceRank\": 9,\n    \"sourceName\": \"SUMEDANG\",\n    \"year\": 2023,\n    \"value\": 135.05,\n    \"riskClass\": \"SEDANG\"\n  },\n  {\n    \"sourceRank\": 10,\n    \"sourceName\": \"BANDUNG\",\n    \"year\": 2023,\n    \"value\": 132.0,\n    \"riskClass\": \"SEDANG\"\n  },\n  {\n    \"sourceRank\": 11,\n    \"sourceName\": \"KOTA BANJAR\",\n    \"year\": 2023,\n    \"value\": 129.6,\n    \"riskClass\": \"SEDANG\"\n  },\n  {\n    \"sourceRank\": 12,\n    \"sourceName\": \"KOTA CIREBON\",\n    \"year\": 2023,\n    \"value\": 127.28,\n    \"riskClass\": \"SEDANG\"\n  },\n  {\n    \"sourceRank\": 13,\n    \"sourceName\": \"KUNINGAN\",\n    \"year\": 2023,\n    \"value\": 125.8,\n    \"riskClass\": \"SEDANG\"\n  },\n  {\n    \"sourceRank\": 14,\n    \"sourceName\": \"MAJALENGKA\",\n    \"year\": 2023,\n    \"value\": 120.84,\n    \"riskClass\": \"SEDANG\"\n  },\n  {\n    \"sourceRank\": 15,\n    \"sourceName\": \"PURWAKARTA\",\n    \"year\": 2023,\n    \"value\": 117.89,\n    \"riskClass\": \"SEDANG\"\n  },\n  {\n    \"sourceRank\": 16,\n    \"sourceName\": \"CIAMIS\",\n    \"year\": 2023,\n    \"value\": 117.12,\n    \"riskClass\": \"SEDANG\"\n  },\n  {\n    \"sourceRank\": 17,\n    \"sourceName\": \"BEKASI\",\n    \"year\": 2023,\n    \"value\": 116.85,\n    \"riskClass\": \"SEDANG\"\n  },\n  {\n    \"sourceRank\": 18,\n    \"sourceName\": \"INDRAMAYU\",\n    \"year\": 2023,\n    \"value\": 111.6,\n    \"riskClass\": \"SEDANG\"\n  },\n  {\n    \"sourceRank\": 19,\n    \"sourceName\": \"KOTA BEKASI\",\n    \"year\": 2023,\n    \"value\": 111.58,\n    \"riskClass\": \"SEDANG\"\n  },\n  {\n    \"sourceRank\": 20,\n    \"sourceName\": \"BANDUNG BARAT\",\n    \"year\": 2023,\n    \"value\": 108.64,\n    \"riskClass\": \"SEDANG\"\n  },\n  {\n    \"sourceRank\": 21,\n    \"sourceName\": \"BOGOR\",\n    \"year\": 2023,\n    \"value\": 107.93,\n    \"riskClass\": \"SEDANG\"\n  },\n  {\n    \"sourceRank\": 22,\n    \"sourceName\": \"KOTA TASIKMALAYA\",\n    \"year\": 2023,\n    \"value\": 106.93,\n    \"riskClass\": \"SEDANG\"\n  },\n  {\n    \"sourceRank\": 23,\n    \"sourceName\": \"KOTA BANDUNG\",\n    \"year\": 2023,\n    \"value\": 97.15,\n    \"riskClass\": \"SEDANG\"\n  },\n  {\n    \"sourceRank\": 24,\n    \"sourceName\": \"KOTA SUKABUMI\",\n    \"year\": 2023,\n    \"value\": 84.55,\n    \"riskClass\": \"SEDANG\"\n  },\n  {\n    \"sourceRank\": 25,\n    \"sourceName\": \"KOTA DEPOK\",\n    \"year\": 2023,\n    \"value\": 80.44,\n    \"riskClass\": \"SEDANG\"\n  },\n  {\n    \"sourceRank\": 26,\n    \"sourceName\": \"KOTA CIMAHI\",\n    \"year\": 2023,\n    \"value\": 72.63,\n    \"riskClass\": \"SEDANG\"\n  },\n  {\n    \"sourceRank\": 27,\n    \"sourceName\": \"KOTA BOGOR\",\n    \"year\": 2023,\n    \"value\": 63.49,\n    \"riskClass\": \"SEDANG\"\n  }\n]\n",
+      "encoding": "utf-8",
+      "sha256": "6346b2138e39a72a4ba1189caa69d61554d3758dd9e3134f32933f452649ad30",
+      "bytes": 3422,
+      "representation": "factual_numeric_transcription",
+      "sourceResponseSha256": "2e116d076550d5d99bdea92ec3dc061f05b611e2a868fe76bd6bd240a1b6e47f",
+      "sourceResponseBytes": 12082,
+      "originalPdf": {
+        "url": "https://inarisk.bnpb.go.id/pdf/BUKU%20IRBI%202023.pdf",
+        "sha256": "a3d00a7af58f9fd2e14d51be60fe174c829effa5612a54ce4cc662a113455279",
+        "bytes": 97147315,
+        "verifiedAt": "2026-10-29",
+        "redistributed": false,
+        "verification": "Original reacquired outside the repository; SHA256 agrees with the current source manifest. PDF pages 16–22 inspected, including the rendered conceptual risk equation."
+      },
+      "locator": "Printed/PDF101; table 2015–2023, 2023 column; rank and risk class preserved.",
+      "rights": "Attributed factual numeric transcription only; full PDF/HTML book not redistributed. Original PDF has quotation/reproduction restriction on page5.",
+      "acquisition": "Independently acquired official HTML2023 column and parsed27 names/values; compared every value with existing production raw transcription; zero differences."
+    }
+  ],
+  "series": [
+    {
+      "id": "irbi_overall_2023",
+      "name": "Official overall disaster-risk index (IRBI)",
+      "concept": "structural_risk",
+      "year": 2023,
+      "unit": "index points",
+      "rawOrDerived": "composite_index",
+      "numerator": null,
+      "denominator": null,
+      "formula": null,
+      "direction": "higher_worse",
+      "directionExplanation": "Higher official index indicates greater modeled disaster risk, not weaker capacity alone or more realized2023 disasters.",
+      "reportingBias": "Not primarily annual event-report count; depends on older model inputs, risk modelling, capacity assessment and annual assessment/revision coverage.",
+      "comparability": "One official table, same2023 index vintage and administrative27 kabupaten/kota; names map uniquely to distinct canonical BPS codes. Not a claim of certified2023 spatial inputs.",
+      "redundancy": "Contains H/V/C; exposure enters vulnerability. Do not add its hazard-specific risk scores, IKD or vulnerability/exposure components as extra independent CORE. Socioeconomic/service conceptual links remain implicit and must be disclosed, not duplicated with extra resilience proxies.",
+      "cvMeaningful": false,
+      "correlationGroup": "structural",
+      "bounds": {
+        "min": 0,
+        "max": null
+      },
+      "source": {
+        "publisher": "Badan Nasional Penanggulangan Bencana",
+        "title": "Indeks Risiko Bencana Indonesia Tahun 2023 (IRBI), Volume 02 Nomor 02, Januari 2024",
+        "url": "https://inarisk.bnpb.go.id/pdf/BUKU%20IRBI%202023.pdf",
+        "table": "Tabel nilai indeks risiko Provinsi Jawa Barat dari Tahun 2015 sampai dengan Tahun 2023; printed/PDF 101",
+        "referencePeriod": "Official 2023 index vintage; hazard/vulnerability baseline IRBI 2013 from KRB 2011; capacity assessed through IKD 71 indicators. Annual assessment freshness must be checked separately.",
+        "accessedAt": "2026-10-29",
+        "artifactId": "risk-irbi-2023-page101-facts"
+      },
+      "recommendation": {
+        "status": "CORE",
+        "reason": "KEEP, narrowly labelled modeled Disaster Pressure; complete official2023 residual-risk composite, no extra nested components. Older baselines and assessment freshness constrain interpretation, not hidden new2023 hazards."
+      },
+      "caveats": [
+        "Not comprehensive resilience capacity or observed losses.",
+        "Hazard/vulnerability are older fixed baselines, not a fresh2023 exposure census.",
+        "National419/514 IKD assessments do not prove27/27 current assessment; annual index publication differs from annual remeasurement.",
+        "Official component weights H40/V30/C30 describe BNPB methodology; not CIVX weights.",
+        "No population denominator; dividing composite by residents is invalid.",
+        "Rights, independent method review and certified effective spatial compatibility remain separate future-release governance gates."
+      ],
+      "observations": [
+        {
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "value": 107.93,
+          "rawValue": 107.93,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "risk-irbi-2023-page101-facts",
+            "locator": "Printed/PDF101; source rank21; BOGOR;2023;SEDANG",
+            "record": {
+              "sourceRank": 21,
+              "sourceName": "BOGOR",
+              "year": 2023,
+              "value": 107.93,
+              "riskClass": "SEDANG"
+            }
+          }
+        },
+        {
+          "regionId": "3202",
+          "regionName": "Kabupaten Sukabumi",
+          "value": 178.12,
+          "rawValue": 178.12,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "risk-irbi-2023-page101-facts",
+            "locator": "Printed/PDF101; source rank2; SUKABUMI;2023;TINGGI",
+            "record": {
+              "sourceRank": 2,
+              "sourceName": "SUKABUMI",
+              "year": 2023,
+              "value": 178.12,
+              "riskClass": "TINGGI"
+            }
+          }
+        },
+        {
+          "regionId": "3203",
+          "regionName": "Kabupaten Cianjur",
+          "value": 185.14,
+          "rawValue": 185.14,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "risk-irbi-2023-page101-facts",
+            "locator": "Printed/PDF101; source rank1; CIANJUR;2023;TINGGI",
+            "record": {
+              "sourceRank": 1,
+              "sourceName": "CIANJUR",
+              "year": 2023,
+              "value": 185.14,
+              "riskClass": "TINGGI"
+            }
+          }
+        },
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": 132.0,
+          "rawValue": 132.0,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "risk-irbi-2023-page101-facts",
+            "locator": "Printed/PDF101; source rank10; BANDUNG;2023;SEDANG",
+            "record": {
+              "sourceRank": 10,
+              "sourceName": "BANDUNG",
+              "year": 2023,
+              "value": 132.0,
+              "riskClass": "SEDANG"
+            }
+          }
+        },
+        {
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "value": 147.39,
+          "rawValue": 147.39,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "risk-irbi-2023-page101-facts",
+            "locator": "Printed/PDF101; source rank6; GARUT;2023;TINGGI",
+            "record": {
+              "sourceRank": 6,
+              "sourceName": "GARUT",
+              "year": 2023,
+              "value": 147.39,
+              "riskClass": "TINGGI"
+            }
+          }
+        },
+        {
+          "regionId": "3206",
+          "regionName": "Kabupaten Tasikmalaya",
+          "value": 159.14,
+          "rawValue": 159.14,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "risk-irbi-2023-page101-facts",
+            "locator": "Printed/PDF101; source rank3; TASIKMALAYA;2023;TINGGI",
+            "record": {
+              "sourceRank": 3,
+              "sourceName": "TASIKMALAYA",
+              "year": 2023,
+              "value": 159.14,
+              "riskClass": "TINGGI"
+            }
+          }
+        },
+        {
+          "regionId": "3207",
+          "regionName": "Kabupaten Ciamis",
+          "value": 117.12,
+          "rawValue": 117.12,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "risk-irbi-2023-page101-facts",
+            "locator": "Printed/PDF101; source rank16; CIAMIS;2023;SEDANG",
+            "record": {
+              "sourceRank": 16,
+              "sourceName": "CIAMIS",
+              "year": 2023,
+              "value": 117.12,
+              "riskClass": "SEDANG"
+            }
+          }
+        },
+        {
+          "regionId": "3208",
+          "regionName": "Kabupaten Kuningan",
+          "value": 125.8,
+          "rawValue": 125.8,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "risk-irbi-2023-page101-facts",
+            "locator": "Printed/PDF101; source rank13; KUNINGAN;2023;SEDANG",
+            "record": {
+              "sourceRank": 13,
+              "sourceName": "KUNINGAN",
+              "year": 2023,
+              "value": 125.8,
+              "riskClass": "SEDANG"
+            }
+          }
+        },
+        {
+          "regionId": "3209",
+          "regionName": "Kabupaten Cirebon",
+          "value": 144.56,
+          "rawValue": 144.56,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "risk-irbi-2023-page101-facts",
+            "locator": "Printed/PDF101; source rank7; CIREBON;2023;TINGGI",
+            "record": {
+              "sourceRank": 7,
+              "sourceName": "CIREBON",
+              "year": 2023,
+              "value": 144.56,
+              "riskClass": "TINGGI"
+            }
+          }
+        },
+        {
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "value": 120.84,
+          "rawValue": 120.84,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "risk-irbi-2023-page101-facts",
+            "locator": "Printed/PDF101; source rank14; MAJALENGKA;2023;SEDANG",
+            "record": {
+              "sourceRank": 14,
+              "sourceName": "MAJALENGKA",
+              "year": 2023,
+              "value": 120.84,
+              "riskClass": "SEDANG"
+            }
+          }
+        },
+        {
+          "regionId": "3211",
+          "regionName": "Kabupaten Sumedang",
+          "value": 135.05,
+          "rawValue": 135.05,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "risk-irbi-2023-page101-facts",
+            "locator": "Printed/PDF101; source rank9; SUMEDANG;2023;SEDANG",
+            "record": {
+              "sourceRank": 9,
+              "sourceName": "SUMEDANG",
+              "year": 2023,
+              "value": 135.05,
+              "riskClass": "SEDANG"
+            }
+          }
+        },
+        {
+          "regionId": "3212",
+          "regionName": "Kabupaten Indramayu",
+          "value": 111.6,
+          "rawValue": 111.6,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "risk-irbi-2023-page101-facts",
+            "locator": "Printed/PDF101; source rank18; INDRAMAYU;2023;SEDANG",
+            "record": {
+              "sourceRank": 18,
+              "sourceName": "INDRAMAYU",
+              "year": 2023,
+              "value": 111.6,
+              "riskClass": "SEDANG"
+            }
+          }
+        },
+        {
+          "regionId": "3213",
+          "regionName": "Kabupaten Subang",
+          "value": 143.43,
+          "rawValue": 143.43,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "risk-irbi-2023-page101-facts",
+            "locator": "Printed/PDF101; source rank8; SUBANG;2023;SEDANG",
+            "record": {
+              "sourceRank": 8,
+              "sourceName": "SUBANG",
+              "year": 2023,
+              "value": 143.43,
+              "riskClass": "SEDANG"
+            }
+          }
+        },
+        {
+          "regionId": "3214",
+          "regionName": "Kabupaten Purwakarta",
+          "value": 117.89,
+          "rawValue": 117.89,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "risk-irbi-2023-page101-facts",
+            "locator": "Printed/PDF101; source rank15; PURWAKARTA;2023;SEDANG",
+            "record": {
+              "sourceRank": 15,
+              "sourceName": "PURWAKARTA",
+              "year": 2023,
+              "value": 117.89,
+              "riskClass": "SEDANG"
+            }
+          }
+        },
+        {
+          "regionId": "3215",
+          "regionName": "Kabupaten Karawang",
+          "value": 152.32,
+          "rawValue": 152.32,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "risk-irbi-2023-page101-facts",
+            "locator": "Printed/PDF101; source rank4; KARAWANG;2023;TINGGI",
+            "record": {
+              "sourceRank": 4,
+              "sourceName": "KARAWANG",
+              "year": 2023,
+              "value": 152.32,
+              "riskClass": "TINGGI"
+            }
+          }
+        },
+        {
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "value": 116.85,
+          "rawValue": 116.85,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "risk-irbi-2023-page101-facts",
+            "locator": "Printed/PDF101; source rank17; BEKASI;2023;SEDANG",
+            "record": {
+              "sourceRank": 17,
+              "sourceName": "BEKASI",
+              "year": 2023,
+              "value": 116.85,
+              "riskClass": "SEDANG"
+            }
+          }
+        },
+        {
+          "regionId": "3217",
+          "regionName": "Kabupaten Bandung Barat",
+          "value": 108.64,
+          "rawValue": 108.64,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "risk-irbi-2023-page101-facts",
+            "locator": "Printed/PDF101; source rank20; BANDUNG BARAT;2023;SEDANG",
+            "record": {
+              "sourceRank": 20,
+              "sourceName": "BANDUNG BARAT",
+              "year": 2023,
+              "value": 108.64,
+              "riskClass": "SEDANG"
+            }
+          }
+        },
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": 147.85,
+          "rawValue": 147.85,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "risk-irbi-2023-page101-facts",
+            "locator": "Printed/PDF101; source rank5; PANGANDARAN;2023;TINGGI",
+            "record": {
+              "sourceRank": 5,
+              "sourceName": "PANGANDARAN",
+              "year": 2023,
+              "value": 147.85,
+              "riskClass": "TINGGI"
+            }
+          }
+        },
+        {
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "value": 63.49,
+          "rawValue": 63.49,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "risk-irbi-2023-page101-facts",
+            "locator": "Printed/PDF101; source rank27; KOTA BOGOR;2023;SEDANG",
+            "record": {
+              "sourceRank": 27,
+              "sourceName": "KOTA BOGOR",
+              "year": 2023,
+              "value": 63.49,
+              "riskClass": "SEDANG"
+            }
+          }
+        },
+        {
+          "regionId": "3272",
+          "regionName": "Kota Sukabumi",
+          "value": 84.55,
+          "rawValue": 84.55,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "risk-irbi-2023-page101-facts",
+            "locator": "Printed/PDF101; source rank24; KOTA SUKABUMI;2023;SEDANG",
+            "record": {
+              "sourceRank": 24,
+              "sourceName": "KOTA SUKABUMI",
+              "year": 2023,
+              "value": 84.55,
+              "riskClass": "SEDANG"
+            }
+          }
+        },
+        {
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "value": 97.15,
+          "rawValue": 97.15,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "risk-irbi-2023-page101-facts",
+            "locator": "Printed/PDF101; source rank23; KOTA BANDUNG;2023;SEDANG",
+            "record": {
+              "sourceRank": 23,
+              "sourceName": "KOTA BANDUNG",
+              "year": 2023,
+              "value": 97.15,
+              "riskClass": "SEDANG"
+            }
+          }
+        },
+        {
+          "regionId": "3274",
+          "regionName": "Kota Cirebon",
+          "value": 127.28,
+          "rawValue": 127.28,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "risk-irbi-2023-page101-facts",
+            "locator": "Printed/PDF101; source rank12; KOTA CIREBON;2023;SEDANG",
+            "record": {
+              "sourceRank": 12,
+              "sourceName": "KOTA CIREBON",
+              "year": 2023,
+              "value": 127.28,
+              "riskClass": "SEDANG"
+            }
+          }
+        },
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": 111.58,
+          "rawValue": 111.58,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "risk-irbi-2023-page101-facts",
+            "locator": "Printed/PDF101; source rank19; KOTA BEKASI;2023;SEDANG",
+            "record": {
+              "sourceRank": 19,
+              "sourceName": "KOTA BEKASI",
+              "year": 2023,
+              "value": 111.58,
+              "riskClass": "SEDANG"
+            }
+          }
+        },
+        {
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "value": 80.44,
+          "rawValue": 80.44,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "risk-irbi-2023-page101-facts",
+            "locator": "Printed/PDF101; source rank25; KOTA DEPOK;2023;SEDANG",
+            "record": {
+              "sourceRank": 25,
+              "sourceName": "KOTA DEPOK",
+              "year": 2023,
+              "value": 80.44,
+              "riskClass": "SEDANG"
+            }
+          }
+        },
+        {
+          "regionId": "3277",
+          "regionName": "Kota Cimahi",
+          "value": 72.63,
+          "rawValue": 72.63,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "risk-irbi-2023-page101-facts",
+            "locator": "Printed/PDF101; source rank26; KOTA CIMAHI;2023;SEDANG",
+            "record": {
+              "sourceRank": 26,
+              "sourceName": "KOTA CIMAHI",
+              "year": 2023,
+              "value": 72.63,
+              "riskClass": "SEDANG"
+            }
+          }
+        },
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": 106.93,
+          "rawValue": 106.93,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "risk-irbi-2023-page101-facts",
+            "locator": "Printed/PDF101; source rank22; KOTA TASIKMALAYA;2023;SEDANG",
+            "record": {
+              "sourceRank": 22,
+              "sourceName": "KOTA TASIKMALAYA",
+              "year": 2023,
+              "value": 106.93,
+              "riskClass": "SEDANG"
+            }
+          }
+        },
+        {
+          "regionId": "3279",
+          "regionName": "Kota Banjar",
+          "value": 129.6,
+          "rawValue": 129.6,
+          "status": "observed",
+          "sourceRecord": {
+            "artifactId": "risk-irbi-2023-page101-facts",
+            "locator": "Printed/PDF101; source rank11; KOTA BANJAR;2023;SEDANG",
+            "record": {
+              "sourceRank": 11,
+              "sourceName": "KOTA BANJAR",
+              "year": 2023,
+              "value": 129.6,
+              "riskClass": "SEDANG"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "investigations": [],
+  "findings": [
+    {
+      "currentIndicator": "disaster_risk",
+      "decision": "KEEP",
+      "productionValuesVerified": 27,
+      "differences": 0,
+      "baseline": "Hazard/vulnerability fixed IRBI2013/KRB2011; current capacity assessed with IKD71.",
+      "conceptualEquation": "Risk = Hazard × Vulnerability / Capacity (printed/PDF 16). This explains direction; it is not a standalone recipe to reconstruct the published multi-hazard points.",
+      "construction": "Printed/PDF 17 gives H/V/C component influences of 40%/30%/30%. Pages 20–22 describe hazard-specific class scores, weights and regional aggregation. Do not reinterpret these statements as a new CIVX linear formula.",
+      "exposureTreatment": "Exposure is not a separately named fourth weighted block. Page 20 lists exposed persons, monetary losses and environmental damage; page 21 uses these in vulnerability parameters.",
+      "capacityTreatment": "Government institutional, regulatory, early-warning, training, mitigation, preparedness and recovery capacities enter the model. They cannot be extra independent CORE indicators beside the overall composite without redesign.",
+      "componentWeights": {
+        "hazard": 40,
+        "vulnerability": 30,
+        "capacity": 30
+      },
+      "officialMethodLocators": [
+        "https://inarisk.bnpb.go.id/IRBI-2023/files/basic-html/page6.html",
+        "https://inarisk.bnpb.go.id/IRBI-2023/files/basic-html/page16.html",
+        "https://inarisk.bnpb.go.id/IRBI-2023/files/basic-html/page17.html",
+        "https://inarisk.bnpb.go.id/IRBI-2023/files/basic-html/page18.html",
+        "https://inarisk.bnpb.go.id/IRBI-2023/files/basic-html/page19.html",
+        "https://inarisk.bnpb.go.id/IRBI-2023/files/basic-html/page20.html",
+        "https://inarisk.bnpb.go.id/IRBI-2023/files/basic-html/page21.html"
+      ],
+      "assessmentFreshness": "419 nationally assessed in2023; Jabar district freshness not inferred."
+    }
+  ]
+}
