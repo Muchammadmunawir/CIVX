@@ -1,0 +1,2860 @@
+{
+  "auditId": "jabar-2023-education-evidence-audit",
+  "accessedAt": "2026-10-28",
+  "scope": {
+    "year": 2023,
+    "province": "Jawa Barat",
+    "geographicLevel": "kabupaten/kota",
+    "expectedRegionCount": 27,
+    "kabupatenCount": 18,
+    "kotaCount": 9,
+    "registryPath": "data/raw/civx-jabar-2023.json",
+    "regionIds": [
+      "3201",
+      "3202",
+      "3203",
+      "3204",
+      "3205",
+      "3206",
+      "3207",
+      "3208",
+      "3209",
+      "3210",
+      "3211",
+      "3212",
+      "3213",
+      "3214",
+      "3215",
+      "3216",
+      "3217",
+      "3218",
+      "3271",
+      "3272",
+      "3273",
+      "3274",
+      "3275",
+      "3276",
+      "3277",
+      "3278",
+      "3279"
+    ],
+    "candidates": [
+      "rls",
+      "hls",
+      "apm",
+      "apk",
+      "amh"
+    ],
+    "selectedEnrollmentLevel": "Upper secondary SMA/SMK/MA/equivalent including Paket C, not lower secondary SMP/MTs/Paket B.",
+    "purpose": "Evidence audit only. No scores, weights, production inputs, UI, dependencies, or archived artifacts changed.",
+    "missingValuePolicy": "Published numeric values only. Use null for unavailable values; never impute. All five selected series have 27 numeric observations and zero nulls."
+  },
+  "artifacts": [
+    {
+      "id": "bps-jabar-dalam-angka-2024",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "title": "Provinsi Jawa Barat Dalam Angka 2024",
+      "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "localPath": "data/raw/bps-jabar-dalam-angka-2024.pdf",
+      "bytes": 11915084,
+      "sha256": "500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81",
+      "originalAcquiredAt": "2026-10-26",
+      "auditAccessedAt": "2026-10-28",
+      "revisedAt": "2024-02-29",
+      "usedPages": [
+        {
+          "printed": 161,
+          "pdf": 237
+        },
+        {
+          "printed": 162,
+          "pdf": 238
+        },
+        {
+          "printed": 200,
+          "pdf": 276
+        },
+        {
+          "printed": 201,
+          "pdf": 277
+        }
+      ],
+      "coverageFinding": "Tables 4.1.13 and 4.1.14 contain provincial education values only; they cannot supply the 27 regional records."
+    },
+    {
+      "id": "bps-ipm-jabar-2023",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "title": "Indeks Pembangunan Manusia Provinsi Jawa Barat 2023",
+      "url": "https://jabar.bps.go.id/id/publication/2024/06/14/a2e7a86a8939c40c9d932c73/indeks-pembangunan-manusia-provinsi-jawa-barat-2023.html",
+      "downloadUrl": "https://webapi.bps.go.id/download.php?f=AQAD84D7E3We6rbpQzSGvoyfkfnaQ7v6jHY70pdnwtIFSv-bUGB9tiQvtwsXgTFRXc-x57dyitkSps9JnjvdJqxBiIyJGIXmeDDB5v9RsAb5GYosRgujQX4Jwxn6rqYWyh6pztYKjtSGBoAMlQsMtJVpdvwfQmBH7HdI07pc1WnB510tcChAJ9He18_J_m7UZABUrIuVNuz4CHywKBYhpKiZgaUHNPoIRVYDxna3d70G6UVGUzdR4s2R2c15Xpz1NYxC95FBXScoAxKknkMY3D3GtW0to6RDMqbHfuqrQyE-",
+      "localPath": null,
+      "bytes": 10147872,
+      "sha256": "2400d561c711cd2aea83f5f3b8b6f1983774fa108aa06704b4837d3177a809c7",
+      "originalAcquiredAt": "2026-10-28",
+      "auditAccessedAt": "2026-10-28",
+      "retention": "Acquired into temporary audit workspace; full PDF not added to repository.",
+      "releasedAt": "2024-06-14",
+      "revisedAt": "2024-06-12",
+      "publicationNumberOnPortal": "32000.24023",
+      "publicationNumberInsidePdf": "32000.2403",
+      "usedPages": [
+        {
+          "printed": 22,
+          "pdf": 36
+        },
+        {
+          "printed": 25,
+          "pdf": 39
+        },
+        {
+          "printed": 28,
+          "pdf": 42
+        },
+        {
+          "printed": 29,
+          "pdf": 43
+        },
+        {
+          "printed": 73,
+          "pdf": 87
+        },
+        {
+          "printed": 74,
+          "pdf": 88
+        }
+      ],
+      "extraction": "Most substantive pages are image-only. pdftotext exposed mainly watermark/footer. OCR supported acquisition; both appendix pages and every 2023 regional cell were visually inspected."
+    },
+    {
+      "id": "bps-kesra-jabar-2023",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "title": "Statistik Kesejahteraan Rakyat Provinsi Jawa Barat 2023",
+      "url": "https://jabar.bps.go.id/id/publication/2023/12/28/8a2667bb40625076d8ee9c30/statistik-kesejahteraan-rakyat-provinsi-jawa-barat-2023.html",
+      "downloadUrl": "https://webapi.bps.go.id/download.php?f=AQADwqU0Q-i5lrov-Rszb1zBltfHKaCzTh48XMDw3_WDXkDHZg5s2p1J9gjWvhYSGkl4MiCwzsipRIbgyZ7BrpbKzzpVfCYAVhyEQf0gocV5liEGyYMoh2sOK46q7-8HTKgFz9hTm8Q6KfqMlUo_ztFaO4z_2OOIWUM1l8dc6v39XBcb51qLot8Q8ctR9RE8ytbXQXTalamMFMJoKZl19msEkc3imchFXKIbfnxNqmJWeYnnApCn7OawAWwUhg4_uMopThXZiare672iMzTMKnRtN6dD6bVgk4DRx1wxuyCz",
+      "localPath": null,
+      "bytes": 22323345,
+      "sha256": "780589a38fb683dd28d7a38b1b258042c287bc0cb33e8d4ec4d1a2c69f6b468f",
+      "originalAcquiredAt": "2026-10-28",
+      "auditAccessedAt": "2026-10-28",
+      "retention": "Acquired into temporary audit workspace; full PDF not added to repository.",
+      "releasedAt": "2023-12-28",
+      "publicationNumber": "32000.2370",
+      "usedPages": [
+        {
+          "printed": 4,
+          "pdf": 34
+        },
+        {
+          "printed": 5,
+          "pdf": 35
+        },
+        {
+          "printed": 35,
+          "pdf": 65
+        },
+        {
+          "printed": 36,
+          "pdf": 66
+        },
+        {
+          "printed": 39,
+          "pdf": 69
+        },
+        {
+          "printed": 50,
+          "pdf": 80
+        },
+        {
+          "printed": 166,
+          "pdf": 196
+        },
+        {
+          "printed": 167,
+          "pdf": 197
+        }
+      ],
+      "coverageFinding": "Table 3.6 APM gives provincial characteristic groups, not kabupaten/kota. Table 3.1.3 provides separate Latin/Arabic/other alphabet literacy rates, not union AMH; these cannot be summed."
+    },
+    {
+      "id": "bps-statistik-pendidikan-2023",
+      "publisher": "Badan Pusat Statistik Republik Indonesia",
+      "title": "Statistik Pendidikan 2023",
+      "url": "https://www.bps.go.id/id/publication/2023/11/24/54557f7c1bd32f187f3cdab5/statistik-pendidikan-2023.html",
+      "downloadUrl": "https://webapi.bps.go.id/download.php?f=AQADCZUvkEEjM1Kd3BgyTqANfkCPmfSJKGN69QRdG6zc6X2G6adxiiQklzXsQYMQsxYWTU9qqoJmKG8woz8grJGdx-hTWHLxtQvuHPLGLZuSrg5aoQuIywlXFV0D7egwoMZ_GwMAjpkUGxyU4sWxl88Sg5QdPu39jxz_lJyAAitg2htMpeiaklPOYQnYzt6QnMe6hikOa8cyRkHc7Inz-0HTbqWVxUKE0vdm-Z46l8dyNjWCoSoOQRpty2ic4X9B_elDTPcVYezFeTlJehQa-4PzNvM0cg8r6jbPpntsNPww",
+      "localPath": null,
+      "bytes": 12156842,
+      "sha256": "accda0b31e381dc66dfc0b871c57731bc15e6d228e6537fcec62efbc1de7bd9c",
+      "originalAcquiredAt": "2026-10-28",
+      "auditAccessedAt": "2026-10-28",
+      "retention": "Acquired into temporary audit workspace; full PDF not added to repository.",
+      "releasedAt": "2023-11-24",
+      "publicationNumber": "04200.2317",
+      "usedPages": [
+        {
+          "printed": "xxx–xxxii",
+          "pdf": "32–34"
+        },
+        {
+          "printed": "55–60",
+          "pdf": "89–94"
+        }
+      ],
+      "use": "Contemporaneous definitions and interpretation only; no national/provincial values substituted for district observations."
+    },
+    {
+      "id": "kemendikbud-apk-apm-2022-2023-methods",
+      "publisher": "Kementerian Pendidikan, Kebudayaan, Riset dan Teknologi, Pusat Data dan Teknologi Informasi",
+      "title": "APK/APM PAUD, SD, SMP, dan SM Tahun 2022/2023 (termasuk Madrasah dan sederajat)",
+      "url": "https://paudpedia.kemendikdasmen.go.id/uploads/pdfs/TINY_20230912_143756.pdf",
+      "downloadUrl": "https://paudpedia.kemendikdasmen.go.id/uploads/pdfs/TINY_20230912_143756.pdf",
+      "localPath": null,
+      "bytes": 1675916,
+      "sha256": "af658abdbeea2bf86d341008ca450d24fc6e2aa81a2d5c053074199a3b243a73",
+      "originalAcquiredAt": "2026-10-28",
+      "auditAccessedAt": "2026-10-28",
+      "usedPages": [
+        {
+          "printed": "Penjelasan Singkat / Lembar Persetujuan",
+          "pdf": "5–7"
+        },
+        {
+          "printed": 1,
+          "pdf": 9
+        },
+        {
+          "printed": 5,
+          "pdf": 15
+        }
+      ],
+      "use": "Supplementary explicit 16–18 upper-secondary age band and SMA/SMK/MA/Paket C grouping only. Administrative values rejected; not substituted for Susenas series.",
+      "limitations": "Preface and method text contain inconsistent administrative cutoff dates (30 November 2022 versus 31 December 2021). Academic year 2022/2023 and 2022 interim population projection are not the March 2023 Susenas reference period.",
+      "retention": "Full PDF not added to repository."
+    },
+    {
+      "id": "bps-apm-97-2023",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "title": "Angka Partisipasi Murni",
+      "url": "https://jabar.bps.go.id/id/statistics-table/2/OTcjMg==/angka-partisipasi-murni.html",
+      "localPath": null,
+      "originalAcquiredAt": "2026-10-28",
+      "auditAccessedAt": "2026-10-28",
+      "lastUpdatedAt": "2025-09-12",
+      "selectedYear": 2023,
+      "representation": "Exact UTF-8 innerText of the hydrated official HTML table, not bytes of the original HTTP document. Preserved inline below.",
+      "bytes": 1144,
+      "sha256": "461f3fb8f3e4181793cec69bd187d1cc3c95e9676f45650fa98d04b1c9a09408",
+      "content": "Wilayah Jawa Barat\n\n\n\n\nAngka Partisipasi Murni (Tidak Ada Satuan)\n\n\n\n\nSD/MI/Paket A\n\n\t\n\nSMP/MTS/Paket B\n\n\t\n\nSMA/MA/Paket C\n\n\t\n\nPerguruan Tinggi\n\n\n\n\n2023\n\n\t\n\n2023\n\n\t\n\n2023\n\n\t\n\n2023\n\n\nProvinsi Jawa Barat\t98,20\t83,61\t59,01\t18,00\nBogor\t96,12\t81,52\t49,76\t20,77\nSukabumi\t99,49\t82,37\t56,73\t13,21\nCianjur\t99,62\t78,40\t55,06\t4,90\nBandung\t99,70\t85,00\t49,52\t19,11\nGarut\t97,97\t79,90\t60,04\t7,79\nTasikmalaya\t99,79\t86,42\t62,70\t9,97\nCiamis\t99,49\t89,83\t58,13\t29,46\nKuningan\t99,78\t83,64\t64,01\t11,42\nCirebon\t97,08\t83,08\t60,62\t11,01\nMajalengka\t96,75\t75,70\t63,99\t11,06\nSumedang\t96,80\t83,23\t64,63\t18,59\nIndramayu\t99,17\t78,83\t55,49\t4,82\nSubang\t97,85\t83,65\t61,86\t8,08\nPurwakarta\t99,70\t87,11\t49,81\t12,76\nKarawang\t99,70\t79,30\t58,10\t11,06\nBekasi\t97,50\t84,24\t63,19\t22,30\nBandung Barat\t97,87\t88,60\t58,36\t9,31\nPangandaran\t99,49\t87,83\t59,26\t10,05\nKota Bogor\t99,59\t87,68\t58,63\t21,08\nKota Sukabumi\t99,67\t82,56\t67,73\t21,12\nKota Bandung\t97,32\t87,05\t63,76\t30,26\nKota Cirebon\t95,42\t82,56\t61,38\t19,82\nKota Bekasi\t99,66\t89,16\t70,58\t24,51\nKota Depok\t95,82\t84,29\t68,79\t36,90\nKota Cimahi\t99,45\t86,73\t70,20\t26,07\nKota Tasikmalaya\t97,94\t84,71\t63,12\t17,95\nKota Banjar\t99,29\t83,96\t60,43\t8,23",
+      "acquisition": "Static reader omitted rows. A real Chromium browser rendered official table; year selector set explicitly to 2023 where applicable."
+    },
+    {
+      "id": "bps-apk-100-2023",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "title": "Angka Partisipasi Kasar",
+      "url": "https://jabar.bps.go.id/id/statistics-table/2/MTAwIzI=/angka-partisipasi-kasar.html",
+      "localPath": null,
+      "originalAcquiredAt": "2026-10-28",
+      "auditAccessedAt": "2026-10-28",
+      "lastUpdatedAt": "2025-11-07",
+      "selectedYear": 2023,
+      "representation": "Exact UTF-8 innerText of the hydrated official HTML table, not bytes of the original HTTP document. Preserved inline below.",
+      "bytes": 1180,
+      "sha256": "1e17cdcd3bb547293d4d099a86489713d0f9db96224ff2dd20fb9f4b56440bea",
+      "content": "Wilayah Jawa Barat\n\n\n\n\nAngka Partisipasi Kasar (Tidak Ada Satuan)\n\n\n\n\nSD/MI/Paket A\n\n\t\n\nSMP/MTS/Paket B\n\n\t\n\nSMA/MA/Paket C\n\n\t\n\nPerguruan Tinggi\n\n\n\n\n2023\n\n\t\n\n2023\n\n\t\n\n2023\n\n\t\n\n2023\n\n\nProvinsi Jawa Barat\t104,53\t94,69\t79,07\t22,32\nBogor\t104,34\t99,20\t70,79\t24,65\nSukabumi\t108,09\t95,15\t72,55\t15,86\nCianjur\t105,40\t89,04\t67,45\t9,43\nBandung\t103,03\t98,87\t64,29\t23,65\nGarut\t106,97\t91,01\t77,95\t10,30\nTasikmalaya\t105,70\t93,17\t76,19\t15,25\nCiamis\t105,85\t102,43\t86,71\t31,41\nKuningan\t104,68\t85,94\t77,88\t13,71\nCirebon\t104,31\t94,87\t82,02\t13,33\nMajalengka\t101,35\t91,24\t76,68\t14,38\nSumedang\t101,44\t100,58\t76,70\t22,45\nIndramayu\t104,47\t95,64\t70,68\t14,42\nSubang\t104,12\t94,29\t76,30\t11,00\nPurwakarta\t103,90\t90,09\t72,73\t16,12\nKarawang\t103,15\t84,99\t77,51\t15,04\nBekasi\t105,69\t93,64\t92,76\t26,30\nBandung Barat\t101,78\t96,32\t71,97\t12,77\nPangandaran\t104,08\t97,24\t76,54\t16,56\nKota Bogor\t103,97\t95,71\t80,93\t25,46\nKota Sukabumi\t105,56\t89,48\t93,55\t27,22\nKota Bandung\t101,98\t93,37\t93,60\t36,86\nKota Cirebon\t101,44\t94,29\t71,04\t25,91\nKota Bekasi\t110,73\t96,52\t103,08\t32,05\nKota Depok\t98,94\t96,09\t87,77\t39,32\nKota Cimahi\t104,10\t91,11\t89,84\t32,96\nKota Tasikmalaya\t101,60\t93,84\t79,86\t22,91\nKota Banjar\t102,21\t92,50\t82,74\t10,92",
+      "acquisition": "Static reader omitted rows. A real Chromium browser rendered official table; year selector set explicitly to 2023 where applicable."
+    },
+    {
+      "id": "bps-amh-956-2023",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "title": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas Menurut Kabupaten/Kota di Provinsi Jawa Barat",
+      "url": "https://jabar.bps.go.id/id/statistics-table/2/OTU2IzI=/angka-melek-aksara-penduduk-umur-15-tahun-ke-atas-menurut-kabupaten-kota-di-provinsi-jawa-barat.html",
+      "localPath": null,
+      "originalAcquiredAt": "2026-10-28",
+      "auditAccessedAt": "2026-10-28",
+      "lastUpdatedAt": "2026-03-03",
+      "selectedYear": 2023,
+      "representation": "Exact UTF-8 innerText of the hydrated official HTML table, not bytes of the original HTTP document. Preserved inline below.",
+      "bytes": 600,
+      "sha256": "05647a78fbc0df3fdc377136e6bcc08f363a25671e529974439f6ca6e0711243",
+      "content": "Kabupaten/Kota\n\n\n\n\nAngka Melek Aksara Penduduk Umur 15 Tahun ke Atas Menurut Kabupaten/Kota di Provinsi Jawa Barat (Persen)\n\n\n\n\n2023\n\n\nProvinsi Jawa Barat\t98,51\nBogor\t99,24\nSukabumi\t99,17\nCianjur\t98,95\nBandung\t99,81\nGarut\t99,02\nTasikmalaya\t99,71\nCiamis\t99,52\nKuningan\t98,29\nCirebon\t93,70\nMajalengka\t96,87\nSumedang\t99,34\nIndramayu\t92,52\nSubang\t96,97\nPurwakarta\t98,13\nKarawang\t97,82\nBekasi\t97,94\nBandung Barat\t99,28\nPangandaran\t99,29\nKota Bogor\t99,69\nKota Sukabumi\t99,64\nKota Bandung\t99,87\nKota Cirebon\t98,23\nKota Bekasi\t99,40\nKota Depok\t99,19\nKota Cimahi\t99,64\nKota Tasikmalaya\t99,81\nKota Banjar\t98,95",
+      "acquisition": "Static reader omitted rows. A real Chromium browser rendered official table; year selector set explicitly to 2023 where applicable."
+    },
+    {
+      "id": "bps-amh-static-691-2023",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "title": "Angka Melek Huruf Menurut Kabupaten/Kota di Provinsi Jawa Barat 2023",
+      "url": "https://jabar.bps.go.id/id/statistics-table/1/NjkxIzE=/angka-melek-huruf-menurut-kabupaten-kota-di-provinsi-jawa-barat-2023.html",
+      "localPath": null,
+      "originalAcquiredAt": "2026-10-28",
+      "auditAccessedAt": "2026-10-28",
+      "lastUpdatedAt": "2024-05-08",
+      "selectedYear": 2023,
+      "representation": "Exact UTF-8 innerText of the hydrated official HTML table, not bytes of the original HTTP document. Preserved inline below.",
+      "bytes": 737,
+      "sha256": "1a70ab2e7d68f57b7d41414aef512ad2bc03aaf0a54f26723c2aa52a8417a1cc",
+      "content": "Angka Melek Huruf Menurut Kabupaten/Kota di Provinsi Jawa Barat 2023\n\t\nKabupaten/Kota\tAngka Melek Huruf (%)\nKab. Bogor\t99,24\nKab. Sukabumi\t99,17\nKab. Cianjur\t98,95\nKab. Bandung\t99,81\nKab. Garut\t99,02\nKab. Tasikmalaya\t99,71\nKab. Ciamis\t99,52\nKab. Kuningan\t98,29\nKab. Cirebon\t93,70\nKab. Majalengka\t96,87\nKab. Sumedang\t99,34\nKab. Indramayu\t92,52\nKab. Subang\t96,97\nKab. Purwakarta\t98,13\nKab. Karawang\t97,82\nKab. Bekasi\t97,94\nKab. Bandung Barat\t99,28\nKab. Pangandaran\t99,29\nKota Bogor\t99,69\nKota Sukabumi\t99,64\nKota Bandung\t99,87\nKota Cirebon\t98,23\nKota Bekasi\t99,40\nKota Depok\t99,19\nKota Cimahi\t99,64\nKota Tasikmalaya\t99,81\nKota Banjar\t98,95\nJawa Barat\t98,51\nSumber: Badan Pusat Statistik, Survei Sosial Ekonomi Nasional (Susenas) Maret 2023",
+      "acquisition": "Static reader omitted rows. A real Chromium browser rendered official table; year selector set explicitly to 2023 where applicable."
+    }
+  ],
+  "indicators": [
+    {
+      "id": "rls",
+      "name": "Rata-rata Lama Sekolah (RLS), population 25+",
+      "dimension": "education",
+      "source": {
+        "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+        "title": "Indeks Pembangunan Manusia Provinsi Jawa Barat 2023",
+        "url": "https://jabar.bps.go.id/id/publication/2024/06/14/a2e7a86a8939c40c9d932c73/indeks-pembangunan-manusia-provinsi-jawa-barat-2023.html",
+        "table": "Lampiran 4; Rata-Rata Lama Sekolah (RLS) Menurut Kabupaten/Kota Tahun 2020–2023; column 2023 (5)",
+        "pages": [
+          {
+            "printed": 74,
+            "pdf": 88
+          }
+        ],
+        "referencePeriod": "2023; Susenas Maret schooling inputs, supplemented by sectoral education data as described on printed page 25/PDF 39.",
+        "unit": "years",
+        "denominator": "Resident population aged 25 years and over.",
+        "accessedAt": "2026-10-28",
+        "artifactId": "bps-ipm-jabar-2023",
+        "surveyBase": "Susenas Maret 2023 household survey, not a school registry or a census enumeration. The Jabar welfare publication reports 26,040 sampled households across all 27 kabupaten/kota. Its SP2020-based census-block master frame uses a stratified two-stage household design; special households and special census blocks are excluded. District estimates are representative, but district urban/rural disaggregation is not supported there.",
+        "methodologyReferences": [
+          {
+            "artifactId": "bps-ipm-jabar-2023",
+            "url": "https://jabar.bps.go.id/id/publication/2024/06/14/a2e7a86a8939c40c9d932c73/indeks-pembangunan-manusia-provinsi-jawa-barat-2023.html",
+            "pages": [
+              {
+                "printed": 25,
+                "pdf": 39
+              },
+              {
+                "printed": 28,
+                "pdf": 42
+              },
+              {
+                "printed": 29,
+                "pdf": 43
+              }
+            ]
+          }
+        ],
+        "footnotes": [
+          "Appendix source line: Badan Pusat Statistik Provinsi Jawa Barat. No additional appendix-specific footnote.",
+          "HLS is corrected for pesantren/boarding-school pupils omitted from Susenas, using Ministry of Religious Affairs/Ministry of Education sources (printed page 28/PDF 42)."
+        ]
+      },
+      "definition": "Mean years of formal education completed by residents aged 25 years and over. This IPM component represents accumulated educational attainment, not current enrollment, annual entrants, completion flows, or teaching quality.",
+      "valueType": "numeric",
+      "direction": {
+        "higherMeansLowerPressure": true,
+        "interpretation": "Higher schooling indicates lower educational deprivation, not necessarily lower total social pressure or better education quality.",
+        "qualification": "RLS changes with cohort replacement and migration; HLS reflects current age-specific participation assumptions, not realized future completion."
+      },
+      "comparability": {
+        "geography": "All 18 kabupaten and 9 kota in Jawa Barat, matched separately to the canonical BPS-code registry.",
+        "within2023": "Same BPS publication, same component definition and column for all 27 regions.",
+        "ageDefinitionWarning": "National Statistik Pendidikan 2023 defines a separate RLS population aged 15+. That series must not be mixed with this IPM RLS age 25+."
+      },
+      "limitations": [
+        "Schooling duration is not a learning-outcome, skills, facility-capacity, or education-quality measure.",
+        "No district sampling errors or confidence intervals accompany these appendix cells; small differences must not be treated as statistically established.",
+        "Adult attainment is a slow-moving stock and not a direct measure of 2023 school access."
+      ],
+      "redundancy": {
+        "withHdi": "Direct mathematical component of HDI education dimension.",
+        "withOtherCandidate": "RLS is attained adult stock; HLS is a synthetic expectation built from current participation. Different concepts, but not automatically independent evidence."
+      },
+      "preliminaryRecommendation": {
+        "status": "CORE",
+        "reason": "Admissible adult educational-attainment candidate for the future HDI-free model: all 27 comparable 2023 observations exist, the age-25+ denominator is verified, and higher attainment defensibly indicates lower educational deprivation. RLS measures accumulated adult stock rather than the current participation represented by HLS or APM. Final admission should assess redundancy and sensitivity among those candidates; former membership in HDI is not an exclusion criterion once HDI is removed."
+      },
+      "observations": [
+        {
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "value": 8.37,
+          "sourceRecord": {
+            "table": "Lampiran 4",
+            "printedPage": 74,
+            "pdfPage": 88,
+            "dataRow": 1,
+            "rowLabel": "Bogor",
+            "column": "2023; column (5)",
+            "rawValue": "8,37"
+          }
+        },
+        {
+          "regionId": "3202",
+          "regionName": "Kabupaten Sukabumi",
+          "value": 7.33,
+          "sourceRecord": {
+            "table": "Lampiran 4",
+            "printedPage": 74,
+            "pdfPage": 88,
+            "dataRow": 2,
+            "rowLabel": "Sukabumi",
+            "column": "2023; column (5)",
+            "rawValue": "7,33"
+          }
+        },
+        {
+          "regionId": "3203",
+          "regionName": "Kabupaten Cianjur",
+          "value": 7.22,
+          "sourceRecord": {
+            "table": "Lampiran 4",
+            "printedPage": 74,
+            "pdfPage": 88,
+            "dataRow": 3,
+            "rowLabel": "Cianjur",
+            "column": "2023; column (5)",
+            "rawValue": "7,22"
+          }
+        },
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": 9.1,
+          "sourceRecord": {
+            "table": "Lampiran 4",
+            "printedPage": 74,
+            "pdfPage": 88,
+            "dataRow": 4,
+            "rowLabel": "Bandung",
+            "column": "2023; column (5)",
+            "rawValue": "9,10"
+          }
+        },
+        {
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "value": 7.84,
+          "sourceRecord": {
+            "table": "Lampiran 4",
+            "printedPage": 74,
+            "pdfPage": 88,
+            "dataRow": 5,
+            "rowLabel": "Garut",
+            "column": "2023; column (5)",
+            "rawValue": "7,84"
+          }
+        },
+        {
+          "regionId": "3206",
+          "regionName": "Kabupaten Tasikmalaya",
+          "value": 7.96,
+          "sourceRecord": {
+            "table": "Lampiran 4",
+            "printedPage": 74,
+            "pdfPage": 88,
+            "dataRow": 6,
+            "rowLabel": "Tasikmalaya",
+            "column": "2023; column (5)",
+            "rawValue": "7,96"
+          }
+        },
+        {
+          "regionId": "3207",
+          "regionName": "Kabupaten Ciamis",
+          "value": 8.09,
+          "sourceRecord": {
+            "table": "Lampiran 4",
+            "printedPage": 74,
+            "pdfPage": 88,
+            "dataRow": 7,
+            "rowLabel": "Ciamis",
+            "column": "2023; column (5)",
+            "rawValue": "8,09"
+          }
+        },
+        {
+          "regionId": "3208",
+          "regionName": "Kabupaten Kuningan",
+          "value": 7.89,
+          "sourceRecord": {
+            "table": "Lampiran 4",
+            "printedPage": 74,
+            "pdfPage": 88,
+            "dataRow": 8,
+            "rowLabel": "Kuningan",
+            "column": "2023; column (5)",
+            "rawValue": "7,89"
+          }
+        },
+        {
+          "regionId": "3209",
+          "regionName": "Kabupaten Cirebon",
+          "value": 7.64,
+          "sourceRecord": {
+            "table": "Lampiran 4",
+            "printedPage": 74,
+            "pdfPage": 88,
+            "dataRow": 9,
+            "rowLabel": "Cirebon",
+            "column": "2023; column (5)",
+            "rawValue": "7,64"
+          }
+        },
+        {
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "value": 7.52,
+          "sourceRecord": {
+            "table": "Lampiran 4",
+            "printedPage": 74,
+            "pdfPage": 88,
+            "dataRow": 10,
+            "rowLabel": "Majalengka",
+            "column": "2023; column (5)",
+            "rawValue": "7,52"
+          }
+        },
+        {
+          "regionId": "3211",
+          "regionName": "Kabupaten Sumedang",
+          "value": 8.73,
+          "sourceRecord": {
+            "table": "Lampiran 4",
+            "printedPage": 74,
+            "pdfPage": 88,
+            "dataRow": 11,
+            "rowLabel": "Sumedang",
+            "column": "2023; column (5)",
+            "rawValue": "8,73"
+          }
+        },
+        {
+          "regionId": "3212",
+          "regionName": "Kabupaten Indramayu",
+          "value": 6.94,
+          "sourceRecord": {
+            "table": "Lampiran 4",
+            "printedPage": 74,
+            "pdfPage": 88,
+            "dataRow": 12,
+            "rowLabel": "Indramayu",
+            "column": "2023; column (5)",
+            "rawValue": "6,94"
+          }
+        },
+        {
+          "regionId": "3213",
+          "regionName": "Kabupaten Subang",
+          "value": 7.45,
+          "sourceRecord": {
+            "table": "Lampiran 4",
+            "printedPage": 74,
+            "pdfPage": 88,
+            "dataRow": 13,
+            "rowLabel": "Subang",
+            "column": "2023; column (5)",
+            "rawValue": "7,45"
+          }
+        },
+        {
+          "regionId": "3214",
+          "regionName": "Kabupaten Purwakarta",
+          "value": 8.13,
+          "sourceRecord": {
+            "table": "Lampiran 4",
+            "printedPage": 74,
+            "pdfPage": 88,
+            "dataRow": 14,
+            "rowLabel": "Purwakarta",
+            "column": "2023; column (5)",
+            "rawValue": "8,13"
+          }
+        },
+        {
+          "regionId": "3215",
+          "regionName": "Kabupaten Karawang",
+          "value": 8.04,
+          "sourceRecord": {
+            "table": "Lampiran 4",
+            "printedPage": 74,
+            "pdfPage": 88,
+            "dataRow": 15,
+            "rowLabel": "Karawang",
+            "column": "2023; column (5)",
+            "rawValue": "8,04"
+          }
+        },
+        {
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "value": 9.57,
+          "sourceRecord": {
+            "table": "Lampiran 4",
+            "printedPage": 74,
+            "pdfPage": 88,
+            "dataRow": 16,
+            "rowLabel": "Bekasi",
+            "column": "2023; column (5)",
+            "rawValue": "9,57"
+          }
+        },
+        {
+          "regionId": "3217",
+          "regionName": "Kabupaten Bandung Barat",
+          "value": 8.23,
+          "sourceRecord": {
+            "table": "Lampiran 4",
+            "printedPage": 74,
+            "pdfPage": 88,
+            "dataRow": 17,
+            "rowLabel": "Bandung Barat",
+            "column": "2023; column (5)",
+            "rawValue": "8,23"
+          }
+        },
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": 8.04,
+          "sourceRecord": {
+            "table": "Lampiran 4",
+            "printedPage": 74,
+            "pdfPage": 88,
+            "dataRow": 18,
+            "rowLabel": "Pangandaran",
+            "column": "2023; column (5)",
+            "rawValue": "8,04"
+          }
+        },
+        {
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "value": 10.64,
+          "sourceRecord": {
+            "table": "Lampiran 4",
+            "printedPage": 74,
+            "pdfPage": 88,
+            "dataRow": 19,
+            "rowLabel": "Kota Bogor",
+            "column": "2023; column (5)",
+            "rawValue": "10,64"
+          }
+        },
+        {
+          "regionId": "3272",
+          "regionName": "Kota Sukabumi",
+          "value": 10.37,
+          "sourceRecord": {
+            "table": "Lampiran 4",
+            "printedPage": 74,
+            "pdfPage": 88,
+            "dataRow": 20,
+            "rowLabel": "Kota Sukabumi",
+            "column": "2023; column (5)",
+            "rawValue": "10,37"
+          }
+        },
+        {
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "value": 11.06,
+          "sourceRecord": {
+            "table": "Lampiran 4",
+            "printedPage": 74,
+            "pdfPage": 88,
+            "dataRow": 21,
+            "rowLabel": "Kota Bandung",
+            "column": "2023; column (5)",
+            "rawValue": "11,06"
+          }
+        },
+        {
+          "regionId": "3274",
+          "regionName": "Kota Cirebon",
+          "value": 10.37,
+          "sourceRecord": {
+            "table": "Lampiran 4",
+            "printedPage": 74,
+            "pdfPage": 88,
+            "dataRow": 22,
+            "rowLabel": "Kota Cirebon",
+            "column": "2023; column (5)",
+            "rawValue": "10,37"
+          }
+        },
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": 11.66,
+          "sourceRecord": {
+            "table": "Lampiran 4",
+            "printedPage": 74,
+            "pdfPage": 88,
+            "dataRow": 23,
+            "rowLabel": "Kota Bekasi",
+            "column": "2023; column (5)",
+            "rawValue": "11,66"
+          }
+        },
+        {
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "value": 11.58,
+          "sourceRecord": {
+            "table": "Lampiran 4",
+            "printedPage": 74,
+            "pdfPage": 88,
+            "dataRow": 24,
+            "rowLabel": "Kota Depok",
+            "column": "2023; column (5)",
+            "rawValue": "11,58"
+          }
+        },
+        {
+          "regionId": "3277",
+          "regionName": "Kota Cimahi",
+          "value": 11.39,
+          "sourceRecord": {
+            "table": "Lampiran 4",
+            "printedPage": 74,
+            "pdfPage": 88,
+            "dataRow": 25,
+            "rowLabel": "Kota Cimahi",
+            "column": "2023; column (5)",
+            "rawValue": "11,39"
+          }
+        },
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": 9.54,
+          "sourceRecord": {
+            "table": "Lampiran 4",
+            "printedPage": 74,
+            "pdfPage": 88,
+            "dataRow": 26,
+            "rowLabel": "Kota Tasikmalaya",
+            "column": "2023; column (5)",
+            "rawValue": "9,54"
+          }
+        },
+        {
+          "regionId": "3279",
+          "regionName": "Kota Banjar",
+          "value": 8.79,
+          "sourceRecord": {
+            "table": "Lampiran 4",
+            "printedPage": 74,
+            "pdfPage": 88,
+            "dataRow": 27,
+            "rowLabel": "Kota Banjar",
+            "column": "2023; column (5)",
+            "rawValue": "8,79"
+          }
+        }
+      ],
+      "acquisitionNotes": [
+        "Official publication downloaded directly from the linked BPS download endpoint on audit date. Full PDF was not added to the repository.",
+        "Image-based appendix inspected visually for all 27 rows and the exact 2023 column; OCR used only to aid transcription.",
+        "The provincial row is 8.83 years and is excluded from regional observations.",
+        "Printed and one-based PDF page numbers are both retained. No missing district values."
+      ]
+    },
+    {
+      "id": "hls",
+      "name": "Harapan Lama Sekolah (HLS), age-7 entry expectation",
+      "dimension": "education",
+      "source": {
+        "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+        "title": "Indeks Pembangunan Manusia Provinsi Jawa Barat 2023",
+        "url": "https://jabar.bps.go.id/id/publication/2024/06/14/a2e7a86a8939c40c9d932c73/indeks-pembangunan-manusia-provinsi-jawa-barat-2023.html",
+        "table": "Lampiran 3; Harapan Lama Sekolah (HLS) Menurut Kabupaten/Kota Tahun 2020–2023; column 2023 (5)",
+        "pages": [
+          {
+            "printed": 73,
+            "pdf": 87
+          }
+        ],
+        "referencePeriod": "2023; Susenas Maret schooling inputs, supplemented by sectoral education data as described on printed page 25/PDF 39.",
+        "unit": "years",
+        "denominator": "Age-specific resident populations from age 7 onward; synthetic expectation starting at age 7, not the mean observed schooling of all persons aged 7+.",
+        "accessedAt": "2026-10-28",
+        "artifactId": "bps-ipm-jabar-2023",
+        "surveyBase": "Susenas Maret 2023 household survey, not a school registry or a census enumeration. The Jabar welfare publication reports 26,040 sampled households across all 27 kabupaten/kota. Its SP2020-based census-block master frame uses a stratified two-stage household design; special households and special census blocks are excluded. District estimates are representative, but district urban/rural disaggregation is not supported there.",
+        "methodologyReferences": [
+          {
+            "artifactId": "bps-ipm-jabar-2023",
+            "url": "https://jabar.bps.go.id/id/publication/2024/06/14/a2e7a86a8939c40c9d932c73/indeks-pembangunan-manusia-provinsi-jawa-barat-2023.html",
+            "pages": [
+              {
+                "printed": 25,
+                "pdf": 39
+              },
+              {
+                "printed": 28,
+                "pdf": 42
+              },
+              {
+                "printed": 29,
+                "pdf": 43
+              }
+            ]
+          }
+        ],
+        "footnotes": [
+          "Appendix source line: Badan Pusat Statistik Provinsi Jawa Barat. No additional appendix-specific footnote.",
+          "HLS is corrected for pesantren/boarding-school pupils omitted from Susenas, using Ministry of Religious Affairs/Ministry of Education sources (printed page 28/PDF 42)."
+        ]
+      },
+      "definition": "Expected years of schooling for a child starting at age 7 under current age-specific school participation. The source sums age-specific enrollment/population proportions and applies a boarding-school correction. It is an expectation, not attained years or a forecast guaranteed for an individual child.",
+      "valueType": "numeric",
+      "direction": {
+        "higherMeansLowerPressure": true,
+        "interpretation": "Higher schooling indicates lower educational deprivation, not necessarily lower total social pressure or better education quality.",
+        "qualification": "RLS changes with cohort replacement and migration; HLS reflects current age-specific participation assumptions, not realized future completion."
+      },
+      "comparability": {
+        "geography": "All 18 kabupaten and 9 kota in Jawa Barat, matched separately to the canonical BPS-code registry.",
+        "within2023": "Same BPS publication, same component definition and column for all 27 regions.",
+        "ageDefinitionWarning": "National Statistik Pendidikan 2023 defines a separate RLS population aged 15+. That series must not be mixed with this IPM RLS age 25+."
+      },
+      "limitations": [
+        "Schooling duration is not a learning-outcome, skills, facility-capacity, or education-quality measure.",
+        "No district sampling errors or confidence intervals accompany these appendix cells; small differences must not be treated as statistically established.",
+        "Synthetic expectation assumes observed age-specific participation; does not measure an actual cohort progression or annual education flow.",
+        "Boarding-school correction differs from uncorrected household-survey participation ratios."
+      ],
+      "redundancy": {
+        "withHdi": "Direct mathematical component of HDI education dimension.",
+        "withOtherCandidate": "RLS is attained adult stock; HLS is a synthetic expectation built from current participation. Different concepts, but not automatically independent evidence."
+      },
+      "preliminaryRecommendation": {
+        "status": "CORE",
+        "reason": "Admissible prospective education-access candidate for the future HDI-free model: all 27 comparable 2023 observations exist, the age-7 synthetic expectation and boarding-school correction are verified, and higher expected schooling supports lower educational deprivation. HLS differs from attained adult RLS but overlaps current enrollment represented by APM. Final admission should assess redundancy and sensitivity; former membership in HDI is not an exclusion criterion once HDI is removed."
+      },
+      "observations": [
+        {
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "value": 12.64,
+          "sourceRecord": {
+            "table": "Lampiran 3",
+            "printedPage": 73,
+            "pdfPage": 87,
+            "dataRow": 1,
+            "rowLabel": "Bogor",
+            "column": "2023; column (5)",
+            "rawValue": "12,64"
+          }
+        },
+        {
+          "regionId": "3202",
+          "regionName": "Kabupaten Sukabumi",
+          "value": 12.38,
+          "sourceRecord": {
+            "table": "Lampiran 3",
+            "printedPage": 73,
+            "pdfPage": 87,
+            "dataRow": 2,
+            "rowLabel": "Sukabumi",
+            "column": "2023; column (5)",
+            "rawValue": "12,38"
+          }
+        },
+        {
+          "regionId": "3203",
+          "regionName": "Kabupaten Cianjur",
+          "value": 12.03,
+          "sourceRecord": {
+            "table": "Lampiran 3",
+            "printedPage": 73,
+            "pdfPage": 87,
+            "dataRow": 3,
+            "rowLabel": "Cianjur",
+            "column": "2023; column (5)",
+            "rawValue": "12,03"
+          }
+        },
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": 12.73,
+          "sourceRecord": {
+            "table": "Lampiran 3",
+            "printedPage": 73,
+            "pdfPage": 87,
+            "dataRow": 4,
+            "rowLabel": "Bandung",
+            "column": "2023; column (5)",
+            "rawValue": "12,73"
+          }
+        },
+        {
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "value": 12.16,
+          "sourceRecord": {
+            "table": "Lampiran 3",
+            "printedPage": 73,
+            "pdfPage": 87,
+            "dataRow": 5,
+            "rowLabel": "Garut",
+            "column": "2023; column (5)",
+            "rawValue": "12,16"
+          }
+        },
+        {
+          "regionId": "3206",
+          "regionName": "Kabupaten Tasikmalaya",
+          "value": 12.63,
+          "sourceRecord": {
+            "table": "Lampiran 3",
+            "printedPage": 73,
+            "pdfPage": 87,
+            "dataRow": 6,
+            "rowLabel": "Tasikmalaya",
+            "column": "2023; column (5)",
+            "rawValue": "12,63"
+          }
+        },
+        {
+          "regionId": "3207",
+          "regionName": "Kabupaten Ciamis",
+          "value": 14.29,
+          "sourceRecord": {
+            "table": "Lampiran 3",
+            "printedPage": 73,
+            "pdfPage": 87,
+            "dataRow": 7,
+            "rowLabel": "Ciamis",
+            "column": "2023; column (5)",
+            "rawValue": "14,29"
+          }
+        },
+        {
+          "regionId": "3208",
+          "regionName": "Kabupaten Kuningan",
+          "value": 12.26,
+          "sourceRecord": {
+            "table": "Lampiran 3",
+            "printedPage": 73,
+            "pdfPage": 87,
+            "dataRow": 8,
+            "rowLabel": "Kuningan",
+            "column": "2023; column (5)",
+            "rawValue": "12,26"
+          }
+        },
+        {
+          "regionId": "3209",
+          "regionName": "Kabupaten Cirebon",
+          "value": 12.41,
+          "sourceRecord": {
+            "table": "Lampiran 3",
+            "printedPage": 73,
+            "pdfPage": 87,
+            "dataRow": 9,
+            "rowLabel": "Cirebon",
+            "column": "2023; column (5)",
+            "rawValue": "12,41"
+          }
+        },
+        {
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "value": 12.26,
+          "sourceRecord": {
+            "table": "Lampiran 3",
+            "printedPage": 73,
+            "pdfPage": 87,
+            "dataRow": 10,
+            "rowLabel": "Majalengka",
+            "column": "2023; column (5)",
+            "rawValue": "12,26"
+          }
+        },
+        {
+          "regionId": "3211",
+          "regionName": "Kabupaten Sumedang",
+          "value": 13.01,
+          "sourceRecord": {
+            "table": "Lampiran 3",
+            "printedPage": 73,
+            "pdfPage": 87,
+            "dataRow": 11,
+            "rowLabel": "Sumedang",
+            "column": "2023; column (5)",
+            "rawValue": "13,01"
+          }
+        },
+        {
+          "regionId": "3212",
+          "regionName": "Kabupaten Indramayu",
+          "value": 12.29,
+          "sourceRecord": {
+            "table": "Lampiran 3",
+            "printedPage": 73,
+            "pdfPage": 87,
+            "dataRow": 12,
+            "rowLabel": "Indramayu",
+            "column": "2023; column (5)",
+            "rawValue": "12,29"
+          }
+        },
+        {
+          "regionId": "3213",
+          "regionName": "Kabupaten Subang",
+          "value": 11.91,
+          "sourceRecord": {
+            "table": "Lampiran 3",
+            "printedPage": 73,
+            "pdfPage": 87,
+            "dataRow": 13,
+            "rowLabel": "Subang",
+            "column": "2023; column (5)",
+            "rawValue": "11,91"
+          }
+        },
+        {
+          "regionId": "3214",
+          "regionName": "Kabupaten Purwakarta",
+          "value": 12.18,
+          "sourceRecord": {
+            "table": "Lampiran 3",
+            "printedPage": 73,
+            "pdfPage": 87,
+            "dataRow": 14,
+            "rowLabel": "Purwakarta",
+            "column": "2023; column (5)",
+            "rawValue": "12,18"
+          }
+        },
+        {
+          "regionId": "3215",
+          "regionName": "Kabupaten Karawang",
+          "value": 12.2,
+          "sourceRecord": {
+            "table": "Lampiran 3",
+            "printedPage": 73,
+            "pdfPage": 87,
+            "dataRow": 15,
+            "rowLabel": "Karawang",
+            "column": "2023; column (5)",
+            "rawValue": "12,20"
+          }
+        },
+        {
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "value": 13.17,
+          "sourceRecord": {
+            "table": "Lampiran 3",
+            "printedPage": 73,
+            "pdfPage": 87,
+            "dataRow": 16,
+            "rowLabel": "Bekasi",
+            "column": "2023; column (5)",
+            "rawValue": "13,17"
+          }
+        },
+        {
+          "regionId": "3217",
+          "regionName": "Kabupaten Bandung Barat",
+          "value": 11.91,
+          "sourceRecord": {
+            "table": "Lampiran 3",
+            "printedPage": 73,
+            "pdfPage": 87,
+            "dataRow": 17,
+            "rowLabel": "Bandung Barat",
+            "column": "2023; column (5)",
+            "rawValue": "11,91"
+          }
+        },
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": 12.3,
+          "sourceRecord": {
+            "table": "Lampiran 3",
+            "printedPage": 73,
+            "pdfPage": 87,
+            "dataRow": 18,
+            "rowLabel": "Pangandaran",
+            "column": "2023; column (5)",
+            "rawValue": "12,30"
+          }
+        },
+        {
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "value": 13.45,
+          "sourceRecord": {
+            "table": "Lampiran 3",
+            "printedPage": 73,
+            "pdfPage": 87,
+            "dataRow": 19,
+            "rowLabel": "Kota Bogor",
+            "column": "2023; column (5)",
+            "rawValue": "13,45"
+          }
+        },
+        {
+          "regionId": "3272",
+          "regionName": "Kota Sukabumi",
+          "value": 13.6,
+          "sourceRecord": {
+            "table": "Lampiran 3",
+            "printedPage": 73,
+            "pdfPage": 87,
+            "dataRow": 20,
+            "rowLabel": "Kota Sukabumi",
+            "column": "2023; column (5)",
+            "rawValue": "13,60"
+          }
+        },
+        {
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "value": 14.24,
+          "sourceRecord": {
+            "table": "Lampiran 3",
+            "printedPage": 73,
+            "pdfPage": 87,
+            "dataRow": 21,
+            "rowLabel": "Kota Bandung",
+            "column": "2023; column (5)",
+            "rawValue": "14,24"
+          }
+        },
+        {
+          "regionId": "3274",
+          "regionName": "Kota Cirebon",
+          "value": 13.16,
+          "sourceRecord": {
+            "table": "Lampiran 3",
+            "printedPage": 73,
+            "pdfPage": 87,
+            "dataRow": 22,
+            "rowLabel": "Kota Cirebon",
+            "column": "2023; column (5)",
+            "rawValue": "13,16"
+          }
+        },
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": 14.12,
+          "sourceRecord": {
+            "table": "Lampiran 3",
+            "printedPage": 73,
+            "pdfPage": 87,
+            "dataRow": 23,
+            "rowLabel": "Kota Bekasi",
+            "column": "2023; column (5)",
+            "rawValue": "14,12"
+          }
+        },
+        {
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "value": 13.96,
+          "sourceRecord": {
+            "table": "Lampiran 3",
+            "printedPage": 73,
+            "pdfPage": 87,
+            "dataRow": 24,
+            "rowLabel": "Kota Depok",
+            "column": "2023; column (5)",
+            "rawValue": "13,96"
+          }
+        },
+        {
+          "regionId": "3277",
+          "regionName": "Kota Cimahi",
+          "value": 13.84,
+          "sourceRecord": {
+            "table": "Lampiran 3",
+            "printedPage": 73,
+            "pdfPage": 87,
+            "dataRow": 25,
+            "rowLabel": "Kota Cimahi",
+            "column": "2023; column (5)",
+            "rawValue": "13,84"
+          }
+        },
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": 13.49,
+          "sourceRecord": {
+            "table": "Lampiran 3",
+            "printedPage": 73,
+            "pdfPage": 87,
+            "dataRow": 26,
+            "rowLabel": "Kota Tasikmalaya",
+            "column": "2023; column (5)",
+            "rawValue": "13,49"
+          }
+        },
+        {
+          "regionId": "3279",
+          "regionName": "Kota Banjar",
+          "value": 13.27,
+          "sourceRecord": {
+            "table": "Lampiran 3",
+            "printedPage": 73,
+            "pdfPage": 87,
+            "dataRow": 27,
+            "rowLabel": "Kota Banjar",
+            "column": "2023; column (5)",
+            "rawValue": "13,27"
+          }
+        }
+      ],
+      "acquisitionNotes": [
+        "Official publication downloaded directly from the linked BPS download endpoint on audit date. Full PDF was not added to the repository.",
+        "Image-based appendix inspected visually for all 27 rows and the exact 2023 column; OCR used only to aid transcription.",
+        "The provincial row is 12.68 years and is excluded from regional observations.",
+        "Printed and one-based PDF page numbers are both retained. No missing district values."
+      ]
+    },
+    {
+      "id": "apm",
+      "name": "Angka Partisipasi Murni (APM), upper secondary",
+      "dimension": "education",
+      "source": {
+        "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+        "title": "Angka Partisipasi Murni",
+        "url": "https://jabar.bps.go.id/id/statistics-table/2/OTcjMg==/angka-partisipasi-murni.html",
+        "table": "BPS dynamic statistics table source 2 / indicator 97; year selector 2023; SMA/MA/Paket C column",
+        "pages": null,
+        "referencePeriod": "2023. Table-year selection verified. March 2023 Susenas basis corroborated by contemporaneous BPS welfare/education publications and matching yearbook provincial upper-secondary values; the live table itself labels source only BPS Provinsi Jawa Barat.",
+        "unit": "percent",
+        "denominator": "Resident population aged 16–18 years; upper-secondary official-age band. APM numerator uses that same age band; APK numerator includes enrolled residents of all ages.",
+        "accessedAt": "2026-10-28",
+        "artifactId": "bps-apm-97-2023",
+        "surveyBase": "Susenas Maret 2023 household survey, not a school registry or a census enumeration. The Jabar welfare publication reports 26,040 sampled households across all 27 kabupaten/kota. Its SP2020-based census-block master frame uses a stratified two-stage household design; special households and special census blocks are excluded. District estimates are representative, but district urban/rural disaggregation is not supported there.",
+        "methodologyReferences": [
+          {
+            "artifactId": "bps-statistik-pendidikan-2023",
+            "url": "https://www.bps.go.id/id/publication/2023/11/24/54557f7c1bd32f187f3cdab5/statistik-pendidikan-2023.html",
+            "pages": [
+              {
+                "printed": "xxx–xxxi",
+                "pdf": "32–33"
+              },
+              {
+                "printed": "55–60",
+                "pdf": "89–94"
+              }
+            ]
+          },
+          {
+            "artifactId": "bps-kesra-jabar-2023",
+            "url": "https://jabar.bps.go.id/id/publication/2023/12/28/8a2667bb40625076d8ee9c30/statistik-kesejahteraan-rakyat-provinsi-jawa-barat-2023.html",
+            "pages": [
+              {
+                "printed": "4–5",
+                "pdf": "34–35"
+              },
+              {
+                "printed": "35–36",
+                "pdf": "65–66"
+              }
+            ]
+          },
+          {
+            "artifactId": "bps-jabar-dalam-angka-2024",
+            "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+            "pages": [
+              {
+                "printed": 200,
+                "pdf": 276
+              },
+              {
+                "printed": 201,
+                "pdf": 277
+              }
+            ]
+          },
+          {
+            "artifactId": "kemendikbud-apk-apm-2022-2023-methods",
+            "url": "https://paudpedia.kemendikdasmen.go.id/uploads/pdfs/TINY_20230912_143756.pdf",
+            "pages": [
+              {
+                "printed": 1,
+                "pdf": 9
+              },
+              {
+                "printed": 5,
+                "pdf": 15
+              }
+            ],
+            "use": "Age/level terminology only, not administrative observations."
+          }
+        ],
+        "scope": "Upper secondary only: SMA/SMK/MA or equivalent, including Paket C. The live table abbreviates this column as SMA/MA/Paket C; it does not label it SMP/MTs. The yearbook labels the matching provincial level SMA/SMK/MA. Lower secondary means SMP/MTs/Paket B, ages 13–15, and is not the selected candidate.",
+        "unitMetadataWarning": "Live dynamic table heading says Tidak Ada Satuan. Percent interpretation is corroborated by the same 2023 provincial figures in yearbook table 4.1.13 and BPS ratio definitions. No rescaling applied.",
+        "footnotes": [
+          "APM: Tahun 2020 level Perguruan Tinggi tidak tersedia.",
+          "The 2020 tertiary footnote does not mark any missing 2023 upper-secondary district value."
+        ]
+      },
+      "definition": "Percentage of resident persons aged 16–18 currently attending upper-secondary SMA/SMK/MA/equivalent, including Paket C, divided by resident persons aged 16–18. Both numerator and denominator are population-survey concepts; this is not school-location registered pupils divided by resident population.",
+      "valueType": "numeric",
+      "direction": {
+        "higherMeansLowerPressure": true,
+        "interpretation": "Higher age-appropriate participation supports lower upper-secondary access deprivation.",
+        "qualification": "APM is not a completion, transition, out-of-school, annual admission, or quality indicator. A 16–18-year-old attending tertiary education is not in its upper-secondary numerator."
+      },
+      "comparability": {
+        "geography": "Resident kabupaten/kota population; 18 kabupaten and 9 kota kept separate. No school-only numerator spliced to a resident denominator.",
+        "within2023": "Same selected BPS table/year/level for all 27 rows; APM and APK share the SMA/MA/Paket C label.",
+        "ageAndLevel": "Upper secondary only: SMA/SMK/MA or equivalent, including Paket C. The live table abbreviates this column as SMA/MA/Paket C; it does not label it SMP/MTs. The yearbook labels the matching provincial level SMA/SMK/MA. Lower secondary means SMP/MTs/Paket B, ages 13–15, and is not the selected candidate.",
+        "crossSourceCaveat": "The live table omits a row-level survey design and month. Scope and survey interpretation are supported by BPS definitions and matching provincial totals, not assumed from Open Data portal coverage. Ministry administrative series are deliberately not mixed in."
+      },
+      "limitations": [
+        "Current enrollment is a cross-sectional stock/status measure, not annual entrants, transition flows, graduation, or completed attainment.",
+        "The dynamic table provides no district RSE, standard error, confidence interval, or district sample count. Small geographic differences may reflect sampling error.",
+        "Age-band interpretation (16–18) is corroborated by official national age/level descriptions and ministry age-band tables; it is not explicitly repeated in each dynamic table cell.",
+        "APM and APK may differ from school-administrative rates because household residence, special-household exclusions, survey period, school coverage, and population bases differ.",
+        "Lower APM is not identical to an out-of-school percentage: age/grade mismatch and accelerated progression also matter."
+      ],
+      "redundancy": {
+        "withHdi": "Not a direct HDI component; overlaps the education dimension and particularly HLS.",
+        "withMatchingEnrollmentCandidate": "APM and APK measure the same level of participation with different age restrictions. Their difference is descriptive, not an independently weighted pressure domain."
+      },
+      "preliminaryRecommendation": {
+        "status": "CORE",
+        "reason": "Admissible current age-appropriate upper-secondary access candidate for the future HDI-free model, with all 27 2023 observations collected. APM adds a level-specific view of current access beyond adult RLS attainment and HLS's system-wide synthetic expectation. That conceptual distinction does not establish statistical independence from HLS; final admission should assess redundancy and sensitivity rather than favor APM merely because it was not a direct HDI component."
+      },
+      "observations": [
+        {
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "value": 49.76,
+          "sourceRecord": {
+            "tableId": "97",
+            "selectedYear": 2023,
+            "rowLabel": "Bogor",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "49,76"
+          }
+        },
+        {
+          "regionId": "3202",
+          "regionName": "Kabupaten Sukabumi",
+          "value": 56.73,
+          "sourceRecord": {
+            "tableId": "97",
+            "selectedYear": 2023,
+            "rowLabel": "Sukabumi",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "56,73"
+          }
+        },
+        {
+          "regionId": "3203",
+          "regionName": "Kabupaten Cianjur",
+          "value": 55.06,
+          "sourceRecord": {
+            "tableId": "97",
+            "selectedYear": 2023,
+            "rowLabel": "Cianjur",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "55,06"
+          }
+        },
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": 49.52,
+          "sourceRecord": {
+            "tableId": "97",
+            "selectedYear": 2023,
+            "rowLabel": "Bandung",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "49,52"
+          }
+        },
+        {
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "value": 60.04,
+          "sourceRecord": {
+            "tableId": "97",
+            "selectedYear": 2023,
+            "rowLabel": "Garut",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "60,04"
+          }
+        },
+        {
+          "regionId": "3206",
+          "regionName": "Kabupaten Tasikmalaya",
+          "value": 62.7,
+          "sourceRecord": {
+            "tableId": "97",
+            "selectedYear": 2023,
+            "rowLabel": "Tasikmalaya",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "62,70"
+          }
+        },
+        {
+          "regionId": "3207",
+          "regionName": "Kabupaten Ciamis",
+          "value": 58.13,
+          "sourceRecord": {
+            "tableId": "97",
+            "selectedYear": 2023,
+            "rowLabel": "Ciamis",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "58,13"
+          }
+        },
+        {
+          "regionId": "3208",
+          "regionName": "Kabupaten Kuningan",
+          "value": 64.01,
+          "sourceRecord": {
+            "tableId": "97",
+            "selectedYear": 2023,
+            "rowLabel": "Kuningan",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "64,01"
+          }
+        },
+        {
+          "regionId": "3209",
+          "regionName": "Kabupaten Cirebon",
+          "value": 60.62,
+          "sourceRecord": {
+            "tableId": "97",
+            "selectedYear": 2023,
+            "rowLabel": "Cirebon",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "60,62"
+          }
+        },
+        {
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "value": 63.99,
+          "sourceRecord": {
+            "tableId": "97",
+            "selectedYear": 2023,
+            "rowLabel": "Majalengka",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "63,99"
+          }
+        },
+        {
+          "regionId": "3211",
+          "regionName": "Kabupaten Sumedang",
+          "value": 64.63,
+          "sourceRecord": {
+            "tableId": "97",
+            "selectedYear": 2023,
+            "rowLabel": "Sumedang",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "64,63"
+          }
+        },
+        {
+          "regionId": "3212",
+          "regionName": "Kabupaten Indramayu",
+          "value": 55.49,
+          "sourceRecord": {
+            "tableId": "97",
+            "selectedYear": 2023,
+            "rowLabel": "Indramayu",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "55,49"
+          }
+        },
+        {
+          "regionId": "3213",
+          "regionName": "Kabupaten Subang",
+          "value": 61.86,
+          "sourceRecord": {
+            "tableId": "97",
+            "selectedYear": 2023,
+            "rowLabel": "Subang",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "61,86"
+          }
+        },
+        {
+          "regionId": "3214",
+          "regionName": "Kabupaten Purwakarta",
+          "value": 49.81,
+          "sourceRecord": {
+            "tableId": "97",
+            "selectedYear": 2023,
+            "rowLabel": "Purwakarta",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "49,81"
+          }
+        },
+        {
+          "regionId": "3215",
+          "regionName": "Kabupaten Karawang",
+          "value": 58.1,
+          "sourceRecord": {
+            "tableId": "97",
+            "selectedYear": 2023,
+            "rowLabel": "Karawang",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "58,10"
+          }
+        },
+        {
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "value": 63.19,
+          "sourceRecord": {
+            "tableId": "97",
+            "selectedYear": 2023,
+            "rowLabel": "Bekasi",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "63,19"
+          }
+        },
+        {
+          "regionId": "3217",
+          "regionName": "Kabupaten Bandung Barat",
+          "value": 58.36,
+          "sourceRecord": {
+            "tableId": "97",
+            "selectedYear": 2023,
+            "rowLabel": "Bandung Barat",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "58,36"
+          }
+        },
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": 59.26,
+          "sourceRecord": {
+            "tableId": "97",
+            "selectedYear": 2023,
+            "rowLabel": "Pangandaran",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "59,26"
+          }
+        },
+        {
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "value": 58.63,
+          "sourceRecord": {
+            "tableId": "97",
+            "selectedYear": 2023,
+            "rowLabel": "Kota Bogor",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "58,63"
+          }
+        },
+        {
+          "regionId": "3272",
+          "regionName": "Kota Sukabumi",
+          "value": 67.73,
+          "sourceRecord": {
+            "tableId": "97",
+            "selectedYear": 2023,
+            "rowLabel": "Kota Sukabumi",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "67,73"
+          }
+        },
+        {
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "value": 63.76,
+          "sourceRecord": {
+            "tableId": "97",
+            "selectedYear": 2023,
+            "rowLabel": "Kota Bandung",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "63,76"
+          }
+        },
+        {
+          "regionId": "3274",
+          "regionName": "Kota Cirebon",
+          "value": 61.38,
+          "sourceRecord": {
+            "tableId": "97",
+            "selectedYear": 2023,
+            "rowLabel": "Kota Cirebon",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "61,38"
+          }
+        },
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": 70.58,
+          "sourceRecord": {
+            "tableId": "97",
+            "selectedYear": 2023,
+            "rowLabel": "Kota Bekasi",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "70,58"
+          }
+        },
+        {
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "value": 68.79,
+          "sourceRecord": {
+            "tableId": "97",
+            "selectedYear": 2023,
+            "rowLabel": "Kota Depok",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "68,79"
+          }
+        },
+        {
+          "regionId": "3277",
+          "regionName": "Kota Cimahi",
+          "value": 70.2,
+          "sourceRecord": {
+            "tableId": "97",
+            "selectedYear": 2023,
+            "rowLabel": "Kota Cimahi",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "70,20"
+          }
+        },
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": 63.12,
+          "sourceRecord": {
+            "tableId": "97",
+            "selectedYear": 2023,
+            "rowLabel": "Kota Tasikmalaya",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "63,12"
+          }
+        },
+        {
+          "regionId": "3279",
+          "regionName": "Kota Banjar",
+          "value": 60.43,
+          "sourceRecord": {
+            "tableId": "97",
+            "selectedYear": 2023,
+            "rowLabel": "Kota Banjar",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "60,43"
+          }
+        }
+      ],
+      "acquisitionNotes": [
+        "Inspected every selected 2023 district row and retained original labels and decimal-comma values. Mapped exact district names to the canonical registry; unprefixed Bogor/Bandung/etc. are kabupaten, Kota-prefixed rows remain separate.",
+        "One provincial row is excluded from observations and is never assigned to a missing district. No imputation, extrapolation, rounding beyond published precision, or substitution from another year.",
+        "Online historical tables are live and may be revised. Original acquisition date is this audit date, not the year of the observations. Hashes refer to preserved selected-table text, not to an unretained original response.",
+        "BPS yearbook printed 200/PDF 276 independently gives provincial 2023 upper-secondary APM 59.01%, matching the selected live table. The provincial row is excluded from observations.",
+        "Static reader did not expose numeric records. Browser year selector was set to 2023 and all 28 rows, including the provincial row, were captured."
+      ]
+    },
+    {
+      "id": "apk",
+      "name": "Angka Partisipasi Kasar (APK), upper secondary",
+      "dimension": "education",
+      "source": {
+        "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+        "title": "Angka Partisipasi Kasar",
+        "url": "https://jabar.bps.go.id/id/statistics-table/2/MTAwIzI=/angka-partisipasi-kasar.html",
+        "table": "BPS dynamic statistics table source 2 / indicator 100; year selector 2023; SMA/MA/Paket C column",
+        "pages": null,
+        "referencePeriod": "2023. Table-year selection verified. March 2023 Susenas basis corroborated by contemporaneous BPS welfare/education publications and matching yearbook provincial upper-secondary values; the live table itself labels source only BPS Provinsi Jawa Barat.",
+        "unit": "percent",
+        "denominator": "Resident population aged 16–18 years; upper-secondary official-age band. APM numerator uses that same age band; APK numerator includes enrolled residents of all ages.",
+        "accessedAt": "2026-10-28",
+        "artifactId": "bps-apk-100-2023",
+        "surveyBase": "Susenas Maret 2023 household survey, not a school registry or a census enumeration. The Jabar welfare publication reports 26,040 sampled households across all 27 kabupaten/kota. Its SP2020-based census-block master frame uses a stratified two-stage household design; special households and special census blocks are excluded. District estimates are representative, but district urban/rural disaggregation is not supported there.",
+        "methodologyReferences": [
+          {
+            "artifactId": "bps-statistik-pendidikan-2023",
+            "url": "https://www.bps.go.id/id/publication/2023/11/24/54557f7c1bd32f187f3cdab5/statistik-pendidikan-2023.html",
+            "pages": [
+              {
+                "printed": "xxx–xxxi",
+                "pdf": "32–33"
+              },
+              {
+                "printed": "55–60",
+                "pdf": "89–94"
+              }
+            ]
+          },
+          {
+            "artifactId": "bps-kesra-jabar-2023",
+            "url": "https://jabar.bps.go.id/id/publication/2023/12/28/8a2667bb40625076d8ee9c30/statistik-kesejahteraan-rakyat-provinsi-jawa-barat-2023.html",
+            "pages": [
+              {
+                "printed": "4–5",
+                "pdf": "34–35"
+              },
+              {
+                "printed": "35–36",
+                "pdf": "65–66"
+              }
+            ]
+          },
+          {
+            "artifactId": "bps-jabar-dalam-angka-2024",
+            "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+            "pages": [
+              {
+                "printed": 200,
+                "pdf": 276
+              },
+              {
+                "printed": 201,
+                "pdf": 277
+              }
+            ]
+          },
+          {
+            "artifactId": "kemendikbud-apk-apm-2022-2023-methods",
+            "url": "https://paudpedia.kemendikdasmen.go.id/uploads/pdfs/TINY_20230912_143756.pdf",
+            "pages": [
+              {
+                "printed": 1,
+                "pdf": 9
+              },
+              {
+                "printed": 5,
+                "pdf": 15
+              }
+            ],
+            "use": "Age/level terminology only, not administrative observations."
+          }
+        ],
+        "scope": "Upper secondary only: SMA/SMK/MA or equivalent, including Paket C. The live table abbreviates this column as SMA/MA/Paket C; it does not label it SMP/MTs. The yearbook labels the matching provincial level SMA/SMK/MA. Lower secondary means SMP/MTs/Paket B, ages 13–15, and is not the selected candidate.",
+        "unitMetadataWarning": "Live dynamic table heading says Tidak Ada Satuan. Percent interpretation is corroborated by the same 2023 provincial figures in yearbook table 4.1.13 and BPS ratio definitions. No rescaling applied.",
+        "footnotes": [
+          "APK: Data diolah oleh BPS; Tahun 2020 level Perguruan Tinggi tidak tersedia.",
+          "The 2020 tertiary footnote does not mark any missing 2023 upper-secondary district value."
+        ]
+      },
+      "definition": "Percentage of residents currently attending upper-secondary SMA/SMK/MA/equivalent, including Paket C, without restricting their age, divided by the resident population aged 16–18. It measures enrollment across ages relative to the official-age population, not the share of 16–18-year-olds attending school.",
+      "valueType": "numeric",
+      "direction": {
+        "higherMeansLowerPressure": null,
+        "interpretation": "Ambiguous as a generic pressure measure: higher APK can reflect broader access, over-age/under-age participation, or repetition/delayed progression. Values can exceed 100%.",
+        "qualification": "Do not cap APK at 100, treat 100 as an individual participation probability, or interpret higher APK as proof of lower total pressure."
+      },
+      "comparability": {
+        "geography": "Resident kabupaten/kota population; 18 kabupaten and 9 kota kept separate. No school-only numerator spliced to a resident denominator.",
+        "within2023": "Same selected BPS table/year/level for all 27 rows; APM and APK share the SMA/MA/Paket C label.",
+        "ageAndLevel": "Upper secondary only: SMA/SMK/MA or equivalent, including Paket C. The live table abbreviates this column as SMA/MA/Paket C; it does not label it SMP/MTs. The yearbook labels the matching provincial level SMA/SMK/MA. Lower secondary means SMP/MTs/Paket B, ages 13–15, and is not the selected candidate.",
+        "crossSourceCaveat": "The live table omits a row-level survey design and month. Scope and survey interpretation are supported by BPS definitions and matching provincial totals, not assumed from Open Data portal coverage. Ministry administrative series are deliberately not mixed in."
+      },
+      "limitations": [
+        "Current enrollment is a cross-sectional stock/status measure, not annual entrants, transition flows, graduation, or completed attainment.",
+        "The dynamic table provides no district RSE, standard error, confidence interval, or district sample count. Small geographic differences may reflect sampling error.",
+        "Age-band interpretation (16–18) is corroborated by official national age/level descriptions and ministry age-band tables; it is not explicitly repeated in each dynamic table cell.",
+        "APM and APK may differ from school-administrative rates because household residence, special-household exclusions, survey period, school coverage, and population bases differ.",
+        "All-age numerator makes APK sensitive to age-grade mismatch; it is not bounded by 100%."
+      ],
+      "redundancy": {
+        "withHdi": "Not a direct HDI component; overlaps the education dimension and particularly HLS.",
+        "withMatchingEnrollmentCandidate": "APM and APK measure the same level of participation with different age restrictions. Their difference is descriptive, not an independently weighted pressure domain."
+      },
+      "preliminaryRecommendation": {
+        "status": "CONTEXT ONLY",
+        "reason": "Retain only as a matching diagnostic beside APM. It adds age-mismatch information but repeats the same upper-secondary participation domain. It cannot support an unqualified monotonically lower-pressure interpretation, especially above 100%."
+      },
+      "observations": [
+        {
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "value": 70.79,
+          "sourceRecord": {
+            "tableId": "100",
+            "selectedYear": 2023,
+            "rowLabel": "Bogor",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "70,79"
+          }
+        },
+        {
+          "regionId": "3202",
+          "regionName": "Kabupaten Sukabumi",
+          "value": 72.55,
+          "sourceRecord": {
+            "tableId": "100",
+            "selectedYear": 2023,
+            "rowLabel": "Sukabumi",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "72,55"
+          }
+        },
+        {
+          "regionId": "3203",
+          "regionName": "Kabupaten Cianjur",
+          "value": 67.45,
+          "sourceRecord": {
+            "tableId": "100",
+            "selectedYear": 2023,
+            "rowLabel": "Cianjur",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "67,45"
+          }
+        },
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": 64.29,
+          "sourceRecord": {
+            "tableId": "100",
+            "selectedYear": 2023,
+            "rowLabel": "Bandung",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "64,29"
+          }
+        },
+        {
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "value": 77.95,
+          "sourceRecord": {
+            "tableId": "100",
+            "selectedYear": 2023,
+            "rowLabel": "Garut",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "77,95"
+          }
+        },
+        {
+          "regionId": "3206",
+          "regionName": "Kabupaten Tasikmalaya",
+          "value": 76.19,
+          "sourceRecord": {
+            "tableId": "100",
+            "selectedYear": 2023,
+            "rowLabel": "Tasikmalaya",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "76,19"
+          }
+        },
+        {
+          "regionId": "3207",
+          "regionName": "Kabupaten Ciamis",
+          "value": 86.71,
+          "sourceRecord": {
+            "tableId": "100",
+            "selectedYear": 2023,
+            "rowLabel": "Ciamis",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "86,71"
+          }
+        },
+        {
+          "regionId": "3208",
+          "regionName": "Kabupaten Kuningan",
+          "value": 77.88,
+          "sourceRecord": {
+            "tableId": "100",
+            "selectedYear": 2023,
+            "rowLabel": "Kuningan",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "77,88"
+          }
+        },
+        {
+          "regionId": "3209",
+          "regionName": "Kabupaten Cirebon",
+          "value": 82.02,
+          "sourceRecord": {
+            "tableId": "100",
+            "selectedYear": 2023,
+            "rowLabel": "Cirebon",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "82,02"
+          }
+        },
+        {
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "value": 76.68,
+          "sourceRecord": {
+            "tableId": "100",
+            "selectedYear": 2023,
+            "rowLabel": "Majalengka",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "76,68"
+          }
+        },
+        {
+          "regionId": "3211",
+          "regionName": "Kabupaten Sumedang",
+          "value": 76.7,
+          "sourceRecord": {
+            "tableId": "100",
+            "selectedYear": 2023,
+            "rowLabel": "Sumedang",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "76,70"
+          }
+        },
+        {
+          "regionId": "3212",
+          "regionName": "Kabupaten Indramayu",
+          "value": 70.68,
+          "sourceRecord": {
+            "tableId": "100",
+            "selectedYear": 2023,
+            "rowLabel": "Indramayu",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "70,68"
+          }
+        },
+        {
+          "regionId": "3213",
+          "regionName": "Kabupaten Subang",
+          "value": 76.3,
+          "sourceRecord": {
+            "tableId": "100",
+            "selectedYear": 2023,
+            "rowLabel": "Subang",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "76,30"
+          }
+        },
+        {
+          "regionId": "3214",
+          "regionName": "Kabupaten Purwakarta",
+          "value": 72.73,
+          "sourceRecord": {
+            "tableId": "100",
+            "selectedYear": 2023,
+            "rowLabel": "Purwakarta",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "72,73"
+          }
+        },
+        {
+          "regionId": "3215",
+          "regionName": "Kabupaten Karawang",
+          "value": 77.51,
+          "sourceRecord": {
+            "tableId": "100",
+            "selectedYear": 2023,
+            "rowLabel": "Karawang",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "77,51"
+          }
+        },
+        {
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "value": 92.76,
+          "sourceRecord": {
+            "tableId": "100",
+            "selectedYear": 2023,
+            "rowLabel": "Bekasi",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "92,76"
+          }
+        },
+        {
+          "regionId": "3217",
+          "regionName": "Kabupaten Bandung Barat",
+          "value": 71.97,
+          "sourceRecord": {
+            "tableId": "100",
+            "selectedYear": 2023,
+            "rowLabel": "Bandung Barat",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "71,97"
+          }
+        },
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": 76.54,
+          "sourceRecord": {
+            "tableId": "100",
+            "selectedYear": 2023,
+            "rowLabel": "Pangandaran",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "76,54"
+          }
+        },
+        {
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "value": 80.93,
+          "sourceRecord": {
+            "tableId": "100",
+            "selectedYear": 2023,
+            "rowLabel": "Kota Bogor",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "80,93"
+          }
+        },
+        {
+          "regionId": "3272",
+          "regionName": "Kota Sukabumi",
+          "value": 93.55,
+          "sourceRecord": {
+            "tableId": "100",
+            "selectedYear": 2023,
+            "rowLabel": "Kota Sukabumi",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "93,55"
+          }
+        },
+        {
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "value": 93.6,
+          "sourceRecord": {
+            "tableId": "100",
+            "selectedYear": 2023,
+            "rowLabel": "Kota Bandung",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "93,60"
+          }
+        },
+        {
+          "regionId": "3274",
+          "regionName": "Kota Cirebon",
+          "value": 71.04,
+          "sourceRecord": {
+            "tableId": "100",
+            "selectedYear": 2023,
+            "rowLabel": "Kota Cirebon",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "71,04"
+          }
+        },
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": 103.08,
+          "sourceRecord": {
+            "tableId": "100",
+            "selectedYear": 2023,
+            "rowLabel": "Kota Bekasi",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "103,08"
+          }
+        },
+        {
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "value": 87.77,
+          "sourceRecord": {
+            "tableId": "100",
+            "selectedYear": 2023,
+            "rowLabel": "Kota Depok",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "87,77"
+          }
+        },
+        {
+          "regionId": "3277",
+          "regionName": "Kota Cimahi",
+          "value": 89.84,
+          "sourceRecord": {
+            "tableId": "100",
+            "selectedYear": 2023,
+            "rowLabel": "Kota Cimahi",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "89,84"
+          }
+        },
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": 79.86,
+          "sourceRecord": {
+            "tableId": "100",
+            "selectedYear": 2023,
+            "rowLabel": "Kota Tasikmalaya",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "79,86"
+          }
+        },
+        {
+          "regionId": "3279",
+          "regionName": "Kota Banjar",
+          "value": 82.74,
+          "sourceRecord": {
+            "tableId": "100",
+            "selectedYear": 2023,
+            "rowLabel": "Kota Banjar",
+            "columnLabel": "SMA/MA/Paket C; 2023",
+            "rawValue": "82,74"
+          }
+        }
+      ],
+      "acquisitionNotes": [
+        "Inspected every selected 2023 district row and retained original labels and decimal-comma values. Mapped exact district names to the canonical registry; unprefixed Bogor/Bandung/etc. are kabupaten, Kota-prefixed rows remain separate.",
+        "One provincial row is excluded from observations and is never assigned to a missing district. No imputation, extrapolation, rounding beyond published precision, or substitution from another year.",
+        "Online historical tables are live and may be revised. Original acquisition date is this audit date, not the year of the observations. Hashes refer to preserved selected-table text, not to an unretained original response.",
+        "BPS yearbook printed 200/PDF 276 independently gives provincial 2023 upper-secondary APK 79.07%, matching the selected live table. The provincial row is excluded from observations.",
+        "Static reader did not expose numeric records. Browser year selector was set to 2023 and all 28 rows, including the provincial row, were captured."
+      ]
+    },
+    {
+      "id": "amh",
+      "name": "Angka Melek Huruf / Angka Melek Aksara (AMH), population 15+",
+      "dimension": "education",
+      "source": {
+        "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+        "title": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas Menurut Kabupaten/Kota di Provinsi Jawa Barat",
+        "url": "https://jabar.bps.go.id/id/statistics-table/2/OTU2IzI=/angka-melek-aksara-penduduk-umur-15-tahun-ke-atas-menurut-kabupaten-kota-di-provinsi-jawa-barat.html",
+        "table": "BPS dynamic statistics table source 2 / indicator 956; year selector 2023; adult literacy column",
+        "pages": null,
+        "referencePeriod": "2023; Susenas Maret 2023, explicitly stated in independently inspected BPS static table 691.",
+        "unit": "percent",
+        "denominator": "Resident population aged 15 years and over, both sexes; not ages 15–24 and not Latin-only literacy.",
+        "accessedAt": "2026-10-28",
+        "artifactId": "bps-amh-956-2023",
+        "surveyBase": "Susenas Maret 2023 household survey, not a school registry or a census enumeration. The Jabar welfare publication reports 26,040 sampled households across all 27 kabupaten/kota. Its SP2020-based census-block master frame uses a stratified two-stage household design; special households and special census blocks are excluded. District estimates are representative, but district urban/rural disaggregation is not supported there.",
+        "corroboratingSources": [
+          {
+            "artifactId": "bps-amh-static-691-2023",
+            "url": "https://jabar.bps.go.id/id/statistics-table/1/NjkxIzE=/angka-melek-huruf-menurut-kabupaten-kota-di-provinsi-jawa-barat-2023.html",
+            "table": "BPS static table 691, updated 2024-05-08; all 27 2023 values match exactly."
+          },
+          {
+            "artifactId": "bps-jabar-dalam-angka-2024",
+            "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+            "pages": [
+              {
+                "printed": 200,
+                "pdf": 276
+              },
+              {
+                "printed": 201,
+                "pdf": 277
+              }
+            ]
+          },
+          {
+            "artifactId": "bps-statistik-pendidikan-2023",
+            "url": "https://www.bps.go.id/id/publication/2023/11/24/54557f7c1bd32f187f3cdab5/statistik-pendidikan-2023.html",
+            "pages": [
+              {
+                "printed": "xxxii",
+                "pdf": 34
+              }
+            ]
+          },
+          {
+            "artifactId": "bps-kesra-jabar-2023",
+            "url": "https://jabar.bps.go.id/id/publication/2023/12/28/8a2667bb40625076d8ee9c30/statistik-kesejahteraan-rakyat-provinsi-jawa-barat-2023.html",
+            "pages": [
+              {
+                "printed": 35,
+                "pdf": 65
+              },
+              {
+                "printed": 39,
+                "pdf": 69
+              }
+            ]
+          }
+        ],
+        "footnotes": [
+          "Source line in static table: Badan Pusat Statistik, Survei Sosial Ekonomi Nasional (Susenas) Maret 2023.",
+          "No extra district-specific footnote or missing-value symbol appears in the inspected selected-year literacy records."
+        ]
+      },
+      "definition": "Proportion of residents aged 15 years and over who can read and write simple words/sentences in Latin, Arabic, or another script. Any-script literacy is not the sum of script-specific percentages; one person may know several scripts.",
+      "valueType": "numeric",
+      "direction": {
+        "higherMeansLowerPressure": true,
+        "interpretation": "Higher literacy supports lower basic literacy deprivation.",
+        "qualification": "Near-universal literacy does not establish educational quality, numeracy, digital literacy, proficiency, or low total social pressure."
+      },
+      "comparability": {
+        "geography": "All 27 kabupaten/kota matched to canonical codes.",
+        "within2023": "Same explicit 15+ denominator and same both-sexes definition for every region. Dynamic and static district values agree exactly.",
+        "doNotMix": "Do not substitute youth literacy (15–24), literacy by a single script, or RLS/HLS for this adult literacy percentage."
+      },
+      "limitations": [
+        "Strong saturation among most regions limits discrimination in a broad education measure.",
+        "Adult literacy is sensitive to age/cohort composition; it is not exclusively an assessment of 2023 schooling.",
+        "No district RSE or confidence interval accompanies the online cells.",
+        "The welfare publication table 3.1.3 is Latin/Arabic/other script separately; its Latin-only provincial 98.04% differs from any-script AMH 98.51%. Those separate rates cannot be summed or substituted."
+      ],
+      "redundancy": {
+        "withHdi": "Not a component of current-method HDI; it was replaced by HLS in the education dimension. Still overlaps general attainment.",
+        "withOtherCandidate": "Less informative than upper-secondary access for distinguishing contemporary educational pressure; retains value as a specific adult-literacy context."
+      },
+      "preliminaryRecommendation": {
+        "status": "CONTEXT ONLY",
+        "reason": "Real comparable all-27 adult 15+ observations exist, but saturation and lack of quality information make AMH weak as core education evidence. Preserve unsaturated local literacy deprivation without treating AMH as interchangeable with schooling duration."
+      },
+      "observations": [
+        {
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "value": 99.24,
+          "sourceRecord": {
+            "tableId": "956",
+            "selectedYear": 2023,
+            "rowLabel": "Bogor",
+            "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+            "rawValue": "99,24"
+          }
+        },
+        {
+          "regionId": "3202",
+          "regionName": "Kabupaten Sukabumi",
+          "value": 99.17,
+          "sourceRecord": {
+            "tableId": "956",
+            "selectedYear": 2023,
+            "rowLabel": "Sukabumi",
+            "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+            "rawValue": "99,17"
+          }
+        },
+        {
+          "regionId": "3203",
+          "regionName": "Kabupaten Cianjur",
+          "value": 98.95,
+          "sourceRecord": {
+            "tableId": "956",
+            "selectedYear": 2023,
+            "rowLabel": "Cianjur",
+            "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+            "rawValue": "98,95"
+          }
+        },
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": 99.81,
+          "sourceRecord": {
+            "tableId": "956",
+            "selectedYear": 2023,
+            "rowLabel": "Bandung",
+            "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+            "rawValue": "99,81"
+          }
+        },
+        {
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "value": 99.02,
+          "sourceRecord": {
+            "tableId": "956",
+            "selectedYear": 2023,
+            "rowLabel": "Garut",
+            "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+            "rawValue": "99,02"
+          }
+        },
+        {
+          "regionId": "3206",
+          "regionName": "Kabupaten Tasikmalaya",
+          "value": 99.71,
+          "sourceRecord": {
+            "tableId": "956",
+            "selectedYear": 2023,
+            "rowLabel": "Tasikmalaya",
+            "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+            "rawValue": "99,71"
+          }
+        },
+        {
+          "regionId": "3207",
+          "regionName": "Kabupaten Ciamis",
+          "value": 99.52,
+          "sourceRecord": {
+            "tableId": "956",
+            "selectedYear": 2023,
+            "rowLabel": "Ciamis",
+            "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+            "rawValue": "99,52"
+          }
+        },
+        {
+          "regionId": "3208",
+          "regionName": "Kabupaten Kuningan",
+          "value": 98.29,
+          "sourceRecord": {
+            "tableId": "956",
+            "selectedYear": 2023,
+            "rowLabel": "Kuningan",
+            "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+            "rawValue": "98,29"
+          }
+        },
+        {
+          "regionId": "3209",
+          "regionName": "Kabupaten Cirebon",
+          "value": 93.7,
+          "sourceRecord": {
+            "tableId": "956",
+            "selectedYear": 2023,
+            "rowLabel": "Cirebon",
+            "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+            "rawValue": "93,70"
+          }
+        },
+        {
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "value": 96.87,
+          "sourceRecord": {
+            "tableId": "956",
+            "selectedYear": 2023,
+            "rowLabel": "Majalengka",
+            "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+            "rawValue": "96,87"
+          }
+        },
+        {
+          "regionId": "3211",
+          "regionName": "Kabupaten Sumedang",
+          "value": 99.34,
+          "sourceRecord": {
+            "tableId": "956",
+            "selectedYear": 2023,
+            "rowLabel": "Sumedang",
+            "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+            "rawValue": "99,34"
+          }
+        },
+        {
+          "regionId": "3212",
+          "regionName": "Kabupaten Indramayu",
+          "value": 92.52,
+          "sourceRecord": {
+            "tableId": "956",
+            "selectedYear": 2023,
+            "rowLabel": "Indramayu",
+            "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+            "rawValue": "92,52"
+          }
+        },
+        {
+          "regionId": "3213",
+          "regionName": "Kabupaten Subang",
+          "value": 96.97,
+          "sourceRecord": {
+            "tableId": "956",
+            "selectedYear": 2023,
+            "rowLabel": "Subang",
+            "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+            "rawValue": "96,97"
+          }
+        },
+        {
+          "regionId": "3214",
+          "regionName": "Kabupaten Purwakarta",
+          "value": 98.13,
+          "sourceRecord": {
+            "tableId": "956",
+            "selectedYear": 2023,
+            "rowLabel": "Purwakarta",
+            "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+            "rawValue": "98,13"
+          }
+        },
+        {
+          "regionId": "3215",
+          "regionName": "Kabupaten Karawang",
+          "value": 97.82,
+          "sourceRecord": {
+            "tableId": "956",
+            "selectedYear": 2023,
+            "rowLabel": "Karawang",
+            "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+            "rawValue": "97,82"
+          }
+        },
+        {
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "value": 97.94,
+          "sourceRecord": {
+            "tableId": "956",
+            "selectedYear": 2023,
+            "rowLabel": "Bekasi",
+            "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+            "rawValue": "97,94"
+          }
+        },
+        {
+          "regionId": "3217",
+          "regionName": "Kabupaten Bandung Barat",
+          "value": 99.28,
+          "sourceRecord": {
+            "tableId": "956",
+            "selectedYear": 2023,
+            "rowLabel": "Bandung Barat",
+            "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+            "rawValue": "99,28"
+          }
+        },
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": 99.29,
+          "sourceRecord": {
+            "tableId": "956",
+            "selectedYear": 2023,
+            "rowLabel": "Pangandaran",
+            "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+            "rawValue": "99,29"
+          }
+        },
+        {
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "value": 99.69,
+          "sourceRecord": {
+            "tableId": "956",
+            "selectedYear": 2023,
+            "rowLabel": "Kota Bogor",
+            "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+            "rawValue": "99,69"
+          }
+        },
+        {
+          "regionId": "3272",
+          "regionName": "Kota Sukabumi",
+          "value": 99.64,
+          "sourceRecord": {
+            "tableId": "956",
+            "selectedYear": 2023,
+            "rowLabel": "Kota Sukabumi",
+            "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+            "rawValue": "99,64"
+          }
+        },
+        {
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "value": 99.87,
+          "sourceRecord": {
+            "tableId": "956",
+            "selectedYear": 2023,
+            "rowLabel": "Kota Bandung",
+            "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+            "rawValue": "99,87"
+          }
+        },
+        {
+          "regionId": "3274",
+          "regionName": "Kota Cirebon",
+          "value": 98.23,
+          "sourceRecord": {
+            "tableId": "956",
+            "selectedYear": 2023,
+            "rowLabel": "Kota Cirebon",
+            "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+            "rawValue": "98,23"
+          }
+        },
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": 99.4,
+          "sourceRecord": {
+            "tableId": "956",
+            "selectedYear": 2023,
+            "rowLabel": "Kota Bekasi",
+            "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+            "rawValue": "99,40"
+          }
+        },
+        {
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "value": 99.19,
+          "sourceRecord": {
+            "tableId": "956",
+            "selectedYear": 2023,
+            "rowLabel": "Kota Depok",
+            "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+            "rawValue": "99,19"
+          }
+        },
+        {
+          "regionId": "3277",
+          "regionName": "Kota Cimahi",
+          "value": 99.64,
+          "sourceRecord": {
+            "tableId": "956",
+            "selectedYear": 2023,
+            "rowLabel": "Kota Cimahi",
+            "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+            "rawValue": "99,64"
+          }
+        },
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": 99.81,
+          "sourceRecord": {
+            "tableId": "956",
+            "selectedYear": 2023,
+            "rowLabel": "Kota Tasikmalaya",
+            "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+            "rawValue": "99,81"
+          }
+        },
+        {
+          "regionId": "3279",
+          "regionName": "Kota Banjar",
+          "value": 98.95,
+          "sourceRecord": {
+            "tableId": "956",
+            "selectedYear": 2023,
+            "rowLabel": "Kota Banjar",
+            "columnLabel": "Angka Melek Aksara Penduduk Umur 15 Tahun ke Atas; 2023",
+            "rawValue": "98,95"
+          }
+        }
+      ],
+      "acquisitionNotes": [
+        "Inspected every selected 2023 district row and retained original labels and decimal-comma values. Mapped exact district names to the canonical registry; unprefixed Bogor/Bandung/etc. are kabupaten, Kota-prefixed rows remain separate.",
+        "One provincial row is excluded from observations and is never assigned to a missing district. No imputation, extrapolation, rounding beyond published precision, or substitution from another year.",
+        "Online historical tables are live and may be revised. Original acquisition date is this audit date, not the year of the observations. Hashes refer to preserved selected-table text, not to an unretained original response.",
+        "Inspected all 27 dynamic records, then matched them exactly against independent BPS static table 691, whose source explicitly states Susenas Maret 2023.",
+        "Yearbook table 4.1.14 printed 201/PDF 277 explicitly labels population 15+ and gives any-script provincial AMH 98.51%, matching both district-table provincial rows.",
+        "No Latin-only or youth series was substituted; no district value is missing."
+      ]
+    }
+  ],
+  "findings": {
+    "coverage": [
+      {
+        "indicatorId": "rls",
+        "expectedRecords": 27,
+        "numericRecords": 27,
+        "nullRecords": 0,
+        "uniqueRegionIds": 27,
+        "missingRegionIds": [],
+        "unexpectedRegionIds": [],
+        "duplicateRegionIds": [],
+        "canonicalNameMatch": true
+      },
+      {
+        "indicatorId": "hls",
+        "expectedRecords": 27,
+        "numericRecords": 27,
+        "nullRecords": 0,
+        "uniqueRegionIds": 27,
+        "missingRegionIds": [],
+        "unexpectedRegionIds": [],
+        "duplicateRegionIds": [],
+        "canonicalNameMatch": true
+      },
+      {
+        "indicatorId": "apm",
+        "expectedRecords": 27,
+        "numericRecords": 27,
+        "nullRecords": 0,
+        "uniqueRegionIds": 27,
+        "missingRegionIds": [],
+        "unexpectedRegionIds": [],
+        "duplicateRegionIds": [],
+        "canonicalNameMatch": true
+      },
+      {
+        "indicatorId": "apk",
+        "expectedRecords": 27,
+        "numericRecords": 27,
+        "nullRecords": 0,
+        "uniqueRegionIds": 27,
+        "missingRegionIds": [],
+        "unexpectedRegionIds": [],
+        "duplicateRegionIds": [],
+        "canonicalNameMatch": true
+      },
+      {
+        "indicatorId": "amh",
+        "expectedRecords": 27,
+        "numericRecords": 27,
+        "nullRecords": 0,
+        "uniqueRegionIds": 27,
+        "missingRegionIds": [],
+        "unexpectedRegionIds": [],
+        "duplicateRegionIds": [],
+        "canonicalNameMatch": true
+      }
+    ],
+    "totalRegionalObservations": 135,
+    "identityCheck": "Each of the five series has exactly the canonical 27 unique IDs, zero unexpected/missing/duplicate IDs, and exact canonical region names. Kabupaten and Kota with shared place names remain distinct.",
+    "provenanceFindings": [
+      "Yearbook education-chapter tables 4.1.13 and 4.1.14 are provincial only. However, yearbook table 4.6.6, printed 312/PDF 388, supplies all 27 regional RLS and HLS values. Parent independently extracted both 2023 columns from the original PDF and confirmed 27/27 exact matches per component against the dedicated IPM publication. District APM/APK/AMH records came from official BPS statistical tables, not inferred catalog coverage.",
+      "IPM PDF appendix tables 3 and 4 were visually inspected. Printed/PDF pages are 73/87 for HLS and 74/88 for RLS.",
+      "Live table numeric rows require browser hydration. A year in a portal description alone was not counted as district coverage. Explicit 2023 table selection and all district cells were inspected.",
+      "Full downloaded PDFs remain outside the repository. Their byte sizes and SHA256 digests identify original acquisitions. Selected official table text is preserved inline with its own representation-specific hash.",
+      "Portal IPM publication number 32000.24023 differs from inside-PDF imprint 32000.2403. Both are preserved rather than silently reconciled."
+    ],
+    "definitionsAndDirection": [
+      "RLS is attained adult schooling stock, with IPM denominator age 25+. HLS is a synthetic expected duration at age 7 from age-specific enrollment. They are not two measurements of the same cohort.",
+      "A distinct BPS national Statistik Pendidikan RLS age-15+ definition exists. It was inspected but is not mixed into the chosen IPM RLS25+ series.",
+      "APM measures current age-appropriate upper-secondary enrollment status; APK uses current upper-secondary enrollment at all ages. Neither is an annual admission, transition, graduation, or learning flow.",
+      "Higher RLS/HLS/APM/AMH plausibly indicates lower deprivation in their stated educational domain. This does not establish lower overall pressure or statistical significance. APK direction is conditional and can exceed 100%."
+    ],
+    "redundancyAndPreliminarySelection": [
+      "APM upper secondary: CORE candidate for the next HDI-free model. Level-specific current age-appropriate participation adds information beyond adult attainment and synthetic schooling expectation; Pearson r is 0.578418 with RLS and 0.524022 with HLS.",
+      "RLS: CORE candidate for the next HDI-free model; attained schooling among adults aged 25+, not current participation. Never score alongside full HDI.",
+      "HLS: CORE candidate for the next HDI-free model; synthetic schooling expectation from age 7, not adult attained schooling. RLS-HLS Pearson r is 0.820162, below the absolute 0.85 redundancy flag. Never score alongside full HDI.",
+      "APK: CONTEXT ONLY as matching APM diagnostic; not a second independent educational pressure domain.",
+      "AMH15+: CONTEXT ONLY due saturation and limited educational-quality information."
+    ],
+    "enrollmentContext": {
+      "levelScope": "Upper secondary only: SMA/SMK/MA or equivalent, including Paket C. The live table abbreviates this column as SMA/MA/Paket C; it does not label it SMP/MTs. The yearbook labels the matching provincial level SMA/SMK/MA. Lower secondary means SMP/MTs/Paket B, ages 13–15, and is not the selected candidate.",
+      "provincial2023": {
+        "apmSdMi": 98.2,
+        "apmSmpMts": 83.61,
+        "apmSmaSmkMa": 59.01,
+        "apkSdMi": 104.53,
+        "apkSmpMts": 94.69,
+        "apkSmaSmkMa": 79.07
+      },
+      "provincialSource": {
+        "artifactId": "bps-jabar-dalam-angka-2024",
+        "table": "4.1.13",
+        "printedPage": 200,
+        "pdfPage": 276
+      },
+      "contextOnly": "These provincial SD/SMP figures are not district observations and are not additional candidates. They show why upper secondary should not be mislabeled lower secondary.",
+      "pairedApkMinusApmPercentagePoints": [
+        {
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "value": 21.03,
+          "valueType": "derived descriptive difference",
+          "formula": "published upper-secondary APK minus published upper-secondary APM; not an official flow statistic"
+        },
+        {
+          "regionId": "3202",
+          "regionName": "Kabupaten Sukabumi",
+          "value": 15.82,
+          "valueType": "derived descriptive difference",
+          "formula": "published upper-secondary APK minus published upper-secondary APM; not an official flow statistic"
+        },
+        {
+          "regionId": "3203",
+          "regionName": "Kabupaten Cianjur",
+          "value": 12.39,
+          "valueType": "derived descriptive difference",
+          "formula": "published upper-secondary APK minus published upper-secondary APM; not an official flow statistic"
+        },
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": 14.77,
+          "valueType": "derived descriptive difference",
+          "formula": "published upper-secondary APK minus published upper-secondary APM; not an official flow statistic"
+        },
+        {
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "value": 17.91,
+          "valueType": "derived descriptive difference",
+          "formula": "published upper-secondary APK minus published upper-secondary APM; not an official flow statistic"
+        },
+        {
+          "regionId": "3206",
+          "regionName": "Kabupaten Tasikmalaya",
+          "value": 13.49,
+          "valueType": "derived descriptive difference",
+          "formula": "published upper-secondary APK minus published upper-secondary APM; not an official flow statistic"
+        },
+        {
+          "regionId": "3207",
+          "regionName": "Kabupaten Ciamis",
+          "value": 28.58,
+          "valueType": "derived descriptive difference",
+          "formula": "published upper-secondary APK minus published upper-secondary APM; not an official flow statistic"
+        },
+        {
+          "regionId": "3208",
+          "regionName": "Kabupaten Kuningan",
+          "value": 13.87,
+          "valueType": "derived descriptive difference",
+          "formula": "published upper-secondary APK minus published upper-secondary APM; not an official flow statistic"
+        },
+        {
+          "regionId": "3209",
+          "regionName": "Kabupaten Cirebon",
+          "value": 21.4,
+          "valueType": "derived descriptive difference",
+          "formula": "published upper-secondary APK minus published upper-secondary APM; not an official flow statistic"
+        },
+        {
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "value": 12.69,
+          "valueType": "derived descriptive difference",
+          "formula": "published upper-secondary APK minus published upper-secondary APM; not an official flow statistic"
+        },
+        {
+          "regionId": "3211",
+          "regionName": "Kabupaten Sumedang",
+          "value": 12.07,
+          "valueType": "derived descriptive difference",
+          "formula": "published upper-secondary APK minus published upper-secondary APM; not an official flow statistic"
+        },
+        {
+          "regionId": "3212",
+          "regionName": "Kabupaten Indramayu",
+          "value": 15.19,
+          "valueType": "derived descriptive difference",
+          "formula": "published upper-secondary APK minus published upper-secondary APM; not an official flow statistic"
+        },
+        {
+          "regionId": "3213",
+          "regionName": "Kabupaten Subang",
+          "value": 14.44,
+          "valueType": "derived descriptive difference",
+          "formula": "published upper-secondary APK minus published upper-secondary APM; not an official flow statistic"
+        },
+        {
+          "regionId": "3214",
+          "regionName": "Kabupaten Purwakarta",
+          "value": 22.92,
+          "valueType": "derived descriptive difference",
+          "formula": "published upper-secondary APK minus published upper-secondary APM; not an official flow statistic"
+        },
+        {
+          "regionId": "3215",
+          "regionName": "Kabupaten Karawang",
+          "value": 19.41,
+          "valueType": "derived descriptive difference",
+          "formula": "published upper-secondary APK minus published upper-secondary APM; not an official flow statistic"
+        },
+        {
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "value": 29.57,
+          "valueType": "derived descriptive difference",
+          "formula": "published upper-secondary APK minus published upper-secondary APM; not an official flow statistic"
+        },
+        {
+          "regionId": "3217",
+          "regionName": "Kabupaten Bandung Barat",
+          "value": 13.61,
+          "valueType": "derived descriptive difference",
+          "formula": "published upper-secondary APK minus published upper-secondary APM; not an official flow statistic"
+        },
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": 17.28,
+          "valueType": "derived descriptive difference",
+          "formula": "published upper-secondary APK minus published upper-secondary APM; not an official flow statistic"
+        },
+        {
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "value": 22.3,
+          "valueType": "derived descriptive difference",
+          "formula": "published upper-secondary APK minus published upper-secondary APM; not an official flow statistic"
+        },
+        {
+          "regionId": "3272",
+          "regionName": "Kota Sukabumi",
+          "value": 25.82,
+          "valueType": "derived descriptive difference",
+          "formula": "published upper-secondary APK minus published upper-secondary APM; not an official flow statistic"
+        },
+        {
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "value": 29.84,
+          "valueType": "derived descriptive difference",
+          "formula": "published upper-secondary APK minus published upper-secondary APM; not an official flow statistic"
+        },
+        {
+          "regionId": "3274",
+          "regionName": "Kota Cirebon",
+          "value": 9.66,
+          "valueType": "derived descriptive difference",
+          "formula": "published upper-secondary APK minus published upper-secondary APM; not an official flow statistic"
+        },
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": 32.5,
+          "valueType": "derived descriptive difference",
+          "formula": "published upper-secondary APK minus published upper-secondary APM; not an official flow statistic"
+        },
+        {
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "value": 18.98,
+          "valueType": "derived descriptive difference",
+          "formula": "published upper-secondary APK minus published upper-secondary APM; not an official flow statistic"
+        },
+        {
+          "regionId": "3277",
+          "regionName": "Kota Cimahi",
+          "value": 19.64,
+          "valueType": "derived descriptive difference",
+          "formula": "published upper-secondary APK minus published upper-secondary APM; not an official flow statistic"
+        },
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": 16.74,
+          "valueType": "derived descriptive difference",
+          "formula": "published upper-secondary APK minus published upper-secondary APM; not an official flow statistic"
+        },
+        {
+          "regionId": "3279",
+          "regionName": "Kota Banjar",
+          "value": 22.31,
+          "valueType": "derived descriptive difference",
+          "formula": "published upper-secondary APK minus published upper-secondary APM; not an official flow statistic"
+        }
+      ],
+      "interpretation": "All-age versus official-age numerator difference provides age-mismatch context, not the exact proportion of over-age residents. Kota Bekasi APK 103.08% illustrates why APK cannot be treated as a bounded attainment probability."
+    },
+    "literacySaturation": {
+      "ageDenominator": "15+",
+      "minimum": 92.52,
+      "minimumRegionId": "3212",
+      "maximum": 99.87,
+      "maximumRegionId": "3273",
+      "regionsAtLeast99Percent": 16,
+      "regionsAtLeast98Percent": 21,
+      "unit": "percent",
+      "interpretation": "Saturation is empirical in inspected district rows, not merely assumed from the indicator name. Lower adult literacy remains relevant locally, especially Kabupaten Indramayu and Kabupaten Cirebon."
+    },
+    "excludedAlternatives": [
+      {
+        "source": "Jabar Open Data APM sekolah menengah dataset",
+        "url": "https://opendata.jabarprov.go.id/en/dataset/angka-partisipasi-murni-apm-sekolah-menengah-berdasarkan-kabupatenkota-di-jawa-barat",
+        "reason": "Known dataset URL redirected to Galura portal shell during audit. No district values inferred from its metadata; direct BPS numeric records were available and preferred."
+      },
+      {
+        "artifactId": "kemendikbud-apk-apm-2022-2023-methods",
+        "reason": "Administrative school enrollment and interim resident population bases are not interchangeable with Susenas resident participation. Different academic-year/cutoff reference; no administrative numeric rows adopted."
+      },
+      {
+        "artifactId": "bps-kesra-jabar-2023",
+        "table": "3.1.3",
+        "reason": "Separate Latin/Arabic/other literacy percentages are overlapping script-specific populations, not union AMH15+."
+      },
+      {
+        "artifactId": "bps-kesra-jabar-2023",
+        "table": "3.6",
+        "reason": "APM table is province-by-characteristic, not all-27 district observations."
+      }
+    ],
+    "remainingEvidenceLimitations": [
+      "District confidence intervals and RSE are not supplied with chosen live table cells or IPM appendix cells. No precision claims are inferred.",
+      "The dynamic participation tables abbreviate level names and omit survey month/design. Exact column labels, percent-unit discrepancy, and independent official scope/basis corroboration are retained.",
+      "No archived data was altered, and no scoring or production decision follows automatically from these preliminary recommendations."
+    ]
+  }
+}

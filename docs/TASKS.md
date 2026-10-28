@@ -246,3 +246,31 @@ The explicit product decision is one **CIVX**, not separate methodology products
 Browser smoke caught an SVG title hydration mismatch: separate static/dynamic title children did not survive browser parsing as React expected. A single title string fixed the cause; development and rebuilt production smoke passed. Temporary diagnostics were removed. No dependency was added and TypeScript remains `strict: true`, `noEmit: true`.
 
 Remaining external gates: independent source/method review, publication/reuse rights, certified effective-boundary compatibility, uncertainty and formal accessibility review. DBD source population vintage remains unresolved; use the official reported-incidence series without inventing a replacement denominator. Puskesmas supply is not measured healthcare access; IRBI is modeled risk, not actual disaster impact. Missing optional evidence is not zero or verified absence.
+
+## 19. Socioeconomic and Education evidence audit
+
+This is a next-model source and methodology decision record, not a production scoring cutover. The current release in §18 remains unchanged.
+
+- [x] Verify all five Socioeconomic and five Education candidates against official 2023 records for all 27 Jawa Barat kabupaten/kota; retain 270 candidate observations and 27 separate nominal-expenditure observations with source receipts.
+- [x] Compute per-candidate extrema, mean, median, population standard deviation, CV, missingness, unique values, all 20 within-dimension correlations and explicit outlier/rounding flags without imputing or substituting values.
+- [x] Document exact definitions, units, denominators, periods, official locators, acquisition dates, fingerprints, source conflicts and all eight requested report sections in [SOCIOECONOMIC-EDUCATION-AUDIT-2023.md](SOCIOECONOMIC-EDUCATION-AUDIT-2023.md).
+- [x] Recommend poverty, TPT, expenditure Gini and real adjusted annual expenditure for an HDI-free Socioeconomic dimension; recommend RLS25+, HLS and upper-secondary APM for Education. Retain TPAK, APK, AMH and nominal expenditure as context; recommend IPM context-only in that next model.
+- [x] Independently smoke-check all 270 candidate records, regional identity, descriptive statistics, 20 Pearson pairs, evidence hashes and unchanged production-input/policy/builder fingerprints. Pass `npm run lint` and `npm run build` with 37 generated pages.
+
+No frontend, production indicators, scoring code, weights or methodology configuration changed. No dependency or permanent test was added. Future model weighting, normalization, uncertainty review, rights clearance and release approval remain separate decisions.
+
+## 20. Basic Services evidence and methodology audit
+
+This resumes the provider-interrupted audit from saved evidence. It is a research decision record, not a production scoring cutover. The current release in §18 and prior Socioeconomic/Education audit in §19 remain unchanged.
+
+- [x] Recover completed healthcare, household, waste and other-service evidence; reconstruct unfinished water findings from the prior transcript and reacquire only four incomplete API panels plus metadata.
+- [x] Re-audit all 27 improved-sanitation and improved-drinking-water records for 2023. Verify the actual Puskesmas formula, main-facility numerator and exact matching 2023 population without rebuilding production.
+- [x] Audit electricity, healthcare facilities/beds/staff, adequate housing/materials/crowding, personal/household digital access, waste services, stronger water-service alternatives and other defensible essential services.
+- [x] Preserve 91 source/diagnostic series, 2,449 regional records, 88 complete panels and 51 failed or qualified dataset investigations in `data/raw/basic-services-audit-2023/`. Preserve 21 expected gaps without zero-fill, interpolation, substitution or reweighting.
+- [x] Compute every series' count, missingness, uniqueness, extrema, mean, median, population SD, CV, ties and IQR flags; retain 903 full-cohort Pearson/Spearman pairs and 55 possible-redundancy flags in `data/processed/basic-services-audit-2023-statistics.json`.
+- [x] Apply all ten admission gates. Recommend retaining sanitation, drinking water and narrowly labelled Puskesmas supply, with standalone household crowding ≤7.2 m²/person and formal health-insurance ownership as next-model additions. Recommend three subdimensions with no weights.
+- [x] Document conceptual nesting, saturation, source conflicts, uncertainty, every failed investigation, exact CORE provenance and all ten final questions in [BASIC-SERVICES-AUDIT-2023.md](BASIC-SERVICES-AUDIT-2023.md).
+- [x] Independently smoke-check the saved statistics/correlations, 613 population-derived rates, 1,107 source row receipts, insurance/lighting/cooking derivations, all 81 current-indicator values, evidence hashes and five protected production fingerprints. Correct source-excerpt encoding metadata without changing numeric records.
+- [x] Pass `npm run lint` and `npm run build`, including TypeScript and 37 generated pages. Keep all frontend, production scoring, indicators, weights, policy and release outputs unchanged; add no dependency, permanent test or recommendation feature.
+
+No session audit task remains unfinished. Evidence gaps remain explicit: operational safe-water definitions and laboratory safety, household broadband/access, active insurance rather than ownership, workforce FTE/reporting, hospital catchments/operational beds, coherent waste-service denominators/historical access, and finer uncertainty. Electricity remains saturated context. The adequate-housing composite remains an alternative bundle, not an extra independent score beside its own WASH components. Independent review, rights, effective geography, future weights and release approval remain separate gates.
