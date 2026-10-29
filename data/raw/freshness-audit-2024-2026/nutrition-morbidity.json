@@ -1,0 +1,3962 @@
+{
+  "auditId": "civx-freshness-audit-2024-2026",
+  "accessedAt": "2026-10-29",
+  "indicatorIds": [
+    "nutrition_ski2023_stunting",
+    "nutrition_ski2023_wasting",
+    "morbidity_activity_limiting"
+  ],
+  "sources": [
+    {
+      "sourceId": "nutrition_morbidity_welfare2024",
+      "agency": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "title": "Statistik Kesejahteraan Rakyat Provinsi Jawa Barat 2024",
+      "url": "https://jabar.bps.go.id/id/publication/2024/12/13/d9dc099d628ec6dd9ffc8d3b/statistik-kesejahteraan-rakyat-provinsi-jawa-barat-2024.html",
+      "accessedAt": "2026-10-29",
+      "publicationDate": "2024-12-13",
+      "releaseYear": 2024,
+      "kind": "publication",
+      "retrievalMethod": "Official publication PDF inspected in memory using pdftotext; exact region labels and column coordinates checked; only attributed statistical cells retained.",
+      "evidence": "March 2024 Susenas: 26,040 sampled private households across all 27 districts; institutional households excluded. Percentages published to two decimal places. Section 1.5 defines dash as absolute zero and NA as suppressed/unpublishable, not zero.",
+      "excerpts": [],
+      "contentSha256": "b78b0968480543c940fef49692049715f0072b3faab49d6727a82baec9aaac53",
+      "rightsNotes": "Limited attributed statistical extraction, not a mirror or reproduction of the publication. BPS website Terms of Use section 13 permits credited statistical use; publication reproduction notices remain applicable.",
+      "symbolDefinitions": {
+        "zero": [
+          "-",
+          "–",
+          "−"
+        ],
+        "zeroLocator": "section 1.5 / PDF36, printed6",
+        "missing": [
+          "NA"
+        ]
+      }
+    },
+    {
+      "sourceId": "nutrition_morbidity_welfare2025",
+      "agency": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "title": "Statistik Kesejahteraan Rakyat Provinsi Jawa Barat 2025",
+      "url": "https://jabar.bps.go.id/id/publication/2025/11/28/5c47dbf83e4123e9a47090fe/statistik-kesejahteraan-rakyat-provinsi-jawa-barat-2025.html",
+      "accessedAt": "2026-10-29",
+      "publicationDate": "2025-11-28",
+      "releaseYear": 2025,
+      "kind": "publication",
+      "retrievalMethod": "Official publication PDF inspected in memory using pdftotext; exact region labels and column coordinates checked; only attributed statistical cells retained.",
+      "evidence": "March 2025 Susenas: 26,040 sampled private households across all 27 districts; institutional households excluded. Percentages published to two decimal places. Section 1.5 defines dash as absolute zero and NA as suppressed/unpublishable, not zero.",
+      "excerpts": [],
+      "contentSha256": "9f1c22faa9fade0b7c95c54931160dc3b2f0f0897571867185f5104722205b8f",
+      "rightsNotes": "Limited attributed statistical extraction, not a mirror or reproduction of the publication. BPS website Terms of Use section 13 permits credited statistical use; publication reproduction notices remain applicable.",
+      "symbolDefinitions": {
+        "zero": [
+          "-",
+          "–",
+          "−"
+        ],
+        "zeroLocator": "section 1.5 / PDF42, printed8",
+        "missing": [
+          "NA"
+        ]
+      }
+    },
+    {
+      "sourceId": "nutrition_morbidity_ssgi2024_final",
+      "agency": "Badan Kebijakan Pembangunan Kesehatan, Kementerian Kesehatan RI; BPS sampling/weighting/SAE",
+      "title": "Survei Status Gizi Indonesia (SSGI) 2024 Dalam Angka — current BKPK-linked release",
+      "url": "https://www.badankebijakan.kemkes.go.id/survei-status-gizi-indonesia-ssgi-2024/",
+      "accessedAt": "2026-10-29",
+      "publicationDate": null,
+      "releaseYear": 2025,
+      "kind": "publication",
+      "retrievalMethod": "Follow official BKPK download to public Google Drive file1FmhMtFsElv0l95YNGqsoKy5xJh-m-glM;16,198,994 PDF bytes,353 pages. Recovered complete table4.14/PDF50 from saved primary-source extraction.",
+      "evidence": "Current release includes all27 Jawa Barat districts. PDF31 / printed9: enumeration October2024–February2025. PDF35,41 / printed13,19: direct estimates plusSAE substitution rules. Table4.14 reports total stunting, separate severe wasting, and moderate-only wasting.",
+      "excerpts": [
+        "Stunting: TB/U < -2.",
+        "Severely Wasting: BB/TB < -3; Wasting: -3 ≤ z-score < -2.",
+        "Penghitungan angka prevalensi status gizi dilakukan dengan pendekatan small area estimation (SAE)."
+      ],
+      "contentSha256": "06eae149a5f84888c1f0dab6ce8506a2dbf2e3ad93da3c2809f09e091e2a7c65",
+      "rightsNotes": "Official public report; limited attributed statistical extraction and method notes only. No respondent microdata or full PDF mirror retained."
+    },
+    {
+      "sourceId": "nutrition_morbidity_ssgi2024_launch",
+      "agency": "BKPK Kementerian Kesehatan RI",
+      "title": "SSGI 2024 Dalam Angka — 26 May2025 launch version",
+      "url": "https://kesprimkom.kemkes.go.id/assets/uploads/contents/others/SSGI_DALAM_ANGKA_LAUNCHING_250526_signed.pdf",
+      "accessedAt": "2026-10-29",
+      "publicationDate": "2025-05-26",
+      "releaseYear": 2025,
+      "kind": "publication",
+      "retrievalMethod": "Official PDF fetched in memory; recovered selected table4.54/PDF75 and4.90/PDF91 plus methods from saved transcript.",
+      "evidence": "Preliminary Jawa Barat panels contain22 of27 district rows; Bogor,Ciamis,Cirebon,Bekasi regencies andKota Sukabumi omitted pending analysis. Separate moderate/severe subclasses; not interchangeable with frozen total prevalence.",
+      "excerpts": [],
+      "contentSha256": "d4f30b930708fa34a67b75b7480ffafbcc95c0ebf31c7f48f23c5afe3ce0e622",
+      "rightsNotes": "Official public report; narrow attributed evidence only, no microdata/PDF mirror."
+    },
+    {
+      "sourceId": "nutrition_morbidity_ssgi2024_guide",
+      "agency": "BKPK Kementerian Kesehatan RI",
+      "title": "Pedoman Analisis Data SSGI 2024",
+      "url": "https://s.kemkes.go.id/PedomanAnalisisSSGI2024",
+      "accessedAt": "2026-10-29",
+      "publicationDate": null,
+      "releaseYear": 2025,
+      "kind": "methodology",
+      "retrievalMethod": "Official short link followed to public Drive guide;1,610,695 PDF bytes. Actual guide inspected in interrupted run.",
+      "evidence": "Analysis guidance was checked, but no district-to-estimation-method crosswalk was verified. A guide listing and file-modified date are not2025 survey observations.",
+      "excerpts": [],
+      "contentSha256": "54efeedbe197696feed8fbea651c6c616667aba82d03e5cff529df5462c7e0a7",
+      "rightsNotes": "Public method locator and limited findings only; no full PDF or respondent data."
+    }
+  ],
+  "searchLog": [
+    {
+      "indicatorIds": [
+        "nutrition_ski2023_stunting",
+        "nutrition_ski2023_wasting"
+      ],
+      "candidateYears": [
+        2024,
+        2025,
+        2026
+      ],
+      "queryOrUrl": "https://www.badankebijakan.kemkes.go.id/survei-status-gizi-indonesia-ssgi-2024/",
+      "outcome": "Recovered full current2024 panel; primary methods distinguish total stunting from moderate-only wasting and allowSAE. Release2025/guide2025 are not2025 observations.",
+      "sourceRefs": [
+        "nutrition_morbidity_ssgi2024_final",
+        "nutrition_morbidity_ssgi2024_launch",
+        "nutrition_morbidity_ssgi2024_guide"
+      ]
+    },
+    {
+      "indicatorIds": [
+        "morbidity_activity_limiting"
+      ],
+      "candidateYears": [
+        2024,
+        2025,
+        2026
+      ],
+      "queryOrUrl": "https://jabar.bps.go.id/id/publication/2024/12/13/d9dc099d628ec6dd9ffc8d3b/statistik-kesejahteraan-rakyat-provinsi-jawa-barat-2024.html ; https://jabar.bps.go.id/id/publication/2025/11/28/5c47dbf83e4123e9a47090fe/statistik-kesejahteraan-rakyat-provinsi-jawa-barat-2025.html",
+      "outcome": "All27 activity-limiting rates verified in March2024/2025.2026 disease-specific case counts not substituted.",
+      "sourceRefs": [
+        "nutrition_morbidity_welfare2024",
+        "nutrition_morbidity_welfare2025"
+      ]
+    },
+    {
+      "indicatorIds": [
+        "nutrition_ski2023_stunting",
+        "nutrition_ski2023_wasting",
+        "morbidity_activity_limiting"
+      ],
+      "candidateYears": [
+        2024,
+        2025,
+        2026
+      ],
+      "queryOrUrl": "site.badankebijakan.kemkes.go.id SSGI 2024 buku hasil pdf",
+      "outcome": "Recovered discovery search; actual observations use primary reports only. No2025/2026 SSGI regional panel verified, not a claim that none exists.",
+      "sourceRefs": [
+        "nutrition_morbidity_ssgi2024_final",
+        "nutrition_morbidity_welfare2025"
+      ]
+    },
+    {
+      "indicatorIds": [
+        "nutrition_ski2023_stunting",
+        "nutrition_ski2023_wasting",
+        "morbidity_activity_limiting"
+      ],
+      "candidateYears": [
+        2024,
+        2025,
+        2026
+      ],
+      "queryOrUrl": "site.kemkes.go.id SSGI 2025 2026 hasil survei status gizi",
+      "outcome": "Recovered discovery search; actual observations use primary reports only. No2025/2026 SSGI regional panel verified, not a claim that none exists.",
+      "sourceRefs": [
+        "nutrition_morbidity_ssgi2024_final",
+        "nutrition_morbidity_welfare2025"
+      ]
+    },
+    {
+      "indicatorIds": [
+        "nutrition_ski2023_stunting",
+        "nutrition_ski2023_wasting",
+        "morbidity_activity_limiting"
+      ],
+      "candidateYears": [
+        2024,
+        2025,
+        2026
+      ],
+      "queryOrUrl": "\"SSGI 2024\" \"Bogor\" \"SAE\"",
+      "outcome": "Recovered discovery search; actual observations use primary reports only. No2025/2026 SSGI regional panel verified, not a claim that none exists.",
+      "sourceRefs": [
+        "nutrition_morbidity_ssgi2024_final",
+        "nutrition_morbidity_welfare2025"
+      ]
+    },
+    {
+      "indicatorIds": [
+        "nutrition_ski2023_stunting",
+        "nutrition_ski2023_wasting",
+        "morbidity_activity_limiting"
+      ],
+      "candidateYears": [
+        2024,
+        2025,
+        2026
+      ],
+      "queryOrUrl": "\"SSGI 2025\" hasil site:kemkes.go.id",
+      "outcome": "Recovered discovery search; actual observations use primary reports only. No2025/2026 SSGI regional panel verified, not a claim that none exists.",
+      "sourceRefs": [
+        "nutrition_morbidity_ssgi2024_final",
+        "nutrition_morbidity_welfare2025"
+      ]
+    },
+    {
+      "indicatorIds": [
+        "nutrition_ski2023_stunting",
+        "nutrition_ski2023_wasting",
+        "morbidity_activity_limiting"
+      ],
+      "candidateYears": [
+        2024,
+        2025,
+        2026
+      ],
+      "queryOrUrl": "\"SSGI 2026\" site:kemkes.go.id",
+      "outcome": "Recovered discovery search; actual observations use primary reports only. No2025/2026 SSGI regional panel verified, not a claim that none exists.",
+      "sourceRefs": [
+        "nutrition_morbidity_ssgi2024_final",
+        "nutrition_morbidity_welfare2025"
+      ]
+    },
+    {
+      "indicatorIds": [
+        "nutrition_ski2023_stunting",
+        "nutrition_ski2023_wasting",
+        "morbidity_activity_limiting"
+      ],
+      "candidateYears": [
+        2024,
+        2025,
+        2026
+      ],
+      "queryOrUrl": "site:jabar.bps.go.id \"2026\" \"Angka Kesakitan\"",
+      "outcome": "Recovered discovery search; actual observations use primary reports only. No2025/2026 SSGI regional panel verified, not a claim that none exists.",
+      "sourceRefs": [
+        "nutrition_morbidity_ssgi2024_final",
+        "nutrition_morbidity_welfare2025"
+      ]
+    },
+    {
+      "indicatorIds": [
+        "nutrition_ski2023_stunting",
+        "nutrition_ski2023_wasting",
+        "morbidity_activity_limiting"
+      ],
+      "candidateYears": [
+        2024,
+        2025,
+        2026
+      ],
+      "queryOrUrl": "\"SSGI 2025\" \"hasil\" \"Jawa Barat\"",
+      "outcome": "Recovered discovery search; actual observations use primary reports only. No2025/2026 SSGI regional panel verified, not a claim that none exists.",
+      "sourceRefs": [
+        "nutrition_morbidity_ssgi2024_final",
+        "nutrition_morbidity_welfare2025"
+      ]
+    },
+    {
+      "indicatorIds": [
+        "nutrition_ski2023_stunting",
+        "nutrition_ski2023_wasting",
+        "morbidity_activity_limiting"
+      ],
+      "candidateYears": [
+        2024,
+        2025,
+        2026
+      ],
+      "queryOrUrl": "\"Survei Status Gizi\" \"2026\" hasil",
+      "outcome": "Recovered discovery search; actual observations use primary reports only. No2025/2026 SSGI regional panel verified, not a claim that none exists.",
+      "sourceRefs": [
+        "nutrition_morbidity_ssgi2024_final",
+        "nutrition_morbidity_welfare2025"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "candidateId": "morbidity_activity_limiting_2024",
+      "indicatorId": "morbidity_activity_limiting",
+      "candidateYear": 2024,
+      "selectedForYear": true,
+      "status": "COMPATIBLE_CANDIDATE",
+      "availabilityVerified": true,
+      "sourceAgency": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "sourceTitle": "Statistik Kesejahteraan Rakyat Provinsi Jawa Barat 2024",
+      "sourceRefs": [
+        "nutrition_morbidity_welfare2024"
+      ],
+      "sourceUrlOrLocator": "https://jabar.bps.go.id/id/publication/2024/12/13/d9dc099d628ec6dd9ffc8d3b/statistik-kesejahteraan-rakyat-provinsi-jawa-barat-2024.html",
+      "referencePeriod": "One month before March 2024 Susenas interview",
+      "enumerationPeriod": "March 2024",
+      "publicationDate": "2024-12-13",
+      "releaseYear": 2024,
+      "unit": "percent of residents",
+      "denominator": "All survey-weighted residents represented by Susenas March2023, not only clinic users or complainants.",
+      "numerator": null,
+      "definition": "Percentage of all residents reporting a health complaint in the previous month that interfered with work, school or daily activities.",
+      "geographicLevel": "kabupaten/kota",
+      "coverageCount": 27,
+      "reportedCoverageCount": 27,
+      "methodologyNotes": "Welfare2024 PDF95 and2025 PDF89 explicitly define activity-limiting sickness. Not the broader health-complaint percentage or disease-specific administrative cases. All-resident denominator and March recall window retained; no age-standardisation or inferred case counts.",
+      "comparabilityNotes": "Same construct and unit; a newer observation is a research candidate, not model approval.",
+      "recommendation": "Retain for human review before designing a new common-year model; do not replace the frozen 2023 input.",
+      "caveats": [],
+      "methodologyChecks": {
+        "constructEquivalent": true,
+        "denominatorCompatible": true,
+        "methodContinuity": true,
+        "geographyCompatible": true,
+        "referencePeriodVerified": true,
+        "unitVerified": true,
+        "sourceReproducible": true
+      },
+      "derivation": {
+        "kind": "none",
+        "formula": null
+      },
+      "observations": [
+        {
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "value": 13.22,
+          "sourceValue": "13,22",
+          "sourceRef": "nutrition_morbidity_welfare2024",
+          "sourceLocator": "table4.2 / PDF98, printed68; male+female column4; row Bogor; BPS 3201",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3202",
+          "regionName": "Kabupaten Sukabumi",
+          "value": 14.82,
+          "sourceValue": "14,82",
+          "sourceRef": "nutrition_morbidity_welfare2024",
+          "sourceLocator": "table4.2 / PDF98, printed68; male+female column4; row Sukabumi; BPS 3202",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3203",
+          "regionName": "Kabupaten Cianjur",
+          "value": 18.93,
+          "sourceValue": "18,93",
+          "sourceRef": "nutrition_morbidity_welfare2024",
+          "sourceLocator": "table4.2 / PDF98, printed68; male+female column4; row Cianjur; BPS 3203",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": 13.89,
+          "sourceValue": "13,89",
+          "sourceRef": "nutrition_morbidity_welfare2024",
+          "sourceLocator": "table4.2 / PDF98, printed68; male+female column4; row Bandung; BPS 3204",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "value": 18.35,
+          "sourceValue": "18,35",
+          "sourceRef": "nutrition_morbidity_welfare2024",
+          "sourceLocator": "table4.2 / PDF98, printed68; male+female column4; row Garut; BPS 3205",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3206",
+          "regionName": "Kabupaten Tasikmalaya",
+          "value": 17.6,
+          "sourceValue": "17,60",
+          "sourceRef": "nutrition_morbidity_welfare2024",
+          "sourceLocator": "table4.2 / PDF98, printed68; male+female column4; row Tasikmalaya; BPS 3206",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3207",
+          "regionName": "Kabupaten Ciamis",
+          "value": 21.81,
+          "sourceValue": "21,81",
+          "sourceRef": "nutrition_morbidity_welfare2024",
+          "sourceLocator": "table4.2 / PDF98, printed68; male+female column4; row Ciamis; BPS 3207",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3208",
+          "regionName": "Kabupaten Kuningan",
+          "value": 18.37,
+          "sourceValue": "18,37",
+          "sourceRef": "nutrition_morbidity_welfare2024",
+          "sourceLocator": "table4.2 / PDF98, printed68; male+female column4; row Kuningan; BPS 3208",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3209",
+          "regionName": "Kabupaten Cirebon",
+          "value": 18.96,
+          "sourceValue": "18,96",
+          "sourceRef": "nutrition_morbidity_welfare2024",
+          "sourceLocator": "table4.2 / PDF98, printed68; male+female column4; row Cirebon; BPS 3209",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "value": 18.1,
+          "sourceValue": "18,10",
+          "sourceRef": "nutrition_morbidity_welfare2024",
+          "sourceLocator": "table4.2 / PDF98, printed68; male+female column4; row Majalengka; BPS 3210",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3211",
+          "regionName": "Kabupaten Sumedang",
+          "value": 11.88,
+          "sourceValue": "11,88",
+          "sourceRef": "nutrition_morbidity_welfare2024",
+          "sourceLocator": "table4.2 / PDF98, printed68; male+female column4; row Sumedang; BPS 3211",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3212",
+          "regionName": "Kabupaten Indramayu",
+          "value": 15.04,
+          "sourceValue": "15,04",
+          "sourceRef": "nutrition_morbidity_welfare2024",
+          "sourceLocator": "table4.2 / PDF98, printed68; male+female column4; row Indramayu; BPS 3212",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3213",
+          "regionName": "Kabupaten Subang",
+          "value": 9.58,
+          "sourceValue": "9,58",
+          "sourceRef": "nutrition_morbidity_welfare2024",
+          "sourceLocator": "table4.2 / PDF98, printed68; male+female column4; row Subang; BPS 3213",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3214",
+          "regionName": "Kabupaten Purwakarta",
+          "value": 12.89,
+          "sourceValue": "12,89",
+          "sourceRef": "nutrition_morbidity_welfare2024",
+          "sourceLocator": "table4.2 / PDF98, printed68; male+female column4; row Purwakarta; BPS 3214",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3215",
+          "regionName": "Kabupaten Karawang",
+          "value": 10.74,
+          "sourceValue": "10,74",
+          "sourceRef": "nutrition_morbidity_welfare2024",
+          "sourceLocator": "table4.2 / PDF98, printed68; male+female column4; row Karawang; BPS 3215",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "value": 11.39,
+          "sourceValue": "11,39",
+          "sourceRef": "nutrition_morbidity_welfare2024",
+          "sourceLocator": "table4.2 / PDF98, printed68; male+female column4; row Bekasi; BPS 3216",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3217",
+          "regionName": "Kabupaten Bandung Barat",
+          "value": 16.07,
+          "sourceValue": "16,07",
+          "sourceRef": "nutrition_morbidity_welfare2024",
+          "sourceLocator": "table4.2 / PDF98, printed68; male+female column4; row Bandung Barat; BPS 3217",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": 19.17,
+          "sourceValue": "19,17",
+          "sourceRef": "nutrition_morbidity_welfare2024",
+          "sourceLocator": "table4.2 / PDF98, printed68; male+female column4; row Pangandaran; BPS 3218",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "value": 14.49,
+          "sourceValue": "14,49",
+          "sourceRef": "nutrition_morbidity_welfare2024",
+          "sourceLocator": "table4.2 / PDF98, printed68; male+female column4; row Bogor; BPS 3271",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3272",
+          "regionName": "Kota Sukabumi",
+          "value": 17.46,
+          "sourceValue": "17,46",
+          "sourceRef": "nutrition_morbidity_welfare2024",
+          "sourceLocator": "table4.2 / PDF98, printed68; male+female column4; row Sukabumi; BPS 3272",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "value": 8.76,
+          "sourceValue": "8,76",
+          "sourceRef": "nutrition_morbidity_welfare2024",
+          "sourceLocator": "table4.2 / PDF98, printed68; male+female column4; row Bandung; BPS 3273",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3274",
+          "regionName": "Kota Cirebon",
+          "value": 14.2,
+          "sourceValue": "14,20",
+          "sourceRef": "nutrition_morbidity_welfare2024",
+          "sourceLocator": "table4.2 / PDF98, printed68; male+female column4; row Cirebon; BPS 3274",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": 11.67,
+          "sourceValue": "11,67",
+          "sourceRef": "nutrition_morbidity_welfare2024",
+          "sourceLocator": "table4.2 / PDF98, printed68; male+female column4; row Bekasi; BPS 3275",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "value": 7,
+          "sourceValue": "7,00",
+          "sourceRef": "nutrition_morbidity_welfare2024",
+          "sourceLocator": "table4.2 / PDF98, printed68; male+female column4; row Depok; BPS 3276",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3277",
+          "regionName": "Kota Cimahi",
+          "value": 10.81,
+          "sourceValue": "10,81",
+          "sourceRef": "nutrition_morbidity_welfare2024",
+          "sourceLocator": "table4.2 / PDF98, printed68; male+female column4; row Cimahi; BPS 3277",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": 16.29,
+          "sourceValue": "16,29",
+          "sourceRef": "nutrition_morbidity_welfare2024",
+          "sourceLocator": "table4.2 / PDF98, printed68; male+female column4; row Tasikmalaya; BPS 3278",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3279",
+          "regionName": "Kota Banjar",
+          "value": 10.92,
+          "sourceValue": "10,92",
+          "sourceRef": "nutrition_morbidity_welfare2024",
+          "sourceLocator": "table4.2 / PDF98, printed68; male+female column4; row Banjar; BPS 3279",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        }
+      ],
+      "latestContextCandidate": false,
+      "alternativesRejected": []
+    },
+    {
+      "candidateId": "morbidity_activity_limiting_2025",
+      "indicatorId": "morbidity_activity_limiting",
+      "candidateYear": 2025,
+      "selectedForYear": true,
+      "status": "COMPATIBLE_CANDIDATE",
+      "availabilityVerified": true,
+      "sourceAgency": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "sourceTitle": "Statistik Kesejahteraan Rakyat Provinsi Jawa Barat 2025",
+      "sourceRefs": [
+        "nutrition_morbidity_welfare2025"
+      ],
+      "sourceUrlOrLocator": "https://jabar.bps.go.id/id/publication/2025/11/28/5c47dbf83e4123e9a47090fe/statistik-kesejahteraan-rakyat-provinsi-jawa-barat-2025.html",
+      "referencePeriod": "One month before March 2025 Susenas interview",
+      "enumerationPeriod": "March 2025",
+      "publicationDate": "2025-11-28",
+      "releaseYear": 2025,
+      "unit": "percent of residents",
+      "denominator": "All survey-weighted residents represented by Susenas March2023, not only clinic users or complainants.",
+      "numerator": null,
+      "definition": "Percentage of all residents reporting a health complaint in the previous month that interfered with work, school or daily activities.",
+      "geographicLevel": "kabupaten/kota",
+      "coverageCount": 27,
+      "reportedCoverageCount": 27,
+      "methodologyNotes": "Welfare2024 PDF95 and2025 PDF89 explicitly define activity-limiting sickness. Not the broader health-complaint percentage or disease-specific administrative cases. All-resident denominator and March recall window retained; no age-standardisation or inferred case counts.",
+      "comparabilityNotes": "Same construct and unit; a newer observation is a research candidate, not model approval.",
+      "recommendation": "Retain for human review before designing a new common-year model; do not replace the frozen 2023 input.",
+      "caveats": [],
+      "methodologyChecks": {
+        "constructEquivalent": true,
+        "denominatorCompatible": true,
+        "methodContinuity": true,
+        "geographyCompatible": true,
+        "referencePeriodVerified": true,
+        "unitVerified": true,
+        "sourceReproducible": true
+      },
+      "derivation": {
+        "kind": "none",
+        "formula": null
+      },
+      "observations": [
+        {
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "value": 13.99,
+          "sourceValue": "13,99",
+          "sourceRef": "nutrition_morbidity_welfare2025",
+          "sourceLocator": "table4.2 / PDF94, printed60; male+female column4; row Bogor; BPS 3201",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3202",
+          "regionName": "Kabupaten Sukabumi",
+          "value": 14.29,
+          "sourceValue": "14,29",
+          "sourceRef": "nutrition_morbidity_welfare2025",
+          "sourceLocator": "table4.2 / PDF94, printed60; male+female column4; row Sukabumi; BPS 3202",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3203",
+          "regionName": "Kabupaten Cianjur",
+          "value": 19.25,
+          "sourceValue": "19,25",
+          "sourceRef": "nutrition_morbidity_welfare2025",
+          "sourceLocator": "table4.2 / PDF94, printed60; male+female column4; row Cianjur; BPS 3203",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": 14.02,
+          "sourceValue": "14,02",
+          "sourceRef": "nutrition_morbidity_welfare2025",
+          "sourceLocator": "table4.2 / PDF94, printed60; male+female column4; row Bandung; BPS 3204",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "value": 25.6,
+          "sourceValue": "25,60",
+          "sourceRef": "nutrition_morbidity_welfare2025",
+          "sourceLocator": "table4.2 / PDF94, printed60; male+female column4; row Garut; BPS 3205",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3206",
+          "regionName": "Kabupaten Tasikmalaya",
+          "value": 18.05,
+          "sourceValue": "18,05",
+          "sourceRef": "nutrition_morbidity_welfare2025",
+          "sourceLocator": "table4.2 / PDF94, printed60; male+female column4; row Tasikmalaya; BPS 3206",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3207",
+          "regionName": "Kabupaten Ciamis",
+          "value": 24.96,
+          "sourceValue": "24,96",
+          "sourceRef": "nutrition_morbidity_welfare2025",
+          "sourceLocator": "table4.2 / PDF94, printed60; male+female column4; row Ciamis; BPS 3207",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3208",
+          "regionName": "Kabupaten Kuningan",
+          "value": 21.46,
+          "sourceValue": "21,46",
+          "sourceRef": "nutrition_morbidity_welfare2025",
+          "sourceLocator": "table4.2 / PDF94, printed60; male+female column4; row Kuningan; BPS 3208",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3209",
+          "regionName": "Kabupaten Cirebon",
+          "value": 19.69,
+          "sourceValue": "19,69",
+          "sourceRef": "nutrition_morbidity_welfare2025",
+          "sourceLocator": "table4.2 / PDF94, printed60; male+female column4; row Cirebon; BPS 3209",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "value": 17.45,
+          "sourceValue": "17,45",
+          "sourceRef": "nutrition_morbidity_welfare2025",
+          "sourceLocator": "table4.2 / PDF94, printed60; male+female column4; row Majalengka; BPS 3210",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3211",
+          "regionName": "Kabupaten Sumedang",
+          "value": 19.25,
+          "sourceValue": "19,25",
+          "sourceRef": "nutrition_morbidity_welfare2025",
+          "sourceLocator": "table4.2 / PDF94, printed60; male+female column4; row Sumedang; BPS 3211",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3212",
+          "regionName": "Kabupaten Indramayu",
+          "value": 13.14,
+          "sourceValue": "13,14",
+          "sourceRef": "nutrition_morbidity_welfare2025",
+          "sourceLocator": "table4.2 / PDF94, printed60; male+female column4; row Indramayu; BPS 3212",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3213",
+          "regionName": "Kabupaten Subang",
+          "value": 10.1,
+          "sourceValue": "10,10",
+          "sourceRef": "nutrition_morbidity_welfare2025",
+          "sourceLocator": "table4.2 / PDF94, printed60; male+female column4; row Subang; BPS 3213",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3214",
+          "regionName": "Kabupaten Purwakarta",
+          "value": 15.19,
+          "sourceValue": "15,19",
+          "sourceRef": "nutrition_morbidity_welfare2025",
+          "sourceLocator": "table4.2 / PDF94, printed60; male+female column4; row Purwakarta; BPS 3214",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3215",
+          "regionName": "Kabupaten Karawang",
+          "value": 13.1,
+          "sourceValue": "13,10",
+          "sourceRef": "nutrition_morbidity_welfare2025",
+          "sourceLocator": "table4.2 / PDF94, printed60; male+female column4; row Karawang; BPS 3215",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "value": 10.28,
+          "sourceValue": "10,28",
+          "sourceRef": "nutrition_morbidity_welfare2025",
+          "sourceLocator": "table4.2 / PDF94, printed60; male+female column4; row Bekasi; BPS 3216",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3217",
+          "regionName": "Kabupaten Bandung Barat",
+          "value": 17.54,
+          "sourceValue": "17,54",
+          "sourceRef": "nutrition_morbidity_welfare2025",
+          "sourceLocator": "table4.2 / PDF94, printed60; male+female column4; row Bandung Barat; BPS 3217",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": 21.64,
+          "sourceValue": "21,64",
+          "sourceRef": "nutrition_morbidity_welfare2025",
+          "sourceLocator": "table4.2 / PDF94, printed60; male+female column4; row Pangandaran; BPS 3218",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "value": 15.11,
+          "sourceValue": "15,11",
+          "sourceRef": "nutrition_morbidity_welfare2025",
+          "sourceLocator": "table4.2 / PDF94, printed60; male+female column4; row Bogor; BPS 3271",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3272",
+          "regionName": "Kota Sukabumi",
+          "value": 16.75,
+          "sourceValue": "16,75",
+          "sourceRef": "nutrition_morbidity_welfare2025",
+          "sourceLocator": "table4.2 / PDF94, printed60; male+female column4; row Sukabumi; BPS 3272",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "value": 10.84,
+          "sourceValue": "10,84",
+          "sourceRef": "nutrition_morbidity_welfare2025",
+          "sourceLocator": "table4.2 / PDF94, printed60; male+female column4; row Bandung; BPS 3273",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3274",
+          "regionName": "Kota Cirebon",
+          "value": 13.59,
+          "sourceValue": "13,59",
+          "sourceRef": "nutrition_morbidity_welfare2025",
+          "sourceLocator": "table4.2 / PDF94, printed60; male+female column4; row Cirebon; BPS 3274",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": 9.82,
+          "sourceValue": "9,82",
+          "sourceRef": "nutrition_morbidity_welfare2025",
+          "sourceLocator": "table4.2 / PDF94, printed60; male+female column4; row Bekasi; BPS 3275",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "value": 9.46,
+          "sourceValue": "9,46",
+          "sourceRef": "nutrition_morbidity_welfare2025",
+          "sourceLocator": "table4.2 / PDF94, printed60; male+female column4; row Depok; BPS 3276",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3277",
+          "regionName": "Kota Cimahi",
+          "value": 8.91,
+          "sourceValue": "8,91",
+          "sourceRef": "nutrition_morbidity_welfare2025",
+          "sourceLocator": "table4.2 / PDF94, printed60; male+female column4; row Cimahi; BPS 3277",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": 17.9,
+          "sourceValue": "17,90",
+          "sourceRef": "nutrition_morbidity_welfare2025",
+          "sourceLocator": "table4.2 / PDF94, printed60; male+female column4; row Tasikmalaya; BPS 3278",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3279",
+          "regionName": "Kota Banjar",
+          "value": 12.71,
+          "sourceValue": "12,71",
+          "sourceRef": "nutrition_morbidity_welfare2025",
+          "sourceLocator": "table4.2 / PDF94, printed60; male+female column4; row Banjar; BPS 3279",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": null
+        }
+      ],
+      "latestContextCandidate": false,
+      "alternativesRejected": []
+    },
+    {
+      "candidateId": "nutrition_ski2023_stunting_2024",
+      "indicatorId": "nutrition_ski2023_stunting",
+      "candidateYear": 2024,
+      "selectedForYear": true,
+      "status": "COMPATIBLE_WITH_CAVEAT",
+      "availabilityVerified": true,
+      "sourceAgency": "Badan Kebijakan Pembangunan Kesehatan, Kementerian Kesehatan RI; BPS sampling/weighting/SAE",
+      "sourceTitle": "Survei Status Gizi Indonesia (SSGI) 2024 Dalam Angka — current BKPK-linked release",
+      "sourceRefs": [
+        "nutrition_morbidity_ssgi2024_final",
+        "nutrition_morbidity_ssgi2024_launch",
+        "nutrition_morbidity_ssgi2024_guide"
+      ],
+      "sourceUrlOrLocator": "https://www.badankebijakan.kemkes.go.id/survei-status-gizi-indonesia-ssgi-2024/",
+      "referencePeriod": "SSGI reference2024",
+      "enumerationPeriod": "October2024–February2025",
+      "publicationDate": null,
+      "releaseYear": 2025,
+      "unit": "percent of measured children aged 0–59 months",
+      "denominator": "Survey-weighted children age0–59 months with eligible height/age measurements; not all residents or a fixed administrative child registry.",
+      "numerator": null,
+      "definition": "Height-for-age below-2 WHO z-scores, including severe stunting, among children0–59 months.",
+      "geographicLevel": "kabupaten/kota",
+      "coverageCount": 27,
+      "reportedCoverageCount": 27,
+      "methodologyNotes": "Current table4.14 has all27 regions and total stunting. Earlier launch table4.54 had22 regions and separate subclasses. Current methods permitSAE whereRSE>25%, response<70%, no secure fieldwork, or change>10% versus2023; table does not identify each district method. Fieldwork crosses into2025 but source reference remains2024.",
+      "comparabilityNotes": "Age group and total-stunting construct match SKI2023; change fromSKI toSSGI, mixed direct/SAE estimation and cross-year fieldwork require explicit review. Not a proven year-on-year change or direct-only panel.",
+      "recommendation": "Retain for human review before designing a new common-year model; do not replace the frozen 2023 input.",
+      "caveats": [
+        "Survey changes fromSKI2023 toSSGI2024.",
+        "Direct versusSAE assignment is not labelled for each district; do not infer it from the five launch omissions.",
+        "Collection ranOctober2024–February2025; source calls the reference year2024.",
+        "Use published CIs; no CI/rank significance is reconstructed."
+      ],
+      "methodologyChecks": {
+        "constructEquivalent": true,
+        "denominatorCompatible": true,
+        "methodContinuity": null,
+        "geographyCompatible": true,
+        "referencePeriodVerified": true,
+        "unitVerified": true,
+        "sourceReproducible": true
+      },
+      "derivation": {
+        "kind": "none",
+        "formula": null
+      },
+      "observations": [
+        {
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "value": 18.9,
+          "sourceValue": "18,9",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; total stunting TB/U < -2; row Bogor",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 10.2,
+            "upper": 27.6,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3202",
+          "regionName": "Kabupaten Sukabumi",
+          "value": 20.5,
+          "sourceValue": "20,5",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; total stunting TB/U < -2; row Sukabumi",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 16.5,
+            "upper": 25.3,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3203",
+          "regionName": "Kabupaten Cianjur",
+          "value": 7.2,
+          "sourceValue": "7,2",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; total stunting TB/U < -2; row Cianjur",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 5.4,
+            "upper": 9.7,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": 24.1,
+          "sourceValue": "24,1",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; total stunting TB/U < -2; row Bandung",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 20.4,
+            "upper": 28.2,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "value": 14.2,
+          "sourceValue": "14,2",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; total stunting TB/U < -2; row Garut",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 9.2,
+            "upper": 21.1,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3206",
+          "regionName": "Kabupaten Tasikmalaya",
+          "value": 17,
+          "sourceValue": "17,0",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; total stunting TB/U < -2; row Tasikmalaya",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 13.4,
+            "upper": 21.5,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3207",
+          "regionName": "Kabupaten Ciamis",
+          "value": 20.3,
+          "sourceValue": "20,3",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; total stunting TB/U < -2; row Ciamis",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 12.4,
+            "upper": 28.1,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3208",
+          "regionName": "Kabupaten Kuningan",
+          "value": 22.7,
+          "sourceValue": "22,7",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; total stunting TB/U < -2; row Kuningan",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 18.6,
+            "upper": 27.5,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3209",
+          "regionName": "Kabupaten Cirebon",
+          "value": 18,
+          "sourceValue": "18,0",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; total stunting TB/U < -2; row Cirebon",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 11.2,
+            "upper": 24.8,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "value": 18,
+          "sourceValue": "18,0",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; total stunting TB/U < -2; row Majalengka",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 14.9,
+            "upper": 21.6,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3211",
+          "regionName": "Kabupaten Sumedang",
+          "value": 17,
+          "sourceValue": "17,0",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; total stunting TB/U < -2; row Sumedang",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 13.8,
+            "upper": 21,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3212",
+          "regionName": "Kabupaten Indramayu",
+          "value": 9.8,
+          "sourceValue": "9,8",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; total stunting TB/U < -2; row Indramayu",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 7.7,
+            "upper": 12.4,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3213",
+          "regionName": "Kabupaten Subang",
+          "value": 12.4,
+          "sourceValue": "12,4",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; total stunting TB/U < -2; row Subang",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 9.4,
+            "upper": 16.1,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3214",
+          "regionName": "Kabupaten Purwakarta",
+          "value": 14.4,
+          "sourceValue": "14,4",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; total stunting TB/U < -2; row Purwakarta",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 11.4,
+            "upper": 18.4,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3215",
+          "regionName": "Kabupaten Karawang",
+          "value": 17.6,
+          "sourceValue": "17,6",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; total stunting TB/U < -2; row Karawang",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 14.6,
+            "upper": 21,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "value": 18.2,
+          "sourceValue": "18,2",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; total stunting TB/U < -2; row Bekasi",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 11.6,
+            "upper": 24.9,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3217",
+          "regionName": "Kabupaten Bandung Barat",
+          "value": 30.8,
+          "sourceValue": "30,8",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; total stunting TB/U < -2; row Bandung Barat",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 26.1,
+            "upper": 35.9,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": 17.3,
+          "sourceValue": "17,3",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; total stunting TB/U < -2; row Pangandaran",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 13.8,
+            "upper": 21.3,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "value": 21.1,
+          "sourceValue": "21,1",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; total stunting TB/U < -2; row Kota Bogor",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 17.6,
+            "upper": 25.1,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3272",
+          "regionName": "Kota Sukabumi",
+          "value": 19.7,
+          "sourceValue": "19,7",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; total stunting TB/U < -2; row Kota Sukabumi",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 13.7,
+            "upper": 25.7,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "value": 22.8,
+          "sourceValue": "22,8",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; total stunting TB/U < -2; row Kota Bandung",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 19.8,
+            "upper": 26.2,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3274",
+          "regionName": "Kota Cirebon",
+          "value": 14.9,
+          "sourceValue": "14,9",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; total stunting TB/U < -2; row Kota Cirebon",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 11,
+            "upper": 20,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": 11.7,
+          "sourceValue": "11,7",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; total stunting TB/U < -2; row Kota Bekasi",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 9.6,
+            "upper": 14.1,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "value": 12.5,
+          "sourceValue": "12,5",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; total stunting TB/U < -2; row Kota Depok",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 9.9,
+            "upper": 15.7,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3277",
+          "regionName": "Kota Cimahi",
+          "value": 22.3,
+          "sourceValue": "22,3",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; total stunting TB/U < -2; row Kota Cimahi",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 19.2,
+            "upper": 25.7,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": 19.6,
+          "sourceValue": "19,6",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; total stunting TB/U < -2; row Kota Tasikmalaya",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 16.2,
+            "upper": 23.4,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3279",
+          "regionName": "Kota Banjar",
+          "value": 18.8,
+          "sourceValue": "18,8",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; total stunting TB/U < -2; row Kota Banjar",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 15.2,
+            "upper": 23.1,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        }
+      ],
+      "latestContextCandidate": false,
+      "alternativesRejected": [
+        "Launch table4.54 is22/27 and its Stunting column excludes severe stunting; do not treat that column as frozen total stunting."
+      ]
+    },
+    {
+      "candidateId": "nutrition_ski2023_wasting_2024",
+      "indicatorId": "nutrition_ski2023_wasting",
+      "candidateYear": 2024,
+      "selectedForYear": true,
+      "status": "NOT_COMPARABLE",
+      "availabilityVerified": true,
+      "sourceAgency": "Badan Kebijakan Pembangunan Kesehatan, Kementerian Kesehatan RI; BPS sampling/weighting/SAE",
+      "sourceTitle": "Survei Status Gizi Indonesia (SSGI) 2024 Dalam Angka — current BKPK-linked release",
+      "sourceRefs": [
+        "nutrition_morbidity_ssgi2024_final",
+        "nutrition_morbidity_ssgi2024_launch",
+        "nutrition_morbidity_ssgi2024_guide"
+      ],
+      "sourceUrlOrLocator": "https://www.badankebijakan.kemkes.go.id/survei-status-gizi-indonesia-ssgi-2024/",
+      "referencePeriod": "SSGI reference2024",
+      "enumerationPeriod": "October2024–February2025",
+      "publicationDate": null,
+      "releaseYear": 2025,
+      "unit": "percent of measured children aged 0–59 months",
+      "denominator": "Survey-weighted children age0–59 months with eligible weight-for-length/height measurements.",
+      "numerator": null,
+      "definition": "Published Wasting column is moderate-only: -3 ≤ weight-for-length/height z-score < -2. Severe wasting below-3 is a separate column.",
+      "geographicLevel": "kabupaten/kota",
+      "coverageCount": 27,
+      "reportedCoverageCount": 27,
+      "methodologyNotes": "PDF41 defines moderate and severe categories separately; table4.14/PDF50 has27 moderate-wasting values. Frozen SKI2023 wasting is total below-2, including severe. Direct/SAE and fieldwork caveats also apply.",
+      "comparabilityNotes": "Copying the published Wasting column would drop severe wasting and change the frozen construct. This audit does not silently sum rounded categories or manufacture a total-prevalence CI. A source-confirmed total or explicitly reviewed component-based bridge is still needed.",
+      "recommendation": "Obtain the official below-2 total, or review an explicit severe+moderate bridge with source precision and uncertainty limits. Do not replace total SKI2023 wasting with moderate-only SSGI2024.",
+      "caveats": [
+        "Numeric coverage27/27 is not construct compatibility.",
+        "Separate severe percentages and CIs exist in table4.14; confidence limits cannot be added to obtain a total CI."
+      ],
+      "methodologyChecks": {
+        "constructEquivalent": false,
+        "denominatorCompatible": true,
+        "methodContinuity": false,
+        "geographyCompatible": true,
+        "referencePeriodVerified": true,
+        "unitVerified": true,
+        "sourceReproducible": true
+      },
+      "derivation": {
+        "kind": "none",
+        "formula": null
+      },
+      "observations": [
+        {
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "value": 4.8,
+          "sourceValue": "4,8",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; moderate-only wasting -3 ≤ BB/TB z-score < -2; row Bogor",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 2.8,
+            "upper": 6.7,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3202",
+          "regionName": "Kabupaten Sukabumi",
+          "value": 3.1,
+          "sourceValue": "3,1",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; moderate-only wasting -3 ≤ BB/TB z-score < -2; row Sukabumi",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 2,
+            "upper": 4.6,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3203",
+          "regionName": "Kabupaten Cianjur",
+          "value": 2.8,
+          "sourceValue": "2,8",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; moderate-only wasting -3 ≤ BB/TB z-score < -2; row Cianjur",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 1.8,
+            "upper": 4.4,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": 2.2,
+          "sourceValue": "2,2",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; moderate-only wasting -3 ≤ BB/TB z-score < -2; row Bandung",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 1.3,
+            "upper": 3.9,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "value": 2.5,
+          "sourceValue": "2,5",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; moderate-only wasting -3 ≤ BB/TB z-score < -2; row Garut",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 1.4,
+            "upper": 4.3,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3206",
+          "regionName": "Kabupaten Tasikmalaya",
+          "value": 1.1,
+          "sourceValue": "1,1",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; moderate-only wasting -3 ≤ BB/TB z-score < -2; row Tasikmalaya",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 0.5,
+            "upper": 2.2,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3207",
+          "regionName": "Kabupaten Ciamis",
+          "value": 4.1,
+          "sourceValue": "4,1",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; moderate-only wasting -3 ≤ BB/TB z-score < -2; row Ciamis",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 2.5,
+            "upper": 5.8,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3208",
+          "regionName": "Kabupaten Kuningan",
+          "value": 4.8,
+          "sourceValue": "4,8",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; moderate-only wasting -3 ≤ BB/TB z-score < -2; row Kuningan",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 3.3,
+            "upper": 6.9,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3209",
+          "regionName": "Kabupaten Cirebon",
+          "value": 6.3,
+          "sourceValue": "6,3",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; moderate-only wasting -3 ≤ BB/TB z-score < -2; row Cirebon",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 4.1,
+            "upper": 8.6,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "value": 6.5,
+          "sourceValue": "6,5",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; moderate-only wasting -3 ≤ BB/TB z-score < -2; row Majalengka",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 4.5,
+            "upper": 9.5,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3211",
+          "regionName": "Kabupaten Sumedang",
+          "value": 2.6,
+          "sourceValue": "2,6",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; moderate-only wasting -3 ≤ BB/TB z-score < -2; row Sumedang",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 1.6,
+            "upper": 4.2,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3212",
+          "regionName": "Kabupaten Indramayu",
+          "value": 6.3,
+          "sourceValue": "6,3",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; moderate-only wasting -3 ≤ BB/TB z-score < -2; row Indramayu",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 4.5,
+            "upper": 8.6,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3213",
+          "regionName": "Kabupaten Subang",
+          "value": 4.2,
+          "sourceValue": "4,2",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; moderate-only wasting -3 ≤ BB/TB z-score < -2; row Subang",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 2.9,
+            "upper": 6.1,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3214",
+          "regionName": "Kabupaten Purwakarta",
+          "value": 3.4,
+          "sourceValue": "3,4",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; moderate-only wasting -3 ≤ BB/TB z-score < -2; row Purwakarta",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 2,
+            "upper": 5.7,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3215",
+          "regionName": "Kabupaten Karawang",
+          "value": 7.3,
+          "sourceValue": "7,3",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; moderate-only wasting -3 ≤ BB/TB z-score < -2; row Karawang",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 5.1,
+            "upper": 10.3,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "value": 4.8,
+          "sourceValue": "4,8",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; moderate-only wasting -3 ≤ BB/TB z-score < -2; row Bekasi",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 3,
+            "upper": 6.6,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3217",
+          "regionName": "Kabupaten Bandung Barat",
+          "value": 4.3,
+          "sourceValue": "4,3",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; moderate-only wasting -3 ≤ BB/TB z-score < -2; row Bandung Barat",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 2.8,
+            "upper": 6.6,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": 5.9,
+          "sourceValue": "5,9",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; moderate-only wasting -3 ≤ BB/TB z-score < -2; row Pangandaran",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 4.2,
+            "upper": 8.1,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "value": 4,
+          "sourceValue": "4,0",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; moderate-only wasting -3 ≤ BB/TB z-score < -2; row Kota Bogor",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 2.6,
+            "upper": 6.1,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3272",
+          "regionName": "Kota Sukabumi",
+          "value": 4.5,
+          "sourceValue": "4,5",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; moderate-only wasting -3 ≤ BB/TB z-score < -2; row Kota Sukabumi",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 2.5,
+            "upper": 6.5,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "value": 4,
+          "sourceValue": "4,0",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; moderate-only wasting -3 ≤ BB/TB z-score < -2; row Kota Bandung",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 2.5,
+            "upper": 6.2,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3274",
+          "regionName": "Kota Cirebon",
+          "value": 6.9,
+          "sourceValue": "6,9",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; moderate-only wasting -3 ≤ BB/TB z-score < -2; row Kota Cirebon",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 4.8,
+            "upper": 9.7,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": 2.9,
+          "sourceValue": "2,9",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; moderate-only wasting -3 ≤ BB/TB z-score < -2; row Kota Bekasi",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 1.5,
+            "upper": 5.4,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "value": 4.1,
+          "sourceValue": "4,1",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; moderate-only wasting -3 ≤ BB/TB z-score < -2; row Kota Depok",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 2.7,
+            "upper": 6.2,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3277",
+          "regionName": "Kota Cimahi",
+          "value": 3.7,
+          "sourceValue": "3,7",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; moderate-only wasting -3 ≤ BB/TB z-score < -2; row Kota Cimahi",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 2.4,
+            "upper": 5.8,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": 3.9,
+          "sourceValue": "3,9",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; moderate-only wasting -3 ≤ BB/TB z-score < -2; row Kota Tasikmalaya",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 2.6,
+            "upper": 5.8,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        },
+        {
+          "regionId": "3279",
+          "regionName": "Kota Banjar",
+          "value": 5.2,
+          "sourceValue": "5,2",
+          "sourceRef": "nutrition_morbidity_ssgi2024_final",
+          "sourceLocator": "table4.14 / PDF50, printed28; moderate-only wasting -3 ≤ BB/TB z-score < -2; row Kota Banjar",
+          "missingReason": null,
+          "estimationMethod": "published_estimate",
+          "components": null,
+          "uncertainty": {
+            "description": "Published95% confidence interval for this exact reported category; direct/SAE label not identified by district in table4.14.",
+            "lower": 3.2,
+            "upper": 8.6,
+            "standardError": null,
+            "relativeStandardError": null
+          }
+        }
+      ],
+      "latestContextCandidate": false,
+      "alternativesRejected": []
+    },
+    {
+      "candidateId": "nutrition_ski2023_stunting_2025",
+      "indicatorId": "nutrition_ski2023_stunting",
+      "candidateYear": 2025,
+      "selectedForYear": true,
+      "status": "NOT_FOUND",
+      "availabilityVerified": false,
+      "sourceAgency": "Badan Kebijakan Pembangunan Kesehatan, Kementerian Kesehatan RI; BPS sampling/weighting/SAE",
+      "sourceTitle": "Survei Status Gizi Indonesia (SSGI) 2024 Dalam Angka — current BKPK-linked release",
+      "sourceRefs": [
+        "nutrition_morbidity_ssgi2024_final"
+      ],
+      "sourceUrlOrLocator": "https://www.badankebijakan.kemkes.go.id/survei-status-gizi-indonesia-ssgi-2024/",
+      "referencePeriod": null,
+      "enumerationPeriod": null,
+      "publicationDate": null,
+      "releaseYear": 2025,
+      "unit": "percent of measured children aged 0–59 months",
+      "denominator": "Survey-weighted children0–59 months measured for relevant index; published N tertimbang retained, not unweighted sample size.",
+      "numerator": null,
+      "definition": "Height-for-age z-score below -2 including severe below -3; ages0–59 months.",
+      "geographicLevel": "kabupaten/kota",
+      "coverageCount": 0,
+      "reportedCoverageCount": null,
+      "methodologyNotes": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+      "comparabilityNotes": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+      "recommendation": "Do not substitute another year, province aggregate, administrative membership series, or unrelated construct. No defensible regional candidate was verified in this audit.",
+      "caveats": [],
+      "methodologyChecks": {
+        "constructEquivalent": null,
+        "denominatorCompatible": null,
+        "methodContinuity": null,
+        "geographyCompatible": null,
+        "referencePeriodVerified": false,
+        "unitVerified": false,
+        "sourceReproducible": false
+      },
+      "derivation": {
+        "kind": "none",
+        "formula": null
+      },
+      "observations": [
+        {
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3202",
+          "regionName": "Kabupaten Sukabumi",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3203",
+          "regionName": "Kabupaten Cianjur",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3206",
+          "regionName": "Kabupaten Tasikmalaya",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3207",
+          "regionName": "Kabupaten Ciamis",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3208",
+          "regionName": "Kabupaten Kuningan",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3209",
+          "regionName": "Kabupaten Cirebon",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3211",
+          "regionName": "Kabupaten Sumedang",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3212",
+          "regionName": "Kabupaten Indramayu",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3213",
+          "regionName": "Kabupaten Subang",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3214",
+          "regionName": "Kabupaten Purwakarta",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3215",
+          "regionName": "Kabupaten Karawang",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3217",
+          "regionName": "Kabupaten Bandung Barat",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3272",
+          "regionName": "Kota Sukabumi",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3274",
+          "regionName": "Kota Cirebon",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3277",
+          "regionName": "Kota Cimahi",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3279",
+          "regionName": "Kota Banjar",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        }
+      ],
+      "latestContextCandidate": false,
+      "alternativesRejected": []
+    },
+    {
+      "candidateId": "nutrition_ski2023_wasting_2025",
+      "indicatorId": "nutrition_ski2023_wasting",
+      "candidateYear": 2025,
+      "selectedForYear": true,
+      "status": "NOT_FOUND",
+      "availabilityVerified": false,
+      "sourceAgency": "Badan Kebijakan Pembangunan Kesehatan, Kementerian Kesehatan RI; BPS sampling/weighting/SAE",
+      "sourceTitle": "Survei Status Gizi Indonesia (SSGI) 2024 Dalam Angka — current BKPK-linked release",
+      "sourceRefs": [
+        "nutrition_morbidity_ssgi2024_final"
+      ],
+      "sourceUrlOrLocator": "https://www.badankebijakan.kemkes.go.id/survei-status-gizi-indonesia-ssgi-2024/",
+      "referencePeriod": null,
+      "enumerationPeriod": null,
+      "publicationDate": null,
+      "releaseYear": 2025,
+      "unit": "percent of measured children aged 0–59 months",
+      "denominator": "Survey-weighted children0–59 months measured for relevant index; published N tertimbang retained, not unweighted sample size.",
+      "numerator": null,
+      "definition": "Weight-for-length/height z-score below -2 including severe below -3; ages0–59 months.",
+      "geographicLevel": "kabupaten/kota",
+      "coverageCount": 0,
+      "reportedCoverageCount": null,
+      "methodologyNotes": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+      "comparabilityNotes": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+      "recommendation": "Do not substitute another year, province aggregate, administrative membership series, or unrelated construct. No defensible regional candidate was verified in this audit.",
+      "caveats": [],
+      "methodologyChecks": {
+        "constructEquivalent": null,
+        "denominatorCompatible": null,
+        "methodContinuity": null,
+        "geographyCompatible": null,
+        "referencePeriodVerified": false,
+        "unitVerified": false,
+        "sourceReproducible": false
+      },
+      "derivation": {
+        "kind": "none",
+        "formula": null
+      },
+      "observations": [
+        {
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3202",
+          "regionName": "Kabupaten Sukabumi",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3203",
+          "regionName": "Kabupaten Cianjur",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3206",
+          "regionName": "Kabupaten Tasikmalaya",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3207",
+          "regionName": "Kabupaten Ciamis",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3208",
+          "regionName": "Kabupaten Kuningan",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3209",
+          "regionName": "Kabupaten Cirebon",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3211",
+          "regionName": "Kabupaten Sumedang",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3212",
+          "regionName": "Kabupaten Indramayu",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3213",
+          "regionName": "Kabupaten Subang",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3214",
+          "regionName": "Kabupaten Purwakarta",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3215",
+          "regionName": "Kabupaten Karawang",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3217",
+          "regionName": "Kabupaten Bandung Barat",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3272",
+          "regionName": "Kota Sukabumi",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3274",
+          "regionName": "Kota Cirebon",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3277",
+          "regionName": "Kota Cimahi",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3279",
+          "regionName": "Kota Banjar",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2025 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        }
+      ],
+      "latestContextCandidate": false,
+      "alternativesRejected": []
+    },
+    {
+      "candidateId": "nutrition_ski2023_stunting_2026",
+      "indicatorId": "nutrition_ski2023_stunting",
+      "candidateYear": 2026,
+      "selectedForYear": true,
+      "status": "NOT_FOUND",
+      "availabilityVerified": false,
+      "sourceAgency": "Badan Kebijakan Pembangunan Kesehatan, Kementerian Kesehatan RI; BPS sampling/weighting/SAE",
+      "sourceTitle": "Survei Status Gizi Indonesia (SSGI) 2024 Dalam Angka — current BKPK-linked release",
+      "sourceRefs": [
+        "nutrition_morbidity_ssgi2024_final"
+      ],
+      "sourceUrlOrLocator": "https://www.badankebijakan.kemkes.go.id/survei-status-gizi-indonesia-ssgi-2024/",
+      "referencePeriod": null,
+      "enumerationPeriod": null,
+      "publicationDate": null,
+      "releaseYear": 2025,
+      "unit": "percent of measured children aged 0–59 months",
+      "denominator": "Survey-weighted children0–59 months measured for relevant index; published N tertimbang retained, not unweighted sample size.",
+      "numerator": null,
+      "definition": "Height-for-age z-score below -2 including severe below -3; ages0–59 months.",
+      "geographicLevel": "kabupaten/kota",
+      "coverageCount": 0,
+      "reportedCoverageCount": null,
+      "methodologyNotes": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+      "comparabilityNotes": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+      "recommendation": "Do not substitute another year, province aggregate, administrative membership series, or unrelated construct. No defensible regional candidate was verified in this audit.",
+      "caveats": [],
+      "methodologyChecks": {
+        "constructEquivalent": null,
+        "denominatorCompatible": null,
+        "methodContinuity": null,
+        "geographyCompatible": null,
+        "referencePeriodVerified": false,
+        "unitVerified": false,
+        "sourceReproducible": false
+      },
+      "derivation": {
+        "kind": "none",
+        "formula": null
+      },
+      "observations": [
+        {
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3202",
+          "regionName": "Kabupaten Sukabumi",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3203",
+          "regionName": "Kabupaten Cianjur",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3206",
+          "regionName": "Kabupaten Tasikmalaya",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3207",
+          "regionName": "Kabupaten Ciamis",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3208",
+          "regionName": "Kabupaten Kuningan",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3209",
+          "regionName": "Kabupaten Cirebon",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3211",
+          "regionName": "Kabupaten Sumedang",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3212",
+          "regionName": "Kabupaten Indramayu",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3213",
+          "regionName": "Kabupaten Subang",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3214",
+          "regionName": "Kabupaten Purwakarta",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3215",
+          "regionName": "Kabupaten Karawang",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3217",
+          "regionName": "Kabupaten Bandung Barat",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3272",
+          "regionName": "Kota Sukabumi",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3274",
+          "regionName": "Kota Cirebon",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3277",
+          "regionName": "Kota Cimahi",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3279",
+          "regionName": "Kota Banjar",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        }
+      ],
+      "latestContextCandidate": false,
+      "alternativesRejected": []
+    },
+    {
+      "candidateId": "nutrition_ski2023_wasting_2026",
+      "indicatorId": "nutrition_ski2023_wasting",
+      "candidateYear": 2026,
+      "selectedForYear": true,
+      "status": "NOT_FOUND",
+      "availabilityVerified": false,
+      "sourceAgency": "Badan Kebijakan Pembangunan Kesehatan, Kementerian Kesehatan RI; BPS sampling/weighting/SAE",
+      "sourceTitle": "Survei Status Gizi Indonesia (SSGI) 2024 Dalam Angka — current BKPK-linked release",
+      "sourceRefs": [
+        "nutrition_morbidity_ssgi2024_final"
+      ],
+      "sourceUrlOrLocator": "https://www.badankebijakan.kemkes.go.id/survei-status-gizi-indonesia-ssgi-2024/",
+      "referencePeriod": null,
+      "enumerationPeriod": null,
+      "publicationDate": null,
+      "releaseYear": 2025,
+      "unit": "percent of measured children aged 0–59 months",
+      "denominator": "Survey-weighted children0–59 months measured for relevant index; published N tertimbang retained, not unweighted sample size.",
+      "numerator": null,
+      "definition": "Weight-for-length/height z-score below -2 including severe below -3; ages0–59 months.",
+      "geographicLevel": "kabupaten/kota",
+      "coverageCount": 0,
+      "reportedCoverageCount": null,
+      "methodologyNotes": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+      "comparabilityNotes": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+      "recommendation": "Do not substitute another year, province aggregate, administrative membership series, or unrelated construct. No defensible regional candidate was verified in this audit.",
+      "caveats": [],
+      "methodologyChecks": {
+        "constructEquivalent": null,
+        "denominatorCompatible": null,
+        "methodContinuity": null,
+        "geographyCompatible": null,
+        "referencePeriodVerified": false,
+        "unitVerified": false,
+        "sourceReproducible": false
+      },
+      "derivation": {
+        "kind": "none",
+        "formula": null
+      },
+      "observations": [
+        {
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3202",
+          "regionName": "Kabupaten Sukabumi",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3203",
+          "regionName": "Kabupaten Cianjur",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3206",
+          "regionName": "Kabupaten Tasikmalaya",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3207",
+          "regionName": "Kabupaten Ciamis",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3208",
+          "regionName": "Kabupaten Kuningan",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3209",
+          "regionName": "Kabupaten Cirebon",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3211",
+          "regionName": "Kabupaten Sumedang",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3212",
+          "regionName": "Kabupaten Indramayu",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3213",
+          "regionName": "Kabupaten Subang",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3214",
+          "regionName": "Kabupaten Purwakarta",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3215",
+          "regionName": "Kabupaten Karawang",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3217",
+          "regionName": "Kabupaten Bandung Barat",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3272",
+          "regionName": "Kota Sukabumi",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3274",
+          "regionName": "Kota Cirebon",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3277",
+          "regionName": "Kota Cimahi",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3279",
+          "regionName": "Kota Banjar",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Official BKPK repository, report directory and targeted SSGI2026 searches did not verify a27-region survey estimate panel. A2025 release or a2025 guide forSSGI2024 is not a2025 observation. No defensible candidate was verified.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        }
+      ],
+      "latestContextCandidate": false,
+      "alternativesRejected": []
+    },
+    {
+      "candidateId": "morbidity_activity_limiting_2026",
+      "indicatorId": "morbidity_activity_limiting",
+      "candidateYear": 2026,
+      "selectedForYear": true,
+      "status": "NOT_FOUND",
+      "availabilityVerified": false,
+      "sourceAgency": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "sourceTitle": "Statistik Kesejahteraan Rakyat Provinsi Jawa Barat 2025",
+      "sourceRefs": [
+        "nutrition_morbidity_welfare2025"
+      ],
+      "sourceUrlOrLocator": "https://jabar.bps.go.id/id/publication/2025/11/28/5c47dbf83e4123e9a47090fe/statistik-kesejahteraan-rakyat-provinsi-jawa-barat-2025.html",
+      "referencePeriod": null,
+      "enumerationPeriod": null,
+      "publicationDate": "2025-11-28",
+      "releaseYear": 2025,
+      "unit": "percent of residents",
+      "denominator": "All survey-weighted residents represented by Susenas March2023, not only clinic users or complainants.",
+      "numerator": null,
+      "definition": "Residents with self-reported health complaints disrupting work, school or daily activities; March2023 Susenas reference month.",
+      "geographicLevel": "kabupaten/kota",
+      "coverageCount": 0,
+      "reportedCoverageCount": null,
+      "methodologyNotes": "Latest inspected activity-limiting morbidity table is March2025.2026 disease-case releases are different constructs and do not establish2026 all-resident activity-limiting morbidity.",
+      "comparabilityNotes": "Latest inspected activity-limiting morbidity table is March2025.2026 disease-case releases are different constructs and do not establish2026 all-resident activity-limiting morbidity.",
+      "recommendation": "Do not substitute another year, province aggregate, administrative membership series, or unrelated construct. No defensible regional candidate was verified in this audit.",
+      "caveats": [],
+      "methodologyChecks": {
+        "constructEquivalent": null,
+        "denominatorCompatible": null,
+        "methodContinuity": null,
+        "geographyCompatible": null,
+        "referencePeriodVerified": false,
+        "unitVerified": false,
+        "sourceReproducible": false
+      },
+      "derivation": {
+        "kind": "none",
+        "formula": null
+      },
+      "observations": [
+        {
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Latest inspected activity-limiting morbidity table is March2025.2026 disease-case releases are different constructs and do not establish2026 all-resident activity-limiting morbidity.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3202",
+          "regionName": "Kabupaten Sukabumi",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Latest inspected activity-limiting morbidity table is March2025.2026 disease-case releases are different constructs and do not establish2026 all-resident activity-limiting morbidity.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3203",
+          "regionName": "Kabupaten Cianjur",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Latest inspected activity-limiting morbidity table is March2025.2026 disease-case releases are different constructs and do not establish2026 all-resident activity-limiting morbidity.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Latest inspected activity-limiting morbidity table is March2025.2026 disease-case releases are different constructs and do not establish2026 all-resident activity-limiting morbidity.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Latest inspected activity-limiting morbidity table is March2025.2026 disease-case releases are different constructs and do not establish2026 all-resident activity-limiting morbidity.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3206",
+          "regionName": "Kabupaten Tasikmalaya",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Latest inspected activity-limiting morbidity table is March2025.2026 disease-case releases are different constructs and do not establish2026 all-resident activity-limiting morbidity.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3207",
+          "regionName": "Kabupaten Ciamis",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Latest inspected activity-limiting morbidity table is March2025.2026 disease-case releases are different constructs and do not establish2026 all-resident activity-limiting morbidity.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3208",
+          "regionName": "Kabupaten Kuningan",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Latest inspected activity-limiting morbidity table is March2025.2026 disease-case releases are different constructs and do not establish2026 all-resident activity-limiting morbidity.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3209",
+          "regionName": "Kabupaten Cirebon",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Latest inspected activity-limiting morbidity table is March2025.2026 disease-case releases are different constructs and do not establish2026 all-resident activity-limiting morbidity.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Latest inspected activity-limiting morbidity table is March2025.2026 disease-case releases are different constructs and do not establish2026 all-resident activity-limiting morbidity.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3211",
+          "regionName": "Kabupaten Sumedang",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Latest inspected activity-limiting morbidity table is March2025.2026 disease-case releases are different constructs and do not establish2026 all-resident activity-limiting morbidity.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3212",
+          "regionName": "Kabupaten Indramayu",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Latest inspected activity-limiting morbidity table is March2025.2026 disease-case releases are different constructs and do not establish2026 all-resident activity-limiting morbidity.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3213",
+          "regionName": "Kabupaten Subang",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Latest inspected activity-limiting morbidity table is March2025.2026 disease-case releases are different constructs and do not establish2026 all-resident activity-limiting morbidity.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3214",
+          "regionName": "Kabupaten Purwakarta",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Latest inspected activity-limiting morbidity table is March2025.2026 disease-case releases are different constructs and do not establish2026 all-resident activity-limiting morbidity.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3215",
+          "regionName": "Kabupaten Karawang",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Latest inspected activity-limiting morbidity table is March2025.2026 disease-case releases are different constructs and do not establish2026 all-resident activity-limiting morbidity.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Latest inspected activity-limiting morbidity table is March2025.2026 disease-case releases are different constructs and do not establish2026 all-resident activity-limiting morbidity.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3217",
+          "regionName": "Kabupaten Bandung Barat",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Latest inspected activity-limiting morbidity table is March2025.2026 disease-case releases are different constructs and do not establish2026 all-resident activity-limiting morbidity.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Latest inspected activity-limiting morbidity table is March2025.2026 disease-case releases are different constructs and do not establish2026 all-resident activity-limiting morbidity.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Latest inspected activity-limiting morbidity table is March2025.2026 disease-case releases are different constructs and do not establish2026 all-resident activity-limiting morbidity.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3272",
+          "regionName": "Kota Sukabumi",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Latest inspected activity-limiting morbidity table is March2025.2026 disease-case releases are different constructs and do not establish2026 all-resident activity-limiting morbidity.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Latest inspected activity-limiting morbidity table is March2025.2026 disease-case releases are different constructs and do not establish2026 all-resident activity-limiting morbidity.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3274",
+          "regionName": "Kota Cirebon",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Latest inspected activity-limiting morbidity table is March2025.2026 disease-case releases are different constructs and do not establish2026 all-resident activity-limiting morbidity.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Latest inspected activity-limiting morbidity table is March2025.2026 disease-case releases are different constructs and do not establish2026 all-resident activity-limiting morbidity.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Latest inspected activity-limiting morbidity table is March2025.2026 disease-case releases are different constructs and do not establish2026 all-resident activity-limiting morbidity.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3277",
+          "regionName": "Kota Cimahi",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Latest inspected activity-limiting morbidity table is March2025.2026 disease-case releases are different constructs and do not establish2026 all-resident activity-limiting morbidity.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Latest inspected activity-limiting morbidity table is March2025.2026 disease-case releases are different constructs and do not establish2026 all-resident activity-limiting morbidity.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        },
+        {
+          "regionId": "3279",
+          "regionName": "Kota Banjar",
+          "value": null,
+          "sourceValue": null,
+          "sourceRef": null,
+          "sourceLocator": null,
+          "missingReason": "Latest inspected activity-limiting morbidity table is March2025.2026 disease-case releases are different constructs and do not establish2026 all-resident activity-limiting morbidity.",
+          "estimationMethod": null,
+          "components": null,
+          "uncertainty": null
+        }
+      ],
+      "latestContextCandidate": false,
+      "alternativesRejected": []
+    }
+  ]
+}

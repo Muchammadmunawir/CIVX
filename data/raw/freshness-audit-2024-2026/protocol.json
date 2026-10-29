@@ -1,0 +1,1113 @@
+{
+  "auditId": "civx-freshness-audit-2024-2026",
+  "version": 1,
+  "accessedAt": "2026-10-29",
+  "scope": "RESEARCH_AUDIT_ONLY",
+  "candidateYears": [
+    2024,
+    2025,
+    2026
+  ],
+  "rawAuditPaths": [
+    "data/raw/freshness-audit-2024-2026/socioeconomic.json",
+    "data/raw/freshness-audit-2024-2026/education-life-expectancy.json",
+    "data/raw/freshness-audit-2024-2026/basic-services.json",
+    "data/raw/freshness-audit-2024-2026/nutrition-morbidity.json",
+    "data/raw/freshness-audit-2024-2026/disaster-environment.json"
+  ],
+  "frozenContractPath": "data/processed/final-indicator-freeze-2023.json",
+  "registryPointer": "/geography/regions",
+  "statuses": [
+    "COMPATIBLE_CANDIDATE",
+    "COMPATIBLE_WITH_CAVEAT",
+    "PARTIAL",
+    "NOT_COMPARABLE",
+    "NOT_VERIFIED",
+    "NOT_FOUND"
+  ],
+  "policy": {
+    "createNewScores": false,
+    "changeNormalization": false,
+    "changeWeighting": false,
+    "modify2023Insights": false,
+    "modifyContextualArtifacts": false,
+    "frontendIntegration": false,
+    "imputation": false,
+    "interpolation": false,
+    "syntheticObservations": false,
+    "publicationYearEqualsReferenceYear": false,
+    "unknownSourcesMeanNonexistence": false,
+    "allPreExistingTrackedFilesProtected": true
+  },
+  "coveragePolicy": "Finite source-resolved observations in exactly the frozen 27 BPS slots; publisher-claimed coverage is separate. Full defensible coverage requires a compatible status, not merely 27 numeric cells.",
+  "commonYearPolicy": "Report strict full coverage and explicit-caveat full coverage separately; do not label a mixed-year assembly as a common-year model. Any recommendation is for human review only, never generation of scores.",
+  "scoreSha256": "47b4813abd59bc452556e9d057596511f95e17acd81a4994589bc87460d9f6d5",
+  "insightSha256": "ffd92543c6387c981d2647c8ed55bd3abb7f7c4e9b5b91d4a74fab81999d6345",
+  "baselineManifest": [
+    {
+      "path": "-.png",
+      "sha256": "5f101e3f41136f544edde6d1c0b9554c1c8f8f7e5bdbf6592d1f7bfaedba1da8",
+      "bytes": 294865
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "840cef038b5175212c841e816fed04b0c435d8a5133b9bb3443e143212d54c8a",
+      "bytes": 592
+    },
+    {
+      "path": ".taste-skill/direction.json",
+      "sha256": "137510891a7d9227b48cda1c9122f6793b1e2c623c2931b4dadaca6a14404e27",
+      "bytes": 7850
+    },
+    {
+      "path": ".taste-skill/v2/browser-checks.json",
+      "sha256": "7a7678a864da4f43ca48e8064d7787ce4c1a7b9cc91e1a5ee94e62deaba3055a",
+      "bytes": 3594
+    },
+    {
+      "path": ".taste-skill/v2/critique.md",
+      "sha256": "b09ea805ebfa10c47da87fb83befd9436be248d8b2e060fe97d3ce07ff417e05",
+      "bytes": 4580
+    },
+    {
+      "path": ".taste-skill/v2/direction.json",
+      "sha256": "45222969996adc3eb9a5f60d927c3fe5c8c0a8c0fde63ea13286881f827a0197",
+      "bytes": 5568
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "7e576f36f17d4308b788925aeabfb1b953466cab229a1052c11d07d96c403800",
+      "bytes": 2061
+    },
+    {
+      "path": "README.md",
+      "sha256": "a8ef50f561328e05909d2057afa394ac25d57dff7d56cb8185cf36efecf76e5b",
+      "bytes": 8790
+    },
+    {
+      "path": "data/geography/jabar-adm2-2020.json",
+      "sha256": "06c7764fde989ee2aac67ce3e50d126d3cd0e524452e22efc9b0764ccab686f8",
+      "bytes": 128999
+    },
+    {
+      "path": "data/methodology/civx-jabar-2023-current.json",
+      "sha256": "c92da906b5c382347e7a87ac37d623e94a327e10a937ae078f341668a784a421",
+      "bytes": 6604
+    },
+    {
+      "path": "data/methodology/civx-jabar-2023-v2.json",
+      "sha256": "c6a2e38260f51a5030b07f62a7763c590c324cb0dbc8386aedf9baed004ff68e",
+      "bytes": 3339
+    },
+    {
+      "path": "data/methodology/civx-jabar-2023.json",
+      "sha256": "05bb6ab8b07d4a2320c533416510a6f71a80be2278ed4f023f33cd7c567fa157",
+      "bytes": 1525
+    },
+    {
+      "path": "data/processed/audit-jabar-2023-statistics.json",
+      "sha256": "c2644f1dac405b74f4483f10da7c5b055816b67e36a8f9c368cbe53122a85465",
+      "bytes": 33393
+    },
+    {
+      "path": "data/processed/basic-services-audit-2023-statistics.json",
+      "sha256": "ffebce190879391b7f85bee119ac0aacca6b530b73b024628789935f47a37eaa",
+      "bytes": 612212
+    },
+    {
+      "path": "data/processed/civx-insights-2023.json",
+      "sha256": "ffd92543c6387c981d2647c8ed55bd3abb7f7c4e9b5b91d4a74fab81999d6345",
+      "bytes": 1516134
+    },
+    {
+      "path": "data/processed/civx-jabar-2023-current-sensitivity.json",
+      "sha256": "e57080833559feaa4952ed0680cab341130f1cb7faa351b1d40dd6b2e8766a15",
+      "bytes": 63877
+    },
+    {
+      "path": "data/processed/civx-jabar-2023-current.json",
+      "sha256": "2a805661981eb5e97912e015dd399b8229420937e6f42e44a7fc2372aca9ce22",
+      "bytes": 1422497
+    },
+    {
+      "path": "data/processed/civx-jabar-2023-v2-sensitivity.json",
+      "sha256": "0f67c5c6ad7e3b4791c050e93819a0c93c8c93a8d2918cf69197f4f1badb6e57",
+      "bytes": 27100
+    },
+    {
+      "path": "data/processed/civx-jabar-2023-v2.json",
+      "sha256": "c1cd0a9ff4ad74dd630bd39df8d24d1a6c948a17d4b64efd8b6f5348affb1c72",
+      "bytes": 1282535
+    },
+    {
+      "path": "data/processed/civx-jabar-2023.json",
+      "sha256": "786ae3cd84d913b7bd4dd3a607de97d892dd0db18b448de347dba6b2eca0c2f7",
+      "bytes": 252410
+    },
+    {
+      "path": "data/processed/civx-scores-2023.json",
+      "sha256": "47b4813abd59bc452556e9d057596511f95e17acd81a4994589bc87460d9f6d5",
+      "bytes": 660223
+    },
+    {
+      "path": "data/processed/context/context_air_pollution_klh_site_ispu_20261029.json",
+      "sha256": "767090d379c9c7f1bbb68feb61cac1360a867fd494deb31ed87fb8115f7f6a51",
+      "bytes": 35682
+    },
+    {
+      "path": "data/processed/context/context_air_pollution_klh_site_pm25_ispu_20261029.json",
+      "sha256": "150c5c0a2e520a59be7ff291237ce49b1be01f2774e18fc9409212d1a6a4bcb4",
+      "bytes": 32694
+    },
+    {
+      "path": "data/processed/context/context_crime_podes_theft_villages_jabar_2024.json",
+      "sha256": "8d25872d78426933619187f0d62b7cdb07f861e8f441835992277bcf9013b40c",
+      "bytes": 52012
+    },
+    {
+      "path": "data/processed/context/context_traffic_bandung_2024_after_speed.json",
+      "sha256": "f06c8e57a93c7a2b9252dc6319af3ef4313cdcb3197dbcd9766731b4c491843f",
+      "bytes": 29386
+    },
+    {
+      "path": "data/processed/context/context_traffic_bandung_2024_after_vc_ratio.json",
+      "sha256": "24323bfc12ba880a3705513c651a9e9357618e6418437962230bd8b4e2a6dbe1",
+      "bytes": 29540
+    },
+    {
+      "path": "data/processed/context/context_transport_commuter_share_jabodetabek_2023.json",
+      "sha256": "9cd0e13224d1a20f613de13f163c8ea3403ff9365ff70f691359538b36cde226",
+      "bytes": 24292
+    },
+    {
+      "path": "data/processed/context/context_transport_type_c_terminal_inventory_2023.json",
+      "sha256": "a4e4449799fc76a8eb5dc8dfb326642cda6c2539e0003e75d1d4557667e5d191",
+      "bytes": 37481
+    },
+    {
+      "path": "data/processed/contextual-data-catalog-2023.json",
+      "sha256": "f80b892a63d61fada9e0edce301cdd9015def90424d9fbeb22b53b8be7de1efc",
+      "bytes": 212246
+    },
+    {
+      "path": "data/processed/environment-audit-2023-candidate-register.csv",
+      "sha256": "4030f45727780d18ac43fe797fb17f2d5fc87704d057fd499eb545851c5c6439",
+      "bytes": 78713
+    },
+    {
+      "path": "data/processed/environment-audit-2023-decisions.json",
+      "sha256": "9300d592aae0064d0dd42396e21d3571fff0d00833931ab851a331f9dffe02f5",
+      "bytes": 68232
+    },
+    {
+      "path": "data/processed/environment-audit-2023-observations.json",
+      "sha256": "e3f810291dee318422da3f803e137b97814a4d6ba701f88f8177a7544668f07a",
+      "bytes": 688865
+    },
+    {
+      "path": "data/processed/environment-audit-2023-provenance.json",
+      "sha256": "d41f01dc49408a3ac7d6ce77eef337368b6c727e6e5a5c6b2506136516abff2d",
+      "bytes": 131609
+    },
+    {
+      "path": "data/processed/environment-audit-2023-statistics.json",
+      "sha256": "07321f21ce1c54f121da37883aaf6d9af1c41de3450e2281fbf90aac620f8e30",
+      "bytes": 105349
+    },
+    {
+      "path": "data/processed/final-indicator-freeze-2023.csv",
+      "sha256": "cd390a1668e27a50e9c6a56f0af1175eff67846a909e6578f31d23c64f54562d",
+      "bytes": 20536
+    },
+    {
+      "path": "data/processed/final-indicator-freeze-2023.json",
+      "sha256": "8d72727f93c393a331582e83c8250d758abffca4fb2fc8920797b9ff3fe4d7ac",
+      "bytes": 584167
+    },
+    {
+      "path": "data/processed/normalization-design-2023.csv",
+      "sha256": "9f0a4730df25667264a06a826322f856b980eb541cf15c8b4740cc97d838291d",
+      "bytes": 127441
+    },
+    {
+      "path": "data/processed/normalization-design-2023.json",
+      "sha256": "1f6735060ee421b6e71212eec908d377a7928bc4e5c9999c3582267fecb374f4",
+      "bytes": 624524
+    },
+    {
+      "path": "data/processed/public-health-audit-2023-candidate-register.csv",
+      "sha256": "11f62a93f3af3c672861fa5b3aa9d2b9ea05eb3fcb62480eaefa066740e4b850",
+      "bytes": 133002
+    },
+    {
+      "path": "data/processed/public-health-audit-2023-observations.json",
+      "sha256": "e5224fc501fdd024f1ea59667dfc975910e018115efae228d5e5502b7e890317",
+      "bytes": 1829121
+    },
+    {
+      "path": "data/processed/public-health-audit-2023-statistics.json",
+      "sha256": "fde45f0df3d92c6cd2007d2bc898a4c35efdf1431ea3c856e54f0704715ad906",
+      "bytes": 560570
+    },
+    {
+      "path": "data/processed/resilience-audit-2023-candidate-register.csv",
+      "sha256": "5aa4b7e4c7697270fce5f5170942a36cca207762aabf1d99ae0aaa6ff5d4da5f",
+      "bytes": 249476
+    },
+    {
+      "path": "data/processed/resilience-audit-2023-observations.json",
+      "sha256": "98b6b4a7055be74ab71c136aafc5f9e1792e9e970d496a3b9a306df83595ae3c",
+      "bytes": 3645137
+    },
+    {
+      "path": "data/processed/resilience-audit-2023-statistics.json",
+      "sha256": "bb9cebbf01c901e669269799bffc45b23001b009fb12c76d2177c0d2ea46a322",
+      "bytes": 2222743
+    },
+    {
+      "path": "data/processed/weighting-design-2023.json",
+      "sha256": "c8966d3a2fa4bc6721061e48995e05a4167de63f7cd77a6a8a3c524c36982131",
+      "bytes": 1399189
+    },
+    {
+      "path": "data/processed/weighting-sensitivity-2023.csv",
+      "sha256": "2b6c91754f5b5bdc8ab1a2f4fee2619f0e5e1ad3167b001ea1f7f528860ed729",
+      "bytes": 181417
+    },
+    {
+      "path": "data/raw/audit-jabar-2023/education.json",
+      "sha256": "7f2e54c54b398026552a6a66f62be09f01c9291e1280c1f97dbe46e67f888325",
+      "bytes": 117925
+    },
+    {
+      "path": "data/raw/audit-jabar-2023/socioeconomic.json",
+      "sha256": "353e2a7ec909319fb2dca6c996469a463ac7945d7c9ffec446c61435ae04694b",
+      "bytes": 128665
+    },
+    {
+      "path": "data/raw/basic-services-audit-2023/healthcare.json",
+      "sha256": "8779c194a68b3ccf53ca01c198ba4d2aba732326743bfc7035365d4de7d21fe2",
+      "bytes": 1081491
+    },
+    {
+      "path": "data/raw/basic-services-audit-2023/household.json",
+      "sha256": "442608acf38cf3e4f8a57f6910b688bdcaba28505c7579bdc23cef27b98dbd66",
+      "bytes": 1526100
+    },
+    {
+      "path": "data/raw/basic-services-audit-2023/other-services.json",
+      "sha256": "255ec8727c529cda5b852ac5324dd8ae401214686df37be34e361bfcaf432707",
+      "bytes": 103173
+    },
+    {
+      "path": "data/raw/basic-services-audit-2023/waste.json",
+      "sha256": "ae7e99154c780503edbcb20aae0c2f2a55e2112cd8f62c47dbbf611be6f36e5d",
+      "bytes": 445473
+    },
+    {
+      "path": "data/raw/basic-services-audit-2023/water-sanitation.json",
+      "sha256": "5c64e7f2f2b863df60862060d14d10d8132ad91bc92789639056a03911ce26b7",
+      "bytes": 369040
+    },
+    {
+      "path": "data/raw/civx-jabar-2023.json",
+      "sha256": "d57d83cab5602fcfa5a13d0331a0468cb252cc8a3d8c88803e812311173dbff1",
+      "bytes": 23449
+    },
+    {
+      "path": "data/raw/contextual-audit-2023/air_pollution.json",
+      "sha256": "bba300991d4e38d88e3c2bdc7a08c5e95cdc1e0d8672a7e29195e2ed6351a8c6",
+      "bytes": 56812
+    },
+    {
+      "path": "data/raw/contextual-audit-2023/crime.json",
+      "sha256": "de0b991647e0a60ee8914643cb6bf55f1f5eb9c215b1992dc999d100650de4ae",
+      "bytes": 72748
+    },
+    {
+      "path": "data/raw/contextual-audit-2023/protocol.json",
+      "sha256": "e72585c1e5b46ede592e649d488b8ad835b40e07cb09e7359760c06eaafba767",
+      "bytes": 4141
+    },
+    {
+      "path": "data/raw/contextual-audit-2023/traffic.json",
+      "sha256": "ac073ed2ea799b02af3f067d2aadbdf94e494fdac0b0172dbb718f6d0587e82c",
+      "bytes": 70534
+    },
+    {
+      "path": "data/raw/contextual-audit-2023/transport.json",
+      "sha256": "f71a0786e00173c6155113909f79826694fd22089fe9a325fb186fb8ec57a352",
+      "bytes": 70934
+    },
+    {
+      "path": "data/raw/current/risk-observations.json",
+      "sha256": "132ceaf04c5b3128a989d3b4dd44e5a03e50904d853b42991da7907bb9fe3a73",
+      "bytes": 14440
+    },
+    {
+      "path": "data/raw/current/services-observations.json",
+      "sha256": "f2a003771697cdafc64cdd7365e7ca9872b450f52424f2bcc42ad7dd1ded37b4",
+      "bytes": 137875
+    },
+    {
+      "path": "data/raw/current/source-audit.json",
+      "sha256": "fb2aded67672e169679dd6edd298006461d991bbe6fb7624dfe173066357382e",
+      "bytes": 94146
+    },
+    {
+      "path": "data/raw/environment-audit-2023/air-exposure.json",
+      "sha256": "b569082935ff156615a8de87f3cbb093515ba268e4ee49209801c57b4832545a",
+      "bytes": 3965740
+    },
+    {
+      "path": "data/raw/environment-audit-2023/indices.json",
+      "sha256": "35c060785f7b627dac86a91a4fa537cb9568d56e51a6a9813a1dcd0f3776d559",
+      "bytes": 886811
+    },
+    {
+      "path": "data/raw/environment-audit-2023/land-water.json",
+      "sha256": "a03c2d2be8186300fe9202c00ec6cbcbd1307ada330e4c52f8b77eb6cabea381",
+      "bytes": 8725885
+    },
+    {
+      "path": "data/raw/environment-audit-2023/locator-verification.json",
+      "sha256": "5d7d0d4d6dbae1539fe4db249deec26fa20e34b5e260b3724300f53019e983d2",
+      "bytes": 1299803
+    },
+    {
+      "path": "data/raw/environment-audit-2023/protocol.json",
+      "sha256": "c8acf1d6b9d9710b9255a27236282fff8c864a5abe6a6ce3f62e7209e0e5cef6",
+      "bytes": 20183
+    },
+    {
+      "path": "data/raw/environment-audit-2023/waste.json",
+      "sha256": "0de758c99aea6cf4ae483580bff985be7e4befabb8a0f208a7cc8d28ac93970f",
+      "bytes": 2006488
+    },
+    {
+      "path": "data/raw/public-health-audit-2023/dbd.json",
+      "sha256": "f7601e89ce2b4de3a58cba5ebfbdebf315e56b134c70fff4f9e32646905aa122",
+      "bytes": 149192
+    },
+    {
+      "path": "data/raw/public-health-audit-2023/general-health.json",
+      "sha256": "3158bfee5ee336c6e4b2651f0a6a28472cf3e3a80133a5f72c11e5a44547ed88",
+      "bytes": 119593
+    },
+    {
+      "path": "data/raw/public-health-audit-2023/infectious.json",
+      "sha256": "d6be9cb9335e2dff783f44f020029469f0d6aa39568d3c4ffbfa5e98abb32905",
+      "bytes": 1901630
+    },
+    {
+      "path": "data/raw/public-health-audit-2023/maternal-child.json",
+      "sha256": "b591bdfaf1afd03d3c8c9d0baa866bc292072dd70a8a3befec13fb488c6cc8d0",
+      "bytes": 855104
+    },
+    {
+      "path": "data/raw/public-health-audit-2023/ncd.json",
+      "sha256": "7c12cfa4b54444b3b3a64c6c6331af47c8b48f8cdefc526e93af66cfb1120e12",
+      "bytes": 477556
+    },
+    {
+      "path": "data/raw/public-health-audit-2023/nutrition.json",
+      "sha256": "a28b8dfdcbbee86f1df9db5654ed724774a691620bcde65b46b6db213977d994",
+      "bytes": 236682
+    },
+    {
+      "path": "data/raw/public-health-audit-2023/recovery.json",
+      "sha256": "91b06752e582a53091f81fa4256413b8cd85c361cfce03b0f0427fc681d96312",
+      "bytes": 15766
+    },
+    {
+      "path": "data/raw/resilience-audit-2023/adaptive-capacity.json",
+      "sha256": "2236784802fdc6bb4b866773f623d45bdf6436da2f2b34441f55eb00aaf5eebc",
+      "bytes": 1398449
+    },
+    {
+      "path": "data/raw/resilience-audit-2023/current-risk.json",
+      "sha256": "8633a399f3ce175fc79d8f712513795c044c54dc5ec6de9524ae264fb95652c1",
+      "bytes": 26513
+    },
+    {
+      "path": "data/raw/resilience-audit-2023/hazard-exposure.json",
+      "sha256": "ca3342af25fe96bc534b8a84768d21636d005906dfbb485409c0c474a342780e",
+      "bytes": 573734
+    },
+    {
+      "path": "data/raw/resilience-audit-2023/protocol.json",
+      "sha256": "e3c686a608747498e422b531d318bdf510a57f0d7e2145ccb6426b8775ecc980",
+      "bytes": 14519
+    },
+    {
+      "path": "data/raw/resilience-audit-2023/realized-impact.json",
+      "sha256": "d458f649fcad51ed404ef10ac3ab9124074639088404f4f8f679a24a602f6814",
+      "bytes": 4890186
+    },
+    {
+      "path": "data/raw/v2/context-advantages-audit.json",
+      "sha256": "97d331584d782c63161864e7a643978b75679c36497d306d51a86375d1a0c19c",
+      "bytes": 43831
+    },
+    {
+      "path": "data/raw/v2/context-advantages-observations.json",
+      "sha256": "8f43349e1471ae9ffa7f0b37b0e6e75461191b5176140459b2ee6f71968569dd",
+      "bytes": 9210
+    },
+    {
+      "path": "data/raw/v2/context-evidence-cisumdawu-2023.json",
+      "sha256": "b199b7620b0aa019561c712113fe61dbf3822591c83823592f512b0021785b25",
+      "bytes": 1764
+    },
+    {
+      "path": "data/raw/v2/context-evidence-cisumdawu-tariff-2023.json",
+      "sha256": "503ca9c7af20e86a8be1068223e81fea39bada2ca37f6c337012ee60c55e452f",
+      "bytes": 1540
+    },
+    {
+      "path": "data/raw/v2/context-evidence-kertajati-2023.json",
+      "sha256": "697c73f6df81246bf214e8c6b688551848c49132a3b6c980605536fc7837d56d",
+      "bytes": 2268
+    },
+    {
+      "path": "data/raw/v2/context-evidence-metadata-findings.json",
+      "sha256": "a387fbb697a9ed4db3dfebc3db49a61939d4b88181d14701a69f95a937dcdf99",
+      "bytes": 7976
+    },
+    {
+      "path": "data/raw/v2/context-evidence-whoosh-2023.json",
+      "sha256": "6d1d364e6f51e9d14c93690325bc00e67b468850e2fbbbbc42226a58d5be1aba",
+      "bytes": 1799
+    },
+    {
+      "path": "data/raw/v2/infrastructure-audit.json",
+      "sha256": "297da2a15d1903c2c374a3af45f5a7d4e6bbe6048efdd7991e91b7af72260d5c",
+      "bytes": 21512
+    },
+    {
+      "path": "data/raw/v2/services-audit.json",
+      "sha256": "e6fb6ce05bf62b6889e5ba0009cde49215d9b7cae2d21b7c05387e142046a614",
+      "bytes": 25571
+    },
+    {
+      "path": "data/raw/v2/services-observations.json",
+      "sha256": "a1a64f4dcfe23aa6dbd3e2b98f1a9938330e9d8bb995e158dfba465eacd38d73",
+      "bytes": 151763
+    },
+    {
+      "path": "data/releases/civx-archives-integrity.json",
+      "sha256": "939118a7197da969c8e5a06caf31ef6a0d0db150a656e96b33fbf9e2e6144c2c",
+      "bytes": 1799
+    },
+    {
+      "path": "data/releases/civx-current-inputs-integrity.json",
+      "sha256": "0c9d89abf4b82e23c349328467789e38d1b85fca02ac39ab6467323c2d4b3065",
+      "bytes": 680
+    },
+    {
+      "path": "data/releases/civx-v1-integrity.json",
+      "sha256": "3b7aa2838d1229860cfa1fe779faad53d0aac7fe96de1824610dc166b6bc7672",
+      "bytes": 800
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "sha256": "388e38973b5640ccf9982ec7b200c24ba7bb7f1707ac4abbf94dca7dc6c94a8c",
+      "bytes": 16360
+    },
+    {
+      "path": "docs/BASIC-SERVICES-AUDIT-2023.md",
+      "sha256": "51c235c7bc041080c3bb09bed06089a169981f7ceb40461ff4f265254bde8328",
+      "bytes": 138815
+    },
+    {
+      "path": "docs/CONTEXTUAL-DATA-AUDIT-2023.md",
+      "sha256": "1045c432faa1eb9cf4fd8fb11f6dbfcc9198bf52109ef5cbc99508bf485ce8c2",
+      "bytes": 32884
+    },
+    {
+      "path": "docs/DATA.md",
+      "sha256": "465d5d544e68613c45a8b0ff91c20412e273766baee5951473fb8d999fd8fbb9",
+      "bytes": 25802
+    },
+    {
+      "path": "docs/ENVIRONMENT-AUDIT-2023.md",
+      "sha256": "55ee3bddb80cc2565a05d5fec717917d35cf7e265cad395428a924c0de3f751a",
+      "bytes": 40821
+    },
+    {
+      "path": "docs/FINAL-INDICATOR-FREEZE-2023.md",
+      "sha256": "1cea8eca26b9bd4146409c35f14e487b81e55c95e7ccd839c3552a91045039ff",
+      "bytes": 31806
+    },
+    {
+      "path": "docs/INSIGHT-ENGINE-2023.md",
+      "sha256": "b63cc7685ae7659d6c6c8793024225d73ecde974188c4824cef9bfcf665f6754",
+      "bytes": 19457
+    },
+    {
+      "path": "docs/METHODOLOGY-CURRENT.md",
+      "sha256": "2e45b6bf968713cbdc58b4725c859dfbbc6df54f1170b39917acee89f6bb54f5",
+      "bytes": 14335
+    },
+    {
+      "path": "docs/METHODOLOGY-V2.md",
+      "sha256": "6f90cc58c2a79fce5ef67ba533be3a2e002ba0ef48729af96441f112700dd564",
+      "bytes": 10745
+    },
+    {
+      "path": "docs/METHODOLOGY.md",
+      "sha256": "408cbcc3e041228ec3f1a2950a9378d4f6b19c7225149fdfaba73fce7517e98f",
+      "bytes": 10033
+    },
+    {
+      "path": "docs/NORMALIZATION-DESIGN-2023.md",
+      "sha256": "839fd3f5029f8ba3713022d3800c71a94ee478c131442616a78a2c7e9c3e1d46",
+      "bytes": 23172
+    },
+    {
+      "path": "docs/PRODUCT.md",
+      "sha256": "c82163309ea4655e9df16722d811fbb32712a5560502146eceee824a40554432",
+      "bytes": 10633
+    },
+    {
+      "path": "docs/PUBLIC-HEALTH-AUDIT-2023.md",
+      "sha256": "6fdaeab1948e726a6753bd989cbe69f13cb5170728256a57025834e63ecc0fba",
+      "bytes": 149283
+    },
+    {
+      "path": "docs/RESILIENCE-AUDIT-2023.md",
+      "sha256": "b29541da761c64b05407f39d549a4e6a28adb165fa11297a7efe10f0a2b01820",
+      "bytes": 212271
+    },
+    {
+      "path": "docs/SCORING-ENGINE-2023.md",
+      "sha256": "94c9c48cd9a77fc12a54968ac42f83951f90be7042b9bbd2cb2b894e9e11cef8",
+      "bytes": 15185
+    },
+    {
+      "path": "docs/SOCIOECONOMIC-EDUCATION-AUDIT-2023.md",
+      "sha256": "f96b44c827efcaee59feb09fa199a265c9fae09e9173fb162406808e44ab9c76",
+      "bytes": 33093
+    },
+    {
+      "path": "docs/TASKS.md",
+      "sha256": "ba08f65b227195a6e8ebf08f02a8f954df062f177ff9a3500f13b4b4d2c5c7d3",
+      "bytes": 38769
+    },
+    {
+      "path": "docs/V2-SOURCE-AUDIT.md",
+      "sha256": "26ecbf4389aac4a72ab694765f7c106843163943eb156b6e3ef5959651ed9bf9",
+      "bytes": 37018
+    },
+    {
+      "path": "docs/WEIGHTING-DESIGN-2023.md",
+      "sha256": "569e05c2baa33b7dced1d959d0987f3d0511f1dd942491be15bd7ba7574e601d",
+      "bytes": 24543
+    },
+    {
+      "path": "eslint.config.mjs",
+      "sha256": "870f1adccecf3051cbcd9fd307cef51d7633cf510979c181a81f4b1797273493",
+      "bytes": 465
+    },
+    {
+      "path": "next.config.ts",
+      "sha256": "43b34465a9a2d7457010253bd4db2f9e6be29e4fefb1e04fccc2d7703c8c4e28",
+      "bytes": 347
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "eab1c3f2721220d2067d3923cc1bd5fb5d48497c0b2049c559128c4b6efdbe5f",
+      "bytes": 236342
+    },
+    {
+      "path": "package.json",
+      "sha256": "0040758606b414b35aa5a9ad91ae241e63c921ce573a9d9d5dfc96b4e7e13ccb",
+      "bytes": 1701
+    },
+    {
+      "path": "public/file.svg",
+      "sha256": "2b67812c325c199a02536cdbeea0c593a72f707d323b72ee3e08dbab06753bd4",
+      "bytes": 391
+    },
+    {
+      "path": "public/globe.svg",
+      "sha256": "b614b9bf183925957661ac851498fe1d8029fd43a62fbfed86f9e2624a57e7cf",
+      "bytes": 1035
+    },
+    {
+      "path": "public/next.svg",
+      "sha256": "55995dfad6ecb4945a1e856ddca03c5e16aa5bf13fd21b4df6a74ae79357bcfc",
+      "bytes": 1375
+    },
+    {
+      "path": "public/vercel.svg",
+      "sha256": "f081337b2fee635b455b63275406a3e7f39d6a014e25ad90dab5a67e62a12ac4",
+      "bytes": 128
+    },
+    {
+      "path": "public/window.svg",
+      "sha256": "644768c4aaeb4767bce293344eeb0c125fb804a94d801440424072202d85e3a1",
+      "bytes": 385
+    },
+    {
+      "path": "scripts/analyze-environment-audit-2023.mjs",
+      "sha256": "ba3255c4cb9fbb28c60289a25ce9b9ecbb007122a80e0400b5bd4877b915481a",
+      "bytes": 27884
+    },
+    {
+      "path": "scripts/analyze-normalization-2023.mjs",
+      "sha256": "cef05ad0e4f216f0a003993c6c0dbe1bfecb558f1e9d0413b55f1650190bc8e4",
+      "bytes": 25678
+    },
+    {
+      "path": "scripts/analyze-public-health-audit-2023.mjs",
+      "sha256": "5e4d56cd30ca6c48b26521f548b5fbb735c8099da18b8ef6c9320480248e83b8",
+      "bytes": 17786
+    },
+    {
+      "path": "scripts/analyze-resilience-audit-2023.mjs",
+      "sha256": "a9d6c822e9aa0662878193a64785563c44d2a10ac9c2f807f3a78bb954ff2227",
+      "bytes": 16866
+    },
+    {
+      "path": "scripts/analyze-weighting-2023.mjs",
+      "sha256": "9d886da98b04d59f9e933a81581fe000f0506a1e5a6fdbb20d63fcfee1a43613",
+      "bytes": 31678
+    },
+    {
+      "path": "scripts/audit-contextual-data-2023.mjs",
+      "sha256": "21ca2031864991718cab8807f1c3eb71e8a18d3e37ca184d13d1390e9bb9e32a",
+      "bytes": 9539
+    },
+    {
+      "path": "scripts/build-civic-current.mjs",
+      "sha256": "2339b30a53900c323e3f3575e4a967c3a2fd7a05184467adc6597dc9502e4797",
+      "bytes": 22887
+    },
+    {
+      "path": "scripts/build-civic-release.mjs",
+      "sha256": "243fb91173a200225b1ee18b3e21d94c9b13a4fa06f96ed877fc061ffcdecf32",
+      "bytes": 7220
+    },
+    {
+      "path": "scripts/build-civic-v2.mjs",
+      "sha256": "5af51d6bc05509965a50c62036f5b3b96b02db98d84c87ba6bde4cea7dccbeaf",
+      "bytes": 16910
+    },
+    {
+      "path": "scripts/build-jabar-map.mjs",
+      "sha256": "58cf7b1da0a5f16d49cb9bc5e193d697e26a193ec1488ac3e4ce71c6572a3e06",
+      "bytes": 3717
+    },
+    {
+      "path": "scripts/freeze-final-indicators-2023.mjs",
+      "sha256": "e30591a095388efbe415e25820fb55a5c6ea875ff4cdb36c9480c2d98500547e",
+      "bytes": 35521
+    },
+    {
+      "path": "scripts/generate-civx-insights-2023.mjs",
+      "sha256": "98901bcfdcd662428e985aa603a70d4474d4d03999f459925d184a4b255b67b7",
+      "bytes": 12323
+    },
+    {
+      "path": "scripts/generate-civx-scores-2023.mjs",
+      "sha256": "4cd73581f9c73caa90ee483f7684f162f77c2eda2e0fe71a06392d73fa6b6be3",
+      "bytes": 11656
+    },
+    {
+      "path": "src/app/compare/loading.tsx",
+      "sha256": "b2c26dfbf4f5e08cfb981c5e4ec53a4b731c716dc43cc524d40f073eaa463bd8",
+      "bytes": 843
+    },
+    {
+      "path": "src/app/compare/page.tsx",
+      "sha256": "0685660b6a4428225681d2da997f1559644988e143773ba652e0d32594ee8d31",
+      "bytes": 964
+    },
+    {
+      "path": "src/app/error.tsx",
+      "sha256": "9b5f9235b3b01a163bd644ef933de5385f5d5d31f46192a57009f8c0c3188809",
+      "bytes": 642
+    },
+    {
+      "path": "src/app/explore/@detail/(..)regions/[id]/page.tsx",
+      "sha256": "7ead890ae89b03e6fc93634283a75b21bbff391e528067627e2ff8e7915e80f8",
+      "bytes": 717
+    },
+    {
+      "path": "src/app/explore/@detail/default.tsx",
+      "sha256": "9f5ff9f0c7037b951314fe0fd2c0fef5f415c21b13b09a5ef6b0f6b789f29e1c",
+      "bytes": 59
+    },
+    {
+      "path": "src/app/explore/@detail/page.tsx",
+      "sha256": "c6e7efb311c87fd5848edffbfca18b19d8ff8303b85f97eb6aa2e25a87ea2f71",
+      "bytes": 58
+    },
+    {
+      "path": "src/app/explore/layout.tsx",
+      "sha256": "8ca13e63c32ba22b555d11237ab0b0f5d7982e7a62a87500733a1a90a9e8c62d",
+      "bytes": 183
+    },
+    {
+      "path": "src/app/explore/loading.tsx",
+      "sha256": "0d09060ad39ffd701d16c2678f2d067367cc1cf974c842d7a4bc617b1d992e03",
+      "bytes": 296
+    },
+    {
+      "path": "src/app/explore/page.tsx",
+      "sha256": "244e8351811aa9a25ee2bba6dfe7335c85c55493a6fca789ce785374985d3a61",
+      "bytes": 394
+    },
+    {
+      "path": "src/app/favicon.ico",
+      "sha256": "c28fdd2a4f31e2dc64f653962286da5c82a4cdfc518b242d32812c624e9a19a4",
+      "bytes": 15086
+    },
+    {
+      "path": "src/app/globals.css",
+      "sha256": "4e0f189f3945ebfa981eaf1de59f579ee72b6ee679ae1741ee329e7fd87de7a1",
+      "bytes": 9305
+    },
+    {
+      "path": "src/app/layout.tsx",
+      "sha256": "5bcea76b3db229d38760fea372483173eaf9c14c177c2e55393d7a559bbbe455",
+      "bytes": 1280
+    },
+    {
+      "path": "src/app/methodology/page.tsx",
+      "sha256": "b88f519b2163dcb3c946794fe12c4b824da203a509d511a8e4b614716d78b6ee",
+      "bytes": 415
+    },
+    {
+      "path": "src/app/not-found.tsx",
+      "sha256": "1b607b6dc97c89eff4133bb30ba7fd85ce745695e59d17bc3f79367371a00e7c",
+      "bytes": 594
+    },
+    {
+      "path": "src/app/page.tsx",
+      "sha256": "0c3eac59d5bc506f6870f7abd902a5a476698d5fb9967d5a2480b87e32c29451",
+      "bytes": 127
+    },
+    {
+      "path": "src/app/regions/[id]/page.tsx",
+      "sha256": "4b7466375222a180fc8f60cfd27ca40cc1345515019b96edf30a200e4f71c638",
+      "bytes": 1251
+    },
+    {
+      "path": "src/app/sources/page.tsx",
+      "sha256": "cd76334a1d0f1a007483922491d45985cfb274f864413622f79987a487a7ec5b",
+      "bytes": 7336
+    },
+    {
+      "path": "src/app/sources/sources-page.module.css",
+      "sha256": "35d64f66693472576b1823100e50bbc352dffacd6d845cf3cb5b889811795a9b",
+      "bytes": 4653
+    },
+    {
+      "path": "src/components/compare/comparison-dimension.tsx",
+      "sha256": "d60e1788c0d3fc9739f7f35ce69be6418c0afded69931c80a337a67d06290e14",
+      "bytes": 2230
+    },
+    {
+      "path": "src/components/compare/comparison-format.ts",
+      "sha256": "10cb89de4f50eee5d12e28b322912526fd22d44101337d84efce8e4913b552fd",
+      "bytes": 531
+    },
+    {
+      "path": "src/components/compare/comparison-indicator.tsx",
+      "sha256": "77ea7393a5ed51b0ae62156ccbdb2cd2241e6766c2171f7e96a166dcc1a38075",
+      "bytes": 3700
+    },
+    {
+      "path": "src/components/compare/comparison-page.tsx",
+      "sha256": "ec14b25a6aafa71cfa8fd8880325c6cf4f39cd59c3e3b412bd18195ebb59701f",
+      "bytes": 10645
+    },
+    {
+      "path": "src/components/compare/comparison-selection.ts",
+      "sha256": "a08e61383b467711c214b54f5fb3e8cd18221aa7082982f70425eced7e659455",
+      "bytes": 3035
+    },
+    {
+      "path": "src/components/compare/comparison.module.css",
+      "sha256": "c5f2be8859ef621240563a3aa9e569037b6571910743e6a829f62e318a881906",
+      "bytes": 11580
+    },
+    {
+      "path": "src/components/data/pressure-badge.tsx",
+      "sha256": "55dd7c88e7e9fab920fe69450380bca7b72a1441bf11ee4abcad77a6d1a70d65",
+      "bytes": 427
+    },
+    {
+      "path": "src/components/data/region-list.tsx",
+      "sha256": "5b14fe8289022455ddaa3ef10dddc5964713ce205ad6a074ed8a84ddfadc2c18",
+      "bytes": 2532
+    },
+    {
+      "path": "src/components/data/source-directory.module.css",
+      "sha256": "977f5c10cdd04378d647ecd0bc5c9e170b47acbf6fcd84b74f05a2ca0172dd68",
+      "bytes": 4171
+    },
+    {
+      "path": "src/components/data/source-directory.tsx",
+      "sha256": "928164fb7e2622b910faba33b1c08080743037212d1faaa3d1ed0cca8d85acf3",
+      "bytes": 7942
+    },
+    {
+      "path": "src/components/explore/explore-browser.tsx",
+      "sha256": "11a1384d738e6537099b737cd27ce9ef27ae6cafff88553ddf0e85afb1716a86",
+      "bytes": 5457
+    },
+    {
+      "path": "src/components/explore/explore-page.tsx",
+      "sha256": "883177632c9425c92fa8edc1bb0265d903e95745a909bf18045e3e7810fb292a",
+      "bytes": 2116
+    },
+    {
+      "path": "src/components/explore/explore.module.css",
+      "sha256": "3619e207b130739a79135549394888c12b4fde21dfbe1acac946c2ac2bb5979a",
+      "bytes": 15109
+    },
+    {
+      "path": "src/components/explore/pressure-layer.ts",
+      "sha256": "c83b503a5ca9cbcbc357165c8003e90a631d002c914faad8b9f635722be2d879",
+      "bytes": 415
+    },
+    {
+      "path": "src/components/explore/region-discovery.tsx",
+      "sha256": "4de9337020d28991f18107b163b14359e70091c8f295ec60e6a82abd542b31f5",
+      "bytes": 2752
+    },
+    {
+      "path": "src/components/explore/west-java-map.tsx",
+      "sha256": "34c00c2f6495fd7b489bb5a5c280a54a942073dcacd37b0a8437a58698b0b74e",
+      "bytes": 7594
+    },
+    {
+      "path": "src/components/landing/indicator-system.tsx",
+      "sha256": "a0c15d7d4888b6526e970fc51de0f0e9bc710729715eaf25684107d06fde0eec",
+      "bytes": 960
+    },
+    {
+      "path": "src/components/landing/landing-hero.tsx",
+      "sha256": "11c6a86e367cce7f970e69ed967bd1a81e88cabdcd75d608c5a01bcd71042360",
+      "bytes": 4370
+    },
+    {
+      "path": "src/components/landing/landing-page.tsx",
+      "sha256": "377cc8956f46547011ece99504ddc96f3cdc68d41a18572bfecdf9f2a1a9da0e",
+      "bytes": 6474
+    },
+    {
+      "path": "src/components/landing/landing.module.css",
+      "sha256": "4b0940ae6c9558b4084677cac1abef901b6fd7f57d2a371f3e832e7a65462c62",
+      "bytes": 8975
+    },
+    {
+      "path": "src/components/layout/navigation-links.tsx",
+      "sha256": "0a1ecf6ec382ca7dcbd775dc6a0a48a5ce7f0206f648a8ce46da1c6ea304ef35",
+      "bytes": 738
+    },
+    {
+      "path": "src/components/layout/site-footer.tsx",
+      "sha256": "3724eabfd80b32b19873968ba59b63f1d372f08d57f857038bcc2730c53a7bae",
+      "bytes": 289
+    },
+    {
+      "path": "src/components/layout/site-header.tsx",
+      "sha256": "b0b6162ab0c78eaa11e0de27131c77243ced9c952b0de893ba76e412a7b2599f",
+      "bytes": 722
+    },
+    {
+      "path": "src/components/layout/site-navigation.tsx",
+      "sha256": "56c6fc1ff4add23027af480a96f79c7c31bd729b91d46f6df1c2d02aa8767fc8",
+      "bytes": 209
+    },
+    {
+      "path": "src/components/layout/theme-toggle.tsx",
+      "sha256": "c00b7069cac319cda1b8b39096a37938f31419f413a3c742fea12e1bd45672c3",
+      "bytes": 1200
+    },
+    {
+      "path": "src/components/layout/theme.ts",
+      "sha256": "fe36fd9dba7ef6c690de0143aa11772d59fed47ec810a62ed74894ac9f34de05",
+      "bytes": 2230
+    },
+    {
+      "path": "src/components/methodology/methodology-page.module.css",
+      "sha256": "ff08d57a1959bdf71a1c02892155ffb24b5b11ac06bd1e2faa1bf71a5aca6e16",
+      "bytes": 9523
+    },
+    {
+      "path": "src/components/methodology/methodology-page.tsx",
+      "sha256": "077f46444bf501d4ba73fd0351e705ffc79375e297dc4ef4ce234da3d1de6a04",
+      "bytes": 16493
+    },
+    {
+      "path": "src/components/regions/evidence.tsx",
+      "sha256": "7c1791ff32081b766451302e57bacf20170add705cedfc0faedabf827533deef",
+      "bytes": 4545
+    },
+    {
+      "path": "src/components/regions/record.module.css",
+      "sha256": "449afc21e89c13f7c548de3a99f4fa642d9dd0dd5662d5f068f9153e4434afc5",
+      "bytes": 2380
+    },
+    {
+      "path": "src/components/regions/region-detail.module.css",
+      "sha256": "23f4dba792536ad5d54bb0d33edfc64cd4bee219d371048c7b67f72143abdf29",
+      "bytes": 4270
+    },
+    {
+      "path": "src/components/regions/region-detail.tsx",
+      "sha256": "ce9648baf2c116e2b81f2124cd907dd7db2db798b42db4f51c49ca4b9bc40b96",
+      "bytes": 10167
+    },
+    {
+      "path": "src/components/regions/region-overlay.module.css",
+      "sha256": "1f0cd4bbca8d816ff646774223ffe2741425655e4d536b71f5f97a82295c4e54",
+      "bytes": 2618
+    },
+    {
+      "path": "src/components/regions/region-overlay.tsx",
+      "sha256": "c1812377ab614e88f62111f9fbac55929e40ecab9a56ec6cfb378af776accbbd",
+      "bytes": 4036
+    },
+    {
+      "path": "src/lib/civx/cohort-comparison-2023.ts",
+      "sha256": "f155cd680a4247ae8be8f2da3445b3d388ffe095b130d52524ef8e17c87be44c",
+      "bytes": 3539
+    },
+    {
+      "path": "src/lib/civx/contextual-data-2023.ts",
+      "sha256": "b2be822808ccf8614a423b3076ea60233f43ffecc884804c0a28e9d45d461c6f",
+      "bytes": 19989
+    },
+    {
+      "path": "src/lib/civx/current.ts",
+      "sha256": "dd5509600831e90403e4e2c13ef3ebdf758cfd583b8565a99bd877edd62f4d52",
+      "bytes": 1457
+    },
+    {
+      "path": "src/lib/civx/insight-input-2023.ts",
+      "sha256": "59a4628c3d0ef06673fe91be7d34c499550f530621442badc7ca6469b162d455",
+      "bytes": 8319
+    },
+    {
+      "path": "src/lib/civx/insight-templates-2023.ts",
+      "sha256": "f3b6de4aea0aa3dbc8235712ac3464635312c0ca455494fd3247eb98ab975fc6",
+      "bytes": 4957
+    },
+    {
+      "path": "src/lib/civx/insights-2023.ts",
+      "sha256": "08ea922d328c51621b70b691f5745e6482b27ef911038c8ea866f4814b2cd298",
+      "bytes": 13440
+    },
+    {
+      "path": "src/lib/civx/model-2023.ts",
+      "sha256": "2ffe89aecd27583e362e525c88fc37bb66cbb7312d10502a4b0e129d326b4237",
+      "bytes": 28246
+    },
+    {
+      "path": "src/lib/civx/scoring-2023.ts",
+      "sha256": "4c4be7ef7f4a446c89b550cb9f25bfb2c19b8aacddd9cd05ff14a12fb9ff45ae",
+      "bytes": 8542
+    },
+    {
+      "path": "src/lib/civx/scoring.ts",
+      "sha256": "cafe4c9799e0e63e50a1498edf47e617785c3892295cf82abc90b1e09f88aa0b",
+      "bytes": 5094
+    },
+    {
+      "path": "src/lib/civx/types.ts",
+      "sha256": "a9a0e17f0497bbf1cd49bb58239e5a5f78fbe24c97e7c452da5efb2127700da5",
+      "bytes": 2379
+    },
+    {
+      "path": "src/lib/civx/v2/model.ts",
+      "sha256": "4034e234bbae3d5bc526f37aff3c50e63ee85e1d613a4c9915dc6225043e1000",
+      "bytes": 22500
+    },
+    {
+      "path": "src/lib/civx/v2/types.ts",
+      "sha256": "eb7d2088cf8cd70bcc98d7d86e5748dba8116546015a6aae951303459a03bb8b",
+      "bytes": 5824
+    },
+    {
+      "path": "tests/cohort-comparison-2023.test.mjs",
+      "sha256": "f68576a3b1d0600c454ff537d8fe32883e4ba517087178690b8e18d879e04749",
+      "bytes": 6533
+    },
+    {
+      "path": "tests/comparison.test.mjs",
+      "sha256": "6f1b700e3483b52e82df540347cdf194f136eea46b1cc6f90f417e76dc229167",
+      "bytes": 3167
+    },
+    {
+      "path": "tests/contextual-audit-cli-2023.test.mjs",
+      "sha256": "d2864d736ba3a324eb1541d3b19446313585bb9686d06cb577663127da714a4b",
+      "bytes": 5513
+    },
+    {
+      "path": "tests/contextual-data-2023.test.mjs",
+      "sha256": "dd39058f711a3bda93bb49c93574a3631cee99d974830177789a990dab5d8655",
+      "bytes": 12780
+    },
+    {
+      "path": "tests/current-release.test.mjs",
+      "sha256": "7f9896193c4f051ec2fba9832d9468a99bc81acb90878e6d53833616b19ab33a",
+      "bytes": 11586
+    },
+    {
+      "path": "tests/geography.test.mjs",
+      "sha256": "7fa52a17ddc1d08a50671b538f590f5ad63a771a27850e15609e58c50803cb39",
+      "bytes": 794
+    },
+    {
+      "path": "tests/insight-generation-2023.test.mjs",
+      "sha256": "9480e4a66283fb7b55570bc2f3157739b713102e449123423d7c8c66756da165",
+      "bytes": 7917
+    },
+    {
+      "path": "tests/insight-input-2023.test.mjs",
+      "sha256": "792757f65255dae13355a8475c42f1eb913fa67cb24dde5ff17f9ae8ff2b9fad",
+      "bytes": 6232
+    },
+    {
+      "path": "tests/insights-2023.test.mjs",
+      "sha256": "9335fe4cc1484a805e574ef3a69754746894d07548eea52e4c50dbb1e802f718",
+      "bytes": 14858
+    },
+    {
+      "path": "tests/render-ui.mjs",
+      "sha256": "cc7a2676f10411cde4cbfe75f41f21e011b201c00b8acc165f6a02f0bdaf35c1",
+      "bytes": 2146
+    },
+    {
+      "path": "tests/scoring-2023.test.mjs",
+      "sha256": "d2a6d8f630ac9010abe63281c5ca3374dcd3ad2de5a63fb56b51a88baf18825b",
+      "bytes": 35249
+    },
+    {
+      "path": "tests/scoring.test.mjs",
+      "sha256": "c79cffa3837547d806adb9e4ad870d0f57a8c1708da81700e8f376888c778731",
+      "bytes": 3314
+    },
+    {
+      "path": "tests/unified-ui.test.mjs",
+      "sha256": "4907b12ce8f8e1f7040c3db04ed71387ff1ae92e20dab564f6ee6c3682f39971",
+      "bytes": 1002
+    },
+    {
+      "path": "tests/v2.test.mjs",
+      "sha256": "a960131b2f10b03993bd5a8ed1ded20caaf2798fc8ff4214b672ee7ff12198bb",
+      "bytes": 12495
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "0ca10ed3940a09bc6ad609119209390a14c099f898d4d272ecca25fb444177e4",
+      "bytes": 758
+    }
+  ]
+}
