@@ -1,0 +1,13 @@
+{
+  "recommendation": "KEEP_2023_AS_ONLY_FULL_MODEL",
+  "rationale": "The audit verifies 15 of 18 frozen constructs with full 27-region 2024 coverage, including two explicitly caveated panels, and 11 of 18 for 2025. Neither year is a complete same-year replacement. The literal floor-area boundary changes in both years; published SSGI 2024 wasting excludes severe wasting, unlike the frozen total; exact same-year Puskesmas population denominators were not reproducibly retained. The 2025 IRBI headline series also changes baseline and hazard scope. These are source/construct constraints, not permission to mix years or redesign the frozen model. Newer observations and a defensible common-year model are different states. No 2026 full regional construct was verified. Keep the immutable 2023 baseline as the only complete CIVX model; this conclusion does not claim that newer data does not exist.",
+  "nextSteps": [
+    "Request an official floor-area-per-person tabulation retaining the frozen <= 7.2 square metre boundary; do not relabel the published < 7.2 band.",
+    "Obtain official total wasting below -2 including severe cases, or review an explicit severe-plus-moderate bridge with rounding and uncertainty limitations; do not silently copy the moderate-only SSGI column.",
+    "Reproduce exact-person 2024 and 2025 resident-population tables from the health agency, pair each with its own year's main Puskesmas count, and retain both component records before admitting any rate.",
+    "Review SSGI survey continuity, October 2024-February 2025 fieldwork and region-specific direct versus SAE estimation; keep the published confidence intervals.",
+    "Confirm the 2024 IKLH table with the originating provincial/ministry agency, including the published zero water component and the Cirebon narrative/table discrepancy.",
+    "Verify a full regional 2025 APM panel, 2025 nutrition estimates and 2025 IKLH calculation vintage before reconsidering 2025. Treat the rebased IRBI 2025 series as a separate compatibility decision.",
+    "Human review must precede any second-model design. Do not generate new scores, alter normalization or weights, integrate contextual candidates, or modify the frontend in this audit."
+  ]
+}
