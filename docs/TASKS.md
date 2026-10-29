@@ -306,3 +306,17 @@ This is a research-only next-methodology decision for all 27 Jawa Barat kabupate
 - [x] Pass deterministic audit `--check`, `npm run lint` with zero warnings/errors, and `npm run build` with TypeScript and 37 generated pages. Keep frontend, production score, indicators, methodology configuration, weights, release, Public Health and recommendation features unchanged.
 
 The original BPS symbol legend was visually inspected for this audit: a published dash means “Tidak ada atau nol,” not an absent row. BNPB-library dashes remain null without an established zero legend. No previous audit or production symbol treatment changed. Fresh hazard/exposure baselines, verified IKD item evidence, operational preparedness coverage, event/person/address deduplication, reconciled damage editions, uncertainty, rights and joint-model review remain explicit evidence/governance gaps, not invented observations.
+
+## 23. Frozen 2023 scoring engine
+
+This implements the completed [indicator freeze](FINAL-INDICATOR-FREEZE-2023.md), [normalization design](NORMALIZATION-DESIGN-2023.md), and [weighting design](WEIGHTING-DESIGN-2023.md). The existing production release in §18 remains unchanged.
+
+- [x] Implement strictly typed, reusable model validation, directional min-max normalization, within-dimension aggregation and equal-dimension aggregation for exactly 27 regions, 18 CORE indicators and six dimensions.
+- [x] Generate `data/processed/civx-scores-2023.json` from pinned repository inputs, preserving full precision, raw observations, approved weights, source pointers, region identity and model versions.
+- [x] Expose structured dimension extrema, ordered normalized indicators and indicator/dimension score-point contributions without natural-language insights or regional rankings.
+- [x] Reject missing, duplicate, unknown, non-finite, out-of-range, changed-method and changed-weight inputs without imputation, clipping, refitting or weight redistribution.
+- [x] Pass 36 new scoring tests and all 77 application tests, independent Decimal arithmetic, byte-identical CLI replay, source/output-drift failure smoke, `npm run lint` and `npm run build` with 37 generated pages.
+- [x] Document API, source verification scope, formulas, precision, reproducibility, validation results, interpretation, limitations and the unchanged frontend boundary in [SCORING-ENGINE-2023.md](SCORING-ENGINE-2023.md).
+
+All 27 regions scored successfully. The artifact is calculated but not released. Insight Engine implementation and frontend integration are the next separate tasks; independent review, rights, effective-boundary review and release approval remain governance gates.
+
