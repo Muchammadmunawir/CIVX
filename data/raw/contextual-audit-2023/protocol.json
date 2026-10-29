@@ -1,0 +1,53 @@
+{
+  "auditId": "civx-contextual-data-audit-2023",
+  "version": 1,
+  "scope": "CONTEXT",
+  "accessedAt": "2026-10-29",
+  "preferredReferenceYear": 2023,
+  "domainOrder": ["traffic", "transport", "crime", "air_pollution"],
+  "domainAuditPaths": [
+    "data/raw/contextual-audit-2023/traffic.json",
+    "data/raw/contextual-audit-2023/transport.json",
+    "data/raw/contextual-audit-2023/crime.json",
+    "data/raw/contextual-audit-2023/air_pollution.json"
+  ],
+  "registry": {
+    "path": "data/processed/civx-scores-2023.json",
+    "pointer": "/model/regions",
+    "regionCount": 27,
+    "geographicLevel": "kabupaten/kota",
+    "geographicWarning": "Source place, station, road segment, transport catchment and police jurisdiction are not automatically equivalent to an administrative kabupaten/kota. Association with a region is not proof of region-wide representativeness."
+  },
+  "decisions": ["ACCEPT_CONTEXT", "PARTIAL_CONTEXT", "REJECT"],
+  "policies": {
+    "coreScoreAffected": false,
+    "coreInsightsModified": false,
+    "imputationAllowed": false,
+    "contextNormalizationApplied": false,
+    "crossDatasetRankingAllowed": false,
+    "unknownYearSubstitutionAllowed": false,
+    "originalUnitsPreserved": true,
+    "unavailableRegions": "Explicit null regional values and missingness; never zero or provincial average.",
+    "siteObservations": "Keep site/segment observations nested under their documented associated BPS region. A regional scalar remains null unless the source itself publishes a defensible regional value.",
+    "rights": "Do not redistribute material subject to explicit prohibitions. Preserve short attributed factual transcriptions and audit receipts only where defensible; distinguish source access from a general redistribution licence.",
+    "credentials": "Do not store authorization, cookies, session data, access tokens, signed URLs, private keys or embedded service credentials. Scan all new capture files and generated artifacts before commit."
+  },
+  "coreFingerprints": [
+    { "path": "data/processed/final-indicator-freeze-2023.json", "sha256": "8d72727f93c393a331582e83c8250d758abffca4fb2fc8920797b9ff3fe4d7ac" },
+    { "path": "data/processed/normalization-design-2023.json", "sha256": "1f6735060ee421b6e71212eec908d377a7928bc4e5c9999c3582267fecb374f4" },
+    { "path": "data/processed/weighting-design-2023.json", "sha256": "c8966d3a2fa4bc6721061e48995e05a4167de63f7cd77a6a8a3c524c36982131" },
+    { "path": "data/processed/civx-scores-2023.json", "sha256": "47b4813abd59bc452556e9d057596511f95e17acd81a4994589bc87460d9f6d5" },
+    { "path": "data/processed/civx-insights-2023.json", "sha256": "ffd92543c6387c981d2647c8ed55bd3abb7f7c4e9b5b91d4a74fab81999d6345" },
+    { "path": "src/lib/civx/model-2023.ts", "sha256": "2ffe89aecd27583e362e525c88fc37bb66cbb7312d10502a4b0e129d326b4237" },
+    { "path": "src/lib/civx/scoring-2023.ts", "sha256": "4c4be7ef7f4a446c89b550cb9f25bfb2c19b8aacddd9cd05ff14a12fb9ff45ae" },
+    { "path": "src/lib/civx/cohort-comparison-2023.ts", "sha256": "f155cd680a4247ae8be8f2da3445b3d388ffe095b130d52524ef8e17c87be44c" },
+    { "path": "src/lib/civx/insight-input-2023.ts", "sha256": "59a4628c3d0ef06673fe91be7d34c499550f530621442badc7ca6469b162d455" },
+    { "path": "src/lib/civx/insight-templates-2023.ts", "sha256": "f3b6de4aea0aa3dbc8235712ac3464635312c0ca455494fd3247eb98ab975fc6" },
+    { "path": "src/lib/civx/insights-2023.ts", "sha256": "08ea922d328c51621b70b691f5745e6482b27ef911038c8ea866f4814b2cd298" },
+    { "path": "docs/FINAL-INDICATOR-FREEZE-2023.md", "sha256": "1cea8eca26b9bd4146409c35f14e487b81e55c95e7ccd839c3552a91045039ff" },
+    { "path": "docs/NORMALIZATION-DESIGN-2023.md", "sha256": "839fd3f5029f8ba3713022d3800c71a94ee478c131442616a78a2c7e9c3e1d46" },
+    { "path": "docs/WEIGHTING-DESIGN-2023.md", "sha256": "569e05c2baa33b7dced1d959d0987f3d0511f1dd942491be15bd7ba7574e601d" },
+    { "path": "docs/SCORING-ENGINE-2023.md", "sha256": "94c9c48cd9a77fc12a54968ac42f83951f90be7042b9bbd2cb2b894e9e11cef8" },
+    { "path": "docs/INSIGHT-ENGINE-2023.md", "sha256": "b63cc7685ae7659d6c6c8793024225d73ecde974188c4824cef9bfcf665f6754" }
+  ]
+}

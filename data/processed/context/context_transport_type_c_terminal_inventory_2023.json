@@ -1,0 +1,900 @@
+{
+  "datasetId": "context_transport_type_c_terminal_inventory_2023",
+  "version": 1,
+  "scope": "CONTEXT",
+  "coreScoreAffected": false,
+  "normalizationApplied": false,
+  "domain": "transport",
+  "title": "Reported Type C terminal inventory by kabupaten/kota, 2023",
+  "publisher": "BPS Provinsi Jawa Barat; Dinas Perhubungan Provinsi Jawa Barat",
+  "sourceUrl": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+  "referencePeriod": "2023",
+  "publicationDate": "2024-02-28",
+  "sourceType": "official_statistics",
+  "updateFrequency": "Annual",
+  "missingness": "25 numeric regional cells retained. Kabupaten Cirebon (3209) and Kabupaten Subang (3213) have dash symbols and no observations. General notes define dash as negligible, not explicit 0. Kota Banjar explicit numeric 0 retained. Source displays all 27 rows; displayed rows are not equated with 27 usable numeric values.",
+  "machineReadable": true,
+  "reproducible": true,
+  "geographicLevel": "kabupaten/kota",
+  "unit": "terminal",
+  "definition": "Source-published administrative count of Type C terminals, not a count of every bus terminal or a transport-accessibility measure.",
+  "numerator": "Number of Type C terminals reported for the administrative region.",
+  "denominator": null,
+  "measurementMethod": "Administrative reporting by Dinas Perhubungan, reproduced in BPS Table 9.1.5. Exact joins use the explicit Kabupaten and Kota sections, not name-only matching. Actual table heading and selected column establish 2023. No normalization or imputation.",
+  "licenseOrUsageNotes": "Current BPS website terms section 13 permit commercial/noncommercial statistical-data use, distribution and extraction with attribution. Both 2024 PDF copyright pages prohibit commercial reproduction of part/all of the books without written permission. This audit discloses that notice conflict and stores only narrow attributed numerical facts, not page/PDF reproductions. No claim of blanket publication license or BPS endorsement.",
+  "decision": "PARTIAL_CONTEXT",
+  "regionalAggregation": "source_published_region_value",
+  "comparability": {
+    "status": "within_source_partial",
+    "reason": "Same source/year/category, but incomplete numeric coverage and unspecified operational status. Counts reflect region size and terminal governance, not accessibility. Rankings disabled.",
+    "comparisonPermitted": false
+  },
+  "temporalWarning": "2023 administrative inventory; exact census date and present-day operational status are not provided.",
+  "limitations": [
+    "No walking distance, catchment, timetable, service frequency, capacity or passenger denominator.",
+    "Source note is an ellipsis and does not resolve operational-status criteria.",
+    "Contents-page year label differs from actual table heading; actual 2023 column governs.",
+    "Two dash cells are not silently converted to zero."
+  ],
+  "knownBiases": [
+    "Inventory may include terminals without comparable operations or capacity.",
+    "Type C institutional category excludes other terminal types and nonterminal transport."
+  ],
+  "safeStatements": [
+    "BPS publishes a 2023 Type C terminal inventory for the listed region.",
+    "An explicit zero describes this terminal category only, not absence of public transport."
+  ],
+  "unsafeStatements": [
+    "More Type C terminals means better public-transport access.",
+    "The inventory measures operating routes or service frequency.",
+    "Every region has a verified numeric value."
+  ],
+  "statementTemplates": [
+    "In 2023, {regionName} had {value} reported Type C terminals in the BPS/Dishub inventory; this is not an accessibility measure."
+  ],
+  "coverage": {
+    "regionCount": 25,
+    "totalCivxRegions": 27,
+    "coveragePercent": 92.5925925925926,
+    "coveredRegionIds": [
+      "3201",
+      "3202",
+      "3203",
+      "3204",
+      "3205",
+      "3206",
+      "3207",
+      "3208",
+      "3210",
+      "3211",
+      "3212",
+      "3214",
+      "3215",
+      "3216",
+      "3217",
+      "3218",
+      "3271",
+      "3272",
+      "3273",
+      "3274",
+      "3275",
+      "3276",
+      "3277",
+      "3278",
+      "3279"
+    ],
+    "missingRegionIds": [
+      "3209",
+      "3213"
+    ],
+    "observationCount": 25,
+    "regionWideValueCount": 25
+  },
+  "sources": [
+    {
+      "sourceId": "transport_bps_yearbook_2024",
+      "url": "https://jabar.bps.go.id/id/publication/2024/02/28/35ffe2d35104b39feb577e8f/provinsi-jawa-barat-dalam-angka-2024.html",
+      "publisher": "BPS Provinsi Jawa Barat; table producer Dinas Perhubungan Provinsi Jawa Barat",
+      "title": "Provinsi Jawa Barat Dalam Angka 2024",
+      "accessedAt": "2026-10-29",
+      "publicationDate": "2024-02-28",
+      "httpStatus": 200,
+      "representation": "Researcher-authored audit receipt with attributed metadata/short excerpts",
+      "evidence": "Primary PDF downloaded from canonical publication page and inspected in memory. Table 9.1.5 is printed page 612, PDF page 688: actual table heading says 2022 and 2023 despite contents-page heading saying 2021 and 2023. It separates Type C terminal counts from terminal entry/exit passenger counts. All 27 administrative rows appear. Two 2023 terminal cells are dashes, not numeric zero. Table 9.1.6 (pp. 613–614) counts transport modes but supplies no operating frequency. Table 9.1.7 (p. 615) gives province-only monthly railway passengers. Explanatory notes p. lxxi distinguish dash (negligible) from explicit 0 (null or zero). Copyright page, PDF page 4, restricts commercial reproduction; current website terms section 13 grants data use/extraction with attribution. Hash refers to actually fetched linked PDF bytes, not publication-page HTML.",
+      "excerpts": [
+        "Jumlah Terminal Tipe C dan Jumlah Penumpang Masuk - Keluar Melalui Terminal Tipe C Menurut Kabupaten/Kota di Provinsi Jawa Barat, 2022 dan 2023",
+        "Sumber/Source: Dinas Perhubungan Provinsi Jawa Barat/ Transportation Service of Jawa Barat Province",
+        "Data dapat diabaikan/Data negligible",
+        "Tidak ada atau nol /Null or zero"
+      ],
+      "retrievalMethod": "Canonical page read; linked PDF fetched once into memory; pdftotext -layout for selected tables, symbols and copyright notice. No PDF or opaque download URL persisted.",
+      "contentSha256": "500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81"
+    },
+    {
+      "sourceId": "transport_bps_usage",
+      "url": "https://jabar.bps.go.id/id/term-of-use",
+      "publisher": "Badan Pusat Statistik",
+      "title": "Ketentuan Penggunaan",
+      "accessedAt": "2026-10-29",
+      "publicationDate": null,
+      "httpStatus": 200,
+      "representation": "Researcher-authored audit receipt with attributed metadata/short excerpts",
+      "evidence": "Section 13 explicitly permits commercial/noncommercial statistical-data use, copying/distribution and extraction; requires attribution including title, access date, author if any and direct original link, and no false endorsement. This is broader than the commercial-reproduction notice printed in the two 2024 PDFs. Audit uses a narrow researcher-authored factual transcription, not publication reproduction.",
+      "excerpts": [
+        "penggunaan data, baik untuk kepentingan komersial maupun nonkomersial",
+        "memberikan kutipan atau kredit kepada BPS."
+      ],
+      "retrievalMethod": "Direct reader of current primary terms; section 13.",
+      "contentSha256": null
+    }
+  ],
+  "records": [
+    {
+      "regionId": "3201",
+      "regionName": "Kabupaten Bogor",
+      "referencePeriod": "2023",
+      "value": 4,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "transport_type_c_terminals_3201_2023",
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "geographicLevel": "kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "2023",
+          "value": 4,
+          "unit": "terminal",
+          "sourceRef": "transport_bps_yearbook_2024",
+          "sourceLocator": "Table 9.1.5, printed p. 612 / PDF p. 688, Kabupaten Bogor row under Kabupaten/Regency or Kota/Municipality, Jumlah Terminal Tipe C / 2023 column (3).",
+          "sourceValue": "4",
+          "transformation": "none",
+          "limitations": [
+            "Administrative Type C terminal inventory only; not verified operational service, capacity, frequency, proximity or resident accessibility."
+          ],
+          "evidencePointer": "/candidates/0/observations/0"
+        }
+      ]
+    },
+    {
+      "regionId": "3202",
+      "regionName": "Kabupaten Sukabumi",
+      "referencePeriod": "2023",
+      "value": 12,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "transport_type_c_terminals_3202_2023",
+          "regionId": "3202",
+          "regionName": "Kabupaten Sukabumi",
+          "geographicLevel": "kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "2023",
+          "value": 12,
+          "unit": "terminal",
+          "sourceRef": "transport_bps_yearbook_2024",
+          "sourceLocator": "Table 9.1.5, printed p. 612 / PDF p. 688, Kabupaten Sukabumi row under Kabupaten/Regency or Kota/Municipality, Jumlah Terminal Tipe C / 2023 column (3).",
+          "sourceValue": "12",
+          "transformation": "none",
+          "limitations": [
+            "Administrative Type C terminal inventory only; not verified operational service, capacity, frequency, proximity or resident accessibility."
+          ],
+          "evidencePointer": "/candidates/0/observations/1"
+        }
+      ]
+    },
+    {
+      "regionId": "3203",
+      "regionName": "Kabupaten Cianjur",
+      "referencePeriod": "2023",
+      "value": 3,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "transport_type_c_terminals_3203_2023",
+          "regionId": "3203",
+          "regionName": "Kabupaten Cianjur",
+          "geographicLevel": "kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "2023",
+          "value": 3,
+          "unit": "terminal",
+          "sourceRef": "transport_bps_yearbook_2024",
+          "sourceLocator": "Table 9.1.5, printed p. 612 / PDF p. 688, Kabupaten Cianjur row under Kabupaten/Regency or Kota/Municipality, Jumlah Terminal Tipe C / 2023 column (3).",
+          "sourceValue": "3",
+          "transformation": "none",
+          "limitations": [
+            "Administrative Type C terminal inventory only; not verified operational service, capacity, frequency, proximity or resident accessibility."
+          ],
+          "evidencePointer": "/candidates/0/observations/2"
+        }
+      ]
+    },
+    {
+      "regionId": "3204",
+      "regionName": "Kabupaten Bandung",
+      "referencePeriod": "2023",
+      "value": 9,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "transport_type_c_terminals_3204_2023",
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "geographicLevel": "kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "2023",
+          "value": 9,
+          "unit": "terminal",
+          "sourceRef": "transport_bps_yearbook_2024",
+          "sourceLocator": "Table 9.1.5, printed p. 612 / PDF p. 688, Kabupaten Bandung row under Kabupaten/Regency or Kota/Municipality, Jumlah Terminal Tipe C / 2023 column (3).",
+          "sourceValue": "9",
+          "transformation": "none",
+          "limitations": [
+            "Administrative Type C terminal inventory only; not verified operational service, capacity, frequency, proximity or resident accessibility."
+          ],
+          "evidencePointer": "/candidates/0/observations/3"
+        }
+      ]
+    },
+    {
+      "regionId": "3205",
+      "regionName": "Kabupaten Garut",
+      "referencePeriod": "2023",
+      "value": 2,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "transport_type_c_terminals_3205_2023",
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "geographicLevel": "kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "2023",
+          "value": 2,
+          "unit": "terminal",
+          "sourceRef": "transport_bps_yearbook_2024",
+          "sourceLocator": "Table 9.1.5, printed p. 612 / PDF p. 688, Kabupaten Garut row under Kabupaten/Regency or Kota/Municipality, Jumlah Terminal Tipe C / 2023 column (3).",
+          "sourceValue": "2",
+          "transformation": "none",
+          "limitations": [
+            "Administrative Type C terminal inventory only; not verified operational service, capacity, frequency, proximity or resident accessibility."
+          ],
+          "evidencePointer": "/candidates/0/observations/4"
+        }
+      ]
+    },
+    {
+      "regionId": "3206",
+      "regionName": "Kabupaten Tasikmalaya",
+      "referencePeriod": "2023",
+      "value": 7,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "transport_type_c_terminals_3206_2023",
+          "regionId": "3206",
+          "regionName": "Kabupaten Tasikmalaya",
+          "geographicLevel": "kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "2023",
+          "value": 7,
+          "unit": "terminal",
+          "sourceRef": "transport_bps_yearbook_2024",
+          "sourceLocator": "Table 9.1.5, printed p. 612 / PDF p. 688, Kabupaten Tasikmalaya row under Kabupaten/Regency or Kota/Municipality, Jumlah Terminal Tipe C / 2023 column (3).",
+          "sourceValue": "7",
+          "transformation": "none",
+          "limitations": [
+            "Administrative Type C terminal inventory only; not verified operational service, capacity, frequency, proximity or resident accessibility."
+          ],
+          "evidencePointer": "/candidates/0/observations/5"
+        }
+      ]
+    },
+    {
+      "regionId": "3207",
+      "regionName": "Kabupaten Ciamis",
+      "referencePeriod": "2023",
+      "value": 12,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "transport_type_c_terminals_3207_2023",
+          "regionId": "3207",
+          "regionName": "Kabupaten Ciamis",
+          "geographicLevel": "kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "2023",
+          "value": 12,
+          "unit": "terminal",
+          "sourceRef": "transport_bps_yearbook_2024",
+          "sourceLocator": "Table 9.1.5, printed p. 612 / PDF p. 688, Kabupaten Ciamis row under Kabupaten/Regency or Kota/Municipality, Jumlah Terminal Tipe C / 2023 column (3).",
+          "sourceValue": "12",
+          "transformation": "none",
+          "limitations": [
+            "Administrative Type C terminal inventory only; not verified operational service, capacity, frequency, proximity or resident accessibility."
+          ],
+          "evidencePointer": "/candidates/0/observations/6"
+        }
+      ]
+    },
+    {
+      "regionId": "3208",
+      "regionName": "Kabupaten Kuningan",
+      "referencePeriod": "2023",
+      "value": 11,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "transport_type_c_terminals_3208_2023",
+          "regionId": "3208",
+          "regionName": "Kabupaten Kuningan",
+          "geographicLevel": "kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "2023",
+          "value": 11,
+          "unit": "terminal",
+          "sourceRef": "transport_bps_yearbook_2024",
+          "sourceLocator": "Table 9.1.5, printed p. 612 / PDF p. 688, Kabupaten Kuningan row under Kabupaten/Regency or Kota/Municipality, Jumlah Terminal Tipe C / 2023 column (3).",
+          "sourceValue": "11",
+          "transformation": "none",
+          "limitations": [
+            "Administrative Type C terminal inventory only; not verified operational service, capacity, frequency, proximity or resident accessibility."
+          ],
+          "evidencePointer": "/candidates/0/observations/7"
+        }
+      ]
+    },
+    {
+      "regionId": "3209",
+      "regionName": "Kabupaten Cirebon",
+      "referencePeriod": "2023",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3210",
+      "regionName": "Kabupaten Majalengka",
+      "referencePeriod": "2023",
+      "value": 5,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "transport_type_c_terminals_3210_2023",
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "geographicLevel": "kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "2023",
+          "value": 5,
+          "unit": "terminal",
+          "sourceRef": "transport_bps_yearbook_2024",
+          "sourceLocator": "Table 9.1.5, printed p. 612 / PDF p. 688, Kabupaten Majalengka row under Kabupaten/Regency or Kota/Municipality, Jumlah Terminal Tipe C / 2023 column (3).",
+          "sourceValue": "5",
+          "transformation": "none",
+          "limitations": [
+            "Administrative Type C terminal inventory only; not verified operational service, capacity, frequency, proximity or resident accessibility."
+          ],
+          "evidencePointer": "/candidates/0/observations/8"
+        }
+      ]
+    },
+    {
+      "regionId": "3211",
+      "regionName": "Kabupaten Sumedang",
+      "referencePeriod": "2023",
+      "value": 1,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "transport_type_c_terminals_3211_2023",
+          "regionId": "3211",
+          "regionName": "Kabupaten Sumedang",
+          "geographicLevel": "kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "2023",
+          "value": 1,
+          "unit": "terminal",
+          "sourceRef": "transport_bps_yearbook_2024",
+          "sourceLocator": "Table 9.1.5, printed p. 612 / PDF p. 688, Kabupaten Sumedang row under Kabupaten/Regency or Kota/Municipality, Jumlah Terminal Tipe C / 2023 column (3).",
+          "sourceValue": "1",
+          "transformation": "none",
+          "limitations": [
+            "Administrative Type C terminal inventory only; not verified operational service, capacity, frequency, proximity or resident accessibility."
+          ],
+          "evidencePointer": "/candidates/0/observations/9"
+        }
+      ]
+    },
+    {
+      "regionId": "3212",
+      "regionName": "Kabupaten Indramayu",
+      "referencePeriod": "2023",
+      "value": 3,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "transport_type_c_terminals_3212_2023",
+          "regionId": "3212",
+          "regionName": "Kabupaten Indramayu",
+          "geographicLevel": "kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "2023",
+          "value": 3,
+          "unit": "terminal",
+          "sourceRef": "transport_bps_yearbook_2024",
+          "sourceLocator": "Table 9.1.5, printed p. 612 / PDF p. 688, Kabupaten Indramayu row under Kabupaten/Regency or Kota/Municipality, Jumlah Terminal Tipe C / 2023 column (3).",
+          "sourceValue": "3",
+          "transformation": "none",
+          "limitations": [
+            "Administrative Type C terminal inventory only; not verified operational service, capacity, frequency, proximity or resident accessibility."
+          ],
+          "evidencePointer": "/candidates/0/observations/10"
+        }
+      ]
+    },
+    {
+      "regionId": "3213",
+      "regionName": "Kabupaten Subang",
+      "referencePeriod": "2023",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3214",
+      "regionName": "Kabupaten Purwakarta",
+      "referencePeriod": "2023",
+      "value": 1,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "transport_type_c_terminals_3214_2023",
+          "regionId": "3214",
+          "regionName": "Kabupaten Purwakarta",
+          "geographicLevel": "kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "2023",
+          "value": 1,
+          "unit": "terminal",
+          "sourceRef": "transport_bps_yearbook_2024",
+          "sourceLocator": "Table 9.1.5, printed p. 612 / PDF p. 688, Kabupaten Purwakarta row under Kabupaten/Regency or Kota/Municipality, Jumlah Terminal Tipe C / 2023 column (3).",
+          "sourceValue": "1",
+          "transformation": "none",
+          "limitations": [
+            "Administrative Type C terminal inventory only; not verified operational service, capacity, frequency, proximity or resident accessibility."
+          ],
+          "evidencePointer": "/candidates/0/observations/11"
+        }
+      ]
+    },
+    {
+      "regionId": "3215",
+      "regionName": "Kabupaten Karawang",
+      "referencePeriod": "2023",
+      "value": 2,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "transport_type_c_terminals_3215_2023",
+          "regionId": "3215",
+          "regionName": "Kabupaten Karawang",
+          "geographicLevel": "kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "2023",
+          "value": 2,
+          "unit": "terminal",
+          "sourceRef": "transport_bps_yearbook_2024",
+          "sourceLocator": "Table 9.1.5, printed p. 612 / PDF p. 688, Kabupaten Karawang row under Kabupaten/Regency or Kota/Municipality, Jumlah Terminal Tipe C / 2023 column (3).",
+          "sourceValue": "2",
+          "transformation": "none",
+          "limitations": [
+            "Administrative Type C terminal inventory only; not verified operational service, capacity, frequency, proximity or resident accessibility."
+          ],
+          "evidencePointer": "/candidates/0/observations/12"
+        }
+      ]
+    },
+    {
+      "regionId": "3216",
+      "regionName": "Kabupaten Bekasi",
+      "referencePeriod": "2023",
+      "value": 2,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "transport_type_c_terminals_3216_2023",
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "geographicLevel": "kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "2023",
+          "value": 2,
+          "unit": "terminal",
+          "sourceRef": "transport_bps_yearbook_2024",
+          "sourceLocator": "Table 9.1.5, printed p. 612 / PDF p. 688, Kabupaten Bekasi row under Kabupaten/Regency or Kota/Municipality, Jumlah Terminal Tipe C / 2023 column (3).",
+          "sourceValue": "2",
+          "transformation": "none",
+          "limitations": [
+            "Administrative Type C terminal inventory only; not verified operational service, capacity, frequency, proximity or resident accessibility."
+          ],
+          "evidencePointer": "/candidates/0/observations/13"
+        }
+      ]
+    },
+    {
+      "regionId": "3217",
+      "regionName": "Kabupaten Bandung Barat",
+      "referencePeriod": "2023",
+      "value": 5,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "transport_type_c_terminals_3217_2023",
+          "regionId": "3217",
+          "regionName": "Kabupaten Bandung Barat",
+          "geographicLevel": "kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "2023",
+          "value": 5,
+          "unit": "terminal",
+          "sourceRef": "transport_bps_yearbook_2024",
+          "sourceLocator": "Table 9.1.5, printed p. 612 / PDF p. 688, Kabupaten Bandung Barat row under Kabupaten/Regency or Kota/Municipality, Jumlah Terminal Tipe C / 2023 column (3).",
+          "sourceValue": "5",
+          "transformation": "none",
+          "limitations": [
+            "Administrative Type C terminal inventory only; not verified operational service, capacity, frequency, proximity or resident accessibility."
+          ],
+          "evidencePointer": "/candidates/0/observations/14"
+        }
+      ]
+    },
+    {
+      "regionId": "3218",
+      "regionName": "Kabupaten Pangandaran",
+      "referencePeriod": "2023",
+      "value": 2,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "transport_type_c_terminals_3218_2023",
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "geographicLevel": "kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "2023",
+          "value": 2,
+          "unit": "terminal",
+          "sourceRef": "transport_bps_yearbook_2024",
+          "sourceLocator": "Table 9.1.5, printed p. 612 / PDF p. 688, Kabupaten Pangandaran row under Kabupaten/Regency or Kota/Municipality, Jumlah Terminal Tipe C / 2023 column (3).",
+          "sourceValue": "2",
+          "transformation": "none",
+          "limitations": [
+            "Administrative Type C terminal inventory only; not verified operational service, capacity, frequency, proximity or resident accessibility."
+          ],
+          "evidencePointer": "/candidates/0/observations/15"
+        }
+      ]
+    },
+    {
+      "regionId": "3271",
+      "regionName": "Kota Bogor",
+      "referencePeriod": "2023",
+      "value": 1,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "transport_type_c_terminals_3271_2023",
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "geographicLevel": "kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "2023",
+          "value": 1,
+          "unit": "terminal",
+          "sourceRef": "transport_bps_yearbook_2024",
+          "sourceLocator": "Table 9.1.5, printed p. 612 / PDF p. 688, Kota Bogor row under Kabupaten/Regency or Kota/Municipality, Jumlah Terminal Tipe C / 2023 column (3).",
+          "sourceValue": "1",
+          "transformation": "none",
+          "limitations": [
+            "Administrative Type C terminal inventory only; not verified operational service, capacity, frequency, proximity or resident accessibility."
+          ],
+          "evidencePointer": "/candidates/0/observations/16"
+        }
+      ]
+    },
+    {
+      "regionId": "3272",
+      "regionName": "Kota Sukabumi",
+      "referencePeriod": "2023",
+      "value": 2,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "transport_type_c_terminals_3272_2023",
+          "regionId": "3272",
+          "regionName": "Kota Sukabumi",
+          "geographicLevel": "kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "2023",
+          "value": 2,
+          "unit": "terminal",
+          "sourceRef": "transport_bps_yearbook_2024",
+          "sourceLocator": "Table 9.1.5, printed p. 612 / PDF p. 688, Kota Sukabumi row under Kabupaten/Regency or Kota/Municipality, Jumlah Terminal Tipe C / 2023 column (3).",
+          "sourceValue": "2",
+          "transformation": "none",
+          "limitations": [
+            "Administrative Type C terminal inventory only; not verified operational service, capacity, frequency, proximity or resident accessibility."
+          ],
+          "evidencePointer": "/candidates/0/observations/17"
+        }
+      ]
+    },
+    {
+      "regionId": "3273",
+      "regionName": "Kota Bandung",
+      "referencePeriod": "2023",
+      "value": 11,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "transport_type_c_terminals_3273_2023",
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "geographicLevel": "kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "2023",
+          "value": 11,
+          "unit": "terminal",
+          "sourceRef": "transport_bps_yearbook_2024",
+          "sourceLocator": "Table 9.1.5, printed p. 612 / PDF p. 688, Kota Bandung row under Kabupaten/Regency or Kota/Municipality, Jumlah Terminal Tipe C / 2023 column (3).",
+          "sourceValue": "11",
+          "transformation": "none",
+          "limitations": [
+            "Administrative Type C terminal inventory only; not verified operational service, capacity, frequency, proximity or resident accessibility."
+          ],
+          "evidencePointer": "/candidates/0/observations/18"
+        }
+      ]
+    },
+    {
+      "regionId": "3274",
+      "regionName": "Kota Cirebon",
+      "referencePeriod": "2023",
+      "value": 1,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "transport_type_c_terminals_3274_2023",
+          "regionId": "3274",
+          "regionName": "Kota Cirebon",
+          "geographicLevel": "kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "2023",
+          "value": 1,
+          "unit": "terminal",
+          "sourceRef": "transport_bps_yearbook_2024",
+          "sourceLocator": "Table 9.1.5, printed p. 612 / PDF p. 688, Kota Cirebon row under Kabupaten/Regency or Kota/Municipality, Jumlah Terminal Tipe C / 2023 column (3).",
+          "sourceValue": "1",
+          "transformation": "none",
+          "limitations": [
+            "Administrative Type C terminal inventory only; not verified operational service, capacity, frequency, proximity or resident accessibility."
+          ],
+          "evidencePointer": "/candidates/0/observations/19"
+        }
+      ]
+    },
+    {
+      "regionId": "3275",
+      "regionName": "Kota Bekasi",
+      "referencePeriod": "2023",
+      "value": 1,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "transport_type_c_terminals_3275_2023",
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "geographicLevel": "kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "2023",
+          "value": 1,
+          "unit": "terminal",
+          "sourceRef": "transport_bps_yearbook_2024",
+          "sourceLocator": "Table 9.1.5, printed p. 612 / PDF p. 688, Kota Bekasi row under Kabupaten/Regency or Kota/Municipality, Jumlah Terminal Tipe C / 2023 column (3).",
+          "sourceValue": "1",
+          "transformation": "none",
+          "limitations": [
+            "Administrative Type C terminal inventory only; not verified operational service, capacity, frequency, proximity or resident accessibility."
+          ],
+          "evidencePointer": "/candidates/0/observations/20"
+        }
+      ]
+    },
+    {
+      "regionId": "3276",
+      "regionName": "Kota Depok",
+      "referencePeriod": "2023",
+      "value": 1,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "transport_type_c_terminals_3276_2023",
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "geographicLevel": "kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "2023",
+          "value": 1,
+          "unit": "terminal",
+          "sourceRef": "transport_bps_yearbook_2024",
+          "sourceLocator": "Table 9.1.5, printed p. 612 / PDF p. 688, Kota Depok row under Kabupaten/Regency or Kota/Municipality, Jumlah Terminal Tipe C / 2023 column (3).",
+          "sourceValue": "1",
+          "transformation": "none",
+          "limitations": [
+            "Administrative Type C terminal inventory only; not verified operational service, capacity, frequency, proximity or resident accessibility."
+          ],
+          "evidencePointer": "/candidates/0/observations/21"
+        }
+      ]
+    },
+    {
+      "regionId": "3277",
+      "regionName": "Kota Cimahi",
+      "referencePeriod": "2023",
+      "value": 3,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "transport_type_c_terminals_3277_2023",
+          "regionId": "3277",
+          "regionName": "Kota Cimahi",
+          "geographicLevel": "kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "2023",
+          "value": 3,
+          "unit": "terminal",
+          "sourceRef": "transport_bps_yearbook_2024",
+          "sourceLocator": "Table 9.1.5, printed p. 612 / PDF p. 688, Kota Cimahi row under Kabupaten/Regency or Kota/Municipality, Jumlah Terminal Tipe C / 2023 column (3).",
+          "sourceValue": "3",
+          "transformation": "none",
+          "limitations": [
+            "Administrative Type C terminal inventory only; not verified operational service, capacity, frequency, proximity or resident accessibility."
+          ],
+          "evidencePointer": "/candidates/0/observations/22"
+        }
+      ]
+    },
+    {
+      "regionId": "3278",
+      "regionName": "Kota Tasikmalaya",
+      "referencePeriod": "2023",
+      "value": 5,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "transport_type_c_terminals_3278_2023",
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "geographicLevel": "kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "2023",
+          "value": 5,
+          "unit": "terminal",
+          "sourceRef": "transport_bps_yearbook_2024",
+          "sourceLocator": "Table 9.1.5, printed p. 612 / PDF p. 688, Kota Tasikmalaya row under Kabupaten/Regency or Kota/Municipality, Jumlah Terminal Tipe C / 2023 column (3).",
+          "sourceValue": "5",
+          "transformation": "none",
+          "limitations": [
+            "Administrative Type C terminal inventory only; not verified operational service, capacity, frequency, proximity or resident accessibility."
+          ],
+          "evidencePointer": "/candidates/0/observations/23"
+        }
+      ]
+    },
+    {
+      "regionId": "3279",
+      "regionName": "Kota Banjar",
+      "referencePeriod": "2023",
+      "value": 0,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "transport_type_c_terminals_3279_2023",
+          "regionId": "3279",
+          "regionName": "Kota Banjar",
+          "geographicLevel": "kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "2023",
+          "value": 0,
+          "unit": "terminal",
+          "sourceRef": "transport_bps_yearbook_2024",
+          "sourceLocator": "Table 9.1.5, printed p. 612 / PDF p. 688, Kota Banjar row under Kabupaten/Regency or Kota/Municipality, Jumlah Terminal Tipe C / 2023 column (3).",
+          "sourceValue": "0",
+          "transformation": "none",
+          "limitations": [
+            "Administrative Type C terminal inventory only; not verified operational service, capacity, frequency, proximity or resident accessibility."
+          ],
+          "evidencePointer": "/candidates/0/observations/24"
+        }
+      ]
+    }
+  ],
+  "rawAuditPath": "data/raw/contextual-audit-2023/transport.json",
+  "candidatePointer": "/candidates/0",
+  "provenance": {
+    "sourceManifest": [
+      {
+        "path": "data/raw/contextual-audit-2023/transport.json",
+        "sha256": "f71a0786e00173c6155113909f79826694fd22089fe9a325fb186fb8ec57a352",
+        "bytes": 70934
+      }
+    ],
+    "computationManifest": [
+      {
+        "path": "scripts/audit-contextual-data-2023.mjs",
+        "sha256": "21ca2031864991718cab8807f1c3eb71e8a18d3e37ca184d13d1390e9bb9e32a",
+        "bytes": 9539
+      },
+      {
+        "path": "src/lib/civx/contextual-data-2023.ts",
+        "sha256": "b2be822808ccf8614a423b3076ea60233f43ffecc884804c0a28e9d45d461c6f",
+        "bytes": 19989
+      }
+    ],
+    "reproductionScope": "Offline replay of attributed audited source transcriptions; not a new live-source acquisition or a claim of a blanket original-publication redistribution licence."
+  }
+}

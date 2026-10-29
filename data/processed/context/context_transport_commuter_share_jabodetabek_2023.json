@@ -1,0 +1,506 @@
+{
+  "datasetId": "context_transport_commuter_share_jabodetabek_2023",
+  "version": 1,
+  "scope": "CONTEXT",
+  "coreScoreAffected": false,
+  "normalizationApplied": false,
+  "domain": "transport",
+  "title": "Residents aged 5+ classified as cross-boundary commuters, selected Jabodetabek regions, 2023",
+  "publisher": "Badan Pusat Statistik; Direktorat Statistik Kependudukan dan Ketenagakerjaan",
+  "sourceUrl": "https://www.bps.go.id/id/publication/2024/03/28/33b6bef825944e576e7ea3ba/statistik-komuter-jabodetabek-hasil-survei-komuter-jabodetabek-2023.html",
+  "referencePeriod": "2023-10 survey; routine travel during previous month",
+  "publicationDate": "2024-03-28",
+  "sourceType": "official_statistics",
+  "updateFrequency": "Ad hoc; prior editions exist",
+  "missingness": "Five Jawa Barat regions explicitly in survey frame. Remaining 22 CIVX regions are outside this Jabodetabek source coverage, not zero and not imputed.",
+  "machineReadable": false,
+  "reproducible": true,
+  "geographicLevel": "kabupaten/kota of residence",
+  "unit": "percent",
+  "definition": "Source-published percentage of usual residents aged 5+ who routinely travel for work/school/college/course outside their home kabupaten/kota and return the same day (under 24 hours), during the previous month. All transport modes, not public-transit users only.",
+  "numerator": "Estimated residents aged 5+ classified as cross-kabupaten/kota commuters.",
+  "denominator": "Estimated usual-resident population aged 5+ in the same administrative residence unit.",
+  "measurementMethod": "October 2023 household survey: two-stage sample of census blocks selected PPS, then systematic household selection; target 19,050 households in 1,905 blocks across Jabodetabek. Door-to-door interviews. Publish Table 1 rounded percentages directly. Sample error estimates are in Table A p. 5; no derived score or rank.",
+  "licenseOrUsageNotes": "Current BPS website terms section 13 permit commercial/noncommercial statistical-data use, distribution and extraction with attribution. Both 2024 PDF copyright pages prohibit commercial reproduction of part/all of the books without written permission. This audit discloses that notice conflict and stores only narrow attributed numerical facts, not page/PDF reproductions. No claim of blanket publication license or BPS endorsement.",
+  "decision": "PARTIAL_CONTEXT",
+  "regionalAggregation": "source_published_region_value",
+  "comparability": {
+    "status": "within_source_partial",
+    "reason": "Common survey definition and period for five residence regions, but sample uncertainty and a geographically restricted metropolitan frame prevent all-27 comparison. Rankings disabled.",
+    "comparisonPermitted": false
+  },
+  "temporalWarning": "October 2023 survey; routine travel during preceding month. Published March 2024; not a present-day or annual transport-use rate.",
+  "limitations": [
+    "No public-transit modal share, passenger load, route coverage or accessibility inference.",
+    "Not annual passenger journeys and not all daily travellers.",
+    "Reference period is October 2023 collection about routine travel in preceding month, not a whole-calendar-year passenger total.",
+    "No inference for the other 22 Jawa Barat regions."
+  ],
+  "knownBiases": [
+    "Recall and proxy-reporting error in household interviews.",
+    "Commuter definition excludes within-kabupaten/kota travel regardless of distance and excludes travel for other purposes.",
+    "Administrative boundaries and region size affect cross-boundary classification.",
+    "Sampling error and rounded published percentages; Table A documents uncertainty."
+  ],
+  "safeStatements": [
+    "BPS estimated the stated share of residents aged 5+ as routine cross-boundary commuters.",
+    "Commuting definition includes work and education travel using any mode."
+  ],
+  "unsafeStatements": [
+    "This percentage is public-transport ridership or public-transit mode share.",
+    "The other 22 regions have no commuters.",
+    "A larger commuter share proves better accessibility or worse congestion."
+  ],
+  "statementTemplates": [
+    "In the October 2023 BPS Jabodetabek survey, {value}% of {regionName} residents aged 5+ were classified as routine cross-kabupaten/kota commuters; all modes are included."
+  ],
+  "coverage": {
+    "regionCount": 5,
+    "totalCivxRegions": 27,
+    "coveragePercent": 18.51851851851852,
+    "coveredRegionIds": [
+      "3201",
+      "3216",
+      "3271",
+      "3275",
+      "3276"
+    ],
+    "missingRegionIds": [
+      "3202",
+      "3203",
+      "3204",
+      "3205",
+      "3206",
+      "3207",
+      "3208",
+      "3209",
+      "3210",
+      "3211",
+      "3212",
+      "3213",
+      "3214",
+      "3215",
+      "3217",
+      "3218",
+      "3272",
+      "3273",
+      "3274",
+      "3277",
+      "3278",
+      "3279"
+    ],
+    "observationCount": 5,
+    "regionWideValueCount": 5
+  },
+  "sources": [
+    {
+      "sourceId": "transport_bps_commuter_2023",
+      "url": "https://www.bps.go.id/id/publication/2024/03/28/33b6bef825944e576e7ea3ba/statistik-komuter-jabodetabek-hasil-survei-komuter-jabodetabek-2023.html",
+      "publisher": "Badan Pusat Statistik; Direktorat Statistik Kependudukan dan Ketenagakerjaan",
+      "title": "Statistik Komuter Jabodetabek Hasil Survei Komuter Jabodetabek 2023, Volume 3, 2024",
+      "accessedAt": "2026-10-29",
+      "publicationDate": "2024-03-28",
+      "httpStatus": 200,
+      "representation": "Researcher-authored audit receipt with attributed metadata/short excerpts",
+      "evidence": "Primary linked PDF inspected in memory. Table 1, printed p. 11, PDF p. 71, publishes commuter counts and rounded percentages by residence. Five Jawa Barat residence units map exactly to CIVX: Kabupaten Bogor, Kabupaten Bekasi, Kota Bogor, Kota Bekasi, Kota Depok. Concepts p. xxvii define age 5+, routine work/study/course travel returning same day across a kabupaten/kota boundary during previous month. Method pp. xlvii–xlix specifies two-stage sampled household survey, October 2023 door-to-door collection. Table A p. 5 gives sampling error estimates, so results are not complete enumerations. Copyright notice PDF p. 4 restricts commercial reproduction; current website data-extraction grant is disclosed separately. Hash refers to fetched PDF bytes.",
+      "excerpts": [
+        "Pendataan dilaksanakan pada bulan Oktober 2023.",
+        "Komuter adalah penduduk berumur 5 tahun ke atas yang melakukan pergerakan penduduk harian dengan melewati batas administrasi kabupaten/kota tempat tinggalnya.",
+        "Catatan: Komuter antarkabupaten/kota"
+      ],
+      "retrievalMethod": "Canonical page read; linked PDF fetched into memory. Selected technical pages parsed with pdftotext. Table 1 custom font did not extract digits: rendered PDF page 71 using pdftoppm; OCR with Tesseract afr at 2400 and 3600 pixels aided transcription, not independent source verification. All five selected percentage cells were then visually read against the rendered source page and agreed with the retained values. Only selected published percentages transcribed; no OCR output, PDF, page image or opaque URL persisted in the repository. A temporary rendered page was shared outside the repository for parent visual inspection.",
+      "contentSha256": "21221cca87f8c01d8935a03988bd10f0fcffb364f6fe39f30e5da304909e546a"
+    },
+    {
+      "sourceId": "transport_bps_usage",
+      "url": "https://jabar.bps.go.id/id/term-of-use",
+      "publisher": "Badan Pusat Statistik",
+      "title": "Ketentuan Penggunaan",
+      "accessedAt": "2026-10-29",
+      "publicationDate": null,
+      "httpStatus": 200,
+      "representation": "Researcher-authored audit receipt with attributed metadata/short excerpts",
+      "evidence": "Section 13 explicitly permits commercial/noncommercial statistical-data use, copying/distribution and extraction; requires attribution including title, access date, author if any and direct original link, and no false endorsement. This is broader than the commercial-reproduction notice printed in the two 2024 PDFs. Audit uses a narrow researcher-authored factual transcription, not publication reproduction.",
+      "excerpts": [
+        "penggunaan data, baik untuk kepentingan komersial maupun nonkomersial",
+        "memberikan kutipan atau kredit kepada BPS."
+      ],
+      "retrievalMethod": "Direct reader of current primary terms; section 13.",
+      "contentSha256": null
+    }
+  ],
+  "records": [
+    {
+      "regionId": "3201",
+      "regionName": "Kabupaten Bogor",
+      "referencePeriod": "2023-10 survey; routine travel during previous month",
+      "value": 11.2,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "transport_commuter_share_3201_2023",
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "geographicLevel": "kabupaten/kota of residence",
+          "siteId": null,
+          "siteName": null,
+          "period": "2023-10",
+          "value": 11.2,
+          "unit": "percent",
+          "sourceRef": "transport_bps_commuter_2023",
+          "sourceLocator": "Table 1, printed p. 11 / PDF p. 71, Kabupaten Bogor residence row (county rows labelled Bogor/Bekasi; cities explicitly Kota), Status Komuter / Komuter / % column.",
+          "sourceValue": "11,2",
+          "transformation": "Parse published decimal comma as decimal point; source-published percentage retained without recomputing or normalization.",
+          "limitations": [
+            "Sample estimate, rounded to one decimal; no census precision or rank inference.",
+            "Age 5+ routine cross-kabupaten/kota commuters by residence; not public-transport ridership or all trip-making."
+          ],
+          "evidencePointer": "/candidates/1/observations/0"
+        }
+      ]
+    },
+    {
+      "regionId": "3202",
+      "regionName": "Kabupaten Sukabumi",
+      "referencePeriod": "2023-10 survey; routine travel during previous month",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3203",
+      "regionName": "Kabupaten Cianjur",
+      "referencePeriod": "2023-10 survey; routine travel during previous month",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3204",
+      "regionName": "Kabupaten Bandung",
+      "referencePeriod": "2023-10 survey; routine travel during previous month",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3205",
+      "regionName": "Kabupaten Garut",
+      "referencePeriod": "2023-10 survey; routine travel during previous month",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3206",
+      "regionName": "Kabupaten Tasikmalaya",
+      "referencePeriod": "2023-10 survey; routine travel during previous month",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3207",
+      "regionName": "Kabupaten Ciamis",
+      "referencePeriod": "2023-10 survey; routine travel during previous month",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3208",
+      "regionName": "Kabupaten Kuningan",
+      "referencePeriod": "2023-10 survey; routine travel during previous month",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3209",
+      "regionName": "Kabupaten Cirebon",
+      "referencePeriod": "2023-10 survey; routine travel during previous month",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3210",
+      "regionName": "Kabupaten Majalengka",
+      "referencePeriod": "2023-10 survey; routine travel during previous month",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3211",
+      "regionName": "Kabupaten Sumedang",
+      "referencePeriod": "2023-10 survey; routine travel during previous month",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3212",
+      "regionName": "Kabupaten Indramayu",
+      "referencePeriod": "2023-10 survey; routine travel during previous month",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3213",
+      "regionName": "Kabupaten Subang",
+      "referencePeriod": "2023-10 survey; routine travel during previous month",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3214",
+      "regionName": "Kabupaten Purwakarta",
+      "referencePeriod": "2023-10 survey; routine travel during previous month",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3215",
+      "regionName": "Kabupaten Karawang",
+      "referencePeriod": "2023-10 survey; routine travel during previous month",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3216",
+      "regionName": "Kabupaten Bekasi",
+      "referencePeriod": "2023-10 survey; routine travel during previous month",
+      "value": 11.2,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "transport_commuter_share_3216_2023",
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "geographicLevel": "kabupaten/kota of residence",
+          "siteId": null,
+          "siteName": null,
+          "period": "2023-10",
+          "value": 11.2,
+          "unit": "percent",
+          "sourceRef": "transport_bps_commuter_2023",
+          "sourceLocator": "Table 1, printed p. 11 / PDF p. 71, Kabupaten Bekasi residence row (county rows labelled Bogor/Bekasi; cities explicitly Kota), Status Komuter / Komuter / % column.",
+          "sourceValue": "11,2",
+          "transformation": "Parse published decimal comma as decimal point; source-published percentage retained without recomputing or normalization.",
+          "limitations": [
+            "Sample estimate, rounded to one decimal; no census precision or rank inference.",
+            "Age 5+ routine cross-kabupaten/kota commuters by residence; not public-transport ridership or all trip-making."
+          ],
+          "evidencePointer": "/candidates/1/observations/1"
+        }
+      ]
+    },
+    {
+      "regionId": "3217",
+      "regionName": "Kabupaten Bandung Barat",
+      "referencePeriod": "2023-10 survey; routine travel during previous month",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3218",
+      "regionName": "Kabupaten Pangandaran",
+      "referencePeriod": "2023-10 survey; routine travel during previous month",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3271",
+      "regionName": "Kota Bogor",
+      "referencePeriod": "2023-10 survey; routine travel during previous month",
+      "value": 13.1,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "transport_commuter_share_3271_2023",
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "geographicLevel": "kabupaten/kota of residence",
+          "siteId": null,
+          "siteName": null,
+          "period": "2023-10",
+          "value": 13.1,
+          "unit": "percent",
+          "sourceRef": "transport_bps_commuter_2023",
+          "sourceLocator": "Table 1, printed p. 11 / PDF p. 71, Kota Bogor residence row (county rows labelled Bogor/Bekasi; cities explicitly Kota), Status Komuter / Komuter / % column.",
+          "sourceValue": "13,1",
+          "transformation": "Parse published decimal comma as decimal point; source-published percentage retained without recomputing or normalization.",
+          "limitations": [
+            "Sample estimate, rounded to one decimal; no census precision or rank inference.",
+            "Age 5+ routine cross-kabupaten/kota commuters by residence; not public-transport ridership or all trip-making."
+          ],
+          "evidencePointer": "/candidates/1/observations/2"
+        }
+      ]
+    },
+    {
+      "regionId": "3272",
+      "regionName": "Kota Sukabumi",
+      "referencePeriod": "2023-10 survey; routine travel during previous month",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3273",
+      "regionName": "Kota Bandung",
+      "referencePeriod": "2023-10 survey; routine travel during previous month",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3274",
+      "regionName": "Kota Cirebon",
+      "referencePeriod": "2023-10 survey; routine travel during previous month",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3275",
+      "regionName": "Kota Bekasi",
+      "referencePeriod": "2023-10 survey; routine travel during previous month",
+      "value": 19.2,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "transport_commuter_share_3275_2023",
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "geographicLevel": "kabupaten/kota of residence",
+          "siteId": null,
+          "siteName": null,
+          "period": "2023-10",
+          "value": 19.2,
+          "unit": "percent",
+          "sourceRef": "transport_bps_commuter_2023",
+          "sourceLocator": "Table 1, printed p. 11 / PDF p. 71, Kota Bekasi residence row (county rows labelled Bogor/Bekasi; cities explicitly Kota), Status Komuter / Komuter / % column.",
+          "sourceValue": "19,2",
+          "transformation": "Parse published decimal comma as decimal point; source-published percentage retained without recomputing or normalization.",
+          "limitations": [
+            "Sample estimate, rounded to one decimal; no census precision or rank inference.",
+            "Age 5+ routine cross-kabupaten/kota commuters by residence; not public-transport ridership or all trip-making."
+          ],
+          "evidencePointer": "/candidates/1/observations/3"
+        }
+      ]
+    },
+    {
+      "regionId": "3276",
+      "regionName": "Kota Depok",
+      "referencePeriod": "2023-10 survey; routine travel during previous month",
+      "value": 24.5,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "transport_commuter_share_3276_2023",
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "geographicLevel": "kabupaten/kota of residence",
+          "siteId": null,
+          "siteName": null,
+          "period": "2023-10",
+          "value": 24.5,
+          "unit": "percent",
+          "sourceRef": "transport_bps_commuter_2023",
+          "sourceLocator": "Table 1, printed p. 11 / PDF p. 71, Kota Depok residence row (county rows labelled Bogor/Bekasi; cities explicitly Kota), Status Komuter / Komuter / % column.",
+          "sourceValue": "24,5",
+          "transformation": "Parse published decimal comma as decimal point; source-published percentage retained without recomputing or normalization.",
+          "limitations": [
+            "Sample estimate, rounded to one decimal; no census precision or rank inference.",
+            "Age 5+ routine cross-kabupaten/kota commuters by residence; not public-transport ridership or all trip-making."
+          ],
+          "evidencePointer": "/candidates/1/observations/4"
+        }
+      ]
+    },
+    {
+      "regionId": "3277",
+      "regionName": "Kota Cimahi",
+      "referencePeriod": "2023-10 survey; routine travel during previous month",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3278",
+      "regionName": "Kota Tasikmalaya",
+      "referencePeriod": "2023-10 survey; routine travel during previous month",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3279",
+      "regionName": "Kota Banjar",
+      "referencePeriod": "2023-10 survey; routine travel during previous month",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    }
+  ],
+  "rawAuditPath": "data/raw/contextual-audit-2023/transport.json",
+  "candidatePointer": "/candidates/1",
+  "provenance": {
+    "sourceManifest": [
+      {
+        "path": "data/raw/contextual-audit-2023/transport.json",
+        "sha256": "f71a0786e00173c6155113909f79826694fd22089fe9a325fb186fb8ec57a352",
+        "bytes": 70934
+      }
+    ],
+    "computationManifest": [
+      {
+        "path": "scripts/audit-contextual-data-2023.mjs",
+        "sha256": "21ca2031864991718cab8807f1c3eb71e8a18d3e37ca184d13d1390e9bb9e32a",
+        "bytes": 9539
+      },
+      {
+        "path": "src/lib/civx/contextual-data-2023.ts",
+        "sha256": "b2be822808ccf8614a423b3076ea60233f43ffecc884804c0a28e9d45d461c6f",
+        "bytes": 19989
+      }
+    ],
+    "reproductionScope": "Offline replay of attributed audited source transcriptions; not a new live-source acquisition or a claim of a blanket original-publication redistribution licence."
+  }
+}

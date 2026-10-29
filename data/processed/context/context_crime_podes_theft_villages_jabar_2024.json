@@ -1,0 +1,1034 @@
+{
+  "datasetId": "context_crime_podes_theft_villages_jabar_2024",
+  "version": 1,
+  "scope": "CONTEXT",
+  "coreScoreAffected": false,
+  "normalizationApplied": false,
+  "domain": "crime",
+  "title": "Desa/kelurahan with theft occurrence during the year preceding Podes May 2024 enumeration",
+  "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+  "sourceUrl": "https://jabar.bps.go.id/id/publication/2024/12/27/1f6b4fbd4df3649dad58ac22/statistik-potensi-desa-provinsi-jawa-barat-2024.html",
+  "referencePeriod": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+  "publicationDate": "2024-12-27",
+  "sourceType": "official_statistics",
+  "updateFrequency": "Podes major census three times per decade; this publication reports the 2024 round. Publication catalogue also labels release frequency annual; do not infer annual comparable theft observations.",
+  "missingness": "All 27 selected theft-column cells are published numeric counts; no selected cell is blank or a missing-value symbol. No filling, imputation or forced zero occurs. Presence of a published count does not establish complete detection of underlying crime.",
+  "machineReadable": false,
+  "reproducible": true,
+  "geographicLevel": "Civil kabupaten/kota aggregation of desa/kelurahan occurrence reports",
+  "unit": "desa/kelurahan",
+  "definition": "Number of desa/kelurahan in each civil kabupaten/kota where theft (Pencurian, Table 18.4 column 2) occurred during the year before enumeration. This counts village-level presence, not police reports, incidents, victims or residents. Robbery (Pencurian dengan Kekerasan) is a separate column and is not added.",
+  "numerator": "Source-published count of desa/kelurahan reporting theft occurrence in the preceding year.",
+  "denominator": "None: absolute village/kelurahan count. No population or village-share rate is constructed.",
+  "measurementMethod": "Podes 2024 civil administrative census, enumerated May 2024. Trained BPS personnel/partners directly interviewed relevant knowledgeable, authorized local informants and examined related documents. General explanations paragraph 6 explicitly assigns Table 18.4 to the preceding-year reference period. BPS publishes the kabupaten/kota aggregation; no police jurisdiction crosswalk is used.",
+  "licenseOrUsageNotes": "Current BPS website section 13 explicitly permits commercial/noncommercial statistical-data use, copying/distribution and extraction with BPS credit, content title, access date, direct original link, lawful use and no false endorsement. PDF page 4 separately prohibits partial/full commercial book reproduction without written permission. Audit relies only on the explicit current statistical-data extraction grant for narrowly attributed factual cells; it does not redistribute the PDF, layout, images or full table text. Conflicting publication notice remains a downstream commercial-reuse review caveat; no open licence is fabricated.",
+  "decision": "ACCEPT_CONTEXT",
+  "regionalAggregation": "source_published_region_value",
+  "comparability": {
+    "status": "comparable_admin_panel",
+    "reason": "All 27 civil-region counts use one BPS Podes census, one selected category and one recall period; civil administrative scope is explicit in method. Raw village counts vary with numbers and sizes of villages, local recall and detection, so this audit disables cross-region ranking and risk comparisons.",
+    "comparisonPermitted": false
+  },
+  "temporalWarning": "Collected in May 2024; Table 18.4 refers to the preceding year. Do not relabel this recall window as calendar 2023 or align it mechanically with 2023 CORE values.",
+  "limitations": [
+    "Nearby-year context, not an actual calendar-2023 police-crime measure.",
+    "Method states one year before May 2024 enumeration but does not supply exact day-level start/end dates; no artificial calendar boundaries are imposed.",
+    "Only theft column is transcribed; no all-crime total is obtained by adding overlapping crime categories.",
+    "Canonical IDs are assigned from explicit civil BPS administrative scope and unambiguous regency/city labels; source table supplies names, not machine-readable region codes.",
+    "No denominator rate, population-risk estimate, ranking, danger classification, resident-stress inference or CORE integration is supported.",
+    "Current website extraction grant and older PDF commercial reproduction notice must both remain visible in downstream rights review."
+  ],
+  "knownBiases": [
+    "Local-informant awareness, recall, record access and willingness to disclose affect reported occurrence.",
+    "Unreported or undetected theft can be missed; occurrence is not police-recorded incidence.",
+    "One village with one incident and one village with many incidents each contribute one to the published count.",
+    "Regions differ in village/kelurahan counts, village population and geographic size; raw counts are not a risk rate."
+  ],
+  "safeStatements": [
+    "In Podes 2024, BPS recorded desa/kelurahan with theft occurrence during the year preceding May 2024 enumeration.",
+    "These values count villages/kelurahan with occurrence, not theft incidents or affected people."
+  ],
+  "unsafeStatements": [
+    "These are calendar-year 2023 police-recorded crime counts.",
+    "This number is the count of theft incidents or victims.",
+    "Higher counts mean residents are more unsafe or stressed.",
+    "This is the percentage or probability of residents experiencing crime.",
+    "Adding the crime-type village counts gives distinct villages with any crime."
+  ],
+  "statementTemplates": [
+    "BPS Podes 2024 recorded {value} desa/kelurahan in {regionName} with theft occurrence during the year preceding May 2024 enumeration; this is not an incident count or resident-risk rate."
+  ],
+  "coverage": {
+    "regionCount": 27,
+    "totalCivxRegions": 27,
+    "coveragePercent": 100,
+    "coveredRegionIds": [
+      "3201",
+      "3202",
+      "3203",
+      "3204",
+      "3205",
+      "3206",
+      "3207",
+      "3208",
+      "3209",
+      "3210",
+      "3211",
+      "3212",
+      "3213",
+      "3214",
+      "3215",
+      "3216",
+      "3217",
+      "3218",
+      "3271",
+      "3272",
+      "3273",
+      "3274",
+      "3275",
+      "3276",
+      "3277",
+      "3278",
+      "3279"
+    ],
+    "missingRegionIds": [],
+    "observationCount": 27,
+    "regionWideValueCount": 27
+  },
+  "sources": [
+    {
+      "sourceId": "crime_bps_podes2024",
+      "url": "https://jabar.bps.go.id/id/publication/2024/12/27/1f6b4fbd4df3649dad58ac22/statistik-potensi-desa-provinsi-jawa-barat-2024.html",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "title": "Statistik Potensi Desa Provinsi Jawa Barat 2024, Table 18.4",
+      "accessedAt": "2026-10-29",
+      "publicationDate": "2024-12-27",
+      "httpStatus": 200,
+      "representation": "Researcher-authored audit receipt with attributed metadata/short excerpts",
+      "evidence": "Publication 32000.24074 released 27 December 2024. PDF Table 18.4 printed page 187 / PDF page 215 contains column (2), Pencurian, for all 27 explicitly civil Kabupaten/Kota rows; continuation printed page 188 is not needed for the selected theft column. Civil administrative census scope is confirmed in general explanations, not inferred from table title alone. Only column (2) factual values are transcribed into observations; no full table/page text or layout is retained. Source labels distinguish plain regency names from Kota names, exactly matching canonical CIVX civil regions after adding the Kabupaten type label.",
+      "excerpts": [
+        "BANYAKNYA DESA/KELURAHAN YANG MENGALAMI KEJADIAN TINDAK KEJAHATAN SELAMA SETAHUN TERAKHIR MENURUT JENIS TINDAK KEJAHATAN",
+        "Pencurian"
+      ],
+      "retrievalMethod": "Followed current public publication-page download link in memory; pdftotext extraction of relevant PDF definitions and selected numeric column. Hash covers actual PDF bytes; no PDF file, image, signed download URL or complete table retained.",
+      "contentSha256": "2ab6b95acb408919682e7b7f46f5c231fd2c122576cc286835391badb30e68e0"
+    },
+    {
+      "sourceId": "crime_bps_podes2024_method",
+      "url": "https://jabar.bps.go.id/id/publication/2024/12/27/1f6b4fbd4df3649dad58ac22/statistik-potensi-desa-provinsi-jawa-barat-2024.html",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "title": "Statistik Potensi Desa Provinsi Jawa Barat 2024, general explanations and security technical notes",
+      "accessedAt": "2026-10-29",
+      "publicationDate": "2024-12-27",
+      "httpStatus": 200,
+      "representation": "Researcher-authored audit receipt with attributed metadata/short excerpts",
+      "evidence": "Executive summary printed vii / PDF 9 dates the census to May 2024. General explanations printed xxiv–xxv / PDF 26–27 establish civil census scope, definitive operational administrative areas with clear boundaries, and direct interviews by trained BPS staff/partners with knowledgeable responsible local informants plus related documents. Paragraph 6 explicitly lists Table 18.4 among tables referring to one year before enumeration; therefore this is preceding-year recall at May 2024, not calendar-year 2023. Chapter 18 technical notes printed 183 / PDF 211 define crime broadly, including attempts; selected column is theft and excludes the separately listed robbery column. These are village occurrence indicators, not numbers of incidents, police reports, victims or exposed residents.",
+      "excerpts": [
+        "Podes 2024 dilaksanakan secara sensus",
+        "pencacahan yaitu Mei 2024",
+        "18.1; 18.2; 18.3; 18.4; dan 18.5.",
+        "dilakukan melalui wawancara langsung"
+      ],
+      "retrievalMethod": "Inspected PDF pages 9, 26–28 and 211 through in-memory text extraction. Only narrow attributed method excerpts retained.",
+      "contentSha256": "2ab6b95acb408919682e7b7f46f5c231fd2c122576cc286835391badb30e68e0"
+    },
+    {
+      "sourceId": "crime_bps_podes2024_publication_rights",
+      "url": "https://jabar.bps.go.id/id/publication/2024/12/27/1f6b4fbd4df3649dad58ac22/statistik-potensi-desa-provinsi-jawa-barat-2024.html",
+      "publisher": "Badan Pusat Statistik Provinsi Jawa Barat",
+      "title": "Statistik Potensi Desa Provinsi Jawa Barat 2024, copyright page",
+      "accessedAt": "2026-10-29",
+      "publicationDate": "2024-12-27",
+      "httpStatus": 200,
+      "representation": "Researcher-authored audit receipt with attributed metadata/short excerpts",
+      "evidence": "PDF page 4 explicitly restricts commercial reproduction of part or all of the book without written BPS permission. This publication restriction is retained alongside the current explicit BPS website statistical-data extraction grant. Audit transcribes only attributed factual numeric cells under that grant, not book pages, layout, images or extended text. This is not an invented open licence and not permission to redistribute the full PDF. Downstream commercial reuse should review the conflict between the two notices.",
+      "excerpts": [
+        "Dilarang mereproduksi dan/atau menggandakan sebagian atau seluruh isi buku ini untuk tujuan komersial tanpa izin tertulis dari Badan Pusat Statistik Provinsi Jawa Barat"
+      ],
+      "retrievalMethod": "Inspected copyright notice on PDF page 4; only short attributed rights excerpt retained.",
+      "contentSha256": "2ab6b95acb408919682e7b7f46f5c231fd2c122576cc286835391badb30e68e0"
+    },
+    {
+      "sourceId": "crime_bps_current_usage_terms",
+      "url": "https://jabar.bps.go.id/id/term-of-use",
+      "publisher": "Badan Pusat Statistik",
+      "title": "Ketentuan Penggunaan Website BPS, sections 12–13",
+      "accessedAt": "2026-10-29",
+      "publicationDate": null,
+      "httpStatus": null,
+      "representation": "Researcher-authored audit receipt with attributed metadata/short excerpts",
+      "evidence": "Current section 12 includes statistical datasets and publications within protected content. Section 13 explicitly grants commercial and noncommercial data use, copying/distribution/transmission, and extraction with lawful use, full BPS citation, direct original link and no false endorsement. This current explicit data-extraction permission supports narrow attributed numeric facts, while the PDF-specific commercial book-reproduction notice remains a disclosed downstream review caveat. No blanket Creative Commons or other licence is claimed.",
+      "excerpts": [
+        "penggunaan data, baik untuk kepentingan komersial maupun nonkomersial",
+        "penyalinan, pendistribusian, dan/atau pentransmisian konten",
+        "pengembangan, pengubahan, atau pengekstraksian kepada pihak ketiga dengan cara apa pun",
+        "memberikan kutipan atau kredit kepada BPS."
+      ],
+      "retrievalMethod": "Primary public source read directly; only attributed metadata and short excerpts retained.",
+      "contentSha256": null
+    }
+  ],
+  "records": [
+    {
+      "regionId": "3201",
+      "regionName": "Kabupaten Bogor",
+      "referencePeriod": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+      "value": 296,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "crime_podes2024_theft_villages_3201",
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "geographicLevel": "Civil kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+          "value": 296,
+          "unit": "desa/kelurahan",
+          "sourceRef": "crime_bps_podes2024",
+          "sourceLocator": "Statistik Potensi Desa Provinsi Jawa Barat 2024; Table 18.4, printed page 187 / PDF page 215; row Bogor; column (2) Pencurian. Method printed xxiv–xxv / PDF 26–27.",
+          "sourceValue": "296",
+          "transformation": "none",
+          "limitations": [
+            "Village/kelurahan occurrence count, not incidents, police reports, victims or residents.",
+            "One-year recall before May 2024; not calendar 2023.",
+            "Absolute count has no population or village-share denominator; no risk ranking."
+          ],
+          "evidencePointer": "/candidates/2/observations/0"
+        }
+      ]
+    },
+    {
+      "regionId": "3202",
+      "regionName": "Kabupaten Sukabumi",
+      "referencePeriod": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+      "value": 168,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "crime_podes2024_theft_villages_3202",
+          "regionId": "3202",
+          "regionName": "Kabupaten Sukabumi",
+          "geographicLevel": "Civil kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+          "value": 168,
+          "unit": "desa/kelurahan",
+          "sourceRef": "crime_bps_podes2024",
+          "sourceLocator": "Statistik Potensi Desa Provinsi Jawa Barat 2024; Table 18.4, printed page 187 / PDF page 215; row Sukabumi; column (2) Pencurian. Method printed xxiv–xxv / PDF 26–27.",
+          "sourceValue": "168",
+          "transformation": "none",
+          "limitations": [
+            "Village/kelurahan occurrence count, not incidents, police reports, victims or residents.",
+            "One-year recall before May 2024; not calendar 2023.",
+            "Absolute count has no population or village-share denominator; no risk ranking."
+          ],
+          "evidencePointer": "/candidates/2/observations/1"
+        }
+      ]
+    },
+    {
+      "regionId": "3203",
+      "regionName": "Kabupaten Cianjur",
+      "referencePeriod": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+      "value": 191,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "crime_podes2024_theft_villages_3203",
+          "regionId": "3203",
+          "regionName": "Kabupaten Cianjur",
+          "geographicLevel": "Civil kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+          "value": 191,
+          "unit": "desa/kelurahan",
+          "sourceRef": "crime_bps_podes2024",
+          "sourceLocator": "Statistik Potensi Desa Provinsi Jawa Barat 2024; Table 18.4, printed page 187 / PDF page 215; row Cianjur; column (2) Pencurian. Method printed xxiv–xxv / PDF 26–27.",
+          "sourceValue": "191",
+          "transformation": "none",
+          "limitations": [
+            "Village/kelurahan occurrence count, not incidents, police reports, victims or residents.",
+            "One-year recall before May 2024; not calendar 2023.",
+            "Absolute count has no population or village-share denominator; no risk ranking."
+          ],
+          "evidencePointer": "/candidates/2/observations/2"
+        }
+      ]
+    },
+    {
+      "regionId": "3204",
+      "regionName": "Kabupaten Bandung",
+      "referencePeriod": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+      "value": 169,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "crime_podes2024_theft_villages_3204",
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "geographicLevel": "Civil kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+          "value": 169,
+          "unit": "desa/kelurahan",
+          "sourceRef": "crime_bps_podes2024",
+          "sourceLocator": "Statistik Potensi Desa Provinsi Jawa Barat 2024; Table 18.4, printed page 187 / PDF page 215; row Bandung; column (2) Pencurian. Method printed xxiv–xxv / PDF 26–27.",
+          "sourceValue": "169",
+          "transformation": "none",
+          "limitations": [
+            "Village/kelurahan occurrence count, not incidents, police reports, victims or residents.",
+            "One-year recall before May 2024; not calendar 2023.",
+            "Absolute count has no population or village-share denominator; no risk ranking."
+          ],
+          "evidencePointer": "/candidates/2/observations/3"
+        }
+      ]
+    },
+    {
+      "regionId": "3205",
+      "regionName": "Kabupaten Garut",
+      "referencePeriod": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+      "value": 217,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "crime_podes2024_theft_villages_3205",
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "geographicLevel": "Civil kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+          "value": 217,
+          "unit": "desa/kelurahan",
+          "sourceRef": "crime_bps_podes2024",
+          "sourceLocator": "Statistik Potensi Desa Provinsi Jawa Barat 2024; Table 18.4, printed page 187 / PDF page 215; row Garut; column (2) Pencurian. Method printed xxiv–xxv / PDF 26–27.",
+          "sourceValue": "217",
+          "transformation": "none",
+          "limitations": [
+            "Village/kelurahan occurrence count, not incidents, police reports, victims or residents.",
+            "One-year recall before May 2024; not calendar 2023.",
+            "Absolute count has no population or village-share denominator; no risk ranking."
+          ],
+          "evidencePointer": "/candidates/2/observations/4"
+        }
+      ]
+    },
+    {
+      "regionId": "3206",
+      "regionName": "Kabupaten Tasikmalaya",
+      "referencePeriod": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+      "value": 128,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "crime_podes2024_theft_villages_3206",
+          "regionId": "3206",
+          "regionName": "Kabupaten Tasikmalaya",
+          "geographicLevel": "Civil kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+          "value": 128,
+          "unit": "desa/kelurahan",
+          "sourceRef": "crime_bps_podes2024",
+          "sourceLocator": "Statistik Potensi Desa Provinsi Jawa Barat 2024; Table 18.4, printed page 187 / PDF page 215; row Tasikmalaya; column (2) Pencurian. Method printed xxiv–xxv / PDF 26–27.",
+          "sourceValue": "128",
+          "transformation": "none",
+          "limitations": [
+            "Village/kelurahan occurrence count, not incidents, police reports, victims or residents.",
+            "One-year recall before May 2024; not calendar 2023.",
+            "Absolute count has no population or village-share denominator; no risk ranking."
+          ],
+          "evidencePointer": "/candidates/2/observations/5"
+        }
+      ]
+    },
+    {
+      "regionId": "3207",
+      "regionName": "Kabupaten Ciamis",
+      "referencePeriod": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+      "value": 138,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "crime_podes2024_theft_villages_3207",
+          "regionId": "3207",
+          "regionName": "Kabupaten Ciamis",
+          "geographicLevel": "Civil kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+          "value": 138,
+          "unit": "desa/kelurahan",
+          "sourceRef": "crime_bps_podes2024",
+          "sourceLocator": "Statistik Potensi Desa Provinsi Jawa Barat 2024; Table 18.4, printed page 187 / PDF page 215; row Ciamis; column (2) Pencurian. Method printed xxiv–xxv / PDF 26–27.",
+          "sourceValue": "138",
+          "transformation": "none",
+          "limitations": [
+            "Village/kelurahan occurrence count, not incidents, police reports, victims or residents.",
+            "One-year recall before May 2024; not calendar 2023.",
+            "Absolute count has no population or village-share denominator; no risk ranking."
+          ],
+          "evidencePointer": "/candidates/2/observations/6"
+        }
+      ]
+    },
+    {
+      "regionId": "3208",
+      "regionName": "Kabupaten Kuningan",
+      "referencePeriod": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+      "value": 104,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "crime_podes2024_theft_villages_3208",
+          "regionId": "3208",
+          "regionName": "Kabupaten Kuningan",
+          "geographicLevel": "Civil kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+          "value": 104,
+          "unit": "desa/kelurahan",
+          "sourceRef": "crime_bps_podes2024",
+          "sourceLocator": "Statistik Potensi Desa Provinsi Jawa Barat 2024; Table 18.4, printed page 187 / PDF page 215; row Kuningan; column (2) Pencurian. Method printed xxiv–xxv / PDF 26–27.",
+          "sourceValue": "104",
+          "transformation": "none",
+          "limitations": [
+            "Village/kelurahan occurrence count, not incidents, police reports, victims or residents.",
+            "One-year recall before May 2024; not calendar 2023.",
+            "Absolute count has no population or village-share denominator; no risk ranking."
+          ],
+          "evidencePointer": "/candidates/2/observations/7"
+        }
+      ]
+    },
+    {
+      "regionId": "3209",
+      "regionName": "Kabupaten Cirebon",
+      "referencePeriod": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+      "value": 234,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "crime_podes2024_theft_villages_3209",
+          "regionId": "3209",
+          "regionName": "Kabupaten Cirebon",
+          "geographicLevel": "Civil kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+          "value": 234,
+          "unit": "desa/kelurahan",
+          "sourceRef": "crime_bps_podes2024",
+          "sourceLocator": "Statistik Potensi Desa Provinsi Jawa Barat 2024; Table 18.4, printed page 187 / PDF page 215; row Cirebon; column (2) Pencurian. Method printed xxiv–xxv / PDF 26–27.",
+          "sourceValue": "234",
+          "transformation": "none",
+          "limitations": [
+            "Village/kelurahan occurrence count, not incidents, police reports, victims or residents.",
+            "One-year recall before May 2024; not calendar 2023.",
+            "Absolute count has no population or village-share denominator; no risk ranking."
+          ],
+          "evidencePointer": "/candidates/2/observations/8"
+        }
+      ]
+    },
+    {
+      "regionId": "3210",
+      "regionName": "Kabupaten Majalengka",
+      "referencePeriod": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+      "value": 217,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "crime_podes2024_theft_villages_3210",
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "geographicLevel": "Civil kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+          "value": 217,
+          "unit": "desa/kelurahan",
+          "sourceRef": "crime_bps_podes2024",
+          "sourceLocator": "Statistik Potensi Desa Provinsi Jawa Barat 2024; Table 18.4, printed page 187 / PDF page 215; row Majalengka; column (2) Pencurian. Method printed xxiv–xxv / PDF 26–27.",
+          "sourceValue": "217",
+          "transformation": "none",
+          "limitations": [
+            "Village/kelurahan occurrence count, not incidents, police reports, victims or residents.",
+            "One-year recall before May 2024; not calendar 2023.",
+            "Absolute count has no population or village-share denominator; no risk ranking."
+          ],
+          "evidencePointer": "/candidates/2/observations/9"
+        }
+      ]
+    },
+    {
+      "regionId": "3211",
+      "regionName": "Kabupaten Sumedang",
+      "referencePeriod": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+      "value": 170,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "crime_podes2024_theft_villages_3211",
+          "regionId": "3211",
+          "regionName": "Kabupaten Sumedang",
+          "geographicLevel": "Civil kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+          "value": 170,
+          "unit": "desa/kelurahan",
+          "sourceRef": "crime_bps_podes2024",
+          "sourceLocator": "Statistik Potensi Desa Provinsi Jawa Barat 2024; Table 18.4, printed page 187 / PDF page 215; row Sumedang; column (2) Pencurian. Method printed xxiv–xxv / PDF 26–27.",
+          "sourceValue": "170",
+          "transformation": "none",
+          "limitations": [
+            "Village/kelurahan occurrence count, not incidents, police reports, victims or residents.",
+            "One-year recall before May 2024; not calendar 2023.",
+            "Absolute count has no population or village-share denominator; no risk ranking."
+          ],
+          "evidencePointer": "/candidates/2/observations/10"
+        }
+      ]
+    },
+    {
+      "regionId": "3212",
+      "regionName": "Kabupaten Indramayu",
+      "referencePeriod": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+      "value": 175,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "crime_podes2024_theft_villages_3212",
+          "regionId": "3212",
+          "regionName": "Kabupaten Indramayu",
+          "geographicLevel": "Civil kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+          "value": 175,
+          "unit": "desa/kelurahan",
+          "sourceRef": "crime_bps_podes2024",
+          "sourceLocator": "Statistik Potensi Desa Provinsi Jawa Barat 2024; Table 18.4, printed page 187 / PDF page 215; row Indramayu; column (2) Pencurian. Method printed xxiv–xxv / PDF 26–27.",
+          "sourceValue": "175",
+          "transformation": "none",
+          "limitations": [
+            "Village/kelurahan occurrence count, not incidents, police reports, victims or residents.",
+            "One-year recall before May 2024; not calendar 2023.",
+            "Absolute count has no population or village-share denominator; no risk ranking."
+          ],
+          "evidencePointer": "/candidates/2/observations/11"
+        }
+      ]
+    },
+    {
+      "regionId": "3213",
+      "regionName": "Kabupaten Subang",
+      "referencePeriod": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+      "value": 108,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "crime_podes2024_theft_villages_3213",
+          "regionId": "3213",
+          "regionName": "Kabupaten Subang",
+          "geographicLevel": "Civil kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+          "value": 108,
+          "unit": "desa/kelurahan",
+          "sourceRef": "crime_bps_podes2024",
+          "sourceLocator": "Statistik Potensi Desa Provinsi Jawa Barat 2024; Table 18.4, printed page 187 / PDF page 215; row Subang; column (2) Pencurian. Method printed xxiv–xxv / PDF 26–27.",
+          "sourceValue": "108",
+          "transformation": "none",
+          "limitations": [
+            "Village/kelurahan occurrence count, not incidents, police reports, victims or residents.",
+            "One-year recall before May 2024; not calendar 2023.",
+            "Absolute count has no population or village-share denominator; no risk ranking."
+          ],
+          "evidencePointer": "/candidates/2/observations/12"
+        }
+      ]
+    },
+    {
+      "regionId": "3214",
+      "regionName": "Kabupaten Purwakarta",
+      "referencePeriod": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+      "value": 103,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "crime_podes2024_theft_villages_3214",
+          "regionId": "3214",
+          "regionName": "Kabupaten Purwakarta",
+          "geographicLevel": "Civil kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+          "value": 103,
+          "unit": "desa/kelurahan",
+          "sourceRef": "crime_bps_podes2024",
+          "sourceLocator": "Statistik Potensi Desa Provinsi Jawa Barat 2024; Table 18.4, printed page 187 / PDF page 215; row Purwakarta; column (2) Pencurian. Method printed xxiv–xxv / PDF 26–27.",
+          "sourceValue": "103",
+          "transformation": "none",
+          "limitations": [
+            "Village/kelurahan occurrence count, not incidents, police reports, victims or residents.",
+            "One-year recall before May 2024; not calendar 2023.",
+            "Absolute count has no population or village-share denominator; no risk ranking."
+          ],
+          "evidencePointer": "/candidates/2/observations/13"
+        }
+      ]
+    },
+    {
+      "regionId": "3215",
+      "regionName": "Kabupaten Karawang",
+      "referencePeriod": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+      "value": 217,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "crime_podes2024_theft_villages_3215",
+          "regionId": "3215",
+          "regionName": "Kabupaten Karawang",
+          "geographicLevel": "Civil kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+          "value": 217,
+          "unit": "desa/kelurahan",
+          "sourceRef": "crime_bps_podes2024",
+          "sourceLocator": "Statistik Potensi Desa Provinsi Jawa Barat 2024; Table 18.4, printed page 187 / PDF page 215; row Karawang; column (2) Pencurian. Method printed xxiv–xxv / PDF 26–27.",
+          "sourceValue": "217",
+          "transformation": "none",
+          "limitations": [
+            "Village/kelurahan occurrence count, not incidents, police reports, victims or residents.",
+            "One-year recall before May 2024; not calendar 2023.",
+            "Absolute count has no population or village-share denominator; no risk ranking."
+          ],
+          "evidencePointer": "/candidates/2/observations/14"
+        }
+      ]
+    },
+    {
+      "regionId": "3216",
+      "regionName": "Kabupaten Bekasi",
+      "referencePeriod": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+      "value": 142,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "crime_podes2024_theft_villages_3216",
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "geographicLevel": "Civil kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+          "value": 142,
+          "unit": "desa/kelurahan",
+          "sourceRef": "crime_bps_podes2024",
+          "sourceLocator": "Statistik Potensi Desa Provinsi Jawa Barat 2024; Table 18.4, printed page 187 / PDF page 215; row Bekasi; column (2) Pencurian. Method printed xxiv–xxv / PDF 26–27.",
+          "sourceValue": "142",
+          "transformation": "none",
+          "limitations": [
+            "Village/kelurahan occurrence count, not incidents, police reports, victims or residents.",
+            "One-year recall before May 2024; not calendar 2023.",
+            "Absolute count has no population or village-share denominator; no risk ranking."
+          ],
+          "evidencePointer": "/candidates/2/observations/15"
+        }
+      ]
+    },
+    {
+      "regionId": "3217",
+      "regionName": "Kabupaten Bandung Barat",
+      "referencePeriod": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+      "value": 90,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "crime_podes2024_theft_villages_3217",
+          "regionId": "3217",
+          "regionName": "Kabupaten Bandung Barat",
+          "geographicLevel": "Civil kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+          "value": 90,
+          "unit": "desa/kelurahan",
+          "sourceRef": "crime_bps_podes2024",
+          "sourceLocator": "Statistik Potensi Desa Provinsi Jawa Barat 2024; Table 18.4, printed page 187 / PDF page 215; row Bandung Barat; column (2) Pencurian. Method printed xxiv–xxv / PDF 26–27.",
+          "sourceValue": "90",
+          "transformation": "none",
+          "limitations": [
+            "Village/kelurahan occurrence count, not incidents, police reports, victims or residents.",
+            "One-year recall before May 2024; not calendar 2023.",
+            "Absolute count has no population or village-share denominator; no risk ranking."
+          ],
+          "evidencePointer": "/candidates/2/observations/16"
+        }
+      ]
+    },
+    {
+      "regionId": "3218",
+      "regionName": "Kabupaten Pangandaran",
+      "referencePeriod": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+      "value": 49,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "crime_podes2024_theft_villages_3218",
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "geographicLevel": "Civil kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+          "value": 49,
+          "unit": "desa/kelurahan",
+          "sourceRef": "crime_bps_podes2024",
+          "sourceLocator": "Statistik Potensi Desa Provinsi Jawa Barat 2024; Table 18.4, printed page 187 / PDF page 215; row Pangandaran; column (2) Pencurian. Method printed xxiv–xxv / PDF 26–27.",
+          "sourceValue": "49",
+          "transformation": "none",
+          "limitations": [
+            "Village/kelurahan occurrence count, not incidents, police reports, victims or residents.",
+            "One-year recall before May 2024; not calendar 2023.",
+            "Absolute count has no population or village-share denominator; no risk ranking."
+          ],
+          "evidencePointer": "/candidates/2/observations/17"
+        }
+      ]
+    },
+    {
+      "regionId": "3271",
+      "regionName": "Kota Bogor",
+      "referencePeriod": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+      "value": 40,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "crime_podes2024_theft_villages_3271",
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "geographicLevel": "Civil kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+          "value": 40,
+          "unit": "desa/kelurahan",
+          "sourceRef": "crime_bps_podes2024",
+          "sourceLocator": "Statistik Potensi Desa Provinsi Jawa Barat 2024; Table 18.4, printed page 187 / PDF page 215; row Kota Bogor; column (2) Pencurian. Method printed xxiv–xxv / PDF 26–27.",
+          "sourceValue": "40",
+          "transformation": "none",
+          "limitations": [
+            "Village/kelurahan occurrence count, not incidents, police reports, victims or residents.",
+            "One-year recall before May 2024; not calendar 2023.",
+            "Absolute count has no population or village-share denominator; no risk ranking."
+          ],
+          "evidencePointer": "/candidates/2/observations/18"
+        }
+      ]
+    },
+    {
+      "regionId": "3272",
+      "regionName": "Kota Sukabumi",
+      "referencePeriod": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+      "value": 16,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "crime_podes2024_theft_villages_3272",
+          "regionId": "3272",
+          "regionName": "Kota Sukabumi",
+          "geographicLevel": "Civil kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+          "value": 16,
+          "unit": "desa/kelurahan",
+          "sourceRef": "crime_bps_podes2024",
+          "sourceLocator": "Statistik Potensi Desa Provinsi Jawa Barat 2024; Table 18.4, printed page 187 / PDF page 215; row Kota Sukabumi; column (2) Pencurian. Method printed xxiv–xxv / PDF 26–27.",
+          "sourceValue": "16",
+          "transformation": "none",
+          "limitations": [
+            "Village/kelurahan occurrence count, not incidents, police reports, victims or residents.",
+            "One-year recall before May 2024; not calendar 2023.",
+            "Absolute count has no population or village-share denominator; no risk ranking."
+          ],
+          "evidencePointer": "/candidates/2/observations/19"
+        }
+      ]
+    },
+    {
+      "regionId": "3273",
+      "regionName": "Kota Bandung",
+      "referencePeriod": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+      "value": 114,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "crime_podes2024_theft_villages_3273",
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "geographicLevel": "Civil kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+          "value": 114,
+          "unit": "desa/kelurahan",
+          "sourceRef": "crime_bps_podes2024",
+          "sourceLocator": "Statistik Potensi Desa Provinsi Jawa Barat 2024; Table 18.4, printed page 187 / PDF page 215; row Kota Bandung; column (2) Pencurian. Method printed xxiv–xxv / PDF 26–27.",
+          "sourceValue": "114",
+          "transformation": "none",
+          "limitations": [
+            "Village/kelurahan occurrence count, not incidents, police reports, victims or residents.",
+            "One-year recall before May 2024; not calendar 2023.",
+            "Absolute count has no population or village-share denominator; no risk ranking."
+          ],
+          "evidencePointer": "/candidates/2/observations/20"
+        }
+      ]
+    },
+    {
+      "regionId": "3274",
+      "regionName": "Kota Cirebon",
+      "referencePeriod": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+      "value": 6,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "crime_podes2024_theft_villages_3274",
+          "regionId": "3274",
+          "regionName": "Kota Cirebon",
+          "geographicLevel": "Civil kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+          "value": 6,
+          "unit": "desa/kelurahan",
+          "sourceRef": "crime_bps_podes2024",
+          "sourceLocator": "Statistik Potensi Desa Provinsi Jawa Barat 2024; Table 18.4, printed page 187 / PDF page 215; row Kota Cirebon; column (2) Pencurian. Method printed xxiv–xxv / PDF 26–27.",
+          "sourceValue": "6",
+          "transformation": "none",
+          "limitations": [
+            "Village/kelurahan occurrence count, not incidents, police reports, victims or residents.",
+            "One-year recall before May 2024; not calendar 2023.",
+            "Absolute count has no population or village-share denominator; no risk ranking."
+          ],
+          "evidencePointer": "/candidates/2/observations/21"
+        }
+      ]
+    },
+    {
+      "regionId": "3275",
+      "regionName": "Kota Bekasi",
+      "referencePeriod": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+      "value": 31,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "crime_podes2024_theft_villages_3275",
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "geographicLevel": "Civil kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+          "value": 31,
+          "unit": "desa/kelurahan",
+          "sourceRef": "crime_bps_podes2024",
+          "sourceLocator": "Statistik Potensi Desa Provinsi Jawa Barat 2024; Table 18.4, printed page 187 / PDF page 215; row Kota Bekasi; column (2) Pencurian. Method printed xxiv–xxv / PDF 26–27.",
+          "sourceValue": "31",
+          "transformation": "none",
+          "limitations": [
+            "Village/kelurahan occurrence count, not incidents, police reports, victims or residents.",
+            "One-year recall before May 2024; not calendar 2023.",
+            "Absolute count has no population or village-share denominator; no risk ranking."
+          ],
+          "evidencePointer": "/candidates/2/observations/22"
+        }
+      ]
+    },
+    {
+      "regionId": "3276",
+      "regionName": "Kota Depok",
+      "referencePeriod": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+      "value": 60,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "crime_podes2024_theft_villages_3276",
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "geographicLevel": "Civil kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+          "value": 60,
+          "unit": "desa/kelurahan",
+          "sourceRef": "crime_bps_podes2024",
+          "sourceLocator": "Statistik Potensi Desa Provinsi Jawa Barat 2024; Table 18.4, printed page 187 / PDF page 215; row Kota Depok; column (2) Pencurian. Method printed xxiv–xxv / PDF 26–27.",
+          "sourceValue": "60",
+          "transformation": "none",
+          "limitations": [
+            "Village/kelurahan occurrence count, not incidents, police reports, victims or residents.",
+            "One-year recall before May 2024; not calendar 2023.",
+            "Absolute count has no population or village-share denominator; no risk ranking."
+          ],
+          "evidencePointer": "/candidates/2/observations/23"
+        }
+      ]
+    },
+    {
+      "regionId": "3277",
+      "regionName": "Kota Cimahi",
+      "referencePeriod": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+      "value": 14,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "crime_podes2024_theft_villages_3277",
+          "regionId": "3277",
+          "regionName": "Kota Cimahi",
+          "geographicLevel": "Civil kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+          "value": 14,
+          "unit": "desa/kelurahan",
+          "sourceRef": "crime_bps_podes2024",
+          "sourceLocator": "Statistik Potensi Desa Provinsi Jawa Barat 2024; Table 18.4, printed page 187 / PDF page 215; row Kota Cimahi; column (2) Pencurian. Method printed xxiv–xxv / PDF 26–27.",
+          "sourceValue": "14",
+          "transformation": "none",
+          "limitations": [
+            "Village/kelurahan occurrence count, not incidents, police reports, victims or residents.",
+            "One-year recall before May 2024; not calendar 2023.",
+            "Absolute count has no population or village-share denominator; no risk ranking."
+          ],
+          "evidencePointer": "/candidates/2/observations/24"
+        }
+      ]
+    },
+    {
+      "regionId": "3278",
+      "regionName": "Kota Tasikmalaya",
+      "referencePeriod": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+      "value": 21,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "crime_podes2024_theft_villages_3278",
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "geographicLevel": "Civil kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+          "value": 21,
+          "unit": "desa/kelurahan",
+          "sourceRef": "crime_bps_podes2024",
+          "sourceLocator": "Statistik Potensi Desa Provinsi Jawa Barat 2024; Table 18.4, printed page 187 / PDF page 215; row Kota Tasikmalaya; column (2) Pencurian. Method printed xxiv–xxv / PDF 26–27.",
+          "sourceValue": "21",
+          "transformation": "none",
+          "limitations": [
+            "Village/kelurahan occurrence count, not incidents, police reports, victims or residents.",
+            "One-year recall before May 2024; not calendar 2023.",
+            "Absolute count has no population or village-share denominator; no risk ranking."
+          ],
+          "evidencePointer": "/candidates/2/observations/25"
+        }
+      ]
+    },
+    {
+      "regionId": "3279",
+      "regionName": "Kota Banjar",
+      "referencePeriod": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+      "value": 7,
+      "valueStatus": "published_region_value",
+      "missingReason": null,
+      "observations": [
+        {
+          "observationId": "crime_podes2024_theft_villages_3279",
+          "regionId": "3279",
+          "regionName": "Kota Banjar",
+          "geographicLevel": "Civil kabupaten/kota",
+          "siteId": null,
+          "siteName": null,
+          "period": "Podes 2024: one year preceding May 2024 enumeration (not calendar 2023)",
+          "value": 7,
+          "unit": "desa/kelurahan",
+          "sourceRef": "crime_bps_podes2024",
+          "sourceLocator": "Statistik Potensi Desa Provinsi Jawa Barat 2024; Table 18.4, printed page 187 / PDF page 215; row Kota Banjar; column (2) Pencurian. Method printed xxiv–xxv / PDF 26–27.",
+          "sourceValue": "7",
+          "transformation": "none",
+          "limitations": [
+            "Village/kelurahan occurrence count, not incidents, police reports, victims or residents.",
+            "One-year recall before May 2024; not calendar 2023.",
+            "Absolute count has no population or village-share denominator; no risk ranking."
+          ],
+          "evidencePointer": "/candidates/2/observations/26"
+        }
+      ]
+    }
+  ],
+  "rawAuditPath": "data/raw/contextual-audit-2023/crime.json",
+  "candidatePointer": "/candidates/2",
+  "provenance": {
+    "sourceManifest": [
+      {
+        "path": "data/raw/contextual-audit-2023/crime.json",
+        "sha256": "de0b991647e0a60ee8914643cb6bf55f1f5eb9c215b1992dc999d100650de4ae",
+        "bytes": 72748
+      }
+    ],
+    "computationManifest": [
+      {
+        "path": "scripts/audit-contextual-data-2023.mjs",
+        "sha256": "21ca2031864991718cab8807f1c3eb71e8a18d3e37ca184d13d1390e9bb9e32a",
+        "bytes": 9539
+      },
+      {
+        "path": "src/lib/civx/contextual-data-2023.ts",
+        "sha256": "b2be822808ccf8614a423b3076ea60233f43ffecc884804c0a28e9d45d461c6f",
+        "bytes": 19989
+      }
+    ],
+    "reproductionScope": "Offline replay of attributed audited source transcriptions; not a new live-source acquisition or a claim of a blanket original-publication redistribution licence."
+  }
+}
