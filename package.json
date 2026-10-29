@@ -14,6 +14,8 @@
     "data:sensitivity:v2": "node scripts/build-civic-v2.mjs --sensitivity",
     "data:score:2023": "node scripts/generate-civx-scores-2023.mjs",
     "data:score:2023:check": "node scripts/generate-civx-scores-2023.mjs --check",
+    "data:insights:2023": "node scripts/generate-civx-insights-2023.mjs",
+    "data:insights:2023:check": "node scripts/generate-civx-insights-2023.mjs --check",
     "build": "next build",
     "start": "next start",
     "test": "node --test tests/*.test.mjs",

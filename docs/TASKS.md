@@ -320,3 +320,17 @@ This implements the completed [indicator freeze](FINAL-INDICATOR-FREEZE-2023.md)
 
 All 27 regions scored successfully. The artifact is calculated but not released. Insight Engine implementation and frontend integration are the next separate tasks; independent review, rights, effective-boundary review and release approval remain governance gates.
 
+## 24. Frozen 2023 CORE Insight Engine
+
+This implements deterministic explanations of the completed scoring stage in §23. The current production release in §18 remains unchanged. Design and validation: [INSIGHT-ENGINE-2023.md](INSIGHT-ENGINE-2023.md).
+
+- [x] Consume the pinned 18-indicator scoring artifact without changing normalization, weights, observations, contributions, scores, model versions or reference year.
+- [x] Add reusable exact-tie midrank comparisons, cohort medians, score differences, above/below/tie counts and percentile-based descriptive classifications.
+- [x] Select cohort-supported pressure dimensions, close co-leaders, relative lower-pressure dimensions and contribution-supported indicators without forced maximum-only dominance.
+- [x] Generate controlled Indonesian overall, main-pressure, lower-pressure and indicator insights with structured evidence and scoring-record JSON Pointers; avoid singleton repetition and causal, absolute or policy claims.
+- [x] Generate `data/processed/civx-insights-2023.json`: 27 region records, six dimensions and 18 indicators per region, 675 comparisons and 112 prioritized CORE insights.
+- [x] Pass 108 new insight/comparison tests and all 185 repository tests, generation/check replay, network-denied runtime smoke, `npm run lint` and `npm run build` with strict TypeScript and 37 generated pages.
+- [x] Preserve the scoring artifact SHA-256 `47b4813abd59bc452556e9d057596511f95e17acd81a4994589bc87460d9f6d5`, upstream evidence, production read boundary and frontend; add no dependency, contextual observations or AI/network service.
+
+The insight artifact is calculated but not released. Future contextual data requires separate approval and remains outside CORE scoring. Frontend integration, independent model/source review, rights clearance, effective-boundary review and release approval remain separate stages. No deployment or public league table is authorized.
+
