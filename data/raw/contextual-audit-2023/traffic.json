@@ -1,0 +1,1175 @@
+{
+  "auditId": "civx-contextual-traffic-audit-2023",
+  "domain": "traffic",
+  "accessedAt": "2026-10-29",
+  "sources": [
+    {
+      "sourceId": "traffic_bogor_segment_catalog",
+      "url": "https://opendata.kotabogor.go.id/dataset/volume-lalu-lintas-segmen-i-berdasarkan-hari-operasionaldi-jalan-raya-pemda-kedung-halang-di-kota-bogor",
+      "publisher": "Dinas Perhubungan Kota Bogor / Open Data Kota Bogor",
+      "title": "Volume Lalu Lintas Segmen I Berdasarkan Hari Operasionaldi Jalan Raya Pemda Kedung Halang di kota bogor",
+      "accessedAt": "2026-10-29",
+      "publicationDate": "2026-04-13",
+      "httpStatus": null,
+      "representation": "Researcher-authored audit receipt with attributed metadata/short excerpts",
+      "evidence": "Primary catalog displays actual direction-by-day-type table rows, not only a search excerpt. Catalog claims 2015–2025, yearly production, and update 13 April 2026. First visible page contains older-year rows; no 2023 rows were acquired. Unit is smp/jam, not vehicles/day. Description calls the volume variable an ideal road-capacity measure, which conflicts with the traffic-volume title. Exact survey dates, durations and vehicle-equivalence method are not disclosed. Numeric rows are intentionally not transcribed because the portal terms restrict use.",
+      "excerpts": [
+        "satuan data dalam smp/jam",
+        "tahun: menyatakan tahun produksi data dengan tipe data numerik."
+      ],
+      "retrievalMethod": "Primary page read with static reader; only short attributed metadata retained",
+      "contentSha256": null
+    },
+    {
+      "sourceId": "traffic_bogor_terms",
+      "url": "https://opendata.kotabogor.go.id/ketentuan-penggunaan",
+      "publisher": "Diskominfo Kota Bogor",
+      "title": "Ketentuan Penggunaan Open Data Kota Bogor",
+      "accessedAt": "2026-10-29",
+      "publicationDate": "2024-05-06",
+      "httpStatus": null,
+      "representation": "Researcher-authored audit receipt with attributed metadata/short excerpts",
+      "evidence": "Current primary terms grant only personal noncommercial use and prohibit transfer/sublicensing. Third-party-benefit use needs Diskominfo permission. This is an express restriction, not an open redistribution license. No original traffic rows are retained.",
+      "excerpts": [
+        "hanya untuk penggunaan non-komersial pribadi Anda.",
+        "tidak dapat disublisensikan, dan tidak dapat dialihkan"
+      ],
+      "retrievalMethod": "Primary page read with static reader; only short attributed metadata retained",
+      "contentSha256": null
+    },
+    {
+      "sourceId": "traffic_bandung_lkip_2024",
+      "url": "https://ppid.bandung.go.id/storage/ppid_utama/tXhODbnLeFY8sEMGZj4ytTxPpQEPf9e3UYsTCaKV.pdf",
+      "publisher": "Pemerintah Kota Bandung; source table Dinas Perhubungan",
+      "title": "Laporan Capaian Akuntabilitas Kinerja Pemerintah Kota Bandung Tahun 2024, Table 2.49",
+      "accessedAt": "2026-10-29",
+      "publicationDate": null,
+      "httpStatus": 200,
+      "representation": "Researcher-authored audit receipt with attributed metadata/short excerpts",
+      "evidence": "Read actual Table 2.49, printed page129 / PDF page136, plus adjacent methods on PDF pages136–137. Eight named road rows publish before/after V/C and mean-speed measurements after road handling. Store only the eight Sesudah column values for each metric; do not infer precise survey dates or annual averages. The text explicitly says measurements followed handling. Table and prose disagree: prose later calls all eight roads cleared, although the table and earlier narrative distinguish two uncleared roads. Buah Batu bounds also differ between narrative and table. Exclude classification and municipal aggregate claims. PDF release date is not stated; embedded creation 2025-03-24 and modification 2025-05-02 are not publication dates.",
+      "excerpts": [
+        "Setelah dilakukan penanganan pada 8 ruas jalan tersebut dilakukan pengukuran dengan hasil sebagai berikut :",
+        "Sumber: Dinas Perhubungan, diolah 2024",
+        "kecepatan rata-rata tempuh"
+      ],
+      "retrievalMethod": "Static PDF text extraction, actual Table2.49 and adjacent paragraphs; independent in-memory acquisition of the same public PDF for actual byte hash and document-date metadata; no original PDF retained",
+      "contentSha256": "0a917cf9aa157157b1ead0bf48966850ded2b034792c07a640cdb73deef6488d"
+    },
+    {
+      "sourceId": "traffic_bandung_public_listing",
+      "url": "https://ppid.bandung.go.id/informasi-publik",
+      "publisher": "PPID Kota Bandung",
+      "title": "Informasi Publik — LKIP Pemerintah Kota Bandung Tahun2024",
+      "accessedAt": "2026-10-29",
+      "publicationDate": null,
+      "httpStatus": null,
+      "representation": "Researcher-authored audit receipt with attributed metadata/short excerpts",
+      "evidence": "Official PPID listing directly links the inspected2024 and2023 reports. Public page describes public-information service; footer reserves rights. No express prohibition on narrow attributed factual transcription was found in the inspected listing/report. This is not an affirmative open-data license or permission to mirror the report.",
+      "excerpts": [
+        "LKIP PEMERINTAH KOTA BANDUNG TAHUN 2024"
+      ],
+      "retrievalMethod": "Primary page read with static reader; only short attributed metadata retained",
+      "contentSha256": null
+    },
+    {
+      "sourceId": "traffic_bandung_lkip_2023",
+      "url": "https://ppid.bandung.go.id/storage/ppid_utama/x4qbHqy7o3vKnvBqXy4YRfvcrATNec7Avl5HVipJ.pdf",
+      "publisher": "Pemerintah Kota Bandung; source table Dinas Perhubungan",
+      "title": "Laporan Capaian Akuntabilitas Kinerja Pemerintah Kota Bandung Tahun2023, Table2.55",
+      "accessedAt": "2026-10-29",
+      "publicationDate": null,
+      "httpStatus": null,
+      "representation": "Researcher-authored audit receipt with attributed metadata/short excerpts",
+      "evidence": "Actually read speed table2.55, printed page217 / PDF224, and surrounding2023 account. Table contains eight named roads and speed/LoS fields but carries stale2022 labels in summary rows. The2024 report retrospectively gives a different2023 service-level baseline and a changed description of the studied road set. Survey dates, clock hours, instruments and speed averaging protocol are not disclosed. Do not release a2023 traffic panel from the mixed-year table.",
+      "excerpts": [
+        "Data Hasil Kajian Dinas Perhubungan kota Bandung"
+      ],
+      "retrievalMethod": "Primary page read with static reader; only short attributed metadata retained",
+      "contentSha256": null
+    },
+    {
+      "sourceId": "traffic_bandung_renja_2025",
+      "url": "https://ppid.bandung.go.id/storage/ppid_pembantu/informasi_setiap_saat/EiUN8WpbbAvXKB9CIAOwf7yFeKEZIiUGvUrkQgIR.pdf",
+      "publisher": "Dinas Perhubungan Kota Bandung",
+      "title": "Rencana Kerja Dinas Perhubungan Kota Bandung Tahun2025",
+      "accessedAt": "2026-10-29",
+      "publicationDate": null,
+      "httpStatus": null,
+      "representation": "Researcher-authored audit receipt with attributed metadata/short excerpts",
+      "evidence": "Actually read printed pages24–26 describing eight congestion roads with V/C and speed. The text frames these as2025 planning problems but does not state the underlying measurement year, dates or protocol. The document also reviews2023 performance. Report title must not be treated as survey year.",
+      "excerpts": [
+        "Dalam upaya untuk mengurangi kemacetan"
+      ],
+      "retrievalMethod": "Primary page read with static reader; only short attributed metadata retained",
+      "contentSha256": null
+    },
+    {
+      "sourceId": "traffic_bandung_counting_register",
+      "url": "https://ppid.bandung.go.id/storage/ppid_pembantu/informasi_setiap_saat/meUFJqjQ2Mt3gnrUF4Zjc35nq6Ueaxytn5VAPt6c.pdf",
+      "publisher": "Dinas Perhubungan Kota Bandung",
+      "title": "Daftar Informasi Publik Tahun2026, item14",
+      "accessedAt": "2026-10-29",
+      "publicationDate": "2026-03-04",
+      "httpStatus": null,
+      "representation": "Researcher-authored audit receipt with attributed metadata/short excerpts",
+      "evidence": "Primary signed register dated4March2026 lists vehicle counts using traffic counting at an area/intersection. It identifies the responsible road-traffic unit and Softcopy availability. It is an inventory of public information, not the traffic-count dataset; it contains no observed2023 count rows or survey period.",
+      "excerpts": [
+        "Data Jumlah Kendaraan yang Melintas di Suatu Kawasan atau Persimpangan",
+        "menggunakan Sistem Traffic Counting"
+      ],
+      "retrievalMethod": "Primary page read with static reader; only short attributed metadata retained",
+      "contentSha256": null
+    },
+    {
+      "sourceId": "traffic_its_historical_portal",
+      "url": "https://its.binamarga.pu.go.id/statistics/trafficStatistics",
+      "publisher": "Direktorat Jenderal Bina Marga / Indonesia ITS Pilot System Bekasi–Cikampek",
+      "title": "Traffic Statistics",
+      "accessedAt": "2026-10-29",
+      "publicationDate": null,
+      "httpStatus": 200,
+      "representation": "Researcher-authored audit receipt with attributed metadata/short excerpts",
+      "evidence": "Inspected JavaScript UI,17 named sensor locations, dates and actual network responses. Query station1 Jl.Diponegoro, Setiamekar, Kabupaten Bekasi for2023-10-02 returned HTTP200 empty object {}; query station14 Jl.Raya Klari, Gintungkerta, Karawang for2024-06-03 also returned200 {}. Charts and totals remained blank. Empty objects are missing/unavailable observations, never zero traffic. Year selector2022–2026 does not establish data coverage. Current home page has live segment-speed values but no stable observation timestamp suitable for a dated reproducible dataset.",
+      "excerpts": [
+        "Traffic Volume by Time Interval&Direction",
+        "Average Speed by Time Interval"
+      ],
+      "retrievalMethod": "Static primary page read followed by browser date/location selection and Search; inspected only matching public /statistics/api/getStatusListDay response status and empty-object shape; no full HTML/JavaScript/headers saved",
+      "contentSha256": null
+    },
+    {
+      "sourceId": "traffic_tomtom_bandung",
+      "url": "https://www.tomtom.com/traffic-index/city/bandung/",
+      "publisher": "TomTom",
+      "title": "Bandung traffic report — Traffic Index",
+      "accessedAt": "2026-10-29",
+      "publicationDate": null,
+      "httpStatus": null,
+      "representation": "Researcher-authored audit receipt with attributed metadata/short excerpts",
+      "evidence": "Current primary city page is explicitly2025, not2023, and distinguishes City and Metro. Historical2023 Bandung values were not established from a primary historical table. No numeric values are stored because current usage policy expressly prohibits copying/distribution and scraping.",
+      "excerpts": [
+        "Bandung traffic in 2025"
+      ],
+      "retrievalMethod": "Primary page read with static reader; only short attributed metadata retained",
+      "contentSha256": null
+    },
+    {
+      "sourceId": "traffic_tomtom_methods",
+      "url": "https://www.tomtom.com/traffic-index/about/",
+      "publisher": "TomTom",
+      "title": "Traffic Index methodology",
+      "accessedAt": "2026-10-29",
+      "publicationDate": null,
+      "httpStatus": null,
+      "representation": "Researcher-authored audit receipt with attributed metadata/short excerpts",
+      "evidence": "Primary method describes anonymized GPS floating-car observations, functional urban/metro boundaries based on movement patterns, travel-time increase against free flow, and modelled rush-hour time loss using230 round trips. City/Metro zones are not certified BPS administrative boundaries. Current method cannot automatically be applied retrospectively to2023.",
+      "excerpts": [
+        "The TomTom Traffic Index is built from anonymized GPS data and real driving speeds",
+        "The Metropolitan (Metro) Area represents the broader economic region defined by commuting patterns"
+      ],
+      "retrievalMethod": "Primary page read with static reader; only short attributed metadata retained",
+      "contentSha256": null
+    },
+    {
+      "sourceId": "traffic_tomtom_terms",
+      "url": "https://www.tomtom.com/en-us/legal/terms-of-use/",
+      "publisher": "TomTom",
+      "title": "Terms of Use",
+      "accessedAt": "2026-10-29",
+      "publicationDate": "2025-09-01",
+      "httpStatus": null,
+      "representation": "Researcher-authored audit receipt with attributed metadata/short excerpts",
+      "evidence": "Primary terms effective1September2025 reserve intellectual-property rights and apply the Acceptable Use Policy. No open redistribution grant for Traffic Index was found.",
+      "excerpts": [
+        "This license is non-exclusive and non-transferable."
+      ],
+      "retrievalMethod": "Primary page read with static reader; only short attributed metadata retained",
+      "contentSha256": null
+    },
+    {
+      "sourceId": "traffic_tomtom_usage_policy",
+      "url": "https://www.tomtom.com/en-us/legal/acceptable-use-policy/",
+      "publisher": "TomTom",
+      "title": "Acceptable Use Policy",
+      "accessedAt": "2026-10-29",
+      "publicationDate": null,
+      "httpStatus": null,
+      "representation": "Researcher-authored audit receipt with attributed metadata/short excerpts",
+      "evidence": "Primary usage policy expressly forbids copying or distributing website content and use of data mining, robots or scraping. Reject storage of Traffic Index numerical observations absent separate permission.",
+      "excerpts": [
+        "Modify, copy, translate, broadcast, perform, display, distribute, or sell any content available through the TomTom Website, PRODUCTS AND/OR/ SERVICES",
+        "Use data mining, robots, scraping, or similar methods to gather data from TomTom Website."
+      ],
+      "retrievalMethod": "Primary page read with static reader; only short attributed metadata retained",
+      "contentSha256": null
+    },
+    {
+      "sourceId": "traffic_waze_historical_article",
+      "url": "https://opendata.jabarprov.go.id/en/article/menilik-tren-mudik-sebelum-dan-ketika-pandemi",
+      "publisher": "Open Data Jawa Barat / Galura Data",
+      "title": "Menilik tren mudik sebelum dan ketika pandemi",
+      "accessedAt": "2026-10-29",
+      "publicationDate": null,
+      "httpStatus": null,
+      "representation": "Researcher-authored audit receipt with attributed metadata/short excerpts",
+      "evidence": "Prior audit docs/V2-SOURCE-AUDIT.md identifies2019–2021 holiday-analysis discovery only. Current primary URL redirects to Galura JavaScript shell and exposes no article body or traffic observations. No2023 regional rows, survey durations or usable dataset were recovered; no news/search quantities adopted.",
+      "excerpts": [],
+      "retrievalMethod": "Read prior local audit section traffic_congestion, then current primary URL; redirect and visible shell inspected",
+      "contentSha256": null
+    },
+    {
+      "sourceId": "traffic_bandung_regency_catalog",
+      "url": "https://data.go.id/dataset/dataset/data-lalu-lintas-masuk2",
+      "publisher": "Satu Data Indonesia / Kabupaten Bandung catalog",
+      "title": "Data Lalu Lintas Masuk",
+      "accessedAt": "2026-10-29",
+      "publicationDate": null,
+      "httpStatus": 404,
+      "representation": "Researcher-authored audit receipt with attributed metadata/short excerpts",
+      "evidence": "Discovery search found an SDI traffic-entry catalog, but primary URL returned404. No source count rows, period, units, location sampling or methods were recovered. Catalog wording alone cannot establish regional traffic intensity.",
+      "excerpts": [],
+      "retrievalMethod": "Primary page read with static reader; only short attributed metadata retained",
+      "contentSha256": null
+    }
+  ],
+  "candidates": [
+    {
+      "datasetId": "context_traffic_bandung_2024_after_speed",
+      "domain": "traffic",
+      "title": "Bandung2024 reported post-handling road mean speed",
+      "publisher": "Pemerintah Kota Bandung; Dinas Perhubungan",
+      "sourceUrl": "https://ppid.bandung.go.id/storage/ppid_utama/tXhODbnLeFY8sEMGZj4ytTxPpQEPf9e3UYsTCaKV.pdf",
+      "sourceType": "official_agency",
+      "referencePeriod": "2024 reporting year; Sesudah penanganan measurements; exact survey dates and hours not stated",
+      "publicationDate": null,
+      "geographicLevel": "road_segment",
+      "regionsAvailable": [
+        {
+          "sourceRegionId": null,
+          "sourceRegionName": "Kota Bandung",
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "mappingStatus": "site_association"
+        }
+      ],
+      "coverageCount": 1,
+      "coveragePercent": 3.7037037037037037,
+      "unit": "km/jam",
+      "definition": "Source-published Kecepatan Rata2, Sesudah column for each of eight selected road rows; no annual municipal average.",
+      "numerator": "Not disclosed: distance component of the source mean-speed measurement.",
+      "denominator": "Not disclosed: elapsed-time component and averaging weights of the source mean-speed measurement.",
+      "measurementMethod": "Dinas Perhubungan measurements following handling on eight selected roads, published as before/after columns in Table2.49; preserve the Sesudah column exactly. The report states speed unit km/jam in the adjacent discussion. The field instrument, survey clock times and aggregation weights are undisclosed. No model, interpolation, averaging or effect calculation is performed by this audit.",
+      "missingness": "All eight selected table rows have an observed Sesudah value. Broader road-network completeness and valid-day coverage are unknown.26 regions have no observations.",
+      "updateFrequency": "Annual accountability report; field-survey repetition not specified",
+      "licenseOrUsageNotes": "Official publicly linked PPID report. No express restriction on narrow attributed factual transcription was found in inspected report/listing; no affirmative open license was located. PPID footer reserves rights. Store only researcher-authored receipts and selected numerical facts with author, title, access date, direct URL and table/row attribution. This is not permission to redistribute the original report in bulk or imply endorsement.",
+      "machineReadable": true,
+      "reproducible": true,
+      "comparability": {
+        "status": "within_source_partial",
+        "reason": "Eight published road-site facts from one agency table only. Selection, survey dates and protocol prevent city-wide, cross-region or causal before/after comparisons; all automated comparisons and rankings disabled.",
+        "comparisonPermitted": false
+      },
+      "knownBiases": [
+        "Intervention-site selection overrepresents roads selected for treatment rather than a probability sample of municipal roads.",
+        "Unstated hours, days and directions can strongly affect traffic speed and V/C.",
+        "Traffic counts and vehicle-equivalent road capacity are not unique-person mobility or household access."
+      ],
+      "limitations": [
+        "Only eight selected road sites in Kota Bandung; not the city road network or all trips. No municipal mean, rank or regional normalization is derived.",
+        "2024 is the report and source-processing year, not a complete calendar-year sampling window. Exact survey date, hour, duration, direction, sample size and measuring instrument are not reported.",
+        "The primary report says measurements followed road handling. It does not disclose a full reproducible measurement protocol; reproducible here means exact re-extraction of the published table, not independent repetition of field measurement.",
+        "Prose later labels all eight roads cleared, contrary to its earlier six-road account and two table rows. No clearance classification or causal-effect claim is released.",
+        "Narrative and Table2.49 give different Buah Batu segment limits. Retain table-specific site label and row locator; do not extend measurement to the whole road.",
+        "Public release date is unknown. Embedded PDF creation2025-03-24 and modification2025-05-02 are document metadata, not the observation period or release date.",
+        "Missing 26 CIVX regions are absent, not zero. Older-year before-treatment values are intentionally not imported because exact dates are unspecified."
+      ],
+      "recommendedUse": "Optional source-attributed2024 road-site context only, displayed with named road, Sesudah qualifier, reporting-year warning and source table link. Never score or rank regions.",
+      "decision": "PARTIAL_CONTEXT",
+      "decisionReason": "Actual official table, mapped municipal site association, explicit metric/unit and2024 reporting period support literal site-only transcription. Sparse geography, incomplete survey method and conflicting narrative prohibit broader claims.",
+      "safeStatements": [
+        "Dishub publishes a2024 post-handling value for this named road in Table2.49; exact survey dates are not disclosed.",
+        "This road-site observation is associated with Kota Bandung, not a municipal average."
+      ],
+      "unsafeStatements": [
+        "This value represents all traffic in Kota Bandung in2023.",
+        "The eight roads represent all municipal roads or all residents.",
+        "All eight roads became uncongested.",
+        "This is a causal measured reduction in congestion caused by the intervention.",
+        "Use these values to rank all27 Jabar regions."
+      ],
+      "statementTemplates": [
+        "Dalam laporan kinerja2024, Dinas Perhubungan Kota Bandung mencantumkan kecepatan rata-rata sesudah penanganan untuk {siteName} sebesar {value} km/jam. Tanggal dan jam survei tidak dirinci; angka ini bukan rata-rata kota."
+      ],
+      "temporalWarning": "Nearby-year context, not2023.2024 is the published reporting/processing year; exact dates and hours of Sesudah measurements are not specified. Do not call these full-year annual averages.",
+      "sourceRefs": [
+        "traffic_bandung_lkip_2024",
+        "traffic_bandung_public_listing"
+      ],
+      "regionalAggregation": "none",
+      "observations": [
+        {
+          "observationId": "traffic_bandung_2024_after_speed_buah_batu",
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "geographicLevel": "road_segment",
+          "siteId": "bandung-table2-49-row1",
+          "siteName": "Jalan BUAH BATU (Sp.4 PELAJAR PEJUANG 45 - Sp.4 SOEKARNO HATTA)",
+          "period": "2024 reporting year — Sesudah penanganan; exact survey date unspecified",
+          "value": 21.09,
+          "unit": "km/jam",
+          "sourceRef": "traffic_bandung_lkip_2024",
+          "sourceLocator": "Table2.49 Tingkat Pelayanan Jalan Tahun2024, printed p129 / PDF p136, row1 Jalan BUAH BATU (Sp.4 PELAJAR PEJUANG 45 - Sp.4 SOEKARNO HATTA), Kecepatan Rata2 > Sesudah; unit discussion printed p130 / PDF p137",
+          "sourceValue": "21,09",
+          "transformation": "Parse Indonesian decimal comma as decimal point; no unit conversion, averaging, normalization or imputation.",
+          "limitations": [
+            "Selected road only; survey date/hour and field protocol not stated; not an annual or municipal mean.",
+            "Segment bounds differ between adjacent narrative and table; table-specific label retained."
+          ]
+        },
+        {
+          "observationId": "traffic_bandung_2024_after_speed_braga",
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "geographicLevel": "road_segment",
+          "siteId": "bandung-table2-49-row2",
+          "siteName": "Jalan Braga",
+          "period": "2024 reporting year — Sesudah penanganan; exact survey date unspecified",
+          "value": 21.02,
+          "unit": "km/jam",
+          "sourceRef": "traffic_bandung_lkip_2024",
+          "sourceLocator": "Table2.49 Tingkat Pelayanan Jalan Tahun2024, printed p129 / PDF p136, row2 Jalan Braga, Kecepatan Rata2 > Sesudah; unit discussion printed p130 / PDF p137",
+          "sourceValue": "21,02",
+          "transformation": "Parse Indonesian decimal comma as decimal point; no unit conversion, averaging, normalization or imputation.",
+          "limitations": [
+            "Selected road only; survey date/hour and field protocol not stated; not an annual or municipal mean."
+          ]
+        },
+        {
+          "observationId": "traffic_bandung_2024_after_speed_naripan",
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "geographicLevel": "road_segment",
+          "siteId": "bandung-table2-49-row3",
+          "siteName": "Jalan Naripan",
+          "period": "2024 reporting year — Sesudah penanganan; exact survey date unspecified",
+          "value": 22.45,
+          "unit": "km/jam",
+          "sourceRef": "traffic_bandung_lkip_2024",
+          "sourceLocator": "Table2.49 Tingkat Pelayanan Jalan Tahun2024, printed p129 / PDF p136, row3 Jalan Naripan, Kecepatan Rata2 > Sesudah; unit discussion printed p130 / PDF p137",
+          "sourceValue": "22,45",
+          "transformation": "Parse Indonesian decimal comma as decimal point; no unit conversion, averaging, normalization or imputation.",
+          "limitations": [
+            "Selected road only; survey date/hour and field protocol not stated; not an annual or municipal mean."
+          ]
+        },
+        {
+          "observationId": "traffic_bandung_2024_after_speed_wr_supratman",
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "geographicLevel": "road_segment",
+          "siteId": "bandung-table2-49-row4",
+          "siteName": "Jalan WR. Supratman",
+          "period": "2024 reporting year — Sesudah penanganan; exact survey date unspecified",
+          "value": 28.63,
+          "unit": "km/jam",
+          "sourceRef": "traffic_bandung_lkip_2024",
+          "sourceLocator": "Table2.49 Tingkat Pelayanan Jalan Tahun2024, printed p129 / PDF p136, row4 Jalan WR. Supratman, Kecepatan Rata2 > Sesudah; unit discussion printed p130 / PDF p137",
+          "sourceValue": "28,63",
+          "transformation": "Parse Indonesian decimal comma as decimal point; no unit conversion, averaging, normalization or imputation.",
+          "limitations": [
+            "Selected road only; survey date/hour and field protocol not stated; not an annual or municipal mean."
+          ]
+        },
+        {
+          "observationId": "traffic_bandung_2024_after_speed_cihampelas",
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "geographicLevel": "road_segment",
+          "siteId": "bandung-table2-49-row5",
+          "siteName": "Jalan Cihampelas",
+          "period": "2024 reporting year — Sesudah penanganan; exact survey date unspecified",
+          "value": 24.5,
+          "unit": "km/jam",
+          "sourceRef": "traffic_bandung_lkip_2024",
+          "sourceLocator": "Table2.49 Tingkat Pelayanan Jalan Tahun2024, printed p129 / PDF p136, row5 Jalan Cihampelas, Kecepatan Rata2 > Sesudah; unit discussion printed p130 / PDF p137",
+          "sourceValue": "24,50",
+          "transformation": "Parse Indonesian decimal comma as decimal point; no unit conversion, averaging, normalization or imputation.",
+          "limitations": [
+            "Selected road only; survey date/hour and field protocol not stated; not an annual or municipal mean."
+          ]
+        },
+        {
+          "observationId": "traffic_bandung_2024_after_speed_cikutra_barat",
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "geographicLevel": "road_segment",
+          "siteId": "bandung-table2-49-row6",
+          "siteName": "Jalan Cikutra Barat",
+          "period": "2024 reporting year — Sesudah penanganan; exact survey date unspecified",
+          "value": 15.3,
+          "unit": "km/jam",
+          "sourceRef": "traffic_bandung_lkip_2024",
+          "sourceLocator": "Table2.49 Tingkat Pelayanan Jalan Tahun2024, printed p129 / PDF p136, row6 Jalan Cikutra Barat, Kecepatan Rata2 > Sesudah; unit discussion printed p130 / PDF p137",
+          "sourceValue": "15,30",
+          "transformation": "Parse Indonesian decimal comma as decimal point; no unit conversion, averaging, normalization or imputation.",
+          "limitations": [
+            "Selected road only; survey date/hour and field protocol not stated; not an annual or municipal mean."
+          ]
+        },
+        {
+          "observationId": "traffic_bandung_2024_after_speed_surya_sumantri",
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "geographicLevel": "road_segment",
+          "siteId": "bandung-table2-49-row7",
+          "siteName": "Jalan Surya Sumantri",
+          "period": "2024 reporting year — Sesudah penanganan; exact survey date unspecified",
+          "value": 15.9,
+          "unit": "km/jam",
+          "sourceRef": "traffic_bandung_lkip_2024",
+          "sourceLocator": "Table2.49 Tingkat Pelayanan Jalan Tahun2024, printed p129 / PDF p136, row7 Jalan Surya Sumantri, Kecepatan Rata2 > Sesudah; unit discussion printed p130 / PDF p137",
+          "sourceValue": "15,90",
+          "transformation": "Parse Indonesian decimal comma as decimal point; no unit conversion, averaging, normalization or imputation.",
+          "limitations": [
+            "Selected road only; survey date/hour and field protocol not stated; not an annual or municipal mean."
+          ]
+        },
+        {
+          "observationId": "traffic_bandung_2024_after_speed_ciwastra",
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "geographicLevel": "road_segment",
+          "siteId": "bandung-table2-49-row8",
+          "siteName": "Jalan Ciwastra",
+          "period": "2024 reporting year — Sesudah penanganan; exact survey date unspecified",
+          "value": 21.4,
+          "unit": "km/jam",
+          "sourceRef": "traffic_bandung_lkip_2024",
+          "sourceLocator": "Table2.49 Tingkat Pelayanan Jalan Tahun2024, printed p129 / PDF p136, row8 Jalan Ciwastra, Kecepatan Rata2 > Sesudah; unit discussion printed p130 / PDF p137",
+          "sourceValue": "21,4",
+          "transformation": "Parse Indonesian decimal comma as decimal point; no unit conversion, averaging, normalization or imputation.",
+          "limitations": [
+            "Selected road only; survey date/hour and field protocol not stated; not an annual or municipal mean."
+          ]
+        }
+      ]
+    },
+    {
+      "datasetId": "context_traffic_bandung_2024_after_vc_ratio",
+      "domain": "traffic",
+      "title": "Bandung2024 reported post-handling road volume/capacity ratio",
+      "publisher": "Pemerintah Kota Bandung; Dinas Perhubungan",
+      "sourceUrl": "https://ppid.bandung.go.id/storage/ppid_utama/tXhODbnLeFY8sEMGZj4ytTxPpQEPf9e3UYsTCaKV.pdf",
+      "sourceType": "official_agency",
+      "referencePeriod": "2024 reporting year; Sesudah penanganan measurements; exact survey dates and hours not stated",
+      "publicationDate": null,
+      "geographicLevel": "road_segment",
+      "regionsAvailable": [
+        {
+          "sourceRegionId": null,
+          "sourceRegionName": "Kota Bandung",
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "mappingStatus": "site_association"
+        }
+      ],
+      "coverageCount": 1,
+      "coveragePercent": 3.7037037037037037,
+      "unit": "ratio (dimensionless)",
+      "definition": "Source-published V/C Ratio, Sesudah column for each of eight selected road rows; dimensionless road traffic-volume/capacity indicator, not congestion percentage.",
+      "numerator": "Traffic volume for the source road measurement; underlying count and sampling interval not published.",
+      "denominator": "Road capacity used by the agency; underlying capacity calculation not published.",
+      "measurementMethod": "Dinas Perhubungan measurements following handling on eight selected roads, published as before/after columns in Table2.49; preserve the Sesudah column exactly. The report states speed unit km/jam in the adjacent discussion. The field instrument, survey clock times and aggregation weights are undisclosed. No model, interpolation, averaging or effect calculation is performed by this audit.",
+      "missingness": "All eight selected table rows have an observed Sesudah value. Broader road-network completeness and valid-day coverage are unknown.26 regions have no observations.",
+      "updateFrequency": "Annual accountability report; field-survey repetition not specified",
+      "licenseOrUsageNotes": "Official publicly linked PPID report. No express restriction on narrow attributed factual transcription was found in inspected report/listing; no affirmative open license was located. PPID footer reserves rights. Store only researcher-authored receipts and selected numerical facts with author, title, access date, direct URL and table/row attribution. This is not permission to redistribute the original report in bulk or imply endorsement.",
+      "machineReadable": true,
+      "reproducible": true,
+      "comparability": {
+        "status": "within_source_partial",
+        "reason": "Eight published road-site facts from one agency table only. Selection, survey dates and protocol prevent city-wide, cross-region or causal before/after comparisons; all automated comparisons and rankings disabled.",
+        "comparisonPermitted": false
+      },
+      "knownBiases": [
+        "Intervention-site selection overrepresents roads selected for treatment rather than a probability sample of municipal roads.",
+        "Unstated hours, days and directions can strongly affect traffic speed and V/C.",
+        "Traffic counts and vehicle-equivalent road capacity are not unique-person mobility or household access."
+      ],
+      "limitations": [
+        "Only eight selected road sites in Kota Bandung; not the city road network or all trips. No municipal mean, rank or regional normalization is derived.",
+        "2024 is the report and source-processing year, not a complete calendar-year sampling window. Exact survey date, hour, duration, direction, sample size and measuring instrument are not reported.",
+        "The primary report says measurements followed road handling. It does not disclose a full reproducible measurement protocol; reproducible here means exact re-extraction of the published table, not independent repetition of field measurement.",
+        "Prose later labels all eight roads cleared, contrary to its earlier six-road account and two table rows. No clearance classification or causal-effect claim is released.",
+        "Narrative and Table2.49 give different Buah Batu segment limits. Retain table-specific site label and row locator; do not extend measurement to the whole road.",
+        "Public release date is unknown. Embedded PDF creation2025-03-24 and modification2025-05-02 are document metadata, not the observation period or release date.",
+        "Missing 26 CIVX regions are absent, not zero. Older-year before-treatment values are intentionally not imported because exact dates are unspecified."
+      ],
+      "recommendedUse": "Optional source-attributed2024 road-site context only, displayed with named road, Sesudah qualifier, reporting-year warning and source table link. Never score or rank regions.",
+      "decision": "PARTIAL_CONTEXT",
+      "decisionReason": "Actual official table, mapped municipal site association, explicit metric/unit and2024 reporting period support literal site-only transcription. Sparse geography, incomplete survey method and conflicting narrative prohibit broader claims.",
+      "safeStatements": [
+        "Dishub publishes a2024 post-handling value for this named road in Table2.49; exact survey dates are not disclosed.",
+        "This road-site observation is associated with Kota Bandung, not a municipal average."
+      ],
+      "unsafeStatements": [
+        "This value represents all traffic in Kota Bandung in2023.",
+        "The eight roads represent all municipal roads or all residents.",
+        "All eight roads became uncongested.",
+        "This is a causal measured reduction in congestion caused by the intervention.",
+        "Use these values to rank all27 Jabar regions."
+      ],
+      "statementTemplates": [
+        "Dalam Tabel2.49 laporan kinerja2024, rasio volume/kapasitas sesudah penanganan pada {siteName} tercatat {value}. Angka ini rasio ruas jalan, bukan persentase kemacetan kota; tanggal survei tidak dirinci."
+      ],
+      "temporalWarning": "Nearby-year context, not2023.2024 is the published reporting/processing year; exact dates and hours of Sesudah measurements are not specified. Do not call these full-year annual averages.",
+      "sourceRefs": [
+        "traffic_bandung_lkip_2024",
+        "traffic_bandung_public_listing"
+      ],
+      "regionalAggregation": "none",
+      "observations": [
+        {
+          "observationId": "traffic_bandung_2024_after_vc_ratio_buah_batu",
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "geographicLevel": "road_segment",
+          "siteId": "bandung-table2-49-row1",
+          "siteName": "Jalan BUAH BATU (Sp.4 PELAJAR PEJUANG 45 - Sp.4 SOEKARNO HATTA)",
+          "period": "2024 reporting year — Sesudah penanganan; exact survey date unspecified",
+          "value": 0.68,
+          "unit": "ratio (dimensionless)",
+          "sourceRef": "traffic_bandung_lkip_2024",
+          "sourceLocator": "Table2.49 Tingkat Pelayanan Jalan Tahun2024, printed p129 / PDF p136, row1 Jalan BUAH BATU (Sp.4 PELAJAR PEJUANG 45 - Sp.4 SOEKARNO HATTA), V/C Ratio > Sesudah; unit discussion printed p130 / PDF p137",
+          "sourceValue": "0,68",
+          "transformation": "Parse Indonesian decimal comma as decimal point; no unit conversion, averaging, normalization or imputation.",
+          "limitations": [
+            "Selected road only; survey date/hour and field protocol not stated; not an annual or municipal mean.",
+            "Segment bounds differ between adjacent narrative and table; table-specific label retained."
+          ]
+        },
+        {
+          "observationId": "traffic_bandung_2024_after_vc_ratio_braga",
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "geographicLevel": "road_segment",
+          "siteId": "bandung-table2-49-row2",
+          "siteName": "Jalan Braga",
+          "period": "2024 reporting year — Sesudah penanganan; exact survey date unspecified",
+          "value": 0.57,
+          "unit": "ratio (dimensionless)",
+          "sourceRef": "traffic_bandung_lkip_2024",
+          "sourceLocator": "Table2.49 Tingkat Pelayanan Jalan Tahun2024, printed p129 / PDF p136, row2 Jalan Braga, V/C Ratio > Sesudah; unit discussion printed p130 / PDF p137",
+          "sourceValue": "0,57",
+          "transformation": "Parse Indonesian decimal comma as decimal point; no unit conversion, averaging, normalization or imputation.",
+          "limitations": [
+            "Selected road only; survey date/hour and field protocol not stated; not an annual or municipal mean."
+          ]
+        },
+        {
+          "observationId": "traffic_bandung_2024_after_vc_ratio_naripan",
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "geographicLevel": "road_segment",
+          "siteId": "bandung-table2-49-row3",
+          "siteName": "Jalan Naripan",
+          "period": "2024 reporting year — Sesudah penanganan; exact survey date unspecified",
+          "value": 0.5,
+          "unit": "ratio (dimensionless)",
+          "sourceRef": "traffic_bandung_lkip_2024",
+          "sourceLocator": "Table2.49 Tingkat Pelayanan Jalan Tahun2024, printed p129 / PDF p136, row3 Jalan Naripan, V/C Ratio > Sesudah; unit discussion printed p130 / PDF p137",
+          "sourceValue": "0,50",
+          "transformation": "Parse Indonesian decimal comma as decimal point; no unit conversion, averaging, normalization or imputation.",
+          "limitations": [
+            "Selected road only; survey date/hour and field protocol not stated; not an annual or municipal mean."
+          ]
+        },
+        {
+          "observationId": "traffic_bandung_2024_after_vc_ratio_wr_supratman",
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "geographicLevel": "road_segment",
+          "siteId": "bandung-table2-49-row4",
+          "siteName": "Jalan WR. Supratman",
+          "period": "2024 reporting year — Sesudah penanganan; exact survey date unspecified",
+          "value": 0.43,
+          "unit": "ratio (dimensionless)",
+          "sourceRef": "traffic_bandung_lkip_2024",
+          "sourceLocator": "Table2.49 Tingkat Pelayanan Jalan Tahun2024, printed p129 / PDF p136, row4 Jalan WR. Supratman, V/C Ratio > Sesudah; unit discussion printed p130 / PDF p137",
+          "sourceValue": "0,43",
+          "transformation": "Parse Indonesian decimal comma as decimal point; no unit conversion, averaging, normalization or imputation.",
+          "limitations": [
+            "Selected road only; survey date/hour and field protocol not stated; not an annual or municipal mean."
+          ]
+        },
+        {
+          "observationId": "traffic_bandung_2024_after_vc_ratio_cihampelas",
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "geographicLevel": "road_segment",
+          "siteId": "bandung-table2-49-row5",
+          "siteName": "Jalan Cihampelas",
+          "period": "2024 reporting year — Sesudah penanganan; exact survey date unspecified",
+          "value": 0.64,
+          "unit": "ratio (dimensionless)",
+          "sourceRef": "traffic_bandung_lkip_2024",
+          "sourceLocator": "Table2.49 Tingkat Pelayanan Jalan Tahun2024, printed p129 / PDF p136, row5 Jalan Cihampelas, V/C Ratio > Sesudah; unit discussion printed p130 / PDF p137",
+          "sourceValue": "0,64",
+          "transformation": "Parse Indonesian decimal comma as decimal point; no unit conversion, averaging, normalization or imputation.",
+          "limitations": [
+            "Selected road only; survey date/hour and field protocol not stated; not an annual or municipal mean."
+          ]
+        },
+        {
+          "observationId": "traffic_bandung_2024_after_vc_ratio_cikutra_barat",
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "geographicLevel": "road_segment",
+          "siteId": "bandung-table2-49-row6",
+          "siteName": "Jalan Cikutra Barat",
+          "period": "2024 reporting year — Sesudah penanganan; exact survey date unspecified",
+          "value": 0.84,
+          "unit": "ratio (dimensionless)",
+          "sourceRef": "traffic_bandung_lkip_2024",
+          "sourceLocator": "Table2.49 Tingkat Pelayanan Jalan Tahun2024, printed p129 / PDF p136, row6 Jalan Cikutra Barat, V/C Ratio > Sesudah; unit discussion printed p130 / PDF p137",
+          "sourceValue": "0,84",
+          "transformation": "Parse Indonesian decimal comma as decimal point; no unit conversion, averaging, normalization or imputation.",
+          "limitations": [
+            "Selected road only; survey date/hour and field protocol not stated; not an annual or municipal mean."
+          ]
+        },
+        {
+          "observationId": "traffic_bandung_2024_after_vc_ratio_surya_sumantri",
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "geographicLevel": "road_segment",
+          "siteId": "bandung-table2-49-row7",
+          "siteName": "Jalan Surya Sumantri",
+          "period": "2024 reporting year — Sesudah penanganan; exact survey date unspecified",
+          "value": 0.83,
+          "unit": "ratio (dimensionless)",
+          "sourceRef": "traffic_bandung_lkip_2024",
+          "sourceLocator": "Table2.49 Tingkat Pelayanan Jalan Tahun2024, printed p129 / PDF p136, row7 Jalan Surya Sumantri, V/C Ratio > Sesudah; unit discussion printed p130 / PDF p137",
+          "sourceValue": "0,83",
+          "transformation": "Parse Indonesian decimal comma as decimal point; no unit conversion, averaging, normalization or imputation.",
+          "limitations": [
+            "Selected road only; survey date/hour and field protocol not stated; not an annual or municipal mean."
+          ]
+        },
+        {
+          "observationId": "traffic_bandung_2024_after_vc_ratio_ciwastra",
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "geographicLevel": "road_segment",
+          "siteId": "bandung-table2-49-row8",
+          "siteName": "Jalan Ciwastra",
+          "period": "2024 reporting year — Sesudah penanganan; exact survey date unspecified",
+          "value": 0.7,
+          "unit": "ratio (dimensionless)",
+          "sourceRef": "traffic_bandung_lkip_2024",
+          "sourceLocator": "Table2.49 Tingkat Pelayanan Jalan Tahun2024, printed p129 / PDF p136, row8 Jalan Ciwastra, V/C Ratio > Sesudah; unit discussion printed p130 / PDF p137",
+          "sourceValue": "0,70",
+          "transformation": "Parse Indonesian decimal comma as decimal point; no unit conversion, averaging, normalization or imputation.",
+          "limitations": [
+            "Selected road only; survey date/hour and field protocol not stated; not an annual or municipal mean."
+          ]
+        }
+      ]
+    },
+    {
+      "datasetId": "context_traffic_bogor_kedung_halang_segment",
+      "domain": "traffic",
+      "title": "Bogor Kedung Halang segment/day-type traffic-volume catalog",
+      "publisher": "Dinas Perhubungan Kota Bogor",
+      "sourceUrl": "https://opendata.kotabogor.go.id/dataset/volume-lalu-lintas-segmen-i-berdasarkan-hari-operasionaldi-jalan-raya-pemda-kedung-halang-di-kota-bogor",
+      "sourceType": "official_open_data",
+      "referencePeriod": "Catalog2015–2025; actual2023 rows and survey dates not acquired",
+      "publicationDate": "2026-04-13",
+      "geographicLevel": "road_segment",
+      "regionsAvailable": [
+        {
+          "sourceRegionId": null,
+          "sourceRegionName": "Kota Bogor",
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "mappingStatus": "site_association"
+        }
+      ],
+      "coverageCount": 0,
+      "coveragePercent": 0,
+      "unit": "smp/jam",
+      "definition": "Catalog road-segment traffic volume by travel direction and workday/holiday category; definition text instead describes ideal road capacity.",
+      "numerator": null,
+      "denominator": null,
+      "measurementMethod": "Unknown survey protocol; catalog gives only day type, annual production year, segment direction and smp/jam. Production year is not a full-year survey window.",
+      "missingness": "Only first older-year table page inspected before rights check. No2023 completeness or null-rate claim is made; no numeric observations retained.",
+      "updateFrequency": "Catalog says once per year",
+      "licenseOrUsageNotes": "Current terms explicitly personal noncommercial only, nontransferable/nonsublicensable; use for third-party benefit requires permission. No permission was obtained. Reject storage/redistribution of numeric rows.",
+      "machineReadable": true,
+      "reproducible": false,
+      "comparability": {
+        "status": "not_comparable",
+        "reason": "No defensible comparable administrative-region panel established.",
+        "comparisonPermitted": false
+      },
+      "knownBiases": [
+        "One road segment and operational day types cannot represent municipal congestion."
+      ],
+      "limitations": [
+        "Catalog title and variable definition conflict: volume versus ideal capacity.",
+        "Vehicle-equivalence factors and exact survey dates/durations not disclosed.",
+        "Catalog update2026-04-13 is not an observation date."
+      ],
+      "recommendedUse": "Do not publish numeric regional traffic observations from this candidate.",
+      "decision": "REJECT",
+      "decisionReason": "Express restrictive rights prevent adopting observations; uncertain measurement definition and dates independently prevent congestion interpretation.",
+      "safeStatements": [
+        "Official catalog offers road-segment metadata, not a verified regional congestion panel."
+      ],
+      "unsafeStatements": [
+        "Bogor congestion is represented by a single Kedung Halang segment.",
+        "smp/jam means annual vehicle trips."
+      ],
+      "statementTemplates": [
+        "Data lalu lintas ruas Kedung Halang belum ditampilkan: izin penggunaan ulang dan definisi pengukuran belum memadai."
+      ],
+      "temporalWarning": "Catalog spans2015–2025; no verified2023 survey period acquired. Updated2026-04-13 does not mean observed in2026.",
+      "sourceRefs": [
+        "traffic_bogor_segment_catalog",
+        "traffic_bogor_terms"
+      ],
+      "regionalAggregation": "none",
+      "observations": []
+    },
+    {
+      "datasetId": "context_traffic_bandung_2023_mixed_labels",
+      "domain": "traffic",
+      "title": "Bandung2023 road-speed table with conflicting summary labels",
+      "publisher": "Pemerintah Kota Bandung",
+      "sourceUrl": "https://ppid.bandung.go.id/storage/ppid_utama/x4qbHqy7o3vKnvBqXy4YRfvcrATNec7Avl5HVipJ.pdf",
+      "sourceType": "official_agency",
+      "referencePeriod": "2023 report; table summary also labels2022; exact survey period unresolved",
+      "publicationDate": null,
+      "geographicLevel": "road_segment",
+      "regionsAvailable": [
+        {
+          "sourceRegionId": null,
+          "sourceRegionName": "Kota Bandung",
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "mappingStatus": "site_association"
+        }
+      ],
+      "coverageCount": 0,
+      "coveragePercent": 0,
+      "unit": null,
+      "definition": "Named-road speed/LoS table in2023 accountability report; not a defensibly established municipal congestion statistic.",
+      "numerator": null,
+      "denominator": null,
+      "measurementMethod": "Attributed to Dishub study; precise speed-measurement method, field period and table unit are not explicit in the inspected table. Adjacent newer-year source cannot resolve original field dates.",
+      "missingness": "Eight table rows visible but no observations retained because mixed-year labels and measurement-period interpretation remain unresolved.",
+      "updateFrequency": null,
+      "licenseOrUsageNotes": "Official PPID report; narrow attributed audit facts only. No original report mirror.",
+      "machineReadable": true,
+      "reproducible": false,
+      "comparability": {
+        "status": "not_comparable",
+        "reason": "No defensible comparable administrative-region panel established.",
+        "comparisonPermitted": false
+      },
+      "knownBiases": [
+        "Selected roads treated by the agency, not a representative sample."
+      ],
+      "limitations": [
+        "Stale2022 summary labels occur inside2023 reporting section.",
+        "The2024 retrospective describes a different2023 road-service baseline; do not reconcile by invented adjustment."
+      ],
+      "recommendedUse": "Do not publish numeric regional traffic observations from this candidate.",
+      "decision": "REJECT",
+      "decisionReason": "The2023 report does not resolve row survey periods/unit and conflicts with later baseline. Do not relabel ambiguous road facts or release its administrative aggregate.",
+      "safeStatements": [
+        "The2023 report contains road-level evidence, but mixed-year summary labels prevent safe numeric adoption here."
+      ],
+      "unsafeStatements": [
+        "The report provides a consistent2023 congestion panel for all27 regions."
+      ],
+      "statementTemplates": [
+        "Angka kemacetan2023 belum ditampilkan karena label periode dan dasar pengukuran sumber belum konsisten."
+      ],
+      "temporalWarning": "Not a verified2023 administrative-region traffic panel.",
+      "sourceRefs": [
+        "traffic_bandung_lkip_2023",
+        "traffic_bandung_lkip_2024"
+      ],
+      "regionalAggregation": "none",
+      "observations": []
+    },
+    {
+      "datasetId": "context_traffic_bandung_renja2025_undated_measurements",
+      "domain": "traffic",
+      "title": "Bandung transport workplan road V/C and speeds with undated underlying measurements",
+      "publisher": "Dinas Perhubungan Kota Bandung",
+      "sourceUrl": "https://ppid.bandung.go.id/storage/ppid_pembantu/informasi_setiap_saat/EiUN8WpbbAvXKB9CIAOwf7yFeKEZIiUGvUrkQgIR.pdf",
+      "sourceType": "official_agency",
+      "referencePeriod": null,
+      "publicationDate": null,
+      "geographicLevel": "road_segment",
+      "regionsAvailable": [
+        {
+          "sourceRegionId": null,
+          "sourceRegionName": "Kota Bandung",
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "mappingStatus": "site_association"
+        }
+      ],
+      "coverageCount": 0,
+      "coveragePercent": 0,
+      "unit": "km/jam and dimensionless V/C; incompatible metrics not merged",
+      "definition": "Road problem descriptions with V/C, LoS and speed in a2025 planning document.",
+      "numerator": null,
+      "denominator": null,
+      "measurementMethod": "Underlying survey year and protocol not stated in inspected road descriptions.",
+      "missingness": "No observation adopted; publication/planning year cannot fill missing observation period.",
+      "updateFrequency": null,
+      "licenseOrUsageNotes": "Official public PPID report; retain researcher-authored methodological receipt only.",
+      "machineReadable": true,
+      "reproducible": false,
+      "comparability": {
+        "status": "not_comparable",
+        "reason": "No defensible comparable administrative-region panel established.",
+        "comparisonPermitted": false
+      },
+      "knownBiases": [
+        "Selected congestion-problem roads."
+      ],
+      "limitations": [
+        "2025 planning title and2023 evaluation chapter do not identify when each road measurement occurred."
+      ],
+      "recommendedUse": "Do not publish numeric regional traffic observations from this candidate.",
+      "decision": "REJECT",
+      "decisionReason": "Actual primary road descriptions inspected, but survey period is unresolved.2025 document year is not a defensible measurement date.",
+      "safeStatements": [
+        "The workplan identifies congestion sites but does not establish a dated traffic dataset."
+      ],
+      "unsafeStatements": [
+        "These speed values were necessarily surveyed in2025 or2023."
+      ],
+      "statementTemplates": [
+        "Dokumen rencana kerja memuat masalah ruas jalan, tetapi tahun survei belum jelas."
+      ],
+      "temporalWarning": "Not a verified2023 administrative-region traffic panel.",
+      "sourceRefs": [
+        "traffic_bandung_renja_2025"
+      ],
+      "regionalAggregation": "none",
+      "observations": []
+    },
+    {
+      "datasetId": "context_traffic_bandung_counting_register_only",
+      "domain": "traffic",
+      "title": "Bandung intersection traffic-counting public-information inventory",
+      "publisher": "Dinas Perhubungan Kota Bandung",
+      "sourceUrl": "https://ppid.bandung.go.id/storage/ppid_pembantu/informasi_setiap_saat/meUFJqjQ2Mt3gnrUF4Zjc35nq6Ueaxytn5VAPt6c.pdf",
+      "sourceType": "official_agency",
+      "referencePeriod": null,
+      "publicationDate": "2026-03-04",
+      "geographicLevel": "intersection_or_area",
+      "regionsAvailable": [
+        {
+          "sourceRegionId": null,
+          "sourceRegionName": "Kota Bandung",
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "mappingStatus": "site_association"
+        }
+      ],
+      "coverageCount": 0,
+      "coveragePercent": 0,
+      "unit": null,
+      "definition": "Register entry describing vehicle counts available from the road-traffic unit, not the count observations.",
+      "numerator": null,
+      "denominator": null,
+      "measurementMethod": "Register identifies traffic counting; instrument, sample interval, dates and original dataset absent.",
+      "missingness": "No traffic-count rows available in the register; all quantitative observation fields unestablished.",
+      "updateFrequency": null,
+      "licenseOrUsageNotes": "Public-information register; this receipt does not imply a license to unseen count data.",
+      "machineReadable": false,
+      "reproducible": false,
+      "comparability": {
+        "status": "not_comparable",
+        "reason": "No defensible comparable administrative-region panel established.",
+        "comparisonPermitted": false
+      },
+      "knownBiases": [
+        "Intersection/area counts would remain site-only even if obtained."
+      ],
+      "limitations": [
+        "Softcopy availability is an agency inventory claim, not proof of online downloadable2023 observations."
+      ],
+      "recommendedUse": "Do not publish numeric regional traffic observations from this candidate.",
+      "decision": "REJECT",
+      "decisionReason": "Primary inventory inspected; no raw counts, period, units or observed traffic rows to adopt.",
+      "safeStatements": [
+        "Dishub lists a traffic-counting dataset in its public-information register."
+      ],
+      "unsafeStatements": [
+        "A public-information inventory establishes2023 traffic count completeness."
+      ],
+      "statementTemplates": [
+        "Dishub mencantumkan data traffic counting dalam daftar informasi; observasi bertanggal belum diperoleh."
+      ],
+      "temporalWarning": "Not a verified2023 administrative-region traffic panel.",
+      "sourceRefs": [
+        "traffic_bandung_counting_register"
+      ],
+      "regionalAggregation": "none",
+      "observations": []
+    },
+    {
+      "datasetId": "context_traffic_binamarga_its_historical",
+      "domain": "traffic",
+      "title": "Bina Marga Bekasi–Cikampek ITS historical sensor statistics",
+      "publisher": "Direktorat Jenderal Bina Marga",
+      "sourceUrl": "https://its.binamarga.pu.go.id/statistics/trafficStatistics",
+      "sourceType": "official_agency",
+      "referencePeriod": "Attempted2023-10-02 station1 and2024-06-03 station14; no observations returned",
+      "publicationDate": null,
+      "geographicLevel": "traffic_sensor",
+      "regionsAvailable": [
+        {
+          "sourceRegionId": null,
+          "sourceRegionName": "Kabupaten Bekasi",
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "mappingStatus": "site_association"
+        },
+        {
+          "sourceRegionId": null,
+          "sourceRegionName": "Karawang",
+          "regionId": "3215",
+          "regionName": "Kabupaten Karawang",
+          "mappingStatus": "site_association"
+        }
+      ],
+      "coverageCount": 0,
+      "coveragePercent": 0,
+      "unit": null,
+      "definition": "Historical sensor volume by interval/direction/class and mean speed by interval, as offered by portal UI.",
+      "numerator": null,
+      "denominator": null,
+      "measurementMethod": "Sensor statistics UI; counter technology, uptime, class reconciliation and raw interval structure not established because selected responses were empty.",
+      "missingness": "HTTP200 empty object for both sampled historical site/date queries. No counts or speeds observed. Nulls/unavailable responses must not be converted to zero.",
+      "updateFrequency": "UI supports individual days; actual historical availability unknown",
+      "licenseOrUsageNotes": "Official public portal has reserved-rights footer; no explicit redistribution license identified. No numeric sensor data stored.",
+      "machineReadable": true,
+      "reproducible": false,
+      "comparability": {
+        "status": "not_comparable",
+        "reason": "No defensible comparable administrative-region panel established.",
+        "comparisonPermitted": false
+      },
+      "knownBiases": [
+        "Bekasi–Cikampek pilot corridor sensors do not represent whole civil regions.",
+        "A road can cross administrative boundaries; named station locations alone do not describe segment-wide coverage."
+      ],
+      "limitations": [
+        "Two targeted queries do not prove every station/date unavailable.",
+        "Year selector is not evidence of a complete historical archive.",
+        "Current live segment speeds have no stable observation timestamp suitable for this reproducible dated audit."
+      ],
+      "recommendedUse": "Do not publish numeric regional traffic observations from this candidate.",
+      "decision": "REJECT",
+      "decisionReason": "Actual historical UI and API inspected at preferred and nearby dates, but no observations returned. Empty response cannot support a dataset or count as zero.",
+      "safeStatements": [
+        "The national ITS portal offers historical traffic-statistic controls; inspected queries yielded no usable observations."
+      ],
+      "unsafeStatements": [
+        "Empty API responses prove zero vehicles.",
+        "The archive covers every selected year because the dropdown lists it."
+      ],
+      "statementTemplates": [
+        "Portal ITS menyediakan pencarian historis; kueri lokasi/tanggal yang diaudit tidak mengembalikan observasi yang dapat dipakai."
+      ],
+      "temporalWarning": "No verified2023/2024 observation was returned; live traffic must not be relabelled historical.",
+      "sourceRefs": [
+        "traffic_its_historical_portal"
+      ],
+      "regionalAggregation": "none",
+      "observations": []
+    },
+    {
+      "datasetId": "context_traffic_tomtom_bandung_historical",
+      "domain": "traffic",
+      "title": "TomTom Bandung historical congestion/travel-time data",
+      "publisher": "TomTom",
+      "sourceUrl": "https://www.tomtom.com/traffic-index/city/bandung/",
+      "sourceType": "commercial",
+      "referencePeriod": "Current primary page2025; historical2023 data not established",
+      "publicationDate": null,
+      "geographicLevel": "functional_city_or_metro_area",
+      "regionsAvailable": [
+        {
+          "sourceRegionId": null,
+          "sourceRegionName": "Bandung City / Metro",
+          "regionId": null,
+          "regionName": null,
+          "mappingStatus": "unresolved"
+        }
+      ],
+      "coverageCount": 0,
+      "coveragePercent": 0,
+      "unit": null,
+      "definition": "Floating-car travel-time increase versus free flow, trip travel times, road speeds and modelled rush-hour lost time; distinct metrics, not interchangeable.",
+      "numerator": null,
+      "denominator": null,
+      "measurementMethod": "Anonymized GPS floating-car data; current definitions use movement-derived functional city/metro geography. Congestion is excess travel time versus free flow. Time lost per year uses assumed working-day round trips, not observed hours lost by every resident.",
+      "missingness": "No numerical observations retained. Historical2023 source table and exact BPS boundary match not established.",
+      "updateFrequency": "Annual Traffic Index; current page2025",
+      "licenseOrUsageNotes": "Current TomTom Acceptable Use Policy expressly prohibits copying/distributing content and data mining/robots/scraping. No separate permission or open license found. Reject numeric storage.",
+      "machineReadable": true,
+      "reproducible": false,
+      "comparability": {
+        "status": "not_comparable",
+        "reason": "No defensible comparable administrative-region panel established.",
+        "comparisonPermitted": false
+      },
+      "knownBiases": [
+        "Floating-car device/vehicle coverage is not a census of all residents or all trips.",
+        "Functional City/Metro boundaries are not an exact BPS municipal match.",
+        "Methodology and city definitions can change across editions."
+      ],
+      "limitations": [
+        "Public visibility is not redistribution permission.",
+        "No historical2023 Bandung primary numeric table established.",
+        "Current2025 methodology is not assumed identical to2023."
+      ],
+      "recommendedUse": "Do not publish numeric regional traffic observations from this candidate.",
+      "decision": "REJECT",
+      "decisionReason": "Express usage restrictions bar numeric storage; historical period and administrative geography are independently unresolved.",
+      "safeStatements": [
+        "TomTom publishes traffic methodology, but this audit does not redistribute its restricted city data."
+      ],
+      "unsafeStatements": [
+        "Functional Bandung Metro equals Kota Bandung.",
+        "Modelled yearly rush-hour time loss equals observed total hours lost by residents."
+      ],
+      "statementTemplates": [
+        "Data TomTom tidak disimpan karena pembatasan penggunaan ulang dan ketidakpastian kesesuaian wilayah/periode."
+      ],
+      "temporalWarning": "Current source is2025, not2023. No retrospective substitution.",
+      "sourceRefs": [
+        "traffic_tomtom_bandung",
+        "traffic_tomtom_methods",
+        "traffic_tomtom_terms",
+        "traffic_tomtom_usage_policy"
+      ],
+      "regionalAggregation": "none",
+      "observations": []
+    },
+    {
+      "datasetId": "context_traffic_waze_holiday_article",
+      "domain": "traffic",
+      "title": "Historical Waze holiday-traffic article without recovered raw observations",
+      "publisher": "Open Data Jawa Barat / Galura Data",
+      "sourceUrl": "https://opendata.jabarprov.go.id/en/article/menilik-tren-mudik-sebelum-dan-ketika-pandemi",
+      "sourceType": "official_open_data",
+      "referencePeriod": "Prior discovery2019–2021 holiday windows; current body inaccessible",
+      "publicationDate": null,
+      "geographicLevel": "unresolved",
+      "regionsAvailable": [],
+      "coverageCount": 0,
+      "coveragePercent": 0,
+      "unit": null,
+      "definition": "Historical holiday-traffic analysis; not a recovered annual congestion/volume dataset.",
+      "numerator": null,
+      "denominator": null,
+      "measurementMethod": "Raw Waze ingestion, filters, road sampling and aggregation could not be inspected from current primary shell.",
+      "missingness": "No raw observations, complete dates, units or administrative coverage recovered.",
+      "updateFrequency": null,
+      "licenseOrUsageNotes": "Prior local findings document restrictive Galura terms. Current terms URL rendered shell rather than terms text in static read. No raw observations retrieved; do not infer reuse permission.",
+      "machineReadable": false,
+      "reproducible": false,
+      "comparability": {
+        "status": "not_comparable",
+        "reason": "No defensible comparable administrative-region panel established.",
+        "comparisonPermitted": false
+      },
+      "knownBiases": [
+        "Holiday traffic does not represent ordinary-year mobility."
+      ],
+      "limitations": [
+        "Current URL redirects to Galura JavaScript shell with no article observations.",
+        "Prior audit locates old holiday analysis only; no2023 dataset recovered."
+      ],
+      "recommendedUse": "Do not publish numeric regional traffic observations from this candidate.",
+      "decision": "REJECT",
+      "decisionReason": "Historical article discovery is not numeric evidence; current primary body/raw data absent, methods/rights unresolved.",
+      "safeStatements": [
+        "Prior audit found historical holiday analysis, not a2023 regional traffic panel."
+      ],
+      "unsafeStatements": [
+        "Historical Waze holiday findings are2023 annual regional congestion measurements."
+      ],
+      "statementTemplates": [
+        "Belum ada observasi Waze2023 yang terverifikasi; artikel historis tidak menggantikan panel wilayah."
+      ],
+      "temporalWarning": "Not a verified2023 administrative-region traffic panel.",
+      "sourceRefs": [
+        "traffic_waze_historical_article"
+      ],
+      "regionalAggregation": "none",
+      "observations": []
+    },
+    {
+      "datasetId": "context_traffic_bandung_regency_missing_catalog",
+      "domain": "traffic",
+      "title": "Kabupaten Bandung Data Lalu Lintas Masuk inaccessible SDI catalog",
+      "publisher": "Kabupaten Bandung / Satu Data Indonesia",
+      "sourceUrl": "https://data.go.id/dataset/dataset/data-lalu-lintas-masuk2",
+      "sourceType": "official_open_data",
+      "referencePeriod": null,
+      "publicationDate": null,
+      "geographicLevel": "unresolved",
+      "regionsAvailable": [],
+      "coverageCount": 0,
+      "coveragePercent": 0,
+      "unit": null,
+      "definition": "Traffic-entry catalog discovery without recovered primary data.",
+      "numerator": null,
+      "denominator": null,
+      "measurementMethod": "Not recoverable from404 primary URL.",
+      "missingness": "No observed values, counts, units, periods or covered sites.",
+      "updateFrequency": null,
+      "licenseOrUsageNotes": "No usable primary data or reuse terms recovered. No numerical data stored.",
+      "machineReadable": false,
+      "reproducible": false,
+      "comparability": {
+        "status": "not_comparable",
+        "reason": "No defensible comparable administrative-region panel established.",
+        "comparisonPermitted": false
+      },
+      "knownBiases": [],
+      "limitations": [
+        "Search catalog title does not establish current data existence, road coverage or historical year."
+      ],
+      "recommendedUse": "Do not publish numeric regional traffic observations from this candidate.",
+      "decision": "REJECT",
+      "decisionReason": "Primary source URL returned404; no defensible traffic observations or metadata beyond discovery title.",
+      "safeStatements": [
+        "An SDI catalog lead was inspected but its primary URL was unavailable."
+      ],
+      "unsafeStatements": [
+        "Catalog discovery establishes regional traffic volumes."
+      ],
+      "statementTemplates": [
+        "Tautan katalog lalu lintas Kabupaten Bandung tidak menyediakan data yang dapat diverifikasi."
+      ],
+      "temporalWarning": "Not a verified2023 administrative-region traffic panel.",
+      "sourceRefs": [
+        "traffic_bandung_regency_catalog"
+      ],
+      "regionalAggregation": "none",
+      "observations": []
+    }
+  ]
+}

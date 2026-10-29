@@ -1,0 +1,621 @@
+{
+  "datasetId": "context_air_pollution_klh_site_pm25_ispu_20261029",
+  "version": 1,
+  "scope": "CONTEXT",
+  "coreScoreAffected": false,
+  "normalizationApplied": false,
+  "domain": "air_pollution",
+  "title": "KLH/BPLH station PM2.5 component ISPU, 29 October 2026 16:00 source local time",
+  "publisher": "Kementerian Lingkungan Hidup/BPLH",
+  "sourceUrl": "https://ispu.kemenlh.go.id/app/#/stasiun",
+  "referencePeriod": "2026-10-29 16:00:00 (source-displayed local time; timezone not explicitly printed on detail card)",
+  "publicationDate": "2026-10-29",
+  "sourceType": "official_agency",
+  "updateFrequency": "Hourly publication under official ISPU explanation; actual per-site uptime unknown.",
+  "missingness": "Five usable displayed PM2.5 component indices across five associated regions. The sixth inspected site, Kabupaten Bogor Tegar Beriman, displays zero, but zero validity and missing-value semantics were not established; it is excluded rather than treated as zero pollution. No 2023 time series, validated annual concentration mean or completeness rate is available.",
+  "machineReadable": false,
+  "reproducible": true,
+  "geographicLevel": "monitoring_station",
+  "unit": "PM2.5 component ISPU (dimensionless)",
+  "definition": "The source's PM2.5-specific pollutant index displayed beneath KATEGORI on the station detail card. It is distinct from the maximum multi-pollutant ISPU and is not PM2.5 mass concentration.",
+  "numerator": null,
+  "denominator": null,
+  "measurementMethod": "Published PM2.5 concentration-to-ISPU conversion under Permen LHK 14/2020; transcribe the displayed component index without inversion to concentration. Regulatory monitoring basis is continuous 24 hours; actual station valid-hour counts and QA are unavailable.",
+  "licenseOrUsageNotes": "No explicit prohibition found for narrow attributed transcription of publicly displayed factual readings; no open-data licence identified. This does not grant bulk application/data-service redistribution. Only selected visible source facts are retained, without keys, scripts, headers or cookies.",
+  "decision": "PARTIAL_CONTEXT",
+  "regionalAggregation": "none",
+  "comparability": {
+    "status": "not_comparable",
+    "reason": "Common pollutant and displayed timestamp do not resolve site placement, calibration, valid hours or representativeness. Preserve factual source receipts only; no regional ranking, historical replay guarantee or 2023 comparison.",
+    "comparisonPermitted": false
+  },
+  "temporalWarning": "29 October 2026 snapshot only. Not 2023, not an annual average, and not comparable with 2023 profile values.",
+  "limitations": [
+    "Five sites associate with five regions; no population or municipal exposure estimate.",
+    "No back-calculation of concentration from rounded indices.",
+    "No direct comparison with BMKG concentration values or administrative IKU.",
+    "PM2.5-specific index can differ from the station's reported overall ISPU: Leuwiliang is driven by O3 and Sukamahi by PM10.",
+    "Live source URLs change; the preserved receipt records this specific timestamp."
+  ],
+  "knownBiases": [
+    "Sparse non-random monitoring locations.",
+    "Instrument calibration, local conditions and missing hours are undocumented for these observations.",
+    "An index is a transformed short-window measure, not annual mean exposure."
+  ],
+  "safeStatements": [
+    "At the named site and stated 2026 timestamp, the official PM2.5 component ISPU was the transcribed value.",
+    "This dimensionless PM2.5 component is distinct from the site's overall maximum index."
+  ],
+  "unsafeStatements": [
+    "This value is PM2.5 in µg/m³.",
+    "This is the 2023 annual PM2.5 concentration or regional exposure.",
+    "A zero display proves no particulate pollution.",
+    "The five region associations establish complete municipal monitoring."
+  ],
+  "statementTemplates": [
+    "At {siteName}, the PM2.5 component ISPU was {value} at {period}; this is a dimensionless site index, not a concentration or regional exposure estimate."
+  ],
+  "coverage": {
+    "regionCount": 5,
+    "totalCivxRegions": 27,
+    "coveragePercent": 18.51851851851852,
+    "coveredRegionIds": [
+      "3201",
+      "3202",
+      "3212",
+      "3214",
+      "3216"
+    ],
+    "missingRegionIds": [
+      "3203",
+      "3204",
+      "3205",
+      "3206",
+      "3207",
+      "3208",
+      "3209",
+      "3210",
+      "3211",
+      "3213",
+      "3215",
+      "3217",
+      "3218",
+      "3271",
+      "3272",
+      "3273",
+      "3274",
+      "3275",
+      "3276",
+      "3277",
+      "3278",
+      "3279"
+    ],
+    "observationCount": 5,
+    "regionWideValueCount": 0
+  },
+  "sources": [
+    {
+      "sourceId": "air_pollution_klh_sukabumi_live",
+      "url": "https://ispu.kemenlh.go.id/app/#/peta/KABUPATEN_SUKABUMI/-6.992879867553711/106.55899810791016",
+      "publisher": "Kementerian Lingkungan Hidup/BPLH",
+      "title": "Public ISPU station detail: Kabupaten Sukabumi Pelabuhanratu",
+      "accessedAt": "2026-10-29",
+      "publicationDate": "2026-10-29",
+      "httpStatus": null,
+      "representation": "Researcher-authored audit receipt with attributed metadata/short excerpts",
+      "evidence": "Rendered public station detail showed overall ISPU 86, category SEDANG, critical pollutant PM2.5, and timestamp 29 Oktober 2026 16:00:00. The pollutant-specific panel showed PM2.5 index 86 and PM10 index 78. These are indices, not particulate mass concentrations. Station address explicitly names Kabupaten Sukabumi. Browser reload was required after changing the station route, followed by waiting for the correct station name; stale route content was discarded.",
+      "excerpts": [
+        "Kabupaten Sukabumi Pelabuhanratu",
+        "Taman Kota Cangehgar Palabuhanratu, Jl. Jend. Ahmad Yani, Kelurahan Palabuhanratu, Kecamatan Palabuh, Kabupaten Sukabumi, Jawa Barat",
+        "ISPU\n86\nSEDANG\nPM2.5  |  29 Oktober 2026 16:00:00"
+      ],
+      "retrievalMethod": "Public Chromium browser; full station-route reload; correct station-name wait; selected visible detail-card text only. Excerpt whitespace normalized; no API authorization, headers, cookies or scripts captured.",
+      "contentSha256": null
+    },
+    {
+      "sourceId": "air_pollution_klh_bogor_leuwiliang_live",
+      "url": "https://ispu.kemenlh.go.id/app/#/peta/KABUPATEN_BOGORLL/-6.576610088348389/106.63700103759766",
+      "publisher": "Kementerian Lingkungan Hidup/BPLH",
+      "title": "Public ISPU station detail: Kabupaten Bogor Leuwiliang",
+      "accessedAt": "2026-10-29",
+      "publicationDate": "2026-10-29",
+      "httpStatus": null,
+      "representation": "Researcher-authored audit receipt with attributed metadata/short excerpts",
+      "evidence": "Rendered detail showed overall ISPU 83, SEDANG, critical pollutant O3, timestamp 29 Oktober 2026 16:00:00. Pollutant-specific PM2.5 index was 61; PM10 index was 44. The address explicitly places this station in Kabupaten Bogor, not Kota Bogor.",
+      "excerpts": [
+        "Kabupaten Bogor Leuwiliang",
+        "Kantor Kecamatan Leuwiliang, Kec. Leuwiliang, Kabupaten Bogor, Jawa Barat 16640",
+        "ISPU\n83\nSEDANG\nO3  |  29 Oktober 2026 16:00:00"
+      ],
+      "retrievalMethod": "Public Chromium browser; station-route reload; correct station-name wait; selected visible detail-card and pollutant-index text. Excerpt whitespace normalized.",
+      "contentSha256": null
+    },
+    {
+      "sourceId": "air_pollution_klh_indramayu_live",
+      "url": "https://ispu.kemenlh.go.id/app/#/peta/KABUPATEN_INDRAMAYU/-6.327040195465088/108.3219985961914",
+      "publisher": "Kementerian Lingkungan Hidup/BPLH",
+      "title": "Public ISPU station detail: Kabupaten Indramayu Margadadi",
+      "accessedAt": "2026-10-29",
+      "publicationDate": "2026-10-29",
+      "httpStatus": null,
+      "representation": "Researcher-authored audit receipt with attributed metadata/short excerpts",
+      "evidence": "Rendered detail showed overall ISPU 62, SEDANG, critical pollutant PM2.5, timestamp 29 Oktober 2026 16:00:00. The PM2.5 component index was 62; PM10 index was 33. The address explicitly names Kabupaten Indramayu.",
+      "excerpts": [
+        "Kabupaten Indramayu Margadadi",
+        "Lingkungan Masjid Agung Indramayu Dekat Jl. Letjen Sutoyo, Margadadi, Kec. Indramayu, Kabupaten Indramayu, Jawa Barat 45212",
+        "ISPU\n62\nSEDANG\nPM2.5  |  29 Oktober 2026 16:00:00"
+      ],
+      "retrievalMethod": "Public Chromium browser; station-route reload; correct station-name wait; selected visible detail-card and pollutant-index text. Excerpt whitespace normalized.",
+      "contentSha256": null
+    },
+    {
+      "sourceId": "air_pollution_klh_purwakarta_live",
+      "url": "https://ispu.kemenlh.go.id/app/#/peta/KABUPATEN_PURWAKARTA/-6.564449787139893/107.44599914550781",
+      "publisher": "Kementerian Lingkungan Hidup/BPLH",
+      "title": "Public ISPU station detail: Kabupaten Purwakarta Purnawarman",
+      "accessedAt": "2026-10-29",
+      "publicationDate": "2026-10-29",
+      "httpStatus": null,
+      "representation": "Researcher-authored audit receipt with attributed metadata/short excerpts",
+      "evidence": "Rendered station name, inventory and detail address associate this site with Kabupaten Purwakarta. Detail showed overall ISPU 58, SEDANG, critical pollutant PM2.5, timestamp 29 Oktober 2026 16:00:00. PM2.5 component index was 58; PM10 index was 27. Do not infer a municipality-wide sampling footprint from the station name.",
+      "excerpts": [
+        "Kabupaten Purwakarta Purnawarman",
+        "Jl. Purnawarman Timur, Sindangkasih, Kec. Purwakarta",
+        "ISPU\n58\nSEDANG\nPM2.5  |  29 Oktober 2026 16:00:00"
+      ],
+      "retrievalMethod": "Public Chromium browser; station inventory followed by station-route reload; correct station-name wait; selected visible detail-card and pollutant-index text. Excerpt whitespace normalized.",
+      "contentSha256": null
+    },
+    {
+      "sourceId": "air_pollution_klh_bekasi_live",
+      "url": "https://ispu.kemenlh.go.id/app/#/peta/KABUPATEN_BEKASI/-6.363800048828125/107.1719970703125",
+      "publisher": "Kementerian Lingkungan Hidup/BPLH",
+      "title": "Public ISPU station detail: Kabupaten Bekasi Sukamahi",
+      "accessedAt": "2026-10-29",
+      "publicationDate": "2026-10-29",
+      "httpStatus": null,
+      "representation": "Researcher-authored audit receipt with attributed metadata/short excerpts",
+      "evidence": "Rendered detail showed overall ISPU 56, SEDANG, critical pollutant PM10, timestamp 29 Oktober 2026 16:00:00. PM2.5 component index was 29; PM10 component index was 56. The address explicitly places the station in Kabupaten Bekasi, not Kota Bekasi. HC had no visible numeric component; no value was invented.",
+      "excerpts": [
+        "Kabupaten Bekasi Sukamahi",
+        "Sukamahi, Kec. Cikarang Pusat, Kabupaten Bekasi, Jawa Barat 17530",
+        "ISPU\n56\nSEDANG\nPM10  |  29 Oktober 2026 16:00:00"
+      ],
+      "retrievalMethod": "Public Chromium browser; station-route reload; correct station-name wait; selected visible detail-card and pollutant-index text. Excerpt whitespace normalized.",
+      "contentSha256": null
+    },
+    {
+      "sourceId": "air_pollution_klh_bogor_tegar_live",
+      "url": "https://ispu.kemenlh.go.id/app/#/peta/KABUPATEN_BOGOR/-6.481369972229004/106.8290023803711",
+      "publisher": "Kementerian Lingkungan Hidup/BPLH",
+      "title": "Public ISPU station detail: Kabupaten Bogor Tegar Beriman",
+      "accessedAt": "2026-10-29",
+      "publicationDate": "2026-10-29",
+      "httpStatus": null,
+      "representation": "Researcher-authored audit receipt with attributed metadata/short excerpts",
+      "evidence": "Rendered detail showed overall ISPU 50, BAIK, critical pollutant SO2, timestamp 29 Oktober 2026 16:00:00. Both particulate component indices displayed zero. Zero validity and sensor-status semantics were not established, so neither zero is admitted to the particulate component dataset. NO2 and HC had no visible numeric component. The address explicitly places the site in Kabupaten Bogor.",
+      "excerpts": [
+        "Kabupaten Bogor Tegar Beriman",
+        "Jl. Tegar Beriman, Tengah, Kec. Cibinong, Kabupaten Bogor, Jawa Barat 16914",
+        "ISPU\n50\nBAIK\nSO2  |  29 Oktober 2026 16:00:00"
+      ],
+      "retrievalMethod": "Public Chromium browser; station-route reload; correct station-name wait; selected visible detail-card and pollutant-index text. Excerpt whitespace normalized.",
+      "contentSha256": null
+    },
+    {
+      "sourceId": "air_pollution_klh_method",
+      "url": "https://ppmu.kemenlh.go.id/portal/read/indeks-standar-pencemar-udara-ispu-sebagai-informasi-mutu-udara-ambien-di-indonesia",
+      "publisher": "Direktorat Pengendalian Pencemaran Udara, KLHK",
+      "title": "Indeks Standar Pencemar Udara sebagai informasi mutu udara ambien di Indonesia",
+      "accessedAt": "2026-10-29",
+      "publicationDate": "2020-09-24",
+      "httpStatus": null,
+      "representation": "Researcher-authored audit receipt with attributed metadata/short excerpts",
+      "evidence": "Official explanation distinguishes dimensionless site-specific ISPU from concentrations and lists PM10, PM2.5, NO2, SO2, CO, O3 and HC. PM2.5 results are published hourly; other parameters at least at 09:00 and 15:00. Existing local primary-law excerpt was also read narrowly: Permen LHK 14/2020 Article 6 uses continuous 24-hour monitoring, and Article 7 requires completeness checks and removal of abnormal observations. Those requirements do not certify completeness or calibration of these six live site readings.",
+      "excerpts": [
+        "ISPU merupakan angka tanpa satuan, digunakan untuk menggambarkan kondisi mutu udara ambien di lokasi tertentu",
+        "Hasil perhitungan ISPU parameter PM2.5 disampaikan kepada publik tiap jam selama 24 jam."
+      ],
+      "retrievalMethod": "Native reader on current official explanatory page; targeted jq selection of legal duration and quality-control lines in prior air-exposure audit. Current BPK canonical regulation record confirms the rule remains in force; direct PDF retrieval returned 403.",
+      "contentSha256": null
+    },
+    {
+      "sourceId": "air_pollution_klh_regulation",
+      "url": "https://peraturan.bpk.go.id/Details/163466/permen-lhk-no-14-tahun-2020",
+      "publisher": "JDIH BPK; Kementerian Lingkungan Hidup dan Kehutanan",
+      "title": "Permen LHK Nomor 14 Tahun 2020 tentang Indeks Standar Pencemar Udara",
+      "accessedAt": "2026-10-29",
+      "publicationDate": "2020-07-15",
+      "httpStatus": null,
+      "representation": "Researcher-authored audit receipt with attributed metadata/short excerpts",
+      "evidence": "Current canonical legal record states status Berlaku, enactment 13 July 2020 and effective date 15 July 2020. The linked PDF failed with 403 in this retrieval. Source law sets methodology, not station-specific data completeness.",
+      "excerpts": [
+        "Status\nBerlaku",
+        "Tanggal Berlaku\n15 Juli 2020"
+      ],
+      "retrievalMethod": "Native reader on canonical regulation record. No challenge links, headers or signed URLs retained.",
+      "contentSha256": null
+    }
+  ],
+  "records": [
+    {
+      "regionId": "3201",
+      "regionName": "Kabupaten Bogor",
+      "referencePeriod": "2026-10-29 16:00:00 (source-displayed local time; timezone not explicitly printed on detail card)",
+      "value": null,
+      "valueStatus": "site_observations_only",
+      "missingReason": "No representative kabupaten/kota value is asserted; use the source site/segment observations only.",
+      "observations": [
+        {
+          "observationId": "air_pm25_ispu_20261029_bogor_leuwiliang",
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "geographicLevel": "monitoring_station",
+          "siteId": "KABUPATEN_BOGORLL",
+          "siteName": "Kabupaten Bogor Leuwiliang",
+          "period": "2026-10-29 16:00:00 (source local time)",
+          "value": 61,
+          "unit": "PM2.5 component ISPU (dimensionless)",
+          "sourceRef": "air_pollution_klh_bogor_leuwiliang_live",
+          "sourceLocator": "Station detail / KATEGORI / numeric component 61 immediately preceding PM2.5; detail timestamp 29 Oktober 2026 16:00:00",
+          "sourceValue": "61",
+          "transformation": "Exact parsing of the displayed PM2.5 component integer; no concentration inversion or aggregation.",
+          "limitations": [
+            "Kabupaten Bogor site, not Kota Bogor.",
+            "2026, not 2023.",
+            "Overall ISPU is instead driven by O3.",
+            "No valid-hour count or calibration certificate exposed."
+          ],
+          "evidencePointer": "/candidates/1/observations/1"
+        }
+      ]
+    },
+    {
+      "regionId": "3202",
+      "regionName": "Kabupaten Sukabumi",
+      "referencePeriod": "2026-10-29 16:00:00 (source-displayed local time; timezone not explicitly printed on detail card)",
+      "value": null,
+      "valueStatus": "site_observations_only",
+      "missingReason": "No representative kabupaten/kota value is asserted; use the source site/segment observations only.",
+      "observations": [
+        {
+          "observationId": "air_pm25_ispu_20261029_sukabumi",
+          "regionId": "3202",
+          "regionName": "Kabupaten Sukabumi",
+          "geographicLevel": "monitoring_station",
+          "siteId": "KABUPATEN_SUKABUMI",
+          "siteName": "Kabupaten Sukabumi Pelabuhanratu",
+          "period": "2026-10-29 16:00:00 (source local time)",
+          "value": 86,
+          "unit": "PM2.5 component ISPU (dimensionless)",
+          "sourceRef": "air_pollution_klh_sukabumi_live",
+          "sourceLocator": "Station detail / KATEGORI / numeric component 86 immediately preceding PM2.5; detail timestamp 29 Oktober 2026 16:00:00",
+          "sourceValue": "86",
+          "transformation": "Exact parsing of the displayed PM2.5 component integer; no concentration inversion or aggregation.",
+          "limitations": [
+            "Site observation only.",
+            "2026, not 2023.",
+            "No valid-hour count or calibration certificate exposed."
+          ],
+          "evidencePointer": "/candidates/1/observations/0"
+        }
+      ]
+    },
+    {
+      "regionId": "3203",
+      "regionName": "Kabupaten Cianjur",
+      "referencePeriod": "2026-10-29 16:00:00 (source-displayed local time; timezone not explicitly printed on detail card)",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3204",
+      "regionName": "Kabupaten Bandung",
+      "referencePeriod": "2026-10-29 16:00:00 (source-displayed local time; timezone not explicitly printed on detail card)",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3205",
+      "regionName": "Kabupaten Garut",
+      "referencePeriod": "2026-10-29 16:00:00 (source-displayed local time; timezone not explicitly printed on detail card)",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3206",
+      "regionName": "Kabupaten Tasikmalaya",
+      "referencePeriod": "2026-10-29 16:00:00 (source-displayed local time; timezone not explicitly printed on detail card)",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3207",
+      "regionName": "Kabupaten Ciamis",
+      "referencePeriod": "2026-10-29 16:00:00 (source-displayed local time; timezone not explicitly printed on detail card)",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3208",
+      "regionName": "Kabupaten Kuningan",
+      "referencePeriod": "2026-10-29 16:00:00 (source-displayed local time; timezone not explicitly printed on detail card)",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3209",
+      "regionName": "Kabupaten Cirebon",
+      "referencePeriod": "2026-10-29 16:00:00 (source-displayed local time; timezone not explicitly printed on detail card)",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3210",
+      "regionName": "Kabupaten Majalengka",
+      "referencePeriod": "2026-10-29 16:00:00 (source-displayed local time; timezone not explicitly printed on detail card)",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3211",
+      "regionName": "Kabupaten Sumedang",
+      "referencePeriod": "2026-10-29 16:00:00 (source-displayed local time; timezone not explicitly printed on detail card)",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3212",
+      "regionName": "Kabupaten Indramayu",
+      "referencePeriod": "2026-10-29 16:00:00 (source-displayed local time; timezone not explicitly printed on detail card)",
+      "value": null,
+      "valueStatus": "site_observations_only",
+      "missingReason": "No representative kabupaten/kota value is asserted; use the source site/segment observations only.",
+      "observations": [
+        {
+          "observationId": "air_pm25_ispu_20261029_indramayu",
+          "regionId": "3212",
+          "regionName": "Kabupaten Indramayu",
+          "geographicLevel": "monitoring_station",
+          "siteId": "KABUPATEN_INDRAMAYU",
+          "siteName": "Kabupaten Indramayu Margadadi",
+          "period": "2026-10-29 16:00:00 (source local time)",
+          "value": 62,
+          "unit": "PM2.5 component ISPU (dimensionless)",
+          "sourceRef": "air_pollution_klh_indramayu_live",
+          "sourceLocator": "Station detail / KATEGORI / numeric component 62 immediately preceding PM2.5; detail timestamp 29 Oktober 2026 16:00:00",
+          "sourceValue": "62",
+          "transformation": "Exact parsing of the displayed PM2.5 component integer; no concentration inversion or aggregation.",
+          "limitations": [
+            "Site observation only.",
+            "2026, not 2023.",
+            "No valid-hour count or calibration certificate exposed."
+          ],
+          "evidencePointer": "/candidates/1/observations/2"
+        }
+      ]
+    },
+    {
+      "regionId": "3213",
+      "regionName": "Kabupaten Subang",
+      "referencePeriod": "2026-10-29 16:00:00 (source-displayed local time; timezone not explicitly printed on detail card)",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3214",
+      "regionName": "Kabupaten Purwakarta",
+      "referencePeriod": "2026-10-29 16:00:00 (source-displayed local time; timezone not explicitly printed on detail card)",
+      "value": null,
+      "valueStatus": "site_observations_only",
+      "missingReason": "No representative kabupaten/kota value is asserted; use the source site/segment observations only.",
+      "observations": [
+        {
+          "observationId": "air_pm25_ispu_20261029_purwakarta",
+          "regionId": "3214",
+          "regionName": "Kabupaten Purwakarta",
+          "geographicLevel": "monitoring_station",
+          "siteId": "KABUPATEN_PURWAKARTA",
+          "siteName": "Kabupaten Purwakarta Purnawarman",
+          "period": "2026-10-29 16:00:00 (source local time)",
+          "value": 58,
+          "unit": "PM2.5 component ISPU (dimensionless)",
+          "sourceRef": "air_pollution_klh_purwakarta_live",
+          "sourceLocator": "Station detail / KATEGORI / numeric component 58 immediately preceding PM2.5; detail timestamp 29 Oktober 2026 16:00:00",
+          "sourceValue": "58",
+          "transformation": "Exact parsing of the displayed PM2.5 component integer; no concentration inversion or aggregation.",
+          "limitations": [
+            "Site observation only.",
+            "2026, not 2023.",
+            "No valid-hour count or calibration certificate exposed."
+          ],
+          "evidencePointer": "/candidates/1/observations/3"
+        }
+      ]
+    },
+    {
+      "regionId": "3215",
+      "regionName": "Kabupaten Karawang",
+      "referencePeriod": "2026-10-29 16:00:00 (source-displayed local time; timezone not explicitly printed on detail card)",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3216",
+      "regionName": "Kabupaten Bekasi",
+      "referencePeriod": "2026-10-29 16:00:00 (source-displayed local time; timezone not explicitly printed on detail card)",
+      "value": null,
+      "valueStatus": "site_observations_only",
+      "missingReason": "No representative kabupaten/kota value is asserted; use the source site/segment observations only.",
+      "observations": [
+        {
+          "observationId": "air_pm25_ispu_20261029_bekasi",
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "geographicLevel": "monitoring_station",
+          "siteId": "KABUPATEN_BEKASI",
+          "siteName": "Kabupaten Bekasi Sukamahi",
+          "period": "2026-10-29 16:00:00 (source local time)",
+          "value": 29,
+          "unit": "PM2.5 component ISPU (dimensionless)",
+          "sourceRef": "air_pollution_klh_bekasi_live",
+          "sourceLocator": "Station detail / KATEGORI / numeric component 29 immediately preceding PM2.5; detail timestamp 29 Oktober 2026 16:00:00",
+          "sourceValue": "29",
+          "transformation": "Exact parsing of the displayed PM2.5 component integer; no concentration inversion or aggregation.",
+          "limitations": [
+            "Kabupaten Bekasi site, not Kota Bekasi.",
+            "2026, not 2023.",
+            "Overall ISPU is instead driven by PM10.",
+            "No valid-hour count or calibration certificate exposed."
+          ],
+          "evidencePointer": "/candidates/1/observations/4"
+        }
+      ]
+    },
+    {
+      "regionId": "3217",
+      "regionName": "Kabupaten Bandung Barat",
+      "referencePeriod": "2026-10-29 16:00:00 (source-displayed local time; timezone not explicitly printed on detail card)",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3218",
+      "regionName": "Kabupaten Pangandaran",
+      "referencePeriod": "2026-10-29 16:00:00 (source-displayed local time; timezone not explicitly printed on detail card)",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3271",
+      "regionName": "Kota Bogor",
+      "referencePeriod": "2026-10-29 16:00:00 (source-displayed local time; timezone not explicitly printed on detail card)",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3272",
+      "regionName": "Kota Sukabumi",
+      "referencePeriod": "2026-10-29 16:00:00 (source-displayed local time; timezone not explicitly printed on detail card)",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3273",
+      "regionName": "Kota Bandung",
+      "referencePeriod": "2026-10-29 16:00:00 (source-displayed local time; timezone not explicitly printed on detail card)",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3274",
+      "regionName": "Kota Cirebon",
+      "referencePeriod": "2026-10-29 16:00:00 (source-displayed local time; timezone not explicitly printed on detail card)",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3275",
+      "regionName": "Kota Bekasi",
+      "referencePeriod": "2026-10-29 16:00:00 (source-displayed local time; timezone not explicitly printed on detail card)",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3276",
+      "regionName": "Kota Depok",
+      "referencePeriod": "2026-10-29 16:00:00 (source-displayed local time; timezone not explicitly printed on detail card)",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3277",
+      "regionName": "Kota Cimahi",
+      "referencePeriod": "2026-10-29 16:00:00 (source-displayed local time; timezone not explicitly printed on detail card)",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3278",
+      "regionName": "Kota Tasikmalaya",
+      "referencePeriod": "2026-10-29 16:00:00 (source-displayed local time; timezone not explicitly printed on detail card)",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    },
+    {
+      "regionId": "3279",
+      "regionName": "Kota Banjar",
+      "referencePeriod": "2026-10-29 16:00:00 (source-displayed local time; timezone not explicitly printed on detail card)",
+      "value": null,
+      "valueStatus": "missing",
+      "missingReason": "No verified usable observation for this region in this dataset; not zero or proof of absence.",
+      "observations": []
+    }
+  ],
+  "rawAuditPath": "data/raw/contextual-audit-2023/air_pollution.json",
+  "candidatePointer": "/candidates/1",
+  "provenance": {
+    "sourceManifest": [
+      {
+        "path": "data/raw/contextual-audit-2023/air_pollution.json",
+        "sha256": "bba300991d4e38d88e3c2bdc7a08c5e95cdc1e0d8672a7e29195e2ed6351a8c6",
+        "bytes": 56812
+      }
+    ],
+    "computationManifest": [
+      {
+        "path": "scripts/audit-contextual-data-2023.mjs",
+        "sha256": "21ca2031864991718cab8807f1c3eb71e8a18d3e37ca184d13d1390e9bb9e32a",
+        "bytes": 9539
+      },
+      {
+        "path": "src/lib/civx/contextual-data-2023.ts",
+        "sha256": "b2be822808ccf8614a423b3076ea60233f43ffecc884804c0a28e9d45d461c6f",
+        "bytes": 19989
+      }
+    ],
+    "reproductionScope": "Offline replay of attributed audited source transcriptions; not a new live-source acquisition or a claim of a blanket original-publication redistribution licence."
+  }
+}

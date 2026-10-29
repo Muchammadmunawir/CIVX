@@ -334,3 +334,17 @@ This implements deterministic explanations of the completed scoring stage in §2
 
 The insight artifact is calculated but not released. Future contextual data requires separate approval and remains outside CORE scoring. Frontend integration, independent model/source review, rights clearance, effective-boundary review and release approval remain separate stages. No deployment or public league table is authorized.
 
+## 25. Contextual data audit for 2023 profiles
+
+This audits the separate, non-scoring contextual path after the frozen CORE Insight Engine in §24. Findings and source links: [CONTEXTUAL-DATA-AUDIT-2023.md](CONTEXTUAL-DATA-AUDIT-2023.md).
+
+- [x] Investigate 27 candidate metrics across traffic, transport, public-safety context and detailed air pollution using original official sources, inspected methods, actual values and current usage terms.
+- [x] Record 43 source receipts and assign one `ACCEPT_CONTEXT`, six `PARTIAL_CONTEXT` and 20 `REJECT` decisions without forcing all-27 traffic or historical pollution coverage.
+- [x] Prepare seven separate metric artifacts containing 84 finite source-resolved observations: Bandung 2024 road-site speed/V-C, 2023 Type C terminal inventory, October 2023 commuter shares, Podes preceding-May-2024 village theft occurrence and dated 2026 station ISPU/PM2.5-component snapshots.
+- [x] Preserve original units, actual periods, definitions, missingness, limitations, rights notes, source locators and safe/unsafe deterministic statement templates; keep site observations nested and regional scalars null.
+- [x] Reject unresolved police-to-civil jurisdiction/rate denominators, restricted portal/TomTom reuse, mixed/unknown traffic periods, unverified concentration archives and unsupported raster-to-region extraction.
+- [x] Generate `data/processed/contextual-data-catalog-2023.json` and `data/processed/context/` deterministically from audited transcriptions, with offline check commands and credential-pattern scanning.
+- [x] Pass all 205 tests, lint, strict production build with 37 pages, network-denied replay and all 16 CORE fingerprints unchanged.
+
+Context does not affect any CIVX score or CORE insight. No frontend, simulation, deployment, normalization, new dependency, missing-value imputation or cross-dataset ranking was introduced. Integrate the five-region 2023 commuter shares first; other contexts require their literal units, dates, coverage and limitations, with rights/publication review separate from this audit.
+
