@@ -1,0 +1,2561 @@
+{
+  "auditId": "environment-jabar-2023",
+  "method": {
+    "coreIds": [
+      "iklh_2023"
+    ],
+    "admissionGates": [
+      "official_source",
+      "reference_2023",
+      "coverage_27",
+      "comparable_definition",
+      "comparable_unit",
+      "compatible_geography",
+      "environmental_civic_pressure",
+      "clear_natural_direction",
+      "no_unresolved_missing",
+      "sufficient_variation",
+      "no_severe_unnecessary_redundancy",
+      "valid_denominator_if_rate",
+      "not_primarily_reporting_intensity",
+      "not_embedded_in_selected_composite_or_dimension"
+    ],
+    "statistics": "Equal-region descriptive statistics; population SD; R7 linear quantiles; Tukey1.5IQR flags retained unchanged; pairwise-complete Pearson/Spearman with tied average ranks and explicit sample sizes; no imputation.",
+    "correlationFlag": 0.85,
+    "notScoring": "No normalization, weights, score, ranking, UI or recommendation feature changes."
+  },
+  "totals": {
+    "artifacts": 127,
+    "series": 16,
+    "investigations": 39,
+    "candidates": 55,
+    "expectedRegionalCells": 432,
+    "numericCells": 382,
+    "missingCells": 50,
+    "completePanels": 10,
+    "correlationPairs": 117,
+    "flaggedPairs": 14
+  },
+  "statistics": {
+    "iklh_2023": {
+      "expected": 27,
+      "count": 27,
+      "missing": 0,
+      "unique": 27,
+      "min": 44.65,
+      "max": 71.11,
+      "mean": 58.90074074074074,
+      "median": 59.76,
+      "populationStandardDeviation": 6.8941391780887855,
+      "q1": 56.055,
+      "q3": 63.925,
+      "iqr": 7.869999999999997,
+      "lowerFence": 44.25,
+      "upperFence": 75.72999999999999,
+      "ambiguousNumeric": 0,
+      "zeros": [],
+      "outsideBounds": [],
+      "outliers": [],
+      "minimumRegions": [
+        {
+          "regionId": "3277",
+          "regionName": "Kota Cimahi",
+          "value": 44.65
+        }
+      ],
+      "maximumRegions": [
+        {
+          "regionId": "3208",
+          "regionName": "Kabupaten Kuningan",
+          "value": 71.11
+        }
+      ],
+      "missingRegions": [],
+      "interpretation": "Equal-region description, not a population-weighted province estimate. Tukey flags are diagnostics, not deletions or winsorization. Zero is retained only when explicitly published; see source interpretation."
+    },
+    "environment_waste_generation_per_capita": {
+      "expected": 27,
+      "count": 27,
+      "missing": 0,
+      "unique": 18,
+      "min": 0.27,
+      "max": 0.68,
+      "mean": 0.43280370370370375,
+      "median": 0.4,
+      "populationStandardDeviation": 0.12032469184570581,
+      "q1": 0.33999999999999997,
+      "q3": 0.4805,
+      "iqr": 0.1405,
+      "lowerFence": 0.12924999999999995,
+      "upperFence": 0.69125,
+      "ambiguousNumeric": 0,
+      "zeros": [],
+      "outsideBounds": [],
+      "outliers": [],
+      "minimumRegions": [
+        {
+          "regionId": "3214",
+          "regionName": "Kabupaten Purwakarta",
+          "value": 0.27
+        }
+      ],
+      "maximumRegions": [
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": 0.68
+        }
+      ],
+      "missingRegions": [],
+      "interpretation": "Equal-region description, not a population-weighted province estimate. Tukey flags are diagnostics, not deletions or winsorization. Zero is retained only when explicitly published; see source interpretation."
+    },
+    "environment_waste_generation_daily_api": {
+      "expected": 27,
+      "count": 22,
+      "missing": 5,
+      "unique": 22,
+      "min": 57.31,
+      "max": 968.27,
+      "mean": 361.5863636363636,
+      "median": 321.83000000000004,
+      "populationStandardDeviation": 213.56880267886962,
+      "q1": 215.66,
+      "q3": 490.90250000000003,
+      "iqr": 275.24250000000006,
+      "lowerFence": -197.2037500000001,
+      "upperFence": 903.7662500000001,
+      "ambiguousNumeric": 0,
+      "zeros": [],
+      "outsideBounds": [],
+      "outliers": [
+        {
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "value": 968.27
+        }
+      ],
+      "minimumRegions": [
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": 57.31
+        }
+      ],
+      "maximumRegions": [
+        {
+          "regionId": "3216",
+          "regionName": "Kabupaten Bekasi",
+          "value": 968.27
+        }
+      ],
+      "missingRegions": [
+        {
+          "regionId": "3201",
+          "reason": "Explicit source null; not zero."
+        },
+        {
+          "regionId": "3204",
+          "reason": "Explicit source null; not zero."
+        },
+        {
+          "regionId": "3273",
+          "reason": "Explicit source null; not zero."
+        },
+        {
+          "regionId": "3275",
+          "reason": "Explicit source null; not zero."
+        },
+        {
+          "regionId": "3276",
+          "reason": "Explicit source null; not zero."
+        }
+      ],
+      "interpretation": "Equal-region description, not a population-weighted province estimate. Tukey flags are diagnostics, not deletions or winsorization. Zero is retained only when explicitly published; see source interpretation."
+    },
+    "environment_waste_transported_to_tpa_daily": {
+      "expected": 27,
+      "count": 27,
+      "missing": 0,
+      "unique": 27,
+      "min": 53.76,
+      "max": 1444.34,
+      "mean": 418.0774074074074,
+      "median": 268,
+      "populationStandardDeviation": 387.26960607511495,
+      "q1": 171.56,
+      "q3": 437.62,
+      "iqr": 266.06,
+      "lowerFence": -227.53000000000003,
+      "upperFence": 836.71,
+      "ambiguousNumeric": 0,
+      "zeros": [],
+      "outsideBounds": [],
+      "outliers": [
+        {
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "value": 1444.34
+        },
+        {
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "value": 1364
+        },
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": 1260
+        },
+        {
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "value": 999
+        }
+      ],
+      "minimumRegions": [
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": 53.76
+        }
+      ],
+      "maximumRegions": [
+        {
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "value": 1444.34
+        }
+      ],
+      "missingRegions": [],
+      "interpretation": "Equal-region description, not a population-weighted province estimate. Tukey flags are diagnostics, not deletions or winsorization. Zero is retained only when explicitly published; see source interpretation."
+    },
+    "environment_waste_service_level_published": {
+      "expected": 27,
+      "count": 27,
+      "missing": 0,
+      "unique": 27,
+      "min": 37.88,
+      "max": 95.92,
+      "mean": 74.63740740740741,
+      "median": 77.23,
+      "populationStandardDeviation": 15.617315554547632,
+      "q1": 68.87,
+      "q3": 85.43,
+      "iqr": 16.560000000000002,
+      "lowerFence": 44.03,
+      "upperFence": 110.27000000000001,
+      "ambiguousNumeric": 0,
+      "zeros": [],
+      "outsideBounds": [],
+      "outliers": [
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": 37.88
+        },
+        {
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "value": 38.97
+        },
+        {
+          "regionId": "3217",
+          "regionName": "Kabupaten Bandung Barat",
+          "value": 40.01
+        }
+      ],
+      "minimumRegions": [
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": 37.88
+        }
+      ],
+      "maximumRegions": [
+        {
+          "regionId": "3208",
+          "regionName": "Kabupaten Kuningan",
+          "value": 95.92
+        }
+      ],
+      "missingRegions": [],
+      "interpretation": "Equal-region description, not a population-weighted province estimate. Tukey flags are diagnostics, not deletions or winsorization. Zero is retained only when explicitly published; see source interpretation."
+    },
+    "environment_waste_handled_daily": {
+      "expected": 27,
+      "count": 27,
+      "missing": 0,
+      "unique": 27,
+      "min": 1.2,
+      "max": 554.11,
+      "mean": 175.82585185185184,
+      "median": 72.78,
+      "populationStandardDeviation": 177.5754297651405,
+      "q1": 32.604,
+      "q3": 353,
+      "iqr": 320.396,
+      "lowerFence": -447.99000000000007,
+      "upperFence": 833.594,
+      "ambiguousNumeric": 0,
+      "zeros": [],
+      "outsideBounds": [],
+      "outliers": [],
+      "minimumRegions": [
+        {
+          "regionId": "3272",
+          "regionName": "Kota Sukabumi",
+          "value": 1.2
+        }
+      ],
+      "maximumRegions": [
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": 554.11
+        }
+      ],
+      "missingRegions": [],
+      "interpretation": "Equal-region description, not a population-weighted province estimate. Tukey flags are diagnostics, not deletions or winsorization. Zero is retained only when explicitly published; see source interpretation."
+    },
+    "environment_villages_disposal_bin_then_collected": {
+      "expected": 27,
+      "count": 19,
+      "missing": 8,
+      "unique": 19,
+      "min": 5,
+      "max": 230,
+      "mean": 101.10526315789474,
+      "median": 86,
+      "populationStandardDeviation": 59.432309781661516,
+      "q1": 60,
+      "q3": 144.5,
+      "iqr": 84.5,
+      "lowerFence": -66.75,
+      "upperFence": 271.25,
+      "ambiguousNumeric": 0,
+      "zeros": [],
+      "outsideBounds": [],
+      "outliers": [],
+      "minimumRegions": [
+        {
+          "regionId": "3279",
+          "regionName": "Kota Banjar",
+          "value": 5
+        }
+      ],
+      "maximumRegions": [
+        {
+          "regionId": "3209",
+          "regionName": "Kabupaten Cirebon",
+          "value": 230
+        }
+      ],
+      "missingRegions": [
+        {
+          "regionId": "3271",
+          "reason": "No 2023 region/category record in this dataset; reporting participation unknown."
+        },
+        {
+          "regionId": "3272",
+          "reason": "No 2023 region/category record in this dataset; reporting participation unknown."
+        },
+        {
+          "regionId": "3273",
+          "reason": "No 2023 region/category record in this dataset; reporting participation unknown."
+        },
+        {
+          "regionId": "3274",
+          "reason": "No 2023 region/category record in this dataset; reporting participation unknown."
+        },
+        {
+          "regionId": "3275",
+          "reason": "No 2023 region/category record in this dataset; reporting participation unknown."
+        },
+        {
+          "regionId": "3276",
+          "reason": "No 2023 region/category record in this dataset; reporting participation unknown."
+        },
+        {
+          "regionId": "3277",
+          "reason": "No 2023 region/category record in this dataset; reporting participation unknown."
+        },
+        {
+          "regionId": "3278",
+          "reason": "No 2023 region/category record in this dataset; reporting participation unknown."
+        }
+      ],
+      "interpretation": "Equal-region description, not a population-weighted province estimate. Tukey flags are diagnostics, not deletions or winsorization. Zero is retained only when explicitly published; see source interpretation."
+    },
+    "environment_waste_bps_perCapita": {
+      "expected": 27,
+      "count": 27,
+      "missing": 0,
+      "unique": 16,
+      "min": 0.27,
+      "max": 0.68,
+      "mean": 0.43259259259259264,
+      "median": 0.4,
+      "populationStandardDeviation": 0.1205417583275019,
+      "q1": 0.33999999999999997,
+      "q3": 0.48,
+      "iqr": 0.14,
+      "lowerFence": 0.12999999999999995,
+      "upperFence": 0.69,
+      "ambiguousNumeric": 0,
+      "zeros": [],
+      "outsideBounds": [],
+      "outliers": [],
+      "minimumRegions": [
+        {
+          "regionId": "3212",
+          "regionName": "Kabupaten Indramayu",
+          "value": 0.27
+        },
+        {
+          "regionId": "3214",
+          "regionName": "Kabupaten Purwakarta",
+          "value": 0.27
+        }
+      ],
+      "maximumRegions": [
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": 0.68
+        }
+      ],
+      "missingRegions": [],
+      "interpretation": "Equal-region description, not a population-weighted province estimate. Tukey flags are diagnostics, not deletions or winsorization. Zero is retained only when explicitly published; see source interpretation."
+    },
+    "environment_waste_bps_generation": {
+      "expected": 27,
+      "count": 27,
+      "missing": 0,
+      "unique": 27,
+      "min": 57.31,
+      "max": 2287.57,
+      "mean": 597.9888888888889,
+      "median": 399.88,
+      "populationStandardDeviation": 561.7958872015201,
+      "q1": 226.81,
+      "q3": 648.15,
+      "iqr": 421.34,
+      "lowerFence": -405.2,
+      "upperFence": 1280.1599999999999,
+      "ambiguousNumeric": 0,
+      "zeros": [],
+      "outsideBounds": [],
+      "outliers": [
+        {
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "value": 2287.57
+        },
+        {
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "value": 1766
+        },
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": 1761.37
+        },
+        {
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "value": 1288.41
+        }
+      ],
+      "minimumRegions": [
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": 57.31
+        }
+      ],
+      "maximumRegions": [
+        {
+          "regionId": "3201",
+          "regionName": "Kabupaten Bogor",
+          "value": 2287.57
+        }
+      ],
+      "missingRegions": [],
+      "interpretation": "Equal-region description, not a population-weighted province estimate. Tukey flags are diagnostics, not deletions or winsorization. Zero is retained only when explicitly published; see source interpretation."
+    },
+    "environment_waste_bps_managed": {
+      "expected": 27,
+      "count": 27,
+      "missing": 0,
+      "unique": 27,
+      "min": 1.2,
+      "max": 554.11,
+      "mean": 175.827037037037,
+      "median": 72.78,
+      "populationStandardDeviation": 177.57500570316788,
+      "q1": 32.605000000000004,
+      "q3": 353,
+      "iqr": 320.395,
+      "lowerFence": -447.98749999999995,
+      "upperFence": 833.5925,
+      "ambiguousNumeric": 0,
+      "zeros": [],
+      "outsideBounds": [],
+      "outliers": [],
+      "minimumRegions": [
+        {
+          "regionId": "3272",
+          "regionName": "Kota Sukabumi",
+          "value": 1.2
+        }
+      ],
+      "maximumRegions": [
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": 554.11
+        }
+      ],
+      "missingRegions": [],
+      "interpretation": "Equal-region description, not a population-weighted province estimate. Tukey flags are diagnostics, not deletions or winsorization. Zero is retained only when explicitly published; see source interpretation."
+    },
+    "environment_waste_bps_service": {
+      "expected": 27,
+      "count": 27,
+      "missing": 0,
+      "unique": 27,
+      "min": 37.89,
+      "max": 95.92,
+      "mean": 74.6437037037037,
+      "median": 77.24,
+      "populationStandardDeviation": 15.61690943678207,
+      "q1": 68.875,
+      "q3": 85.435,
+      "iqr": 16.560000000000002,
+      "lowerFence": 44.035,
+      "upperFence": 110.275,
+      "ambiguousNumeric": 0,
+      "zeros": [],
+      "outsideBounds": [],
+      "outliers": [
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": 37.89
+        },
+        {
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "value": 38.97
+        },
+        {
+          "regionId": "3217",
+          "regionName": "Kabupaten Bandung Barat",
+          "value": 40.01
+        }
+      ],
+      "minimumRegions": [
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": 37.89
+        }
+      ],
+      "maximumRegions": [
+        {
+          "regionId": "3208",
+          "regionName": "Kabupaten Kuningan",
+          "value": 95.92
+        }
+      ],
+      "missingRegions": [],
+      "interpretation": "Equal-region description, not a population-weighted province estimate. Tukey flags are diagnostics, not deletions or winsorization. Zero is retained only when explicitly published; see source interpretation."
+    },
+    "environment_waste_sarimukti_annual_inflow": {
+      "expected": 27,
+      "count": 4,
+      "missing": 23,
+      "unique": 4,
+      "min": 50513.596000000005,
+      "max": 400146.544,
+      "mean": 146566.8025,
+      "median": 67803.535,
+      "populationStandardDeviation": 147042.20776234934,
+      "q1": 51050.0965,
+      "q3": 163320.24099999998,
+      "iqr": 112270.14449999998,
+      "lowerFence": -117355.12024999996,
+      "upperFence": 331725.45774999994,
+      "ambiguousNumeric": 0,
+      "zeros": [],
+      "outsideBounds": [],
+      "outliers": [
+        {
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "value": 400146.544
+        }
+      ],
+      "minimumRegions": [
+        {
+          "regionId": "3217",
+          "regionName": "Kabupaten Bandung Barat",
+          "value": 50513.596000000005
+        }
+      ],
+      "maximumRegions": [
+        {
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "value": 400146.544
+        }
+      ],
+      "missingRegions": [
+        {
+          "regionId": "3201",
+          "reason": "No complete 12-month record set for this region in facility-specific dataset; not zero."
+        },
+        {
+          "regionId": "3202",
+          "reason": "No complete 12-month record set for this region in facility-specific dataset; not zero."
+        },
+        {
+          "regionId": "3203",
+          "reason": "No complete 12-month record set for this region in facility-specific dataset; not zero."
+        },
+        {
+          "regionId": "3205",
+          "reason": "No complete 12-month record set for this region in facility-specific dataset; not zero."
+        },
+        {
+          "regionId": "3206",
+          "reason": "No complete 12-month record set for this region in facility-specific dataset; not zero."
+        },
+        {
+          "regionId": "3207",
+          "reason": "No complete 12-month record set for this region in facility-specific dataset; not zero."
+        },
+        {
+          "regionId": "3208",
+          "reason": "No complete 12-month record set for this region in facility-specific dataset; not zero."
+        },
+        {
+          "regionId": "3209",
+          "reason": "No complete 12-month record set for this region in facility-specific dataset; not zero."
+        },
+        {
+          "regionId": "3210",
+          "reason": "No complete 12-month record set for this region in facility-specific dataset; not zero."
+        },
+        {
+          "regionId": "3211",
+          "reason": "No complete 12-month record set for this region in facility-specific dataset; not zero."
+        },
+        {
+          "regionId": "3212",
+          "reason": "No complete 12-month record set for this region in facility-specific dataset; not zero."
+        },
+        {
+          "regionId": "3213",
+          "reason": "No complete 12-month record set for this region in facility-specific dataset; not zero."
+        },
+        {
+          "regionId": "3214",
+          "reason": "No complete 12-month record set for this region in facility-specific dataset; not zero."
+        },
+        {
+          "regionId": "3215",
+          "reason": "No complete 12-month record set for this region in facility-specific dataset; not zero."
+        },
+        {
+          "regionId": "3216",
+          "reason": "No complete 12-month record set for this region in facility-specific dataset; not zero."
+        },
+        {
+          "regionId": "3218",
+          "reason": "No complete 12-month record set for this region in facility-specific dataset; not zero."
+        },
+        {
+          "regionId": "3271",
+          "reason": "No complete 12-month record set for this region in facility-specific dataset; not zero."
+        },
+        {
+          "regionId": "3272",
+          "reason": "No complete 12-month record set for this region in facility-specific dataset; not zero."
+        },
+        {
+          "regionId": "3274",
+          "reason": "No complete 12-month record set for this region in facility-specific dataset; not zero."
+        },
+        {
+          "regionId": "3275",
+          "reason": "No complete 12-month record set for this region in facility-specific dataset; not zero."
+        },
+        {
+          "regionId": "3276",
+          "reason": "No complete 12-month record set for this region in facility-specific dataset; not zero."
+        },
+        {
+          "regionId": "3278",
+          "reason": "No complete 12-month record set for this region in facility-specific dataset; not zero."
+        },
+        {
+          "regionId": "3279",
+          "reason": "No complete 12-month record set for this region in facility-specific dataset; not zero."
+        }
+      ],
+      "interpretation": "Equal-region description, not a population-weighted province estimate. Tukey flags are diagnostics, not deletions or winsorization. Zero is retained only when explicitly published; see source interpretation."
+    },
+    "landwater-tree-planting-area-2023": {
+      "expected": 27,
+      "count": 27,
+      "missing": 0,
+      "unique": 22,
+      "min": 0,
+      "max": 9543.27,
+      "mean": 841.892962962963,
+      "median": 321.9,
+      "populationStandardDeviation": 1822.2719026936613,
+      "q1": 8.185,
+      "q3": 729.935,
+      "iqr": 721.75,
+      "lowerFence": -1074.44,
+      "upperFence": 1812.56,
+      "ambiguousNumeric": 0,
+      "zeros": [
+        {
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "value": 0
+        },
+        {
+          "regionId": "3272",
+          "regionName": "Kota Sukabumi",
+          "value": 0
+        },
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": 0
+        },
+        {
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "value": 0
+        },
+        {
+          "regionId": "3277",
+          "regionName": "Kota Cimahi",
+          "value": 0
+        },
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": 0
+        }
+      ],
+      "outsideBounds": [],
+      "outliers": [
+        {
+          "regionId": "3202",
+          "regionName": "Kabupaten Sukabumi",
+          "value": 2476.34
+        },
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": 9543.27
+        },
+        {
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "value": 1850.15
+        }
+      ],
+      "minimumRegions": [
+        {
+          "regionId": "3271",
+          "regionName": "Kota Bogor",
+          "value": 0
+        },
+        {
+          "regionId": "3272",
+          "regionName": "Kota Sukabumi",
+          "value": 0
+        },
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": 0
+        },
+        {
+          "regionId": "3276",
+          "regionName": "Kota Depok",
+          "value": 0
+        },
+        {
+          "regionId": "3277",
+          "regionName": "Kota Cimahi",
+          "value": 0
+        },
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": 0
+        }
+      ],
+      "maximumRegions": [
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": 9543.27
+        }
+      ],
+      "missingRegions": [],
+      "interpretation": "Equal-region description, not a population-weighted province estimate. Tukey flags are diagnostics, not deletions or winsorization. Zero is retained only when explicitly published; see source interpretation."
+    },
+    "landwater-community-forest-area-2023": {
+      "expected": 27,
+      "count": 26,
+      "missing": 1,
+      "unique": 26,
+      "min": 4.44,
+      "max": 155428.14,
+      "mean": 32929.79807692308,
+      "median": 9932.18,
+      "populationStandardDeviation": 41572.47673708893,
+      "q1": 1897.25,
+      "q3": 44859.1325,
+      "iqr": 42961.8825,
+      "lowerFence": -62545.573749999996,
+      "upperFence": 109301.95624999999,
+      "ambiguousNumeric": 0,
+      "zeros": [],
+      "outsideBounds": [],
+      "outliers": [
+        {
+          "regionId": "3203",
+          "regionName": "Kabupaten Cianjur",
+          "value": 120795.1
+        },
+        {
+          "regionId": "3206",
+          "regionName": "Kabupaten Tasikmalaya",
+          "value": 155428.14
+        }
+      ],
+      "minimumRegions": [
+        {
+          "regionId": "3275",
+          "regionName": "Kota Bekasi",
+          "value": 4.44
+        }
+      ],
+      "maximumRegions": [
+        {
+          "regionId": "3206",
+          "regionName": "Kabupaten Tasikmalaya",
+          "value": 155428.14
+        }
+      ],
+      "missingRegions": [
+        {
+          "regionId": "3273",
+          "reason": "No2023 row for this district; KotaBandung omitted. Never infer zero."
+        }
+      ],
+      "interpretation": "Equal-region description, not a population-weighted province estimate. Tukey flags are diagnostics, not deletions or winsorization. Zero is retained only when explicitly published; see source interpretation."
+    },
+    "landwater-villages-reporting-water-pollution-2023": {
+      "expected": 27,
+      "count": 19,
+      "missing": 8,
+      "unique": 17,
+      "min": 1,
+      "max": 58,
+      "mean": 31,
+      "median": 34,
+      "populationStandardDeviation": 17.776388834631177,
+      "q1": 15.5,
+      "q3": 47.5,
+      "iqr": 32,
+      "lowerFence": -32.5,
+      "upperFence": 95.5,
+      "ambiguousNumeric": 0,
+      "zeros": [],
+      "outsideBounds": [],
+      "outliers": [],
+      "minimumRegions": [
+        {
+          "regionId": "3279",
+          "regionName": "Kota Banjar",
+          "value": 1
+        }
+      ],
+      "maximumRegions": [
+        {
+          "regionId": "3209",
+          "regionName": "Kabupaten Cirebon",
+          "value": 58
+        }
+      ],
+      "missingRegions": [
+        {
+          "regionId": "3271",
+          "reason": "No2023 district record; eight cities outside reported village coverage. Never infer zero."
+        },
+        {
+          "regionId": "3272",
+          "reason": "No2023 district record; eight cities outside reported village coverage. Never infer zero."
+        },
+        {
+          "regionId": "3273",
+          "reason": "No2023 district record; eight cities outside reported village coverage. Never infer zero."
+        },
+        {
+          "regionId": "3274",
+          "reason": "No2023 district record; eight cities outside reported village coverage. Never infer zero."
+        },
+        {
+          "regionId": "3275",
+          "reason": "No2023 district record; eight cities outside reported village coverage. Never infer zero."
+        },
+        {
+          "regionId": "3276",
+          "reason": "No2023 district record; eight cities outside reported village coverage. Never infer zero."
+        },
+        {
+          "regionId": "3277",
+          "reason": "No2023 district record; eight cities outside reported village coverage. Never infer zero."
+        },
+        {
+          "regionId": "3278",
+          "reason": "No2023 district record; eight cities outside reported village coverage. Never infer zero."
+        }
+      ],
+      "interpretation": "Equal-region description, not a population-weighted province estimate. Tukey flags are diagnostics, not deletions or winsorization. Zero is retained only when explicitly published; see source interpretation."
+    },
+    "landwater-designated-forest-water-area-2023": {
+      "expected": 27,
+      "count": 22,
+      "missing": 5,
+      "unique": 22,
+      "min": 2.88,
+      "max": 111517.92,
+      "mean": 36119.185454545455,
+      "median": 27406.129999999997,
+      "populationStandardDeviation": 33214.00943463681,
+      "q1": 11637.0125,
+      "q3": 47242.9,
+      "iqr": 35605.8875,
+      "lowerFence": -41771.81874999999,
+      "upperFence": 100651.73125,
+      "ambiguousNumeric": 0,
+      "zeros": [],
+      "outsideBounds": [],
+      "outliers": [
+        {
+          "regionId": "3202",
+          "regionName": "Kabupaten Sukabumi",
+          "value": 111517.92
+        },
+        {
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "value": 103696.13
+        }
+      ],
+      "minimumRegions": [
+        {
+          "regionId": "3273",
+          "regionName": "Kota Bandung",
+          "value": 2.88
+        }
+      ],
+      "maximumRegions": [
+        {
+          "regionId": "3202",
+          "regionName": "Kabupaten Sukabumi",
+          "value": 111517.92
+        }
+      ],
+      "missingRegions": [
+        {
+          "regionId": "3271",
+          "reason": "Source prints dash. No conversion to zero; structural absence versus unavailable quantity is unresolved."
+        },
+        {
+          "regionId": "3272",
+          "reason": "Source prints dash. No conversion to zero; structural absence versus unavailable quantity is unresolved."
+        },
+        {
+          "regionId": "3274",
+          "reason": "Source prints dash. No conversion to zero; structural absence versus unavailable quantity is unresolved."
+        },
+        {
+          "regionId": "3275",
+          "reason": "Source prints dash. No conversion to zero; structural absence versus unavailable quantity is unresolved."
+        },
+        {
+          "regionId": "3277",
+          "reason": "Source prints dash. No conversion to zero; structural absence versus unavailable quantity is unresolved."
+        }
+      ],
+      "interpretation": "Equal-region description, not a population-weighted province estimate. Tukey flags are diagnostics, not deletions or winsorization. Zero is retained only when explicitly published; see source interpretation."
+    }
+  },
+  "diagnosticStatistics": {
+    "transportOverGenerationDiagnostic": {
+      "diagnosticOnly": true,
+      "admissibleRate": false,
+      "expected": 27,
+      "count": 27,
+      "missing": 0,
+      "unique": 27,
+      "min": 37.88679939307554,
+      "max": 95.92326139088729,
+      "mean": 74.64244009974054,
+      "median": 77.23669309173273,
+      "populationStandardDeviation": 15.617206115195843,
+      "q1": 68.87342618885363,
+      "q3": 85.43600508891632,
+      "iqr": 16.56257890006269,
+      "lowerFence": 44.029557838759594,
+      "upperFence": 110.27987343901034,
+      "ambiguousNumeric": 0,
+      "zeros": [],
+      "outsideBounds": [],
+      "outliers": [
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": 37.88679939307554
+        },
+        {
+          "regionId": "3205",
+          "regionName": "Kabupaten Garut",
+          "value": 38.971794422589944
+        },
+        {
+          "regionId": "3217",
+          "regionName": "Kabupaten Bandung Barat",
+          "value": 40.01200360108032
+        }
+      ],
+      "minimumRegions": [
+        {
+          "regionId": "3204",
+          "regionName": "Kabupaten Bandung",
+          "value": 37.88679939307554
+        }
+      ],
+      "maximumRegions": [
+        {
+          "regionId": "3208",
+          "regionName": "Kabupaten Kuningan",
+          "value": 95.92326139088729
+        }
+      ],
+      "missingRegions": [],
+      "interpretation": "Equal-region description, not a population-weighted province estimate. Tukey flags are diagnostics, not deletions or winsorization. Zero is retained only when explicitly published; see source interpretation."
+    },
+    "handledOverGenerationDiagnostic": {
+      "diagnosticOnly": true,
+      "admissibleRate": false,
+      "expected": 27,
+      "count": 27,
+      "missing": 0,
+      "unique": 27,
+      "min": 0.5572105184200938,
+      "max": 235.2319281088939,
+      "mean": 45.34130772760692,
+      "median": 21.673690547862734,
+      "populationStandardDeviation": 58.44035521429194,
+      "q1": 6.024706097360527,
+      "q3": 51.06215804791027,
+      "iqr": 45.037451950549745,
+      "lowerFence": -61.531471828464085,
+      "upperFence": 118.61833597373489,
+      "ambiguousNumeric": 0,
+      "zeros": [],
+      "outsideBounds": [
+        {
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "value": 235.2319281088939
+        },
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": 153.32402722038037
+        },
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": 179.62590767634853
+        }
+      ],
+      "outliers": [
+        {
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "value": 235.2319281088939
+        },
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": 153.32402722038037
+        },
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": 179.62590767634853
+        }
+      ],
+      "minimumRegions": [
+        {
+          "regionId": "3213",
+          "regionName": "Kabupaten Subang",
+          "value": 0.5572105184200938
+        }
+      ],
+      "maximumRegions": [
+        {
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "value": 235.2319281088939
+        }
+      ],
+      "missingRegions": [],
+      "interpretation": "Equal-region description, not a population-weighted province estimate. Tukey flags are diagnostics, not deletions or winsorization. Zero is retained only when explicitly published; see source interpretation."
+    },
+    "managedBookOverGenerationDiagnostic": {
+      "diagnosticOnly": true,
+      "admissibleRate": false,
+      "expected": 27,
+      "count": 27,
+      "missing": 0,
+      "unique": 27,
+      "min": 0.5572105184200938,
+      "max": 235.2319281088939,
+      "mean": 45.34216862747169,
+      "median": 21.673690547862734,
+      "populationStandardDeviation": 58.44141342773648,
+      "q1": 6.024706097360527,
+      "q3": 51.06215804791027,
+      "iqr": 45.037451950549745,
+      "lowerFence": -61.531471828464085,
+      "upperFence": 118.61833597373489,
+      "ambiguousNumeric": 0,
+      "zeros": [],
+      "outsideBounds": [
+        {
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "value": 235.2319281088939
+        },
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": 153.34147618216716
+        },
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": 179.62590767634853
+        }
+      ],
+      "outliers": [
+        {
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "value": 235.2319281088939
+        },
+        {
+          "regionId": "3218",
+          "regionName": "Kabupaten Pangandaran",
+          "value": 153.34147618216716
+        },
+        {
+          "regionId": "3278",
+          "regionName": "Kota Tasikmalaya",
+          "value": 179.62590767634853
+        }
+      ],
+      "minimumRegions": [
+        {
+          "regionId": "3213",
+          "regionName": "Kabupaten Subang",
+          "value": 0.5572105184200938
+        }
+      ],
+      "maximumRegions": [
+        {
+          "regionId": "3210",
+          "regionName": "Kabupaten Majalengka",
+          "value": 235.2319281088939
+        }
+      ],
+      "missingRegions": [],
+      "interpretation": "Equal-region description, not a population-weighted province estimate. Tukey flags are diagnostics, not deletions or winsorization. Zero is retained only when explicitly published; see source interpretation."
+    }
+  },
+  "sourceLevelStatistics": {
+    "air-spm-2023": {
+      "count": 3,
+      "unique": 3,
+      "min": 63.7,
+      "max": 195.7,
+      "mean": 125.03333333333335,
+      "median": 115.7,
+      "populationStandardDeviation": 54.29139485733955,
+      "zeros": [],
+      "impossibleNegativeValues": [],
+      "outliers": [],
+      "districtCoverage": "0/27 representative annual district estimates established; three station summaries are not three district observations."
+    },
+    "currentStationInventory": {
+      "observedYears": [
+        2026
+      ],
+      "stationRows": 6,
+      "distinctDistrictLabels": 5,
+      "interpretation": "2026 endpoint inventory diagnostic only; not a 2023 all-station census or district exposure panel."
+    }
+  },
+  "urbanRuralDiagnostic": {
+    "iklh_2023": {
+      "kabupaten": {
+        "count": 18,
+        "mean": 61.24944444444446
+      },
+      "kota": {
+        "count": 9,
+        "mean": 54.203333333333326
+      }
+    },
+    "environment_waste_generation_per_capita": {
+      "kabupaten": {
+        "count": 18,
+        "mean": 0.38142777777777775
+      },
+      "kota": {
+        "count": 9,
+        "mean": 0.5355555555555556
+      }
+    },
+    "environment_waste_generation_daily_api": {
+      "kabupaten": {
+        "count": 16,
+        "mean": 392.755625
+      },
+      "kota": {
+        "count": 6,
+        "mean": 278.46833333333336
+      }
+    },
+    "environment_waste_transported_to_tpa_daily": {
+      "kabupaten": {
+        "count": 18,
+        "mean": 353.1433333333333
+      },
+      "kota": {
+        "count": 9,
+        "mean": 547.9455555555555
+      }
+    },
+    "environment_waste_service_level_published": {
+      "kabupaten": {
+        "count": 18,
+        "mean": 73.23277777777778
+      },
+      "kota": {
+        "count": 9,
+        "mean": 77.44666666666666
+      }
+    },
+    "environment_waste_handled_daily": {
+      "kabupaten": {
+        "count": 18,
+        "mean": 162.87766666666664
+      },
+      "kota": {
+        "count": 9,
+        "mean": 201.72222222222223
+      }
+    },
+    "environment_villages_disposal_bin_then_collected": {
+      "kabupaten": {
+        "count": 18,
+        "mean": 106.44444444444444
+      },
+      "kota": {
+        "count": 1,
+        "mean": 5
+      }
+    },
+    "environment_waste_bps_perCapita": {
+      "kabupaten": {
+        "count": 18,
+        "mean": 0.3811111111111111
+      },
+      "kota": {
+        "count": 9,
+        "mean": 0.5355555555555556
+      }
+    },
+    "environment_waste_bps_generation": {
+      "kabupaten": {
+        "count": 18,
+        "mean": 536.6172222222223
+      },
+      "kota": {
+        "count": 9,
+        "mean": 720.7322222222222
+      }
+    },
+    "environment_waste_bps_managed": {
+      "kabupaten": {
+        "count": 18,
+        "mean": 162.87944444444443
+      },
+      "kota": {
+        "count": 9,
+        "mean": 201.72222222222223
+      }
+    },
+    "environment_waste_bps_service": {
+      "kabupaten": {
+        "count": 18,
+        "mean": 73.23833333333333
+      },
+      "kota": {
+        "count": 9,
+        "mean": 77.45444444444445
+      }
+    },
+    "environment_waste_sarimukti_annual_inflow": {
+      "kabupaten": {
+        "count": 2,
+        "mean": 67445.868
+      },
+      "kota": {
+        "count": 2,
+        "mean": 225687.737
+      }
+    },
+    "landwater-tree-planting-area-2023": {
+      "kabupaten": {
+        "count": 18,
+        "mean": 1260.9744444444448
+      },
+      "kota": {
+        "count": 9,
+        "mean": 3.73
+      }
+    },
+    "landwater-community-forest-area-2023": {
+      "kabupaten": {
+        "count": 18,
+        "mean": 46939.36333333333
+      },
+      "kota": {
+        "count": 8,
+        "mean": 1408.27625
+      }
+    },
+    "landwater-villages-reporting-water-pollution-2023": {
+      "kabupaten": {
+        "count": 18,
+        "mean": 32.666666666666664
+      },
+      "kota": {
+        "count": 1,
+        "mean": 1
+      }
+    },
+    "landwater-designated-forest-water-area-2023": {
+      "kabupaten": {
+        "count": 18,
+        "mean": 44067.132777777784
+      },
+      "kota": {
+        "count": 4,
+        "mean": 353.4225
+      }
+    }
+  },
+  "correlations": [
+    {
+      "a": "iklh_2023",
+      "b": "environment_waste_generation_per_capita",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": -0.339513837227557,
+      "spearman": -0.3190599195199682,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "iklh_2023",
+      "b": "environment_waste_generation_daily_api",
+      "count": 22,
+      "completeCohort": false,
+      "pearson": -0.23402880314604474,
+      "spearman": -0.14285714285714285,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "iklh_2023",
+      "b": "environment_waste_transported_to_tpa_daily",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": -0.33168507427350613,
+      "spearman": -0.2960927960927961,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "iklh_2023",
+      "b": "environment_waste_service_level_published",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": 0.19578595927590342,
+      "spearman": 0.34615384615384615,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "iklh_2023",
+      "b": "environment_waste_handled_daily",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": -0.06690324559082146,
+      "spearman": -0.10805860805860806,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "iklh_2023",
+      "b": "environment_villages_disposal_bin_then_collected",
+      "count": 19,
+      "completeCohort": false,
+      "pearson": -0.00035278555069267353,
+      "spearman": -0.017543859649122806,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "iklh_2023",
+      "b": "environment_waste_bps_perCapita",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": -0.3391523799834873,
+      "spearman": -0.3217154240377025,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "iklh_2023",
+      "b": "environment_waste_bps_generation",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": -0.3177060536888687,
+      "spearman": -0.3156288156288156,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "iklh_2023",
+      "b": "environment_waste_bps_managed",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": -0.06690197751165244,
+      "spearman": -0.10805860805860806,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "iklh_2023",
+      "b": "environment_waste_bps_service",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": 0.1956397496468132,
+      "spearman": 0.34615384615384615,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "iklh_2023",
+      "b": "environment_waste_sarimukti_annual_inflow",
+      "count": 4,
+      "completeCohort": false,
+      "pearson": 0.3927574925911129,
+      "spearman": 0.6,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "iklh_2023",
+      "b": "landwater-tree-planting-area-2023",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": 0.12366918465659908,
+      "spearman": 0.6251432798053274,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "iklh_2023",
+      "b": "landwater-community-forest-area-2023",
+      "count": 26,
+      "completeCohort": false,
+      "pearson": 0.6638168569039653,
+      "spearman": 0.8071794871794872,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "iklh_2023",
+      "b": "landwater-villages-reporting-water-pollution-2023",
+      "count": 19,
+      "completeCohort": false,
+      "pearson": -0.36402719582162874,
+      "spearman": -0.3625989106007613,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "iklh_2023",
+      "b": "landwater-designated-forest-water-area-2023",
+      "count": 22,
+      "completeCohort": false,
+      "pearson": 0.468677789486067,
+      "spearman": 0.49745906267645396,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_generation_per_capita",
+      "b": "environment_waste_generation_daily_api",
+      "count": 22,
+      "completeCohort": false,
+      "pearson": -0.20823444216661074,
+      "spearman": -0.2790455055622704,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_generation_per_capita",
+      "b": "environment_waste_transported_to_tpa_daily",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": 0.4717145843326004,
+      "spearman": 0.2085098030356674,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_generation_per_capita",
+      "b": "environment_waste_service_level_published",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": 0.3026787728887961,
+      "spearman": 0.24013941969645347,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_generation_per_capita",
+      "b": "environment_waste_handled_daily",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": 0.11613418390372202,
+      "spearman": 0.16828184398165794,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_generation_per_capita",
+      "b": "environment_villages_disposal_bin_then_collected",
+      "count": 19,
+      "completeCohort": false,
+      "pearson": -0.077929135129038,
+      "spearman": -0.09655019838969216,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_generation_per_capita",
+      "b": "environment_waste_bps_perCapita",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": 0.9999736799664112,
+      "spearman": 0.9993819529693913,
+      "possibleRedundancy": true,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_generation_per_capita",
+      "b": "environment_waste_bps_generation",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": 0.3765399879565043,
+      "spearman": 0.0921250970702507,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_generation_per_capita",
+      "b": "environment_waste_bps_managed",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": 0.11613385503729909,
+      "spearman": 0.16828184398165794,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_generation_per_capita",
+      "b": "environment_waste_bps_service",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": 0.3027018280426425,
+      "spearman": 0.24013941969645347,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_generation_per_capita",
+      "b": "environment_waste_sarimukti_annual_inflow",
+      "count": 4,
+      "completeCohort": false,
+      "pearson": 0.9610759436618727,
+      "spearman": 0.8,
+      "possibleRedundancy": true,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_generation_per_capita",
+      "b": "landwater-tree-planting-area-2023",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": -0.2890697465714788,
+      "spearman": -0.5862921772215254,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_generation_per_capita",
+      "b": "landwater-community-forest-area-2023",
+      "count": 26,
+      "completeCohort": false,
+      "pearson": -0.30995592682898543,
+      "spearman": -0.4340142490384024,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_generation_per_capita",
+      "b": "landwater-villages-reporting-water-pollution-2023",
+      "count": 19,
+      "completeCohort": false,
+      "pearson": -0.22353585419694674,
+      "spearman": -0.22784583310973872,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_generation_per_capita",
+      "b": "landwater-designated-forest-water-area-2023",
+      "count": 22,
+      "completeCohort": false,
+      "pearson": -0.5004083072262507,
+      "spearman": -0.6102391915778794,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_generation_daily_api",
+      "b": "environment_waste_transported_to_tpa_daily",
+      "count": 22,
+      "completeCohort": false,
+      "pearson": 0.913876437503633,
+      "spearman": 0.8994918125352908,
+      "possibleRedundancy": true,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_generation_daily_api",
+      "b": "environment_waste_service_level_published",
+      "count": 22,
+      "completeCohort": false,
+      "pearson": -0.41708525624302056,
+      "spearman": -0.4872953133822699,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_generation_daily_api",
+      "b": "environment_waste_handled_daily",
+      "count": 22,
+      "completeCohort": false,
+      "pearson": 0.131650100230983,
+      "spearman": 0.1507622811970638,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_generation_daily_api",
+      "b": "environment_villages_disposal_bin_then_collected",
+      "count": 17,
+      "completeCohort": false,
+      "pearson": 0.19024297645071808,
+      "spearman": 0.3602941176470588,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_generation_daily_api",
+      "b": "environment_waste_bps_perCapita",
+      "count": 22,
+      "completeCohort": false,
+      "pearson": -0.20785549468558792,
+      "spearman": -0.2873661786888183,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_generation_daily_api",
+      "b": "environment_waste_bps_generation",
+      "count": 22,
+      "completeCohort": false,
+      "pearson": 1,
+      "spearman": 1,
+      "possibleRedundancy": true,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_generation_daily_api",
+      "b": "environment_waste_bps_managed",
+      "count": 22,
+      "completeCohort": false,
+      "pearson": 0.13164529650074536,
+      "spearman": 0.1507622811970638,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_generation_daily_api",
+      "b": "environment_waste_bps_service",
+      "count": 22,
+      "completeCohort": false,
+      "pearson": -0.4170948899580926,
+      "spearman": -0.4872953133822699,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_generation_daily_api",
+      "b": "landwater-tree-planting-area-2023",
+      "count": 22,
+      "completeCohort": false,
+      "pearson": 0.22307519749353477,
+      "spearman": 0.13533463075863408,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_generation_daily_api",
+      "b": "landwater-community-forest-area-2023",
+      "count": 22,
+      "completeCohort": false,
+      "pearson": -0.1059076682529763,
+      "spearman": -0.07961603613777526,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_generation_daily_api",
+      "b": "landwater-villages-reporting-water-pollution-2023",
+      "count": 17,
+      "completeCohort": false,
+      "pearson": 0.7325559188114028,
+      "spearman": 0.8208595136134762,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_generation_daily_api",
+      "b": "landwater-designated-forest-water-area-2023",
+      "count": 18,
+      "completeCohort": false,
+      "pearson": 0.3202828228333812,
+      "spearman": 0.3395252837977296,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_transported_to_tpa_daily",
+      "b": "environment_waste_service_level_published",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": -0.11677827607752672,
+      "spearman": -0.29242979242979245,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_transported_to_tpa_daily",
+      "b": "environment_waste_handled_daily",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": 0.33901723762898645,
+      "spearman": 0.38095238095238093,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_transported_to_tpa_daily",
+      "b": "environment_villages_disposal_bin_then_collected",
+      "count": 19,
+      "completeCohort": false,
+      "pearson": 0.40493838937859933,
+      "spearman": 0.49122807017543857,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_transported_to_tpa_daily",
+      "b": "environment_waste_bps_perCapita",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": 0.471319784418149,
+      "spearman": 0.20126418600257415,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_transported_to_tpa_daily",
+      "b": "environment_waste_bps_generation",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": 0.9679296376350656,
+      "spearman": 0.9413919413919414,
+      "possibleRedundancy": true,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_transported_to_tpa_daily",
+      "b": "environment_waste_bps_managed",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": 0.3390145816043377,
+      "spearman": 0.38095238095238093,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_transported_to_tpa_daily",
+      "b": "environment_waste_bps_service",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": -0.11668787119668195,
+      "spearman": -0.29242979242979245,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_transported_to_tpa_daily",
+      "b": "environment_waste_sarimukti_annual_inflow",
+      "count": 4,
+      "completeCohort": false,
+      "pearson": 0.9936048491491241,
+      "spearman": 1,
+      "possibleRedundancy": true,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_transported_to_tpa_daily",
+      "b": "landwater-tree-planting-area-2023",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": -0.00028099664445361107,
+      "spearman": 0.013810234458144197,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_transported_to_tpa_daily",
+      "b": "landwater-community-forest-area-2023",
+      "count": 26,
+      "completeCohort": false,
+      "pearson": -0.1884433568747565,
+      "spearman": -0.24512820512820513,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_transported_to_tpa_daily",
+      "b": "landwater-villages-reporting-water-pollution-2023",
+      "count": 19,
+      "completeCohort": false,
+      "pearson": 0.46260255180174076,
+      "spearman": 0.6988589172837918,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_transported_to_tpa_daily",
+      "b": "landwater-designated-forest-water-area-2023",
+      "count": 22,
+      "completeCohort": false,
+      "pearson": -0.001829428595897292,
+      "spearman": 0.06380575945793338,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_service_level_published",
+      "b": "environment_waste_handled_daily",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": -0.10791111268283861,
+      "spearman": -0.0463980463980464,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_service_level_published",
+      "b": "environment_villages_disposal_bin_then_collected",
+      "count": 19,
+      "completeCohort": false,
+      "pearson": -0.1575012461513221,
+      "spearman": -0.28421052631578947,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_service_level_published",
+      "b": "environment_waste_bps_perCapita",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": 0.3008955242764651,
+      "spearman": 0.23045517481210778,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_service_level_published",
+      "b": "environment_waste_bps_generation",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": -0.32234115765533766,
+      "spearman": -0.5347985347985348,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_service_level_published",
+      "b": "environment_waste_bps_managed",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": -0.1079133971168497,
+      "spearman": -0.0463980463980464,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_service_level_published",
+      "b": "environment_waste_bps_service",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": 0.9999999525312944,
+      "spearman": 1,
+      "possibleRedundancy": true,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_service_level_published",
+      "b": "environment_waste_sarimukti_annual_inflow",
+      "count": 4,
+      "completeCohort": false,
+      "pearson": 0.5824779305466301,
+      "spearman": 0.4,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_service_level_published",
+      "b": "landwater-tree-planting-area-2023",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": -0.5518493584234122,
+      "spearman": -0.13932992097772146,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_service_level_published",
+      "b": "landwater-community-forest-area-2023",
+      "count": 26,
+      "completeCohort": false,
+      "pearson": 0.1464833469727108,
+      "spearman": 0.14324786324786326,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_service_level_published",
+      "b": "landwater-villages-reporting-water-pollution-2023",
+      "count": 19,
+      "completeCohort": false,
+      "pearson": -0.4786161471437511,
+      "spearman": -0.6014049727881876,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_service_level_published",
+      "b": "landwater-designated-forest-water-area-2023",
+      "count": 22,
+      "completeCohort": false,
+      "pearson": -0.3677605676688883,
+      "spearman": -0.24336533032185206,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_handled_daily",
+      "b": "environment_villages_disposal_bin_then_collected",
+      "count": 19,
+      "completeCohort": false,
+      "pearson": 0.23675634311874005,
+      "spearman": 0.22631578947368422,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_handled_daily",
+      "b": "environment_waste_bps_perCapita",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": 0.11649986541188961,
+      "spearman": 0.16623499943113376,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_handled_daily",
+      "b": "environment_waste_bps_generation",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": 0.35638291084384915,
+      "spearman": 0.34554334554334554,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_handled_daily",
+      "b": "environment_waste_bps_managed",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": 0.9999999998465929,
+      "spearman": 1,
+      "possibleRedundancy": true,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_handled_daily",
+      "b": "environment_waste_bps_service",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": -0.10784655532779747,
+      "spearman": -0.0463980463980464,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_handled_daily",
+      "b": "environment_waste_sarimukti_annual_inflow",
+      "count": 4,
+      "completeCohort": false,
+      "pearson": 0.8511805456856252,
+      "spearman": 1,
+      "possibleRedundancy": true,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_handled_daily",
+      "b": "landwater-tree-planting-area-2023",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": 0.12567582734797814,
+      "spearman": 0.07119943098421008,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_handled_daily",
+      "b": "landwater-community-forest-area-2023",
+      "count": 26,
+      "completeCohort": false,
+      "pearson": 0.05202385380305202,
+      "spearman": 0.02358974358974359,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_handled_daily",
+      "b": "landwater-villages-reporting-water-pollution-2023",
+      "count": 19,
+      "completeCohort": false,
+      "pearson": 0.34125298724742975,
+      "spearman": 0.310799066229224,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_handled_daily",
+      "b": "landwater-designated-forest-water-area-2023",
+      "count": 22,
+      "completeCohort": false,
+      "pearson": 0.17924100481995758,
+      "spearman": -0.012987012987012988,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_villages_disposal_bin_then_collected",
+      "b": "environment_waste_bps_perCapita",
+      "count": 19,
+      "completeCohort": false,
+      "pearson": -0.08074291761458735,
+      "spearman": -0.0904306492308715,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_villages_disposal_bin_then_collected",
+      "b": "environment_waste_bps_generation",
+      "count": 19,
+      "completeCohort": false,
+      "pearson": 0.41261854531751463,
+      "spearman": 0.4649122807017544,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_villages_disposal_bin_then_collected",
+      "b": "environment_waste_bps_managed",
+      "count": 19,
+      "completeCohort": false,
+      "pearson": 0.23675432571864824,
+      "spearman": 0.22631578947368422,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_villages_disposal_bin_then_collected",
+      "b": "environment_waste_bps_service",
+      "count": 19,
+      "completeCohort": false,
+      "pearson": -0.15743132892901135,
+      "spearman": -0.28421052631578947,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_villages_disposal_bin_then_collected",
+      "b": "landwater-tree-planting-area-2023",
+      "count": 19,
+      "completeCohort": false,
+      "pearson": 0.20506483787243843,
+      "spearman": 0.39649122807017545,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_villages_disposal_bin_then_collected",
+      "b": "landwater-community-forest-area-2023",
+      "count": 19,
+      "completeCohort": false,
+      "pearson": -0.252032807532043,
+      "spearman": -0.09649122807017543,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_villages_disposal_bin_then_collected",
+      "b": "landwater-villages-reporting-water-pollution-2023",
+      "count": 19,
+      "completeCohort": false,
+      "pearson": 0.41562579397202226,
+      "spearman": 0.4381037684982564,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_villages_disposal_bin_then_collected",
+      "b": "landwater-designated-forest-water-area-2023",
+      "count": 19,
+      "completeCohort": false,
+      "pearson": 0.1945983848862952,
+      "spearman": 0.42105263157894735,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_bps_perCapita",
+      "b": "environment_waste_bps_generation",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": 0.3765708800348719,
+      "spearman": 0.08788023999501711,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_bps_perCapita",
+      "b": "environment_waste_bps_managed",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": 0.11649955019938148,
+      "spearman": 0.16623499943113376,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_bps_perCapita",
+      "b": "environment_waste_bps_service",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": 0.3009182871087255,
+      "spearman": 0.23045517481210778,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_bps_perCapita",
+      "b": "environment_waste_sarimukti_annual_inflow",
+      "count": 4,
+      "completeCohort": false,
+      "pearson": 0.9610759436618727,
+      "spearman": 0.8,
+      "possibleRedundancy": true,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_bps_perCapita",
+      "b": "landwater-tree-planting-area-2023",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": -0.28801912746494324,
+      "spearman": -0.5883538628583581,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_bps_perCapita",
+      "b": "landwater-community-forest-area-2023",
+      "count": 26,
+      "completeCohort": false,
+      "pearson": -0.30822802636129837,
+      "spearman": -0.43707070510365814,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_bps_perCapita",
+      "b": "landwater-villages-reporting-water-pollution-2023",
+      "count": 19,
+      "completeCohort": false,
+      "pearson": -0.22324635837428758,
+      "spearman": -0.2236131360806278,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_bps_perCapita",
+      "b": "landwater-designated-forest-water-area-2023",
+      "count": 22,
+      "completeCohort": false,
+      "pearson": -0.49940308219382895,
+      "spearman": -0.617979133388982,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_bps_generation",
+      "b": "environment_waste_bps_managed",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": 0.35638200758260463,
+      "spearman": 0.34554334554334554,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_bps_generation",
+      "b": "environment_waste_bps_service",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": -0.3222535509586068,
+      "spearman": -0.5347985347985348,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_bps_generation",
+      "b": "environment_waste_sarimukti_annual_inflow",
+      "count": 4,
+      "completeCohort": false,
+      "pearson": 0.8934088894634543,
+      "spearman": 0.8,
+      "possibleRedundancy": true,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_bps_generation",
+      "b": "landwater-tree-planting-area-2023",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": 0.19890690966577643,
+      "spearman": 0.06905117229072098,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_bps_generation",
+      "b": "landwater-community-forest-area-2023",
+      "count": 26,
+      "completeCohort": false,
+      "pearson": -0.17702126167713614,
+      "spearman": -0.2205128205128205,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_bps_generation",
+      "b": "landwater-villages-reporting-water-pollution-2023",
+      "count": 19,
+      "completeCohort": false,
+      "pearson": 0.5178983981624126,
+      "spearman": 0.789289154068001,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_bps_generation",
+      "b": "landwater-designated-forest-water-area-2023",
+      "count": 22,
+      "completeCohort": false,
+      "pearson": 0.12034432215193548,
+      "spearman": 0.15640880858272163,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_bps_managed",
+      "b": "environment_waste_bps_service",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": -0.10784883968013209,
+      "spearman": -0.0463980463980464,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_bps_managed",
+      "b": "environment_waste_sarimukti_annual_inflow",
+      "count": 4,
+      "completeCohort": false,
+      "pearson": 0.8511665288051894,
+      "spearman": 1,
+      "possibleRedundancy": true,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_bps_managed",
+      "b": "landwater-tree-planting-area-2023",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": 0.12568502007267487,
+      "spearman": 0.07119943098421008,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_bps_managed",
+      "b": "landwater-community-forest-area-2023",
+      "count": 26,
+      "completeCohort": false,
+      "pearson": 0.05202364561651904,
+      "spearman": 0.02358974358974359,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_bps_managed",
+      "b": "landwater-villages-reporting-water-pollution-2023",
+      "count": 19,
+      "completeCohort": false,
+      "pearson": 0.341250180147865,
+      "spearman": 0.310799066229224,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_bps_managed",
+      "b": "landwater-designated-forest-water-area-2023",
+      "count": 22,
+      "completeCohort": false,
+      "pearson": 0.17924015032116258,
+      "spearman": -0.012987012987012988,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_bps_service",
+      "b": "environment_waste_sarimukti_annual_inflow",
+      "count": 4,
+      "completeCohort": false,
+      "pearson": 0.5824922859619941,
+      "spearman": 0.4,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_bps_service",
+      "b": "landwater-tree-planting-area-2023",
+      "count": 27,
+      "completeCohort": true,
+      "pearson": -0.5518397079047762,
+      "spearman": -0.13932992097772146,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_bps_service",
+      "b": "landwater-community-forest-area-2023",
+      "count": 26,
+      "completeCohort": false,
+      "pearson": 0.14635550891835594,
+      "spearman": 0.14324786324786326,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_bps_service",
+      "b": "landwater-villages-reporting-water-pollution-2023",
+      "count": 19,
+      "completeCohort": false,
+      "pearson": -0.4785666612394062,
+      "spearman": -0.6014049727881876,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_bps_service",
+      "b": "landwater-designated-forest-water-area-2023",
+      "count": 22,
+      "completeCohort": false,
+      "pearson": -0.36786222903314797,
+      "spearman": -0.24336533032185206,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_sarimukti_annual_inflow",
+      "b": "landwater-tree-planting-area-2023",
+      "count": 4,
+      "completeCohort": false,
+      "pearson": -0.2580369239662933,
+      "spearman": 0,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_sarimukti_annual_inflow",
+      "b": "landwater-community-forest-area-2023",
+      "count": 3,
+      "completeCohort": false,
+      "pearson": -0.23528958955386148,
+      "spearman": -0.5,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "environment_waste_sarimukti_annual_inflow",
+      "b": "landwater-designated-forest-water-area-2023",
+      "count": 3,
+      "completeCohort": false,
+      "pearson": -0.9033070677000662,
+      "spearman": -0.5,
+      "possibleRedundancy": true,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "landwater-tree-planting-area-2023",
+      "b": "landwater-community-forest-area-2023",
+      "count": 26,
+      "completeCohort": false,
+      "pearson": 0.09196533784608306,
+      "spearman": 0.8099888766541388,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "landwater-tree-planting-area-2023",
+      "b": "landwater-villages-reporting-water-pollution-2023",
+      "count": 19,
+      "completeCohort": false,
+      "pearson": 0.33477735226925087,
+      "spearman": 0.21773493905324165,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "landwater-tree-planting-area-2023",
+      "b": "landwater-designated-forest-water-area-2023",
+      "count": 22,
+      "completeCohort": false,
+      "pearson": 0.3999612767855639,
+      "spearman": 0.8765885692677159,
+      "possibleRedundancy": true,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "landwater-community-forest-area-2023",
+      "b": "landwater-villages-reporting-water-pollution-2023",
+      "count": 19,
+      "completeCohort": false,
+      "pearson": 0.03761274512359992,
+      "spearman": -0.14486397154751965,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "landwater-community-forest-area-2023",
+      "b": "landwater-designated-forest-water-area-2023",
+      "count": 21,
+      "completeCohort": false,
+      "pearson": 0.5731845978960933,
+      "spearman": 0.5974025974025974,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    },
+    {
+      "a": "landwater-villages-reporting-water-pollution-2023",
+      "b": "landwater-designated-forest-water-area-2023",
+      "count": 19,
+      "completeCohort": false,
+      "pearson": 0.48544244730681807,
+      "spearman": 0.3968394856938114,
+      "possibleRedundancy": false,
+      "interpretation": "Exploratory raw-value association on explicitly paired nonmissing resolved observations; incomplete pairs are not admission evidence. Size, shared denominators, embedded components and reporting bias require conceptual review regardless of correlation."
+    }
+  ]
+}
