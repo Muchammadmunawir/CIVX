@@ -1,0 +1,1285 @@
+{
+  "auditId": "environment-jabar-2023",
+  "construct": {
+    "name": "Environmental Quality Pressure / Tekanan Kualitas Lingkungan",
+    "definition": "Relative degradation of ambient air, surface water and persistent land/ecosystem condition affecting shared living conditions; official environmental state, not total environmental burden or population exposure.",
+    "boundaries": [
+      "Waste loads and environmental waste-service conditions are distinct supporting candidates; admit only with valid denominator and comparable reporting.",
+      "Exclude household drinking-water and sanitation access, disease outcomes, poverty/socioeconomic vulnerability, disaster hazards/risk/impacts and IRBI components.",
+      "Ambient surface-water pollution differs from drinking-water access. IKU differs from PM2.5 exposure. Land state differs from disaster hazard.",
+      "No independence claim between environmental state, socioeconomic structure and IRBI environmental-vulnerability concepts. No explicit duplicate input."
+    ]
+  },
+  "decisions": {
+    "CORE": [
+      {
+        "id": "iklh_2023",
+        "reason": "Smallest cross-media official 2023 district-quality summary: all27 valid same-definition observations, nonconstant spread, coherent direction and documented common monitoring framework. Admit only this published administrative construct, not its components or population exposure claims."
+      }
+    ],
+    "CONTEXT ONLY": [
+      {
+        "id": "environment_waste_generation_per_capita",
+        "reason": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+      },
+      {
+        "id": "environment_waste_generation_daily_api",
+        "reason": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+      },
+      {
+        "id": "environment_waste_transported_to_tpa_daily",
+        "reason": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+      },
+      {
+        "id": "environment_waste_service_level_published",
+        "reason": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+      },
+      {
+        "id": "environment_waste_handled_daily",
+        "reason": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+      },
+      {
+        "id": "environment_villages_disposal_bin_then_collected",
+        "reason": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+      },
+      {
+        "id": "environment_waste_bps_perCapita",
+        "reason": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+      },
+      {
+        "id": "environment_waste_bps_generation",
+        "reason": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+      },
+      {
+        "id": "environment_waste_bps_managed",
+        "reason": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+      },
+      {
+        "id": "environment_waste_bps_service",
+        "reason": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+      },
+      {
+        "id": "environment_waste_sarimukti_annual_inflow",
+        "reason": "Retain auditable partial-scope facility flow, never use as all27 pressure/service score."
+      },
+      {
+        "id": "landwater-tree-planting-area-2023",
+        "reason": "Complete activity panel is useful context, but fails state-construct and monotonic pressure-direction gates."
+      },
+      {
+        "id": "landwater-community-forest-area-2023",
+        "reason": "Retain official2023 quantity as context only; insufficient ecological-class, denominator and measurement equivalence for pressure scoring."
+      },
+      {
+        "id": "landwater-villages-reporting-water-pollution-2023",
+        "reason": "Useful qualitative-reporting context only. It lacks eight cities and does not meet ambient measurement, monitoring geography or reporting completeness gates."
+      },
+      {
+        "id": "landwater-designated-forest-water-area-2023",
+        "reason": "Real official2023 district quantities, but legal designation, denominator mismatch, ambiguous dashes and unresolved footnote preclude quality-pressure comparison."
+      },
+      {
+        "id": "ika_component",
+        "reason": "Useful media-specific context at actual geography. Embedded in selected district composite; never add it beside IKLH. Provincial rows cannot be assigned to districts."
+      },
+      {
+        "id": "iku_component",
+        "reason": "Useful media-specific context at actual geography. Embedded in selected district composite; never add it beside IKLH. Provincial rows cannot be assigned to districts."
+      },
+      {
+        "id": "ikl_component",
+        "reason": "Useful media-specific context at actual geography. Embedded in selected district composite; never add it beside IKLH. Provincial rows cannot be assigned to districts."
+      },
+      {
+        "id": "ikal_component",
+        "reason": "Official province context; marine water is not universal district geography and is excluded from statutory district IKLH."
+      },
+      {
+        "id": "air-current-station-coverage",
+        "reason": "The inventory establishes sparse current publicly returned monitoring locations, not historical or representative district-wide coverage."
+      },
+      {
+        "id": "air-spm-2023",
+        "reason": "Official 2023 station annual summaries exist for three Jawa Barat stations, but cannot supply representative 27-district PM exposure."
+      },
+      {
+        "id": "landwater-investigation-17313",
+        "reason": "Broad climate exposure must remain separate from ambient environmental quality; station totals lack district representativeness."
+      },
+      {
+        "id": "landwater-dlh-surface-water-chemistry",
+        "reason": "Official2023 chemistry context exists, but no comparable district/site panel or common sampling denominator is supplied."
+      },
+      {
+        "id": "landwater-kehati-parks",
+        "reason": "Aggregate managed-park area is genuine context, not a27district green-space panel."
+      },
+      {
+        "id": "landwater-structural-bias-irbi-overlap",
+        "reason": "Keep ambient degradation separate from hazard/vulnerability/risk and from ecosystem opportunity; do not alter existingDisasterPressure decisions."
+      }
+    ],
+    "REJECT": [
+      {
+        "id": "iklh_plus_components",
+        "reason": "Exact conceptual double counting: district IKLH already contains all three component indices. Correlation cannot rescue nested additive inputs."
+      },
+      {
+        "id": "waste-candidate-34328",
+        "reason": "Inspected dataset covers 2025, not 2023. Empty 2023 response cannot supply candidate; no other-year substitution."
+      },
+      {
+        "id": "waste-candidate-34329",
+        "reason": "Inspected dataset covers 2025, not 2023. Empty 2023 response cannot supply candidate; no other-year substitution."
+      },
+      {
+        "id": "waste-derived-managed-unmanaged-share",
+        "reason": "Common catchment/accounting definitions are unverified. Three managed/handled numerators exceed generation; no defensible bounded share or residual can be scored."
+      },
+      {
+        "id": "waste-village-proxy-eligibility",
+        "reason": "19-region desa universe omits eight cities and cannot supply household collection or mass-management prevalence."
+      },
+      {
+        "id": "air-gas-concentrations-bps",
+        "reason": "Inspected table has 2021–2022 province summaries and no Jawa Barat row; it is not a 2023 district panel."
+      },
+      {
+        "id": "landwater-investigation-17961",
+        "reason": "Wrong-year stock: no2023 observations. Never substitute2020 degraded land."
+      },
+      {
+        "id": "landwater-investigation-18245",
+        "reason": "Wrong-year rehabilitation records and response-not-state construct."
+      },
+      {
+        "id": "landwater-investigation-15073",
+        "reason": "No2023 records; policy-map conformity is not a generic ecological condition measure."
+      },
+      {
+        "id": "landwater-investigation-18292",
+        "reason": "Wrong-year coastal ecosystem stock; cannot compare inland districts as deficient mangrove."
+      },
+      {
+        "id": "landwater-investigation-17678",
+        "reason": "Wrong year and restricted marine-site geography."
+      },
+      {
+        "id": "landwater-public-space-not-green-cover",
+        "reason": "Free public open space is not necessarily green, vegetated or ecologically functional."
+      },
+      {
+        "id": "landwater-national-physical-cover-wrong-year",
+        "reason": "Fetched publication measures2024 imagery; cannot use it as2023 despite mentioning an update to2023 statistics."
+      }
+    ],
+    "PARKED / insufficient evidence": [
+      {
+        "id": "waste-sipsn-reporting-completeness",
+        "reason": "No actual official 2023 district roster, completeness flags, or comparable denominator acquired. Current platform is not historical evidence."
+      },
+      {
+        "id": "waste-sipsn-generation",
+        "reason": "No 2023 official measurements or reporting completeness acquired; no CORE admission."
+      },
+      {
+        "id": "waste-sipsn-reduction",
+        "reason": "No 2023 official measurements or reporting completeness acquired; no CORE admission."
+      },
+      {
+        "id": "waste-sipsn-handling",
+        "reason": "No 2023 official measurements or reporting completeness acquired; no CORE admission."
+      },
+      {
+        "id": "waste-sipsn-managed",
+        "reason": "No 2023 official measurements or reporting completeness acquired; no CORE admission."
+      },
+      {
+        "id": "waste-sipsn-unmanaged",
+        "reason": "No 2023 official measurements or reporting completeness acquired; no CORE admission."
+      },
+      {
+        "id": "air-ground-pm25-2023",
+        "reason": "Official ground monitoring exists, but no validated 2023 annual 27-district PM2.5 panel was recovered."
+      },
+      {
+        "id": "air-ground-pm10-2023",
+        "reason": "PM10 is an official monitoring parameter, but current records and legal averaging definitions do not supply a 2023 district panel."
+      },
+      {
+        "id": "air-ispu-2023",
+        "reason": "The official definition and live application are verified, but 2023 annual district completeness and representativeness are not."
+      },
+      {
+        "id": "air-modelled-pm25-acag-v6",
+        "reason": "A credible 2023 annual Asia raster is verified in the provider listing, but no 27-district estimates or required aggregation evidence are available in this bundle."
+      },
+      {
+        "id": "air-modelled-pm25-acag-v5",
+        "reason": "Provider documents a 2023-capable traditional GWR product, but no file-level or district aggregation evidence was acquired."
+      },
+      {
+        "id": "landwater-investigation-15077",
+        "reason": "2023 rows contain null areas and only provincial functional totals, not a district land-cover panel."
+      },
+      {
+        "id": "landwater-village-microdata-receipt",
+        "reason": "API serialization/year conflict prevents2023 village reconciliation."
+      },
+      {
+        "id": "landwater-federated-local-rth",
+        "reason": "Catalogue proves source leads, not harmonized2023 measurements. Do not splice unlike local denominators into a provincial panel."
+      },
+      {
+        "id": "landwater-federated-local-chemistry",
+        "reason": "Local source leads exist, but no common2023district chemistry panel extracted."
+      },
+      {
+        "id": "landwater-federated-physical-cover",
+        "reason": "True2023physical-cover evidence remains insufficient; administrative indices stay parent-owned."
+      }
+    ]
+  },
+  "admission": {
+    "iklh_2023": {
+      "decision": {
+        "status": "CORE",
+        "reason": "Smallest cross-media official 2023 district-quality summary: all27 valid same-definition observations, nonconstant spread, coherent direction and documented common monitoring framework. Admit only this published administrative construct, not its components or population exposure claims."
+      },
+      "gates": {
+        "official_source": {
+          "pass": true,
+          "evidence": "DLH Jawa Barat, official Galura dataset20488 with producer, approval history and immutable retained2023 response."
+        },
+        "reference_2023": {
+          "pass": true,
+          "evidence": "All27 source rows explicitly tahun=2023. Annual administrative index vintage, not a claim of continuous2023 sensing; statutory land sampling can precede calculation year."
+        },
+        "coverage_27": {
+          "pass": true,
+          "evidence": "27/27 numeric cells"
+        },
+        "comparable_definition": {
+          "pass": true,
+          "evidence": "Single DLH district index panel, Permen27/2021 AnnexVII common district composite. Do not apply different province or2025 formulas."
+        },
+        "comparable_unit": {
+          "pass": true,
+          "evidence": "One index-point scale; unchanged published values, not percentages or concentrations."
+        },
+        "compatible_geography": {
+          "pass": true,
+          "evidence": "DLH metadata expressly uses BPS2019 district identifiers, matching CIVX registry. No station-to-district assignment or polygon-derived denominator."
+        },
+        "environmental_civic_pressure": {
+          "pass": true,
+          "evidence": "Ambient surface-water/air/land condition affects shared environmental living conditions; narrow administrative environmental-quality state proxy."
+        },
+        "clear_natural_direction": {
+          "pass": true,
+          "evidence": "Higher official quality means lower environmental-quality pressure; no inversion or score is calculated in this audit."
+        },
+        "no_unresolved_missing": {
+          "pass": true,
+          "evidence": "0 missing; 0 unresolved numeric cells"
+        },
+        "sufficient_variation": {
+          "pass": true,
+          "evidence": "27 unique; SD 6.8941391780887855"
+        },
+        "no_severe_unnecessary_redundancy": {
+          "pass": true,
+          "evidence": "Only one Environment CORE; all embedded media variants are non-additive context or rejected stacks."
+        },
+        "valid_denominator_if_rate": {
+          "pass": true,
+          "evidence": "Not a CIVX-derived rate. Published index retained intact; statutory component denominators belong to producer method. No population/area ratio invented."
+        },
+        "not_primarily_reporting_intensity": {
+          "pass": true,
+          "evidence": "State index, not reporting-participation count. LKIP2023 PDF41 reports all27 districts monitored across four air-site categories, and PDF44 reports1351 verified water records. Statutory sampling/validation framework provides common basis; this does not independently certify each local sampling log or equal physical exposure representativeness."
+        },
+        "not_embedded_in_selected_composite_or_dimension": {
+          "pass": true,
+          "evidence": "IKLH itself is not an input of retained IRBI or another audited dimension. No water/sanitation access, disease, poverty or IRBI component is added. Land state shares conceptual drivers with IRBI environmental vulnerability; independence is not claimed."
+        }
+      },
+      "note": "CORE admission is for the published administrative index construct only. Null on non-core means not established/not applicable, never an affirmative pass."
+    },
+    "environment_waste_generation_per_capita": {
+      "decision": {
+        "status": "CONTEXT ONLY",
+        "reason": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+      },
+      "gates": {
+        "official_source": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "reference_2023": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "coverage_27": {
+          "pass": true,
+          "evidence": "27/27 numeric cells"
+        },
+        "comparable_definition": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "comparable_unit": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "compatible_geography": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "environmental_civic_pressure": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "clear_natural_direction": {
+          "pass": true,
+          "evidence": "Greater generated mass is a potential physical waste load, not observed damage; population size and estimation method confound comparisons."
+        },
+        "no_unresolved_missing": {
+          "pass": true,
+          "evidence": "0 missing; 0 unresolved numeric cells"
+        },
+        "sufficient_variation": {
+          "pass": true,
+          "evidence": "18 unique; SD 0.12032469184570581"
+        },
+        "no_severe_unnecessary_redundancy": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "valid_denominator_if_rate": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "not_primarily_reporting_intensity": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "not_embedded_in_selected_composite_or_dimension": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        }
+      },
+      "note": "CORE admission is for the published administrative index construct only. Null on non-core means not established/not applicable, never an affirmative pass."
+    },
+    "environment_waste_generation_daily_api": {
+      "decision": {
+        "status": "CONTEXT ONLY",
+        "reason": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+      },
+      "gates": {
+        "official_source": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "reference_2023": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "coverage_27": {
+          "pass": false,
+          "evidence": "22/27 numeric cells"
+        },
+        "comparable_definition": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "comparable_unit": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "compatible_geography": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "environmental_civic_pressure": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "clear_natural_direction": {
+          "pass": true,
+          "evidence": "Greater generated mass is a potential physical waste load, not observed damage; population size and estimation method confound comparisons."
+        },
+        "no_unresolved_missing": {
+          "pass": false,
+          "evidence": "5 missing; 0 unresolved numeric cells"
+        },
+        "sufficient_variation": {
+          "pass": true,
+          "evidence": "22 unique; SD 213.56880267886962"
+        },
+        "no_severe_unnecessary_redundancy": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "valid_denominator_if_rate": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "not_primarily_reporting_intensity": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "not_embedded_in_selected_composite_or_dimension": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        }
+      },
+      "note": "CORE admission is for the published administrative index construct only. Null on non-core means not established/not applicable, never an affirmative pass."
+    },
+    "environment_waste_transported_to_tpa_daily": {
+      "decision": {
+        "status": "CONTEXT ONLY",
+        "reason": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+      },
+      "gates": {
+        "official_source": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "reference_2023": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "coverage_27": {
+          "pass": true,
+          "evidence": "27/27 numeric cells"
+        },
+        "comparable_definition": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "comparable_unit": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "compatible_geography": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "environmental_civic_pressure": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "clear_natural_direction": {
+          "pass": false,
+          "evidence": "Flow/count alone does not establish environmentally safe treatment or population-normalized pressure."
+        },
+        "no_unresolved_missing": {
+          "pass": true,
+          "evidence": "0 missing; 0 unresolved numeric cells"
+        },
+        "sufficient_variation": {
+          "pass": true,
+          "evidence": "27 unique; SD 387.26960607511495"
+        },
+        "no_severe_unnecessary_redundancy": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "valid_denominator_if_rate": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "not_primarily_reporting_intensity": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "not_embedded_in_selected_composite_or_dimension": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        }
+      },
+      "note": "CORE admission is for the published administrative index construct only. Null on non-core means not established/not applicable, never an affirmative pass."
+    },
+    "environment_waste_service_level_published": {
+      "decision": {
+        "status": "CONTEXT ONLY",
+        "reason": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+      },
+      "gates": {
+        "official_source": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "reference_2023": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "coverage_27": {
+          "pass": true,
+          "evidence": "27/27 numeric cells"
+        },
+        "comparable_definition": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "comparable_unit": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "compatible_geography": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "environmental_civic_pressure": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "clear_natural_direction": {
+          "pass": true,
+          "evidence": "Higher published service percentage suggests better administrative service, not verified safe treatment or household access."
+        },
+        "no_unresolved_missing": {
+          "pass": true,
+          "evidence": "0 missing; 0 unresolved numeric cells"
+        },
+        "sufficient_variation": {
+          "pass": true,
+          "evidence": "27 unique; SD 15.617315554547632"
+        },
+        "no_severe_unnecessary_redundancy": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "valid_denominator_if_rate": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "not_primarily_reporting_intensity": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "not_embedded_in_selected_composite_or_dimension": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        }
+      },
+      "note": "CORE admission is for the published administrative index construct only. Null on non-core means not established/not applicable, never an affirmative pass."
+    },
+    "environment_waste_handled_daily": {
+      "decision": {
+        "status": "CONTEXT ONLY",
+        "reason": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+      },
+      "gates": {
+        "official_source": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "reference_2023": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "coverage_27": {
+          "pass": true,
+          "evidence": "27/27 numeric cells"
+        },
+        "comparable_definition": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "comparable_unit": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "compatible_geography": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "environmental_civic_pressure": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "clear_natural_direction": {
+          "pass": false,
+          "evidence": "Flow/count alone does not establish environmentally safe treatment or population-normalized pressure."
+        },
+        "no_unresolved_missing": {
+          "pass": true,
+          "evidence": "0 missing; 0 unresolved numeric cells"
+        },
+        "sufficient_variation": {
+          "pass": true,
+          "evidence": "27 unique; SD 177.5754297651405"
+        },
+        "no_severe_unnecessary_redundancy": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "valid_denominator_if_rate": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "not_primarily_reporting_intensity": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "not_embedded_in_selected_composite_or_dimension": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        }
+      },
+      "note": "CORE admission is for the published administrative index construct only. Null on non-core means not established/not applicable, never an affirmative pass."
+    },
+    "environment_villages_disposal_bin_then_collected": {
+      "decision": {
+        "status": "CONTEXT ONLY",
+        "reason": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+      },
+      "gates": {
+        "official_source": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "reference_2023": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "coverage_27": {
+          "pass": false,
+          "evidence": "19/27 numeric cells"
+        },
+        "comparable_definition": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "comparable_unit": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "compatible_geography": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "environmental_civic_pressure": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "clear_natural_direction": {
+          "pass": false,
+          "evidence": "Flow/count alone does not establish environmentally safe treatment or population-normalized pressure."
+        },
+        "no_unresolved_missing": {
+          "pass": false,
+          "evidence": "8 missing; 0 unresolved numeric cells"
+        },
+        "sufficient_variation": {
+          "pass": true,
+          "evidence": "19 unique; SD 59.432309781661516"
+        },
+        "no_severe_unnecessary_redundancy": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "valid_denominator_if_rate": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "not_primarily_reporting_intensity": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        },
+        "not_embedded_in_selected_composite_or_dimension": {
+          "pass": null,
+          "evidence": "Useful published 2023 administrative panel, but verified reporting completeness, common methods and defensible catchment/denominator are missing."
+        }
+      },
+      "note": "CORE admission is for the published administrative index construct only. Null on non-core means not established/not applicable, never an affirmative pass."
+    },
+    "environment_waste_bps_perCapita": {
+      "decision": {
+        "status": "CONTEXT ONLY",
+        "reason": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+      },
+      "gates": {
+        "official_source": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "reference_2023": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "coverage_27": {
+          "pass": true,
+          "evidence": "27/27 numeric cells"
+        },
+        "comparable_definition": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "comparable_unit": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "compatible_geography": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "environmental_civic_pressure": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "clear_natural_direction": {
+          "pass": true,
+          "evidence": "Contextual load/service direction only; no certified pressure score. Managed tonnage does not certify safe management."
+        },
+        "no_unresolved_missing": {
+          "pass": true,
+          "evidence": "0 missing; 0 unresolved numeric cells"
+        },
+        "sufficient_variation": {
+          "pass": true,
+          "evidence": "16 unique; SD 0.1205417583275019"
+        },
+        "no_severe_unnecessary_redundancy": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "valid_denominator_if_rate": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "not_primarily_reporting_intensity": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "not_embedded_in_selected_composite_or_dimension": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        }
+      },
+      "note": "CORE admission is for the published administrative index construct only. Null on non-core means not established/not applicable, never an affirmative pass."
+    },
+    "environment_waste_bps_generation": {
+      "decision": {
+        "status": "CONTEXT ONLY",
+        "reason": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+      },
+      "gates": {
+        "official_source": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "reference_2023": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "coverage_27": {
+          "pass": true,
+          "evidence": "27/27 numeric cells"
+        },
+        "comparable_definition": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "comparable_unit": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "compatible_geography": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "environmental_civic_pressure": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "clear_natural_direction": {
+          "pass": true,
+          "evidence": "Contextual load/service direction only; no certified pressure score. Managed tonnage does not certify safe management."
+        },
+        "no_unresolved_missing": {
+          "pass": true,
+          "evidence": "0 missing; 0 unresolved numeric cells"
+        },
+        "sufficient_variation": {
+          "pass": true,
+          "evidence": "27 unique; SD 561.7958872015201"
+        },
+        "no_severe_unnecessary_redundancy": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "valid_denominator_if_rate": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "not_primarily_reporting_intensity": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "not_embedded_in_selected_composite_or_dimension": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        }
+      },
+      "note": "CORE admission is for the published administrative index construct only. Null on non-core means not established/not applicable, never an affirmative pass."
+    },
+    "environment_waste_bps_managed": {
+      "decision": {
+        "status": "CONTEXT ONLY",
+        "reason": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+      },
+      "gates": {
+        "official_source": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "reference_2023": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "coverage_27": {
+          "pass": true,
+          "evidence": "27/27 numeric cells"
+        },
+        "comparable_definition": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "comparable_unit": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "compatible_geography": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "environmental_civic_pressure": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "clear_natural_direction": {
+          "pass": false,
+          "evidence": "Contextual load/service direction only; no certified pressure score. Managed tonnage does not certify safe management."
+        },
+        "no_unresolved_missing": {
+          "pass": true,
+          "evidence": "0 missing; 0 unresolved numeric cells"
+        },
+        "sufficient_variation": {
+          "pass": true,
+          "evidence": "27 unique; SD 177.57500570316788"
+        },
+        "no_severe_unnecessary_redundancy": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "valid_denominator_if_rate": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "not_primarily_reporting_intensity": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "not_embedded_in_selected_composite_or_dimension": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        }
+      },
+      "note": "CORE admission is for the published administrative index construct only. Null on non-core means not established/not applicable, never an affirmative pass."
+    },
+    "environment_waste_bps_service": {
+      "decision": {
+        "status": "CONTEXT ONLY",
+        "reason": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+      },
+      "gates": {
+        "official_source": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "reference_2023": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "coverage_27": {
+          "pass": true,
+          "evidence": "27/27 numeric cells"
+        },
+        "comparable_definition": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "comparable_unit": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "compatible_geography": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "environmental_civic_pressure": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "clear_natural_direction": {
+          "pass": true,
+          "evidence": "Contextual load/service direction only; no certified pressure score. Managed tonnage does not certify safe management."
+        },
+        "no_unresolved_missing": {
+          "pass": true,
+          "evidence": "0 missing; 0 unresolved numeric cells"
+        },
+        "sufficient_variation": {
+          "pass": true,
+          "evidence": "27 unique; SD 15.61690943678207"
+        },
+        "no_severe_unnecessary_redundancy": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "valid_denominator_if_rate": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "not_primarily_reporting_intensity": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        },
+        "not_embedded_in_selected_composite_or_dimension": {
+          "pass": null,
+          "evidence": "Full numeric coverage alone does not establish comparable methods, complete underlying reporting or valid environmental performance denominators."
+        }
+      },
+      "note": "CORE admission is for the published administrative index construct only. Null on non-core means not established/not applicable, never an affirmative pass."
+    },
+    "environment_waste_sarimukti_annual_inflow": {
+      "decision": {
+        "status": "CONTEXT ONLY",
+        "reason": "Retain auditable partial-scope facility flow, never use as all27 pressure/service score."
+      },
+      "gates": {
+        "official_source": {
+          "pass": null,
+          "evidence": "Retain auditable partial-scope facility flow, never use as all27 pressure/service score."
+        },
+        "reference_2023": {
+          "pass": null,
+          "evidence": "Retain auditable partial-scope facility flow, never use as all27 pressure/service score."
+        },
+        "coverage_27": {
+          "pass": false,
+          "evidence": "4/27 numeric cells"
+        },
+        "comparable_definition": {
+          "pass": null,
+          "evidence": "Retain auditable partial-scope facility flow, never use as all27 pressure/service score."
+        },
+        "comparable_unit": {
+          "pass": null,
+          "evidence": "Retain auditable partial-scope facility flow, never use as all27 pressure/service score."
+        },
+        "compatible_geography": {
+          "pass": null,
+          "evidence": "Retain auditable partial-scope facility flow, never use as all27 pressure/service score."
+        },
+        "environmental_civic_pressure": {
+          "pass": null,
+          "evidence": "Retain auditable partial-scope facility flow, never use as all27 pressure/service score."
+        },
+        "clear_natural_direction": {
+          "pass": false,
+          "evidence": "More inflow can reflect more waste generation or better collection; landfill safety and service catchment are unmeasured."
+        },
+        "no_unresolved_missing": {
+          "pass": false,
+          "evidence": "23 missing; 0 unresolved numeric cells"
+        },
+        "sufficient_variation": {
+          "pass": true,
+          "evidence": "4 unique; SD 147042.20776234934"
+        },
+        "no_severe_unnecessary_redundancy": {
+          "pass": null,
+          "evidence": "Retain auditable partial-scope facility flow, never use as all27 pressure/service score."
+        },
+        "valid_denominator_if_rate": {
+          "pass": null,
+          "evidence": "Retain auditable partial-scope facility flow, never use as all27 pressure/service score."
+        },
+        "not_primarily_reporting_intensity": {
+          "pass": null,
+          "evidence": "Retain auditable partial-scope facility flow, never use as all27 pressure/service score."
+        },
+        "not_embedded_in_selected_composite_or_dimension": {
+          "pass": null,
+          "evidence": "Retain auditable partial-scope facility flow, never use as all27 pressure/service score."
+        }
+      },
+      "note": "CORE admission is for the published administrative index construct only. Null on non-core means not established/not applicable, never an affirmative pass."
+    },
+    "landwater-tree-planting-area-2023": {
+      "decision": {
+        "status": "CONTEXT ONLY",
+        "reason": "Complete activity panel is useful context, but fails state-construct and monotonic pressure-direction gates."
+      },
+      "gates": {
+        "official_source": {
+          "pass": null,
+          "evidence": "Complete activity panel is useful context, but fails state-construct and monotonic pressure-direction gates."
+        },
+        "reference_2023": {
+          "pass": null,
+          "evidence": "Complete activity panel is useful context, but fails state-construct and monotonic pressure-direction gates."
+        },
+        "coverage_27": {
+          "pass": true,
+          "evidence": "27/27 numeric cells"
+        },
+        "comparable_definition": {
+          "pass": null,
+          "evidence": "Complete activity panel is useful context, but fails state-construct and monotonic pressure-direction gates."
+        },
+        "comparable_unit": {
+          "pass": null,
+          "evidence": "Complete activity panel is useful context, but fails state-construct and monotonic pressure-direction gates."
+        },
+        "compatible_geography": {
+          "pass": null,
+          "evidence": "Complete activity panel is useful context, but fails state-construct and monotonic pressure-direction gates."
+        },
+        "environmental_civic_pressure": {
+          "pass": null,
+          "evidence": "Complete activity panel is useful context, but fails state-construct and monotonic pressure-direction gates."
+        },
+        "clear_natural_direction": {
+          "pass": false,
+          "evidence": "More reported planting can reflect more restoration effort, more pre-existing damage, program budgets or land availability. It does not measure residual environmental pressure."
+        },
+        "no_unresolved_missing": {
+          "pass": true,
+          "evidence": "0 missing; 0 unresolved numeric cells"
+        },
+        "sufficient_variation": {
+          "pass": true,
+          "evidence": "22 unique; SD 1822.2719026936613"
+        },
+        "no_severe_unnecessary_redundancy": {
+          "pass": null,
+          "evidence": "Complete activity panel is useful context, but fails state-construct and monotonic pressure-direction gates."
+        },
+        "valid_denominator_if_rate": {
+          "pass": null,
+          "evidence": "Complete activity panel is useful context, but fails state-construct and monotonic pressure-direction gates."
+        },
+        "not_primarily_reporting_intensity": {
+          "pass": null,
+          "evidence": "Complete activity panel is useful context, but fails state-construct and monotonic pressure-direction gates."
+        },
+        "not_embedded_in_selected_composite_or_dimension": {
+          "pass": null,
+          "evidence": "Complete activity panel is useful context, but fails state-construct and monotonic pressure-direction gates."
+        }
+      },
+      "note": "CORE admission is for the published administrative index construct only. Null on non-core means not established/not applicable, never an affirmative pass."
+    },
+    "landwater-community-forest-area-2023": {
+      "decision": {
+        "status": "CONTEXT ONLY",
+        "reason": "Retain official2023 quantity as context only; insufficient ecological-class, denominator and measurement equivalence for pressure scoring."
+      },
+      "gates": {
+        "official_source": {
+          "pass": null,
+          "evidence": "Retain official2023 quantity as context only; insufficient ecological-class, denominator and measurement equivalence for pressure scoring."
+        },
+        "reference_2023": {
+          "pass": null,
+          "evidence": "Retain official2023 quantity as context only; insufficient ecological-class, denominator and measurement equivalence for pressure scoring."
+        },
+        "coverage_27": {
+          "pass": false,
+          "evidence": "26/27 numeric cells"
+        },
+        "comparable_definition": {
+          "pass": null,
+          "evidence": "Retain official2023 quantity as context only; insufficient ecological-class, denominator and measurement equivalence for pressure scoring."
+        },
+        "comparable_unit": {
+          "pass": null,
+          "evidence": "Retain official2023 quantity as context only; insufficient ecological-class, denominator and measurement equivalence for pressure scoring."
+        },
+        "compatible_geography": {
+          "pass": null,
+          "evidence": "Retain official2023 quantity as context only; insufficient ecological-class, denominator and measurement equivalence for pressure scoring."
+        },
+        "environmental_civic_pressure": {
+          "pass": null,
+          "evidence": "Retain official2023 quantity as context only; insufficient ecological-class, denominator and measurement equivalence for pressure scoring."
+        },
+        "clear_natural_direction": {
+          "pass": false,
+          "evidence": "More community forest is not unconditionally better ambient condition. Absolute area reflects district size, rural land availability, tenure and plantation management."
+        },
+        "no_unresolved_missing": {
+          "pass": false,
+          "evidence": "1 missing; 0 unresolved numeric cells"
+        },
+        "sufficient_variation": {
+          "pass": true,
+          "evidence": "26 unique; SD 41572.47673708893"
+        },
+        "no_severe_unnecessary_redundancy": {
+          "pass": null,
+          "evidence": "Retain official2023 quantity as context only; insufficient ecological-class, denominator and measurement equivalence for pressure scoring."
+        },
+        "valid_denominator_if_rate": {
+          "pass": null,
+          "evidence": "Retain official2023 quantity as context only; insufficient ecological-class, denominator and measurement equivalence for pressure scoring."
+        },
+        "not_primarily_reporting_intensity": {
+          "pass": null,
+          "evidence": "Retain official2023 quantity as context only; insufficient ecological-class, denominator and measurement equivalence for pressure scoring."
+        },
+        "not_embedded_in_selected_composite_or_dimension": {
+          "pass": null,
+          "evidence": "Retain official2023 quantity as context only; insufficient ecological-class, denominator and measurement equivalence for pressure scoring."
+        }
+      },
+      "note": "CORE admission is for the published administrative index construct only. Null on non-core means not established/not applicable, never an affirmative pass."
+    },
+    "landwater-villages-reporting-water-pollution-2023": {
+      "decision": {
+        "status": "CONTEXT ONLY",
+        "reason": "Useful qualitative-reporting context only. It lacks eight cities and does not meet ambient measurement, monitoring geography or reporting completeness gates."
+      },
+      "gates": {
+        "official_source": {
+          "pass": null,
+          "evidence": "Useful qualitative-reporting context only. It lacks eight cities and does not meet ambient measurement, monitoring geography or reporting completeness gates."
+        },
+        "reference_2023": {
+          "pass": null,
+          "evidence": "Useful qualitative-reporting context only. It lacks eight cities and does not meet ambient measurement, monitoring geography or reporting completeness gates."
+        },
+        "coverage_27": {
+          "pass": false,
+          "evidence": "19/27 numeric cells"
+        },
+        "comparable_definition": {
+          "pass": null,
+          "evidence": "Useful qualitative-reporting context only. It lacks eight cities and does not meet ambient measurement, monitoring geography or reporting completeness gates."
+        },
+        "comparable_unit": {
+          "pass": null,
+          "evidence": "Useful qualitative-reporting context only. It lacks eight cities and does not meet ambient measurement, monitoring geography or reporting completeness gates."
+        },
+        "compatible_geography": {
+          "pass": null,
+          "evidence": "Useful qualitative-reporting context only. It lacks eight cities and does not meet ambient measurement, monitoring geography or reporting completeness gates."
+        },
+        "environmental_civic_pressure": {
+          "pass": null,
+          "evidence": "Useful qualitative-reporting context only. It lacks eight cities and does not meet ambient measurement, monitoring geography or reporting completeness gates."
+        },
+        "clear_natural_direction": {
+          "pass": true,
+          "evidence": "More villages reporting pollution signals broader reported occurrence within the same reporting frame. Raw counts are not suitable for district pressure rankings."
+        },
+        "no_unresolved_missing": {
+          "pass": false,
+          "evidence": "8 missing; 0 unresolved numeric cells"
+        },
+        "sufficient_variation": {
+          "pass": true,
+          "evidence": "17 unique; SD 17.776388834631177"
+        },
+        "no_severe_unnecessary_redundancy": {
+          "pass": null,
+          "evidence": "Useful qualitative-reporting context only. It lacks eight cities and does not meet ambient measurement, monitoring geography or reporting completeness gates."
+        },
+        "valid_denominator_if_rate": {
+          "pass": null,
+          "evidence": "Useful qualitative-reporting context only. It lacks eight cities and does not meet ambient measurement, monitoring geography or reporting completeness gates."
+        },
+        "not_primarily_reporting_intensity": {
+          "pass": null,
+          "evidence": "Useful qualitative-reporting context only. It lacks eight cities and does not meet ambient measurement, monitoring geography or reporting completeness gates."
+        },
+        "not_embedded_in_selected_composite_or_dimension": {
+          "pass": null,
+          "evidence": "Useful qualitative-reporting context only. It lacks eight cities and does not meet ambient measurement, monitoring geography or reporting completeness gates."
+        }
+      },
+      "note": "CORE admission is for the published administrative index construct only. Null on non-core means not established/not applicable, never an affirmative pass."
+    },
+    "landwater-designated-forest-water-area-2023": {
+      "decision": {
+        "status": "CONTEXT ONLY",
+        "reason": "Real official2023 district quantities, but legal designation, denominator mismatch, ambiguous dashes and unresolved footnote preclude quality-pressure comparison."
+      },
+      "gates": {
+        "official_source": {
+          "pass": null,
+          "evidence": "Real official2023 district quantities, but legal designation, denominator mismatch, ambiguous dashes and unresolved footnote preclude quality-pressure comparison."
+        },
+        "reference_2023": {
+          "pass": null,
+          "evidence": "Real official2023 district quantities, but legal designation, denominator mismatch, ambiguous dashes and unresolved footnote preclude quality-pressure comparison."
+        },
+        "coverage_27": {
+          "pass": false,
+          "evidence": "22/27 numeric cells"
+        },
+        "comparable_definition": {
+          "pass": null,
+          "evidence": "Real official2023 district quantities, but legal designation, denominator mismatch, ambiguous dashes and unresolved footnote preclude quality-pressure comparison."
+        },
+        "comparable_unit": {
+          "pass": null,
+          "evidence": "Real official2023 district quantities, but legal designation, denominator mismatch, ambiguous dashes and unresolved footnote preclude quality-pressure comparison."
+        },
+        "compatible_geography": {
+          "pass": null,
+          "evidence": "Real official2023 district quantities, but legal designation, denominator mismatch, ambiguous dashes and unresolved footnote preclude quality-pressure comparison."
+        },
+        "environmental_civic_pressure": {
+          "pass": null,
+          "evidence": "Real official2023 district quantities, but legal designation, denominator mismatch, ambiguous dashes and unresolved footnote preclude quality-pressure comparison."
+        },
+        "clear_natural_direction": {
+          "pass": false,
+          "evidence": "Legal designation area does not show canopy, degradation or ambient pollution. Larger values largely reflect jurisdiction size and land allocation."
+        },
+        "no_unresolved_missing": {
+          "pass": false,
+          "evidence": "5 missing; 0 unresolved numeric cells"
+        },
+        "sufficient_variation": {
+          "pass": true,
+          "evidence": "22 unique; SD 33214.00943463681"
+        },
+        "no_severe_unnecessary_redundancy": {
+          "pass": null,
+          "evidence": "Real official2023 district quantities, but legal designation, denominator mismatch, ambiguous dashes and unresolved footnote preclude quality-pressure comparison."
+        },
+        "valid_denominator_if_rate": {
+          "pass": null,
+          "evidence": "Real official2023 district quantities, but legal designation, denominator mismatch, ambiguous dashes and unresolved footnote preclude quality-pressure comparison."
+        },
+        "not_primarily_reporting_intensity": {
+          "pass": null,
+          "evidence": "Real official2023 district quantities, but legal designation, denominator mismatch, ambiguous dashes and unresolved footnote preclude quality-pressure comparison."
+        },
+        "not_embedded_in_selected_composite_or_dimension": {
+          "pass": null,
+          "evidence": "Real official2023 district quantities, but legal designation, denominator mismatch, ambiguous dashes and unresolved footnote preclude quality-pressure comparison."
+        }
+      },
+      "note": "CORE admission is for the published administrative index construct only. Null on non-core means not established/not applicable, never an affirmative pass."
+    }
+  }
+}
