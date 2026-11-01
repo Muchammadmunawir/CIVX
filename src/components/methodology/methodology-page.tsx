@@ -119,20 +119,8 @@ export function MethodologyPage() {
           <section className={styles.section} aria-labelledby="status-model">
             <h2 id="status-model" className="product-section-title">Status model & penggunaan</h2>
             <p>CIVX adalah indeks analitis yang ditetapkan proyek, bukan indeks resmi atau pengesahan lembaga sumber. Hak penggunaan dan redistribusi sumber belum dinyatakan tuntas.</p>
-            <p>Persetujuan pengguna hanya mencakup integrasi frontend ini, bukan rilis publik. Flag model yang dibekukan tetap tidak berubah, termasuk otorisasi integrasi produksi pada artefak.</p>
-            <details className={styles.details}>
-              <summary>Metadata model dan tata kelola</summary>
-              <dl className={styles.metadata}>
-                <div><dt>Model / versi</dt><dd>{methodology.modelId} / {methodology.modelVersion}</dd></div>
-                <div><dt>Tahun / kohort</dt><dd>{methodology.referenceYear} / {methodology.cohortSize} kabupaten/kota</dd></div>
-                <div><dt>Status skor</dt><dd>{methodology.scoreStatus}</dd></div>
-                <div><dt>Status insight</dt><dd>{methodology.insightStatus}</dd></div>
-                <div><dt>Otorisasi integrasi produksi dalam artefak</dt><dd>{String(methodology.productionIntegrationAuthorized)}</dd></div>
-                <div><dt>Peringkat publik dihasilkan</dt><dd>{String(methodology.publicRankingGenerated)}</dd></div>
-                <div><dt>Interpretasi model</dt><dd>{methodology.interpretation}</dd></div>
-              </dl>
-              <ul className={styles.list}>{methodology.notes.map((note) => <li key={note}>{note}</li>)}</ul>
-            </details>
+            <p>Model 2023 masih memerlukan persetujuan rilis publik. Baca definisi, periode rujukan, dan keterbatasan sumber sebelum menggunakan hasilnya.</p>
+            <Link className="civx-text-link" href="/sources">Lihat sumber dan catatan penggunaannya <span aria-hidden="true">→</span></Link>
           </section>
         </div>
       </div>

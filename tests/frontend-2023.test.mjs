@@ -4,6 +4,8 @@ import assert from "node:assert/strict";
 import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 const { RegionDetail } = await import("../src/components/regions/region-detail.tsx");
+const { RegionSilhouette } = await import("../src/components/regions/region-silhouette.tsx");
+const geometry = (await import("../data/geography/jabar-adm2-2020.json", { with: { type: "json" } })).default;
 const { RegionTable } = await import("../src/components/explore/explore-browser.tsx");
 const { ContextSection } = await import("../src/components/product/context-section.tsx");
 const { formatRaw, formatScore } = await import("../src/components/product/format.ts");
@@ -11,14 +13,14 @@ const { getExploreRegionsProduct2023, getRegionProductView2023 } = await import(
 
 const render = (component, props) => renderToStaticMarkup(createElement(component, props));
 const escape = value => render("span", { children: String(value) }).slice(6, -7);
-const text = html => html.replace(/<[^>]*>/g, "");
+const text = html => html.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
 
 // Match balanced semantic elements, including nested sections and disclosures.
 function elements(html, tag) {
   const stack = [];
   const result = [];
   for (const match of html.matchAll(new RegExp(`<(/?)${tag}\\b[^>]*>`, "g"))) {
-    if (!match[1]) stack.push({ index: match.index, opening: match[0], start: match.index + match[0].length });
+    if (!match[1]) stack.push({ index: match.index, opening: match[0], start: match.index + match[0].length, depth: stack.length });
     else {
       const entry = stack.pop();
       assert.ok(entry, `Unbalanced ${tag}`);
@@ -94,8 +96,6 @@ test("RegionDetail renders six dimensions and all 18 real indicator values with 
     assert.ok(summary.includes(`<strong>${escape(formatRaw(indicator.rawValue, indicator.unit))}</strong>`));
     assert.ok(summary.includes(`<strong>${escape(formatScore(indicator.normalizedPressure))} / 100</strong>`));
   }
-  const notes = section(html, "id", `region-${view.region.id}-notes`);
-  assert.ok(notes.includes(`<code>${escape(view.methodology.modelId)}</code>`));
   assert.match(text(overview), /\b2023\b/);
 });
 
@@ -116,9 +116,8 @@ test("terminal context renders Banjar explicit zero but never fabricates zero fo
     const view = getRegionProductView2023(id);
     const missing = contextItem(view, datasetId);
     const output = renderedContextItem(view, missing);
-    assert.ok(output.summary.includes(escape(missing.missingReason)));
+    assert.ok(output.body.includes(escape(missing.missingReason)));
     assert.ok(!output.summary.includes(`<strong>${escape(formatRaw(0, missing.unit))}</strong>`));
-    assert.equal(elements(output.body, "li").filter(element => element.body.includes("ID observasi")).length, 0);
   }
 });
 
@@ -127,11 +126,11 @@ test("commuter context renders five covered regions and keeps all other region s
   for (const { region } of getExploreRegionsProduct2023()) {
     const view = getRegionProductView2023(region.id);
     const item = contextItem(view, "context_transport_commuter_share_jabodetabek_2023");
-    const { summary } = renderedContextItem(view, item);
+    const { summary, body } = renderedContextItem(view, item);
     if (covered.has(region.id)) {
       assert.ok(summary.includes(`<strong>${escape(formatRaw(item.value, item.unit))}</strong>`), region.id);
     } else {
-      assert.ok(summary.includes(escape(item.missingReason)), region.id);
+      assert.ok(body.includes(escape(item.missingReason)), region.id);
       assert.ok(!summary.includes(`<strong>${escape(formatRaw(0, item.unit))}</strong>`), region.id);
     }
   }
@@ -149,13 +148,45 @@ test("site-only context renders actual observation sites and dates without a reg
     assert.ok(strongValues.every(value => !/^[-+]?\d/.test(value)));
     const lists = elements(body, "ul").filter(element => element.opening.includes('aria-label="Observasi per lokasi dan waktu"'));
     assert.equal(lists.length, 1);
-    const observations = elements(lists[0].body, "li");
+    const observations = elements(lists[0].body, "li").filter(element => element.depth === 0);
     assert.equal(observations.length, item.observations.length);
     for (const [index, observation] of item.observations.entries()) {
       assert.ok(observations[index].body.includes(`<strong>${escape(observation.siteName ?? observation.geographicLevel)}</strong>`));
       assert.ok(observations[index].body.includes(`<span>${escape(formatRaw(observation.value, observation.unit))}</span>`));
       assert.ok(observations[index].body.includes(escape(observation.period)));
-      assert.ok(observations[index].body.includes(`<code>${escape(observation.observationId)}</code>`));
+      assert.ok(observations[index].body.includes(escape(observation.sourceLocator)));
     }
   }
+});
+
+test("RegionDetail keeps deterministic CORE insights and hides internal engineering metadata", () => {
+  const view = getRegionProductView2023("3273");
+  const html = render(RegionDetail, { id: view.region.id });
+  for (const insight of view.core.insights) {
+    assert.ok(html.includes(escape(insight.title)));
+    assert.ok(html.includes(escape(insight.message)));
+  }
+  assert.doesNotMatch(html, /SHA-256|SCORED_NOT_RELEASED|INSIGHTS_NOT_RELEASED|productionIntegrationAuthorized|data\/processed\/|scoringPointer/);
+  assert.equal(elements(html, "h1").length, 1);
+  assert.doesNotMatch(elements(html, "nav").map(element => text(element.body)).join(" "), /tren indeks/i);
+});
+
+test("all 27 silhouettes keep the selected geometry visible inside a tight viewBox", () => {
+  const [, , fullWidth, fullHeight] = geometry.viewBox.split(" ").map(Number);
+  for (const shape of geometry.regions) {
+    const html = render(RegionSilhouette, { regionId: shape.id, regionName: shape.name });
+    const [x, y, width, height] = html.match(/viewBox="([^"]+)"/)[1].split(" ").map(Number);
+    assert.ok([x, y, width, height].every(Number.isFinite), shape.id);
+    assert.ok(width > 0 && width < fullWidth && height > 0 && height < fullHeight, shape.id);
+    const renderedPath = html.match(/<path d="([^"]+)"/)[1];
+    const points = renderedPath.replace(/[MLZ]/g, " ").trim().split(/\s+/).map(Number);
+    for (let index = 0; index < points.length; index += 2) {
+      assert.ok(points[index] >= x && points[index] <= x + width, `${shape.id} x`);
+      assert.ok(points[index + 1] >= y && points[index + 1] <= y + height, `${shape.id} y`);
+    }
+    assert.match(html, /aria-hidden="true"/);
+  }
+  const missing = render(RegionSilhouette, { regionId: "unknown", regionName: "Tidak dikenal" });
+  assert.doesNotMatch(missing, /<svg/);
+  assert.match(text(missing), /Bentuk wilayah belum tersedia/);
 });

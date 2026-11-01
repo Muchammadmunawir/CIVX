@@ -1,6 +1,6 @@
 # CIVX Tasks
 
-**Status:** One current CIVX — Jawa Barat 2023 product supersedes the separate methodology-product model. §18 records the current cutover; earlier milestones are historical.
+**Status:** The Figma frontend integration in §26 now uses the reviewed 2023 product facade. It supersedes the older eight-input frontend in §18 without modifying frozen model or source artifacts.
 **Learning rule:** Keep milestones small, reviewable, and ordered by dependency.
 
 ## 1. Foundation completed
@@ -348,3 +348,69 @@ This audits the separate, non-scoring contextual path after the frozen CORE Insi
 
 Context does not affect any CIVX score or CORE insight. No frontend, simulation, deployment, normalization, new dependency, missing-value imputation or cross-dataset ranking was introduced. Integrate the five-region 2023 commuter shares first; other contexts require their literal units, dates, coverage and limitations, with rights/publication review separate from this audit.
 
+
+## 26. Figma frontend integration
+
+This user-authorized frontend cutover follows six supplied visual references while retaining the reviewed 2023 product API as data authority. It does not authorize public release, new periods, policy classes, rankings, or source-rights claims.
+
+- [x] Audit old frontend consumers, reviewed contracts, planning documents, geographic assets, and all six references.
+- [x] Create shared Indonesian navigation, responsive menu, functional local region search, footer, Poppins typography, semantic light/dark tokens, and reusable product disclosures.
+- [x] Replace Home province/best/worst summaries with truthful 27-region, six-dimension, 18-indicator, and 2023 facts plus the existing SVG map.
+- [x] Replace Explore score ordering/categories with canonical BPS order, name/type filters, all 27 region rows, matching map visibility, and empty-result recovery.
+- [x] Integrate standalone regional detail, six dimension bars, unchanged controlled insights, 18 indicator disclosures, source uncertainty, and separate context. Remove obsolete intercepted dialogs.
+- [x] Integrate comparison selectors and URL selection through the reviewed comparison API. Preserve exact A-minus-B values, engine-selected highlights, same-region ties, invalid selections, and non-comparable context.
+- [x] Replace mock methodology with direction-aware cohort min–max, exact equal-dimension weights, equal within-dimension weights, actual scope, and interpretation limits.
+- [x] Replace empty source catalog with evidence for 18 CORE indicators and seven CONTEXT datasets, retaining actual publishers, URLs, locators, periods, units, scope, and limitations.
+- [x] Preserve commuter missingness, terminal missing/zero distinctions, literal Podes village occurrence, road-site observations, and dated station ISPU observations. Never compute context aggregates or deltas.
+- [x] Remove obsolete frontend consumers and presentation helpers while retaining historical domain/data modules and all frozen evidence.
+- [x] Add behavior-focused frontend coverage and migrate obsolete comparison tests. Delete navigation-wiring-only assertions. Keep analytical domain tests and source integrity checks.
+- [x] Adapt freshness CLI test fixtures to the analytical baseline only, omitting superseded presentation locks without changing the historical protocol, generator, or generated artifacts.
+- [x] Diagnose Turbopack floating-point JSON reserialization and select webpack for development/builds instead of weakening exact domain validation.
+
+Map boundaries remain approximate 2020 geoBoundaries display geometry with established BPS-code associations and CC BY 3.0 IGO attribution. Uniform color carries no pressure classification. Native links, titles, selectors, and the full region table provide equivalent access.
+
+The historical freshness audit still requires its original presentation snapshot for exact repository replay. Source rights, independent methodology/source review, certified boundaries, formal accessibility review, and public release remain separate governance gates. No dependency, external service, credential, frozen artifact, or scoring rule changed.
+
+### Exercised verification
+
+- `npm test`: 276 passed, zero failures or skipped tests. The focused frontend/comparison/freshness regression run also passed all 26 tests.
+- `npm run lint`: passed without warnings or errors after the final responsive CSS changes.
+- `npm run build`: passed with strict TypeScript and 36 generated pages using webpack.
+- Managed Chromium inspected the production server on all six routes at 1440, 1024, 768, 390, and 320px. All 30 fully loaded route/width combinations had no viewport overflow and no unlabeled input/select controls.
+- Production interaction smoke covered global search to detail, detail to comparison, GET selectors, same-region ties, invalid comparison, invalid region, name/type filtering, empty-result reset, SVG keyboard activation, mobile menu Enter/Escape, search Escape, indicator/source disclosures, context site observations, dark regional disclosures, and reduced motion.
+- All 35 distinct internal URLs collected from the six surfaces returned HTTP 200 to HEAD requests. Same-page anchor inspection found no missing targets. External publisher availability was not re-audited.
+- No JavaScript or hydration errors were observed in the production smoke. Reduced-motion emulation produced a zero-second button transition.
+- Frozen score SHA-256 remains `47b4813abd59bc452556e9d057596511f95e17acd81a4994589bc87460d9f6d5`; frozen insight SHA-256 remains `ffd92543c6387c981d2647c8ed55bd3abb7f7c4e9b5b91d4a74fab81999d6345`.
+
+Visual review retained the references' restrained palette, orange active marker, rounded heading hierarchy, card borders, large map, paired comparisons, and methodology reading column. Deliberate differences are truthful structural summaries, neutral region lists/map color, six dimensions, no trend, and larger real evidence disclosures. Final narrow-screen polish keeps the 320px menu control in the first header row and opens navigation below the header rather than over its controls. Formal accessibility certification remains outside this smoke.
+
+## 27. Frontend completion and review pass
+
+- [x] Inspect the requested branch and preserve all eleven existing modified files. Fetch and merge `origin/main` without rewriting history; the merge completed without conflicts.
+- [x] Retain all reviewed 2023 product capabilities and frozen domain/data contracts.
+- [x] Refine Home's two-column proportions, map size, and summary spacing without introducing mock scores or categories.
+- [x] Add keyboard-accessible nine-row Explore pagination, reset pagination on search/type changes, and keep the map on the full filtered result in BPS order.
+- [x] Add real-path regional silhouettes, underline-style anchor navigation, concise unchanged CORE insights, all 18 indicators, and practical source disclosures.
+- [x] Prioritize available/site-only context and group missing datasets compactly. Preserve explicit zero values, actual observation dates/sites, and every missing reason.
+- [x] Remove engineering hashes, internal paths, release/authorization flags, evidence pointers, and raw comparison JSON from product pages without altering the underlying records.
+- [x] Preserve overall/dimension/indicator comparisons, highlights, A/B selectors, swap, same-region ties, and non-comparative context.
+- [x] Add Sources title/publisher/dimension search, CORE/CONTEXT scope, six CORE dimension choices, counts, empty state, and reset over the original 18/7 catalog.
+- [x] Preserve real methodology and improve header Escape focus, ArrowDown result access, and mobile menu focus restoration.
+- [x] Compare all six routes with the original supplied Figma exports and inspect production screenshots at 1440, 1024, 768, 390, and 320px.
+- [x] Retain historical root image `-.png`: it predates this frontend branch and contains a source-table extract, not a temporary frontend screenshot. Remove no unrelated project artifacts. Keep review screenshots outside the repository.
+
+### Verification for this pass
+
+- Focused frontend tests: **17 passed, zero failed, cancelled, skipped, or pending**.
+- `npm test`: **284 passed, zero failed, cancelled, skipped, or pending**.
+- `npm run lint`: passed with no warnings or errors. Removed unsupported `aria-expanded` from the native search input; labels, result controls, keyboard access, and focus restoration remain.
+- `npm run build`: passed strict TypeScript and generated **36 pages**, using webpack.
+- Production Chromium checked the six requested routes at all five widths in both light and dark themes: **60 combinations**, with no document overflow, clipped heading/paragraph/summary text, missing input labels, broken same-page anchors, or duplicate primary headings/landmarks.
+- Expanded all native disclosures at 768 and 320px in both themes: **24 additional combinations**, with no document overflow, heading-level skips, unnamed links/buttons, or table headers lacking scope.
+- Exercised global search result selection, ArrowDown, Escape/focus restoration, empty results, and GET search to Explore. Exercised Explore search/type intersection, empty reset, keyboard pagination, page reset, and full-filter map retention.
+- Exercised map hover, keyboard focus, and click navigation; regional indicator/context disclosures; Banjar's explicit zero; comparison selectors/swap/same-region equality; source title/publisher/dimension/scope filters, empty reset, and source disclosures.
+- Exercised mobile menu open/close, Escape, focus restoration, and link dismissal. Dark preference survives reload; System follows emulated OS changes; reduced motion yields a zero-second button transition.
+- All **36 distinct collected internal URLs** returned HTTP 200 to HEAD probes. Chromium recorded cancelled HEAD requests after receiving headers; no failed product navigation, JavaScript exception, hydration warning, missing-key warning, or console error was observed.
+- Practical accessibility review covered meaningful single H1/main landmarks, heading order, labels, real links/buttons, table scope, native disclosure summaries, keyboard access, visible focus, skip navigation, and map alternatives. This is not formal accessibility certification.
+
+The review keeps the supplied blue-purple/orange/lavender visual language and deliberate truthful departures from mock ranks, categories, years, trends, and methodology. Source rights, independent review, effective-boundary certification, formal accessibility evaluation, and public model release remain separate governance gates. No dependency, credential, map token, database, API server, or frozen model change is introduced by this pass.

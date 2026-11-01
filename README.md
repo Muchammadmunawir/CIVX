@@ -29,11 +29,11 @@ No dependencies, credentials, external map services, database, or API server wer
 | Route | Behavior |
 | --- | --- |
 | `/` | Truthful cohort/model summaries and interactive Jawa Barat map. |
-| `/explore` | All 27 regions in canonical BPS order, name search, kabupaten/kota filter, neutral map, and region table. `?q=` supports search-form navigation. |
-| `/regions/[id]` | Standalone detail with score, six dimension bars, unchanged controlled insights, 18 grouped indicator disclosures, and separate context. Unknown IDs use Next's not-found boundary. |
+| `/explore` | All 27 regions in canonical BPS order, name search, kabupaten/kota filter, neutral map, and nine-row table pages. Pagination affects only the table; the map keeps the full filtered result. `?q=` supports search-form navigation. |
+| `/regions/[id]` | Standalone detail with score, real-geometry silhouette, six dimension bars, unchanged controlled insights, 18 grouped indicator disclosures, and separate context. Unknown IDs use Next's not-found boundary. |
 | `/compare?a=3201&b=3273` | Reviewed overall/dimension/indicator differences, two selectors, tied highlights, and separate context. Same-region ties are valid. Invalid or repeated query values show an error rather than substituted results. |
 | `/methodology` | Direction-aware min–max formulas, exact equal-dimension weights, equal weights within each dimension, source limitations, and model status. |
-| `/sources` | Evidence for all 18 CORE indicators and seven contextual datasets, with publishers, URLs, locators, periods, units, coverage, and limitations. |
+| `/sources` | Searchable evidence for all 18 CORE indicators and seven contextual datasets. Filter by CORE/CONTEXT and by CORE dimension; browse original publishers, links, periods, units, coverage, and limitations. |
 
 Header search uses only the 27 known regions. Navigation, footer, active indicators, light/dark/system preference, disclosure controls, and responsive layouts share one application shell. There is no score sort, public regional ranking, status threshold, province average, year selector, or time-series chart.
 
@@ -64,7 +64,7 @@ CONTEXT is visually separate and never changes CIVX:
 - Bandung road observations retain individual sites, not a city average.
 - ISPU and PM2.5-component ISPU retain station observations and their actual timestamp, not regional averages or annual exposure.
 
-Expanded disclosures retain definitions, denominators, source limitations, uncertainty, and evidence pointers. Weighted denominators are not unweighted sample sizes. Missing uncertainty is not evidence of certainty.
+Expanded disclosures retain definitions, denominators, source limitations, uncertainty, and published source locators. Internal evidence pointers, artifact paths, hashes, raw release flags, and debug JSON remain in domain records and engineering documentation, not product pages. Weighted denominators are not unweighted sample sizes. Missing uncertainty is not evidence of certainty. Available regional values and site observations appear before compact, collapsed missing-source groups.
 
 ## Map and accessibility
 

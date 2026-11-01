@@ -13,13 +13,9 @@ function Observation({ observation }: { observation: CivxContextProductObservati
     <details className={styles.metadataDisclosure}>
       <summary>Bukti observasi</summary>
       <dl className={styles.metadata}>
-        <div><dt>ID observasi</dt><dd><code>{observation.observationId}</code></dd></div>
         <div><dt>Tingkat geografi</dt><dd>{observation.geographicLevel}</dd></div>
-        {observation.siteId !== null && <div><dt>ID lokasi</dt><dd><code>{observation.siteId}</code></dd></div>}
         <div><dt>Nilai dalam sumber</dt><dd>{String(observation.sourceValue)}</dd></div>
-        <div><dt>ID sumber</dt><dd><code>{observation.sourceId}</code></dd></div>
         <div><dt>Lokasi dalam sumber</dt><dd>{observation.sourceLocator}</dd></div>
-        <div><dt>Jejak bukti</dt><dd><code>{observation.evidencePointer}</code></dd></div>
       </dl>
       {observation.limitations.length > 0 && <ul className={styles.notes}>{observation.limitations.map((note, index) => <li key={index}>{note}</li>)}</ul>}
     </details>
@@ -27,16 +23,17 @@ function Observation({ observation }: { observation: CivxContextProductObservati
 }
 
 function ContextItem({ item }: { item: CivxContextProductItem2023 }) {
-  return <details className={styles.item}>
+  return <details className={styles.item} data-availability={item.availability}>
     <summary>
       <span className={styles.itemHeading}><strong>{item.title}</strong><span>Periode rujukan: {item.referencePeriod}</span></span>
       <span className={styles.availability}>
-        {item.availability === "AVAILABLE" ? <><strong>{formatRaw(item.value, item.unit)}</strong><span>Nilai tersedia dari sumber</span></> : item.availability === "NOT_COVERED" ? <><strong>Tidak tercakup oleh sumber ini</strong><span>{item.missingReason}</span></> : <><strong>Hanya observasi lokasi</strong><span>{item.observations.length} observasi · bukan nilai wilayah</span></>}
+        {item.availability === "AVAILABLE" ? <><strong>{formatRaw(item.value, item.unit)}</strong><span>Nilai tersedia dari sumber</span></> : item.availability === "NOT_COVERED" ? <strong>Tidak tercakup</strong> : <><strong>Hanya observasi lokasi</strong><span>{item.observations.length} observasi · bukan nilai wilayah</span></>}
       </span>
       <span className={styles.toggle} aria-hidden="true">+</span>
     </summary>
     <div className={styles.itemBody}>
       <p>{item.definition}</p>
+      {item.availability === "NOT_COVERED" && <p className={styles.missingReason}>{item.missingReason}</p>}
       {item.availability === "SITE_OBSERVATIONS_ONLY" && <div className={styles.siteNotice}><p>{item.missingReason}</p><p>Setiap nilai berlaku untuk lokasi dan waktu observasi yang tercantum, bukan rata-rata kabupaten/kota.</p></div>}
       <p className={styles.coverage}>Cakupan sumber: {item.coverage.coveredRegions} dari {item.coverage.totalRegions} kabupaten/kota CIVX.</p>
       <p className={styles.period}>{item.disclosure.temporalWarning}</p>
@@ -53,15 +50,6 @@ function ContextItem({ item }: { item: CivxContextProductItem2023 }) {
         </dl>
         {item.sources.map(source => <SourceEvidence key={source.sourceId} source={source} label="Sumber data konteks" />)}
         <ul className={styles.notes}>{item.disclosure.limitations.map((note, index) => <li key={index}>{note}</li>)}</ul>
-      </details>
-      <details className={styles.metadataDisclosure}>
-        <summary>Jejak data konteks</summary>
-        <dl className={styles.metadata}>
-          <div><dt>ID dataset</dt><dd><code>{item.datasetId}</code></dd></div>
-          <div><dt>Artefak data</dt><dd><code>{item.disclosure.artifactPath}</code></dd></div>
-          <div><dt>Audit sumber mentah</dt><dd><code>{item.disclosure.rawAuditPath}</code></dd></div>
-          <div><dt>Jejak kandidat</dt><dd><code>{item.disclosure.candidatePointer}</code></dd></div>
-        </dl>
       </details>
     </div>
   </details>;
@@ -80,9 +68,20 @@ export function ContextSection({ sections, idPrefix = "context", headingLevel = 
       <p>Terpisah dari indikator inti dan tidak memengaruhi skor CIVX. Data konteks tidak digunakan untuk perbandingan skor, selisih, atau peringkat.</p>
       <p className={styles.period}>Nilai 0 yang tersedia bukan data hilang. Cakupan dan periode setiap sumber berbeda.</p>
     </div>
-    <div className={styles.sections}>{sections.map(section => <section key={section.sectionId} aria-labelledby={`${idPrefix}-${section.sectionId}`} className={styles.section}>
-      <SectionHeading id={`${idPrefix}-${section.sectionId}`}>{section.title}</SectionHeading>
-      {section.items.map(item => <ContextItem key={item.datasetId} item={item} />)}
-    </section>)}</div>
+    <div className={styles.sections}>{sections.map(section => {
+      const availableItems = section.items.filter(item => item.availability === "AVAILABLE");
+      const siteItems = section.items.filter(item => item.availability === "SITE_OBSERVATIONS_ONLY");
+      const missingItems = section.items.filter(item => item.availability === "NOT_COVERED");
+      return <section key={section.sectionId} aria-labelledby={`${idPrefix}-${section.sectionId}`} className={styles.section}>
+        <SectionHeading id={`${idPrefix}-${section.sectionId}`}>{section.title}</SectionHeading>
+        {availableItems.map(item => <ContextItem key={item.datasetId} item={item} />)}
+        {siteItems.map(item => <ContextItem key={item.datasetId} item={item} />)}
+        {missingItems.length > 0 && <details className={styles.missingGroup}>
+          <summary>Data yang tidak tercakup <span>({missingItems.length} dataset)</span></summary>
+          <p className={styles.period}>Sumber ini belum mencakup nilai wilayah. Buka setiap dataset untuk alasan, definisi, dan sumbernya. Data tidak diganti dengan nol.</p>
+          {missingItems.map(item => <ContextItem key={item.datasetId} item={item} />)}
+        </details>}
+      </section>;
+    })}</div>
   </section>;
 }

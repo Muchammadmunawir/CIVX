@@ -19,7 +19,7 @@
 .indicator > summary:hover { background: var(--panel-hover); }
 .indicator :is(summary, a):focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .identity { display: grid; gap: 0.5rem; min-width: 0; }
-.identity strong { font-size: 0.9375rem; font-weight: 600; line-height: 1.5; }
+.identity strong { font-size: 0.9375rem; font-weight: 600; line-height: 1.5; overflow-wrap: anywhere; }
 .identity > span { font-size: 0.8125rem; color: var(--muted); line-height: 1.5; }
 .values { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; text-align: right; }
 .values > span { display: grid; gap: 0.375rem; color: var(--muted); font-size: 0.75rem; line-height: 1.5; }
@@ -33,7 +33,6 @@
 .metadata dt { color: var(--muted); }
 .metadata dd { min-width: 0; margin: 0; }
 .metadata dd small { display: block; margin-top: 0.375rem; color: var(--muted); font-size: 0.8125rem; }
-.metadata code { font-size: 0.8125rem; white-space: normal; overflow-wrap: anywhere; }
 .source { min-width: 0; margin-top: 1.5rem; font-size: 0.875rem; line-height: 1.7; overflow-wrap: anywhere; }
 .source p { margin: 0; }
 .secondary { margin-top: 1rem; border: 1px solid var(--border); border-radius: 0.5rem; padding: 0 1rem; }

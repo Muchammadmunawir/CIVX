@@ -154,7 +154,7 @@ details[open] > summary { margin-bottom: 12px; }
   .civx-wordmark { margin-right: auto; }
   .civx-navigation { order: 2; }
   .civx-menu-toggle { display: flex; align-items: center; gap: 20px; padding: 8px 12px; border: 1px solid var(--border); background: var(--surface); color: var(--foreground); border-radius: 6px; font-size: 12px; }
-  .civx-navigation #site-navigation { display: none; position: absolute; left: 20px; right: 20px; top: 76px; padding: 12px; border: 1px solid var(--border); background: var(--surface); border-radius: 8px; box-shadow: var(--shadow-overlay); }
+  .civx-navigation #site-navigation { display: none; position: absolute; left: 20px; right: 20px; top: 100%; padding: 12px; border: 1px solid var(--border); background: var(--surface); border-radius: 8px; box-shadow: var(--shadow-overlay); }
   .civx-navigation[data-open="true"] #site-navigation { display: block; }
   .civx-nav { display: grid; gap: 4px; }
   .civx-nav-link { padding: 12px; }
@@ -173,6 +173,7 @@ details[open] > summary { margin-bottom: 12px; }
   .civx-footer-bottom { flex-wrap: wrap; }
 }
 @media (max-width: 360px) {
+  .civx-header-inner { gap: 8px; }
   .civx-wordmark { font-size: 22px; }
   .civx-wordmark svg { width: 22px; height: 22px; }
   .civx-theme select { width: 64px; }

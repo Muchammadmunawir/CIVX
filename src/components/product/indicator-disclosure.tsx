@@ -8,7 +8,6 @@ export function SourceEvidence({ source, label = "Sumber utama" }: { source: Civ
     <p><strong>{label}</strong><br /><SourceLink source={source} /></p>
     <dl className={styles.metadata}>
       <div><dt>Penerbit</dt><dd>{source.publisher}</dd></div>
-      <div><dt>ID sumber</dt><dd><code>{source.sourceId}</code></dd></div>
       <div><dt>Lokasi dalam sumber</dt><dd>{source.locator ?? "Tidak dicantumkan dalam metadata sumber."}</dd></div>
       <div><dt>Tanggal publikasi</dt><dd>{source.publicationDate ?? "Tidak dicantumkan dalam metadata sumber."}</dd></div>
       <div><dt>Diakses</dt><dd>{source.accessedAt ?? "Tidak dicantumkan dalam metadata sumber."}</dd></div>
@@ -55,16 +54,6 @@ export function IndicatorDisclosure({ indicator }: { indicator: CivxIndicatorPro
         <summary>Keterbatasan dan ketidakpastian</summary>
         <ul className={styles.notes}>{disclosure.limitations.map((limitation, index) => <li key={index}>{limitation}</li>)}</ul>
         <Uncertainty uncertainty={disclosure.uncertainty} unit={indicator.unit} />
-      </details>
-      <details className={styles.secondary}>
-        <summary>Jejak indikator dan perhitungan</summary>
-        <dl className={styles.metadata}>
-          <div><dt>ID indikator</dt><dd><code>{indicator.indicatorId}</code></dd></div>
-          <div><dt>Perhitungan skor</dt><dd><code>{disclosure.scoringPointer}</code></dd></div>
-          <div><dt>Indikator beku</dt><dd><code>{disclosure.frozenIndicatorPointer}</code></dd></div>
-          <div><dt>Nilai beku</dt><dd><code>{disclosure.frozenValuePointer}</code></dd></div>
-          <div><dt>Normalisasi</dt><dd><code>{disclosure.normalizationValuePointer}</code></dd></div>
-        </dl>
       </details>
     </div>
   </details>;

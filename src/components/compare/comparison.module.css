@@ -170,9 +170,6 @@
 .rawTable td, .rawTable th:not(:first-child) { font-variant-numeric: tabular-nums; text-align: right; }
 .rawTable th:first-child { text-align: left; }
 .rawTable tbody th { font-weight: 500; }
-.disclosure { font-size: .875rem; line-height: 1.6; margin-top: 20px; min-width: 0; }
-.disclosure > summary { cursor: pointer; font-weight: 600; padding-block: 8px; }
-.disclosure pre { background: var(--background); border: 1px solid var(--border); border-radius: 6px; font-size: .75rem; line-height: 1.6; margin: 16px 0 0; max-width: 100%; overflow-wrap: anywhere; padding: 16px; white-space: pre-wrap; }
 .methodDisclosure { margin-top: 32px; }
 .contextGrid { align-items: start; margin-top: 24px; }
 .contextColumn { min-width: 0; }

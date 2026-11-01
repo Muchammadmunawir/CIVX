@@ -51,8 +51,8 @@ function ComparisonHighlights({ comparison }: { comparison: ComparisonView }) {
   const { highlights } = comparison.core;
   const { presentation } = comparison;
   return <section className={`product-card ${styles.highlights}`} aria-labelledby="highlights-heading">
-    <h2 className="product-section-title" id="highlights-heading">Selisih terbesar</h2>
-    <p className="product-caption">Seluruh nilai yang seri tetap ditampilkan. Ini bukan urutan wilayah atau penentu prioritas kebijakan.</p>
+    <h2 className="product-section-title" id="highlights-heading">Perbedaan tekanan relatif terbesar</h2>
+    <p className="product-caption">Sorotan selisih pada skala tekanan relatif. Bukan penentu prioritas kebijakan.</p>
     <h3>Dimensi</h3>
     <ul className={styles.highlightList}>{highlights.largestDimensionDifferences.map(dimension => <li key={dimension.dimensionId}>
       <div><strong>{dimension.dimensionName}</strong><span>{presentation.relationLabels[dimension.relation]}</span></div>
@@ -92,10 +92,7 @@ function IndicatorComparison({ indicator, comparison }: {
           <tr><th scope="row">B · {comparison.regionB.name}</th><td>{formatRaw(indicator.rawValueB, indicator.unit)}</td><td>{formatScore(indicator.normalizedPressureB)}</td></tr>
         </tbody>
       </table></div>
-      <details className={styles.disclosure}><summary>Presisi tercatat dan penunjuk bukti</summary>
-        <p className="product-caption">Nilai berikut dipertahankan tanpa pembulatan tampilan. Penunjuk bukti merujuk rekaman perhitungan, bukan URL sumber.</p>
-        <pre>{JSON.stringify(indicator, null, 2)}</pre>
-      </details>
+      <Link className="civx-text-link" href="/methodology#normalisasi">Cara membaca tekanan ternormalisasi <span aria-hidden="true">→</span></Link>
     </div>
   </details>;
 }
@@ -123,7 +120,7 @@ function ComparisonResults({ comparison }: { comparison: ComparisonView }) {
     </div>
     <section className="product-section" aria-labelledby="indicators-heading">
       <div className={styles.sectionHead}><h2 className="product-section-title" id="indicators-heading">Rincian {core.indicators.length} indikator</h2><p className="product-caption">{presentation.indicatorDifferenceLabel} · poin A − B</p></div>
-      <p className="product-caption">A: {regionA.name} · B: {regionB.name}. Buka setiap baris untuk nilai mentah, satuan, periode, dan presisi tercatat.</p>
+      <p className="product-caption">A: {regionA.name} · B: {regionB.name}. Buka setiap baris untuk nilai mentah, satuan, dan periode rujukan.</p>
       <div className={styles.indicatorList}>{core.indicators.map(indicator => <IndicatorComparison key={indicator.indicatorId} indicator={indicator} comparison={comparison} />)}</div>
     </section>
     <section className="product-section" aria-labelledby="comparison-context-heading">
@@ -134,12 +131,11 @@ function ComparisonResults({ comparison }: { comparison: ComparisonView }) {
         <div className={styles.contextColumn}><h3>B · {regionB.name}</h3><ContextSection sections={comparison.context.regionB} idPrefix={`compare-b-${regionB.id}`} headingLevel={4} /></div>
       </div>
     </section>
-    <details className={`product-card ${styles.disclosure} ${styles.methodDisclosure}`}>
-      <summary>Metode, metadata, dan presisi skor perbandingan</summary>
-      <p>{core.metadata.interpretation}</p>
-      <p className="product-caption">Rekaman asli berikut mempertahankan presisi skor, konvensi selisih, aturan kesamaan, sidik artefak, dan status rilis.</p>
-      <pre>{JSON.stringify({ overall: core.overall, dimensions: core.dimensions, metadata: core.metadata, methodology: comparison.methodology }, null, 2)}</pre>
-    </details>
+    <section className={`product-card ${styles.methodDisclosure}`} aria-labelledby="comparison-method-heading">
+      <h2 className="product-section-title" id="comparison-method-heading">Baca perbandingan bersama metodenya</h2>
+      <p>Skor memakai kohort tetap 27 wilayah pada 2023. Selisih menunjukkan perbedaan tekanan relatif, bukan sebab-akibat atau signifikansi statistik.</p>
+      <Link className="civx-text-link" href="/methodology">Metodologi dan keterbatasan <span aria-hidden="true">→</span></Link>
+    </section>
   </>;
 }
 

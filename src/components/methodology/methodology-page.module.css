@@ -39,13 +39,6 @@
 .formulas > p:last-child { font-size: .8125rem; margin-bottom: 0; }
 .list { padding-left: 1.25rem; margin: 1rem 0 1.5rem; }
 .list li + li { margin-top: .75rem; }
-.details { border-top: 1px solid var(--border); padding-top: .5rem; margin-top: 1rem; }
-.details summary { cursor: pointer; color: var(--accent); font-size: .875rem; font-weight: 600; padding-block: .75rem; min-height: 2.75rem; }
-.details summary:hover { text-decoration: underline; text-underline-offset: 3px; }
-.metadata { display: grid; gap: .75rem; margin: 1rem 0; font-size: .8125rem; line-height: 1.7; }
-.metadata > div { display: grid; grid-template-columns: minmax(9rem, .7fr) minmax(0, 1fr); gap: 1rem; }
-.metadata dt { color: var(--muted); }
-.metadata dd { margin: 0; overflow-wrap: anywhere; }
 .page a:focus-visible, .page summary:focus-visible, .page [tabindex]:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 @media (max-width: 1000px) {
   .layout { grid-template-columns: 10.5rem minmax(0, 1fr); gap: 1.5rem; }
@@ -56,6 +49,5 @@
   .contents { position: static; border-bottom: 1px solid var(--border); padding-bottom: 1rem; }
   .contents ul { display: flex; flex-wrap: wrap; column-gap: 1.25rem; }
   .sidebarNote { display: none; }
-  .metadata > div { grid-template-columns: minmax(0, 1fr); gap: .25rem; }
   .formulas { padding: 1rem; }
 }

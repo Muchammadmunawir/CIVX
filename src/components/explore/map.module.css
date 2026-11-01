@@ -29,7 +29,7 @@
 .home .heading strong { display: block; color: var(--orange); font-size: 32px; margin-top: 8px; }
 .home .grid { display: block; }
 .home .mapArea { border: 0; background: none; padding: 8px 0 0; }
-.home .svg { max-height: 480px; }
+.home .svg { max-height: 520px; }
 .home .legend { justify-content: center; margin-top: 12px; }
 .home .inspection { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 20px; padding: 16px; margin-top: 20px; }
 .home .inspection label { grid-column: 1; }

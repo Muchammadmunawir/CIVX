@@ -93,7 +93,7 @@ test("swapping selected regions preserves API values and reverses every rendered
   assertComparisonOutput(reverse);
 });
 
-test("same-region selection renders exact ties and retains all tied dimension and indicator highlights", () => {
+test("same-region selection renders exact ties and retains the reviewed highlight selection", () => {
   const selection = selectComparison("3273", "3273");
   const expected = getComparisonProductView2023("3273", "3273");
   assert.deepEqual(selection.comparison, expected);
@@ -102,11 +102,22 @@ test("same-region selection renders exact ties and retains all tied dimension an
   const highlights = html.split('aria-labelledby="highlights-heading"')[1].split("</section>")[0];
   const items = [...highlights.matchAll(/<li\b[^>]*>([\s\S]*?)<\/li>/g)].map(match => match[1]);
   const expectedHighlights = [...expected.core.highlights.largestDimensionDifferences, ...expected.core.highlights.largestNormalizedPressureDifferences];
-  assert.equal(items.length, 24);
-  assert.equal(expectedHighlights.length, 24);
+  assert.equal(items.length, expectedHighlights.length);
   for (const [index, highlight] of expectedHighlights.entries()) {
     assert.ok(items[index].includes(escape(highlight.dimensionName ?? highlight.indicatorName)));
     assert.ok(items[index].includes(escape(expected.presentation.relationLabels[highlight.relation])));
     assert.ok(items[index].includes(`${escape(formatDifference(highlight.delta))} poin`));
   }
+});
+
+test("comparison preserves non-comparative context and contains no debug dump", () => {
+  const selection = selectComparison("3273", "3276");
+  const html = assertComparisonOutput(selection);
+  const context = html.split('aria-labelledby="comparison-context-heading"')[1].split('aria-labelledby="comparison-method-heading"')[0];
+  assert.equal(selection.comparison.context.comparisonPermitted, false);
+  assert.ok(context.includes(escape(selection.comparison.regionA.name)));
+  assert.ok(context.includes(escape(selection.comparison.regionB.name)));
+  assert.doesNotMatch(context, /A − B|class="[^"]*highlightValue/);
+  assert.doesNotMatch(html, /<pre\b|scoringPointer|SCORED_NOT_RELEASED|INSIGHTS_NOT_RELEASED|SHA-256|data\/processed\//);
+  assert.match(html, /href="\/methodology"/);
 });

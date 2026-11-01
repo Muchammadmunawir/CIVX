@@ -3,7 +3,7 @@
 .breadcrumb { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin-bottom: 1.25rem; color: var(--muted); font-size: 0.8125rem; line-height: 1.6; }
 .breadcrumb a { color: inherit; text-decoration: none; }
 .breadcrumb a:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 0.25rem; }
-.overview { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 0.85fr); align-items: stretch; gap: 1.5rem; }
+.overview { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: start; gap: 1.5rem; }
 .overview > section { min-width: 0; }
 .scoreCard { display: flex; flex-direction: column; align-items: start; }
 .scoreCard > .scoreNote { margin-top: auto; padding-top: 1rem; }
@@ -11,14 +11,15 @@
 .interpretation h2, .identity h2 { margin: 0 0 1rem; font-size: 1rem; font-weight: 600; line-height: 1.5; }
 .interpretation > p:not(:last-child) { margin: 0 0 1rem; font-size: 0.9375rem; line-height: 1.7; }
 .interpretation > p:last-child { margin-bottom: 0; }
+.identityRecord { display: grid; grid-template-columns: 5rem minmax(0, 1fr); align-items: start; gap: 1rem; }
 .identity dl { display: grid; gap: 0.625rem; margin: 0; font-size: 0.8125rem; line-height: 1.7; }
-.identity dl > div { display: grid; grid-template-columns: 4rem minmax(0, 1fr); gap: 0.5rem; }
-.identity dt { color: var(--muted); }
+.identity dl > div { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.125rem; }
+.identity dt { color: var(--muted); font-size: 0.6875rem; }
 .identity dd { min-width: 0; margin: 0; overflow-wrap: anywhere; }
 .notice { margin-top: 1.5rem; }
-.anchors { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1.5rem; margin: 1.5rem 0; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
-.anchors a { display: inline-flex; align-items: center; min-height: 2.75rem; padding: 0.5rem 0; color: var(--muted); font-size: 0.875rem; text-decoration: none; border-bottom: 2px solid transparent; }
-.anchors a:hover { color: var(--accent); border-bottom-color: var(--orange); }
+.anchors { display: flex; flex-wrap: wrap; align-items: center; gap: 0 1.5rem; margin: 1.5rem 0; border-bottom: 1px solid var(--border); }
+.anchors a { display: inline-flex; align-items: center; min-height: 3.25rem; padding: 0.75rem 0; color: var(--muted); font-size: 0.875rem; font-weight: 500; text-decoration: none; border-bottom: 2px solid transparent; }
+.anchors a:hover, .anchors a:focus-visible { color: var(--accent); border-bottom-color: var(--orange); }
 .profileGrid { align-items: start; scroll-margin-top: 6rem; }
 .profileGrid > section { min-width: 0; }
 .profileGrid > section > h2 { margin-top: 0; }
@@ -29,14 +30,6 @@
 .insight:last-child { padding-bottom: 0; }
 .insight h3 { margin: 0 0 0.625rem; font-size: 0.9375rem; line-height: 1.6; font-weight: 600; }
 .insight p { margin: 0; font-size: 0.875rem; line-height: 1.8; overflow-wrap: anywhere; }
-.disclosure { margin-top: 0.875rem; min-width: 0; font-size: 0.8125rem; line-height: 1.7; overflow-wrap: anywhere; }
-.disclosure > summary { cursor: pointer; min-height: 2.75rem; padding: 0.75rem 0; color: var(--muted); font-weight: 500; }
-.disclosure[open] > summary { color: var(--foreground); }
-.metadata { display: grid; gap: 0.875rem; margin: 1rem 0; font-size: 0.8125rem; line-height: 1.75; }
-.metadata > div { display: grid; grid-template-columns: minmax(0, 0.4fr) minmax(0, 1fr); gap: 1rem; }
-.metadata dt { color: var(--muted); }
-.metadata dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
-.metadata code { white-space: normal; overflow-wrap: anywhere; font-size: 0.8125rem; }
 .section { scroll-margin-top: 6rem; min-width: 0; }
 .sectionHeading { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.5rem 1rem; }
 .sectionHeading h2 { margin-top: 0; margin-bottom: 0; }
@@ -63,6 +56,5 @@
 }
 
 @media (max-width: 480px) {
-  .metadata > div { grid-template-columns: minmax(0, 1fr); gap: 0.25rem; }
   .breadcrumb { font-size: 0.75rem; }
 }

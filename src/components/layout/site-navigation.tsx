@@ -12,6 +12,6 @@ export function SiteNavigation() {
     if (event.key === "Escape") { setOpen(false); toggle.current?.focus(); }
   }}>
     <button ref={toggle} className="civx-menu-toggle" type="button" aria-expanded={open} aria-controls="site-navigation" onClick={() => setOpen(!open)}>Menu <span aria-hidden="true">{open ? "−" : "+"}</span></button>
-    <div id="site-navigation" onClick={event => { if ((event.target as HTMLElement).closest("a")) setOpen(false); }}><NavigationLinks pathname={pathname} /></div>
+    <div id="site-navigation" onClick={event => { if ((event.target as HTMLElement).closest("a")) { setOpen(false); toggle.current?.focus(); } }}><NavigationLinks pathname={pathname} /></div>
   </div>;
 }

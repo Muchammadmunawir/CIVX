@@ -3,10 +3,11 @@ import { getExploreRegionsProduct2023, getProductMethodology2023, getRegionProdu
 import type { CivxContextProductItem2023, CivxIndicatorProduct2023, CivxProductSource2023, CivxProductUncertainty2023, CivxRegionProductHeader2023 } from "@/lib/civx/product-view-types-2023";
 import { Notice, PageHeading, SourceLink } from "@/components/product/product-ui";
 import { formatRaw } from "@/components/product/format";
+import { SourcesBrowser } from "./sources-browser";
 import styles from "./sources-page.module.css";
 
 type CoreEntry = { region: CivxRegionProductHeader2023; indicator: CivxIndicatorProduct2023 };
-type ContextEntry = { region: CivxRegionProductHeader2023; item: CivxContextProductItem2023 };
+type ContextEntry = { region: CivxRegionProductHeader2023; item: CivxContextProductItem2023; sectionTitle: string };
 
 function SourceMetadata({ source, label }: { source: CivxProductSource2023; label: string }) {
   return <div className={styles.source}>
@@ -14,13 +15,12 @@ function SourceMetadata({ source, label }: { source: CivxProductSource2023; labe
     <p className={styles.publisher}>{source.publisher}</p>
     <SourceLink source={source} />
     <details className={styles.details}>
-      <summary>Lokasi, tanggal, dan metadata sumber</summary>
+      <summary>Lokasi dan tanggal sumber</summary>
     <dl className={styles.metadata}>
       <div><dt>URL asli</dt><dd><a href={source.url} target="_blank" rel="noopener noreferrer">{source.url}<span className="civx-sr-only"> (buka tab baru)</span></a></dd></div>
-      <div><dt>Lokasi tabel / halaman</dt><dd>{source.locator ?? "Tidak dicantumkan pada metadata sumber; lihat lokasi observasi bila tersedia."}</dd></div>
-      <div><dt>Tanggal terbit</dt><dd>{source.publicationDate ?? "Tidak tersedia dalam metadata"}</dd></div>
-      <div><dt>Tanggal akses</dt><dd>{source.accessedAt ?? "Tidak tersedia dalam metadata"}</dd></div>
-      <div><dt>ID sumber</dt><dd>{source.sourceId}</dd></div>
+      <div><dt>Lokasi tabel / halaman</dt><dd>{source.locator ?? "Tidak dicantumkan; lihat lokasi observasi bila tersedia."}</dd></div>
+      <div><dt>Tanggal terbit</dt><dd>{source.publicationDate ?? "Tidak tersedia"}</dd></div>
+      <div><dt>Tanggal akses</dt><dd>{source.accessedAt ?? "Tidak tersedia"}</dd></div>
     </dl>
     </details>
   </div>;
@@ -54,7 +54,7 @@ function CoreSourceCard({ entries }: { entries: readonly CoreEntry[] }) {
       <dl className={styles.period}>
         <div><dt>Periode referensi</dt><dd>{indicator.referencePeriod}</dd></div>
         <div><dt>Satuan</dt><dd>{indicator.unit}</dd></div>
-        <div><dt>Cakupan model</dt><dd>{entries.length} kabupaten/kota</dd></div>
+        <div><dt>Cakupan wilayah</dt><dd>{entries.length} kabupaten/kota</dd></div>
       </dl>
     </div>
     <details className={styles.details}>
@@ -73,7 +73,7 @@ function CoreSourceCard({ entries }: { entries: readonly CoreEntry[] }) {
       <p className="product-caption">Catatan sumber dipertahankan dalam bahasa aslinya. Periode referensi tidak selalu sama dengan tahun publikasi.</p>
       <details className={styles.details}>
         <summary>Ketidakpastian per wilayah ({entries.length} wilayah)</summary>
-        <p>Nilai ketidakpastian bersifat spesifik wilayah. Metadata yang tidak tersedia bukan nol atau bukti kepastian.</p>
+        <p>Nilai ketidakpastian berlaku untuk masing-masing wilayah. Keterangan yang tidak tersedia bukan nol atau bukti kepastian.</p>
         <div className={styles.regionEvidence}>{entries.map((entry) => <details className={styles.details} key={entry.region.id}>
           <summary>{entry.region.name} · BPS {entry.region.id}</summary>
           <Uncertainty uncertainty={entry.indicator.disclosure.uncertainty} />
@@ -111,7 +111,6 @@ function ContextSourceCard({ entries }: { entries: readonly ContextEntry[] }) {
         <div><dt>Penyebut</dt><dd>{item.denominator ?? "Tidak berlaku / tidak dicantumkan"}</dd></div>
         <div><dt>Hak dan penggunaan</dt><dd>{item.disclosure.usageNotes}</dd></div>
         <div><dt>Batas perbandingan</dt><dd>{item.disclosure.comparisonReason}</dd></div>
-        <div><dt>ID dataset</dt><dd>{item.datasetId}</dd></div>
       </dl>
       <ul className={styles.notes}>{item.disclosure.limitations.map((note, index) => <li key={`${index}-${note}`}>{note}</li>)}</ul>
       <h4>Cakupan dan observasi asli</h4>
@@ -127,7 +126,6 @@ function ContextSourceCard({ entries }: { entries: readonly ContextEntry[] }) {
             <div><dt>Nilai observasi</dt><dd>{formatRaw(observation.value, observation.unit)}</dd></div>
             <div><dt>Nilai sumber asli</dt><dd>{observation.sourceValue}</dd></div>
             <div><dt>Tingkat geografis</dt><dd>{observation.geographicLevel}</dd></div>
-            <div><dt>ID sumber</dt><dd>{observation.sourceId}</dd></div>
             <div><dt>Lokasi sumber</dt><dd>{observation.sourceLocator}</dd></div>
           </dl>
           <ul className={styles.notes}>{observation.limitations.map((note, index) => <li key={`${index}-${note}`}>{note}</li>)}</ul>
@@ -152,38 +150,50 @@ export function SourcesPage() {
     }
     for (const section of profile.context) for (const item of section.items) {
       const entries = context.get(item.datasetId);
-      if (entries) entries.push({ region, item });
-      else context.set(item.datasetId, [{ region, item }]);
+      if (entries) entries.push({ region, item, sectionTitle: section.title });
+      else context.set(item.datasetId, [{ region, item, sectionTitle: section.title }]);
     }
   }
 
+  const dimensions = [...new Set([...core.values()].map(([entry]) => entry.indicator.dimensionName))];
+  const sourceCards = [
+    ...[...core].map(([id, entries]) => {
+      const { indicator } = entries[0];
+      const sources = [indicator.disclosure.source, indicator.disclosure.numeratorSource, indicator.disclosure.denominatorSource];
+      return {
+        id,
+        scope: "CORE" as const,
+        dimension: indicator.dimensionName,
+        searchText: [indicator.displayName, indicator.dimensionName, ...sources.flatMap((source) => source ? [source.publisher, source.title ?? ""] : [])].join(" ").toLocaleLowerCase("id"),
+        card: <CoreSourceCard entries={entries} />,
+      };
+    }),
+    ...[...context].map(([id, entries]) => {
+      const { item, sectionTitle } = entries[0];
+      return {
+        id,
+        scope: "CONTEXT" as const,
+        dimension: null,
+        searchText: [item.title, sectionTitle, ...item.sources.flatMap((source) => [source.publisher, source.title ?? ""])].join(" ").toLocaleLowerCase("id"),
+        card: <ContextSourceCard entries={entries} />,
+      };
+    }),
+  ];
+
   return <main className={`civx-container product-page ${styles.page}`}>
-    <PageHeading breadcrumb="Sumber Data" title="Sumber yang bisa ditelusuri" description="Kenali sumber, periode, cakupan, dan keterbatasan bukti di balik model CIVX 2023." />
-    <Notice>Sumber tercatat bukan sertifikasi mutu atau hak redistribusi. Model tetap {methodology.scoreStatus}; insight tetap {methodology.insightStatus}. Integrasi antarmuka bukan persetujuan rilis publik.</Notice>
+    <PageHeading breadcrumb="Sumber Data" title="Sumber yang bisa ditelusuri" description="Telusuri sumber, periode, cakupan, dan keterbatasan data CIVX 2023." />
+    <Notice>Pencantuman sumber bukan sertifikasi mutu atau izin redistribusi. Penggunaan ulang dan rilis publik tetap memerlukan peninjauan hak serta ketentuan setiap penerbit.</Notice>
     <dl className={styles.summary}>
-      <div className="product-card"><dt>Indikator CORE</dt><dd>{core.size}</dd><dd className={styles.summaryNote}>Sumber indikator yang masuk model {methodology.referenceYear}; bukan jumlah dataset unik.</dd></div>
+      <div className="product-card"><dt>Indikator CORE</dt><dd>{core.size}</dd><dd className={styles.summaryNote}>Indikator yang masuk skor {methodology.referenceYear}. Satu penerbit dapat menjadi sumber beberapa indikator.</dd></div>
       <div className="product-card"><dt>Dataset CONTEXT</dt><dd>{context.size}</dd><dd className={styles.summaryNote}>Memberi konteks tambahan. Tidak memengaruhi skor.</dd></div>
-      <div className="product-card"><dt>Kohort model</dt><dd>{methodology.cohortSize} wilayah</dd><dd className={styles.summaryNote}>Kabupaten/kota {methodology.province}; cakupan CONTEXT berbeda per dataset.</dd></div>
+      <div className="product-card"><dt>Cakupan CORE</dt><dd>{methodology.cohortSize} wilayah</dd><dd className={styles.summaryNote}>Kabupaten/kota {methodology.province}; cakupan CONTEXT berbeda per dataset.</dd></div>
     </dl>
-    <nav className={styles.directory} aria-label="Kelompok katalog sumber">
-      <a href="#sumber-core">Sumber CORE ({core.size})</a><a href="#sumber-context">Sumber CONTEXT ({context.size})</a><a href="#penggunaan-sumber">Status & penggunaan</a>
-    </nav>
-    <section className="product-section" aria-labelledby="sumber-core">
-      <h2 id="sumber-core" className="product-section-title">Sumber indikator CORE</h2>
-      <p className={styles.sectionIntro}>Metadata indikator dan sumber bersama ditampilkan sekali per indikator. Ketidakpastian setiap wilayah tetap tersedia pada pengungkapan. Tahun terbit sumber dapat berbeda dari periode referensi {methodology.referenceYear}.</p>
-      <div className={styles.catalog}>{[...core].map(([id, entries]) => <CoreSourceCard entries={entries} key={id} />)}</div>
-    </section>
-    <section className="product-section" aria-labelledby="sumber-context">
-      <h2 id="sumber-context" className="product-section-title">Katalog sumber CONTEXT</h2>
-      <p className={styles.sectionIntro}>Dataset dikelompokkan berdasarkan ID dataset dari seluruh {regions.length} profil wilayah, bukan dihitung ulang sebagai sumber baru per wilayah. Periode asli tetap berlaku, termasuk snapshot stasiun bertanggal. CONTEXT tidak mendukung selisih atau peringkat antarwilayah.</p>
-      <div className={styles.catalog}>{[...context].map(([id, entries]) => <ContextSourceCard entries={entries} key={id} />)}</div>
-    </section>
+    <SourcesBrowser sources={sourceCards} dimensions={dimensions} referenceYear={methodology.referenceYear} />
     <section className={`product-section product-card ${styles.governance}`} aria-labelledby="penggunaan-sumber">
-      <h2 id="penggunaan-sumber" className="product-section-title">Status & penggunaan sumber</h2>
-      <p>Daftar ini mempertahankan penerbit, URL asli, lokasi bukti, periode, dan catatan sumber. Ketiadaan tanggal atau ketidakpastian ditandai sebagai tidak tersedia, bukan diisi nilai buatan.</p>
+      <h2 id="penggunaan-sumber" className="product-section-title">Penggunaan sumber</h2>
+      <p>Daftar ini memuat penerbit, tautan asli, lokasi bukti, periode, dan catatan sumber. Tanggal atau ketidakpastian yang belum tersedia tidak diisi dengan nilai buatan.</p>
       <p>Hak penggunaan dan redistribusi belum dinyatakan tuntas. Tautan yang dapat dibuka tidak membuktikan izin penggunaan ulang. Ikuti catatan penggunaan setiap sumber.</p>
-      <p>Model {methodology.modelId}, versi {methodology.modelVersion}, memuat satu kohort {methodology.referenceYear}. Tidak ada tanggal pembaruan lintas-sumber atau seri sejarah skor yang sebanding untuk dinyatakan.</p>
-      <p>Persetujuan pengguna mencakup integrasi frontend, bukan rilis publik. Flag otorisasi integrasi produksi dalam artefak tetap {String(methodology.productionIntegrationAuthorized)}.</p>
+      <p>CORE mengacu pada {methodology.referenceYear}. Periode CONTEXT mengikuti masing-masing sumber, bukan seri perubahan skor dari tahun ke tahun.</p>
       <Link className="civx-button civx-button-primary" href="/methodology">Baca metodologi</Link>
     </section>
   </main>;

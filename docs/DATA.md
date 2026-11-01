@@ -1,6 +1,6 @@
 # CIVX Data
 
-**Status:** The current CIVX release uses one complete 2023 core contract across all 27 Jawa Barat kabupaten/kota. §10 supersedes the historical four- and five-input release descriptions.
+**Status:** Frontend integration now uses the reviewed 2023 product layer: 27 Jawa Barat kabupaten/kota, 18 CORE indicators, six dimensions, and seven separate contextual datasets. §15 supersedes earlier frontend-consumer descriptions; historical artifacts remain unchanged.
 **Geographic unit:** `kabupaten/kota` (Indonesian regencies and cities)
 
 ## 1. Data policy
@@ -199,3 +199,13 @@ Retain the overall BNPB IRBI 2023 index as the smallest defensible CORE. Its 27 
 Raw evidence, source receipts, acquisition limits and protocol live in `data/raw/resilience-audit-2023/`. `scripts/analyze-resilience-audit-2023.mjs` generates the research observations, full candidate register, fourteen-gate admission findings, descriptive statistics and Pearson/Spearman diagnostics under `data/processed/resilience-audit-2023-*`. These outputs do not feed production.
 
 Annual events and impact reports remain non-scoring context. More recorded disasters does not establish worse resilience. Resident-population normalization cannot repair ambiguous person-event numerators, and damaged dwellings require a defensible housing/exposure denominator. IKD, hazard-specific risk and vulnerability/exposure components must not be stacked beside overall IRBI as independent CORE indicators. No final weights, new indicators, scoring cutover, UI change, Public Health decision or recommendation feature is authorized.
+
+## 15. Reviewed frontend data boundary
+
+All frontend routes/components now consume `src/lib/civx/product-2023.ts`, not `current.ts` or frozen JSON directly. CORE comes from the existing frozen score/insight repository; no observation, normalization, weight, scoring rule, or artifact was changed for this integration.
+
+The only complete model year remains 2023. The six dimensions are Socioeconomic, Education, Basic Services, Public Health, Disaster Pressure, and Environment. Scores remain relative to the fixed 27-region cohort. Explore preserves canonical BPS order and exposes no public ranking or policy categories.
+
+Sources presents existing product evidence for all 18 CORE indicators and seven CONTEXT datasets. The context dataset's actual period is independent of the model year. Missing values remain unavailable; explicit zeros remain zero. Road and air measurements remain individual site observations, and Podes retains village/kelurahan theft occurrence rather than a crime rate.
+
+Existing approximate 2020 display geometry and attribution in §9 remain unchanged. Map coloring is uniform and carries no pressure classification. UI formatting is presentation-only; model values retain full precision. Webpack is used because the installed Turbopack JSON reserialization changes some frozen floating-point literals.

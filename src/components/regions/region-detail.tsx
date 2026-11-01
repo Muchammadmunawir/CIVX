@@ -2,9 +2,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ContextSection } from "@/components/product/context-section";
 import { IndicatorDisclosure } from "@/components/product/indicator-disclosure";
-import { formatRaw, regionType } from "@/components/product/format";
+import { regionType } from "@/components/product/format";
 import { DimensionBars, Notice, PageHeading, ScoreDisplay } from "@/components/product/product-ui";
 import { getRegionProductView2023 } from "@/lib/civx/product-2023";
+import { RegionSilhouette } from "./region-silhouette";
 import styles from "./region-detail.module.css";
 
 export function RegionDetail({ id }: { id: string }) {
@@ -33,12 +34,15 @@ export function RegionDetail({ id }: { id: string }) {
       </section>
       <section className={`product-card ${styles.identity}`} aria-labelledby={`${prefix}-identity`}>
         <h2 id={`${prefix}-identity`}>Identitas wilayah</h2>
+        <div className={styles.identityRecord}>
+        <RegionSilhouette regionId={region.id} regionName={region.name} />
         <dl>
           <div><dt>Wilayah</dt><dd>{region.name}</dd></div>
           <div><dt>Jenis</dt><dd>{regionType(region.type)}</dd></div>
           <div><dt>Provinsi</dt><dd>{region.province}</dd></div>
           <div><dt>Kode BPS</dt><dd>{region.id}</dd></div>
         </dl>
+        </div>
       </section>
     </div>
 
@@ -63,17 +67,6 @@ export function RegionDetail({ id }: { id: string }) {
         <div className={styles.insights}>{core.insights.map(insight => <section className={styles.insight} key={insight.insightId}>
           <h3>{insight.title}</h3>
           <p>{insight.message}</p>
-          <details className={styles.disclosure}>
-            <summary>Jejak bukti insight</summary>
-            <dl className={styles.metadata}>
-              <div><dt>ID insight</dt><dd><code>{insight.insightId}</code></dd></div>
-              <div><dt>Template</dt><dd><code>{insight.templateKey}</code></dd></div>
-              <div><dt>Kunci teks perbandingan</dt><dd><code>{insight.evidence.comparisonTextKey}</code></dd></div>
-              {insight.evidence.overall && <div><dt>Jejak skor keseluruhan</dt><dd><code>{insight.evidence.overall.scoringPointer}</code></dd></div>}
-              {insight.evidence.dimensions.map(dimension => <div key={dimension.dimensionId}><dt>Jejak dimensi {dimension.displayName}</dt><dd><code>{dimension.scoringPointer}</code></dd></div>)}
-              {insight.evidence.indicators.map(indicator => <div key={indicator.indicatorId}><dt>Jejak indikator {indicator.displayName}</dt><dd><code>{indicator.scoringPointer}</code></dd></div>)}
-            </dl>
-          </details>
         </section>)}</div>
       </section>
     </div>
@@ -95,26 +88,12 @@ export function RegionDetail({ id }: { id: string }) {
     <section className={`product-card product-section ${styles.section}`} id={`${prefix}-notes`} aria-labelledby={`${prefix}-notes-title`}>
       <h2 className="product-section-title" id={`${prefix}-notes-title`}>Catatan data</h2>
       <p className={styles.noteText}>Nilai 0 bukan berarti tanpa tekanan; nilai 100 bukan batas teoretis terburuk. Tidak ada tren atau rata-rata provinsi pada tampilan ini.</p>
-      <details className={styles.disclosure}>
-        <summary>Metodologi dan metadata artefak</summary>
-        <p className={styles.noteText}>{methodology.interpretation}</p>
-        <ul className={styles.notes}>{methodology.notes.map(note => <li key={note}>{note}</li>)}</ul>
-        <dl className={styles.metadata}>
-          <div><dt>Model</dt><dd><code>{methodology.modelId}</code> · versi {methodology.modelVersion}</dd></div>
-          <div><dt>Geografi</dt><dd>{methodology.geographicLevel} · {methodology.province}</dd></div>
-          <div><dt>Tahun acuan</dt><dd>{methodology.referenceYear}</dd></div>
-          <div><dt>Status artefak skor</dt><dd><code>{methodology.scoreStatus}</code></dd></div>
-          <div><dt>Status artefak insight</dt><dd><code>{methodology.insightStatus}</code></dd></div>
-          <div><dt>Flag integrasi produksi artefak</dt><dd>{String(methodology.productionIntegrationAuthorized)} · tidak diubah oleh tampilan ini</dd></div>
-          <div><dt>Peringkat publik dihasilkan</dt><dd>{String(methodology.publicRankingGenerated)}</dd></div>
-          <div><dt>Artefak skor</dt><dd><code>{methodology.sources.scoreArtifact.path}</code><br />SHA-256: <code>{methodology.sources.scoreArtifact.sha256}</code><br />{formatRaw(methodology.sources.scoreArtifact.bytes, "byte")}</dd></div>
-          <div><dt>Artefak insight</dt><dd><code>{methodology.sources.insightArtifact.path}</code><br />SHA-256: <code>{methodology.sources.insightArtifact.sha256}</code><br />{formatRaw(methodology.sources.insightArtifact.bytes, "byte")}</dd></div>
-          <div><dt>Definisi indikator beku</dt><dd><code>{methodology.sources.freezePath}</code></dd></div>
-          <div><dt>Normalisasi</dt><dd><code>{methodology.sources.normalizationPath}</code></dd></div>
-          <div><dt>Pembobotan</dt><dd><code>{methodology.sources.weightingPath}</code></dd></div>
-          <div><dt>Registri wilayah</dt><dd><code>{methodology.sources.registryPath}</code></dd></div>
-        </dl>
-      </details>
+      <p className={styles.noteText}>{methodology.interpretation}</p>
+      <ul className={styles.notes}>
+        <li>Skor membandingkan {methodology.cohortSize} kabupaten/kota {methodology.province} pada tahun acuan {methodology.referenceYear}, bukan perubahan antarwaktu.</li>
+        <li>Nilai asli, satuan, dan periode rujukan tetap mengikuti sumber setiap indikator. Rincian sumber dan keterbatasan dapat dibuka pada setiap indikator.</li>
+        <li>Data konteks memiliki cakupan berbeda dan tidak memengaruhi skor. Data yang tidak tercakup tidak diganti dengan nol.</li>
+      </ul>
       <div className={styles.footerLinks}><Link className="civx-button civx-button-secondary" href="/methodology">Baca metodologi <span aria-hidden="true">→</span></Link><Link className="civx-text-link" href="/sources">Lihat sumber data <span aria-hidden="true">→</span></Link></div>
     </section>
   </article>;

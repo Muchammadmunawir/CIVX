@@ -1,6 +1,6 @@
 # CIVX Architecture
 
-**Status:** One current CIVX — Jawa Barat 2023 release powers all production routes. §13 supersedes historical release-specific architecture below.
+**Status:** The Figma frontend integration in §14 now powers all canonical routes through `product-2023.ts`. It supersedes older `current.ts` and intercepted-dialog presentation architecture below without changing domain artifacts.
 
 ## 1. Application baseline
 
@@ -200,3 +200,21 @@ Home, Explore, canonical/intercepted region detail, Compare, Methodology and Sou
 The old product switch and competing versioned routes are removed. Internal release/version metadata remains in provenance and release history. Four-input raw/policy/output/document hashes remain pinned by `data/releases/civx-v1-integrity.json`; the five-input release and its builder remain archived. Current weights, sensitivity and eligibility decisions are in [METHODOLOGY-CURRENT.md](METHODOLOGY-CURRENT.md).
 
 No dependencies were added. Normal web builds consume committed processed JSON without downloading restricted books. Data regeneration verifies the original artifacts separately. Approximate 2020 display boundaries remain separate from 2023 scoring, with license attribution and effective-boundary caveats intact.
+
+## 14. Figma frontend and reviewed product facade
+
+Routes remain `/`, `/explore`, `/regions/[id]`, `/compare`, `/methodology`, and `/sources`. Server components read `src/lib/civx/product-2023.ts`; serializable presentation data crosses into client islands for region search, Explore filtering/table pagination, source-catalog browsing, SVG-map inspection, active/mobile navigation, and theme preference. Sources passes lightweight search metadata and server-rendered cards rather than importing the facade into the client graph. GET forms keep comparison selection shareable without an API server.
+
+`components/product/` owns shared display formatters, headings/notices/scores/bars, source evidence, indicator disclosures, and separate context disclosures. Each main surface keeps local CSS modules. `app/globals.css` defines semantic light/dark tokens, the shared shell, responsive layouts, focus states, and reduced-motion handling. Poppins loads through `next/font`; no package was added.
+
+The old intercepted/parallel detail route and obsolete `current.ts` frontend consumers are removed. Both map and list navigation now open the canonical standalone detail page. Old domain/data modules remain available for historical reproducibility.
+
+Region pages display unchanged controlled insights, six dimension scores, and 18 raw/normalized indicator disclosures. Comparison uses the reviewed comparison facade's differences, relations, and highlight selections; React never rescales, weights, scores, or recalculates a delta. Sources derives its directory from product evidence rather than creating a separate catalog.
+
+All seven contextual dataset slots retain their availability discriminants and source metadata. Shared disclosures never coerce null to zero, aggregate site observations, or compute context differences.
+
+The existing BPS-mapped SVG geometry stays display-only, uniformly colored, and credited as approximate 2020 geoBoundaries ADM2 boundaries. Non-map selectors and the canonical region list remain equivalent access paths.
+
+Explore uses nine-row table pages in canonical BPS order. Its map always receives the complete search/type-filter result. Regional identity silhouettes reuse the selected existing geometry path, derive tight bounds from its absolute polygon vertices, and remain decorative/display-only. Native context disclosures prioritize available values and site observations, with unavailable datasets grouped compactly and their reasons retained. Rendered product disclosures omit internal artifact paths, hashes, engine flags, and debug objects; those records remain unchanged for engineering traceability.
+
+Both development and builds explicitly use webpack to preserve imported JSON floating-point values. The installed Turbopack reserializes some numbers, failing the unchanged exact domain validator. The unused Tailwind import and Turbopack-only stylesheet rule were removed; this cutover adds no dependency, credential, service, or model mutation.

@@ -1,0 +1,10 @@
+.silhouette { display: grid; align-content: start; gap: 0.5rem; min-width: 0; margin: 0; }
+.svg { display: block; width: 100%; height: 4.5rem; color: var(--accent); }
+.svg path { fill: currentColor; stroke: var(--surface); stroke-width: 1; }
+.silhouette figcaption { display: grid; gap: 0.5rem; min-width: 0; color: var(--muted); font-size: 0.75rem; line-height: 1.65; overflow-wrap: anywhere; }
+.credits > summary { display: flex; align-items: center; min-height: 2.75rem; cursor: pointer; color: var(--accent); text-decoration: underline; text-underline-offset: 0.2em; }
+.credits p { margin: 0.5rem 0 0; }
+.credits summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.silhouette a { color: var(--accent); text-underline-offset: 0.2em; }
+.silhouette a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.unavailable { color: var(--muted); font-size: 0.8125rem; line-height: 1.6; }

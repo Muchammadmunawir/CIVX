@@ -1,7 +1,7 @@
 # CIVX Product
 
-**Status:** One current product: **CIVX — Jawa Barat 2023**, using a common complete analytical contract for all 27 kabupaten/kota.
-**Current presentation:** Home, Explore/map, regional records, Compare, Methodology and Sources consume one current processed release. Context Signals and Regional Advantages remain separate, non-scoring evidence. Earlier release descriptions below are historical unless superseded by §11.
+**Status:** One CIVX frontend now consumes the reviewed **2023, 27-region, 18-indicator, six-dimension** product layer. The Figma integration decision in §12 supersedes older presentation contracts below.
+**Release boundary:** Frontend integration is authorized; frozen model/insight release flags and publication-approval requirements remain unchanged.
 **Product:** CIVX (Civic Index)
 
 ## 1. Problem statement
@@ -130,3 +130,15 @@ Context includes density, traffic, mobility, crime and partial sector evidence, 
 Verified positives remain Whoosh in Bandung Barat `3217`, Kertajati in Majalengka `3210`, and Cisumdawu in Sumedang `3211`. Missing optional evidence means **No comparable verified data**, never no advantage or zero score. Advantages do not offset pressure.
 
 Internal release IDs, methodology versions, source manifests, hashes and archived outputs remain available for reproducibility. [METHODOLOGY.md](METHODOLOGY.md), [METHODOLOGY-V2.md](METHODOLOGY-V2.md) and [V2-SOURCE-AUDIT.md](V2-SOURCE-AUDIT.md) document historical decisions, not alternative current products.
+
+## 12. Reviewed product-layer frontend integration
+
+The user-authorized Figma integration supersedes the eight-input `current.ts` presentation and contextual-dialog flow. Canonical routes remain `/`, `/explore`, `/regions/[id]`, `/compare`, `/methodology`, and `/sources`. Both map and table links open the same standalone regional detail page.
+
+All product surfaces use `src/lib/civx/product-2023.ts`: 27 regions, 18 CORE indicators, six equally weighted dimensions, and one complete 2023 model. Higher CIVX means higher relative pressure within that cohort. No public rank, score sort, policy status category, province average, year selector, or time trend is presented.
+
+The six supplied Figma references define layout and visual style only. Structural summaries replace mock province/best/worst cards; six dimension bars replace the mock trend. Controlled insight records remain unchanged. Sources and Methodology disclose the actual evidence and model.
+
+CORE and the seven audited CONTEXT datasets remain separate. Context availability, zeros, individual sites, actual dates, and non-comparison restrictions survive presentation. The earlier Regional Advantages contract is not part of this reviewed product facade and is not imported from the old model.
+
+The integration does not release the frozen model, certify source rights, authorize new periods, or change source evidence. Implementation and verification details: [PRODUCT-INTEGRATION-2023.md](PRODUCT-INTEGRATION-2023.md#figma-frontend-integration).
