@@ -1,90 +1,79 @@
 # CIVX — Jawa Barat 2023
 
-One Civic Index for **27 kabupaten/kota**, using **eight validated common core indicators across four pressure dimensions**. Every published region uses the same 2023 analytical contract. CIVX is a transparent project-defined relative-pressure model, not an official government ranking, causal assessment or comprehensive measure of regional worth.
+CIVX describes **relative regional pressure** across **27 kabupaten/kota**, **18 CORE indicators**, and **six equally weighted dimensions**. A higher score means higher relative pressure within the fixed 2023 cohort, not better or worse regional quality, a causal explanation, or a policy priority.
+
+The frontend follows six supplied Figma references while replacing their illustrative values and methodology with the reviewed product layer. Frontend integration does not authorize a public model release. The frozen `SCORED_NOT_RELEASED`, `INSIGHTS_NOT_RELEASED`, and production-authorization flags remain unchanged.
 
 ## Run locally
 
-```bash
+```sh
 npm install
 npm run dev
 ```
 
-Visit `http://localhost:3000`. Before shipping:
+Open `http://localhost:3000`. Validate with:
 
-```bash
-npm run data:build
+```sh
 npm test
 npm run lint
 npm run build
+npm start
 ```
 
-Normal tests and web builds use committed processed data without downloading restricted publications. Data regeneration requires the fingerprint-matched original source artifacts. No dependencies were added for this cutover.
+Development and production builds explicitly use webpack. Next 16.4.2 Turbopack reserializes some imported JSON numbers: for example, `3.7037037037037037` becomes `3.703703703703704`, failing exact contextual coverage validation. Webpack preserves the reviewed values. Validation and model data are not weakened or rewritten to accommodate the bundler.
 
-## One product, three evidence layers
+No dependencies, credentials, external map services, database, or API server were added. Styling uses existing CSS modules and semantic global CSS tokens. The unused Tailwind import and Turbopack-only CSS rule were removed; installed packages remain unchanged. Poppins uses the existing `next/font` loader and is self-hosted after its build-time download.
 
-- **Civic Index:** poverty, open unemployment, HDI, improved sanitation, improved drinking-water source, Puskesmas availability per 100,000 residents, published DBD incidence per 100,000 residents, and official BNPB disaster risk index.
-- **Context Signals:** useful non-scoring evidence, including density, population, traffic, mobility, crime, roads and partial sector observations. Actual year, coverage and geography remain visible. Density is not an automatic penalty.
-- **Regional Advantages:** verified positive capabilities. Whoosh in Bandung Barat, Kertajati in Majalengka and Cisumdawu in Sumedang retain dated evidence and assignment reasons. Missing optional evidence means **No comparable verified data**, never no advantage or zero.
+## Routes
 
-Socioeconomic, Basic services, Public health and Resilience each receive 25%. Poverty/unemployment/HDI use 25/50/25 within Socioeconomic. Sanitation/water/Puskesmas share Basic services equally. DBD and disaster risk each represent their singleton dimension. Road condition fails network/denominator comparability and remains Context; no infrastructure score or map layer is fabricated. Full policy, source decisions and sensitivity: [current methodology](docs/METHODOLOGY-CURRENT.md).
+| Route | Behavior |
+| --- | --- |
+| `/` | Truthful cohort/model summaries and interactive Jawa Barat map. |
+| `/explore` | All 27 regions in canonical BPS order, name search, kabupaten/kota filter, neutral map, and region table. `?q=` supports search-form navigation. |
+| `/regions/[id]` | Standalone detail with score, six dimension bars, unchanged controlled insights, 18 grouped indicator disclosures, and separate context. Unknown IDs use Next's not-found boundary. |
+| `/compare?a=3201&b=3273` | Reviewed overall/dimension/indicator differences, two selectors, tied highlights, and separate context. Same-region ties are valid. Invalid or repeated query values show an error rather than substituted results. |
+| `/methodology` | Direction-aware min–max formulas, exact equal-dimension weights, equal weights within each dimension, source limitations, and model status. |
+| `/sources` | Evidence for all 18 CORE indicators and seven contextual datasets, with publishers, URLs, locators, periods, units, coverage, and limitations. |
 
-## Routes and read boundary
+Header search uses only the 27 known regions. Navigation, footer, active indicators, light/dark/system preference, disclosure controls, and responsive layouts share one application shell. There is no score sort, public regional ranking, status threshold, province average, year selector, or time-series chart.
 
-- `/` — current release introduction, dynamic methodology facts and regional entry points.
-- `/explore` — current Civic Index map/list, search/filter/sort, optional validated dimension layers and equivalent non-map access.
-- `/regions/[id]` — Civic Index/category, dimensions, core observations, Context Signals, Regional Advantages and provenance. Opening from Explore uses the preserved contextual dialog; direct access stays standalone.
-- `/compare` — two current regions, explicit score differences, dimension differences and raw/normalized/contribution differences. Unknown or identical selections are not silently substituted.
-- `/methodology` — current definitions, weights, normalization, missing-data policy, sensitivity, limitations and internal release history.
-- `/sources` — current source directory, observation locators, artifacts, provenance and candidate decisions.
+## Product boundary
 
-There is no competing methodology-product switch. Internal version identifiers remain in release metadata, provenance and history, not product navigation.
+Every product surface uses `src/lib/civx/product-2023.ts`:
 
-`src/lib/civx/current.ts` validates and exposes `data/processed/civx-jabar-2023-current.json`. All production surfaces read this boundary. Counts, dimensions, indicator explanations and supported map layers derive from release configuration, not hardcoded React data. UI components never normalize or score observations.
+- `getExploreRegionsProduct2023()`
+- `getRegionProductView2023(regionId)`
+- `getComparisonProductView2023(regionAId, regionBId)`
+- `getProductMethodology2023()`
 
-## Data pipeline and rebuilding
+React does not normalize, score, weight, regenerate insights, or calculate comparison differences. Display helpers round scores to one decimal in Indonesian number formatting while retaining full internal precision. Source values keep their units. Comparison deltas use the engine's unrounded A-minus-B values; independently rounded display numbers can differ slightly when subtracted.
 
-**Raw source artifacts → validated observations → methodology → processed release → UI**
+The former `current.ts` product is no longer imported by frontend routes or components. Historical domain/data files and tests remain available; obsolete frontend consumers and intercepted region dialogs were removed. The current flow opens a full region page from both maps and lists.
 
-Current transcriptions/audits live in `data/raw/current/`; current methodology lives in `data/methodology/civx-jabar-2023-current.json`. The builder generates Puskesmas rates from raw facility totals and exact 2023 population, retaining numerator, denominator, formula and both source references. Published DBD incidence is not replaced with a case/population calculation. IRBI is modeled disaster risk, not observed disaster impact.
+See [product integration](docs/PRODUCT-INTEGRATION-2023.md), [data access](docs/DATA-ACCESS-LAYER-2023.md), [comparison](docs/COMPARISON-ENGINE-2023.md), and [frozen scoring](docs/SCORING-ENGINE-2023.md). Historical four/eight-input documentation and regeneration commands do not define the newly integrated frontend model. Do not regenerate historical releases to build the frontend.
 
-The ignored BPS artifact must be at `data/raw/bps-jabar-dalam-angka-2024.pdf` with SHA-256 `500e82ecd02b081be83d884add8408fccc8fb1d57665f5b3e62a17ebc9f55f81` (11,915,084 bytes). The source manifest links the original official download. Health-profile and IRBI originals are separately fingerprinted and are not redistributed. Strict data regeneration checks original bytes and never silently bypasses a missing or changed source.
+## CORE and CONTEXT
 
-```bash
-npm run data:sensitivity
-npm run data:build
-```
+The six CORE dimensions retain their repository display names: Socioeconomic, Education, Basic Services, Public Health, Disaster Pressure, and Environment. Each receives exactly 1/6 of the overall score. Indicators share their dimension's weight equally. Only the complete 2023 model is available.
 
-If a restricted remote original is unavailable, explicitly replay the already-audited frozen transcriptions instead:
+CONTEXT is visually separate and never changes CIVX:
 
-```bash
-npm run data:sensitivity:replay
-npm run data:replay
-```
+- Commuter shares cover five regions; other regions remain unavailable, not zero.
+- Type C terminals preserve missing Cirebon/Subang observations and Banjar's explicit zero.
+- Podes records villages/kelurahan with theft occurrence, not a crime rate or safety score.
+- Bandung road observations retain individual sites, not a city average.
+- ISPU and PM2.5-component ISPU retain station observations and their actual timestamp, not regional averages or annual exposure.
 
-Replay verifies frozen source/policy hashes and all available local original artifacts. It is not a substitute claim of fresh original-byte verification. `CIVX_V2_HEALTH_PDF` and `CIVX_IRBI_PDF` may point to locally acquired originals outside the repository; supplied originals must pass the same size/SHA-256 checks. The processed release retains per-artifact verification receipts, visible on Sources.
+Expanded disclosures retain definitions, denominators, source limitations, uncertainty, and evidence pointers. Weighted denominators are not unweighted sample sizes. Missing uncertainty is not evidence of certainty.
 
-For this release, BPS and IRBI originals and local capability snapshots were verified. The unavailable health-profile original uses its unchanged, previously audited transcription and source fingerprint. Strict `npm run data:build` did not complete because the health-source fetch timed out; explicit replay generated all 27 current scores successfully.
+## Map and accessibility
 
-Sensitivity reports alternative budgets/allocations, regional score and order changes, correlations, category changes and limitations. Existing published output must reproduce exactly; changed observations or methods require a new release decision, not an invisible overwrite.
+The existing SVG implementation uses `data/geography/jabar-adm2-2020.json`, with its established BPS-code associations. All regions use neutral CIVX blue; hover/focus indicates inspection, not a pressure category. Native link titles and the inspection panel expose region name and score. Click opens detail. Selectors and the complete region list provide non-map access.
 
-The original four-input release remains byte-identical under `data/releases/civx-v1-integrity.json`, including its raw data, policy, output and [historical methodology](docs/METHODOLOGY.md). The five-input release, its [methodology](docs/METHODOLOGY-V2.md), [source audit](docs/V2-SOURCE-AUDIT.md) and regeneration scripts also remain archived. These are reproducibility records, not alternative current products.
+Geometry represents approximate **2020 geoBoundaries ADM2 boundaries**, not certified 2023 boundaries or a scoring input. Attribution: BPS, WFP, and OCHA ROAP via [geoBoundaries](https://www.geoboundaries.org/api/current/gbOpen/IDN/ADM2/), adapted under [CC BY 3.0 IGO](https://creativecommons.org/licenses/by/3.0/igo/). Provenance remains in [DATA.md §9](docs/DATA.md#9-geographic-display-geometry-separate-from-scoring).
 
-## Theme, map and interaction
+Small screens collapse navigation, stack grids and comparison cards, and scroll tables within their own frame. Semantic headings, labels, native buttons/links/details, visible focus, skip navigation, Escape dismissal, and reduced-motion support remain available. Browser smoke is not formal accessibility certification.
 
-Semantic tokens in `src/app/globals.css` define Light, Dark and System themes. Preference persists when storage permits and System follows OS changes. Theme, map, modal and motion behavior use existing dependencies only.
+## Limits and governance
 
-Explore retains the App Router parallel/intercepting region detail flow. Native dialog behavior preserves focus, Escape dismissal, scroll locking and Back/Forward context. Progressive disclosure keeps detailed sources and optional evidence below the primary score/dimensions. Reduced-motion preferences retain every action without travel.
-
-The map uses separately licensed **approximate 2020 geoBoundaries ADM2 display geometry**, not certified 2023 boundaries or a scoring input. Its [CC BY 3.0 IGO](https://creativecommons.org/licenses/by/3.0/igo/) attribution, source fingerprint and adaptation are documented in [DATA.md §9](docs/DATA.md#9-geographic-display-geometry-separate-from-scoring). Regeneration remains `node scripts/build-jabar-map.mjs`; normal web builds use committed geometry without network access.
-
-## Limits
-
-Weight sensitivity can move fine regional ordering materially. Scores and categories are descriptive model outputs, not statistical significance or policy thresholds. Puskesmas availability does not measure travel, staffing or actual access. Published DBD denominator vintage cannot be reconciled with separate available case/population tables. IRBI uses older hazard/vulnerability baselines and updated capacity, not actual 2023 losses.
-
-Independent source/method review, publication/reuse rights, certified effective-boundary compatibility, formal accessibility review, sampling uncertainty and optional evidence completeness remain unresolved. Whole source publications are not redistributed. Current implementation and exercised verification are recorded in [TASKS.md](docs/TASKS.md).
-
-## Verification for the unified release
-
-All **41 tests**, lint and the production build pass; the build generates 37 pages. Explicit audited-input replay produces 27 complete current scores and ten sensitivity scenarios. Strict source regeneration remains blocked by the unavailable health-profile original, not bypassed.
-
-Managed Chromium verifies Home, Explore/map, regional detail, Compare, Methodology and Sources at 1440, 768, 390 and 320px in both themes: 48 combinations without document overflow or hydration errors. Interaction smoke covers layers, empty-result recovery, derived-source disclosure, the three retained advantages, comparison swap/rejection, source receipts and contextual dialog focus/history/reload. This is not formal accessibility certification.
+Independent source/method review, source reuse rights, effective-boundary certification, formal accessibility review, and model release approval remain separate gates. Whole restricted publications are not redistributed. No deployment, new model year, trend, policy simulation, or context comparison is authorized by this integration. Verification evidence is recorded in [TASKS.md](docs/TASKS.md).

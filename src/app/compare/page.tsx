@@ -1,24 +1,20 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { ComparisonPage } from "@/components/compare/comparison-page";
 import { selectComparison } from "@/components/compare/comparison-selection";
-import { civicRelease } from "@/lib/civx/current";
+import { getExploreRegionsProduct2023 } from "@/lib/civx/product-2023";
 
 export const metadata: Metadata = {
-  title: "Compare regions | Civic Index",
-  description: `Compare ${civicRelease.period} Jawa Barat CIVX scores, dimensions, core observations and official source evidence.`,
+  title: "Bandingkan",
+  description: "Bandingkan tekanan relatif dua wilayah Jawa Barat pada model CIVX 2023, dengan enam dimensi dan 18 indikator.",
 };
 
 type SearchParams = Record<string, string | string[] | undefined>;
+export default function CompareRoute({ searchParams }: { searchParams: Promise<SearchParams> }) {
+  return <Suspense fallback={<main className="civx-container civx-state"><p role="status">Memuat perbandingan wilayah…</p></main>}><ComparisonContent searchParams={searchParams} /></Suspense>;
+}
 
-export default async function CompareRoute({ searchParams }: { searchParams: Promise<SearchParams> }) {
+async function ComparisonContent({ searchParams }: { searchParams: Promise<SearchParams> }) {
   const { a, b } = await searchParams;
-  const comparison = selectComparison(a, b);
-
-  return (
-    <ComparisonPage
-      comparison={comparison}
-      selectedA={typeof a === "string" ? a : comparison.eligible ? comparison.a.id : ""}
-      selectedB={typeof b === "string" ? b : comparison.eligible ? comparison.b.id : ""}
-    />
-  );
+  return <ComparisonPage {...selectComparison(a, b)} regions={getExploreRegionsProduct2023()} />;
 }

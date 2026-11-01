@@ -1,19 +1,16 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { themeBootScript } from "@/components/layout/theme";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const poppins = Poppins({
+  variable: "--font-civx",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -21,15 +18,15 @@ export const metadata: Metadata = {
     default: "CIVX · Jawa Barat",
     template: "%s · CIVX",
   },
-  description: "Jawa Barat civic pressure, verified public observations, regional context and capabilities in one transparent index.",
+  description: "Tekanan relatif 27 kabupaten/kota Jawa Barat dalam model CIVX 2023. Telusuri enam dimensi, 18 indikator, dan sumbernya.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="id" suppressHydrationWarning className={poppins.variable}>
       <body>
         <script dangerouslySetInnerHTML={{ __html: themeBootScript }} />
-        <a className="civx-skip-link" href="#main-content">Skip to content</a>
+        <a className="civx-skip-link" href="#main-content">Lewati ke konten</a>
         <SiteHeader />
         <div id="main-content" tabIndex={-1}>{children}</div>
         <SiteFooter />

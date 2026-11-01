@@ -1,59 +1,42 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import { RegionList } from "@/components/data/region-list";
-import { RegionDiscovery, type CategoryFilter, type SortOrder } from "./region-discovery";
+import Link from "next/link";
+import { useState } from "react";
+import type { CivxExploreRegionProduct2023 } from "@/lib/civx/product-view-types-2023";
+import { formatScore, regionType } from "@/components/product/format";
 import { WestJavaMap } from "./west-java-map";
-import { scoreForLayer, type PressureLayerId } from "./pressure-layer";
-import { categoryForScore, civicRelease, dimensions } from "@/lib/civx/current";
-import type { V2Region } from "@/lib/civx/v2/types";
 import styles from "./explore.module.css";
 
-const decimal = new Intl.NumberFormat("en-US", { maximumFractionDigits: 2 });
-const categories = [{ key: "lower", label: "Lower" }, { key: "moderate", label: "Moderate" }, { key: "higher", label: "Higher" }] as const;
+export function RegionTable({ regions }: { regions: readonly CivxExploreRegionProduct2023[] }) {
+  return <div className="product-table-wrap" role="region" aria-label="Tabel daftar wilayah" tabIndex={0}><table className={`product-table ${styles.table}`}>
+    <caption className="civx-sr-only">Daftar wilayah CIVX 2023 dalam urutan kode BPS</caption>
+    <thead><tr><th scope="col">Wilayah</th><th scope="col">Jenis</th><th scope="col" className="numeric">Skor CIVX</th><th scope="col">Tekanan relatif</th><th scope="col">Aksi</th></tr></thead>
+    <tbody>{regions.map(view => <tr key={view.region.id}>
+      <th scope="row"><Link href={`/regions/${view.region.id}`}>{view.region.name}</Link></th>
+      <td>{regionType(view.region.type)}</td>
+      <td className={`numeric ${styles.score}`}>{formatScore(view.core.overallScore)}</td>
+      <td><div className={styles.pressure} aria-hidden="true"><span style={{width:`${view.core.overallScore}%`}} /></div><span className="product-caption">Kohort Jawa Barat 2023</span></td>
+      <td><Link className={styles.detailLink} href={`/regions/${view.region.id}`} aria-label={`Detail ${view.region.name}`}>Detail <span aria-hidden="true">↗</span></Link></td>
+    </tr>)}</tbody>
+  </table></div>;
+}
 
-export function ExploreBrowser({ regions }: { regions: V2Region[] }) {
-  const [search, setSearch] = useState("");
-  const [sort, setSort] = useState<SortOrder>("score-desc");
-  const [category, setCategory] = useState<CategoryFilter>("all");
-  const [layer, setLayer] = useState<PressureLayerId>("overall");
-  const layers = useMemo(() => [
-    { id: "overall" as const, label: "Overall Civic Index" },
-    ...dimensions.filter(dimension => civicRelease.exploreLayers.some(registered => registered.id === dimension.id && registered.kind === "core_score_indicator") && regions.every(region => scoreForLayer(region, dimension.id) !== undefined)).map(dimension => ({ id: dimension.id, label: dimension.label })),
-  ], [regions]);
-  const layerLabel = layers.find(value => value.id === layer)?.label ?? "Overall Civic Index";
-  const published = useMemo(() => regions.filter(region => scoreForLayer(region, layer) !== undefined), [regions, layer]);
-  const scores = useMemo(() => published.map(region => scoreForLayer(region, layer)!).sort((a, b) => a - b), [published, layer]);
-  const middle = Math.floor(scores.length / 2);
-  const median = scores.length ? scores.length % 2 ? scores[middle] : (scores[middle - 1] + scores[middle]) / 2 : null;
-  const filteredRegions = useMemo(() => {
-    const query = search.trim().toLocaleLowerCase();
-    const filtered = regions.filter(region => {
-      const score = scoreForLayer(region, layer);
-      return (category === "all" || score !== undefined && categoryForScore(score) === category) && (!query || region.name.toLocaleLowerCase().includes(query) || region.id.includes(query));
-    });
-    filtered.sort((a, b) => {
-      if (sort === "name") return a.name.localeCompare(b.name);
-      const aScore = scoreForLayer(a, layer);
-      const bScore = scoreForLayer(b, layer);
-      if (aScore === undefined) return bScore === undefined ? a.name.localeCompare(b.name) : 1;
-      if (bScore === undefined) return -1;
-      return (sort === "score-asc" ? aScore - bScore : bScore - aScore) || a.name.localeCompare(b.name);
-    });
-    return filtered;
-  }, [regions, category, search, sort, layer]);
-  const visibleIds = useMemo(() => new Set(filteredRegions.map(region => region.id)), [filteredRegions]);
-  const clearFilters = () => { setSearch(""); setCategory("all"); };
-  return (
-    <section className={`civx-container ${styles.results}`} aria-labelledby="regions-title">
-      <div className={styles.control}><label htmlFor="pressure-layer">Pressure layer</label><select id="pressure-layer" value={layer} onChange={event => setLayer(event.target.value as PressureLayerId)} aria-describedby="layer-help" aria-controls="region-results">{layers.map(value => <option value={value.id} key={value.id}>{value.label}</option>)}</select><p id="layer-help">Only validated pressure dimensions are available. Layer selection changes the display, never the Civic Index formula or reference bounds.</p></div>
-      <RegionDiscovery totalCount={regions.length} filteredCount={filteredRegions.length} search={search} sort={sort} category={category} onSearchChange={setSearch} onSortChange={setSort} onCategoryChange={setCategory} onClear={clearFilters} />
-      <WestJavaMap regions={regions} visibleIds={visibleIds} layer={layer} layerLabel={layerLabel} />
-      {median !== null && <section className={styles.distribution} aria-label={`${layerLabel} release distribution`}><div className={styles.distributionIntro}><h2>Release distribution</h2><p>{layerLabel} · Median <strong>{decimal.format(median)}/100</strong> · {published.length} published scores</p></div><ul className={styles.distributionList}>{categories.map(({ key, label }) => {
-        const count = published.filter(region => categoryForScore(scoreForLayer(region, layer)!) === key).length;
-        return <li className={styles[`distribution${key}`]} key={key}><div className={styles.distributionLabel}><span>{label}</span><strong>{count}</strong></div><span className={styles.distributionTrack} aria-hidden="true"><span style={{ width: `${count / published.length * 100}%` }} /></span></li>;
-      })}</ul></section>}
-      <div id="region-results"><div className={styles.resultsHeading}><div><h2 id="regions-title">Regional results</h2></div><p>{layerLabel}. Open a record for all core indicators, dimensions, Context Signals and Regional Advantages.</p></div>{filteredRegions.length ? <RegionList regions={filteredRegions} layer={layer} layerLabel={layerLabel} /> : <div className={styles.emptyState}><h3>No regions match these filters</h3><p>Try a region name or four-digit ID, choose another category, or clear filters.</p><button type="button" onClick={clearFilters}>Clear filters</button></div>}</div>
+export function ExploreBrowser({ regions, initialSearch = "" }: { regions: readonly CivxExploreRegionProduct2023[]; initialSearch?: string }) {
+  const [search, setSearch] = useState(initialSearch);
+  const [type, setType] = useState("all");
+  const query = search.trim().toLocaleLowerCase("id");
+  const filtered = regions.filter(view => (type === "all" || view.region.type === type) && view.region.name.toLocaleLowerCase("id").includes(query));
+  const clear = () => { setSearch(""); setType("all"); };
+  return <>
+    <div className={styles.filters} role="search" aria-label="Filter daftar wilayah">
+      <div className={styles.search}><label className="civx-sr-only" htmlFor="explore-query">Cari kabupaten atau kota</label><input id="explore-query" type="search" placeholder="Cari kabupaten atau kota…" value={search} onChange={event => setSearch(event.target.value)} aria-controls="region-results" /></div>
+      <div><label className="civx-sr-only" htmlFor="explore-type">Jenis wilayah</label><select id="explore-type" value={type} onChange={event => setType(event.target.value)} aria-controls="region-results"><option value="all">Semua jenis</option><option value="kabupaten">Kabupaten</option><option value="kota">Kota</option></select></div>
+      <button type="button" onClick={clear}>Atur ulang</button>
+    </div>
+    <WestJavaMap regions={regions} visibleIds={filtered.map(view => view.region.id)} />
+    <section className="product-section" id="region-results" aria-labelledby="regions-title">
+      <div className={styles.resultsHeading}><h2 className="product-section-title" id="regions-title">Daftar wilayah</h2><p className="product-caption" role="status">{filtered.length} dari {regions.length} wilayah · urutan kode BPS</p></div>
+      {filtered.length ? <RegionTable regions={filtered} /> : <div className="product-card"><h3>Tidak ada wilayah yang cocok</h3><p>Coba nama lain atau hapus filter jenis wilayah.</p><button className="civx-button civx-button-secondary" type="button" onClick={clear}>Atur ulang pencarian</button></div>}
     </section>
-  );
+  </>;
 }
