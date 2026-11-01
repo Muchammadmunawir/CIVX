@@ -1,180 +1,169 @@
 import Link from "next/link";
-import { PressureBadge } from "@/components/data/pressure-badge";
-import { categoryForScore, civicRelease, coreIndicators, currentRegions, dimensions } from "@/lib/civx/current";
-import { decimal, displayedDifference, signed } from "./comparison-format";
-import { ComparisonDimension } from "./comparison-dimension";
-import { ComparisonIndicator } from "./comparison-indicator";
-import { isPublishedRegion, type PublishedRegion, type RegionComparison } from "./comparison-selection";
+import { ContextSection } from "@/components/product/context-section";
+import { formatDifference, formatRaw, formatScore, regionType } from "@/components/product/format";
+import { Notice, PageHeading, ScoreDisplay } from "@/components/product/product-ui";
+import type { CivxIndicatorComparisonResult2023 } from "@/lib/civx/comparison-types-2023";
+import type {
+  CivxComparisonProductView2023,
+  CivxExploreRegionProduct2023,
+  CivxRegionProductHeader2023,
+} from "@/lib/civx/product-view-types-2023";
 import styles from "./comparison.module.css";
 
-function RegionSummary({ region, side, position, count, median }: {
-  region: PublishedRegion;
-  side: "A" | "B";
-  position: number;
-  count: number;
-  median: number;
-}) {
-  return (
-    <article className={styles.regionSummary} data-side={side}>
-      <div className={styles.regionIdentity}>
-        <span className={styles.sideMarker} aria-label={`Region ${side}`}>{side}</span>
-        <span>{region.type === "kota" ? "City" : "Regency"} · BPS {region.id}</span>
-      </div>
-      <h3>{region.name}</h3>
-      <div className={styles.score}>
-        <strong>{decimal.format(region.pressure.score)}</strong>
-        <span>/ 100 · CIVX</span>
-      </div>
-      <PressureBadge category={categoryForScore(region.pressure.score)} />
-      <dl className={styles.contextList}>
-        <div><dt>Published position</dt><dd>{position} of {count}</dd></div>
-        <div><dt>From median ({decimal.format(median)})</dt><dd>{signed(displayedDifference(region.pressure.score, median))} points</dd></div>
-      </dl>
-      <Link className="civx-text-link" href={`/regions/${region.id}`}>View {region.name} record ↗</Link>
-    </article>
-  );
-}
+type ComparisonView = CivxComparisonProductView2023;
 
-export function ComparisonPage({ comparison, selectedA, selectedB }: {
-  comparison: RegionComparison;
+export interface ComparisonPageProps {
+  comparison: ComparisonView | null;
+  regions: readonly CivxExploreRegionProduct2023[];
   selectedA: string;
   selectedB: string;
+  error?: string;
+}
+
+function RegionSummary({ region, score, side }: {
+  region: CivxRegionProductHeader2023;
+  score: number;
+  side: "A" | "B";
 }) {
-  const options = [...currentRegions].sort((a, b) => a.name.localeCompare(b.name));
-  const hasA = options.some((region) => region.id === selectedA);
-  const hasB = options.some((region) => region.id === selectedB);
-  const published = currentRegions.filter(isPublishedRegion).sort((a, b) => b.pressure.score - a.pressure.score);
-  const middle = Math.floor(published.length / 2);
-  const median = published.length === 0 ? null : published.length % 2
-    ? published[middle].pressure.score
-    : (published[middle - 1].pressure.score + published[middle].pressure.score) / 2;
-  const difference = comparison.eligible
-    ? displayedDifference(comparison.a.pressure.score, comparison.b.pressure.score)
-    : null;
-  const aComponents = comparison.eligible ? comparison.a.pressure.dimensions.flatMap(dimension => dimension.components) : [];
-  const bComponents = comparison.eligible ? comparison.b.pressure.dimensions.flatMap(dimension => dimension.components) : [];
-  const maxOrderMovement = Math.max(0, ...civicRelease.sensitivity.scenarios.map(scenario => scenario.maxOrderMovement));
+  return <article className={`product-card ${styles.regionSummary}`} data-side={side}>
+    <p className={styles.regionIdentity}><span className={styles.sideMarker}>{side}</span>{regionType(region.type)} · {region.province}</p>
+    <h3>{region.name}</h3>
+    <ScoreDisplay score={score} label="Tekanan Relatif CIVX · 2023" />
+    <p className="product-caption">Skala 0–100 · lebih tinggi berarti tekanan relatif lebih tinggi.</p>
+    <Link className="civx-text-link" href={`/regions/${region.id}`}>Detail {region.name} <span aria-hidden="true">→</span></Link>
+  </article>;
+}
 
-  return (
-    <main className={`civx-container ${styles.page}`}>
-      <Link className="civx-text-link" href="/explore">← Explore regions</Link>
-      <header className={styles.intro}>
-        <div><h1>Compare regions</h1><p>Jawa Barat · {civicRelease.period} published release</p></div>
-        <p>One fixed method across {currentRegions.length} regions. Compare relative modeled pressure—not an official government ranking or evidence of causes.</p>
-      </header>
+function DimensionComparison({ comparison }: { comparison: ComparisonView }) {
+  return <section className={`product-card ${styles.dimensions}`} aria-labelledby="dimensions-heading">
+    <h2 className="product-section-title" id="dimensions-heading">Perbandingan per dimensi</h2>
+    <p className="product-caption">Skala bersama 0–100. A: {comparison.regionA.name}; B: {comparison.regionB.name}.</p>
+    <div className={styles.dimensionList}>{comparison.core.dimensions.map(dimension => <div className={styles.dimensionRow} key={dimension.dimensionId}>
+      <div className={styles.dimensionHeading}><h3>{dimension.dimensionName}</h3><span>{formatDifference(dimension.delta)} poin <small>A − B</small></span></div>
+      <div className={styles.barRow} data-side="A"><span>A</span><div className={styles.track} aria-hidden="true"><span style={{ width: `${dimension.regionAScore}%` }} /></div><strong>{formatScore(dimension.regionAScore)}</strong></div>
+      <div className={styles.barRow} data-side="B"><span>B</span><div className={styles.track} aria-hidden="true"><span style={{ width: `${dimension.regionBScore}%` }} /></div><strong>{formatScore(dimension.regionBScore)}</strong></div>
+    </div>)}</div>
+    <p className="product-caption">0 dan 100 adalah batas skala relatif, bukan tanpa tekanan atau dampak maksimum teoretis.</p>
+  </section>;
+}
 
-      <section className={styles.selector} aria-labelledby="selection-heading">
-        <div className={styles.sectionHead}>
-          <h2 id="selection-heading">Choose your pair</h2>
-          <p id="selection-help">Choose different regions with complete published scores from this release.</p>
-        </div>
-        <form action="/compare" method="get" className={styles.form} key={`${selectedA}:${selectedB}`} aria-describedby="selection-help">
-          <div className={styles.field}>
-            <label htmlFor="compare-a">Region A</label>
-            <select id="compare-a" name="a" defaultValue={hasA ? selectedA : ""} required>
-              <option value="" disabled>Choose Region A</option>
-              {options.map((region) => <option key={region.id} value={region.id}>{region.name}</option>)}
-            </select>
-          </div>
-          <span className={styles.versus} aria-hidden="true">versus</span>
-          <div className={styles.field}>
-            <label htmlFor="compare-b">Region B</label>
-            <select id="compare-b" name="b" defaultValue={hasB ? selectedB : ""} required>
-              <option value="" disabled>Choose Region B</option>
-              {options.map((region) => <option key={region.id} value={region.id}>{region.name}</option>)}
-            </select>
-          </div>
-          <button type="submit" className="civx-button civx-button-primary">Compare regions</button>
-        </form>
-        {!comparison.eligible && (
-          <div role="alert" className={styles.error}>
-            <h3>This pair cannot be compared</h3>
-            <p>{comparison.reason}</p>
-            <p>Choose a different pair above, or <Link className="civx-text-link" href="/compare">reset to the default compatible pair</Link>. Unknown selections are left blank.</p>
-          </div>
-        )}
-      </section>
+function ComparisonHighlights({ comparison }: { comparison: ComparisonView }) {
+  const { highlights } = comparison.core;
+  const { presentation } = comparison;
+  return <section className={`product-card ${styles.highlights}`} aria-labelledby="highlights-heading">
+    <h2 className="product-section-title" id="highlights-heading">Perbedaan tekanan relatif terbesar</h2>
+    <p className="product-caption">Sorotan selisih pada skala tekanan relatif. Bukan penentu prioritas kebijakan.</p>
+    <h3>Dimensi</h3>
+    <ul className={styles.highlightList}>{highlights.largestDimensionDifferences.map(dimension => <li key={dimension.dimensionId}>
+      <div><strong>{dimension.dimensionName}</strong><span>{presentation.relationLabels[dimension.relation]}</span></div>
+      <span className={styles.highlightValue}>{formatDifference(dimension.delta)} poin</span>
+    </li>)}</ul>
+    <h3>Indikator · tekanan ternormalisasi</h3>
+    <ul className={styles.highlightList}>{highlights.largestNormalizedPressureDifferences.map(indicator => <li key={indicator.indicatorId}>
+      <div><strong>{indicator.indicatorName}</strong><span>{presentation.relationLabels[indicator.relation]}</span></div>
+      <span className={styles.highlightValue}>{formatDifference(indicator.delta)} poin</span>
+    </li>)}</ul>
+    <p className="product-caption">{presentation.indicatorHighlightNote}</p>
+    <Link className="civx-text-link" href="/methodology">Pahami metode dan keterbatasan <span aria-hidden="true">→</span></Link>
+  </section>;
+}
 
-      {comparison.eligible && median !== null && difference !== null && (
-        <>
-          <section className={styles.results} aria-labelledby="results-heading">
-            <div className={styles.sectionHead}>
-              <h2 id="results-heading">A versus B</h2>
-              <Link
-                className={styles.swap}
-                href={{ pathname: "/compare", query: { a: comparison.b.id, b: comparison.a.id } }}
-                scroll={false}
-                aria-label={`Swap regions: ${comparison.b.name} as A and ${comparison.a.name} as B`}
-              >Swap A and B <span aria-hidden="true">⇄</span></Link>
-            </div>
-            <div className={styles.difference}>
-              <div>
-                <p>CIVX score difference · A − B</p>
-                <strong>{signed(difference)} <span>points</span></strong>
-              </div>
-              <p>{difference === 0
-                ? `${comparison.a.name} and ${comparison.b.name} have the same displayed CIVX score.`
-                : `${comparison.a.name} has a ${decimal.format(Math.abs(difference))}-point ${difference > 0 ? "higher" : "lower"} modeled pressure score than ${comparison.b.name}.`}</p>
-            </div>
-            <div className={styles.summaryGrid}>
-              <RegionSummary region={comparison.a} side="A" position={published.filter(region => region.pressure.score > comparison.a.pressure.score).length + 1} count={published.length} median={median} />
-              <RegionSummary region={comparison.b} side="B" position={published.filter(region => region.pressure.score > comparison.b.pressure.score).length + 1} count={published.length} median={median} />
-            </div>
-            <p className={styles.note}>Positions run from higher to lower modeled pressure; tied released scores share a position. Positions and median cover complete published scores in this release. Differences subtract the displayed figures.</p>
-            <p className={styles.note}>Plausible weighting choices move regional positions by up to {maxOrderMovement} places. Read dimension differences rather than treating fine positions as stable ranks. <Link className="civx-text-link" href="/methodology#method-sensitivity">Inspect weight sensitivity ↗</Link></p>
-          </section>
+function IndicatorComparison({ indicator, comparison }: {
+  indicator: CivxIndicatorComparisonResult2023;
+  comparison: ComparisonView;
+}) {
+  return <details className={styles.indicator}>
+    <summary>
+      <span className={styles.indicatorTitle}>{indicator.indicatorName}<small>{comparison.core.dimensions.find(dimension => dimension.dimensionId === indicator.dimensionId)?.dimensionName}</small></span>
+      <span className={styles.indicatorNumbers}>
+        <span><small>A</small><strong>{formatScore(indicator.normalizedPressureA)}</strong></span>
+        <span><small>B</small><strong>{formatScore(indicator.normalizedPressureB)}</strong></span>
+        <span><small>A − B</small><strong>{formatDifference(indicator.delta)}</strong></span>
+      </span>
+    </summary>
+    <div className={styles.indicatorBody}>
+      <p>{comparison.presentation.relationLabels[indicator.relation]} pada indikator ini.</p>
+      <p className="product-caption">Periode referensi: {indicator.referencePeriod}. Nilai mentah memakai satuan asli; arahnya tidak selalu searah dengan tekanan ternormalisasi.</p>
+      <div className="product-table-wrap"><table className={`product-table ${styles.rawTable}`}>
+        <caption>Nilai mentah dan tekanan ternormalisasi · {indicator.indicatorName}</caption>
+        <thead><tr><th scope="col">Wilayah</th><th scope="col">Nilai mentah</th><th scope="col">Tekanan 0–100</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">A · {comparison.regionA.name}</th><td>{formatRaw(indicator.rawValueA, indicator.unit)}</td><td>{formatScore(indicator.normalizedPressureA)}</td></tr>
+          <tr><th scope="row">B · {comparison.regionB.name}</th><td>{formatRaw(indicator.rawValueB, indicator.unit)}</td><td>{formatScore(indicator.normalizedPressureB)}</td></tr>
+        </tbody>
+      </table></div>
+      <Link className="civx-text-link" href="/methodology#normalisasi">Cara membaca tekanan ternormalisasi <span aria-hidden="true">→</span></Link>
+    </div>
+  </details>;
+}
 
-          <section className={styles.breakdown} aria-labelledby="dimensions-heading">
-            <div className={styles.sectionHead}>
-              <h2 id="dimensions-heading">Dimension comparison · {dimensions.length} dimensions</h2>
-              <p>Compare dimension scores and their weighted contributions to CIVX before reading individual inputs.</p>
-            </div>
-            <div className={styles.indicatorList}>
-              {dimensions.map(dimension => (
-                <ComparisonDimension
-                  key={dimension.id}
-                  a={comparison.a.pressure.dimensions.find(item => item.id === dimension.id)!}
-                  b={comparison.b.pressure.dimensions.find(item => item.id === dimension.id)!}
-                  aName={comparison.a.name}
-                  bName={comparison.b.name}
-                />
-              ))}
-            </div>
-          </section>
+function ComparisonResults({ comparison }: { comparison: ComparisonView }) {
+  const { core, regionA, regionB, presentation } = comparison;
+  return <>
+    <section className="product-section" aria-labelledby="results-heading">
+      <div className={styles.sectionHead}><h2 className="product-section-title" id="results-heading">Tekanan relatif dua wilayah</h2>
+        <Link className="civx-text-link" href={{ pathname: "/compare", query: { a: regionB.id, b: regionA.id } }}>Tukar A dan B <span aria-hidden="true">⇄</span></Link>
+      </div>
+      <div className={styles.summaryGrid}>
+        <RegionSummary region={regionA} score={core.overall.regionAScore} side="A" />
+        <RegionSummary region={regionB} score={core.overall.regionBScore} side="B" />
+      </div>
+      <div className={styles.difference}>
+        <strong>{formatDifference(core.overall.delta)} <span>poin</span></strong>
+        <div><h3>{presentation.overallLabel} · A − B</h3><p>{presentation.relationLabels[core.overall.relation]}</p></div>
+      </div>
+      <p className={`product-caption ${styles.roundingNote}`}>Selisih selalu A dikurangi B, dihitung dari nilai tercatat sebelum pembulatan. Skor dan selisih dibulatkan sendiri-sendiri untuk tampilan; hasil pengurangan angka tampilan dapat berbeda. Tidak ada pemenang atau penilaian lebih baik/buruk.</p>
+    </section>
+    <div className={styles.analysisGrid}>
+      <DimensionComparison comparison={comparison} />
+      <ComparisonHighlights comparison={comparison} />
+    </div>
+    <section className="product-section" aria-labelledby="indicators-heading">
+      <div className={styles.sectionHead}><h2 className="product-section-title" id="indicators-heading">Rincian {core.indicators.length} indikator</h2><p className="product-caption">{presentation.indicatorDifferenceLabel} · poin A − B</p></div>
+      <p className="product-caption">A: {regionA.name} · B: {regionB.name}. Buka setiap baris untuk nilai mentah, satuan, dan periode rujukan.</p>
+      <div className={styles.indicatorList}>{core.indicators.map(indicator => <IndicatorComparison key={indicator.indicatorId} indicator={indicator} comparison={comparison} />)}</div>
+    </section>
+    <section className="product-section" aria-labelledby="comparison-context-heading">
+      <h2 className="product-section-title" id="comparison-context-heading">Konteks wilayah · bukan skor</h2>
+      <Notice>Data konteks tidak memengaruhi skor CORE. Cakupan, periode, dan tingkat geografis dapat berbeda; tidak dihitung selisih antardaerah.</Notice>
+      <div className={styles.contextGrid}>
+        <div className={styles.contextColumn}><h3>A · {regionA.name}</h3><ContextSection sections={comparison.context.regionA} idPrefix={`compare-a-${regionA.id}`} headingLevel={4} /></div>
+        <div className={styles.contextColumn}><h3>B · {regionB.name}</h3><ContextSection sections={comparison.context.regionB} idPrefix={`compare-b-${regionB.id}`} headingLevel={4} /></div>
+      </div>
+    </section>
+    <section className={`product-card ${styles.methodDisclosure}`} aria-labelledby="comparison-method-heading">
+      <h2 className="product-section-title" id="comparison-method-heading">Baca perbandingan bersama metodenya</h2>
+      <p>Skor memakai kohort tetap 27 wilayah pada 2023. Selisih menunjukkan perbedaan tekanan relatif, bukan sebab-akibat atau signifikansi statistik.</p>
+      <Link className="civx-text-link" href="/methodology">Metodologi dan keterbatasan <span aria-hidden="true">→</span></Link>
+    </section>
+  </>;
+}
 
-          <section className={styles.breakdown} aria-labelledby="indicators-heading">
-            <div className={styles.sectionHead}>
-              <h2 id="indicators-heading">Core indicator comparison · {coreIndicators.length} inputs</h2>
-              <p>Read raw values in their original units. Bars share each indicator’s weight-derived contribution scale.</p>
-            </div>
-            <div className={styles.indicatorList}>
-              {coreIndicators.map(indicator => {
-                const a = aComponents.find(item => item.indicatorId === indicator.id)!;
-                const b = bComponents.find(item => item.indicatorId === indicator.id)!;
-                return (
-                  <ComparisonIndicator
-                    key={indicator.id}
-                    indicator={indicator}
-                    a={a}
-                    b={b}
-                    aObservation={comparison.a.observations.find(item => item.id === a.observationId)!}
-                    bObservation={comparison.b.observations.find(item => item.id === b.observationId)!}
-                    aName={comparison.a.name}
-                    bName={comparison.b.name}
-                  />
-                );
-              })}
-            </div>
-            <p className={styles.note}>A positive difference means A is numerically higher; raw-value direction varies by indicator. Display rounding can make contribution differences differ slightly from the total score difference. Context and advantage evidence never changes scores. Missing core inputs are not imputed or reweighted. No difference establishes statistical significance or causation.</p>
-          </section>
-          <p className={styles.releaseMeta}>{civicRelease.period} · Fixed current release and methodology · Same geographic reference set</p>
-        </>
-      )}
-      <nav className={styles.bottomLinks} aria-label="Further reading">
-        <Link className="civx-text-link" href="/explore">Explore all regions ↗</Link>
-        <Link className="civx-text-link" href="/methodology">Read methodology ↗</Link>
-        <Link className="civx-text-link" href="/sources">View official sources ↗</Link>
-      </nav>
-    </main>
-  );
+export function ComparisonPage({ comparison, regions, selectedA, selectedB, error }: ComparisonPageProps) {
+  const hasA = regions.some(({ region }) => region.id === selectedA);
+  const hasB = regions.some(({ region }) => region.id === selectedB);
+  const selectionError = error || (comparison === null ? "Perbandingan belum tersedia. Pilih wilayah A dan B dari daftar 27 kabupaten/kota Jawa Barat." : undefined);
+
+  return <main className={`civx-container product-page ${styles.page}`}>
+    <PageHeading title="Bandingkan wilayah" breadcrumb="Bandingkan" description="Baca perbedaan tekanan relatif dua wilayah Jawa Barat pada snapshot 2023, bukan peringkat kinerja." />
+    <section className={`product-card ${styles.selector}`} aria-label="Pilih wilayah perbandingan">
+      <form action="/compare" method="get" className={styles.form} key={`${selectedA}:${selectedB}`} aria-describedby={selectionError ? "selection-help selection-error" : "selection-help"}>
+        <div className={styles.field}><label htmlFor="compare-a">Wilayah A</label><select id="compare-a" name="a" defaultValue={hasA ? selectedA : ""} required>
+          <option value="" disabled>Pilih wilayah A</option>
+          {regions.map(({ region }) => <option key={region.id} value={region.id}>{region.name}</option>)}
+        </select></div>
+        <div className={styles.field}><label htmlFor="compare-b">Wilayah B</label><select id="compare-b" name="b" defaultValue={hasB ? selectedB : ""} required>
+          <option value="" disabled>Pilih wilayah B</option>
+          {regions.map(({ region }) => <option key={region.id} value={region.id}>{region.name}</option>)}
+        </select></div>
+        <p className={styles.period}>Periode referensi<strong>2023</strong></p>
+        <button type="submit" className="civx-button civx-button-primary">Tampilkan perbandingan</button>
+      </form>
+      <p className="product-caption" id="selection-help">Daftar mengikuti urutan kode BPS, bukan skor. Wilayah yang sama boleh dipilih pada kedua sisi.</p>
+      {selectionError && <div id="selection-error" role="alert" className={styles.error}><strong>Pilihan belum dapat ditampilkan</strong><p>{selectionError}</p><p>Pilih ulang wilayah pada daftar di atas. Pilihan yang tidak dikenal dibiarkan kosong, bukan diganti otomatis.</p></div>}
+    </section>
+    <div className={styles.snapshotNotice}><Notice>Snapshot 2023 · enam dimensi CORE dan 18 indikator. Skor serta insight masih berstatus belum dirilis publik. Nilai lebih tinggi berarti tekanan relatif lebih tinggi; bukan bukti sebab-akibat.</Notice></div>
+    {comparison !== null && !selectionError && <ComparisonResults comparison={comparison} />}
+    <nav className={styles.bottomLinks} aria-label="Bacaan terkait"><Link className="civx-text-link" href="/explore">Jelajahi wilayah lain <span aria-hidden="true">→</span></Link><Link className="civx-text-link" href="/methodology">Metodologi <span aria-hidden="true">→</span></Link><Link className="civx-text-link" href="/sources">Sumber data <span aria-hidden="true">→</span></Link></nav>
+  </main>;
 }

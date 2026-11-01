@@ -10,7 +10,7 @@ The modules are deliberately small:
 - `product-2023.ts`: CORE projection, compact disclosures, canonical Explore summaries and comparison composition.
 - `product-context-2023.ts`: controlled context labels, grouping and explicit availability mapping.
 
-All existing domain modules, frozen artifacts, contextual audits and frontend files remain unchanged. This stage prepares data; it does not replace `current.ts`, wire pages/components, authorize publication or redesign the frontend. Source release statuses and `productionIntegrationAuthorized: false` remain visible.
+The initial product-layer stage left existing domain modules, frozen artifacts, contextual audits, and frontend files unchanged. The subsequent Figma frontend integration below now replaces presentation consumers of `current.ts`; it does not alter source release statuses or `productionIntegrationAuthorized: false`.
 
 ## Public API
 
@@ -99,7 +99,7 @@ Region lookup returns `undefined` for unknown IDs, names or padded codes, matchi
 
 Region/Explore views are composed once and recursively frozen. Comparison composes frozen domain results and existing context sections. Readonly types and runtime freezing protect authoritative state; clone explicitly for editable working data. Outputs are deterministic, with no clock, randomness, environment lookup, network, LLM or runtime filesystem reads.
 
-No database/API is needed for this frozen local cohort. The freshness decision remains `KEEP_2023_AS_ONLY_FULL_MODEL`; no newer CORE year, trend, policy simulation or what-if scoring is exposed. Future frontend integration is a separate reviewed stage.
+No database/API is needed for this frozen local cohort. The freshness decision remains `KEEP_2023_AS_ONLY_FULL_MODEL`; no newer CORE year, trend, policy simulation, or what-if scoring is exposed. Frontend integration is now implemented as described below; public release remains a separate approval.
 
 ## Verification
 
@@ -111,3 +111,30 @@ npm run build
 ```
 
 Focused coverage includes all 27 region views, canonical Explore summaries, seven contextual datasets, source uncertainty/provenance, all 729 ordered comparison pairs, errors, deterministic highlights, side-by-side context restrictions, nested immutability and pinned score/insight fingerprints. Direct Node smoke exercises actual product retrieval and precision/missingness boundaries.
+
+## Figma frontend integration
+
+The six routes `/`, `/explore`, `/regions/[id]`, `/compare`, `/methodology`, and `/sources` now consume this reviewed product facade. The supplied Figma screens govern composition, typography, spacing, navigation, and the blue-purple/orange/lavender visual language, not numerical values or analytical claims.
+
+- Home uses structural summaries and the existing 27-region SVG map instead of a province average or best/worst cards.
+- Explore keeps canonical BPS order, name search, type filtering, and a neutral region table. Nine-row client-side pagination affects only the table; the map retains the complete filtered set. Search, type changes, and reset return to the first page. No score sorting or ranking is introduced.
+- Region detail is a standalone page, replacing the old intercepted dialog. A small silhouette reuses the selected BPS-mapped SVG path and derives tight display bounds from its vertices. Six dimension bars replace the prototype trend. All 18 indicators expose raw values, units, normalized pressure, periods, and source/uncertainty disclosures. CORE insight titles and messages remain unchanged.
+- Compare resolves URL selection without numerical logic, then delegates to the reviewed comparison API. It displays the engine's selected highlights, all six dimensions, and all 18 indicators. Same-region ties are valid; invalid, empty, and repeated parameters do not produce substituted results.
+- Methodology shows direction-aware cohort min–max formulas and exact 1/6 dimension weights, with equal weights within each dimension. There are no policy categories, absolute endpoints, or comparable score histories.
+- Sources groups the existing evidence into 18 CORE indicator records and seven CONTEXT dataset records. Client-side title/publisher/dimension search, CORE/CONTEXT scope, optional CORE-dimension selection, empty states, and reset browse server-rendered evidence cards. Scope changes clear dimension selection. Publisher URLs, locators, actual source periods, units, coverage, limitations, and uncertainty remain intact.
+
+Shared context disclosures preserve `AVAILABLE`, `NOT_COVERED`, and `SITE_OBSERVATIONS_ONLY`. Available values and site observations appear first within their original groups. Missing datasets remain accessible under compact collapsed groups with their truthful reasons. Banjar's explicit zero stays visible, Cirebon/Subang gaps stay unavailable, commuting retains its five-region frame, and road/station observations retain their sites and actual dates. No context difference, aggregate, ranking, or winner is computed.
+
+Map geometry remains the existing approximate 2020 geoBoundaries ADM2 subset, with BPS-code mapping and CC BY 3.0 IGO attribution. Uniform blue is not a score category; hover/focus changes indicate inspection only. Selectors and the full table provide non-map access. No dependency, credential, or external map service was added.
+
+UI scores use one-decimal Indonesian formatting. Source values keep their original unit. Comparison differences use full-precision API values and are rounded independently for display; they are not recomputed from rounded scores.
+
+Product pages prioritize definitions, source links, reference periods, units, limitations, and uncertainty. Internal artifact hashes/paths, release flags, authorization booleans, insight templates, and evidence pointers remain unchanged in the product records but are not rendered. Compare replaces raw JSON dumps with concise methodology links while preserving all reviewed differences and highlight selections.
+
+### Bundler and audit boundaries
+
+Next 16.4.2 Turbopack changes some imported JSON floating-point literals, including contextual coverage `3.7037037037037037` to `3.703703703703704`. The exact repository validator correctly rejects that mutation. `npm run dev` and `npm run build` now select webpack, preserving the reviewed numerical values without changing validation, scoring, or frozen artifacts. Native CSS modules/global tokens replace the unused Tailwind import and Turbopack-only stylesheet loader.
+
+The historical freshness audit protocol includes the pre-integration frontend's file hashes. Its protocol, generator, and generated evidence remain unchanged; replaying that exact historical audit still requires its original presentation snapshot. CLI domain tests now create an isolated analytical fixture that omits superseded presentation-file locks. They retain pinned analytical inputs, offline reproducibility, no-write guarantees, drift rejection, source validation, and the common-year decision. No repository evidence is repinned for frontend convenience.
+
+Frontend render tests cover canonical region identities, real detail/404 behavior, six dimensions, 18 indicators, reviewed comparison values and ties, and missing/zero/site-only context. Actual browser smoke covers navigation, search, filters, map access, disclosures, and responsive layouts. Formal accessibility certification and public model release remain separate gates.

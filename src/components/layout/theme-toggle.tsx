@@ -12,13 +12,13 @@ export function ThemeToggle() {
           : preference === "dark" ? <path d="M20 15.5A8.5 8.5 0 0 1 8.5 4 8.5 8.5 0 1 0 20 15.5Z" />
             : <><rect x="3" y="4" width="18" height="13" rx="2" /><path d="M8 21h8m-4-4v4" /></>}
       </svg>
-      <span className="civx-sr-only">Color theme</span>
+      <span className="civx-sr-only">Tema tampilan</span>
       <select value={preference} onChange={(event) => {
         if (isThemePreference(event.target.value)) setThemePreference(event.target.value);
       }}>
-        <option value="light">Light</option>
-        <option value="dark">Dark</option>
-        <option value="system">System</option>
+        <option value="light">Terang</option>
+        <option value="dark">Gelap</option>
+        <option value="system">Sistem</option>
       </select>
     </label>
   );

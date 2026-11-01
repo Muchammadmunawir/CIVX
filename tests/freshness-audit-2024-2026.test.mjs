@@ -15,6 +15,18 @@ const jsonPath = "data/processed/freshness-audit-2024-2026.json";
 const csvPath = "data/processed/freshness-audit-2024-2026.csv";
 const load = path => JSON.parse(readFileSync(new URL(path, root), "utf8"));
 const protocol = load(protocolPath);
+// The historical audit froze its old presentation as well as analytical inputs.
+// Replay domain behavior in an isolated analytical fixture after the authorized
+// frontend cutover; never repin or rewrite the repository protocol or evidence.
+const presentationFiles = new Set([
+  "README.md", "package.json", "next.config.ts",
+  "docs/PRODUCT.md", "docs/DATA.md", "docs/ARCHITECTURE.md", "docs/TASKS.md",
+]);
+const replayProtocol = {
+  ...protocol,
+  baselineManifest: protocol.baselineManifest.filter(({ path }) =>
+    !/^(?:src\/(?:app|components)\/|tests\/)/.test(path) && !presentationFiles.has(path)),
+};
 const frozen = load(protocol.frozenContractPath);
 const audits = protocol.rawAuditPaths.map(load);
 const hash = content => createHash("sha256").update(content).digest("hex");
@@ -56,12 +68,13 @@ function rateFixture() {
 function workspace(t) {
   const directory = mkdtempSync(join(tmpdir(), "civx-freshness-audit-"));
   t.after(() => rmSync(directory, { recursive: true, force: true }));
-  const paths = new Set([protocolPath, conclusionPath, ...protocol.rawAuditPaths, ...protocol.baselineManifest.map(entry => entry.path), scriptPath]);
+  const paths = new Set([protocolPath, conclusionPath, ...protocol.rawAuditPaths, ...replayProtocol.baselineManifest.map(entry => entry.path), scriptPath]);
   for (const path of paths) {
     const destination = join(directory, path);
     mkdirSync(dirname(destination), { recursive: true });
     copyFileSync(new URL(path, root), destination);
   }
+  writeFileSync(join(directory, protocolPath), `${JSON.stringify(replayProtocol, null, 2)}\n`);
   return directory;
 }
 function run(directory, ...args) {
@@ -200,13 +213,12 @@ test("offline CLI reproduces both artifacts byte-for-byte from another working d
   succeeds(run(directory));
   succeeds(run(directory, "--check"));
   for (const [path, bytes] of first) assert.deepEqual(readFileSync(join(directory, path)), bytes);
-  for (const entry of protocol.baselineManifest) assert.equal(hash(readFileSync(join(directory, entry.path))), entry.sha256, entry.path);
+  for (const entry of replayProtocol.baselineManifest) assert.equal(hash(readFileSync(join(directory, entry.path))), entry.sha256, entry.path);
 });
 
-test("baseline score, insight, engine, methodology, context and frontend drift fail before outputs are created", t => {
+test("baseline score, insight, engine, methodology and context drift fail before outputs are created", t => {
   const directory = workspace(t);
-  const frontend = protocol.baselineManifest.find(entry => entry.path.startsWith("src/app/")).path;
-  for (const path of ["data/processed/civx-scores-2023.json", "data/processed/civx-insights-2023.json", "src/lib/civx/scoring-2023.ts", "src/lib/civx/insights-2023.ts", "docs/NORMALIZATION-DESIGN-2023.md", "data/processed/contextual-data-catalog-2023.json", frontend]) {
+  for (const path of ["data/processed/civx-scores-2023.json", "data/processed/civx-insights-2023.json", "src/lib/civx/scoring-2023.ts", "src/lib/civx/insights-2023.ts", "docs/NORMALIZATION-DESIGN-2023.md", "data/processed/contextual-data-catalog-2023.json"]) {
     const absolute = join(directory, path);
     const original = readFileSync(absolute);
     writeFileSync(absolute, Buffer.concat([original, Buffer.from("\n")]));

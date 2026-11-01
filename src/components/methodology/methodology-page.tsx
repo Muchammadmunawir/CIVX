@@ -1,206 +1,129 @@
 import Link from "next/link";
-import { civicRelease, coreIndicators, currentRegions, dimensions } from "@/lib/civx/current";
+import { getExploreRegionsProduct2023, getProductMethodology2023, getRegionProductView2023 } from "@/lib/civx/product-2023";
+import { Notice, PageHeading } from "@/components/product/product-ui";
 import styles from "./methodology-page.module.css";
 
 const sections = [
-  ["method-steps", "Calculation"],
-  ["method-why", "Indicators"],
-  ["method-direction", "Direction"],
-  ["method-normalization", "Formulas"],
-  ["method-weights", "Weights"],
-  ["method-missing", "Common core"],
-  ["method-sensitivity", "Sensitivity"],
-  ["method-limits", "Limits"],
-  ["method-release", "Release record"],
+  ["tentang-indeks", "Tentang indeks"],
+  ["kerangka-indikator", "Kerangka indikator"],
+  ["tahapan-perhitungan", "Tahapan perhitungan"],
+  ["normalisasi", "Normalisasi & bobot"],
+  ["interpretasi", "Cara membaca skor"],
+  ["keterbatasan", "Keterbatasan"],
+  ["status-model", "Status model"],
 ] as const;
 
-const percent = (weight: number) => `${(weight * 100).toLocaleString("en-US", { maximumFractionDigits: 2 })}%`;
-
 export function MethodologyPage() {
-  const { methodology, sensitivity, qualityAudit } = civicRelease;
+  const methodology = getProductMethodology2023();
+  const representative = getExploreRegionsProduct2023()[0];
+  const profile = representative && getRegionProductView2023(representative.region.id);
+  if (!profile) throw new Error("CIVX methodology: canonical 2023 profile unavailable");
+  const { dimensions, indicators } = profile.core;
 
   return (
-    <main className={`civx-container ${styles.page}`}>
-      <header className={styles.intro}>
-        <div className={styles.introCopy}>
-          <span className="civx-eyebrow">CIVX / Jawa Barat / {civicRelease.period} / Methodology</span>
-          <h1>How the index is made</h1>
-          <p className={styles.lead}>{coreIndicators.length} common-core indicators across {dimensions.length} dimensions become one 0–100 relative pressure score. Follow the path from cited observations to the Civic Index.</p>
-          <p className={styles.release}>Release {civicRelease.releaseId} <span aria-hidden="true">·</span> Method {methodology.methodologyVersion}</p>
-        </div>
-        <div className={styles.introAside}>
-          <span className={styles.asideLabel}>{civicRelease.period} release / at a glance</span>
-          <div className={styles.introMetrics}>
-            <div><strong className="civx-mono">{coreIndicators.length.toString().padStart(2, "0")}</strong><span>Core indicators</span></div>
-            <div><strong className="civx-mono">{methodology.referenceRegionIds.length}</strong><span>Reference regions</span></div>
-            <div><strong className="civx-mono">{qualityAudit.scored}</strong><span>Published scores</span></div>
-          </div>
-          <p className={styles.disclaimer}>CIVX is a project-defined analytical index using cited institutional evidence. It is not an official government index or an endorsement by its source institutions.</p>
-        </div>
-      </header>
-      <nav className={styles.contents} aria-label="On this page">
-        <span>On this page</span>
-        <ul>{sections.map(([id, label]) => <li key={id}><a href={`#${id}`}>{label}</a></li>)}</ul>
-      </nav>
-
-      <section className={styles.section} aria-labelledby="method-steps">
-        <div className={styles.sectionHeading}>
-          <span className="civx-eyebrow">01 / The calculation</span>
-          <h2 id="method-steps">Five steps, one index</h2>
-          <p>The same declared common core applies to all {currentRegions.length} released regions.</p>
-        </div>
-        <ol className={styles.steps}>
-          <li><span className={styles.stepNumber}>01 / Input</span><h3>Verify observations</h3><p>Require all {coreIndicators.length} configured inputs with source, artifact, year, unit, geography, and coverage checks.</p></li>
-          <li><span className={styles.stepNumber}>02 / Align</span><h3>Direction adjustment</h3><p>Declare whether higher or lower raw values represent more modeled pressure.</p></li>
-          <li><span className={styles.stepNumber}>03 / Scale</span><h3>Fixed normalization</h3><p>Use the released {civicRelease.period} reference bounds, never the currently selected comparison set.</p></li>
-          <li><span className={styles.stepNumber}>04 / Combine</span><h3>Dimension budgets</h3><p>Weight indicators within each dimension, then apply each dimension’s declared budget.</p></li>
-          <li><span className={styles.stepNumber}>05 / Result</span><h3>Civic Index 0–100</h3><p>Sum the weighted dimensions at full precision, then publish two-decimal results.</p></li>
-        </ol>
-      </section>
-
-      <section className={styles.section} aria-labelledby="method-why">
-        <div className={styles.sectionHeading}>
-          <span className="civx-eyebrow">02 / The inputs</span>
-          <h2 id="method-why">{coreIndicators.length} inputs, one shared reference</h2>
-          <p>Only these configured indicators enter pressure. Context indicators and advantage signals remain separate evidence; neither adds to nor offsets the score.</p>
-        </div>
-        <div className={styles.indicatorGrid}>
-          {dimensions.flatMap((dimension) => dimension.indicators.map((indicator) => (
-            <article className={styles.indicator} key={indicator.id}>
-              <span className={styles.indicatorNumber}>{dimension.label} / {percent(dimension.weight)} dimension budget</span>
-              <h3>{indicator.label}</h3>
-              <p>{indicator.direction === "higher" ? "Higher raw value → more pressure" : "Lower raw value → more pressure"}</p>
-              <div className={styles.range}>
-                <span>Fixed {civicRelease.period} bounds</span>
-                <strong className="civx-mono">{indicator.minimum}–{indicator.maximum} {indicator.unit}</strong>
-              </div>
-              <p className={styles.extrema}>Min {indicator.minimumRegion} <span aria-hidden="true">·</span> Max {indicator.maximumRegion}</p>
-              <p className={styles.extrema}>Within dimension: {percent(indicator.withinDimensionWeight)} <span aria-hidden="true">·</span> Effective index weight: {percent(dimension.weight * indicator.withinDimensionWeight)}</p>
-              <Link className={styles.indicatorSource} href={`/sources#source-${indicator.sourceId}`}>Inspect source evidence <span aria-hidden="true">↗</span></Link>
-            </article>
-          )))}
-        </div>
-      </section>
-
-      <section className={`${styles.section} ${styles.compactSection}`} aria-labelledby="method-direction">
-        <div className={styles.sectionHeading}>
-          <span className="civx-eyebrow">03 / Direction</span>
-          <h2 id="method-direction">First, agree on what more means</h2>
-          <p>Direction is a declared modeling choice, not a change to raw observations. Original values, units, and definitions remain in the source records.</p>
-        </div>
-        <div className={styles.directionPair} aria-label="Direction of modeled pressure">
-          {(["higher", "lower"] as const).map((direction) => (
-            <div key={direction}><span>{direction === "higher" ? "Higher" : "Lower"} value → more pressure</span><strong>{coreIndicators.filter((indicator) => indicator.direction === direction).map((indicator) => indicator.label).join(" · ") || "No configured indicators"}</strong></div>
-          ))}
-        </div>
-      </section>
-
-      <section className={styles.section} aria-labelledby="method-normalization">
-        <div className={styles.sectionHeading}>
-          <span className="civx-eyebrow">04 / The math</span>
-          <h2 id="method-normalization">One fixed reference for every region</h2>
-          <p>Each indicator uses published bounds for the {methodology.referenceRegionIds.length}-region reference set. Filtering the map or choosing regions never recalibrates the scale. Values outside those bounds are ineligible, not clipped.</p>
-        </div>
-        <div className={styles.formulaBlock} aria-label="Normalization and index formulas">
-          <div><strong>Higher means more pressure</strong><code>sᵢ = 100 × (valueᵢ − minimumᵢ) ÷ (maximumᵢ − minimumᵢ)</code></div>
-          <div><strong>Lower means more pressure</strong><code>sᵢ = 100 × (maximumᵢ − valueᵢ) ÷ (maximumᵢ − minimumᵢ)</code></div>
-          <div><strong>Dimension score</strong><code>Dⱼ = Σᵢ (sᵢ × within-dimension weightᵢⱼ)</code></div>
-          <div><strong>Effective indicator weight</strong><code>eᵢ = dimension budgetⱼ × within-dimension weightᵢⱼ</code></div>
-          <div><strong>Civic Index</strong><code>CIVX = Σⱼ (Dⱼ × dimension budgetⱼ) = Σᵢ (sᵢ × eᵢ)</code></div>
-        </div>
-      </section>
-
-      <section className={styles.section} aria-labelledby="method-weights">
-        <div className={styles.sectionHeading}>
-          <span className="civx-eyebrow">05 / The contribution</span>
-          <h2 id="method-weights">Declared dimension budgets</h2>
-          <p>Dimension budgets sum to 100%. Indicator weights sum to 100% within each dimension. Compute with full precision before rounding displayed scores and contributions to two decimals; displayed parts may not sum exactly.</p>
-        </div>
-        <div className={styles.weightStrip} aria-label="Released dimension budgets">
-          {dimensions.map((dimension) => <div key={dimension.id}><span>{dimension.label} · {dimension.indicators.length} indicators</span><strong className="civx-mono">{percent(dimension.weight)}</strong></div>)}
-        </div>
-        <p className={styles.disclaimer}>{methodology.weightDecision}</p>
-      </section>
-
-      <section className={styles.section} aria-labelledby="method-missing">
-        <div className={styles.sectionHeading}>
-          <span className="civx-eyebrow">06 / Complete common core</span>
-          <h2 id="method-missing">No complete record, no score</h2>
-          <p>Every region needs all {coreIndicators.length} configured indicators, verified and comparable for {methodology.period}, with matching units, civil-region codes, boundary reference, cited source, artifact, and row locator. Denominators must retain their definitions and, when numeric, same-period source evidence.</p>
-        </div>
-        <div className={styles.limitGrid}>
-          <div><h3>No substitution or reweighting</h3><p>Missing, unverified, incompatible, wrong-period, wrong-unit, or out-of-range core evidence withholds the whole score. No imputation, zero filling, regional weight changes, optional-data substitution, or silent denominator replacement.</p></div>
-          <div><h3>Optional evidence stays optional</h3><p>Context and advantages never enter scoring. Missing optional evidence does not withhold a complete core score. No comparable advantage data means unknown, not verified absence. Historical evidence keeps its actual year.</p></div>
-          <div><h3>Release coverage</h3><p>{qualityAudit.attempted} regions assessed; {qualityAudit.scored} scored; {qualityAudit.withheld.length} withheld.</p>{qualityAudit.withheld.length > 0 && <ul>{qualityAudit.withheld.map((entry) => <li key={entry.regionId}>{currentRegions.find((region) => region.id === entry.regionId)?.name ?? entry.regionId}: {entry.reason}</li>)}</ul>}</div>
-          {methodology.unsupportedDimensions.map((dimension) => <div key={dimension.id}><h3>{dimension.label}: unscored</h3><p>{dimension.reason}</p></div>)}
-        </div>
-      </section>
-
-      <section className={styles.section} aria-labelledby="method-sensitivity">
-        <div className={styles.sectionHeading}>
-          <span className="civx-eyebrow">07 / Sensitivity</span>
-          <h2 id="method-sensitivity">How much do modeling choices matter?</h2>
-          <p>Baseline: {sensitivity.baseline}. The release records {sensitivity.scenarios.length} diagnostic scenarios against the same fixed reference.</p>
-        </div>
-        <p className={styles.disclaimer}>{sensitivity.decision}</p>
-        <ul className={styles.evidenceList}>{sensitivity.limitations.map((limitation) => <li key={limitation}>{limitation}</li>)}</ul>
-        <div className={styles.indicatorGrid}>
-          {sensitivity.scenarios.map((scenario) => (
-            <article className={styles.indicator} key={scenario.id}>
-              <h3>{scenario.label}</h3>
-              <p>Maximum score change: {scenario.maxAbsoluteScoreChange.toFixed(2)} points. Mean absolute change: {scenario.meanAbsoluteScoreChange.toFixed(2)} points.</p>
-              <p>Maximum order movement: {scenario.maxOrderMovement}. Order reversals: {scenario.orderReversals}. Category changes: {scenario.categoryChanges}. Spearman correlation: {scenario.spearman}.</p>
-              <details className={styles.details}>
-                <summary>Scenario weights and regional results</summary>
-                <h4>Dimension budgets</h4>
-                <ul>{Object.entries(scenario.dimensionWeights).map(([id, weight]) => <li key={id}>{dimensions.find((dimension) => dimension.id === id)?.label ?? id}: {percent(weight)}</li>)}</ul>
-                <h4>Within-dimension weights</h4>
-                <ul>{coreIndicators.map((indicator) => <li key={indicator.id}>{indicator.label}: {percent(scenario.indicatorWeights[indicator.id] ?? 0)}</li>)}</ul>
-                <p>Omitted inputs have zero weight in this diagnostic only, never in production missing-data handling.</p>
-                <ul>{scenario.regions.map((region) => <li key={region.regionId}>{currentRegions.find((entry) => entry.id === region.regionId)?.name ?? region.regionId}: score {region.score.toFixed(2)}; change {region.change}; order movement {region.orderMovement}.</li>)}</ul>
-              </details>
-            </article>
-          ))}
-        </div>
-        <details className={styles.details}>
-          <summary>Indicator correlations ({sensitivity.correlations.length} pairs)</summary>
-          <ul>{sensitivity.correlations.map((pair) => <li key={`${pair.a}-${pair.b}`}>{coreIndicators.find((indicator) => indicator.id === pair.a)?.label ?? pair.a} / {coreIndicators.find((indicator) => indicator.id === pair.b)?.label ?? pair.b}: Pearson {pair.pearson}</li>)}</ul>
-        </details>
-      </section>
-
-      <section className={styles.section} aria-labelledby="method-limits">
-        <div className={styles.sectionHeading}>
-          <span className="civx-eyebrow">08 / Current limits</span>
-          <h2 id="method-limits">Read the score in context</h2>
-          <p>Below 33.33 means lower relative pressure; 33.33 to below 66.67 means moderate; 66.67 and above means higher. These project-defined bands are not government thresholds, causal findings, or a precise league table.</p>
-        </div>
-        <ul className={styles.evidenceList}>{civicRelease.limitations.map((limitation) => <li key={limitation}>{limitation}</li>)}</ul>
-      </section>
-
-      <section className={styles.section} aria-labelledby="method-release">
-        <div className={styles.sectionHeading}>
-          <span className="civx-eyebrow">09 / Reproducible release record</span>
-          <h2 id="method-release">One product, traceable release history</h2>
-          <p>This page describes only the current Jawa Barat {civicRelease.period} release. Historical identifiers in evidence and raw-input paths preserve lineage, not alternate products. A changed source, method, bound, or reference set requires a distinct release record; do not mix scores across incompatible releases or infer a time trend.</p>
-        </div>
-        <dl className={styles.metadata}>
-          <div><dt>Release</dt><dd>{civicRelease.releaseId}</dd></div>
-          <div><dt>Methodology</dt><dd>{methodology.methodologyVersion}</dd></div>
-          <div><dt>Reference set</dt><dd>{methodology.referenceSetId}</dd></div>
-          <div><dt>Period</dt><dd>{methodology.period}</dd></div>
-          <div><dt>Boundary reference</dt><dd>{methodology.boundaryReference}</dd></div>
-          <div><dt>Review state</dt><dd>{methodology.status === "project_validated" ? "Project-validated; not independent certification" : "Draft"}</dd></div>
-          <div><dt>Normalization</dt><dd>{methodology.normalization}</dd></div>
-          <div><dt>Rounding</dt><dd>{methodology.rounding}</dd></div>
-          <div><dt>Reference region codes</dt><dd>{methodology.referenceRegionIds.join(", ")}</dd></div>
-        </dl>
-        <p className={styles.disclaimer}>Reproduce this release using its raw-input paths and SHA-256 fingerprints, then inspect cited artifacts, row locators, and denominator evidence. Source access and redistribution restrictions still apply.</p>
-        <nav className={styles.nextLinks} aria-label="Continue exploring CIVX">
-          <Link className="civx-text-link" href="/sources#source-input-heading">Inspect release inputs <span aria-hidden="true">↗</span></Link>
-          <Link className="civx-text-link" href="/sources">Examine all source institutions <span aria-hidden="true">↗</span></Link>
-          <Link className="civx-text-link" href="/explore">Explore regional results <span aria-hidden="true">↗</span></Link>
+    <main className={`civx-container product-page ${styles.page}`}>
+      <PageHeading breadcrumb="Metodologi" title="Di balik angka indeks" description="Pahami apa yang diukur, bagaimana skor dibentuk, dan batas penggunaannya." />
+      <Notice>
+        Model {methodology.referenceYear} telah dihitung, tetapi belum dirilis untuk publik. Persetujuan integrasi antarmuka tidak mengubah status skor dan insight.
+      </Notice>
+      <div className={styles.layout}>
+        <nav className={styles.contents} aria-label="Dalam halaman ini">
+          <p>Dalam halaman ini</p>
+          <ul>{sections.map(([id, label]) => <li key={id}><a href={`#${id}`}>{label}</a></li>)}</ul>
+          <p className={styles.sidebarNote}>Satu model lengkap {methodology.referenceYear}. Bukan seri waktu atau indeks resmi pemerintah.</p>
         </nav>
-      </section>
+        <div className={styles.body}>
+          <section className={styles.section} aria-labelledby="tentang-indeks">
+            <h2 id="tentang-indeks" className="product-section-title">Tentang indeks CIVX</h2>
+            <p className={styles.lead}>Satu ringkasan untuk memulai pertanyaan yang lebih baik tentang wilayah.</p>
+            <p>CIVX merangkum tekanan relatif kabupaten/kota di {methodology.province}. Skor membantu membaca pola, bukan menggantikan data rinci, pengalaman warga, atau penilaian lapangan.</p>
+            <dl className={styles.summary}>
+              <div><dt>Kabupaten/kota</dt><dd>{methodology.cohortSize}</dd></div>
+              <div><dt>Indikator CORE</dt><dd>{indicators.length}</dd></div>
+              <div><dt>Dimensi</dt><dd>{dimensions.length}</dd></div>
+              <div><dt>Tahun model</dt><dd>{methodology.referenceYear}</dd></div>
+            </dl>
+            <p className="product-caption">Cakupan tetap mengikuti kode BPS, tanpa agregat provinsi. CORE masuk skor; CONTEXT hanya memberi konteks.</p>
+          </section>
+
+          <section className={styles.section} aria-labelledby="kerangka-indikator">
+            <h2 id="kerangka-indikator" className="product-section-title">Kerangka indikator</h2>
+            <p>Enam dimensi memiliki bobot setara. Di setiap dimensi, bobot terbagi rata di antara indikatornya.</p>
+            <div className="product-table-wrap" role="region" aria-label="Kerangka enam dimensi" tabIndex={0}>
+              <table className={`product-table ${styles.dimensions}`}>
+                <caption className="civx-sr-only">Dimensi, indikator CORE, dan bobot model 2023</caption>
+                <thead><tr><th scope="col">Dimensi</th><th scope="col">Indikator CORE</th><th scope="col">Bobot dimensi</th><th scope="col">Bobot tiap indikator dalam dimensi</th></tr></thead>
+                <tbody>{dimensions.map((dimension) => {
+                  const members = indicators.filter((indicator) => indicator.dimensionId === dimension.dimensionId);
+                  return <tr key={dimension.dimensionId}>
+                    <th scope="row">{dimension.displayName}</th>
+                    <td><ul>{members.map((indicator) => <li key={indicator.indicatorId}>{indicator.displayName}</li>)}</ul></td>
+                    <td className={styles.weight}>1/6 <span>≈ 16,7%</span></td>
+                    <td>{members.length === 1 ? "1 (100%)" : `1/${members.length}`}</td>
+                  </tr>;
+                })}</tbody>
+              </table>
+            </div>
+            <p className="product-caption">Bobot tepat setiap dimensi adalah 1/6, bukan 16,7% dalam perhitungan. Enam pecahan tersebut berjumlah 1 (100%); persentase tampilan dibulatkan.</p>
+          </section>
+
+          <section className={styles.section} aria-labelledby="tahapan-perhitungan">
+            <h2 id="tahapan-perhitungan" className="product-section-title">Tahapan perhitungan</h2>
+            <ol className={styles.steps}>
+              <li><h3>Siapkan bukti yang sebanding</h3><p>Samakan kode wilayah, definisi, unit, pembilang, penyebut, dan periode referensi. Pertahankan sumber serta lokasi baris atau tabel.</p></li>
+              <li><h3>Normalisasi sesuai arah tekanan</h3><p>Gunakan arah tiap indikator dan batas minimum–maksimum tetap dari seluruh kohort {methodology.cohortSize} wilayah {methodology.referenceYear}, bukan dari pilihan wilayah di layar.</p></li>
+              <li><h3>Gabungkan indikator dan dimensi</h3><p>Rata-ratakan tekanan indikator dalam dimensi, lalu gabungkan enam dimensi dengan bobot tepat 1/6. Tidak ada pembobotan penduduk atau normalisasi ulang skor gabungan.</p></li>
+              <li><h3>Tinjau hasil dan batas pemakaian</h3><p>Periksa kelengkapan, jejak sumber, ketidakpastian, dan sensitivitas model. Perhitungan tidak otomatis berarti persetujuan rilis publik.</p></li>
+            </ol>
+          </section>
+
+          <section className={styles.section} aria-labelledby="normalisasi">
+            <h2 id="normalisasi" className="product-section-title">Normalisasi & bobot</h2>
+            <div className={styles.formulas}>
+              <h3>Nilai mentah lebih tinggi → tekanan lebih tinggi</h3>
+              <p className={styles.formula}>s = 100 × ((x − a) / (b − a))</p>
+              <h3>Nilai mentah lebih tinggi → tekanan lebih rendah</h3>
+              <p className={styles.formula}>s = 100 × ((b − x) / (b − a))</p>
+              <p>x adalah nilai mentah; a dan b adalah minimum dan maksimum indikator dalam kohort tetap. s adalah tekanan relatif pada skala 0–100.</p>
+            </div>
+            <p>Bobot efektif satu indikator adalah (1/6) × (1/n), dengan n jumlah indikator dalam dimensinya. Dimensi berindikator tunggal tetap mendapat 1/6, bukan bobot tambahan.</p>
+            <p>Perhitungan memakai presisi penuh dari model yang dibekukan. Angka di antarmuka dibulatkan untuk pembacaan, bukan dihitung ulang dari angka tampilan.</p>
+          </section>
+
+          <section className={styles.section} aria-labelledby="interpretasi">
+            <h2 id="interpretasi" className="product-section-title">Cara membaca skor</h2>
+            <Notice>Skor lebih tinggi berarti tekanan relatif lebih tinggi, bukan wilayah lebih baik atau lebih buruk.</Notice>
+            <ul className={styles.list}>
+              <li>Pada indikator, 0 dan 100 adalah ujung tekanan yang teramati dalam kohort {methodology.cohortSize} wilayah {methodology.referenceYear}, bukan batas absolut kondisi nyata.</li>
+              <li>Nol bukan berarti tanpa tekanan; 100 bukan dampak teoretis terburuk. Nilai 50 bukan ambang kebijakan, probabilitas, atau median kohort.</li>
+              <li>Skor gabungan tidak harus mencapai 0 atau 100. Tekanan rendah pada satu indikator dapat mengimbangi tekanan tinggi pada indikator lain.</li>
+              <li>Tidak ada kategori status, ambang baik/buruk, peringkat publik, atau rata-rata provinsi. Perbedaan skor bukan bukti sebab-akibat atau rekomendasi kebijakan.</li>
+              <li>Hanya satu model lengkap {methodology.referenceYear} tersedia. Belum ada sejarah skor yang sebanding untuk menyimpulkan tren.</li>
+            </ul>
+          </section>
+
+          <section className={styles.section} aria-labelledby="keterbatasan">
+            <h2 id="keterbatasan" className="product-section-title">Keterbatasan yang perlu dibaca</h2>
+            <ul className={styles.list}>
+              <li>Seluruh {indicators.length} indikator CORE wajib lengkap. Data hilang atau tidak sah menggagalkan perhitungan; tidak diisi nol, diimputasi, diganti tahun, atau ditutup dengan perubahan bobot.</li>
+              <li>Deret konstan dan nilai di luar batas kalibrasi ditolak. Model tidak memotong pencilan atau menggeser batas secara diam-diam.</li>
+              <li>Min–max peka pada titik ujung, terutama UHH dan rasio Puskesmas; TPT dan angka kesakitan juga memerlukan kehati-hatian. Selisih kecil tidak otomatis bermakna secara statistik.</li>
+              <li>Ketidakpastian survei, definisi penyebut, tumpang tindih indikator, dan keterbatasan pelaporan sumber tetap berlaku. Bobot setara merupakan pilihan normatif, bukan kepentingan yang terbukti secara universal.</li>
+              <li>Label model 2023 tidak menyamakan seluruh tanggal publikasi atau periode survei. Baca periode referensi, tanggal terbit, dan catatan masing-masing sumber.</li>
+              <li>CONTEXT tidak memengaruhi skor. Data tidak tercakup berbeda dari nilai nol. Observasi stasiun atau ruas jalan tetap melekat pada lokasi dan tanggalnya, bukan rata-rata wilayah.</li>
+              <li>CONTEXT dapat berasal dari 2024 atau snapshot bertanggal lain. Data tersebut tidak menggantikan CORE 2023 dan tidak mendukung selisih, peringkat, atau perbandingan skor konteks.</li>
+            </ul>
+            <Link href="/sources" className="civx-button civx-button-primary">Telusuri sumber data</Link>
+          </section>
+
+          <section className={styles.section} aria-labelledby="status-model">
+            <h2 id="status-model" className="product-section-title">Status model & penggunaan</h2>
+            <p>CIVX adalah indeks analitis yang ditetapkan proyek, bukan indeks resmi atau pengesahan lembaga sumber. Hak penggunaan dan redistribusi sumber belum dinyatakan tuntas.</p>
+            <p>Model 2023 masih memerlukan persetujuan rilis publik. Baca definisi, periode rujukan, dan keterbatasan sumber sebelum menggunakan hasilnya.</p>
+            <Link className="civx-text-link" href="/sources">Lihat sumber dan catatan penggunaannya <span aria-hidden="true">→</span></Link>
+          </section>
+        </div>
+      </div>
     </main>
   );
 }

@@ -1,97 +1,100 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { PressureBadge } from "@/components/data/pressure-badge";
-import { categoryForScore, civicRelease, coreIndicators, getCurrentRegion } from "@/lib/civx/current";
-import type { V2Observation } from "@/lib/civx/v2/types";
-import { ObservationEvidence, observationStatus, observationValue } from "./evidence";
+import { ContextSection } from "@/components/product/context-section";
+import { IndicatorDisclosure } from "@/components/product/indicator-disclosure";
+import { regionType } from "@/components/product/format";
+import { DimensionBars, Notice, PageHeading, ScoreDisplay } from "@/components/product/product-ui";
+import { getRegionProductView2023 } from "@/lib/civx/product-2023";
+import { RegionSilhouette } from "./region-silhouette";
 import styles from "./region-detail.module.css";
-import record from "./record.module.css";
 
-const decimal = new Intl.NumberFormat("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-const candidatesById = new Map(civicRelease.candidates.map(candidate => [candidate.id, candidate]));
+export function RegionDetail({ id }: { id: string }) {
+  const view = getRegionProductView2023(id);
+  if (!view) notFound();
+  const { region, core, context, methodology } = view;
+  const prefix = `region-${region.id}`;
 
-function OptionalEvidence({ observations }: { observations: V2Observation[] }) {
-  return observations.map(observation => <details className={record.disclosure} key={observation.id}>
-    <summary>{coreIndicators.find(policy => policy.id === observation.indicatorId)?.label ?? candidatesById.get(observation.indicatorId)?.label ?? observation.indicatorId}<span className={record.status}>{observation.kind === "advantage_signal" ? observationValue(observation) : `${observationStatus(observation)} · ${observationValue(observation)}`} · {observation.period ?? "No regional observation year"}</span></summary>
-    <ObservationEvidence observation={observation} />
-  </details>);
-}
+  return <article className={`civx-container product-page ${styles.page}`}>
+    <nav className={styles.breadcrumb} aria-label="Jejak halaman">
+      <Link href="/">Beranda</Link><span aria-hidden="true">/</span><Link href="/explore">Jelajah</Link><span aria-hidden="true">/</span><span aria-current="page">{region.name}</span>
+    </nav>
+    <PageHeading title={region.name} description="Lihat tekanan relatif wilayah, profil dimensi, serta bukti di balik setiap indikator."
+      action={<Link className="civx-button civx-button-primary" href={`/compare?a=${region.id}`}>Bandingkan wilayah</Link>} />
 
-export function RegionDetail({ id, contextual = false }: { id: string; contextual?: boolean }) {
-  const region = getCurrentRegion(id);
-  if (!region) notFound();
-  const { pressure } = region;
-  const { methodology } = civicRelease;
-  const labelPrefix = `region-${id}-${contextual ? "context" : "page"}`;
-  const context = region.observations.filter(observation => observation.kind === "context_indicator");
-  const advantages = region.observations.filter(observation => observation.kind === "advantage_signal");
-  const present = advantages.filter(observation => observation.kind === "advantage_signal" && observation.presence === "verified_present" && observation.verificationState === "verified" && observation.comparabilityStatus === "comparable");
-  const otherAdvantages = advantages.filter(observation => !present.includes(observation));
-  return (
-    <article className={`${contextual ? styles.contextual : "civx-container"} ${styles.page}`}>
-      {!contextual && <Link className={`civx-text-link ${styles.back}`} href="/explore">← Explore regions</Link>}
-      <header className={styles.hero}>
-        <div className={styles.identity}>
-          <p className="civx-eyebrow">CIVX / Regional record / Jawa Barat / {civicRelease.period}</p>
-          <h1 id={`${labelPrefix}-title`}>{region.name}</h1>
-          <p className={styles.identityMeta}>{region.type === "kabupaten" ? "Regency" : "City"} · BPS region {region.id}</p>
-          <p className={styles.boundary}>Boundary reference: {region.boundaryReference}</p>
-          <p className={styles.releaseNote}>One common contract: {coreIndicators.length} validated core indicators across {methodology.dimensions.length} pressure dimensions. No imputation or region-specific reweighting.</p>
-        </div>
-        <div className={styles.result} aria-labelledby={`${labelPrefix}-status`}>
-          <p className={styles.resultLabel}>Civic Index <span>· {civicRelease.period}</span></p>
-          {pressure.status === "available" ? <>
-            <PressureBadge category={categoryForScore(pressure.score)} />
-            <h2 className={styles.score} id={`${labelPrefix}-status`}>{decimal.format(pressure.score)}<span> / 100</span></h2>
-            <p className={styles.interpretation}>Higher means more modeled relative pressure, not better performance. Context and advantages do not change this score.</p>
-            <div className={styles.scale} role="img" aria-label={`${region.name}: ${decimal.format(pressure.score)} out of 100. Higher means more modeled pressure.`}><div className={styles.scaleTrack}><span className={styles.scaleFill} style={{ width: `${pressure.score}%` }} /><span className={styles.primaryMarker} style={{ left: `${pressure.score}%` }} /></div><div className={styles.scaleTicks}><span>0 · lower</span><span>50</span><span>100 · higher</span></div></div>
-          </> : <><h2 className={styles.unavailable} id={`${labelPrefix}-status`}>Index unavailable</h2><p>{pressure.reason}</p></>}
-        </div>
-      </header>
-      <section className={styles.section} aria-labelledby={`${labelPrefix}-dimensions`}>
-        <div className={styles.sectionHeading}><div><p className="civx-eyebrow">01 / Pressure dimensions</p><h2 id={`${labelPrefix}-dimensions`}>Inside the Civic Index</h2></div><Link className="civx-text-link" href={`/compare?a=${region.id}`}>Compare this region ↗</Link></div>
-        <p className={styles.sectionIntro}>Dimension scores use the same fixed reference and budgets for every region. Expand a dimension for its index contribution.</p>
-        {pressure.status === "available" && pressure.dimensions.map(dimension => <details className={record.disclosure} key={dimension.id}>
-          <summary><span className={record.dimensionLine}><strong>{dimension.label}</strong><span>{decimal.format(dimension.score)} / 100 <small>{decimal.format(dimension.weight * 100)}% of index</small></span></span></summary>
-          <p>{decimal.format(dimension.contribution)} index points contributed. A dimension score is not its weighted index contribution.</p>
-        </details>)}
-        {methodology.unsupportedDimensions.length > 0 && <details className={record.disclosure}><summary>Unscored dimensions · no zero or substitute score</summary><ul>{methodology.unsupportedDimensions.map(dimension => <li key={dimension.id}><strong>{dimension.label}:</strong> {dimension.reason}</li>)}</ul></details>}
+    <div className={styles.overview}>
+      <section className={`product-card ${styles.scoreCard}`} aria-label={`${core.label} ${region.referenceYear}`}>
+        <ScoreDisplay score={core.overallScore} />
+        <p className="product-caption">Skala 0–100 · tahun acuan {region.referenceYear}</p>
+        <p className={styles.scoreNote}>Enam dimensi · {core.indicators.length} indikator inti</p>
       </section>
-      <section className={styles.section} aria-labelledby={`${labelPrefix}-indicators`}>
-        <div className={styles.sectionHeading}><div><p className="civx-eyebrow">02 / Validated core</p><h2 id={`${labelPrefix}-indicators`}>Core indicators</h2></div><p>{coreIndicators.length} shared inputs</p></div>
-        <p className={styles.sectionIntro}>Raw observations, normalized pressure and weighted contributions are separate quantities. Expand each input for its source and calculation evidence.</p>
-        {pressure.status === "available" && methodology.dimensions.flatMap(dimension => dimension.indicators.map(policy => {
-          const component = pressure.dimensions.find(value => value.id === dimension.id)?.components.find(value => value.indicatorId === policy.id);
-          const observation = component && region.observations.find(value => value.id === component.observationId);
-          if (!component || !observation) return null;
-          return <details className={record.disclosure} key={policy.id}>
-            <summary>{policy.label}<span className={record.status}>{observationValue(observation)} · {decimal.format(component.score)} / 100 pressure · {decimal.format(component.contribution)} index points</span></summary>
-            <dl className={record.keyValues}><div><dt>Dimension</dt><dd>{dimension.label}</dd></div><div><dt>Raw observed · {observation.period}</dt><dd>{observationValue(observation)}</dd></div><div><dt>Normalized pressure</dt><dd>{decimal.format(component.score)} / 100</dd></div><div><dt>Index contribution</dt><dd>{decimal.format(component.contribution)} points<small>{decimal.format(component.effectiveWeight * 100)}% effective weight</small></dd></div></dl>
-            <p>{policy.direction === "higher" ? "Higher" : "Lower"} raw values mean more modeled pressure. Fixed reference: {policy.minimum}–{policy.maximum} {policy.unit}. Within-dimension weight: {decimal.format(policy.withinDimensionWeight * 100)}%.</p>
-            <details className={record.disclosure}><summary>Definition, raw source &amp; derivation</summary><ObservationEvidence observation={observation} /></details>
-          </details>;
-        }))}
+      <section className={`product-card ${styles.interpretation}`} aria-labelledby={`${prefix}-reading`}>
+        <h2 id={`${prefix}-reading`}>Cara membaca skor</h2>
+        <p>Skor lebih tinggi berarti tekanan relatif lebih tinggi, bukan capaian yang lebih baik atau lebih buruk.</p>
+        <p className="product-caption">Relatif terhadap {methodology.cohortSize} kabupaten/kota {region.province} pada {region.referenceYear}. Bukan peringkat wilayah.</p>
       </section>
-      <div className={record.grid}>
-        <section className={record.panel} aria-labelledby={`${labelPrefix}-context`}>
-          <h2 id={`${labelPrefix}-context`}>Context Signals</h2>
-          <p className={record.note}>No effect on the Civic Index. Density does not imply poor performance. Facility supply is not actual healthcare access.</p>
-          <OptionalEvidence observations={context} />
-          {!context.length && <p>No comparable verified data.</p>}
-        </section>
-        <section className={record.panel} aria-labelledby={`${labelPrefix}-advantages`}>
-          <h2 id={`${labelPrefix}-advantages`}>Regional Advantages</h2>
-          <p className={record.note}>Verified capabilities, not score bonuses. Dated evidence does not claim province-wide completeness.</p>
-          {present.length ? <OptionalEvidence observations={present} /> : <p>No comparable verified data. This does not establish absence.</p>}
-          {otherAdvantages.length > 0 && <details className={record.disclosure}><summary>Other capability evidence &amp; coverage gaps</summary><p>Unknown is not zero, verified absence or a disadvantage.</p><OptionalEvidence observations={otherAdvantages} /></details>}
-        </section>
+      <section className={`product-card ${styles.identity}`} aria-labelledby={`${prefix}-identity`}>
+        <h2 id={`${prefix}-identity`}>Identitas wilayah</h2>
+        <div className={styles.identityRecord}>
+        <RegionSilhouette regionId={region.id} regionName={region.name} />
+        <dl>
+          <div><dt>Wilayah</dt><dd>{region.name}</dd></div>
+          <div><dt>Jenis</dt><dd>{regionType(region.type)}</dd></div>
+          <div><dt>Provinsi</dt><dd>{region.province}</dd></div>
+          <div><dt>Kode BPS</dt><dd>{region.id}</dd></div>
+        </dl>
+        </div>
+      </section>
+    </div>
+
+    <div className={styles.notice}><Notice>Skor mengacu pada 2023. Setiap indikator tetap memakai periode rujukan sumbernya. Data konteks terpisah dan tidak memengaruhi skor.</Notice></div>
+
+    <nav className={styles.anchors} aria-label="Bagian detail wilayah">
+      <a href={`#${prefix}-profile`}>Profil dimensi</a>
+      <a href={`#${prefix}-indicators`}>Rincian indikator</a>
+      <a href={`#${prefix}-context`}>Data konteks</a>
+      <a href={`#${prefix}-notes`}>Catatan data</a>
+    </nav>
+
+    <div className={`product-grid-two ${styles.profileGrid}`} id={`${prefix}-profile`}>
+      <section className="product-card" aria-labelledby={`${prefix}-dimensions`}>
+        <h2 className="product-section-title" id={`${prefix}-dimensions`}>Profil Dimensi CIVX 2023</h2>
+        <p className="product-caption">Enam dimensi tekanan relatif pada tahun acuan 2023, bukan tren antarwaktu.</p>
+        <DimensionBars dimensions={core.dimensions} />
+      </section>
+      <section className="product-card" aria-labelledby={`${prefix}-insights`}>
+        <h2 className="product-section-title" id={`${prefix}-insights`}>Membaca tekanan relatif</h2>
+        <p className="product-caption">Ringkasan deskriptif dari insight inti CIVX. Tidak menjelaskan sebab-akibat atau prioritas kebijakan.</p>
+        <div className={styles.insights}>{core.insights.map(insight => <section className={styles.insight} key={insight.insightId}>
+          <h3>{insight.title}</h3>
+          <p>{insight.message}</p>
+        </section>)}</div>
+      </section>
+    </div>
+
+    <section className={`product-section ${styles.section}`} id={`${prefix}-indicators`} aria-labelledby={`${prefix}-indicators-title`}>
+      <div className={styles.sectionHeading}>
+        <h2 className="product-section-title" id={`${prefix}-indicators-title`}>Rincian pembentuk skor</h2>
+        <span className="product-caption">{core.indicators.length} indikator inti · {core.dimensions.length} dimensi</span>
       </div>
-      <aside className={styles.provenance} aria-labelledby={`${labelPrefix}-provenance`}>
-        <h2 id={`${labelPrefix}-provenance`}>Sources &amp; record notes</h2>
-        <p>Each expanded observation retains raw values, source locators, artifacts and any numerator/denominator derivation.</p>
-        <details className={record.disclosure}><summary>Release identifiers &amp; interpretation limits</summary><p>{methodology.weightDecision}</p><p>Release {civicRelease.releaseId} · Method {methodology.methodologyVersion} · Reference {methodology.referenceSetId}.</p><p>Source windows differ. Improved sanitation and drinking-water sources do not establish safely managed services. Project-validated only; no government endorsement.</p></details>
-        <div className={record.links}><Link href="/methodology">Methodology &amp; sensitivity ↗</Link><Link href="/sources">Full source directory ↗</Link></div>
-      </aside>
-    </article>
-  );
+      <p className="product-caption">Nilai asli dan tekanan ternormalisasi adalah dua besaran berbeda. Buka indikator untuk definisi, sumber, dan keterbatasannya.</p>
+      <div className={styles.indicatorGroups}>{core.dimensions.map(dimension => <section className={`product-card ${styles.indicatorGroup}`} key={dimension.dimensionId} aria-labelledby={`${prefix}-${dimension.dimensionId}`}>
+        <h3 id={`${prefix}-${dimension.dimensionId}`}>{dimension.displayName}</h3>
+        {core.indicators.filter(indicator => indicator.dimensionId === dimension.dimensionId).map(indicator => <IndicatorDisclosure key={indicator.indicatorId} indicator={indicator} />)}
+      </section>)}</div>
+    </section>
+
+    <ContextSection sections={context} idPrefix={prefix} />
+
+    <section className={`product-card product-section ${styles.section}`} id={`${prefix}-notes`} aria-labelledby={`${prefix}-notes-title`}>
+      <h2 className="product-section-title" id={`${prefix}-notes-title`}>Catatan data</h2>
+      <p className={styles.noteText}>Nilai 0 bukan berarti tanpa tekanan; nilai 100 bukan batas teoretis terburuk. Tidak ada tren atau rata-rata provinsi pada tampilan ini.</p>
+      <p className={styles.noteText}>{methodology.interpretation}</p>
+      <ul className={styles.notes}>
+        <li>Skor membandingkan {methodology.cohortSize} kabupaten/kota {methodology.province} pada tahun acuan {methodology.referenceYear}, bukan perubahan antarwaktu.</li>
+        <li>Nilai asli, satuan, dan periode rujukan tetap mengikuti sumber setiap indikator. Rincian sumber dan keterbatasan dapat dibuka pada setiap indikator.</li>
+        <li>Data konteks memiliki cakupan berbeda dan tidak memengaruhi skor. Data yang tidak tercakup tidak diganti dengan nol.</li>
+      </ul>
+      <div className={styles.footerLinks}><Link className="civx-button civx-button-secondary" href="/methodology">Baca metodologi <span aria-hidden="true">→</span></Link><Link className="civx-text-link" href="/sources">Lihat sumber data <span aria-hidden="true">→</span></Link></div>
+    </section>
+  </article>;
 }

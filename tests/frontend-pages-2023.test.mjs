@@ -1,0 +1,80 @@
+import "./render-ui.mjs";
+import test from "node:test";
+import assert from "node:assert/strict";
+import { createElement } from "react";
+import { renderToStaticMarkup } from "react-dom/server";
+import { AppRouterContext } from "next/dist/shared/lib/app-router-context.shared-runtime.js";
+const { LandingPage } = await import("../src/components/landing/landing-page.tsx");
+const { ExploreBrowser } = await import("../src/components/explore/explore-browser.tsx");
+const { MethodologyPage } = await import("../src/components/methodology/methodology-page.tsx");
+const { SourcesPage } = await import("../src/components/sources/sources-page.tsx");
+const { getExploreRegionsProduct2023, getRegionProductView2023 } = await import("../src/lib/civx/product-2023.ts");
+
+const regions = getExploreRegionsProduct2023();
+// Server rendering does not navigate; the real map still requires its router context.
+const render = (Component, props) => renderToStaticMarkup(createElement(AppRouterContext.Provider, { value: {} }, createElement(Component, props)));
+const text = html => html.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
+const escape = value => renderToStaticMarkup(createElement("span", null, String(value))).slice(6, -7);
+const tableIds = html => [...html.matchAll(/<th scope="row"><a href="\/regions\/(\d+)"/g)].map(match => match[1]);
+const visibleMapIds = html => [...html.matchAll(/<a[^>]*href="\/regions\/(\d+)"[^>]*data-visible="true"/g)].map(match => match[1]);
+
+test("Home shows truthful model scope and a neutral linked map, not best/worst claims", () => {
+  const html = render(LandingPage);
+  const summary = html.split('aria-labelledby="home-title"')[1].split("</section>")[0];
+  const values = [...summary.matchAll(/<strong>([\s\S]*?)<\/strong>/g)].map(match => text(match[1]));
+  assert.deepEqual(values, ["27 Wilayah", "6", "18", "2023"]);
+  assert.equal(visibleMapIds(html).length, 27);
+  assert.equal((html.match(/<h1\b/g) ?? []).length, 1);
+  assert.doesNotMatch(text(html), /74[.,]8|88[.,]5|38[.,]5|performa terbaik|butuh prioritas|status baik|status sedang|status kritis/i);
+});
+
+test("Explore paginates only canonical table rows while map retains all 27 filtered identities", () => {
+  const html = render(ExploreBrowser, { regions });
+  assert.deepEqual(tableIds(html), regions.slice(0, 9).map(view => view.region.id));
+  assert.deepEqual(visibleMapIds(html), regions.map(view => view.region.id));
+  assert.match(html, /aria-label="Halaman 1" aria-current="page"/);
+  assert.match(text(html), /1–9 dari 27/);
+  assert.doesNotMatch(html, /aria-sort|data-rank|name="sort"/);
+  const headers = text(html.match(/<thead>([\s\S]*?)<\/thead>/)[1]);
+  assert.equal(headers, "Wilayah Jenis Skor CIVX Tekanan relatif Aksi");
+});
+
+test("Explore initial query filters map and table together and preserves empty-result recovery", () => {
+  const html = render(ExploreBrowser, { regions, initialSearch: " bAnDuNg " });
+  const expected = regions.filter(view => view.region.name.toLowerCase().includes("bandung")).map(view => view.region.id);
+  assert.deepEqual(tableIds(html), expected);
+  assert.deepEqual(visibleMapIds(html), expected);
+  const empty = render(ExploreBrowser, { regions, initialSearch: "wilayah-tidak-ada" });
+  assert.deepEqual(tableIds(empty), []);
+  assert.deepEqual(visibleMapIds(empty), []);
+  assert.match(text(empty), /Tidak ada wilayah yang cocok/);
+  assert.match(text(empty), /Atur ulang pencarian/);
+});
+
+test("Methodology shows all six dimensions, 18 indicators, exact weights and both direction formulas", () => {
+  const html = render(MethodologyPage);
+  const table = html.match(/<tbody>([\s\S]*?)<\/tbody>/)[1];
+  const profile = getRegionProductView2023("3273");
+  assert.equal((table.match(/<tr>/g) ?? []).length, 6);
+  assert.equal((table.match(/<li>/g) ?? []).length, 18);
+  assert.equal((text(table).match(/1\/6/g) ?? []).length, 6);
+  for (const indicator of profile.core.indicators) assert.ok(table.includes(escape(indicator.displayName)));
+  assert.ok(text(html).includes("s = 100 × ((x − a) / (b − a))"));
+  assert.ok(text(html).includes("s = 100 × ((b − x) / (b − a))"));
+  assert.doesNotMatch(text(html), /25%|empat dimensi|4 dimensi|SCORED_NOT_RELEASED|INSIGHTS_NOT_RELEASED/);
+  assert.equal((html.match(/<h1\b/g) ?? []).length, 1);
+});
+
+test("Sources retains 18 CORE and seven CONTEXT records with original publisher links", () => {
+  const html = render(SourcesPage);
+  const profile = getRegionProductView2023("3273");
+  const core = profile.core.indicators;
+  const context = profile.context.flatMap(section => section.items);
+  const cards = [...html.matchAll(/<article\b[^>]*id="source-([^"]+)"/g)].map(match => match[1]);
+  assert.deepEqual(cards, [...core.map(item => item.indicatorId), ...context.map(item => item.datasetId)]);
+  assert.equal(cards.length, 25);
+  for (const item of core) assert.ok(html.includes(`href="${escape(item.disclosure.source.url)}"`));
+  for (const item of context) for (const source of item.sources) assert.ok(html.includes(`href="${escape(source.url)}"`));
+  assert.doesNotMatch(html, /SCORED_NOT_RELEASED|INSIGHTS_NOT_RELEASED|productionIntegrationAuthorized|data\/processed\//);
+  assert.equal((html.match(/<h1\b/g) ?? []).length, 1);
+});

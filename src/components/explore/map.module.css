@@ -1,0 +1,42 @@
+.section { min-width: 0; }
+.heading { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 16px; }
+.heading h2 { position: relative; padding-left: 12px; margin: 0; font-size: 18px; }
+.heading h2::before { content: ""; position: absolute; height: 1em; width: 3px; background: var(--orange); top: .2em; left: 0; }
+.grid { display: grid; grid-template-columns: minmax(0,1fr) 280px; gap: 24px; }
+.mapArea { position: relative; padding: 24px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; }
+.svg { display: block; width: 100%; height: auto; max-height: 490px; margin-inline: auto; }
+.region { fill: var(--accent); stroke: var(--surface); stroke-width: 1.4; cursor: pointer; transition: fill 140ms; }
+.region path { stroke-linejoin: round; }
+.region:hover, .region:focus-visible { fill: var(--orange); outline: none; stroke: var(--foreground); stroke-width: 2; }
+.region[data-active="true"] { fill: var(--accent-hover); stroke-width: 2.4; }
+.region[data-visible="false"] { fill: var(--border); pointer-events: none; }
+.inspection { min-width: 0; padding: 24px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; align-self: start; }
+.inspection label { display: block; color: var(--muted); font-size: 12px; margin-bottom: 8px; }
+.inspection select { width: 100%; font-size: 12px; padding-inline: 8px; }
+.record { margin-top: 24px; }
+.record h3 { font-size: 20px; margin: 8px 0 16px; }
+.record .score { display: block; font-size: 38px; font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; line-height: 1.4; margin-bottom: 12px; }
+.score small { color: var(--muted); font-size: 11px; font-weight: 400; }
+.note { background: var(--accent-soft); border-radius: 4px; font-size: 12px; margin-top: 24px; padding: 16px; }
+.legend { display: flex; align-items: baseline; gap: 7px; color: var(--muted); font-size: 11px; margin: 20px 0 0; }
+.legend span { background: var(--accent); width: 8px; height: 8px; flex: none; }
+.empty { position: absolute; left: 24px; right: 24px; top: 40%; padding: 20px; border: 1px solid var(--border); background: var(--surface); text-align: center; }
+.credits { color: var(--muted); font-size: 11px; margin-top: 8px; }
+.credits p { max-width: 90ch; }
+.home .heading { justify-content: center; text-align: center; margin-bottom: 8px; }
+.home .heading h2 { padding: 0; color: var(--muted); font-size: 19px; }
+.home .heading h2::before { display: none; }
+.home .heading strong { display: block; color: var(--orange); font-size: 32px; margin-top: 8px; }
+.home .grid { display: block; }
+.home .mapArea { border: 0; background: none; padding: 8px 0 0; }
+.home .svg { max-height: 520px; }
+.home .legend { justify-content: center; margin-top: 12px; }
+.home .inspection { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 20px; padding: 16px; margin-top: 20px; }
+.home .inspection label { grid-column: 1; }
+.home .inspection select { grid-column: 1; grid-row: 2; }
+.home .record { grid-column: 2; grid-row: 1 / 3; margin: 0; }
+.home .record > p, .home .record h3 { display: none; }
+.home .record .score { display: inline-block; font-size: 28px; margin: 0 12px 8px 0; }
+.home .record a { padding: 6px 10px; font-size: 11px; }
+@media(max-width:900px) { .grid { grid-template-columns: minmax(0,1fr) 240px; gap: 16px; } .inspection,.mapArea { padding: 20px; } }
+@media(max-width:650px) { .grid { grid-template-columns: 1fr; } .inspection { width: 100%; } .record { margin-top: 16px; } .mapArea { padding: 12px; } .heading { align-items: flex-start; flex-wrap: wrap; } .home .inspection { display: block; } .home .record { margin-top: 16px; } .home .svg { max-height: none; } .svg { min-height: 210px; } }
