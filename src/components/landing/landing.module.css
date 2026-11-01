@@ -1,25 +1,37 @@
 .page { padding-block: 40px; }
 .layout { display: grid; grid-template-columns: minmax(300px,.9fr) minmax(0,1.4fr); gap: 40px; align-items: start; }
-.summary h1 { font-size: clamp(28px,2.5vw,36px); font-weight: 700; line-height: 1.3; letter-spacing: -.035em; margin: 0 0 16px; }
+.summary h1 { font-size: clamp(28px,2.5vw,36px); font-weight: 700; line-height: 1.3; letter-spacing: -.035em; margin: 0 0 8px; }
 .summary h1 span { color: var(--orange); }
-.subtitle { color: var(--muted); font-size: 13px; line-height: 1.9; margin: 0 0 28px; }
-.coverage { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 24px; text-align: center; }
-.coverage p { font-size: 16px; font-weight: 600; margin: 0 0 8px; }
-.coverage strong { color: var(--accent); font-size: 54px; line-height: 1.4; font-weight: 700; display: block; }
-.coverage small { margin-left: 12px; font-size: 22px; font-weight: 600; }
-.coverage > span { color: var(--muted); font-size: 12px; }
-.modelStats { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; margin-top: 16px; }
-.modelStats > div { border: 1px solid var(--border); background: var(--surface); border-radius: 10px; padding: 20px; }
-.modelStats p { font-size: 12px; color: var(--muted); margin: 0; }
-.modelStats strong { color: var(--accent); font-size: 34px; display: block; margin-block: 8px; line-height: 1.3; }
-.modelStats span { display: block; font-size: 11px; color: var(--muted); }
-.reference { margin-block: 16px 24px; background: var(--accent-soft); border-radius: 6px; padding: 20px; }
-.reference span { font-size: 12px; }
-.reference strong { font-size: 23px; color: var(--accent); float: right; line-height: 1.3; }
-.reference p { clear: both; font-size: 11px; color: var(--muted); margin: 12px 0 0; }
+.subtitle { color: var(--muted); font-size: 13px; line-height: 1.9; margin: 0 0 24px; }
+
+/* Status tones */
+.good { --tone: #22c55e; }
+.warning { --tone: #eab308; }
+.bad { --tone: #ef4444; }
+
+/* Top card: full column width */
+.average { width: 100%; max-width: 440px; background: var(--surface); border: 1px solid var(--border-strong); border-radius: 10px; padding: 24px; text-align: center; box-shadow: 0 4px 14px #2820330f; }
+.average h2 { font-size: 18px; font-weight: 600; margin: 0 0 16px; }
+.averageScore { color: var(--accent); font-size: 32px; font-weight: 700; line-height: 1.2; margin: 0 0 16px; font-variant-numeric: tabular-nums; }
+.statusRow { display: inline-flex; align-items: center; gap: 8px; color: var(--muted); font-size: 12px; margin: 0; }
+.dot { width: 9px; height: 9px; border-radius: 50%; background: var(--tone); }
+
+/* Region cards: narrower than the average card */
+.regionCard { display: flex; align-items: center; justify-content: space-between; gap: 16px; width: 75%; max-width: 330px; margin-top: 24px; padding: 20px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; color: inherit; text-decoration: none; box-shadow: var(--shadow-card); transition: border-color var(--duration-micro), transform var(--duration-micro); }
+.regionCard:hover { border-color: var(--border-strong); transform: translateY(-1px); }
+.regionCard:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.regionInfo { min-width: 0; }
+.regionLabel { color: var(--muted); font-size: 12px; font-weight: 500; margin: 0 0 10px; }
+.regionInfo h3 { font-size: 20px; font-weight: 700; margin: 0 0 14px; }
+.badge { display: inline-flex; align-items: center; gap: 6px; padding: 8px 18px; border-radius: 999px; background: var(--tone); color: #fff; font-size: 20px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.shape { flex: none; width: 110px; height: 96px; }
+.shape path { fill: var(--tone); stroke: var(--surface); stroke-width: 1; }
+
+.note { color: var(--muted); font-size: 11px; margin: 16px 0 0; }
+
 .explanation { display: grid; grid-template-columns: 1fr 1.5fr auto; gap: 24px; align-items: center; border-top: 1px solid var(--border); margin-top: 40px; padding-top: 28px; }
 .explanation h2 { font-size: 17px; margin: 0; }
 .explanation p { color: var(--muted); font-size: 12px; margin: 0; }
 .explanation a { font-size: 12px; }
-@media(max-width:1000px) { .layout { gap: 32px; grid-template-columns: minmax(260px,.8fr) minmax(0,1.2fr); } .explanation { grid-template-columns: 1fr 1.5fr; } .explanation a { grid-column: 2; } }
-@media(max-width:760px) { .page { padding-block: 28px 32px; } .layout { grid-template-columns: 1fr; gap: 36px; } .summary h1 { font-size: 30px; max-width: 20ch; } .coverage { text-align: left; } .coverage strong { font-size: 44px; } .explanation { grid-template-columns: 1fr; gap: 12px; } .explanation a { grid-column: auto; } }
+@media(max-width:1000px) { .layout { gap: 32px; grid-template-columns: minmax(260px,.8fr) minmax(0,1.2fr); } .regionCard { width: 90%; } .shape { width: 90px; height: 80px; } .explanation { grid-template-columns: 1fr 1.5fr; } .explanation a { grid-column: 2; } }
+@media(max-width:760px) { .page { padding-block: 28px 32px; } .layout { grid-template-columns: 1fr; gap: 36px; } .summary h1 { font-size: 30px; max-width: 20ch; } .average, .regionCard { width: 100%; max-width: none; } .shape { width: 110px; height: 96px; } .explanation { grid-template-columns: 1fr; gap: 12px; } .explanation a { grid-column: auto; } }

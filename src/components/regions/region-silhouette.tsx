@@ -4,7 +4,7 @@ import styles from "./region-silhouette.module.css";
 const shapesById = new Map(geometry.regions.map(shape => [shape.id, shape]));
 
 /** The geographic helper emits absolute M/L polygon vertices, including every island and ring. */
-function tightViewBox(path: string): string | null {
+export function tightViewBox(path: string): string | null {
   let minX = Infinity;
   let minY = Infinity;
   let maxX = -Infinity;

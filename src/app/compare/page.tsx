@@ -6,7 +6,7 @@ import { getExploreRegionsProduct2023 } from "@/lib/civx/product-2023";
 
 export const metadata: Metadata = {
   title: "Bandingkan",
-  description: "Bandingkan tekanan relatif dua wilayah Jawa Barat pada model CIVX 2023, dengan enam dimensi dan 18 indikator.",
+  description: "Bandingkan indeks dua wilayah Jawa Barat pada model CIVX 2023 dalam empat dimensi: pendidikan, kesehatan, ekonomi, dan infrastruktur.",
 };
 
 type SearchParams = Record<string, string | string[] | undefined>;

@@ -5,13 +5,16 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 const { selectComparison } = await import("../src/components/compare/comparison-selection.ts");
 const { ComparisonPage } = await import("../src/components/compare/comparison-page.tsx");
-const { formatDifference, formatRaw, formatScore } = await import("../src/components/product/format.ts");
+const { formatScore } = await import("../src/components/product/format.ts");
 const { getComparisonProductView2023, getExploreRegionsProduct2023 } = await import("../src/lib/civx/product-2023.ts");
 
 const regions = getExploreRegionsProduct2023();
 const render = selection => renderToStaticMarkup(createElement(ComparisonPage, { regions, ...selection }));
 const escape = value => renderToStaticMarkup(createElement("span", null, String(value))).slice(6, -7);
 const text = html => html.replace(/<[^>]*>/g, "");
+
+const ASPECTS = [["education", "Pendidikan"], ["public_health", "Kesehatan"], ["socioeconomic", "Ekonomi"], ["basic_services", "Infrastruktur"]];
+const index = pressure => 100 - pressure;
 
 function assertComparisonOutput(selection) {
   const { comparison } = selection;
@@ -24,37 +27,34 @@ function assertComparisonOutput(selection) {
     const article = html.match(new RegExp(`<article[^>]*data-side="${side}"[^>]*>([\\s\\S]*?)</article>`))?.[1];
     assert.ok(article, `Region ${side} summary`);
     assert.ok(article.includes(`<h3>${escape(region.name)}</h3>`));
-    assert.ok(article.includes(`${escape(formatScore(score))} <small>/ 100</small>`));
+    assert.ok(article.includes(`<strong>${escape(formatScore(index(score)))}</strong> <small>/ 100</small>`));
   }
   const overall = html.split('aria-labelledby="results-heading"')[1]?.split("</section>")[0];
-  assert.ok(overall?.includes(`<strong>${escape(formatDifference(comparison.core.overall.delta))} <span>poin</span></strong>`));
-  assert.ok(overall.includes(escape(comparison.presentation.relationLabels[comparison.core.overall.relation])));
+  assert.ok(overall?.includes(`<strong>${escape(formatScore(comparison.core.overall.absoluteDifference))} <span>poin</span></strong>`));
 
   const dimensions = html.split('aria-labelledby="dimensions-heading"')[1]?.split("</section>")[0];
-  assert.equal((dimensions.match(/<h3>/g) ?? []).length, 6);
-  for (const dimension of comparison.core.dimensions) {
-    const row = dimensions.split(`<h3>${escape(dimension.dimensionName)}</h3>`)[1]?.split("<h3>")[0];
-    assert.ok(row, dimension.dimensionId);
-    assert.ok(row.includes(`${escape(formatDifference(dimension.delta))} poin`));
-    const values = [...row.matchAll(/<strong>(.*?)<\/strong>/g)].slice(0, 2).map(match => match[1]);
-    assert.deepEqual(values, [formatScore(dimension.regionAScore), formatScore(dimension.regionBScore)].map(escape));
-  }
+  assert.equal((dimensions.match(/<h3>/g) ?? []).length, 4);
+  const rows = ASPECTS.map(([id, label]) => {
+    const dimension = comparison.core.dimensions.find(item => item.dimensionId === id);
+    assert.ok(dimension, id);
+    const row = dimensions.split(`<h3>${label}</h3>`)[1]?.split("<h3>")[0];
+    assert.ok(row, label);
+    const a = formatScore(index(dimension.regionAScore)), b = formatScore(index(dimension.regionBScore));
+    assert.ok(row.includes(`<strong>${escape(a)}</strong> / <b>${escape(b)}</b>`), label);
+    return [label, a, b, formatScore(dimension.absoluteDifference)];
+  });
 
   const tables = [...html.matchAll(/<table\b[^>]*>([\s\S]*?)<\/table>/g)].map(match => match[1]);
-  assert.equal(tables.length, 18);
-  for (const [index, indicator] of comparison.core.indicators.entries()) {
-    const table = tables[index];
-    assert.ok(table.match(/<caption>([\s\S]*?)<\/caption>/)?.[1].includes(escape(indicator.indicatorName)));
-    const rows = [...table.matchAll(/<tbody>([\s\S]*?)<\/tbody>/g)][0][1];
-    const cells = [...rows.matchAll(/<(?:td|th)\b[^>]*>([\s\S]*?)<\/(?:td|th)>/g)].map(match => text(match[1]));
-    assert.deepEqual(cells, [
-      `A · ${comparison.regionA.name}`, formatRaw(indicator.rawValueA, indicator.unit), formatScore(indicator.normalizedPressureA),
-      `B · ${comparison.regionB.name}`, formatRaw(indicator.rawValueB, indicator.unit), formatScore(indicator.normalizedPressureB),
-    ].map(escape));
-    const summary = [...html.matchAll(/<summary>([\s\S]*?)<\/summary>/g)]
-      .find(match => match[1].includes(escape(indicator.indicatorName)))?.[1];
-    assert.ok(summary?.includes(`<strong>${escape(formatDifference(indicator.delta))}</strong>`));
-  }
+  assert.equal(tables.length, 1);
+  const body = tables[0].match(/<tbody>([\s\S]*?)<\/tbody>/)[1];
+  const cells = [...body.matchAll(/<tr>([\s\S]*?)<\/tr>/g)]
+    .map(match => [...match[1].matchAll(/<(?:td|th)\b[^>]*>([\s\S]*?)<\/(?:td|th)>/g)].map(cell => text(cell[1])));
+  assert.deepEqual(cells, [...rows, [
+    "Indeks keseluruhan1",
+    formatScore(index(comparison.core.overall.regionAScore)),
+    formatScore(index(comparison.core.overall.regionBScore)),
+    formatScore(comparison.core.overall.absoluteDifference),
+  ]].map(row => row.map(escape)));
   return html;
 }
 
@@ -93,31 +93,27 @@ test("swapping selected regions preserves API values and reverses every rendered
   assertComparisonOutput(reverse);
 });
 
-test("same-region selection renders exact ties and retains the reviewed highlight selection", () => {
+test("same-region selection renders exact ties and a no-gap reading note", () => {
   const selection = selectComparison("3273", "3273");
   const expected = getComparisonProductView2023("3273", "3273");
   assert.deepEqual(selection.comparison, expected);
   assert.ok([expected.core.overall, ...expected.core.dimensions, ...expected.core.indicators].every(value => value.delta === 0));
   const html = assertComparisonOutput(selection);
-  const highlights = html.split('aria-labelledby="highlights-heading"')[1].split("</section>")[0];
-  const items = [...highlights.matchAll(/<li\b[^>]*>([\s\S]*?)<\/li>/g)].map(match => match[1]);
-  const expectedHighlights = [...expected.core.highlights.largestDimensionDifferences, ...expected.core.highlights.largestNormalizedPressureDifferences];
-  assert.equal(items.length, expectedHighlights.length);
-  for (const [index, highlight] of expectedHighlights.entries()) {
-    assert.ok(items[index].includes(escape(highlight.dimensionName ?? highlight.indicatorName)));
-    assert.ok(items[index].includes(escape(expected.presentation.relationLabels[highlight.relation])));
-    assert.ok(items[index].includes(`${escape(formatDifference(highlight.delta))} poin`));
-  }
+  const attention = html.split('aria-labelledby="attention-heading"')[1].split("</section>")[0];
+  assert.match(text(attention), /tidak ada kesenjangan/);
 });
 
-test("comparison preserves non-comparative context and contains no debug dump", () => {
+test("comparison names the largest aspect gap, links onward and contains no debug dump", () => {
   const selection = selectComparison("3273", "3276");
   const html = assertComparisonOutput(selection);
-  const context = html.split('aria-labelledby="comparison-context-heading"')[1].split('aria-labelledby="comparison-method-heading"')[0];
-  assert.equal(selection.comparison.context.comparisonPermitted, false);
-  assert.ok(context.includes(escape(selection.comparison.regionA.name)));
-  assert.ok(context.includes(escape(selection.comparison.regionB.name)));
-  assert.doesNotMatch(context, /A − B|class="[^"]*highlightValue/);
+  const { comparison } = selection;
+  const largest = ASPECTS
+    .map(([id, label]) => [label, comparison.core.dimensions.find(item => item.dimensionId === id).absoluteDifference])
+    .reduce((top, row) => (row[1] > top[1] ? row : top));
+  const attention = html.split('aria-labelledby="attention-heading"')[1].split("</section>")[0];
+  assert.ok(text(attention).includes(`dimensi ${largest[0].toLowerCase()}, yaitu ${formatScore(largest[1])} poin`));
   assert.doesNotMatch(html, /<pre\b|scoringPointer|SCORED_NOT_RELEASED|INSIGHTS_NOT_RELEASED|SHA-256|data\/processed\//);
   assert.match(html, /href="\/methodology"/);
+  assert.match(html, new RegExp(`href="/regions/${comparison.regionA.id}"`));
+  assert.match(html, /href="\/explore"/);
 });
