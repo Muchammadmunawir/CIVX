@@ -7,6 +7,7 @@ const { RegionDetail } = await import("../src/components/regions/region-detail.t
 const { RegionSilhouette } = await import("../src/components/regions/region-silhouette.tsx");
 const geometry = (await import("../data/geography/jabar-adm2-2020.json", { with: { type: "json" } })).default;
 const { RegionTable } = await import("../src/components/explore/explore-browser.tsx");
+const { rankRegions } = await import("../src/components/product/index-status.ts");
 const { ContextSection } = await import("../src/components/product/context-section.tsx");
 const { formatRaw, formatScore } = await import("../src/components/product/format.ts");
 const { getExploreRegionsProduct2023, getRegionProductView2023 } = await import("../src/lib/civx/product-2023.ts");
@@ -51,25 +52,30 @@ function renderedContextItem(view, item) {
   return { body: detail.body, summary: detail.body.match(/^<summary>([\s\S]*?)<\/summary>/)[1] };
 }
 
-test("Explore renders all 27 canonical BPS identities in order without numeric rank identities", () => {
+test("Explore ranks all 27 BPS identities by index with status and main challenge", () => {
   const regions = getExploreRegionsProduct2023();
-  const html = render(RegionTable, { regions });
+  const rows = rankRegions(regions);
+  const html = render(RegionTable, { rows });
   const table = elements(html, "table");
   assert.equal(table.length, 1);
   const tbody = elements(table[0].body, "tbody")[0].body;
-  const rows = elements(tbody, "tr");
+  const rendered = elements(tbody, "tr");
+  assert.equal(rendered.length, 27);
+  // Same 27 canonical identities, ordered from lowest pressure to highest.
   const ids = [...Array.from({ length: 18 }, (_, index) => String(3201 + index)), ...Array.from({ length: 9 }, (_, index) => String(3271 + index))];
-  assert.equal(rows.length, 27);
-  assert.deepEqual(rows.map(row => row.body.match(/<th\b[^>]*scope="row"[^>]*><a[^>]*href="\/regions\/(\d+)"/)[1]), ids);
-  for (const [index, row] of rows.entries()) {
-    const identity = elements(row.body, "th");
-    assert.equal(identity.length, 1);
-    assert.equal(text(identity[0].body), escape(regions[index].region.name));
-    assert.ok(elements(row.body, "td").some(cell => text(cell.body) === escape(formatScore(regions[index].core.overallScore))));
-    assert.doesNotMatch(row.opening, /aria-posinset|data-rank/);
+  const renderedIds = rendered.map(row => row.body.match(/<th\b[^>]*scope="row"[^>]*><a[^>]*href="\/regions\/(\d+)"/)[1]);
+  assert.deepEqual([...renderedIds].sort(), ids);
+  const pressures = renderedIds.map(id => regions.find(view => view.region.id === id).core.overallScore);
+  assert.deepEqual(pressures, [...pressures].sort((a, b) => a - b));
+  for (const [index, row] of rendered.entries()) {
+    const expected = rows[index];
+    const cells = elements(row.body, "td").map(cell => text(cell.body));
+    assert.equal(cells[0], String(index + 1).padStart(2, "0"));
+    assert.equal(text(elements(row.body, "th")[0].body), escape(expected.view.region.name));
+    assert.equal(cells[2], escape(formatScore(100 - expected.view.core.overallScore)));
+    assert.equal(cells[3], expected.status.label);
+    assert.match(cells[4], /^Tantangan: /);
   }
-  const headers = elements(table[0].body, "thead")[0].body;
-  assert.doesNotMatch(text(headers), /rank|peringkat|nomor|^no\.?\b/i);
 });
 
 test("RegionDetail renders six dimensions and all 18 real indicator values with source periods", () => {

@@ -10,37 +10,47 @@ import styles from "./map.module.css";
 
 const pathsById = new Map(geometry.regions.map(shape => [shape.id, shape.path]));
 
-export function WestJavaMap({ regions, visibleIds, home = false }: {
-  regions: readonly CivxExploreRegionProduct2023[]; visibleIds?: readonly string[]; home?: boolean;
+/**
+ * `bare` renders only the interactive map so a page can supply its own card, heading and summary panels.
+ * `labelFor` lets a page describe each region in its own reading (e.g. index instead of pressure).
+ */
+export function WestJavaMap({ regions, visibleIds, home = false, bare = false, labelFor }: {
+  regions: readonly CivxExploreRegionProduct2023[]; visibleIds?: readonly string[]; home?: boolean; bare?: boolean;
+  labelFor?: (view: CivxExploreRegionProduct2023) => string;
 }) {
   const router = useRouter();
   const id = useId();
   const [inspectedId, setInspectedId] = useState<string | null>(null);
   const visible = regions.filter(view => !visibleIds || visibleIds.includes(view.region.id));
   const active = visible.find(view => view.region.id === inspectedId) ?? visible[0];
+  const describe = labelFor ?? (view => `Skor CIVX 2023 ${formatScore(view.core.overallScore)} dari 100`);
+  const map = <>
+    <svg viewBox={geometry.viewBox} className={styles.svg} role="group" aria-label="Peta interaktif 27 kabupaten/kota Jawa Barat">
+      <title>Jawa Barat · CIVX 2023</title>
+      <desc>Batas perkiraan 2020 untuk orientasi. Setiap wilayah membuka detail CIVX 2023. Pilihan wilayah dan daftar Jelajah menyediakan akses tanpa peta.</desc>
+      {regions.map(view => {
+        const path = pathsById.get(view.region.id);
+        if (!path) return null;
+        const shown = !visibleIds || visibleIds.includes(view.region.id);
+        return <a key={view.region.id} href={`/regions/${view.region.id}`} className={styles.region} data-active={!bare && active?.region.id === view.region.id} data-visible={shown} tabIndex={shown ? 0 : -1} aria-hidden={!shown} aria-label={`${view.region.name}, ${describe(view)}. Buka detail wilayah.`}
+          onFocus={() => setInspectedId(view.region.id)} onMouseEnter={() => { if (shown) setInspectedId(view.region.id); }}
+          onClick={event => {
+            if (!shown || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+            event.preventDefault(); router.push(`/regions/${view.region.id}`);
+          }}>
+          <title>{`${view.region.name} · ${describe(view)}`}</title>
+          <path d={path} fillRule="evenodd" vectorEffect="non-scaling-stroke" />
+        </a>;
+      })}
+    </svg>
+    {!visible.length && <p className={styles.empty}>Tidak ada wilayah yang cocok. Atur ulang pencarian.</p>}
+  </>;
+  if (bare) return <div className={styles.bare}>{map}</div>;
   return <section className={`${styles.section} ${home ? styles.home : ""}`} aria-labelledby={`${id}-title`}>
     <div className={styles.heading}><h2 id={`${id}-title`}>{home ? <>Peta wilayah <strong>Jawa Barat</strong></> : "Peta Jawa Barat"}</h2>{!home && <span className="product-tag">{visible.length} kabupaten / kota</span>}</div>
     <div className={styles.grid}>
       <div className={styles.mapArea}>
-        <svg viewBox={geometry.viewBox} className={styles.svg} role="group" aria-label="Peta interaktif 27 kabupaten/kota Jawa Barat">
-          <title>Jawa Barat · CIVX 2023</title>
-          <desc>Batas perkiraan 2020 untuk orientasi. Setiap wilayah membuka detail CIVX 2023. Pilihan wilayah dan daftar Jelajah menyediakan akses tanpa peta.</desc>
-          {regions.map(view => {
-            const path = pathsById.get(view.region.id);
-            if (!path) return null;
-            const shown = !visibleIds || visibleIds.includes(view.region.id);
-            return <a key={view.region.id} href={`/regions/${view.region.id}`} className={styles.region} data-active={active?.region.id === view.region.id} data-visible={shown} tabIndex={shown ? 0 : -1} aria-hidden={!shown} aria-label={`${view.region.name}, Skor CIVX 2023 ${formatScore(view.core.overallScore)} dari 100. Buka detail wilayah.`}
-              onFocus={() => setInspectedId(view.region.id)} onMouseEnter={() => { if (shown) setInspectedId(view.region.id); }}
-              onClick={event => {
-                if (!shown || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-                event.preventDefault(); router.push(`/regions/${view.region.id}`);
-              }}>
-              <title>{`${view.region.name} · CIVX ${formatScore(view.core.overallScore)}`}</title>
-              <path d={path} fillRule="evenodd" vectorEffect="non-scaling-stroke" />
-            </a>;
-          })}
-        </svg>
-        {!visible.length && <p className={styles.empty}>Tidak ada wilayah yang cocok. Atur ulang pencarian.</p>}
+        {map}
         <p className={styles.legend}><span aria-hidden="true" />Batas wilayah · warna tidak menunjukkan kategori tekanan.</p>
       </div>
       <aside className={styles.inspection} aria-label="Ringkasan wilayah pada peta">

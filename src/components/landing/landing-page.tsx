@@ -8,10 +8,7 @@ import styles from "./landing.module.css";
 
 const pathsById = new Map(geometry.regions.map(shape => [shape.id, shape.path]));
 
-/**
- * CIVX scores are relative pressure (higher = more pressure).
- * The home cards display an inverted index (100 − pressure) so higher reads as better.
- */
+
 function status(index: number): { label: string; tone: string } {
   if (index >= 70) return { label: "Baik", tone: styles.good };
   if (index >= 50) return { label: "Cukup", tone: styles.warning };

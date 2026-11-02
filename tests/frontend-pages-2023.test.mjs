@@ -35,22 +35,31 @@ test("Home shows province average, lowest/highest pressure regions with shapes, 
   assert.equal((html.match(/<h1\b/g) ?? []).length, 1);
 });
 
-test("Explore paginates only canonical table rows while map retains all 27 filtered identities", () => {
+// Descriptive cohort order: lowest pressure (highest index) first, ties keep BPS order.
+const rankedIds = list => list.map((view, order) => ({ view, order }))
+  .sort((a, b) => a.view.core.overallScore - b.view.core.overallScore || a.order - b.order)
+  .map(({ view }) => view.region.id);
+
+test("Explore paginates ranked table rows by eight while the map retains all 27 filtered identities", () => {
   const html = render(ExploreBrowser, { regions });
-  assert.deepEqual(tableIds(html), regions.slice(0, 9).map(view => view.region.id));
+  assert.deepEqual(tableIds(html), rankedIds(regions).slice(0, 8));
   assert.deepEqual(visibleMapIds(html), regions.map(view => view.region.id));
   assert.match(html, /aria-label="Halaman 1" aria-current="page"/);
-  assert.match(text(html), /1–9 dari 27/);
-  assert.doesNotMatch(html, /aria-sort|data-rank|name="sort"/);
+  assert.equal((html.match(/aria-label="Halaman \d+"/g) ?? []).length, 4);
+  assert.match(text(html), /1–8 dari 27/);
+  assert.match(html, /aria-sort="descending"/);
   const headers = text(html.match(/<thead>([\s\S]*?)<\/thead>/)[1]);
-  assert.equal(headers, "Wilayah Jenis Skor CIVX Tekanan relatif Aksi");
+  assert.equal(headers, "Peringkat Wilayah Jenis Indeks ↓ Status Keterangan Aksi");
+  const firstRow = html.match(/<tbody>[\s\S]*?<tr>([\s\S]*?)<\/tr>/)[1];
+  assert.match(text(firstRow), /^01 /);
+  assert.match(text(html), /bukan peringkat resmi/);
 });
 
 test("Explore initial query filters map and table together and preserves empty-result recovery", () => {
   const html = render(ExploreBrowser, { regions, initialSearch: " bAnDuNg " });
-  const expected = regions.filter(view => view.region.name.toLowerCase().includes("bandung")).map(view => view.region.id);
-  assert.deepEqual(tableIds(html), expected);
-  assert.deepEqual(visibleMapIds(html), expected);
+  const matching = regions.filter(view => view.region.name.toLowerCase().includes("bandung"));
+  assert.deepEqual(tableIds(html), rankedIds(matching));
+  assert.deepEqual(visibleMapIds(html), matching.map(view => view.region.id));
   const empty = render(ExploreBrowser, { regions, initialSearch: "wilayah-tidak-ada" });
   assert.deepEqual(tableIds(empty), []);
   assert.deepEqual(visibleMapIds(empty), []);

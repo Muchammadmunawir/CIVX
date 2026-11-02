@@ -38,5 +38,8 @@
 .home .record > p, .home .record h3 { display: none; }
 .home .record .score { display: inline-block; font-size: 28px; margin: 0 12px 8px 0; }
 .home .record a { padding: 6px 10px; font-size: 11px; }
+.bare { position: relative; }
+.bare .svg { max-height: 460px; }
+.bare .region { stroke-width: 1.6; }
 @media(max-width:900px) { .grid { grid-template-columns: minmax(0,1fr) 240px; gap: 16px; } .inspection,.mapArea { padding: 20px; } }
 @media(max-width:650px) { .grid { grid-template-columns: 1fr; } .inspection { width: 100%; } .record { margin-top: 16px; } .mapArea { padding: 12px; } .heading { align-items: flex-start; flex-wrap: wrap; } .home .inspection { display: block; } .home .record { margin-top: 16px; } .home .svg { max-height: none; } .svg { min-height: 210px; } }
