@@ -118,6 +118,32 @@ test("neutral map does not encode dimension pressure and retains overall CIVX in
   }
 });
 
+test("map distinguishes an unavailable dimension from a recorded zero without substituting the overall score", () => {
+  const dimensionId = "disaster_pressure";
+  const zero = regions.find(view => view.core.dimensions.find(item => item.dimensionId === dimensionId).score === 0);
+  const missing = regions.find(view => view.region.id !== zero.region.id && view.region.id !== regions[0].region.id);
+  // Presentation-only missing-score fixture; production facade data stays complete and frozen.
+  const fixture = regions.map(view => view === missing ? {
+    ...view,
+    core: { ...view.core, dimensions: view.core.dimensions.filter(item => item.dimensionId !== dimensionId) },
+  } : view);
+  const html = render(WestJavaMap, { regions: fixture, dimensionId, visibleIds: [zero.region.id, missing.region.id] });
+  const links = mapLinks(html);
+  const zeroLink = links.find(link => link.id === zero.region.id);
+  const missingLink = links.find(link => link.id === missing.region.id);
+  assert.ok(zeroLink.attributes.includes('style="--map-pressure:0%"'));
+  assert.ok(zeroLink.attributes.includes('data-unavailable="false"'));
+  assert.ok(zeroLink.attributes.includes(`${escape(formatScore(0))} dari 100`));
+  assert.ok(missingLink.attributes.includes('data-unavailable="true"'));
+  assert.doesNotMatch(missingLink.attributes, /--map-pressure/);
+  assert.ok(missingLink.attributes.includes("tidak tersedia"));
+  assert.doesNotMatch(missingLink.attributes, /dari 100/);
+  const inspected = render(WestJavaMap, { regions: fixture, dimensionId, visibleIds: [missing.region.id] });
+  const summary = inspected.match(/<aside\b[^>]*>([\s\S]*?)<\/aside>/)[1];
+  assert.ok(text(summary).includes("Tidak tersedia"));
+  assert.doesNotMatch(summary, /<small>\/ 100<\/small>/);
+});
+
 test("Explore offers neutral and all six CORE layers without contextual layers", () => {
   const html = render(ExploreBrowser, { regions, initialSearch: "tidak-ada" });
   const selector = html.match(/<select[^>]*aria-controls="[^"]+-map"[^>]*>([\s\S]*?)<\/select>/)[1];

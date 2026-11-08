@@ -28,14 +28,14 @@ No dependencies, credentials, external map services, database, or API server wer
 
 | Route | Behavior |
 | --- | --- |
-| `/` | Truthful cohort/model summaries and interactive Jawa Barat map. |
-| `/explore` | All 27 regions in canonical BPS order, name search, kabupaten/kota filter, neutral map, and nine-row table pages. Pagination affects only the table; the map keeps the full filtered result. `?q=` supports search-form navigation. |
+| `/` | Team-integrated Home summaries with an inverted display index and neutral Jawa Barat map; see the methodological note below. |
+| `/explore` | All 27 regions in canonical BPS order, name search, kabupaten/kota filter, neutral or six CORE dimension map layers, and nine-row table pages. Pagination affects only the table; the map keeps the full filtered result and fixed color scale. `?q=` supports search-form navigation. |
 | `/regions/[id]` | Standalone detail with score, real-geometry silhouette, six dimension bars, unchanged controlled insights, 18 grouped indicator disclosures, and separate context. Unknown IDs use Next's not-found boundary. |
 | `/compare?a=3201&b=3273` | Reviewed overall/dimension/indicator differences, two selectors, tied highlights, and separate context. Same-region ties are valid. Invalid or repeated query values show an error rather than substituted results. |
 | `/methodology` | Direction-aware min–max formulas, exact equal-dimension weights, equal weights within each dimension, source limitations, and model status. |
 | `/sources` | Searchable evidence for all 18 CORE indicators and seven contextual datasets. Filter by CORE/CONTEXT and by CORE dimension; browse original publishers, links, periods, units, coverage, and limitations. |
 
-Header search uses only the 27 known regions. Navigation, footer, active indicators, light/dark/system preference, disclosure controls, and responsive layouts share one application shell. There is no score sort, public regional ranking, status threshold, province average, year selector, or time-series chart.
+Header search uses only the 27 known regions. Navigation, footer, active indicators, light/dark/system preference, disclosure controls, and responsive layouts share one application shell. Explore has no score sort, public regional ranking, status threshold, province average, year selector, or time-series chart.
 
 ## Product boundary
 
@@ -68,7 +68,9 @@ Expanded disclosures retain definitions, denominators, source limitations, uncer
 
 ## Map and accessibility
 
-The existing SVG implementation uses `data/geography/jabar-adm2-2020.json`, with its established BPS-code associations. All regions use neutral CIVX blue; hover/focus indicates inspection, not a pressure category. Native link titles and the inspection panel expose region name and score. Click opens detail. Selectors and the complete region list provide non-map access.
+The existing SVG implementation uses `data/geography/jabar-adm2-2020.json`, with its established BPS-code associations. Home stays neutral. Explore defaults to neutral and offers all six CORE dimensions using their exact facade names. Full-precision pressure scores drive one fixed light-to-dark 0–100 scale without rescoring or refitting filters. The legend identifies the fixed 27-region 2023 cohort, non-absolute endpoints, and non-official/non-policy interpretation, with a methodology link. Hover/focus emphasizes boundaries without changing dimension colors. Native link titles and the inspection panel expose region, dimension, and score; missing scores never become zero. Click opens detail. On mobile, the regional selector and information panel precede the SVG in both reading and visual order. Controls remain at least 44 px tall. Color transitions take 250 ms and honor reduced motion.
+
+The Phase 2 map uses unchanged pressure scores. The latest team Home presentation (`100 − pressure`, province mean, and status/priority labels) is preserved and requires separate methodology review. Those displays are not the map legend, new CORE scores, or an authorization to change the product facade.
 
 Geometry represents approximate **2020 geoBoundaries ADM2 boundaries**, not certified 2023 boundaries or a scoring input. Attribution: BPS, WFP, and OCHA ROAP via [geoBoundaries](https://www.geoboundaries.org/api/current/gbOpen/IDN/ADM2/), adapted under [CC BY 3.0 IGO](https://creativecommons.org/licenses/by/3.0/igo/). Provenance remains in [DATA.md §9](docs/DATA.md#9-geographic-display-geometry-separate-from-scoring).
 

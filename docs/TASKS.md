@@ -432,3 +432,26 @@ This user-authorized incremental revision supersedes the neutral-only Explore ma
 - [x] Inspect production light/dark layouts at 320, 390, 768, 1024, and 1440 px with no viewport overflow or clipped map text. Observe a running 250 ms fill transition and a zero-second reduced-motion transition. Observe no application JavaScript or console errors.
 
 No dataset, scoring rule, normalization, weight, methodology, governance flag, CORE/CONTEXT rule, or dependency changed. No CSV, PDF, heatmap, commit, push, or deployment was performed. Approximate boundaries, tiny city targets, source rights, independent review, formal accessibility certification, and public-release approval retain their existing limits. Browser verification covers Chromium and emulated viewport/media states, not physical mobile devices or every browser.
+
+## 29. Phase 2 choropleth completion
+
+- [x] Inspect the clean integration branch and fetch origin. Merge the latest team `origin/main` work (`f90c8fd`) into `Muchammadmunawir/frontend-integration-figma` without conflicts, preserving Home/Compare changes and leaving `main` unchanged.
+- [x] Run the merged baseline: 293 tests passed with no failures or skipped tests.
+- [x] Retain neutral plus six exact facade-named CORE dimensions, fixed 0–100 colors, full-precision scores, filtering invariance, canonical navigation, geometry attribution, and CORE/CONTEXT separation.
+- [x] Move the layer control before the workspace. Put region selection/information before SVG links in DOM/keyboard order and above the graphic on mobile. Preserve the desktop map-left/panel-right layout and Home's visual arrangement.
+- [x] Use the Indonesian label “Lapisan peta” and add an explicit non-official/non-policy disclaimer with a working methodology route.
+- [x] Add a presentation-only missing-score regression that distinguishes unavailable from zero without mutating production data or substituting the overall score. The focused page suite passes all 15 tests.
+- [x] Exercise all six layers, neutral reset, unchanged hover fills, selection retention, layer changes without table-page reset, type/name intersection, empty-result recovery, region-first keyboard access, and detail navigation.
+- [x] Inspect light/dark maps at 320, 390, 768, 1024, and 1440 px without viewport overflow or clipped map text. Confirm that mobile information precedes the map. Observe a running 250 ms fill transition and zero-duration reduced motion.
+
+### Final verification
+
+- `npm test`: 294 passed, zero failed, cancelled, or skipped.
+- `npm run lint`: passed with no warnings or errors.
+- `npm run build`: passed strict TypeScript and generated 36 pages with webpack.
+- Production Chromium verified all six layers across all 27 regions, light/dark layouts at five widths, mobile panel-first order, keyboard/SVG click navigation, touch activation of the detail link, the methodology link, and Home's preserved neutral map arrangement.
+- A running fill transition measured 250 ms; reduced motion produced a zero-second transition. Minimum measured map-text contrast was 5.65:1 in light mode and 7.66:1 in dark mode.
+- Production smoke recorded no application JavaScript or console errors. Touch verification used browser emulation, not a physical device. Cross-browser and formal screen-reader certification remain outside this pass.
+- Frozen score/insight SHA-256 values remain `47b4813abd59bc452556e9d057596511f95e17acd81a4994589bc87460d9f6d5` and `ffd92543c6387c981d2647c8ed55bd3abb7f7c4e9b5b91d4a74fab81999d6345`.
+
+The latest team Home uses an inverted display index (`100 − pressure`), province mean, and status/priority labels. Phase 2 preserves that team work rather than silently rewriting it; these presentations need separate methodology review before competition submission. The map does not adopt those categories or invert pressure values. No dependency, dataset, scoring, normalization, weights, governance flag, API, database, CSV/PDF export, heatmap, or comparison feature is introduced by this completion pass.

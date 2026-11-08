@@ -2,8 +2,8 @@
 .heading { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 16px; }
 .heading h2 { position: relative; padding-left: 12px; margin: 0; font-size: 18px; }
 .heading h2::before { content: ""; position: absolute; height: 1em; width: 3px; background: var(--orange); top: .2em; left: 0; }
-.grid { display: grid; grid-template-columns: minmax(0,1fr) 280px; gap: 24px; }
-.mapArea { position: relative; padding: 24px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; }
+.grid { display: grid; grid-template-columns: minmax(0,1fr) 280px; grid-template-areas: "map inspection"; gap: 24px; }
+.mapArea { grid-area: map; position: relative; padding: 24px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; }
 .svg { display: block; width: 100%; height: auto; max-height: 490px; margin-inline: auto; }
 .region { fill: var(--accent); stroke: var(--surface); stroke-width: 1.4; cursor: pointer; transition: fill 250ms var(--ease-standard); }
 .region path { stroke-linejoin: round; }
@@ -14,7 +14,7 @@
 .region[data-layer="dimension"]:focus-visible { outline: 2px solid var(--foreground); outline-offset: 3px; }
 .region[data-unavailable="true"] { fill: var(--border); }
 .region[data-visible="false"] { fill: var(--border); stroke: var(--surface); stroke-width: 1.4; pointer-events: none; }
-.inspection { min-width: 0; padding: 24px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; align-self: start; }
+.inspection { grid-area: inspection; min-width: 0; padding: 24px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; align-self: start; }
 .inspection label { display: block; color: var(--muted); font-size: 12px; margin-bottom: 8px; }
 .inspection select { width: 100%; font-size: 12px; padding-inline: 8px; }
 .record { margin-top: 24px; }
@@ -24,7 +24,7 @@
 .note { background: var(--accent-soft); border-radius: 4px; font-size: 12px; margin-top: 24px; padding: 16px; }
 .layerControl { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 12px; margin-bottom: 16px; }
 .layerControl label { font-size: 12px; font-weight: 500; }
-.layerControl select { flex: 1; min-width: 0; width: 100%; font-size: 12px; }
+.layerControl select { flex: 1; min-width: 0; width: 100%; max-width: 560px; font-size: 12px; }
 .legend { color: var(--muted); font-size: 11px; margin: 20px 0 0; }
 .legend strong { display: block; color: var(--foreground); font-size: 12px; margin-bottom: 8px; }
 .legend p { margin: 8px 0 0; }
@@ -40,7 +40,7 @@
 .home .heading h2 { padding: 0; color: var(--muted); font-size: 19px; }
 .home .heading h2::before { display: none; }
 .home .heading strong { display: block; color: var(--orange); font-size: 32px; margin-top: 8px; }
-.home .grid { display: block; }
+.home .grid { grid-template-columns: 1fr; grid-template-areas: "map" "inspection"; gap: 0; }
 .home .mapArea { border: 0; background: none; padding: 8px 0 0; }
 .home .svg { max-height: 520px; }
 .home .legend { margin-top: 12px; }
@@ -53,5 +53,5 @@
 .home .record .score { display: inline-block; font-size: 28px; margin: 0 12px 8px 0; }
 .home .record a { padding: 6px 10px; font-size: 11px; }
 @media(max-width:900px) { .grid { grid-template-columns: minmax(0,1fr) 240px; gap: 16px; } .inspection,.mapArea { padding: 20px; } }
-@media(max-width:650px) { .grid { grid-template-columns: 1fr; } .inspection { width: 100%; } .record { margin-top: 16px; } .mapArea { padding: 12px; } .heading { align-items: flex-start; flex-wrap: wrap; } .home .inspection { display: block; } .home .record { margin-top: 16px; } .home .svg { max-height: none; } .svg { min-height: 210px; } }
+@media(max-width:650px) { .grid { grid-template-columns: 1fr; grid-template-areas: "inspection" "map"; } .inspection { width: 100%; } .record { margin-top: 16px; } .mapArea { padding: 12px; } .heading { align-items: flex-start; flex-wrap: wrap; } .home .inspection { display: block; } .home .record { margin-top: 16px; } .home .svg { max-height: none; } .svg { min-height: 210px; } }
 @media(prefers-reduced-motion:reduce) { .region { transition: none; } }
