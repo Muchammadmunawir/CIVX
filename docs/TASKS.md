@@ -414,3 +414,21 @@ Visual review retained the references' restrained palette, orange active marker,
 - Practical accessibility review covered meaningful single H1/main landmarks, heading order, labels, real links/buttons, table scope, native disclosure summaries, keyboard access, visible focus, skip navigation, and map alternatives. This is not formal accessibility certification.
 
 The review keeps the supplied blue-purple/orange/lavender visual language and deliberate truthful departures from mock ranks, categories, years, trends, and methodology. Source rights, independent review, effective-boundary certification, formal accessibility evaluation, and public model release remain separate governance gates. No dependency, credential, map token, database, API server, or frozen model change is introduced by this pass.
+
+## 28. Interactive CORE choropleth revision
+
+This user-authorized incremental revision supersedes the neutral-only Explore map statements in §26–27. Home remains neutral; no other product feature or analytical contract changes.
+
+- [x] Run baseline checks before editing: 284 tests passed, lint passed, and the strict webpack build generated 36 pages.
+- [x] Preserve the existing SVG geometry, BPS identities, approximate 2020 boundary disclosure, attribution, native links, and canonical detail routes.
+- [x] Add neutral plus the six facade-derived CORE dimension options on Explore, without CONTEXT layers or client-side scoring.
+- [x] Use each full-precision dimension score directly for a fixed 0–100 sequential purple color scale; preserve the scale across search/type filtering.
+- [x] Add a relative-pressure legend for the fixed 27-region 2023 cohort, non-absolute endpoints, and an explicit filtered-gray distinction from zero.
+- [x] Keep dimension scores in inspection, accessible names, and native titles. Preserve hover, focus, region selection, keyboard/detail navigation, and neutral overall-score inspection.
+- [x] Add 250 ms color transitions and remove them under reduced-motion preference. Keep the existing responsive layout and 44 px controls.
+- [x] Add nine permanent map regressions covering all 162 facade dimension values, zero/100 endpoints, filter invariance, excluded keyboard targets, empty results, neutral inspection, and six CORE-only options.
+- [x] Pass the 14-test focused page suite and `npm test`: 293 passed, zero failed, cancelled, or skipped. Pass `npm run lint` and `npm run build`, generating 36 pages.
+- [x] Exercise the actual development and production maps in Chromium: all six layers, neutral reset, hover/focus, selection across layers, filter intersection, empty/reset, keyboard/detail navigation, and unchanged neutral Home.
+- [x] Inspect production light/dark layouts at 320, 390, 768, 1024, and 1440 px with no viewport overflow or clipped map text. Observe a running 250 ms fill transition and a zero-second reduced-motion transition. Observe no application JavaScript or console errors.
+
+No dataset, scoring rule, normalization, weight, methodology, governance flag, CORE/CONTEXT rule, or dependency changed. No CSV, PDF, heatmap, commit, push, or deployment was performed. Approximate boundaries, tiny city targets, source rights, independent review, formal accessibility certification, and public-release approval retain their existing limits. Browser verification covers Chromium and emulated viewport/media states, not physical mobile devices or every browser.
