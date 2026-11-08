@@ -1,27 +1,75 @@
 import Link from "next/link";
+import geometry from "../../../data/geography/jabar-adm2-2020.json";
 import { WestJavaMap } from "@/components/explore/west-java-map";
-import { getExploreRegionsProduct2023, getProductMethodology2023, getRegionProductView2023 } from "@/lib/civx/product-2023";
+import { tightViewBox } from "@/components/regions/region-silhouette";
+import { formatScore } from "@/components/product/format";
+import { getExploreRegionsProduct2023, getProductMethodology2023 } from "@/lib/civx/product-2023";
 import styles from "./landing.module.css";
+
+const pathsById = new Map(geometry.regions.map(shape => [shape.id, shape.path]));
+
+/**
+ * CIVX scores are relative pressure (higher = more pressure).
+ * The home cards display an inverted index (100 − pressure) so higher reads as better.
+ */
+function status(index: number): { label: string; tone: string } {
+  if (index >= 70) return { label: "Baik", tone: styles.good };
+  if (index >= 50) return { label: "Cukup", tone: styles.warning };
+  return { label: "Perlu Perhatian", tone: styles.bad };
+}
+
+function RegionShape({ regionId, tone }: { regionId: string; tone: string }) {
+  const path = pathsById.get(regionId);
+  const viewBox = path ? tightViewBox(path) : null;
+  if (!path || !viewBox) return null;
+  return <svg viewBox={viewBox} className={`${styles.shape} ${tone}`} aria-hidden="true" focusable="false">
+    <path d={path} fillRule="evenodd" vectorEffect="non-scaling-stroke" />
+  </svg>;
+}
 
 export function LandingPage() {
   const regions = getExploreRegionsProduct2023();
   const methodology = getProductMethodology2023();
-  const profile = getRegionProductView2023(regions[0].region.id)!;
+
+  const avgIndex = 100 - regions.reduce((sum, view) => sum + view.core.overallScore, 0) / regions.length;
+  const provinceStatus = status(avgIndex);
+  const sorted = [...regions].sort((a, b) => a.core.overallScore - b.core.overallScore);
+  const best = sorted[0];
+  const priority = sorted[sorted.length - 1];
+
+  const cards = [
+    { label: "Wilayah Performa Terbaik", view: best, tone: styles.good, arrow: "↗" },
+    { label: "Wilayah Butuh Prioritas", view: priority, tone: styles.bad, arrow: "↘" },
+  ];
+
   return <main className={`civx-container ${styles.page}`}>
     <div className={styles.layout}>
       <section className={styles.summary} aria-labelledby="home-title">
-        <h1 id="home-title">Dashboard tekanan regional<span>.</span></h1>
-        <p className={styles.subtitle}>Gambaran tekanan relatif {regions.length} kabupaten/kota Jawa Barat berdasarkan model CIVX {methodology.referenceYear}.</p>
-        <div className={styles.coverage}><p>Cakupan Jawa Barat</p><strong>{regions.length}<small>Wilayah</small></strong><span>{regions.filter(view => view.region.type === "kabupaten").length} kabupaten · {regions.filter(view => view.region.type === "kota").length} kota</span></div>
-        <div className={styles.modelStats}>
-          <div><p>Dimensi CORE</p><strong>{profile.core.dimensions.length}</strong><span>Profil tekanan wilayah</span></div>
-          <div><p>Indikator CORE</p><strong>{profile.core.indicators.length}</strong><span>Definisi dan sumber terlacak</span></div>
+        <h1 id="home-title">Dashboard Indeks Regional<span>.</span></h1>
+        <p className={styles.subtitle}>Ringkasan indeks dan status wilayah di Jawa Barat</p>
+
+        <div className={styles.average}>
+          <h2>Rata-rata Indeks Provinsi</h2>
+          <p className={styles.averageScore}>{formatScore(avgIndex)} / 100</p>
+          <p className={styles.statusRow}>Status: {provinceStatus.label} <span className={`${styles.dot} ${provinceStatus.tone}`} aria-hidden="true" /></p>
         </div>
-        <div className={styles.reference}><span>Tahun referensi</span><strong>{methodology.referenceYear}</strong><p>Satu model lengkap untuk satu kohort. Data konteks mempertahankan periode sumbernya sendiri.</p></div>
-        <Link className="civx-button civx-button-primary" href="/explore">Jelajahi wilayah <span aria-hidden="true">↗</span></Link>
+
+        {cards.map(card => {
+          const index = 100 - card.view.core.overallScore;
+          return <Link key={card.label} href={`/regions/${card.view.region.id}`} className={styles.regionCard}>
+            <div className={styles.regionInfo}>
+              <p className={styles.regionLabel}>{card.label}</p>
+              <h3>{card.view.region.name}</h3>
+              <span className={`${styles.badge} ${card.tone}`}>{formatScore(index)} <span aria-hidden="true">{card.arrow}</span></span>
+            </div>
+            <RegionShape regionId={card.view.region.id} tone={card.tone} />
+          </Link>;
+        })}
+
+        <p className={styles.note}>Indeks = 100 − skor tekanan CIVX {methodology.referenceYear}. Semakin tinggi semakin baik.</p>
       </section>
       <WestJavaMap regions={regions} home />
     </div>
-    <section className={styles.explanation} aria-labelledby="reading-title"><h2 id="reading-title">Baca angka bersama konteksnya.</h2><p>Skor lebih tinggi berarti tekanan relatif lebih tinggi dalam kohort 2023. Skor bukan penilaian absolut kualitas wilayah.</p><Link className="civx-text-link" href="/methodology">Pahami metodologi <span aria-hidden="true">↗</span></Link></section>
+    <section className={styles.explanation} aria-labelledby="reading-title"><h2 id="reading-title">Baca angka bersama konteksnya.</h2><p>Skor CIVX lebih tinggi berarti tekanan relatif lebih tinggi dalam kohort {methodology.referenceYear}. Skor bukan penilaian absolut kualitas wilayah.</p><Link className="civx-text-link" href="/methodology">Pahami metodologi <span aria-hidden="true">↗</span></Link></section>
   </main>;
 }
