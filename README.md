@@ -28,10 +28,10 @@ No dependencies, credentials, external map services, database, or API server wer
 
 | Route | Behavior |
 | --- | --- |
-| `/` | Team-integrated Home summaries with an inverted display index and the overall CIVX pressure choropleth; see the methodological note below. |
-| `/explore` | All 27 regions in canonical BPS order, name search, kabupaten/kota filter, overall CIVX plus six CORE dimension map layers, and nine-row table pages. Pagination affects only the table; the map keeps the full filtered result and fixed color scale. `?q=` supports search-form navigation. |
-| `/regions/[id]` | Standalone detail with score, real-geometry silhouette, six dimension bars, unchanged controlled insights, 18 grouped indicator disclosures, and separate context. Unknown IDs use Next's not-found boundary. |
-| `/compare?a=3201&b=3273` | Reviewed overall/dimension/indicator differences, two selectors, tied highlights, and separate context. Same-region ties are valid. Invalid or repeated query values show an error rather than substituted results. |
+| `/` | Model coverage summaries (27 regions, six dimensions, 18 indicators, reference year 2023) and the unchanged overall CIVX pressure choropleth. No inverted quality index, policy status, or regional priority claim. |
+| `/explore` | All 27 regions in canonical BPS order, name search, kabupaten/kota filter, overall CIVX plus six CORE map layers, and nine-row table pages. “Unduh CSV” exports all filtered identities and references, never unreleased values. `?q=` supports search-form navigation. |
+| `/regions/[id]` | Standalone detail with score, silhouette, six dimensions, controlled insights, 18 indicator disclosures, and separate context. “Cetak / Simpan PDF” prints an A4 identity/reference report without unreleased values. Unknown IDs use Next's not-found boundary. |
+| `/compare?a=3201&b=3273` | Existing team comparison selectors, regional summaries, four displayed aspects, and overall difference. Same-region selection remains valid; invalid selections show an error. **Known methodology risk:** the existing presentation still inverts pressure, computes a provincial mean, and assigns quality/priority badges. Phase 3 does not change this comparison implementation. |
 | `/methodology` | Direction-aware min–max formulas, exact equal-dimension weights, equal weights within each dimension, source limitations, and model status. |
 | `/sources` | Searchable evidence for all 18 CORE indicators and seven contextual datasets. Filter by CORE/CONTEXT and by CORE dimension; browse original publishers, links, periods, units, coverage, and limitations. |
 
@@ -70,7 +70,7 @@ Expanded disclosures retain definitions, denominators, source limitations, uncer
 
 The existing SVG implementation uses `data/geography/jabar-adm2-2020.json`, with its established BPS-code associations. Home and Explore default to **Skor Keseluruhan CIVX**, using unchanged full-precision overall pressure scores. Explore also offers all six CORE dimensions using their exact facade names. Both maps share a fixed 0–100 sequential scale, derived from the original CIVX indigo accent and adapted through semantic theme tokens. Higher pressure has stronger color intensity in both themes; filters never refit the scale. The legend identifies the fixed 27-region 2023 cohort, non-absolute endpoints, and non-official/non-policy interpretation. Hover/focus emphasizes boundaries without replacing score colors. Titles and the inspection panel expose the active layer and score; missing scores use hatching rather than zero, while excluded regions remain gray. Native links open detail. On Explore mobile, the regional selector and information panel precede the SVG in reading and visual order. Controls remain at least 44 px tall. Fill transitions take 300 ms and honor reduced motion.
 
-The Phase 2 map uses unchanged pressure scores. The latest team Home presentation (`100 − pressure`, province mean, and status/priority labels) is preserved and requires separate methodology review. Those displays are not the map legend, new CORE scores, or an authorization to change the product facade.
+Phase 3 reviewed Home's `100 − pressure`, provincial mean, 70/50 status thresholds, and best/priority labels. The reviewed model defines relative pressure, not an inverse quality index, population-weighted provincial measure, or automatic priority. Those unsupported summaries are replaced by model coverage facts; the map still uses unchanged full-precision pressure.
 
 Geometry represents approximate **2020 geoBoundaries ADM2 boundaries**, not certified 2023 boundaries or a scoring input. Attribution: BPS, WFP, and OCHA ROAP via [geoBoundaries](https://www.geoboundaries.org/api/current/gbOpen/IDN/ADM2/), adapted under [CC BY 3.0 IGO](https://creativecommons.org/licenses/by/3.0/igo/). Provenance remains in [DATA.md §9](docs/DATA.md#9-geographic-display-geometry-separate-from-scoring).
 
@@ -81,3 +81,17 @@ Home and Explore use once-only 520 ms section entrances with 16 px travel and 70
 ## Limits and governance
 
 Independent source/method review, source reuse rights, effective-boundary certification, formal accessibility review, and model release approval remain separate gates. Whole restricted publications are not redistributed. No deployment, new model year, trend, policy simulation, or context comparison is authorized by this integration. Verification evidence is recorded in [TASKS.md](docs/TASKS.md).
+
+## CSV and printable reports
+
+**Public numerical export is blocked by existing governance.** The model remains `SCORED_NOT_RELEASED`, insights remain `INSIGHTS_NOT_RELEASED`, and `productionIntegrationAuthorized` remains `false`. Existing frontend display is not redistribution approval. No public score/indicator/context export or numerical PDF is enabled.
+
+Explore's **Unduh CSV** exports BPS code, name, region type, province, 2023 reference year, scope/restriction, identity attribution, interpretation, and absolute source/methodology/reporting links. Search and region type select the entire export; table pagination and map layer do not limit or change it. Empty results disable the action and explain why. A browser failure produces live feedback. Filenames identify CIVX, Jawa Barat, 2023, identity-only scope, and region count.
+
+Files use comma-delimited RFC 4180 records, CRLF, and a UTF-8 BOM for spreadsheets. Quotes, commas, newlines, and Unicode remain intact. Formula-like text receives an apostrophe, including after leading whitespace/control/format characters. The serializer retains finite numeric precision and distinguishes zero from empty missing cells, but the permitted public schema contains **no score columns**. Withheld values are not silently presented as missing or zero.
+
+Region detail's **Cetak / Simpan PDF** invokes the browser print dialog. Select A4 and a printer or Save as PDF; disable browser-generated headers/footers if unwanted. The report contains CIVX branding, regional identity, six dimension/indicator references, bibliographic source URLs and table locators (including numerator/denominator sources), model/version, and limitations. Navigation, controls, scores, observations, insights, and CONTEXT are excluded. Print styles apply only while an active regional report is present, including ordinary Ctrl/Cmd+P, and force readable black-on-white output regardless of theme. Reports retained under Next.js Activity's hidden ancestors do not change other routes' print styles.
+
+User-facing rules live at `/methodology#ekspor-dan-laporan`; source metadata stays at `/sources`. Unrestricted numerical exports require a documented rights/release decision and a reviewed contract change, not a client flag or query parameter. No PDF library, dependency, deployment, or scoring change is introduced.
+
+**Remaining comparison concern:** `src/components/compare/comparison-page.tsx` still contains `toIndex = 100 - pressure`, 70/50 status thresholds, best/priority labels, and an inverted provincial mean. Its references to “Skor dari Beranda” no longer describe the corrected Home. This inherited presentation needs a separate comparison cutover/review before submission; passing regression tests does not validate those methodological claims. The Phase 3 corrective request targets Home, and no comparison result or teammate implementation is silently rewritten.

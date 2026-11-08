@@ -490,3 +490,47 @@ The latest team Home uses an inverted display index (`100 − pressure`), provin
 Visual review retains the original light-mode base palette and existing dark-mode hierarchy. It accepts the compact legend, stronger selection boundary, and progressive movement without redesigning cards, navigation, or the page hierarchy. Browser coverage is Chromium only; Firefox/Safari, physical devices, and formal screen-reader certification remain unverified.
 
 The pre-existing Home inverted index, province mean, and status/priority labels still require separate methodology review before competition submission. This phase does not extend those categories to the choropleth or authorize public model release, certified 2023 boundaries, deployment, or a policy recommendation.
+
+## 31. Phase 3 — governance-limited export and reporting
+
+### Inspection and scope decision
+
+- [x] Read the repository instructions, README, planning/governance documents, product facade/contracts, source metadata, and installed Next.js server/client/CSS/Activity guidance before editing.
+- [x] Inspect the clean `Muchammadmunawir/frontend-integration-figma` branch and fetch origin. Confirm teammate integration `f90c8fd`, mobile controls `5dcb4a2`, and Phase 2.1 `4340647`. The fetched main-only addition is merge `85252f2` of the integration branch; no unintegrated teammate implementation is missing.
+- [x] Confirm no existing frontend CSV/download/print implementation. The offline freeze-register CSV is not a public regional-results export.
+- [x] Enforce existing `SCORED_NOT_RELEASED`, `INSIGHTS_NOT_RELEASED`, and `productionIntegrationAuthorized: false`. Public numerical CSV/PDF and source redistribution remain blocked. Implement only existing identity/year/reference metadata, without changing flags or exposing a bypass.
+
+### Delivered permitted scope
+
+- [x] Add accessible **Unduh CSV** to Explore using the full name/type-filtered identities in BPS order. Pagination and map layers do not limit the export. Empty results disable the action with an explanation; preparation failures have live feedback.
+- [x] Include descriptive Indonesian identity/disclosure columns, reference year 2023, BPS attribution, limitations, interpretation, and absolute Sources/Methodology/reporting links. Omit score columns entirely; withheld values are neither missing observations nor zero.
+- [x] Add UTF-8 BOM, comma-delimited RFC 4180 quoting, CRLF, multiline/quote/Unicode handling, and formula-like text protection after whitespace/control/format prefixes. Preserve finite numeric precision and zero/missing distinctions in the serializer without exporting unreleased scores.
+- [x] Add browser-native **Cetak / Simpan PDF** on region detail. The A4 report includes CIVX branding, exact identity/year, all six dimension/indicator references, original publisher URLs/table locators (including denominator sources), model/version, limitations, and non-official/non-policy interpretation. Scores, observations, uncertainty values, insights, CONTEXT, internal artifact pointers, and source books are excluded.
+- [x] Keep the report available to ordinary keyboard/menu printing. Hide navigation and screen controls, keep summaries/table rows intact, and use high-contrast print text independent of theme.
+- [x] Reproduce and fix cached-report print leakage: Next.js Activity retains old route DOM under display-none ancestors. Scope print chrome to reports without hidden ancestors; Compare keeps its own print surface after navigation, and Back restores regional print behavior.
+- [x] Reproduce Home's incorrect quality reading in Chromium: Depok displayed inverted 72.0 while its map showed pressure 28.0; Sukabumi displayed 36.4 against pressure 63.6. The frozen definition does not authorize this inversion, a provincial index, quality thresholds, or policy priorities.
+- [x] Replace only Home's unsupported summaries with facade-derived coverage/year/dimension/indicator counts. Keep its layout, map, theme tokens, and reveal behavior. Delete the obsolete test pinning inverted Home wording. No analytical formulas, datasets, weights, normalization, or release statuses change.
+- [x] Update README, product/data/architecture/integration contracts, and the public `/methodology#ekspor-dan-laporan` reference. Add no dependencies or PDF library.
+
+### Exercised verification
+
+- `npm test`: **304 passed**, zero failed/cancelled/skipped. This includes ten new CSV security/missingness/governance tests and two report disclosure/provenance tests. Tests exercise finite precision, explicit zero versus missing, formula text, malicious extra payload exclusion, canonical identities, empty selections, protected numeric access traps, shared bibliography locators, and denominator attribution.
+- `npm run lint`: passed without warnings/errors after the final print-scope fix.
+- `npm run build`: passed strict TypeScript and generated **36 pages** with webpack after that fix.
+- Chromium exercised actual native downloads, including **27 identities** and a final production keyboard download of **one Bandung city identity** (`civx-jawa-barat-2023-identitas-1-wilayah.csv`, 790 bytes). Browser Blob inspection confirmed BOM bytes `239,187,191`, exact filtered BPS IDs/year, reference links, and exclusion of internal pointers.
+- Filter scenarios returned all nine cities, Bandung city `3273`, Bandung kabupaten `3204`/`3217`, and an empty disabled state. Exporting from table page 3 with Public Health selected still returned all 27 identities. An injected browser download failure produced useful feedback.
+- Production Chromium checked **48 fully loaded route/width/theme combinations**: Home, Explore, Region Detail, and Compare at 320/390/768/1024/1440 px in light/dark; Sources and Methodology at 320/1440 in both themes. No document overflow, clipped visible heading/paragraph/label text, or unnamed input/select/button control was observed. Screen-reader-only clipped labels are intentionally excluded from the visual clipping probe.
+- Visually reviewed desktop Home/Region Detail, mobile export/print controls, and both rasterized A4 report pages. Final production PDF for Bandung Barat has **two A4 pages**, `595.92 × 841.92 pt`; Bandung report also has two pages. Important dimension rows and summary/limitation blocks stay intact.
+- Keyboard activation produced an actual CSV download and one native `beforeprint` event. Print media hid the shell/screen content and showed all six report rows. An injected print failure produced an accessible error. Production region → Compare → Back preserved the corrected active/cached print scope.
+- Exercised overall plus six CORE map layers, SVG Enter navigation to region detail, indicator disclosure, same-region comparison, and invalid comparison rejection. No scoring result changes were observed; the existing domain regressions remain passing.
+- Final production smoke observed no application JavaScript exception or console error. One RSC request was cancelled during intentional Back navigation; product navigation completed. Tooling-only smoke setup errors were corrected and are not application failures.
+- Frozen score SHA-256 remains `47b4813abd59bc452556e9d057596511f95e17acd81a4994589bc87460d9f6d5`; insight SHA-256 remains `ffd92543c6387c981d2647c8ed55bd3abb7f7c4e9b5b91d4a74fab81999d6345`.
+
+### Unresolved before submission
+
+Public score/indicator CSV and numerical regional PDF require documented source-rights and model-release approval. Existing frontend integration does not supply that approval. Independent source/method review, certified effective boundaries, formal accessibility evaluation, Firefox/Safari, physical-device testing, and a visible operating-system print-dialog review remain unverified. Chromium's actual native print event and PDF rendering were exercised, not every browser/printer.
+
+The existing team Compare implementation remains unchanged and still contains `100 - pressure`, an inverted provincial mean, 70/50 quality thresholds, best/priority badges, and “Skor dari Beranda” wording that is stale after Home's correction (`comparison-page.tsx:32–42,119–124,173`). These are unresolved methodological claims outside the requested Home correction. Passing interaction/regression tests does not approve those claims; address them before presenting the entire platform as methodologically ready.
+
+No main merge, force push, dependency change, model release, or production deployment is part of this phase.
+

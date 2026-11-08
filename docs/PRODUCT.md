@@ -150,3 +150,16 @@ Home and Explore default to **Skor Keseluruhan CIVX** from the existing 2023 pre
 The original light-mode palette, typography, and page structure remain authoritative. Map-specific semantic tokens adapt the existing indigo identity to each theme. A scoped accessible theme menu fixes option contrast. Progressive once-only entrances and restrained state transitions respect reduced motion and leave content accessible without JavaScript.
 
 This phase preserves the latest team Home summary cards, including their inverted display index, province mean, and status/priority labels. Those pre-existing presentations still require separate methodology review before submission; the choropleth does not inherit them. No source, score, normalization, weight, CORE/CONTEXT separation, or release-authorization flag changes.
+
+## 14. Phase 3 reporting and transparency
+
+This phase supersedes the unresolved Home presentation note in §13. Home now shows model coverage and reference year instead of an inverted quality index, provincial aggregate, arbitrary 70/50 status thresholds, best-performing region, or policy priority. The model only defines relative pressure; these removed claims had no reviewed methodological basis. The pressure choropleth and existing animation behavior remain unchanged.
+
+Explore provides **Unduh CSV** for the full name/type-filtered set, independent of pagination and map layer. Public scope is identity, year, attribution, interpretation, and reference links only. Scores, indicators, insights, CONTEXT observations, and source publications are excluded because public release and source rights remain unapproved. The UI, CSV, and methodology explain this restriction; absent score columns do not mean missing data or zero.
+
+Region detail provides **Cetak / Simpan PDF** through browser-native print, with A4-specific styling. The report contains CIVX branding, identity, year, six dimension/indicator references, source bibliography, model/version, and explicit limitations. Unreleased numerical results are not printed. Both actions use existing styles, keyboard controls, accessible descriptions, and useful failure feedback.
+
+Full numerical export remains blocked until a documented public-release and rights decision changes the reviewed contract. Existing frontend integration, a download click, or a print request does not grant that permission.
+
+The existing team Compare presentation remains outside this Home correction: it still inverts scores, computes a provincial mean, and assigns best/priority or 70/50 status badges. These claims are not validated by the frozen pressure methodology. Its “Skor dari Beranda” reference is now stale. Record this as an unresolved pre-submission methodological concern, not a new reporting feature or a regression introduced by Phase 3.
+

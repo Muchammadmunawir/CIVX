@@ -28,6 +28,12 @@
 .pagination button:hover:not(:disabled) { background: var(--accent-soft); border-color: var(--accent); }
 .pagination button[aria-current="page"] { background: var(--accent); border-color: var(--accent); color: var(--accent-contrast); }
 .pagination button:disabled { color: var(--muted); cursor: not-allowed; }
+.export { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 16px; margin-block: 12px 20px; }
+.export > button { flex: none; }
+.export > button:disabled { color: var(--muted); cursor: not-allowed; }
+.export > p { flex: 1 1 320px; margin: 0; }
+.export > p[role="status"] { flex-basis: 100%; }
+.export > p[role="status"]:empty { display: none; }
 @media(max-width:360px) { .pagination > div { order: -1; justify-content: center; width: 100%; } }
 @media(max-width:1000px) { .summary { grid-template-columns: repeat(2,minmax(0,1fr)); } }
 @media(max-width:600px) { .summary { gap: 12px; } .summary > div { padding: 16px; } .summary strong { font-size: 20px; } .summary span { font-size: 11px; } .filters { flex-wrap: wrap; gap: 8px; } .search { flex-basis: 100%; } .filters select { flex: 1; } .resultsHeading { display: block; } }

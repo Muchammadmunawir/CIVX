@@ -224,3 +224,16 @@ Phase 2.1 adds `SectionReveals`, a client enhancement around server-rendered Hom
 `ThemeToggle` uses a small scoped radio menu rather than relying on OS-dependent native option styling. Opaque semantic surfaces, checked indicators, keyboard focus management, outside dismissal, and native button activation provide deterministic contrast without a library. The pre-paint theme bootstrap and external preference store remain unchanged.
 
 Explore reuses its existing route-loading component for the search-parameter Suspense boundary. A scoped minimum height of one small viewport keeps the footer outside the initial loading viewport while the longer map/table content streams. The loading state remains explicitly busy and does not substitute or fabricate analytical data.
+
+## 15. Governance-limited reporting
+
+`src/lib/civx/export-2023.ts` serializes CSV and shared Indonesian reporting disclosures. `createExploreCsv2023()` accepts only regional identity headers plus public reference URLs; explicit field projection excludes arbitrary extra payloads. No method, query parameter, release-flag override, or UI switch enables numerical export. `encodeCsv2023()` handles RFC 4180 escaping, UTF-8 BOM, CRLF, finite full-precision numbers, zero/missing distinctions, and spreadsheet-formula text defense.
+
+Explore passes the full filtered header set to the small client `CsvDownload` action before table pagination. Browser Blob/object URLs provide downloads without dependencies or an API server. Failed preparation and empty selections have accessible feedback; successful dispatch does not claim that the user saved a file.
+
+`RegionalPrintReport` projects only identity, dimension/indicator names, bibliography/locators, and model definitions from the same facade. It never reads score/observation/insight/CONTEXT values. Source URLs are deduplicated while retaining table locators and numerator/denominator provenance. `PrintReportButton` invokes `window.print()`; a named A4 page and report-scoped print rules hide the screen detail and shell, preserve table rows/summary blocks, and use high-contrast print typography. The same safe scope applies to keyboard/menu printing without modifying disclosure open states.
+
+Next.js Activity retains prior route DOM with `display: none` on ancestors. Print-shell selectors exclude reports under hidden/display-none ancestors, rather than testing report existence alone. This prevents cached region pages from applying regional print chrome to Compare or other active routes; Back restores the report's scope without JavaScript print-state mutation.
+
+The new methodology anchor documents both actions and the public-release prerequisite. Home keeps the existing layout/reveal/map contracts while replacing unsupported quality/priority summaries with facade-derived model counts. No scoring module, data artifact, dependency, global theme token, or animation implementation changes.
+

@@ -6,6 +6,8 @@ import { regionType } from "@/components/product/format";
 import { DimensionBars, Notice, PageHeading, ScoreDisplay } from "@/components/product/product-ui";
 import { getRegionProductView2023 } from "@/lib/civx/product-2023";
 import { RegionSilhouette } from "./region-silhouette";
+import { PrintReportButton } from "./print-report-button";
+import { RegionalPrintReport } from "./regional-print-report";
 import styles from "./region-detail.module.css";
 
 export function RegionDetail({ id }: { id: string }) {
@@ -15,11 +17,12 @@ export function RegionDetail({ id }: { id: string }) {
   const prefix = `region-${region.id}`;
 
   return <article className={`civx-container product-page ${styles.page}`}>
+    <div data-region-screen>
     <nav className={styles.breadcrumb} aria-label="Jejak halaman">
       <Link href="/">Beranda</Link><span aria-hidden="true">/</span><Link href="/explore">Jelajah</Link><span aria-hidden="true">/</span><span aria-current="page">{region.name}</span>
     </nav>
     <PageHeading title={region.name} description="Lihat tekanan relatif wilayah, profil dimensi, serta bukti di balik setiap indikator."
-      action={<Link className="civx-button civx-button-primary" href={`/compare?a=${region.id}`}>Bandingkan wilayah</Link>} />
+      action={<div className={styles.actions}><Link className="civx-button civx-button-primary" href={`/compare?a=${region.id}`}>Bandingkan wilayah</Link><PrintReportButton /></div>} />
 
     <div className={styles.overview}>
       <section className={`product-card ${styles.scoreCard}`} aria-label={`${core.label} ${region.referenceYear}`}>
@@ -96,5 +99,7 @@ export function RegionDetail({ id }: { id: string }) {
       </ul>
       <div className={styles.footerLinks}><Link className="civx-button civx-button-secondary" href="/methodology">Baca metodologi <span aria-hidden="true">→</span></Link><Link className="civx-text-link" href="/sources">Lihat sumber data <span aria-hidden="true">→</span></Link></div>
     </section>
+    </div>
+    <RegionalPrintReport view={view} />
   </article>;
 }

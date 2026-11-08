@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getExploreRegionsProduct2023, getProductMethodology2023, getRegionProductView2023 } from "@/lib/civx/product-2023";
 import { Notice, PageHeading } from "@/components/product/product-ui";
+import { REPORTING_INTERPRETATION_2023, REPORTING_RESTRICTION_2023 } from "@/lib/civx/export-2023";
 import styles from "./methodology-page.module.css";
 
 const sections = [
@@ -11,6 +12,7 @@ const sections = [
   ["interpretasi", "Cara membaca skor"],
   ["keterbatasan", "Keterbatasan"],
   ["status-model", "Status model"],
+  ["ekspor-dan-laporan", "Ekspor & laporan"],
 ] as const;
 
 export function MethodologyPage() {
@@ -121,6 +123,18 @@ export function MethodologyPage() {
             <p>CIVX adalah indeks analitis yang ditetapkan proyek, bukan indeks resmi atau pengesahan lembaga sumber. Hak penggunaan dan redistribusi sumber belum dinyatakan tuntas.</p>
             <p>Model 2023 masih memerlukan persetujuan rilis publik. Baca definisi, periode rujukan, dan keterbatasan sumber sebelum menggunakan hasilnya.</p>
             <Link className="civx-text-link" href="/sources">Lihat sumber dan catatan penggunaannya <span aria-hidden="true">→</span></Link>
+          </section>
+
+          <section className={styles.section} aria-labelledby="ekspor-dan-laporan">
+            <h2 id="ekspor-dan-laporan" className="product-section-title">Ketentuan ekspor & laporan</h2>
+            <p>{REPORTING_RESTRICTION_2023}</p>
+            <p>CSV Jelajah memuat kode BPS, nama, jenis wilayah, provinsi, tahun acuan 2023, atribusi identitas, serta tautan sumber dan metodologi. Unduhan mengikuti seluruh hasil pencarian dan filter jenis, bukan halaman tabel atau lapisan peta.</p>
+            <p>Kolom skor sengaja tidak disertakan, bukan diisi nol atau dianggap data hilang. Nilai yang ditahan karena izin berbeda dari nilai yang tidak tersedia pada sumber. Ekspor lengkap memerlukan persetujuan rilis dan penuntasan hak penggunaan sumber.</p>
+            <p>CSV memakai UTF-8 dengan BOM, pemisah koma, dan akhir baris CRLF. Teks berpetik mempertahankan koma, kutipan, dan baris baru. Teks yang dapat terbaca sebagai rumus spreadsheet diberi awalan apostrof; awalan ini merupakan pengamanan, bukan bagian nama asli.</p>
+            <p>Untuk laporan wilayah, pilih “Cetak / Simpan PDF”, gunakan kertas A4, lalu pilih printer atau “Simpan sebagai PDF” pada dialog peramban. Laporan hanya memuat identitas dan referensi; skor, nilai indikator, serta insight tidak dicetak. Navigasi dan kontrol halaman disembunyikan. Nonaktifkan header dan footer bawaan peramban bila tidak diperlukan.</p>
+            <p>{REPORTING_INTERPRETATION_2023}</p>
+            <p>Rujukan penerbit bukan izin redistribusi dokumen. Buku sumber tidak disertakan. Periode, definisi, penyebut, dan ketidakpastian indikator tetap mengikuti katalog sumber, bukan disamakan dengan tahun model.</p>
+            <Link className="civx-text-link" href="/sources">Buka atribusi dan keterbatasan setiap sumber <span aria-hidden="true">→</span></Link>
           </section>
         </div>
       </div>

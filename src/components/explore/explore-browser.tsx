@@ -5,6 +5,7 @@ import { useState } from "react";
 import type { CivxExploreRegionProduct2023 } from "@/lib/civx/product-view-types-2023";
 import { formatScore, regionType } from "@/components/product/format";
 import { WestJavaMap } from "./west-java-map";
+import { CsvDownload } from "./csv-download";
 import styles from "./explore.module.css";
 
 const PAGE_SIZE = 9;
@@ -44,6 +45,7 @@ export function ExploreBrowser({ regions, initialSearch = "" }: { regions: reado
     <div className={styles.mapReveal} data-reveal><WestJavaMap regions={regions} visibleIds={filtered.map(view => view.region.id)} dimensionId={dimensionId} onDimensionChangeAction={setDimensionId} /></div>
     <section className="product-section" id="region-results" aria-labelledby="regions-title" data-reveal>
       <div className={styles.resultsHeading}><h2 className="product-section-title" id="regions-title">Daftar wilayah</h2><p className="product-caption" role="status">{filtered.length ? `${start + 1}–${start + pageRegions.length} dari ${filtered.length}` : "0"} wilayah · {regions.length} wilayah dalam model · urutan kode BPS</p></div>
+      <CsvDownload regions={filtered.map(view => view.region)} />
       {filtered.length ? <>
         <RegionTable regions={pageRegions} />
         <nav className={styles.pagination} aria-label="Halaman daftar wilayah">

@@ -162,3 +162,14 @@ The theme control replaces native option popups with a scoped, token-based radio
 `SectionReveals` progressively enhances Home and Explore with once-only 520 ms, 16 px entrances and 70 ms related-content stagger. Default/server/no-JavaScript content stays visible. Interactive targets stay opaque; focus/pointer input cancels travel immediately. Reduced motion removes all nonessential animation and settles targets if enabled during the session. Buttons, navigation, filters, and the theme menu use restrained color/focus transitions. No animation library, looping effect, count-up score, layout-property animation, or scroll-away disappearing content is added.
 
 Explore uses the same existing loading component for route loading and its search-parameter Suspense fallback. A scoped `100svh` minimum loading height prevents the footer from flashing into the initial viewport before the map/table content streams. This does not delay navigation, hide evidence, or add placeholder scores.
+
+## Phase 3 — CSV, A4 reporting, and Home integrity
+
+The existing facade does not grant public numerical redistribution: its frozen score/insight statuses and `productionIntegrationAuthorized: false` remain unchanged. New reporting therefore exposes identities, model metadata, bibliographic references, and limitations only. There is no opt-in flag for scores. This restriction applies even though existing detail/compare screens remain available for the reviewed frontend integration.
+
+Explore's **Unduh CSV** uses the full name/type-filtered identity set, not the nine visible rows or selected map layer. BPS identities/year stay exact; descriptive Indonesian disclosure columns include attribution and absolute source/methodology/reporting links. UTF-8 BOM, CRLF, quoting, multiline values, formula defense, finite numeric precision, and zero/missing handling live outside React. No score column is silently blanked or replaced with zero.
+
+Region detail's **Cetak / Simpan PDF** invokes browser-native printing. A report-only A4 surface replaces screen content in print media and includes identity/year, six dimension/indicator references, deduplicated original publisher URLs/table locators, model/version, and methodological limitations. It retains both operands' bibliography for derived indicators. Scores, observations, insights, CONTEXT, internal paths/hashes, and restricted books are not printed. Ordinary keyboard/menu print uses the same scope; navigation away removes report-specific effects.
+
+Home's inversion and unsupported quality/status/priority claims were reviewed against the frozen model definition. Coverage facts now occupy the existing summary layout; maps retain exact pressure scores, themes, controls, and existing reveals. Previous Phase 2/2.1 statements preserving those Home claims are historical, not current product behavior. `/methodology#ekspor-dan-laporan` explains the new reporting boundary.
+

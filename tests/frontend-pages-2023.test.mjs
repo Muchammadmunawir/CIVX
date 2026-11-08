@@ -20,23 +20,6 @@ const escape = value => renderToStaticMarkup(createElement("span", null, String(
 const tableIds = html => [...html.matchAll(/<th scope="row"><a href="\/regions\/(\d+)"/g)].map(match => match[1]);
 const visibleMapIds = html => [...html.matchAll(/<a[^>]*href="\/regions\/(\d+)"[^>]*data-visible="true"/g)].map(match => match[1]);
 
-test("Home shows province average, lowest/highest pressure regions with shapes, and the linked map", () => {
-  const html = render(LandingPage);
-  const summary = html.split('aria-labelledby="home-title"')[1].split("</section>")[0];
-  const sorted = [...regions].sort((a, b) => a.core.overallScore - b.core.overallScore);
-  const best = sorted[0], priority = sorted[sorted.length - 1];
-  const fmt = value => new Intl.NumberFormat("id-ID", { minimumFractionDigits: 1, maximumFractionDigits: 1 }).format(value);
-  const avgIndex = 100 - regions.reduce((sum, view) => sum + view.core.overallScore, 0) / regions.length;
-  assert.match(text(summary), new RegExp(`Rata-rata Indeks Provinsi ${fmt(avgIndex)} / 100`));
-  assert.match(text(summary), new RegExp(`Wilayah Performa Terbaik ${escape(best.region.name)} ${fmt(100 - best.core.overallScore)}`));
-  assert.match(text(summary), new RegExp(`Wilayah Butuh Prioritas ${escape(priority.region.name)} ${fmt(100 - priority.core.overallScore)}`));
-  assert.match(summary, new RegExp(`href="/regions/${best.region.id}"`));
-  assert.match(summary, new RegExp(`href="/regions/${priority.region.id}"`));
-  assert.equal((summary.match(/<svg\b/g) ?? []).length, 2);
-  assert.equal(visibleMapIds(html).length, 27);
-  assert.equal((html.match(/<h1\b/g) ?? []).length, 1);
-});
-
 test("Explore paginates only canonical table rows while map retains all 27 filtered identities", () => {
   const html = render(ExploreBrowser, { regions });
   assert.deepEqual(tableIds(html), regions.slice(0, 9).map(view => view.region.id));

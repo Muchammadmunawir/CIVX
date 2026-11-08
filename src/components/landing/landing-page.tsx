@@ -1,73 +1,43 @@
 import Link from "next/link";
-import geometry from "../../../data/geography/jabar-adm2-2020.json";
 import { WestJavaMap } from "@/components/explore/west-java-map";
-import { tightViewBox } from "@/components/regions/region-silhouette";
-import { formatScore } from "@/components/product/format";
 import { SectionReveals } from "@/components/product/section-reveals";
-import { getExploreRegionsProduct2023, getProductMethodology2023 } from "@/lib/civx/product-2023";
+import { getExploreRegionsProduct2023, getProductMethodology2023, getRegionProductView2023 } from "@/lib/civx/product-2023";
 import styles from "./landing.module.css";
-
-const pathsById = new Map(geometry.regions.map(shape => [shape.id, shape.path]));
-
-/**
- * CIVX scores are relative pressure (higher = more pressure).
- * The home cards display an inverted index (100 − pressure) so higher reads as better.
- */
-function status(index: number): { label: string; tone: string } {
-  if (index >= 70) return { label: "Baik", tone: styles.good };
-  if (index >= 50) return { label: "Cukup", tone: styles.warning };
-  return { label: "Perlu Perhatian", tone: styles.bad };
-}
-
-function RegionShape({ regionId, tone }: { regionId: string; tone: string }) {
-  const path = pathsById.get(regionId);
-  const viewBox = path ? tightViewBox(path) : null;
-  if (!path || !viewBox) return null;
-  return <svg viewBox={viewBox} className={`${styles.shape} ${tone}`} aria-hidden="true" focusable="false">
-    <path d={path} fillRule="evenodd" vectorEffect="non-scaling-stroke" />
-  </svg>;
-}
 
 export function LandingPage() {
   const regions = getExploreRegionsProduct2023();
   const methodology = getProductMethodology2023();
-
-  const avgIndex = 100 - regions.reduce((sum, view) => sum + view.core.overallScore, 0) / regions.length;
-  const provinceStatus = status(avgIndex);
-  const sorted = [...regions].sort((a, b) => a.core.overallScore - b.core.overallScore);
-  const best = sorted[0];
-  const priority = sorted[sorted.length - 1];
+  const profile = getRegionProductView2023(regions[0].region.id);
+  if (!profile) throw new Error("CIVX home: canonical 2023 profile unavailable");
 
   const cards = [
-    { label: "Wilayah Performa Terbaik", view: best, tone: styles.good, arrow: "↗" },
-    { label: "Wilayah Butuh Prioritas", view: priority, tone: styles.bad, arrow: "↘" },
+    { label: "Kerangka CIVX", title: `${profile.core.dimensions.length} dimensi`, href: "/methodology", action: "Metodologi" },
+    { label: "Landasan data", title: `${profile.core.indicators.length} indikator`, href: "/sources", action: "Sumber data" },
   ];
 
   return <SectionReveals className={`civx-container ${styles.page}`}>
     <div className={styles.layout}>
       <section className={styles.summary} aria-labelledby="home-title">
-        <h1 id="home-title" data-reveal>Dashboard Indeks Regional<span>.</span></h1>
-        <p className={styles.subtitle} data-reveal data-reveal-order="1">Ringkasan indeks dan status wilayah di Jawa Barat</p>
+        <h1 id="home-title" data-reveal>Dashboard Regional CIVX<span>.</span></h1>
+        <p className={styles.subtitle} data-reveal data-reveal-order="1">Cakupan wilayah dan kerangka pengukuran Jawa Barat</p>
 
         <div className={styles.average} data-reveal data-reveal-order="2">
-          <h2>Rata-rata Indeks Provinsi</h2>
-          <p className={styles.averageScore}>{formatScore(avgIndex)} / 100</p>
-          <p className={styles.statusRow}>Status: {provinceStatus.label} <span className={`${styles.dot} ${provinceStatus.tone}`} aria-hidden="true" /></p>
+          <h2>Cakupan Jawa Barat</h2>
+          <p className={styles.averageScore}>{regions.length} wilayah</p>
+          <p className={styles.referenceYear}>Tahun acuan {methodology.referenceYear}</p>
         </div>
 
-        {cards.map((card, cardIndex) => {
-          const index = 100 - card.view.core.overallScore;
-          return <Link key={card.label} href={`/regions/${card.view.region.id}`} className={styles.regionCard} data-reveal data-reveal-order={cardIndex + 3}>
-            <div className={styles.regionInfo}>
-              <p className={styles.regionLabel}>{card.label}</p>
-              <h3>{card.view.region.name}</h3>
-              <span className={`${styles.badge} ${card.tone}`}>{formatScore(index)} <span aria-hidden="true">{card.arrow}</span></span>
+        {cards.map((card, cardIndex) => (
+          <Link key={card.href} href={card.href} className={styles.referenceCard} data-reveal data-reveal-order={cardIndex + 3}>
+            <div className={styles.cardInfo}>
+              <p className={styles.cardLabel}>{card.label}</p>
+              <h3>{card.title}</h3>
+              <span className={styles.cardAction}>{card.action} <span aria-hidden="true">↗</span></span>
             </div>
-            <RegionShape regionId={card.view.region.id} tone={card.tone} />
-          </Link>;
-        })}
+          </Link>
+        ))}
 
-        <p className={styles.note}>Indeks = 100 − skor tekanan CIVX {methodology.referenceYear}. Semakin tinggi semakin baik.</p>
+        <p className={styles.note}>Cakupan kabupaten/kota, bukan agregat skor provinsi atau peringkat wilayah.</p>
       </section>
       <div className={styles.mapReveal} data-reveal data-reveal-order="1"><WestJavaMap regions={regions} home /></div>
     </div>
