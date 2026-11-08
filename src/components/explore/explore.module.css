@@ -1,3 +1,6 @@
+.page :global(.product-heading) p { --reveal-delay: 70ms; }
+.mapReveal { min-width: 0; }
+.loading { min-height: 100svh; }
 .summary { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 16px; margin-bottom: 24px; }
 .summary p { color: var(--muted); font-size: 11px; margin-bottom: 16px; }
 .summary strong { display: block; color: var(--accent); font-size: clamp(20px,2vw,26px); margin-bottom: 12px; line-height: 1.3; }

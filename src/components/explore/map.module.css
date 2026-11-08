@@ -1,24 +1,25 @@
-.section { min-width: 0; --map-low: #e9e2ff; --map-high: #351087; }
+.section { min-width: 0; }
 .heading { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 16px; }
 .heading h2 { position: relative; padding-left: 12px; margin: 0; font-size: 18px; }
 .heading h2::before { content: ""; position: absolute; height: 1em; width: 3px; background: var(--orange); top: .2em; left: 0; }
 .grid { display: grid; grid-template-columns: minmax(0,1fr) 280px; grid-template-areas: "map inspection"; gap: 24px; }
 .mapArea { grid-area: map; position: relative; padding: 24px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; }
 .svg { display: block; width: 100%; height: auto; max-height: 490px; margin-inline: auto; }
-.region { fill: var(--accent); stroke: var(--surface); stroke-width: 1.4; cursor: pointer; transition: fill 250ms var(--ease-standard); }
+.region { fill: color-mix(in srgb, var(--map-high) var(--map-pressure), var(--map-low)); stroke: var(--map-boundary); stroke-width: 1.4; cursor: pointer; transition: fill 300ms var(--ease-standard), stroke var(--duration-micro) var(--ease-standard); }
 .region path { stroke-linejoin: round; }
-.region:hover, .region:focus-visible { fill: var(--orange); outline: none; stroke: var(--foreground); stroke-width: 2; }
-.region[data-active="true"] { fill: var(--accent-hover); stroke-width: 2.4; }
-.region[data-layer="dimension"] { fill: color-mix(in srgb, var(--map-high) var(--map-pressure), var(--map-low)); stroke: var(--border-strong); }
-.region[data-layer="dimension"][data-active="true"], .region[data-layer="dimension"]:hover, .region[data-layer="dimension"]:focus-visible { stroke: var(--orange); stroke-width: 2.4; }
-.region[data-layer="dimension"]:focus-visible { outline: 2px solid var(--foreground); outline-offset: 3px; }
-.region[data-unavailable="true"] { fill: var(--border); }
-.region[data-visible="false"] { fill: var(--border); stroke: var(--surface); stroke-width: 1.4; pointer-events: none; }
-.inspection { grid-area: inspection; min-width: 0; padding: 24px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; align-self: start; }
+.region[data-active="true"], .region:hover, .region:focus-visible { stroke: var(--map-highlight); stroke-width: 2.4; }
+.region:focus-visible { outline: 2px solid var(--map-highlight); outline-offset: 3px; }
+.region[data-unavailable="true"] { fill: var(--map-missing); }
+.missingGround { fill: var(--surface); }
+.missingStripe { stroke: var(--border-strong); stroke-width: 3; }
+.region[data-visible="false"] { fill: var(--map-excluded); stroke: var(--surface); stroke-width: 1.4; pointer-events: none; }
+.inspection { grid-area: inspection; min-width: 0; padding: 24px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; align-self: start; transition: border-color var(--duration-standard) var(--ease-standard); }
+.inspection:focus-within { border-color: var(--accent); }
 .inspection label { display: block; color: var(--muted); font-size: 12px; margin-bottom: 8px; }
 .inspection select { width: 100%; font-size: 12px; padding-inline: 8px; }
 .record { margin-top: 24px; }
-.record h3 { font-size: 20px; margin: 8px 0 16px; }
+.record h3 { font-size: 20px; margin: 8px 0 16px; min-height: 2.7em; }
+.scoreDescription { min-height: 6.8em; }
 .record .score { display: block; font-size: 38px; font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; line-height: 1.4; margin-bottom: 12px; }
 .score small { color: var(--muted); font-size: 11px; font-weight: 400; }
 .note { background: var(--accent-soft); border-radius: 4px; font-size: 12px; margin-top: 24px; padding: 16px; }
@@ -28,11 +29,11 @@
 .legend { color: var(--muted); font-size: 11px; margin: 20px 0 0; }
 .legend strong { display: block; color: var(--foreground); font-size: 12px; margin-bottom: 8px; }
 .legend p { margin: 8px 0 0; }
-.colorRamp { height: 12px; border: 1px solid var(--border-strong); border-radius: 3px; background: linear-gradient(to right, var(--map-low), var(--map-high)); }
+.colorRamp { height: 12px; border: 1px solid var(--border-strong); border-radius: 3px; background: linear-gradient(to right in srgb, var(--map-low), var(--map-high)); }
 .scaleLabels { display: flex; justify-content: space-between; gap: 12px; margin-top: 4px; font-variant-numeric: tabular-nums; }
-.neutralLegend, .excludedLegend { display: flex; align-items: baseline; gap: 7px; }
-.neutralLegend span, .excludedLegend span { background: var(--accent); width: 8px; height: 8px; flex: none; }
-.excludedLegend span { background: var(--border); border: 1px solid var(--border-strong); }
+.excludedLegend, .missingLegend { display: flex; align-items: baseline; gap: 7px; }
+.excludedLegend span, .missingLegend span { width: 10px; height: 10px; flex: none; border: 1px solid var(--border-strong); background: var(--map-excluded); }
+.missingLegend span { background: repeating-linear-gradient(135deg, var(--surface) 0 3px, var(--border-strong) 3px 5px); }
 .empty { position: absolute; left: 24px; right: 24px; top: 40%; padding: 20px; border: 1px solid var(--border); background: var(--surface); text-align: center; }
 .credits { color: var(--muted); font-size: 11px; margin-top: 8px; }
 .credits p { max-width: 90ch; }
@@ -44,12 +45,12 @@
 .home .mapArea { border: 0; background: none; padding: 8px 0 0; }
 .home .svg { max-height: 520px; }
 .home .legend { margin-top: 12px; }
-.home .neutralLegend { justify-content: center; }
-.home .inspection { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 20px; padding: 16px; margin-top: 20px; }
+.home .inspection { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto 1fr; align-items: start; gap: 4px 20px; padding: 16px; margin-top: 20px; }
 .home .inspection label { grid-column: 1; }
 .home .inspection select { grid-column: 1; grid-row: 2; }
 .home .record { grid-column: 2; grid-row: 1 / 3; margin: 0; }
 .home .record > p, .home .record h3 { display: none; }
+.home .record .scoreDescription { display: block; min-height: 0; font-size: 10px; margin-bottom: 8px; }
 .home .record .score { display: inline-block; font-size: 28px; margin: 0 12px 8px 0; }
 .home .record a { padding: 6px 10px; font-size: 11px; }
 @media(max-width:900px) { .grid { grid-template-columns: minmax(0,1fr) 240px; gap: 16px; } .inspection,.mapArea { padding: 20px; } }

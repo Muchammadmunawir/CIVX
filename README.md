@@ -28,8 +28,8 @@ No dependencies, credentials, external map services, database, or API server wer
 
 | Route | Behavior |
 | --- | --- |
-| `/` | Team-integrated Home summaries with an inverted display index and neutral Jawa Barat map; see the methodological note below. |
-| `/explore` | All 27 regions in canonical BPS order, name search, kabupaten/kota filter, neutral or six CORE dimension map layers, and nine-row table pages. Pagination affects only the table; the map keeps the full filtered result and fixed color scale. `?q=` supports search-form navigation. |
+| `/` | Team-integrated Home summaries with an inverted display index and the overall CIVX pressure choropleth; see the methodological note below. |
+| `/explore` | All 27 regions in canonical BPS order, name search, kabupaten/kota filter, overall CIVX plus six CORE dimension map layers, and nine-row table pages. Pagination affects only the table; the map keeps the full filtered result and fixed color scale. `?q=` supports search-form navigation. |
 | `/regions/[id]` | Standalone detail with score, real-geometry silhouette, six dimension bars, unchanged controlled insights, 18 grouped indicator disclosures, and separate context. Unknown IDs use Next's not-found boundary. |
 | `/compare?a=3201&b=3273` | Reviewed overall/dimension/indicator differences, two selectors, tied highlights, and separate context. Same-region ties are valid. Invalid or repeated query values show an error rather than substituted results. |
 | `/methodology` | Direction-aware min–max formulas, exact equal-dimension weights, equal weights within each dimension, source limitations, and model status. |
@@ -68,13 +68,15 @@ Expanded disclosures retain definitions, denominators, source limitations, uncer
 
 ## Map and accessibility
 
-The existing SVG implementation uses `data/geography/jabar-adm2-2020.json`, with its established BPS-code associations. Home stays neutral. Explore defaults to neutral and offers all six CORE dimensions using their exact facade names. Full-precision pressure scores drive one fixed light-to-dark 0–100 scale without rescoring or refitting filters. The legend identifies the fixed 27-region 2023 cohort, non-absolute endpoints, and non-official/non-policy interpretation, with a methodology link. Hover/focus emphasizes boundaries without changing dimension colors. Native link titles and the inspection panel expose region, dimension, and score; missing scores never become zero. Click opens detail. On mobile, the regional selector and information panel precede the SVG in both reading and visual order. Controls remain at least 44 px tall. Color transitions take 250 ms and honor reduced motion.
+The existing SVG implementation uses `data/geography/jabar-adm2-2020.json`, with its established BPS-code associations. Home and Explore default to **Skor Keseluruhan CIVX**, using unchanged full-precision overall pressure scores. Explore also offers all six CORE dimensions using their exact facade names. Both maps share a fixed 0–100 sequential scale, derived from the original CIVX indigo accent and adapted through semantic theme tokens. Higher pressure has stronger color intensity in both themes; filters never refit the scale. The legend identifies the fixed 27-region 2023 cohort, non-absolute endpoints, and non-official/non-policy interpretation. Hover/focus emphasizes boundaries without replacing score colors. Titles and the inspection panel expose the active layer and score; missing scores use hatching rather than zero, while excluded regions remain gray. Native links open detail. On Explore mobile, the regional selector and information panel precede the SVG in reading and visual order. Controls remain at least 44 px tall. Fill transitions take 300 ms and honor reduced motion.
 
 The Phase 2 map uses unchanged pressure scores. The latest team Home presentation (`100 − pressure`, province mean, and status/priority labels) is preserved and requires separate methodology review. Those displays are not the map legend, new CORE scores, or an authorization to change the product facade.
 
 Geometry represents approximate **2020 geoBoundaries ADM2 boundaries**, not certified 2023 boundaries or a scoring input. Attribution: BPS, WFP, and OCHA ROAP via [geoBoundaries](https://www.geoboundaries.org/api/current/gbOpen/IDN/ADM2/), adapted under [CC BY 3.0 IGO](https://creativecommons.org/licenses/by/3.0/igo/). Provenance remains in [DATA.md §9](docs/DATA.md#9-geographic-display-geometry-separate-from-scoring).
 
 Small screens collapse navigation, stack grids and comparison cards, and scroll tables within their own frame. Semantic headings, labels, native buttons/links/details, visible focus, skip navigation, Escape dismissal, and reduced-motion support remain available. Browser smoke is not formal accessibility certification.
+
+Home and Explore use once-only 520 ms section entrances with 16 px travel and 70 ms stagger. Content stays readable without JavaScript or observer support; interactive targets remain opaque, and focus/pointer interaction cancels travel. Reduced motion removes all nonessential animation. The scoped theme menu uses opaque existing surface/text tokens, radio-menu semantics, arrows/Home/End, Enter/Space, Escape, Tab, and outside dismissal. Theme initialization, persistence, and System tracking remain unchanged.
 
 ## Limits and governance
 

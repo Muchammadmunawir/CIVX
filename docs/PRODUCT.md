@@ -142,3 +142,11 @@ The six supplied Figma references define layout and visual style only. Structura
 CORE and the seven audited CONTEXT datasets remain separate. Context availability, zeros, individual sites, actual dates, and non-comparison restrictions survive presentation. The earlier Regional Advantages contract is not part of this reviewed product facade and is not imported from the old model.
 
 The integration does not release the frozen model, certify source rights, authorize new periods, or change source evidence. Implementation and verification details: [PRODUCT-INTEGRATION-2023.md](PRODUCT-INTEGRATION-2023.md#figma-frontend-integration).
+
+## 13. Phase 2.1 presentation refinement
+
+Home and Explore default to **Skor Keseluruhan CIVX** from the existing 2023 pressure scores. Explore retains the six CORE dimension layers, fixed 0–100 mapping, selection, filtering, and canonical detail navigation. The map introduces no categories, ranking, official classification, individual stress measurement, or policy recommendation.
+
+The original light-mode palette, typography, and page structure remain authoritative. Map-specific semantic tokens adapt the existing indigo identity to each theme. A scoped accessible theme menu fixes option contrast. Progressive once-only entrances and restrained state transitions respect reduced motion and leave content accessible without JavaScript.
+
+This phase preserves the latest team Home summary cards, including their inverted display index, province mean, and status/priority labels. Those pre-existing presentations still require separate methodology review before submission; the choropleth does not inherit them. No source, score, normalization, weight, CORE/CONTEXT separation, or release-authorization flag changes.

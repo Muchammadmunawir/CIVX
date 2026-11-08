@@ -60,7 +60,7 @@ test("Explore initial query filters map and table together and preserves empty-r
   assert.match(text(empty), /Atur ulang pencarian/);
 });
 
-const mapLinks = html => [...html.matchAll(/<a\b([^>]*href="\/regions\/(\d+)"[^>]*)>([\s\S]*?)<\/a>/g)]
+const mapLinks = html => [...html.match(/<svg\b[^>]*role="group"[^>]*>([\s\S]*?)<\/svg>/)[1].matchAll(/<a\b([^>]*href="\/regions\/(\d+)"[^>]*)>([\s\S]*?)<\/a>/g)]
   .filter(match => match[3].includes("<path "))
   .map(match => ({ id: match[2], attributes: match[1], body: match[3] }));
 
@@ -108,13 +108,19 @@ test("map filtering keeps the full-cohort color scale and removes excluded regio
   assert.doesNotMatch(empty, /<h3>/);
 });
 
-test("neutral map does not encode dimension pressure and retains overall CIVX inspection", () => {
-  const html = render(WestJavaMap, { regions });
-  const links = mapLinks(html);
-  assert.ok(links.every(link => link.attributes.includes('data-layer="neutral"')));
-  assert.doesNotMatch(html, /--map-pressure/);
-  for (const [index, link] of links.entries()) {
-    assert.ok(link.attributes.includes(`Skor CIVX 2023 ${escape(formatScore(regions[index].core.overallScore))} dari 100`));
+test("Home and Explore default maps encode the same full-precision overall pressure without refitting filters", () => {
+  const home = mapLinks(render(LandingPage));
+  const explore = mapLinks(render(ExploreBrowser, { regions }));
+  const selected = regions.find(view => view.region.id === "3273");
+  const filtered = mapLinks(render(WestJavaMap, { regions, visibleIds: [selected.region.id] }));
+  for (const links of [home, explore, filtered]) {
+    assert.deepEqual(links.map(link => link.id), regions.map(view => view.region.id));
+    for (const [index, link] of links.entries()) {
+      const score = regions[index].core.overallScore;
+      assert.ok(link.attributes.includes('data-layer="overall"'));
+      assert.ok(link.attributes.includes(`style="--map-pressure:${score}%"`), link.id);
+      assert.ok(link.attributes.includes(`2023 ${escape(formatScore(score))} dari 100`), link.id);
+    }
   }
 });
 
@@ -144,12 +150,6 @@ test("map distinguishes an unavailable dimension from a recorded zero without su
   assert.doesNotMatch(summary, /<small>\/ 100<\/small>/);
 });
 
-test("Explore offers neutral and all six CORE layers without contextual layers", () => {
-  const html = render(ExploreBrowser, { regions, initialSearch: "tidak-ada" });
-  const selector = html.match(/<select[^>]*aria-controls="[^"]+-map"[^>]*>([\s\S]*?)<\/select>/)[1];
-  const ids = [...selector.matchAll(/<option value="([^"]*)"/g)].map(match => match[1]);
-  assert.deepEqual(ids, ["", "socioeconomic", "education", "basic_services", "public_health", "disaster_pressure", "environment"]);
-});
 
 test("Methodology shows all six dimensions, 18 indicators, exact weights and both direction formulas", () => {
   const html = render(MethodologyPage);

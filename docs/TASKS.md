@@ -455,3 +455,38 @@ No dataset, scoring rule, normalization, weight, methodology, governance flag, C
 - Frozen score/insight SHA-256 values remain `47b4813abd59bc452556e9d057596511f95e17acd81a4994589bc87460d9f6d5` and `ffd92543c6387c981d2647c8ed55bd3abb7f7c4e9b5b91d4a74fab81999d6345`.
 
 The latest team Home uses an inverted display index (`100 − pressure`), province mean, and status/priority labels. Phase 2 preserves that team work rather than silently rewriting it; these presentations need separate methodology review before competition submission. The map does not adopt those categories or invert pressure values. No dependency, dataset, scoring, normalization, weights, governance flag, API, database, CSV/PDF export, heatmap, or comparison feature is introduced by this completion pass.
+
+## 30. Phase 2.1 — theme-aware overall choropleth and motion
+
+- [x] Inspect the clean integration branch, fetch origin, and confirm the previous team integration and Phase 2 commits. Keep `main` unchanged and preserve the existing Home/Compare presentation.
+- [x] Compare the light-mode tokens with integration commit `2e955be`. Preserve the original backgrounds, typography, surfaces, buttons, accents, navigation, and spacing conventions. Supplied screenshot/video references were not available; follow the written motion brief instead.
+- [x] Replace neutral mode with **Skor Keseluruhan CIVX** on Home and Explore through the same existing map. Retain all six exact facade-named CORE dimensions and full-precision pressure scores.
+- [x] Add map-specific semantic light/dark tokens derived from the existing indigo accent. Keep the fixed 0–100 domain, explicit gray filter exclusion, hatched unavailable scores, relative-cohort legend, methodological caveats, and source attribution.
+- [x] Keep geographic paths mounted and stationary across layers, retain the inspected region and table page, update labels immediately, and animate fill for 300 ms without replacing score colors on hover.
+- [x] Replace the OS-dependent theme select popup with a scoped accessible radio menu. Preserve theme bootstrap, storage, and System tracking; support arrows, Home/End, first-letter access, Enter/Space, Escape, Tab/Shift+Tab, and outside dismissal.
+- [x] Add progressive once-only Home/Explore reveals: 520 ms, 16 px travel, and 70 ms stagger. Keep actions opaque, settle on interaction, retain no-JavaScript visibility, and disable nonessential motion under reduced motion.
+- [x] Fix tablet Home card text collisions without changing their content or desktop/mobile hierarchy. Align the Home map selector without stretching its control height.
+- [x] Reuse Explore's existing loading component for its request-time Suspense boundary and reserve a viewport of loading height, eliminating the observed footer shift.
+- [x] Replace the obsolete neutral-map behavior regression with shared Home/Explore overall-score and filter-invariance coverage. Remove the selector-options-only wiring test rather than repinning its wording.
+- [x] Update README and the product, data, architecture, and integration contracts. No source, model, normalization, weighting, CORE/CONTEXT, release flag, dependency, export, or deployment changes.
+
+### Exercised verification
+
+- `npm test`: **293 passed**, zero failed, cancelled, or skipped. The focused frontend page suite passed all **14** tests, including all 162 dimension scores, shared overall pressure, fixed filter mapping, unavailable-versus-zero handling, and equivalent region access.
+- `npm run lint`: passed without warnings or errors.
+- `npm run build`: passed strict TypeScript and generated **36 pages** with webpack.
+- Production Chromium checked overall plus six CORE layers against all 27 full-precision facade records in both themes. Selected region `3273` survived every layer switch. Home and Explore pressure mappings matched.
+- Browser interaction smoke exercised hover, keyboard focus/outline, SVG Enter navigation, selected-region detail, table-page retention across layers, name/type intersection, excluded keyboard targets, empty results, and reset.
+- Touch emulation navigated from the inspection panel to `/regions/3273` and directly from a geographic path to `/regions/3201`. No physical device was used.
+- Captured and visually reviewed Home/Explore light/dark screenshots at **320, 390, 768, 1024, and 1440 px**: **20 combinations**, with no document overflow or clipped visible heading/paragraph/label text. Explore retains panel-first mobile order.
+- Theme menu keyboard, selected/focus states, Space activation, first-letter access, Escape focus return, Tab/Shift+Tab destinations, and outside dismissal worked. Measured option text contrast was at least **10.01:1** in light mode and **6.65:1** in dark mode. System followed emulated OS changes and survived reload.
+- A running fill transition measured **300 ms**. SVG identity and path geometry stayed unchanged; sampled desktop inspection heights stayed equal across layers. Surface-relative scale intensity increased monotonically at 0/25/50/75/100 in both themes.
+- Observed **nine Home** and **eleven Explore** reveal starts, each once despite scrolling away and back. Reduced motion produced no reveal starts, no hidden content, and a **0 s** fill transition. Enabling reduced motion during the session settled every target.
+- No-JavaScript browser loads retained visible content and all 27 native map links on both pages.
+- Layout-shift instrumentation identified the previous Explore fallback footer shift (**0.2315625**). After reserving loading height, the same normal/reduced-motion Home/Explore smoke recorded **0**. These are local smoke observations, not field-performance guarantees.
+- No application JavaScript exception or console error was observed. Script requests cancelled during intentional no-JavaScript probes are not product navigation failures.
+- Frozen score/insight SHA-256 values remain `47b4813abd59bc452556e9d057596511f95e17acd81a4994589bc87460d9f6d5` and `ffd92543c6387c981d2647c8ed55bd3abb7f7c4e9b5b91d4a74fab81999d6345`.
+
+Visual review retains the original light-mode base palette and existing dark-mode hierarchy. It accepts the compact legend, stronger selection boundary, and progressive movement without redesigning cards, navigation, or the page hierarchy. Browser coverage is Chromium only; Firefox/Safari, physical devices, and formal screen-reader certification remain unverified.
+
+The pre-existing Home inverted index, province mean, and status/priority labels still require separate methodology review before competition submission. This phase does not extend those categories to the choropleth or authorize public model release, certified 2023 boundaries, deployment, or a policy recommendation.
