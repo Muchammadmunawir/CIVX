@@ -33,7 +33,7 @@ export function CsvDownload({ regions }: { regions: readonly CivxRegionProductHe
   };
 
   return <div className={styles.export}>
-    <button className="civx-button civx-button-secondary" type="button" onClick={download} disabled={regions.length === 0} aria-describedby="csv-scope">Unduh CSV</button>
+    <button className="civx-button civx-button-secondary" type="button" onClick={download} disabled={regions.length === 0} aria-describedby="csv-scope">Unduh CSV identitas</button>
     <p id="csv-scope" className="product-caption">{REPORTING_SCOPE_2023}. Seluruh hasil filter, bukan hanya halaman tabel. <a className="civx-text-link" href="/methodology#ekspor-dan-laporan">Ketentuan ekspor</a>.</p>
     <p className="product-caption" role="status" aria-atomic="true">{regions.length === 0 ? "Tidak ada wilayah sesuai filter untuk diunduh." : feedback}</p>
   </div>;

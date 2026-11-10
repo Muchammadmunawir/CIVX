@@ -715,3 +715,31 @@ Scope remains navigation presentation and interaction only. No route, scoring, s
 ### Remaining gates
 
 Technical integration review and final submission QA can proceed on the development branch with local/access-controlled data. Public publication cannot proceed before documented source rights and model/insight release approval. Independent source/method review, effective-boundary certification, formal accessibility review, Firefox/Safari, physical-device testing, and visible OS print-dialog/printer review remain unverified owner/QA gates. No heatmap, new dataset/model, prediction, chatbot, multi-region comparison, authentication/database, radar chart, logo replacement, or complex animation is introduced. No new PR, merge into main, or production deployment is authorized by this work.
+
+## 38. Complete reporting contract with offline numerical review
+
+### Implemented scope
+
+- Document the complete [analytical CSV/PDF contract](ANALYTICAL-REPORTING-2023.md), separate from the authorized public identity/reference contract. Public reporting remains metadata-only, not a complete numerical analytical export.
+- Add a Node-only preparation command and pure reporting modules under `scripts/`. Read authoritative 2023 facade values without scoring again, retain original precision/missingness/uncertainty, exclude CONTEXT/insights/similarity, and never mutate frozen product records.
+- Produce full-filter analytical CSV with 240 columns: 24 common fields and 18 indicator groups with 12 fields each. Preserve BPS identity, period, overall/six-dimension scores, raw/normalized indicators, units, operand definitions, evidence roles, source dates/locators, limitations, filter scope, and model provenance. Reuse existing UTF-8 BOM/CRLF/formula-safe CSV serialization.
+- Produce selected-region standalone HTML with CIVX identity, all numerical evidence, bibliography, limitations, a CSP-hashed native print action, and a readable A4 layout. Browser Save as PDF completes the private numerical report; the CLI does not itself generate a PDF binary.
+- Enforce local output outside the repository through realpath/symlink checks, private random directories (`0700`), and CLI-written CSV/HTML (`0600`). Expose no route, client authorization toggle, server port, public download, or output-path override. Operators must save browser-generated PDFs in a controlled location.
+- Clarify public actions as **Unduh CSV identitas** and **Cetak identitas / PDF**, including the Methodology instruction. Do not change public serialization, print payloads, release flags, scoring, source datasets, dependencies, routes, or the approved shared notice.
+
+### Exercised verification
+
+- `npm test`: **369 passed**, zero failed/skipped/cancelled/todo; 24 new behavioral tests cover numerical fidelity, filters, zeros/nulls, full precision, formula injection, CSV parsing, malformed input, metadata/source roles, HTML injection/unsafe URLs, CSP, filesystem containment/permissions, and real CLI execution. `npm run lint` and `npm run build` pass, including strict TypeScript and **36 generated pages**.
+- Run the actual CLI for all **27 regions** and a Kota Bandung search/type selection. Check `0700` directories and `0600` generated files outside the repository.
+- Open the resulting standalone `file://` report in Chromium and verify **43 exact numerical data bindings** against the facade: one overall score, six dimensions, and raw/normalized values for all 18 indicators. Exercise the native print button by keyboard and observe `beforeprint`.
+- Inspect report widths **320, 390, 768, 1024, and 1440px** with no horizontal overflow, 18 indicator sections, six dimension rows, and no loaded network assets or runtime/console errors.
+- Generate and visually inspect a tagged **23-page A4** numerical PDF for Kota Bandung. Keep the full six-dimension summary on its first page, preserve all 18 raw indicator values in extracted text, and verify the `≤7.2 m²` source comparator visually. PDF text extraction can reorder comparison glyphs; visual rendering and source HTML retain the original comparator. No physical printer, visible OS save dialog, or formal PDF accessibility certification is claimed.
+- Check public Explore, Region Detail, and Methodology reporting controls in light/dark themes at **320px and 1024px**: 12 combinations, no overflow or application errors. Download the actual filtered public CSV by keyboard; its **790 bytes match baseline exactly**. Public print still hides the complete analytical screen/peer section and retains six metadata rows; resulting PDF text matches baseline exactly.
+- Confirm private-report module/scope/column markers are absent from built application assets, and requests for private scripts, analytical API/output names return **404**. Generated numerical CSV/HTML/PDF/screenshots stay outside the repository.
+- Frozen score and insight SHA-256 values match the pre-change baseline: `47b4813abd59bc452556e9d057596511f95e17acd81a4994589bc87460d9f6d5` and `ffd92543c6387c981d2647c8ed55bd3abb7f7c4e9b5b91d4a74fab81999d6345`.
+
+### Remaining authorization and QA gates
+
+Full numerical public CSV/PDF is **not authorized or available**. `SCORED_NOT_RELEASED`, `INSIGHTS_NOT_RELEASED`, and `productionIntegrationAuthorized: false` remain unchanged. Owners must document source-specific redistribution rights, release approval for the exact score model/artifact and CSV/PDF scope, a production-integration decision, and a reviewed server-side distribution contract. Insight approval remains separate; these reports exclude insights.
+
+Existing on-screen numerical pages still require local/access-controlled review; disclaimers do not authorize open deployment or prevent copying/printing. Independent methodology/source and effective-boundary review remain project gates. Formal PDF accessibility, Firefox/Safari, physical devices/printers, and the visible OS save dialog remain unverified. No merge of PR #19, public deployment, or publication signoff is included.
