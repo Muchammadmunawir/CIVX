@@ -667,3 +667,15 @@ Publication restrictions are unchanged: `SCORED_NOT_RELEASED`, `INSIGHTS_NOT_REL
 - [x] Apply the exact approved main and link text through the existing shared `ResultsNotice`, retaining its styling and `/methodology#status-model` target. No scoring, governance flag, export rule, or other behavior changes.
 - [x] Verify exact rendered copy, a single notice, and no document overflow on Home, Explore, Region Detail, and Compare at 320/1440px in both themes: 16 production Chromium checks. Visually review the narrow dark notice and exercise its link by keyboard; no application console error observed.
 - [x] Pass `npm test` with all 305 tests, `npm run lint`, and `npm run build`, including strict TypeScript and 36 generated pages.
+
+## 36. Mobile hamburger navigation
+
+- [x] Inspect the existing navigation, header, links, global styles, and production behavior before editing. Keep the 760px mobile breakpoint, route ordering, active markers, and stable navigation shell.
+- [x] Replace the visible Menu +/− label with three thin CSS strokes in a 44×44px button. Reuse semantic theme, spacing, radius, focus, and motion tokens without dependencies or desktop styling changes.
+- [x] Animate hamburger/X transforms over 200ms. Add 8px downward menu travel over 200ms and a 140ms entrance/exit fade; keep links inert and aria-hidden throughout the closed state and exit.
+- [x] Preserve Indonesian accessible labels and expanded/controls attributes. Verify Escape restores focus, outside clicks/focus close the menu, all five links close and navigate, native Tab leaves the non-modal dropdown, and resizing resets state with valid focus.
+- [x] Check production Chromium at 320/375/390/430/768/1024px in both themes: 12 combinations without document overflow. Desktop link geometry, fonts, padding, and header heights match the baseline exactly. Exercise regional active indication, keyboard search to Kabupaten Bandung, and theme switching.
+- [x] Check reduced motion at all four mobile widths in both themes: eight additional combinations with zero-duration transitions. Verify rapid toggles, the 760/761px boundary, and a scrollable 390×320px menu whose last link stays reachable. Review before/after mobile light/dark and desktop captures; local artifacts remain outside Git at `/tmp/civx-mobile-nav/`. Final route/keyboard smoke records no application console error or exception.
+- [x] Pass `npm test` with all 305 tests, `npm run lint`, and `npm run build`, including strict TypeScript and 36 generated pages.
+
+Scope remains navigation presentation and interaction only. No route, scoring, source data, governance flag, release restriction, or dependency changes. This work does not authorize public numerical publication, merge PR #19, or deploy production.
