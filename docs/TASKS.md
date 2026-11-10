@@ -642,7 +642,7 @@ Frontend is ready to enter final restricted QA with the explicit limits above. I
 
 - [x] Audit the clean development branch and repeated rendered notices before editing. Home had one banner, Explore/Region/Compare/Sources had two, and Methodology had repeated release-status banners plus its separate interpretation note.
 - [x] Replace the global layout banner and page-specific repeats with one shared server-rendered `ResultsNotice` on Home, Explore, Region Detail, and Compare. Reuse the existing notice styling and accessible links; do not change palette, fonts, tokens, or scoring.
-- [x] Use concise Indonesian copy: “Pratinjau terbatas. Skor dan insight belum disetujui untuk rilis publik.” Link directly to `/methodology#status-model`.
+- [x] Use the approved Indonesian main text: “Data CIVX 2023 masih dalam tahap peninjauan. Hasil analisis bukan indeks resmi atau rekomendasi kebijakan.” Use “Pelajari status dan batasan data” for the link to `/methodology#status-model`.
 - [x] Remove duplicated prominent release/rights paragraphs from Methodology and Sources while retaining their substance at `/methodology#status-model`, `/methodology#ekspor-dan-laporan`, and `/sources#penggunaan-sumber`. Preserve methodological reading cues beside numerical data.
 - [x] Remove Compare's repeated limitations paragraph; its action now links directly to `/methodology#keterbatasan`. Preserve the interpretation of absolute distance and signed differences.
 - [x] Shorten CSV/print captions without weakening their identity/reference-only scope. Retain accessible descriptions, contextual terms links, error feedback, CSV payload disclosures, and all printed report restrictions.
@@ -661,3 +661,9 @@ Frontend is ready to enter final restricted QA with the explicit limits above. I
 - Frozen score/insight SHA-256 values remain `47b4813abd59bc452556e9d057596511f95e17acd81a4994589bc87460d9f6d5` and `ffd92543c6387c981d2647c8ed55bd3abb7f7c4e9b5b91d4a74fab81999d6345`.
 
 Publication restrictions are unchanged: `SCORED_NOT_RELEASED`, `INSIGHTS_NOT_RELEASED`, and `productionIntegrationAuthorized: false` still apply. Existing numerical screens would conflict with those restrictions if deployed publicly without documented rights and release approval. Notices do not authorize exposure, restrict access, or prevent copying/ordinary printing of other numerical pages. Keep review local or access-controlled. No live public deployment was authorized or performed by this change.
+
+## 35. Approved results notice wording
+
+- [x] Apply the exact approved main and link text through the existing shared `ResultsNotice`, retaining its styling and `/methodology#status-model` target. No scoring, governance flag, export rule, or other behavior changes.
+- [x] Verify exact rendered copy, a single notice, and no document overflow on Home, Explore, Region Detail, and Compare at 320/1440px in both themes: 16 production Chromium checks. Visually review the narrow dark notice and exercise its link by keyboard; no application console error observed.
+- [x] Pass `npm test` with all 305 tests, `npm run lint`, and `npm run build`, including strict TypeScript and 36 generated pages.

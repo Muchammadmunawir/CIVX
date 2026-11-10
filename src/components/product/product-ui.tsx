@@ -18,8 +18,8 @@ export function Notice({ children }: { children: ReactNode }) {
 
 export function ResultsNotice() {
   return <aside aria-label="Status hasil CIVX"><Notice>
-    <strong>Pratinjau terbatas.</strong> Skor dan insight belum disetujui untuk rilis publik.
-    {" "}<Link className="civx-text-link" href="/methodology#status-model">Status dan ketentuan</Link>.
+    <strong>Data CIVX 2023 masih dalam tahap peninjauan.</strong> Hasil analisis bukan indeks resmi atau rekomendasi kebijakan.
+    {" "}<Link className="civx-text-link" href="/methodology#status-model">Pelajari status dan batasan data</Link>
   </Notice></aside>;
 }
 
