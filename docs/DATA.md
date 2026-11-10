@@ -220,3 +220,12 @@ CSV identities come directly from the filtered product headers in canonical BPS 
 
 Home's former `100 − pressure`, provincial index, arbitrary status thresholds, and best/priority summaries were not supported by the frozen pressure definition. Phase 3 replaces those presentation-only claims with coverage facts. No source, normalization, weight, score, missingness rule, or release flag changes. `/methodology#ekspor-dan-laporan` documents the public scope and the approval prerequisite for numerical exports.
 
+
+## 17. Phase 4 integrity review
+
+All public-facing routes now interpret the unchanged 2023 facade as relative pressure. Compare no longer inverts scores, assigns quality/priority classes, or calculates a provincial mean. Its six dimension values retain the facade names and full precision; comparison differences come from the engine rather than independently rounded display values.
+
+The review does not modify source datasets, normalization, weights, missingness, CORE/CONTEXT separation, or frozen release flags. Source attribution, source periods, denominators, site observations, explicit zeros, and missing reasons remain intact.
+
+Existing numerical screens and ordinary printing outside the regional metadata report are not a release-control boundary. The preview notice is disclosure only. Restricted local/access-controlled review remains the safe option pending documented source rights and model/insight release approval; frontend integration is not that approval.
+

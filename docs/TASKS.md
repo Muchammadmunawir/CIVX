@@ -534,3 +534,56 @@ The existing team Compare implementation remains unchanged and still contains `1
 
 No main merge, force push, dependency change, model release, or production deployment is part of this phase.
 
+
+## 32. Phase 4 final integration and submission review
+
+### Integration and scope
+
+- [x] Read repository guidance and planning records before editing. Initial development working tree was clean.
+- [x] Fetch origin and compare the active `Muchammadmunawir/frontend-integration-figma` branch with `origin/main`: one main-only merge commit and four development-only commits.
+- [x] Confirm Phase 2 (`5dcb4a2`), Phase 2.1 (`4340647`), and Phase 3 (`58d199d`) are ancestors of the candidate. Main-only `85252f2` records the earlier branch merge; merge it without conflicts or lost teammate changes.
+- [x] Keep the development branch as the PR candidate. Do not merge into main, force push, reset, deploy, install dependencies, or change frozen analytical/source artifacts.
+
+### Critical fixes
+
+- [x] Confirm Phase 3 already corrected Home: coverage/year/dimension/indicator facts replace the inverted quality index and unsupported best/priority/provincial summaries.
+- [x] Reproduce Compare's remaining inversion in Chromium: Depok showed 72.0 against authoritative pressure 28.0; Kabupaten Sukabumi showed 36.4 against pressure 63.6. Both had unsupported quality/priority badges and an inverted provincial mean.
+- [x] Cut Compare over to direct overall pressure and all six exact facade dimension names. Remove inversion, provincial averaging, proxy labels, thresholds, and quality/priority badges. Preserve selectors, valid same-region ties, invalid-input handling, layout, and links.
+- [x] Distinguish engine-provided absolute distance from signed overall A-minus-B difference. Keep full-precision bar values and display-only rounding; do not recalculate scoring or deltas in React.
+- [x] Reproduce severe dark-mode contrast failures: second-region dimension text 2.62:1 and reading label 1.92:1. Reuse existing semantic roles instead of changing global brand colors.
+- [x] Add a shared Indonesian preview-status notice and explain the unresolved display/release contradiction in Methodology and documentation. This is disclosure, not access control or release approval.
+- [x] Rewrite README for judges: purpose, problem, users, actual features, stack, local setup, sources/vintages, limitations, safe review, and linked technical/audit records. Publish no unverified demo URL.
+
+### Automated verification
+
+- `npm test`: **305 passed**, zero failed, cancelled, or skipped after the final CSS fix. Comparison regressions cover direct overall/dimension pressure, full-precision bars, reversed pair values/delta, absolute distance, same-region ties, and invalid selections.
+- `npm run lint`: passed without warnings or errors.
+- `npm run build`: passed webpack compilation and strict TypeScript; **36 pages** generated.
+- Runtime: Node **v26.12.0**, npm **12.2.1**. No language server is configured; build-time TypeScript completed successfully.
+- Frozen score SHA-256 remains `47b4813abd59bc452556e9d057596511f95e17acd81a4994589bc87460d9f6d5`; insight SHA-256 remains `ffd92543c6387c981d2647c8ed55bd3abb7f7c4e9b5b91d4a74fab81999d6345`.
+
+### Exercised production Chromium verification
+
+- Check Home, Explore, Region Detail, Compare, Methodology, and Sources at **320/768/1440 px in both themes: 36 combinations**. No document overflow, unnamed visible input/select/button, broken same-page anchor, or missing preview notice was observed.
+- After the contrast fix, recheck Compare at **320/768/1024/1440 px in both themes: eight combinations**. Second-region text measures **5.89:1 light / 8.56:1 dark**; reading label **12.86:1 / 12.98:1**; second-region bars against their track **3.29:1 / 5.99:1**. No document overflow. Visually review the corrected mobile dimension card.
+- Load all six routes again against the final production build. No application JavaScript exception, console error, or hydration error was observed. Tool-only smoke-script selector/context errors were corrected; they are not application regressions.
+- Confirm all **27 Home** overall values and all **189 Explore** overall/dimension map values match authoritative full-precision facade records. Layer changes preserve region `3273` and table page 3. Keyboard Enter on a map link opens the correct detail route.
+- Exercise search/type intersection, full-filter map retention, pagination, empty disabled CSV, and reset. Actual native CSV downloads contain **27 identities** and one filtered Kota Bandung `3273` identity. The filtered action also works by keyboard.
+- Inspect actual downloaded CSV bytes: BOM **239,187,191**, CRLF records, year/reference links, and no score columns. The 27-row download starts from table page 3 with Public Health selected, proving neither limits the export. Formula protection, quoting, Unicode, finite precision, and missing/zero distinctions remain covered by the existing CSV behavioral/security tests.
+- Confirm Region Detail's overall pressure, all 18 primary indicator disclosures, source/definition expansion, canonical navigation, and Banjar's explicit **0 terminals**, distinct from unavailable context.
+- Activate regional print by keyboard and observe a native `beforeprint` event. Generate and visually review both pages of the Kota Bandung A4 report: **595.92 × 841.92 pt**, two pages, identity/reference scope, six intact dimension rows, nine source references, denominator provenance, limitations, and no numerical results/insights/CONTEXT. Print media hides shell, preview notice, controls, and regional screen content.
+- Exercise region → Compare → Back. Cached regional reports do not hide Compare's active content or leak a regional report into it. **Ordinary Compare printing still includes on-screen numbers**; record this governance gap rather than calling it a permitted numerical report.
+- Exercise distinct pair selection, swapping A/B, same-region exact ties, and unknown-selection error recovery. Corrected Depok/Sukabumi cards show **28.0 / 63.6**, not **72.0 / 36.4**.
+- Exercise Source search, CORE/CONTEXT filtering, Education filtering (**three CORE records**), empty recovery, reset (**25 records**), Methodology formulas/anchors, mobile menu Escape/focus return, global keyboard search, dark reload persistence, and System tracking emulated dark/light preferences.
+- Reduced motion yields **0 s** map transitions and readable reveal content. Unknown regional IDs render the not-found boundary with `noindex`; streamed HTTP remains 200, as documented by installed Next.js guidance.
+- Probe **34 collected internal URLs**: all return HTTP 200. Check **23 unique external source URLs**: 21 return HEAD 200; Galura rejects HEAD with 405 but GET returns 200 JSON; the Kementerian Kesehatan SKI PDF times out on both HEAD and a range GET. Preserve its audited URL and provenance; do not fabricate a replacement or claim current availability. These are reachability checks, not fresh source-content verification.
+
+### Remaining blockers and safe submission checklist
+
+- [ ] Document source reuse/publication rights and named model/insight release approval before public numerical publication or deployment. Frozen `SCORED_NOT_RELEASED`, `INSIGHTS_NOT_RELEASED`, and `productionIntegrationAuthorized: false` remain unchanged.
+- [ ] Keep competition review local or access-controlled until that decision. The notice and metadata-only CSV/regional report do not prevent copying, screenshots, or printing other numerical screens. A public unrestricted demo remains inconsistent with current governance; no major feature or release restriction was silently removed.
+- [ ] Obtain independent source/method review and effective-boundary review before official-grade claims. Approximate 2020 display geometry is not certified 2023 geography.
+- [ ] Recheck the SKI publisher PDF before judging; retain the audited source locator if the publisher remains unavailable.
+- [ ] Complete formal assistive-technology review and physical-device/Firefox/Safari checks. Chromium emulation is not certification. A native print event and rendered PDF were verified, not an operating-system print-dialog visual review or every printer.
+- [ ] Review the development-to-main PR and its test/governance evidence. Do not merge or deploy without the owner's explicit approval.
+

@@ -237,3 +237,12 @@ Next.js Activity retains prior route DOM with `display: none` on ancestors. Prin
 
 The new methodology anchor documents both actions and the public-release prerequisite. Home keeps the existing layout/reveal/map contracts while replacing unsupported quality/priority summaries with facade-derived model counts. No scoring module, data artifact, dependency, global theme token, or animation implementation changes.
 
+
+## 16. Phase 4 presentation stabilization
+
+Compare consumes all six existing comparison-facade dimensions and unchanged overall pressure directly. It removes inverse-index, provincial-average, sorting, and quality/priority-badge calculations. Engine-provided absolute distances and signed overall deltas remain distinct. No scoring or contextual aggregation moves into React.
+
+The root server layout reuses `Notice` and existing semantic styling to disclose preview/unreleased status on every route. Regional print rules hide this shell notice with other chrome. The notice is not authentication, authorization, or a numerical-copy/print control. Methodology explicitly records that limitation; no release flag or export bypass is added.
+
+Critical comparison contrast uses existing semantic roles: `--muted` for the second region's small score text, `--comparison-b` for its bars, and foreground/accent-soft roles for the reading label. Branding, layout, motion, and global theme values are unchanged.
+

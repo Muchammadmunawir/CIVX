@@ -161,5 +161,14 @@ Region detail provides **Cetak / Simpan PDF** through browser-native print, with
 
 Full numerical export remains blocked until a documented public-release and rights decision changes the reviewed contract. Existing frontend integration, a download click, or a print request does not grant that permission.
 
-The existing team Compare presentation remains outside this Home correction: it still inverts scores, computes a provincial mean, and assigns best/priority or 70/50 status badges. These claims are not validated by the frozen pressure methodology. Its “Skor dari Beranda” reference is now stale. Record this as an unresolved pre-submission methodological concern, not a new reporting feature or a regression introduced by Phase 3.
+The existing team Compare presentation remained outside the Phase 3 Home correction. The Phase 4 cutover below supersedes this historical concern.
+
+
+## 15. Phase 4 stabilization and release review
+
+Compare now displays unchanged facade pressure scores for the overall result and all six CORE dimensions. Higher means higher relative pressure, consistently with Home, Explore, and Region Detail. The inverted quality index, provincial mean, arbitrary quality thresholds, proxy dimension names, and best/priority badges are removed. The engine supplies absolute distances and signed overall A-minus-B differences; the UI does not compute new scores or differences. Same-region ties and invalid-input recovery retain their existing contracts.
+
+Every route carries a shared Indonesian preview notice with a link to model status. This is disclosure, not access control or release authorization. The unreleased score/insight flags, source-rights restrictions, identity-only CSV, and metadata-only regional A4 report remain unchanged.
+
+The current numerical display still conflicts with public-release restrictions if deployed openly. Other pages can still be copied or printed with numerical content. Keep review local or access-controlled; do not deploy publicly, redistribute numerical outputs, or call the model approved until rights and release signoff are documented. No major feature is silently removed to conceal this governance gap.
 

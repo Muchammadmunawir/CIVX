@@ -173,3 +173,12 @@ Region detail's **Cetak / Simpan PDF** invokes browser-native printing. A report
 
 Home's inversion and unsupported quality/status/priority claims were reviewed against the frozen model definition. Coverage facts now occupy the existing summary layout; maps retain exact pressure scores, themes, controls, and existing reveals. Previous Phase 2/2.1 statements preserving those Home claims are historical, not current product behavior. `/methodology#ekspor-dan-laporan` explains the new reporting boundary.
 
+
+## Phase 4 — final integration and release review
+
+This cutover resolves the historical Compare concern recorded during Phases 2–3. Overall and all six CORE dimension pressures now use authoritative facade values without inversion. Engine-provided distances and signed overall A-minus-B differences remain descriptive, not provincial benchmarks or policy priorities. Unsupported quality badges and proxy dimension names are removed; selection, valid same-region ties, invalid-input recovery, navigation, and the existing layout remain.
+
+All routes disclose that displayed scores and insights are an unreleased review preview. This preserves frontend functionality without silently granting publication permission. The notice does not restrict access, and ordinary browser copying/printing of non-report pages can still expose numerical content. Public deployment remains blocked until documented rights and release approval resolve the contradiction. Regional A4 and CSV retain their existing metadata-only scope.
+
+Phase 4 evidence, external source availability limits, and the final submission checklist are recorded in [TASKS.md §32](TASKS.md#32-phase-4-final-integration-and-submission-review). No frozen model artifact, source dataset, dependency, normalization rule, or weight changes.
+

@@ -122,6 +122,8 @@ export function MethodologyPage() {
             <h2 id="status-model" className="product-section-title">Status model & penggunaan</h2>
             <p>CIVX adalah indeks analitis yang ditetapkan proyek, bukan indeks resmi atau pengesahan lembaga sumber. Hak penggunaan dan redistribusi sumber belum dinyatakan tuntas.</p>
             <p>Model 2023 masih memerlukan persetujuan rilis publik. Baca definisi, periode rujukan, dan keterbatasan sumber sebelum menggunakan hasilnya.</p>
+            <p>Tampilan angka pada antarmuka merupakan pratinjau peninjauan, bukan persetujuan publikasi. Hak penggunaan sumber dan persetujuan rilis harus dituntaskan sebelum penerapan publik. Pemberitahuan pratinjau bukan kontrol akses.</p>
+            <p>Pembatasan CSV dan laporan wilayah tidak mencegah penyalinan tampilan atau pencetakan halaman lain melalui peramban. Gunakan lingkungan peninjauan terbatas; jangan menyebarkan hasil numerik sebelum persetujuan terdokumentasi.</p>
             <Link className="civx-text-link" href="/sources">Lihat sumber dan catatan penggunaannya <span aria-hidden="true">→</span></Link>
           </section>
 

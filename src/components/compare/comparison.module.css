@@ -5,11 +5,6 @@
   outline-offset: 4px;
 }
 
-/* Tone palette shared by badges and signed values */
-.page [data-tone="good"] { --tone: #16a34a; --tone-soft: #dcfce7; }
-.page [data-tone="warning"] { --tone: #a16207; --tone-soft: #fef9c3; }
-.page [data-tone="bad"] { --tone: #dc2626; --tone-soft: #fee2e2; }
-
 /* Selector */
 .selector { margin-top: 24px; }
 .form {
@@ -53,16 +48,12 @@
 /* Region summaries */
 .summaryGrid, .analysisGrid { display: grid; gap: 24px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .regionSummary { display: flex; flex-direction: column; min-width: 0; }
-.regionTop { align-items: center; display: flex; gap: 12px; justify-content: space-between; }
 .regionIdentity { color: var(--muted); font-size: .6875rem; font-weight: 600; letter-spacing: .04em; margin: 0; text-transform: uppercase; }
-.badge { background: var(--tone-soft); border-radius: 999px; color: var(--tone); flex: none; font-size: .6875rem; font-weight: 500; padding: 4px 10px; }
 .regionSummary h3 { font-size: 1.375rem; font-weight: 600; line-height: 1.4; margin: 20px 0 12px; overflow-wrap: anywhere; }
 .bigScore { align-items: baseline; display: flex; gap: 10px; margin: 0; }
 .bigScore strong { color: var(--accent); font-size: 3rem; font-variant-numeric: tabular-nums; font-weight: 700; line-height: 1.1; }
 .bigScore small { color: var(--muted); font-size: .75rem; }
 .scoreNote { color: var(--muted); font-size: .75rem; margin: 16px 0 0; }
-.averageRow { align-items: baseline; border-top: 1px solid var(--border); display: flex; flex-wrap: wrap; font-size: .75rem; gap: 8px 16px; justify-content: space-between; margin: 16px 0 0; padding-top: 16px; }
-.averageRow strong { color: var(--tone); font-variant-numeric: tabular-nums; font-weight: 700; }
 
 /* Overall difference banner */
 .difference {
@@ -88,20 +79,20 @@
 .legend span { align-items: center; display: inline-flex; gap: 6px; }
 .legend i { background: var(--accent); border-radius: 2px; display: inline-block; height: 8px; width: 8px; }
 .legend [data-side="B"] i { background: var(--bar-b); }
-.dimensions { --bar-b: color-mix(in srgb, var(--accent) 45%, var(--surface)); }
+.dimensions { --bar-b: var(--comparison-b); }
 .dimensionList { display: grid; gap: 20px; margin: 0 0 20px; }
 .dimensionHeading { align-items: baseline; display: flex; gap: 12px; justify-content: space-between; margin-bottom: 10px; }
 .dimensionHeading h3 { font-size: .8125rem; font-weight: 500; margin: 0; }
 .pair { color: var(--accent); font-size: .8125rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .pair strong { font-weight: 700; }
-.pair b { color: var(--bar-b); font-weight: 700; }
+.pair b { color: var(--muted); font-weight: 700; }
 .track { background: var(--accent-soft); border-radius: 4px; height: 5px; overflow: hidden; }
 .track + .track { margin-top: 8px; }
 .track span { background: var(--accent); border-radius: 4px; display: block; height: 100%; }
 .track[data-side="B"] span { background: var(--bar-b); }
 
 /* Attention card */
-.readingTag { background: #fff1e8; border-radius: 4px; color: var(--orange); display: inline-block; font-size: .6875rem; font-weight: 500; padding: 4px 10px; }
+.readingTag { background: var(--accent-soft); border-radius: 4px; color: var(--foreground); display: inline-block; font-size: .6875rem; font-weight: 500; padding: 4px 10px; }
 .attention h3 { font-size: 1.0625rem; font-weight: 600; margin: 20px 0 12px; }
 .attention p { font-size: .8125rem; line-height: 1.7; margin: 0; }
 .attention hr { border: 0; border-top: 1px solid var(--border); margin: 20px 0; }
