@@ -588,3 +588,52 @@ No main merge, force push, dependency change, model release, or production deplo
 - [ ] Complete formal assistive-technology review and physical-device/Firefox/Safari checks. Chromium emulation is not certification. A native print event and rendered PDF were verified, not an operating-system print-dialog visual review or every printer.
 - [ ] Review the development-to-main PR and its test/governance evidence. Do not merge or deploy without the owner's explicit approval.
 
+
+## 33. Phase 4.5 — frontend polish and design consistency
+
+### Audit and preserved scope
+
+- [x] Inspect the clean development branch, fetch origin, read planning records, and confirm Phase 2 `5dcb4a2`, Phase 2.1 `4340647`, Phase 3 `58d199d`, and Phase 4 stabilization are present.
+- [x] Review existing components, CSS modules, semantic tokens, motion utilities, installed Next.js CSS/server-client guidance, and previous visual decisions before editing.
+- [x] Capture and review Home, Explore, Region Detail, Compare, Methodology, and Sources in light/dark at desktop/mobile widths: 24 baseline captures. Preserve Poppins, the original light palette, the existing dark hierarchy, routes, charts, map geometry, and analytical meaning.
+- [x] Preserve all source/model artifacts, scoring, normalization, weights, CORE/CONTEXT separation, governance restrictions, CSV projection, and metadata-only regional reports. Add no dependency or animation library.
+
+### Observed inconsistencies and fixes
+
+- [x] Replace Compare's hardcoded dark SVG select arrow with native themed controls. Raise its roughly 40px selectors and 42px submit action to the shared 44px minimum.
+- [x] Align Home reference cards with the coverage card; reuse 8px card radii and remove the separate coverage shadow. Replace oversized 20px action pills with compact 13px actions.
+- [x] Introduce shared caption/small/body/section/title typography roles; raise affected 10–11px metadata to at least 12px. Preserve the font family and all original palette values.
+- [x] Standardize buttons, field borders, disabled states, pagination, keyboard focus, and disclosure feedback. Add visible Explore filter labels and retain its full-result map and CSV behavior.
+- [x] Right-align Compare numeric table columns and give its horizontally scrolling table a name and keyboard focus. Keep methodology tables intact while limiting running text to 75ch.
+- [x] Reuse once-only section reveals on all six pages. Centralize 520ms duration, 16px travel, and 70ms stagger; register source groups remounted by filters. Keep actions opaque and settle motion on interaction.
+- [x] Correct two observed cold-load shifts: the pathname Suspense fallback previously expanded the mobile header; Compare's separate short request fallback exposed a moving footer. Keep the shell stable and reuse the viewport-height route loader in both Compare loading paths.
+- [x] Keep tablet search on one full row at 761–900px. All six 768px headers now measure 136px with the same search position.
+- [x] Reproduce dark PDF page margins and override the root print color scheme, not just the body. Retain the original report content, A4 pagination, and active/cached-route print rules.
+- [x] Correct stale Compare page metadata that still described four dimensions; it now describes the existing overall pressure and six CORE dimensions.
+
+### Exercised verification
+
+- `npm test`: **305 passed**, zero failed, cancelled, or skipped after the final code change.
+- `npm run lint`: passed without warnings or errors.
+- `npm run build`: passed webpack compilation and strict TypeScript; **36 pages** generated.
+- Production Chromium checked all six pages at **320/390/768/1024/1440px in light/dark: 60 combinations**. No document overflow, clipped visible heading/paragraph/label/summary text, unnamed visible controls, sub-44px input/select/button controls, duplicate main/H1, or broken same-page anchors was observed.
+- Local layout-shift instrumentation reproduced header movement of **0.2188574388671875** and Compare footer movement up to **0.25619140625**. Final collected matrix records **0**. Compare was rechecked in all ten theme/width combinations with browser cache disabled after the shared-fallback fix. These are local smoke observations, not field-performance guarantees.
+- Captured 60 final full-page screenshots and reviewed contact sheets for all five widths in both themes. Evidence remains outside Git in `/tmp/civx-phase45/`, including before/after captures, measurement JSON, actual CSV downloads, and the A4 PDF.
+- Exercised overall plus all six CORE map layers in both themes. Region `3273`, table page 3, all 27 paths, and SVG node identity survive switches. Observed 300ms fill and 140ms boundary transition declarations; SVG Enter activation opens the canonical regional route.
+- Exercised Explore name/type intersection, one Kota Bandung result, empty/disabled CSV, and reset to all 27 regions. Actual native downloads contain 27 identities (15,963 bytes) and one identity (790 bytes); the filtered download works by keyboard. Byte inspection confirms UTF-8 BOM `239,187,191`, CRLF, year/reference fields, and no score columns.
+- Exercised direct-pressure comparison, selector submission, reversed pairs, same-region zero distance, and invalid-selection recovery. Depok/Sukabumi remain **28.0 / 63.6**. All 18 regional indicator disclosures remain present; source expansion and Banjar's explicit **0 terminals** remain available.
+- Exercised Sources CORE/Education filtering (three records), CONTEXT (seven), empty recovery, reset (25), source expansion, and registration of remounted reveal groups. Exercised Methodology's normalization anchor/formula and keyboard horizontal table scrolling.
+- Exercised mobile Menu Enter/Escape/focus restoration, global search ArrowDown/Escape, dark reload persistence, and System following emulated light/dark preferences.
+- Reduced-motion probes covered all six routes at 320/1440px: no reveal animations or opacity-hidden targets, and 0s map transitions. Enabling reduced motion during a session also settles active entrances. Scroll probes observed no repeated entrance on the same target.
+- Keyboard printing emitted a native `beforeprint` event. The final production Kota Bandung PDF has **two A4 pages, 594.96 × 841.92pt**, six intact dimension rows, nine source references, white margins from a dark screen theme, no active animation, and unchanged metadata-only scope. Both rasterized report pages were visually reviewed.
+- Region → Compare → Back retains active/cached report print isolation. Compare's ordinary numerical screen printing remains an existing governance limitation, not an approved numerical report.
+- All six final canonical surface loads returned HTTP 200. Final JavaScript-enabled production smoke observed no application exception or console error. Tool-only browser/script setup errors were corrected separately.
+
+### Remaining limits
+
+- **P1 — No-JavaScript route rendering:** Home, Methodology, and Sources remain readable without JavaScript. Explore, Region Detail, and Compare can remain on streamed Suspense loading fallbacks. Reveal CSS introduces no hidden waiting state; the remaining hidden ancestors belong to React's streamed transport. Full no-JavaScript data-route support requires a separate rendering/cache decision, not an animation workaround.
+- **P1 — Accessibility/browser QA:** Firefox, Safari, physical mobile devices, formal assistive-technology evaluation, and an operating-system print-dialog visual review remain unverified. Chromium viewport/media emulation is not certification.
+- **P0 — Existing public-release gate:** source reuse rights and model/insight publication approval remain unresolved. Keep review restricted; do not deploy publicly or interpret this polish as release authorization.
+- **P2 — Decorative effects:** no route choreography, continuous animation, new illustration, or extra decorative transition was added. Stability and meaningful feedback took priority.
+
+Frontend is ready to enter final restricted QA with the explicit limits above. It is not a public-deployment approval. Development-branch commit/push is separate from any main merge or production deployment.

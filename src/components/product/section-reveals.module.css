@@ -1,17 +1,17 @@
 /* Content remains in its final state until an observed entrance starts. */
 .root { --reveal-delay: 0ms; }
-.root [data-reveal-order="1"] { --reveal-delay: 70ms; }
-.root [data-reveal-order="2"] { --reveal-delay: 140ms; }
-.root [data-reveal-order="3"] { --reveal-delay: 210ms; }
-.root [data-reveal-order="4"] { --reveal-delay: 280ms; }
+.root [data-reveal-order="1"] { --reveal-delay: var(--reveal-stagger); }
+.root [data-reveal-order="2"] { --reveal-delay: calc(var(--reveal-stagger) * 2); }
+.root [data-reveal-order="3"] { --reveal-delay: calc(var(--reveal-stagger) * 3); }
+.root [data-reveal-order="4"] { --reveal-delay: calc(var(--reveal-stagger) * 4); }
 
-@media (prefers-reduced-motion: no-preference) {
-  .root [data-reveal-state="revealed"] { animation: section-enter 520ms var(--ease-standard) var(--reveal-delay) backwards; }
+@media screen and (prefers-reduced-motion: no-preference) {
+  .root [data-reveal-state="revealed"] { animation: section-enter var(--duration-reveal) var(--ease-standard) var(--reveal-delay) backwards; }
   .root [data-reveal-interactive="true"] { --reveal-opacity: 1; }
   .root [data-reveal-state]:focus, .root [data-reveal-state]:focus-within { animation: none; }
 }
 
 @keyframes section-enter {
-  from { opacity: var(--reveal-opacity, .6); transform: translateY(16px); }
+  from { opacity: var(--reveal-opacity, .6); transform: translateY(var(--reveal-distance)); }
   to { opacity: 1; transform: none; }
 }

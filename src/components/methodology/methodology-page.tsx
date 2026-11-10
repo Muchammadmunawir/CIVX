@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getExploreRegionsProduct2023, getProductMethodology2023, getRegionProductView2023 } from "@/lib/civx/product-2023";
 import { Notice, PageHeading } from "@/components/product/product-ui";
+import { SectionReveals } from "@/components/product/section-reveals";
 import { REPORTING_INTERPRETATION_2023, REPORTING_RESTRICTION_2023 } from "@/lib/civx/export-2023";
 import styles from "./methodology-page.module.css";
 
@@ -23,19 +24,19 @@ export function MethodologyPage() {
   const { dimensions, indicators } = profile.core;
 
   return (
-    <main className={`civx-container product-page ${styles.page}`}>
+    <SectionReveals className={`civx-container product-page ${styles.page}`}>
       <PageHeading breadcrumb="Metodologi" title="Di balik angka indeks" description="Pahami apa yang diukur, bagaimana skor dibentuk, dan batas penggunaannya." />
       <Notice>
         Model {methodology.referenceYear} telah dihitung, tetapi belum dirilis untuk publik. Persetujuan integrasi antarmuka tidak mengubah status skor dan insight.
       </Notice>
       <div className={styles.layout}>
-        <nav className={styles.contents} aria-label="Dalam halaman ini">
+        <nav className={styles.contents} aria-label="Dalam halaman ini" data-reveal>
           <p>Dalam halaman ini</p>
           <ul>{sections.map(([id, label]) => <li key={id}><a href={`#${id}`}>{label}</a></li>)}</ul>
           <p className={styles.sidebarNote}>Satu model lengkap {methodology.referenceYear}. Bukan seri waktu atau indeks resmi pemerintah.</p>
         </nav>
         <div className={styles.body}>
-          <section className={styles.section} aria-labelledby="tentang-indeks">
+          <section className={styles.section} aria-labelledby="tentang-indeks" data-reveal>
             <h2 id="tentang-indeks" className="product-section-title">Tentang indeks CIVX</h2>
             <p className={styles.lead}>Satu ringkasan untuk memulai pertanyaan yang lebih baik tentang wilayah.</p>
             <p>CIVX merangkum tekanan relatif kabupaten/kota di {methodology.province}. Skor membantu membaca pola, bukan menggantikan data rinci, pengalaman warga, atau penilaian lapangan.</p>
@@ -48,7 +49,7 @@ export function MethodologyPage() {
             <p className="product-caption">Cakupan tetap mengikuti kode BPS, tanpa agregat provinsi. CORE masuk skor; CONTEXT hanya memberi konteks.</p>
           </section>
 
-          <section className={styles.section} aria-labelledby="kerangka-indikator">
+          <section className={styles.section} aria-labelledby="kerangka-indikator" data-reveal>
             <h2 id="kerangka-indikator" className="product-section-title">Kerangka indikator</h2>
             <p>Enam dimensi memiliki bobot setara. Di setiap dimensi, bobot terbagi rata di antara indikatornya.</p>
             <div className="product-table-wrap" role="region" aria-label="Kerangka enam dimensi" tabIndex={0}>
@@ -69,7 +70,7 @@ export function MethodologyPage() {
             <p className="product-caption">Bobot tepat setiap dimensi adalah 1/6, bukan 16,7% dalam perhitungan. Enam pecahan tersebut berjumlah 1 (100%); persentase tampilan dibulatkan.</p>
           </section>
 
-          <section className={styles.section} aria-labelledby="tahapan-perhitungan">
+          <section className={styles.section} aria-labelledby="tahapan-perhitungan" data-reveal>
             <h2 id="tahapan-perhitungan" className="product-section-title">Tahapan perhitungan</h2>
             <ol className={styles.steps}>
               <li><h3>Siapkan bukti yang sebanding</h3><p>Samakan kode wilayah, definisi, unit, pembilang, penyebut, dan periode referensi. Pertahankan sumber serta lokasi baris atau tabel.</p></li>
@@ -79,7 +80,7 @@ export function MethodologyPage() {
             </ol>
           </section>
 
-          <section className={styles.section} aria-labelledby="normalisasi">
+          <section className={styles.section} aria-labelledby="normalisasi" data-reveal>
             <h2 id="normalisasi" className="product-section-title">Normalisasi & bobot</h2>
             <div className={styles.formulas}>
               <h3>Nilai mentah lebih tinggi → tekanan lebih tinggi</h3>
@@ -92,7 +93,7 @@ export function MethodologyPage() {
             <p>Perhitungan memakai presisi penuh dari model yang dibekukan. Angka di antarmuka dibulatkan untuk pembacaan, bukan dihitung ulang dari angka tampilan.</p>
           </section>
 
-          <section className={styles.section} aria-labelledby="interpretasi">
+          <section className={styles.section} aria-labelledby="interpretasi" data-reveal>
             <h2 id="interpretasi" className="product-section-title">Cara membaca skor</h2>
             <Notice>Skor lebih tinggi berarti tekanan relatif lebih tinggi, bukan wilayah lebih baik atau lebih buruk.</Notice>
             <ul className={styles.list}>
@@ -104,7 +105,7 @@ export function MethodologyPage() {
             </ul>
           </section>
 
-          <section className={styles.section} aria-labelledby="keterbatasan">
+          <section className={styles.section} aria-labelledby="keterbatasan" data-reveal>
             <h2 id="keterbatasan" className="product-section-title">Keterbatasan yang perlu dibaca</h2>
             <ul className={styles.list}>
               <li>Seluruh {indicators.length} indikator CORE wajib lengkap. Data hilang atau tidak sah menggagalkan perhitungan; tidak diisi nol, diimputasi, diganti tahun, atau ditutup dengan perubahan bobot.</li>
@@ -118,7 +119,7 @@ export function MethodologyPage() {
             <Link href="/sources" className="civx-button civx-button-primary">Telusuri sumber data</Link>
           </section>
 
-          <section className={styles.section} aria-labelledby="status-model">
+          <section className={styles.section} aria-labelledby="status-model" data-reveal>
             <h2 id="status-model" className="product-section-title">Status model & penggunaan</h2>
             <p>CIVX adalah indeks analitis yang ditetapkan proyek, bukan indeks resmi atau pengesahan lembaga sumber. Hak penggunaan dan redistribusi sumber belum dinyatakan tuntas.</p>
             <p>Model 2023 masih memerlukan persetujuan rilis publik. Baca definisi, periode rujukan, dan keterbatasan sumber sebelum menggunakan hasilnya.</p>
@@ -127,7 +128,7 @@ export function MethodologyPage() {
             <Link className="civx-text-link" href="/sources">Lihat sumber dan catatan penggunaannya <span aria-hidden="true">→</span></Link>
           </section>
 
-          <section className={styles.section} aria-labelledby="ekspor-dan-laporan">
+          <section className={styles.section} aria-labelledby="ekspor-dan-laporan" data-reveal>
             <h2 id="ekspor-dan-laporan" className="product-section-title">Ketentuan ekspor & laporan</h2>
             <p>{REPORTING_RESTRICTION_2023}</p>
             <p>CSV Jelajah memuat kode BPS, nama, jenis wilayah, provinsi, tahun acuan 2023, atribusi identitas, serta tautan sumber dan metodologi. Unduhan mengikuti seluruh hasil pencarian dan filter jenis, bukan halaman tabel atau lapisan peta.</p>
@@ -140,6 +141,6 @@ export function MethodologyPage() {
           </section>
         </div>
       </div>
-    </main>
+    </SectionReveals>
   );
 }

@@ -33,7 +33,7 @@ export function SourcesBrowser({ sources, dimensions, referenceYear }: {
   const reset = () => { setSearch(""); setScope("all"); setDimension(""); };
 
   return <>
-    <section className={`product-section ${styles.browser}`} aria-labelledby="source-search-title">
+    <section className={`product-section ${styles.browser}`} aria-labelledby="source-search-title" data-reveal>
       <h2 id="source-search-title" className="product-section-title">Telusuri sumber</h2>
       <div className={styles.filters} role="search" aria-label="Cari dan filter sumber data">
         <div className={styles.search}>
@@ -66,17 +66,17 @@ export function SourcesBrowser({ sources, dimensions, referenceYear }: {
       </nav>
     </section>
     <div id="source-results">
-      {core.length > 0 && <section className="product-section" aria-labelledby="sumber-core">
+      {core.length > 0 && <section className="product-section" aria-labelledby="sumber-core" data-reveal>
         <h2 id="sumber-core" className="product-section-title">Sumber indikator CORE <span className={styles.headingCount}>({core.length})</span></h2>
         <p className={styles.sectionIntro}>Indikator yang membentuk skor CIVX {referenceYear}. Buka rincian untuk definisi, keterbatasan, dan ketidakpastian tiap wilayah. Tahun terbit sumber dapat berbeda dari periode datanya.</p>
         <div className={styles.catalog}>{core.map((source) => <div key={source.id}>{source.card}</div>)}</div>
       </section>}
-      {context.length > 0 && <section className="product-section" aria-labelledby="sumber-context">
+      {context.length > 0 && <section className="product-section" aria-labelledby="sumber-context" data-reveal>
         <h2 id="sumber-context" className="product-section-title">Katalog sumber CONTEXT <span className={styles.headingCount}>({context.length})</span></h2>
         <p className={styles.sectionIntro}>Data tambahan yang tidak masuk skor. Setiap dataset ditampilkan sekali, beserta periode asli dan cakupan wilayahnya. Data ini tidak digunakan untuk selisih atau peringkat antarwilayah.</p>
         <div className={styles.catalog}>{context.map((source) => <div key={source.id}>{source.card}</div>)}</div>
       </section>}
-      {filtered.length === 0 && <section className={`product-section product-card ${styles.empty}`} aria-labelledby="source-empty-title">
+      {filtered.length === 0 && <section className={`product-section product-card ${styles.empty}`} aria-labelledby="source-empty-title" data-reveal>
         <h2 id="source-empty-title">Tidak ada sumber yang cocok</h2>
         <p>Coba judul, penerbit, atau dimensi lain. Atur ulang untuk melihat seluruh katalog CORE dan CONTEXT.</p>
         <button className="civx-button civx-button-secondary" type="button" onClick={reset}>Atur ulang pencarian</button>

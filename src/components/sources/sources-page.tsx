@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getExploreRegionsProduct2023, getProductMethodology2023, getRegionProductView2023 } from "@/lib/civx/product-2023";
 import type { CivxContextProductItem2023, CivxIndicatorProduct2023, CivxProductSource2023, CivxProductUncertainty2023, CivxRegionProductHeader2023 } from "@/lib/civx/product-view-types-2023";
 import { Notice, PageHeading, SourceLink } from "@/components/product/product-ui";
+import { SectionReveals } from "@/components/product/section-reveals";
 import { formatRaw } from "@/components/product/format";
 import { SourcesBrowser } from "./sources-browser";
 import styles from "./sources-page.module.css";
@@ -180,21 +181,21 @@ export function SourcesPage() {
     }),
   ];
 
-  return <main className={`civx-container product-page ${styles.page}`}>
+  return <SectionReveals className={`civx-container product-page ${styles.page}`}>
     <PageHeading breadcrumb="Sumber Data" title="Sumber yang bisa ditelusuri" description="Telusuri sumber, periode, cakupan, dan keterbatasan data CIVX 2023." />
     <Notice>Pencantuman sumber bukan sertifikasi mutu atau izin redistribusi. Penggunaan ulang dan rilis publik tetap memerlukan peninjauan hak serta ketentuan setiap penerbit.</Notice>
-    <dl className={styles.summary}>
+    <dl className={styles.summary} data-reveal>
       <div className="product-card"><dt>Indikator CORE</dt><dd>{core.size}</dd><dd className={styles.summaryNote}>Indikator yang masuk skor {methodology.referenceYear}. Satu penerbit dapat menjadi sumber beberapa indikator.</dd></div>
       <div className="product-card"><dt>Dataset CONTEXT</dt><dd>{context.size}</dd><dd className={styles.summaryNote}>Memberi konteks tambahan. Tidak memengaruhi skor.</dd></div>
       <div className="product-card"><dt>Cakupan CORE</dt><dd>{methodology.cohortSize} wilayah</dd><dd className={styles.summaryNote}>Kabupaten/kota {methodology.province}; cakupan CONTEXT berbeda per dataset.</dd></div>
     </dl>
     <SourcesBrowser sources={sourceCards} dimensions={dimensions} referenceYear={methodology.referenceYear} />
-    <section className={`product-section product-card ${styles.governance}`} aria-labelledby="penggunaan-sumber">
+    <section className={`product-section product-card ${styles.governance}`} aria-labelledby="penggunaan-sumber" data-reveal>
       <h2 id="penggunaan-sumber" className="product-section-title">Penggunaan sumber</h2>
       <p>Daftar ini memuat penerbit, tautan asli, lokasi bukti, periode, dan catatan sumber. Tanggal atau ketidakpastian yang belum tersedia tidak diisi dengan nilai buatan.</p>
       <p>Hak penggunaan dan redistribusi belum dinyatakan tuntas. Tautan yang dapat dibuka tidak membuktikan izin penggunaan ulang. Ikuti catatan penggunaan setiap sumber.</p>
       <p>CORE mengacu pada {methodology.referenceYear}. Periode CONTEXT mengikuti masing-masing sumber, bukan seri perubahan skor dari tahun ke tahun.</p>
       <Link className="civx-button civx-button-primary" href="/methodology">Baca metodologi</Link>
     </section>
-  </main>;
+  </SectionReveals>;
 }

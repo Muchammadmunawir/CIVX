@@ -38,9 +38,9 @@ export function ExploreBrowser({ regions, initialSearch = "" }: { regions: reado
   const clear = () => { setSearch(""); setType("all"); setPage(1); };
   return <>
     <div className={styles.filters} role="search" aria-label="Filter daftar wilayah">
-      <div className={styles.search}><label className="civx-sr-only" htmlFor="explore-query">Cari kabupaten atau kota</label><input id="explore-query" type="search" placeholder="Cari kabupaten atau kota…" value={search} onChange={event => { setSearch(event.target.value); setPage(1); }} aria-controls="region-results" /></div>
-      <div><label className="civx-sr-only" htmlFor="explore-type">Jenis wilayah</label><select id="explore-type" value={type} onChange={event => { setType(event.target.value); setPage(1); }} aria-controls="region-results"><option value="all">Semua jenis</option><option value="kabupaten">Kabupaten</option><option value="kota">Kota</option></select></div>
-      <button type="button" onClick={clear}>Atur ulang</button>
+      <div className={styles.search}><label htmlFor="explore-query">Cari wilayah</label><input id="explore-query" type="search" placeholder="Cari kabupaten atau kota…" value={search} onChange={event => { setSearch(event.target.value); setPage(1); }} aria-controls="region-results" /></div>
+      <div><label htmlFor="explore-type">Jenis wilayah</label><select id="explore-type" value={type} onChange={event => { setType(event.target.value); setPage(1); }} aria-controls="region-results"><option value="all">Semua jenis</option><option value="kabupaten">Kabupaten</option><option value="kota">Kota</option></select></div>
+      <button className="civx-button civx-button-secondary" type="button" onClick={clear}>Atur ulang</button>
     </div>
     <div className={styles.mapReveal} data-reveal><WestJavaMap regions={regions} visibleIds={filtered.map(view => view.region.id)} dimensionId={dimensionId} onDimensionChangeAction={setDimensionId} /></div>
     <section className="product-section" id="region-results" aria-labelledby="regions-title" data-reveal>

@@ -15,7 +15,7 @@
   border-radius: 22px;
   background: var(--accent-soft);
   color: var(--foreground);
-  font-size: 11px;
+  font-size: var(--text-caption);
   line-height: 1.4;
   transition: color var(--duration-micro) var(--ease-standard), background-color var(--duration-micro) var(--ease-standard), border-color var(--duration-micro) var(--ease-standard);
 }
@@ -54,6 +54,11 @@
   flex: none;
   width: 12px;
   height: 12px;
+  transition: transform var(--duration-micro) var(--ease-standard);
+}
+
+.trigger[aria-expanded="true"] .chevron {
+  transform: rotate(180deg);
 }
 
 .menu {

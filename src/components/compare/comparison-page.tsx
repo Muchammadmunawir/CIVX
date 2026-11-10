@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { formatDifference, formatScore, regionType } from "@/components/product/format";
 import { Notice, PageHeading } from "@/components/product/product-ui";
+import { SectionReveals } from "@/components/product/section-reveals";
 import type {
   CivxComparisonProductView2023,
   CivxExploreRegionProduct2023,
@@ -23,7 +24,7 @@ function RegionSummary({ region, pressure, side }: {
   pressure: number;
   side: "A" | "B";
 }) {
-  return <article className={`product-card ${styles.regionSummary}`} data-side={side}>
+  return <article className={`product-card ${styles.regionSummary}`} data-side={side} data-reveal data-reveal-order={side === "B" ? "1" : undefined}>
     <p className={styles.regionIdentity}>{side} · {regionType(region.type)} · {region.province}</p>
     <h3>{region.name}</h3>
     <p className={styles.bigScore}><strong>{formatScore(pressure)}</strong> <small>/ 100</small></p>
@@ -32,7 +33,7 @@ function RegionSummary({ region, pressure, side }: {
 }
 
 function DimensionComparison({ comparison }: { comparison: ComparisonView }) {
-  return <section className={`product-card ${styles.dimensions}`} aria-labelledby="dimensions-heading">
+  return <section className={`product-card ${styles.dimensions}`} aria-labelledby="dimensions-heading" data-reveal>
     <h2 className="product-section-title" id="dimensions-heading">Perbandingan per dimensi</h2>
     <p className={styles.legend}>
       <span data-side="A"><i aria-hidden="true" />{comparison.regionA.name}</span>
@@ -51,7 +52,7 @@ function DimensionComparison({ comparison }: { comparison: ComparisonView }) {
 }
 
 function Attention({ comparison }: { comparison: ComparisonView }) {
-  return <section className={`product-card ${styles.attention}`} aria-labelledby="attention-heading">
+  return <section className={`product-card ${styles.attention}`} aria-labelledby="attention-heading" data-reveal data-reveal-order="1">
     <h2 className="product-section-title" id="attention-heading">Batas pembacaan</h2>
     <span className={styles.readingTag}>Cara membaca</span>
     <h3>Tekanan relatif, bukan penilaian kualitas wilayah.</h3>
@@ -74,7 +75,7 @@ function ComparisonResults({ comparison }: { comparison: ComparisonView }) {
         <RegionSummary region={regionA} pressure={core.overall.regionAScore} side="A" />
         <RegionSummary region={regionB} pressure={core.overall.regionBScore} side="B" />
       </div>
-      <div className={styles.difference}>
+      <div className={styles.difference} data-reveal>
         <strong>{formatScore(core.overall.absoluteDifference)} <span>poin</span></strong>
         <div>
           <h3>Jarak absolut skor tekanan relatif</h3>
@@ -88,12 +89,12 @@ function ComparisonResults({ comparison }: { comparison: ComparisonView }) {
       <Attention comparison={comparison} />
     </div>
 
-    <section className="product-section" aria-labelledby="detail-heading">
+    <section className="product-section" aria-labelledby="detail-heading" data-reveal>
       <div className={styles.sectionHead}>
         <h2 className="product-section-title" id="detail-heading">Rincian perbandingan</h2>
         <p className="product-caption">Tekanan relatif 0–100 · semakin tinggi, semakin tinggi tekanan relatif</p>
       </div>
-      <div className="product-table-wrap">
+      <div className="product-table-wrap" role="region" aria-label="Tabel rincian perbandingan wilayah" tabIndex={0}>
         <table className={`product-table ${styles.detailTable}`}>
           <caption className="civx-sr-only">Rincian tekanan relatif {regionA.name} dan {regionB.name} per dimensi</caption>
           <thead><tr><th scope="col">Dimensi</th><th scope="col">{regionA.name}</th><th scope="col">{regionB.name}</th><th scope="col">Jarak absolut (poin)</th></tr></thead>
@@ -131,7 +132,7 @@ export function ComparisonPage({ comparison, regions, selectedA, selectedB, erro
   const hasB = regions.some(({ region }) => region.id === selectedB);
   const selectionError = error || (comparison === null ? "Perbandingan belum tersedia. Pilih wilayah pertama dan pembanding dari daftar 27 kabupaten/kota Jawa Barat." : undefined);
 
-  return <main className={`civx-container product-page ${styles.page}`}>
+  return <SectionReveals className={`civx-container product-page ${styles.page}`}>
     <PageHeading title="Bandingkan wilayah" breadcrumb="Bandingkan" description="Lihat dua wilayah dalam satu pandangan untuk memahami perbedaan tekanan relatif." />
     <section className={`product-card ${styles.selector}`} aria-label="Pilih wilayah perbandingan">
       <form action="/compare" method="get" className={styles.form} key={`${selectedA}:${selectedB}`} aria-describedby={selectionError ? "selection-error" : undefined}>
@@ -152,5 +153,5 @@ export function ComparisonPage({ comparison, regions, selectedA, selectedB, erro
     </section>
     <div className={styles.snapshotNotice}><Notice>Skor tekanan relatif CIVX 2023 membandingkan kohor tetap 27 kabupaten/kota Jawa Barat, bukan skala kualitas absolut. Semakin tinggi skor, semakin tinggi tekanan relatif. Skor ini bukan peringkat resmi atau rekomendasi kebijakan; data CONTEXT tidak masuk skor.</Notice></div>
     {comparison !== null && !selectionError && <ComparisonResults comparison={comparison} />}
-  </main>;
+  </SectionReveals>;
 }

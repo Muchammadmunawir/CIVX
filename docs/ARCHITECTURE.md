@@ -246,3 +246,17 @@ The root server layout reuses `Notice` and existing semantic styling to disclose
 
 Critical comparison contrast uses existing semantic roles: `--muted` for the second region's small score text, `--comparison-b` for its bars, and foreground/accent-soft roles for the reading label. Branding, layout, motion, and global theme values are unchanged.
 
+
+## 17. Phase 4.5 frontend consistency
+
+The existing Poppins family, light palette, dark palette, choropleth scale, and route structure remain authoritative. Global semantic typography roles define 12px captions, 13px compact text, 14px body text, 18px section titles, and a shared fluid page title. Cards reuse the existing 8px radius; controls reuse the 6px radius and 44px minimum height. Home reference cards align with their coverage card without a separate shadow or oversized action treatment. Compare uses native themed selects rather than a dark-text SVG arrow.
+
+`SectionReveals` now serves all six primary pages, with optional semantic root selection for the regional article. Existing 520ms entrances, 16px travel, 70ms stagger, and the shared easing curve are semantic tokens. Targets remain visible before enhancement; interactive targets stay opaque, focus/pointer interaction settles motion, and completion marks an entrance done. A scoped child-list observer registers newly mounted content groups after source filtering and releases removed targets. No paragraph-by-paragraph, table-row, route-blocking, or continuous animation is introduced.
+
+Reduced motion disables nonessential transitions and entrances; enabling it during a session settles registered targets. Print disables animation and transitions globally and overrides the root color scheme, including an explicit dark preference, so PDF page margins remain white. Regional reports remain outside reveal targets, retaining their existing active/cached-route print scope and metadata-only A4 contract.
+
+The mobile navigation shell now remains outside the pathname-dependent Suspense boundary. Only active-link rendering suspends, so the fallback no longer replaces compact mobile controls with the full link list. At 761–900px, global search occupies its own full row; active-link widths no longer change the tablet header arrangement. Compare reuses its route-loading component in the request-time Suspense boundary, with one small viewport of minimum height, matching Explore's convention and keeping the footer below the initial loading viewport. These fixes address observed cold-load layout shifts without delaying navigation.
+
+Shared control, link, table, disclosure-toggle, and pagination feedback uses the existing 140–200ms motion roles. Global 3px keyboard focus remains authoritative; local weaker overrides were removed where unnecessary. Horizontal tables retain their real structure and named keyboard-focusable scroll regions. No data, scoring, export, release-governance, dependency, or public-deployment contract changes.
+
+No-JavaScript visibility has a separate framework limit: Home, Methodology, and Sources render their content without enhancement, while Explore, Region Detail, and Compare can remain on streamed Suspense fallbacks with JavaScript disabled. Their server-rendered targets are staged under React's hidden transport containers, not hidden by reveal CSS. This polish does not redesign the route rendering/cache architecture or claim full no-JavaScript support.
