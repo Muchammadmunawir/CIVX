@@ -25,5 +25,15 @@
 .explanation h2 { font-size: var(--text-section); margin: 0; }
 .explanation p { color: var(--muted); font-size: var(--text-body); margin: 0; }
 .explanation a { font-size: var(--text-small); }
+.usage { margin-top: var(--space-10); }
+.usage > h2 { font-size: var(--text-section); margin: 0 0 var(--space-3); }
+.usageList { list-style: none; margin: var(--space-5) 0 0; padding: 0; border-top: 1px solid var(--border); }
+.usageList > li { border-bottom: 1px solid var(--border); }
+.usageLink { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr) auto; align-items: center; gap: var(--space-6); padding: var(--space-6) var(--space-3); border-radius: var(--radius-sm); color: inherit; text-decoration: none; transition: background-color var(--duration-micro) var(--ease-standard); }
+.usageLink:hover { background: var(--panel-hover); }
+.usageLink h3 { font-size: var(--text-body); font-weight: 600; line-height: 1.6; margin: 0; }
+.usageLink p { color: var(--muted); font-size: var(--text-body); line-height: 1.7; margin: 0; }
+.usageAction { font-size: var(--text-small); }
 @media(max-width:1000px) { .layout { gap: 32px; grid-template-columns: minmax(260px,.8fr) minmax(0,1.2fr); } .explanation { grid-template-columns: 1fr 1.5fr; } .explanation a { grid-column: 2; } }
 @media(max-width:760px) { .page { padding-block: 28px 32px; } .layout { grid-template-columns: 1fr; gap: 36px; } .summary h1 { max-width: 20ch; } .average, .referenceCard { max-width: none; } .explanation { grid-template-columns: 1fr; gap: 12px; } .explanation a { grid-column: auto; } }
+@media(max-width:900px) { .usageLink { grid-template-columns: minmax(0, 1fr); gap: var(--space-3); padding: var(--space-5) var(--space-3); } }

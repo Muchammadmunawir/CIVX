@@ -13,6 +13,6 @@ export default function ExploreRoute({ searchParams }: { searchParams: Promise<R
 }
 
 async function ExploreContent({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
-  const { q } = await searchParams;
-  return <ExplorePage initialSearch={typeof q === "string" ? q : ""} />;
+  const initialQuery = await searchParams;
+  return <ExplorePage initialQuery={initialQuery} />;
 }

@@ -15,6 +15,11 @@ export function LandingPage() {
     { label: "Kerangka CIVX", title: `${profile.core.dimensions.length} dimensi`, href: "/methodology", action: "Metodologi" },
     { label: "Landasan data", title: `${profile.core.indicators.length} indikator`, href: "/sources", action: "Sumber data" },
   ];
+  const scenarios = [
+    { title: "Jelajahi tekanan pendidikan", description: "Baca perbedaan tekanan pendidikan dalam kohort Jawa Barat 2023 melalui lapisan peta yang sama.", href: "/explore?layer=education", action: "Jelajahi pendidikan" },
+    { title: "Bandingkan dua wilayah", description: "Pilih dua kabupaten atau kota untuk membaca tekanan relatif dan perbedaan pada enam dimensi CORE.", href: `/compare?a=${profile.region.id}&b=3273`, action: "Buka perbandingan" },
+    { title: "Periksa bukti wilayah", description: `Buka profil ${profile.region.name}, lalu telusuri definisi, periode, dan sumber asli setiap indikator.`, href: `/regions/${profile.region.id}`, action: "Telusuri profil" },
+  ];
 
   return <SectionReveals className={`civx-container ${styles.page}`}>
     <ResultsNotice />
@@ -43,6 +48,17 @@ export function LandingPage() {
       </section>
       <div className={styles.mapReveal} data-reveal data-reveal-order="1"><WestJavaMap regions={regions} home /></div>
     </div>
+    <section className={styles.usage} id="cara-menggunakan" aria-labelledby="usage-title">
+      <h2 id="usage-title" data-reveal>Cara Menggunakan CIVX</h2>
+      <p className="product-caption" data-reveal>Mulai dari pertanyaan Anda. Baca pola tekanan relatif, lalu periksa data yang mendasarinya.</p>
+      <ul className={styles.usageList}>{scenarios.map((scenario, index) => <li key={scenario.href} data-reveal data-reveal-order={index}>
+        <Link className={styles.usageLink} href={scenario.href}>
+          <h3>{scenario.title}</h3>
+          <p>{scenario.description}</p>
+          <span className={`civx-text-link ${styles.usageAction}`}>{scenario.action} <span aria-hidden="true">↗</span></span>
+        </Link>
+      </li>)}</ul>
+    </section>
     <section className={styles.explanation} aria-labelledby="reading-title"><h2 id="reading-title" data-reveal>Baca angka bersama konteksnya.</h2><p data-reveal data-reveal-order="1">Skor CIVX lebih tinggi berarti tekanan relatif lebih tinggi dalam kohort {methodology.referenceYear}. Skor bukan penilaian absolut kualitas wilayah.</p><Link className="civx-text-link" href="/methodology" data-reveal data-reveal-order="2">Pahami metodologi <span aria-hidden="true">↗</span></Link></section>
   </SectionReveals>;
 }

@@ -1,18 +1,18 @@
-# CIVX — Regional evidence, with context
+# CIVX — Explore regional pressure, inspect the evidence
 
-CIVX (Civic Index) is an Indonesian-language website for exploring **relative regional pressure** in Jawa Barat. It brings regional statistics, maps, indicator definitions, and source references into one place.
+CIVX (Civic Index) helps researchers, journalists, civic organizations, public-sector stakeholders, and students explore **relative regional pressure in Jawa Barat** and inspect the evidence behind it.
 
-Public regional data is fragmented across statistical publications, government portals, and sector reports. Different units, dates, definitions, and coverage make apparent comparisons easy to misread. CIVX makes those differences visible rather than reducing a region to an unexplained rank.
+**Problem:** regional statistics are scattered across publications and government portals, with different units, dates, definitions, and coverage. **Solution:** CIVX connects a fixed **2023 cohort of 27 kabupaten/kota**, an interactive map, six CORE dimension profiles, two-region comparison, and original source references in one Indonesian-language interface.
 
-It is intended for researchers, journalists, civil-society organizations, public-sector and community stakeholders, and students who need an inspectable starting point for further investigation—not an automatic policy decision.
+Use CIVX as an inspectable starting point for further investigation—not an automatic policy decision.
 
 ## What judges can explore
 
 | Feature | What it provides |
 | --- | --- |
-| Home `/` | Coverage summaries and an interactive regional pressure map. |
-| Explore `/explore` | Search across 27 kabupaten/kota, filter by region type, inspect overall or six dimension map layers, and browse a paginated table. |
-| Region detail `/regions/[id]` | Overall pressure, six dimensions, 18 indicator disclosures, controlled descriptive insights, original source references, and separately dated context. |
+| Home `/` | Coverage summaries, an interactive regional pressure map, and three practical ways to start. |
+| Explore `/explore` | Search across 27 kabupaten/kota, filter by region type, inspect overall or six dimension layers, and share the current search/type/layer URL. |
+| Region detail `/regions/[id]` | Overall pressure, six dimensions, up to three similar profiles with direct Compare actions, 18 indicator disclosures, original source references, controlled insights, and separately dated context. |
 | Compare `/compare?a=3201&b=3273` | Two-region selection and the direct-pressure comparison contract described below. |
 | Methodology `/methodology` | Scoring direction, normalization, weighting, limitations, and export restrictions. |
 | Sources `/sources` | Searchable evidence for all CORE indicators and CONTEXT datasets, including publishers, periods, units, coverage, and limitations. |
@@ -20,6 +20,22 @@ It is intended for researchers, journalists, civil-society organizations, public
 The interface includes light/dark/system themes, responsive layouts, keyboard controls, visible focus, and reduced-motion support. These features are not a claim of formal accessibility certification.
 
 **Review status, not public approval:** current screens display unreleased model values and insights for frontend review. No verified public demo URL is provided here. Use the restricted local review instructions below; do not treat a working screen as release authorization.
+
+## Quick product walkthrough
+
+Use the [local setup](#run-locally) below for restricted review. No public demo is authorized.
+
+1. **Start at Home `/`.** Read the coverage and reference year, then inspect a region on the map. Higher values mean higher relative pressure, not better performance.
+2. **Explore `/explore?layer=education`.** Start on the Education map layer, search for a region, or filter kabupaten/kota. Share the URL or use Back/Forward to revisit filter states. Filters never recalibrate the fixed cohort scale.
+3. **Compare `/compare?a=3201&b=3273`.** Inspect the overall pressure and six dimensions side by side. Differences describe the model, not causes or policy priorities.
+4. **Inspect `/regions/3273`.** Compare a similar six-dimension profile, then open an indicator to check its value, period, definition, denominator, uncertainty, and original source. Similarity describes pressure patterns, not shared causes or future outcomes. CONTEXT remains separate from CORE.
+5. **Check evidence and limits.** Search `/sources` and read `/methodology#status-model`. CSV and regional A4 reports contain identities and references only, not unreleased analytical values.
+
+Stack and commands are in [Run locally](#run-locally); detailed methodological and technical audits remain in [Technical and audit reading](#technical-and-audit-reading).
+
+![Actual local Chromium capture of CIVX's three usage scenarios](docs/screenshots/cara-menggunakan-civx.png)
+
+Actual browser capture of the navigation scenarios, not a mockup. This image contains no unreleased analytical values; numerical review captures remain local. The [similar-profile derivation and restrictions](docs/PRODUCT-INTEGRATION-2023.md#derived-similar-regional-profiles) are documented separately.
 
 ## How to read CIVX
 
@@ -107,7 +123,7 @@ npm run build
 npm start
 ```
 
-`npm start` serves the completed production build locally; it is not deployment authorization. Phase 4 passed 305 tests, lint, and the strict TypeScript production build (36 generated pages). Browser evidence and remaining review gates live in [TASKS.md §32](docs/TASKS.md#32-phase-4-final-integration-and-submission-review).
+`npm start` serves the completed production build locally; it is not deployment authorization. The final enhancement candidate passed **345 tests**, lint, and the strict TypeScript production build (**36 generated pages**). Current browser evidence and remaining review gates live in [TASKS.md §37](docs/TASKS.md#37-final-controlled-product-enhancement).
 
 **Bundler precision:** development and builds intentionally use webpack. Next 16.4.2 Turbopack can reserialize imported JSON numbers—for example, `3.7037037037037037` becomes `3.703703703703704`—and fail exact contextual coverage validation. Keep reviewed data and validation intact rather than weakening them for the bundler.
 
@@ -118,6 +134,6 @@ npm start
 - [Context audit](docs/CONTEXTUAL-DATA-AUDIT-2023.md), [freshness audit](docs/FRESHNESS-AUDIT-2024-2026.md), and [data provenance](docs/DATA.md): original evidence, dates, limitations, and reuse constraints.
 - [Architecture](docs/ARCHITECTURE.md) and [verification history](docs/TASKS.md): implementation and recorded checks.
 
-The frontend consumes `src/lib/civx/product-2023.ts`; React does not normalize, rescore, reweight, or regenerate insights. Full internal precision is retained; display helpers use one decimal with Indonesian number formatting.
+Authoritative frontend reads use `src/lib/civx/product-2023.ts`; React does not normalize, rescore, reweight, or regenerate insights. `similar-regions-2023.ts` derives Euclidean peer distances separately from the same six CORE scores. Full precision is retained; pressure displays use one decimal and derived distances up to two decimals with Indonesian number formatting.
 
 Historical documents, including [METHODOLOGY.md](docs/METHODOLOGY.md), [METHODOLOGY-V2.md](docs/METHODOLOGY-V2.md), and [METHODOLOGY-CURRENT.md](docs/METHODOLOGY-CURRENT.md), remain audit history. Their earlier four/eight-input contracts do not define this frontend's 18-indicator model. Do not regenerate historical releases to run the website.

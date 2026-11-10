@@ -6,16 +6,20 @@ import { regionType } from "@/components/product/format";
 import { DimensionBars, PageHeading, ResultsNotice, ScoreDisplay } from "@/components/product/product-ui";
 import { SectionReveals } from "@/components/product/section-reveals";
 import { getRegionProductView2023 } from "@/lib/civx/product-2023";
+import { getSimilarRegions2023 } from "@/lib/civx/similar-regions-2023";
 import { RegionSilhouette } from "./region-silhouette";
 import { PrintReportButton } from "./print-report-button";
 import { RegionalPrintReport } from "./regional-print-report";
 import styles from "./region-detail.module.css";
+
+const distanceFormatter = new Intl.NumberFormat("id-ID", { maximumFractionDigits: 2 });
 
 export function RegionDetail({ id }: { id: string }) {
   const view = getRegionProductView2023(id);
   if (!view) notFound();
   const { region, core, context, methodology } = view;
   const prefix = `region-${region.id}`;
+  const similarRegions = getSimilarRegions2023(region.id);
 
   return <SectionReveals as="article" className={`civx-container product-page ${styles.page}`} selector="[data-region-screen] [data-reveal]">
     <div data-region-screen>
@@ -53,6 +57,7 @@ export function RegionDetail({ id }: { id: string }) {
 
     <nav className={styles.anchors} aria-label="Bagian detail wilayah">
       <a href={`#${prefix}-profile`}>Profil dimensi</a>
+      <a href={`#${prefix}-similar`}>Profil serupa</a>
       <a href={`#${prefix}-indicators`}>Rincian indikator</a>
       <a href={`#${prefix}-context`}>Data konteks</a>
       <a href={`#${prefix}-notes`}>Catatan data</a>
@@ -73,6 +78,19 @@ export function RegionDetail({ id }: { id: string }) {
         </section>)}</div>
       </section>
     </div>
+
+    {similarRegions && similarRegions.length > 0 && <section className={`product-section ${styles.section}`} id={`${prefix}-similar`} aria-labelledby={`${prefix}-similar-title`} data-reveal>
+      <h2 className="product-section-title" id={`${prefix}-similar-title`}>Wilayah dengan Profil Serupa</h2>
+      <p className={styles.similarIntro}>Pratinjau analitis terbatas pada kohort tetap {methodology.cohortSize} kabupaten/kota Jawa Barat 2023. Jarak Euclidean lebih kecil berarti pola tekanan relatif enam dimensi CORE lebih dekat, bukan skor CIVX baru.</p>
+      <ul className={styles.similarGrid}>{similarRegions.map(peer => <li className={`product-card ${styles.similarCard}`} key={peer.region.id}>
+        <h3>{peer.region.name}</h3>
+        <p className={styles.distance}>Jarak profil: <strong>{distanceFormatter.format(peer.distance)}</strong></p>
+        <DimensionBars dimensions={peer.dimensions} compact />
+        <Link className="civx-button civx-button-secondary" href={`/compare?a=${region.id}&b=${peer.region.id}`} aria-label={`Bandingkan ${region.name} dengan ${peer.region.name}`}>Bandingkan profil <span aria-hidden="true">→</span></Link>
+      </li>)}</ul>
+      <p className="product-caption">Skala tekanan dimensi 0–100 · lebih tinggi berarti tekanan relatif lebih tinggi. Jarak profil bukan persentase kemiripan.</p>
+      <p className="product-caption">Kemiripan pola tidak berarti kesamaan penyebab atau keadaan, bukan saran kebijakan, prediksi masa depan, atau klasifikasi resmi. Metrik turunan ini tidak disertakan dalam CSV atau cetak. <Link className="civx-text-link" href="/methodology#profil-serupa">Baca metode dan batasan profil serupa</Link>.</p>
+    </section>}
 
     <section className={`product-section ${styles.section}`} id={`${prefix}-indicators`} aria-labelledby={`${prefix}-indicators-title`}>
       <div className={styles.sectionHeading}>

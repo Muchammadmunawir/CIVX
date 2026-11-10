@@ -41,6 +41,14 @@
 .notes { padding-left: 1.25rem; font-size: var(--text-body); line-height: 1.7; }
 .notes li + li { margin-top: 0.5rem; }
 .footerLinks { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; margin-top: 1.5rem; }
+.similarIntro { max-width: 80ch; margin: 0 0 1.25rem; font-size: var(--text-small); line-height: 1.8; }
+.similarGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin: 0; padding: 0; list-style: none; }
+.similarCard { display: flex; flex-direction: column; align-items: stretch; padding: var(--space-4); }
+.similarCard h3 { margin: 0 0 0.5rem; font-size: 1rem; line-height: 1.6; font-weight: 600; }
+.distance { margin: 0 0 1rem; color: var(--muted); font-size: var(--text-small); line-height: 1.7; }
+.distance strong { color: var(--foreground); font-variant-numeric: tabular-nums; font-weight: 600; }
+.similarCard :global(.dimension-row) { margin-bottom: var(--space-2); }
+.similarCard > a { align-self: start; margin-top: auto; }
 
 @media (max-width: 1000px) {
   .overview { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -53,6 +61,7 @@
   .identity { grid-column: auto; }
   .identity dl { grid-template-columns: minmax(0, 1fr); }
   .profileGrid { grid-template-columns: minmax(0, 1fr); }
+  .similarGrid { grid-template-columns: minmax(0, 1fr); }
   .anchors { gap: 0.25rem 1rem; }
   .anchors a { font-size: var(--text-small); }
 }

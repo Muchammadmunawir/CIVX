@@ -172,3 +172,11 @@ Home, Explore, Region Detail, and Compare each carry one compact Indonesian prev
 
 The current numerical display still conflicts with public-release restrictions if deployed openly. Other pages can still be copied or printed with numerical content. Keep review local or access-controlled; do not deploy publicly, redistribute numerical outputs, or call the model approved until rights and release signoff are documented. No major feature is silently removed to conceal this governance gap.
 
+
+## 16. Final controlled product enhancement
+
+Region Detail now offers “Wilayah dengan Profil Serupa”: up to three nearest six-CORE pressure profiles in the same 2023 Jawa Barat cohort, with direct two-region Compare actions. Euclidean distance is a separate derived exploratory metric, not a new CIVX score, quality ranking, official similarity classification, cause explanation, forecast, or policy recommendation. Complete finite facade dimensions and deterministic BPS-ID ties are required; CONTEXT remains excluded.
+
+Home provides three practical entry scenarios for education pressure, two-region comparison, and source-backed regional inspection. Methodology preserves concise cohort/provenance guidance and uses progressive disclosure for technical tables/formulas. Explore exposes active filters, clear search/type-only reset, a mobile result shortcut, and shareable `q`/`type`/`layer` URLs with native Back/Forward and preserved map context.
+
+The current unreleased score/insight flags, source-rights limits, CSV scope, and regional A4 scope are unchanged. This feature authorization is for restricted local/access-controlled analytical preview, not public numerical publication. PR #19 remains the integration-review vehicle; owners retain release and deployment signoff.

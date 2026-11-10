@@ -182,3 +182,25 @@ Home, Explore, Region Detail, and Compare each display one compact shared notice
 
 Phase 4 evidence, external source availability limits, and the final submission checklist are recorded in [TASKS.md §32](TASKS.md#32-phase-4-final-integration-and-submission-review). No frozen model artifact, source dataset, dependency, normalization rule, or weight changes.
 
+
+## Derived similar regional profiles
+
+`src/lib/civx/similar-regions-2023.ts` adds a separate exploratory metric over the existing product facade. `getSimilarRegions2023(regionId)` obtains all 27 canonical 2023 Jawa Barat records from `getExploreRegionsProduct2023()`. The pure `findSimilarRegions2023(cohort, selectedId)` accepts a readonly dimension/identity interface for isolated consumer and synthetic test-only cases; it does not read overall scores, indicators, CONTEXT, repository internals, or JSON artifacts.
+
+The canonical dimension order is `socioeconomic`, `education`, `basic_services`, `public_health`, `disaster_pressure`, `environment`. Distance is the square root of the sum of six squared differences between existing full-precision dimension pressures. Inputs are not normalized, centered, weighted again, or rounded. The selected identity is excluded; ascending distance determines up to three peers, and exact ties use ascending canonical BPS IDs independently of locale or input order.
+
+Unknown selected IDs return `undefined`, matching the facade. Invalid cohort records throw `TypeError` before deriving results, including candidates outside the nearest three. Validation requires known cohort identities, 2023 Jawa Barat kabupaten/kota metadata, CORE scope, all six unique known dimensions, and finite scores within 0–100. Missing values never become zero. Input records are not changed or frozen. Readonly output contains region identity, canonical dimensions, and a derived `distance`; it does not alter authoritative CORE records or release metadata.
+
+Region Detail presents “Wilayah dengan Profil Serupa” between the main profile and indicator disclosures. Each peer exposes a compact six-bar profile, a separately labeled distance, and `/compare?a=<selected>&b=<peer>`. Compact Indonesian labels retain full facade names as titles; pressure values and bar widths remain unchanged. `/methodology#profil-serupa` explains the derivation and limitations. Similar patterns do not establish similar causes/circumstances, recommend policy, predict outcomes, or define an official class. No similarity percentage, quality rank, new analytical cohort, or new CIVX score is introduced.
+
+This remains a restricted analytical preview under the existing unreleased flags. The section stays inside `data-region-screen`; the metadata-only A4 report and identity/reference CSV never include similarity values, profiles, or peer ordering. A disclaimer is not access control or publication permission.
+
+## Discoverability and Explore URL state
+
+Home's “Cara Menggunakan CIVX” links directly to the Education layer, an existing two-region comparison, and a canonical regional evidence profile. Methodology keeps its short cohort/provenance explanation visible and places the full indicator/weight table and formulas behind native keyboard-accessible disclosures. Detailed rights, release, source, and export information remains available at its existing anchors.
+
+Explore's pure `explore-url-state.ts` parser is shared by server entry and client controls. Owned parameters are `q`, `type` (`kabupaten`/`kota`, otherwise all), and `layer` (one of the existing six dimension IDs, otherwise overall). Repeated owned parameters use safe defaults rather than selecting an arbitrary value. Edits preserve unrelated parameters, their repeated values, and the URL fragment.
+
+Controls update local state immediately and use Next's native `history.pushState`/`replaceState` integration with `useSearchParams`. A guarded render adjustment synchronizes current URL changes before children render, including Back/Forward and same-route Next links. The first search edit pushes one history entry; following keystrokes replace it until blur, Enter, or another discrete action. Type, layer, and reset actions push discrete changes. No page/map key or router transition is introduced.
+
+Search/type changes reset table pagination. Layer changes preserve pagination and the inspected map region. “Hapus filter” clears only search/type/page and retains map layer/inspection; a visible caption explains that scope. Active filters and one combined polite status share map/table counts, while a keyboard-focusable in-page shortcut reaches the result list on mobile. Export still uses every filtered identity, not the current table page.

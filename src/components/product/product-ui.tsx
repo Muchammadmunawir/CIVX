@@ -27,11 +27,20 @@ export function ScoreDisplay({ score, label = "Skor CIVX 2023" }: { score: numbe
   return <div className="product-score"><p>{label}</p><strong>{formatScore(score)} <small>/ 100</small></strong></div>;
 }
 
-export function DimensionBars({ dimensions }: { dimensions: readonly CivxDimensionProduct2023[] }) {
+const compactDimensionLabels: Readonly<Record<string, string>> = {
+  socioeconomic: "Sosial ekonomi",
+  education: "Pendidikan",
+  basic_services: "Layanan dasar",
+  public_health: "Kesehatan publik",
+  disaster_pressure: "Risiko bencana",
+  environment: "Kualitas lingkungan",
+};
+
+export function DimensionBars({ dimensions, compact = false }: { dimensions: readonly CivxDimensionProduct2023[]; compact?: boolean }) {
   return <div className="dimension-bars">{dimensions.map(dimension => <div className="dimension-row" key={dimension.dimensionId}>
-    <div><span>{dimension.displayName}</span><strong>{formatScore(dimension.score)}</strong></div>
+    <div><span title={compact ? dimension.displayName : undefined}>{compact ? compactDimensionLabels[dimension.dimensionId] ?? dimension.displayName : dimension.displayName}</span><strong>{formatScore(dimension.score)}</strong></div>
     <div className="pressure-track" aria-hidden="true"><span style={{ width: `${dimension.score}%` }} /></div>
-  </div>)}<p className="product-caption">Skala tekanan relatif 0–100 · lebih tinggi berarti tekanan relatif lebih tinggi.</p></div>;
+  </div>)}{!compact && <p className="product-caption">Skala tekanan relatif 0–100 · lebih tinggi berarti tekanan relatif lebih tinggi.</p>}</div>;
 }
 
 export function SourceLink({ source }: { source: CivxProductSource2023 }) {

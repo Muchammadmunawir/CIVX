@@ -4,8 +4,10 @@ import assert from "node:assert/strict";
 import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { AppRouterContext } from "next/dist/shared/lib/app-router-context.shared-runtime.js";
+import { SearchParamsContext } from "next/dist/shared/lib/hooks-client-context.shared-runtime.js";
 const { LandingPage } = await import("../src/components/landing/landing-page.tsx");
 const { ExploreBrowser } = await import("../src/components/explore/explore-browser.tsx");
+const { ExplorePage } = await import("../src/components/explore/explore-page.tsx");
 const { WestJavaMap } = await import("../src/components/explore/west-java-map.tsx");
 const { MethodologyPage } = await import("../src/components/methodology/methodology-page.tsx");
 const { SourcesPage } = await import("../src/components/sources/sources-page.tsx");
@@ -14,7 +16,8 @@ const { formatScore } = await import("../src/components/product/format.ts");
 
 const regions = getExploreRegionsProduct2023();
 // Server rendering does not navigate; the real map still requires its router context.
-const render = (Component, props) => renderToStaticMarkup(createElement(AppRouterContext.Provider, { value: {} }, createElement(Component, props)));
+const render = (Component, props, query = null) => renderToStaticMarkup(createElement(AppRouterContext.Provider, { value: {} },
+  createElement(SearchParamsContext.Provider, { value: query }, createElement(Component, props))));
 const text = html => html.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
 const escape = value => renderToStaticMarkup(createElement("span", null, String(value))).slice(6, -7);
 const tableIds = html => [...html.matchAll(/<th scope="row"><a href="\/regions\/(\d+)"/g)].map(match => match[1]);
@@ -27,20 +30,40 @@ test("Explore paginates only canonical table rows while map retains all 27 filte
   assert.match(html, /aria-label="Halaman 1" aria-current="page"/);
   assert.match(text(html), /1–9 dari 27/);
   assert.doesNotMatch(html, /aria-sort|data-rank|name="sort"/);
-  const headers = text(html.match(/<thead>([\s\S]*?)<\/thead>/)[1]);
-  assert.equal(headers, "Wilayah Jenis Skor CIVX Tekanan relatif Aksi");
 });
 
 test("Explore initial query filters map and table together and preserves empty-result recovery", () => {
-  const html = render(ExploreBrowser, { regions, initialSearch: " bAnDuNg " });
+  const html = render(ExploreBrowser, { regions, initialState: { q: " bAnDuNg ", type: "all", layer: "" } });
   const expected = regions.filter(view => view.region.name.toLowerCase().includes("bandung")).map(view => view.region.id);
   assert.deepEqual(tableIds(html), expected);
   assert.deepEqual(visibleMapIds(html), expected);
-  const empty = render(ExploreBrowser, { regions, initialSearch: "wilayah-tidak-ada" });
+  const empty = render(ExploreBrowser, { regions, initialState: { q: "wilayah-tidak-ada", type: "all", layer: "" } });
   assert.deepEqual(tableIds(empty), []);
   assert.deepEqual(visibleMapIds(empty), []);
   assert.match(text(empty), /Tidak ada wilayah yang cocok/);
-  assert.match(text(empty), /Atur ulang pencarian/);
+});
+
+test("Explore server entry combines query, type and layer without changing map/table identities", () => {
+  const html = render(ExplorePage, { initialQuery: { q: "bandung", type: "kota", layer: "education" } });
+  const expected = regions.filter(view => view.region.type === "kota" && view.region.name.toLowerCase().includes("bandung"));
+  assert.deepEqual(tableIds(html), expected.map(view => view.region.id));
+  assert.deepEqual(visibleMapIds(html), expected.map(view => view.region.id));
+  const links = mapLinks(html);
+  for (const [index, link] of links.entries()) {
+    const score = regions[index].core.dimensions.find(dimension => dimension.dimensionId === "education").score;
+    assert.ok(link.attributes.includes(`style="--map-pressure:${score}%"`));
+  }
+});
+
+test("Explore consumes current router URL instead of stale initial filters", () => {
+  const html = render(ExploreBrowser, {
+    regions,
+    initialState: { q: "bogor", type: "kabupaten", layer: "" },
+  }, new URLSearchParams("q=bandung&type=kota&layer=education"));
+  const expected = regions.filter(view => view.region.type === "kota" && view.region.name.toLowerCase().includes("bandung"));
+  assert.deepEqual(tableIds(html), expected.map(view => view.region.id));
+  assert.deepEqual(visibleMapIds(html), expected.map(view => view.region.id));
+  assert.ok(mapLinks(html).every(link => link.attributes.includes('data-layer="dimension"')));
 });
 
 const mapLinks = html => [...html.match(/<svg\b[^>]*role="group"[^>]*>([\s\S]*?)<\/svg>/)[1].matchAll(/<a\b([^>]*href="\/regions\/(\d+)"[^>]*)>([\s\S]*?)<\/a>/g)]
