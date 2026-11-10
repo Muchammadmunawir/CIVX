@@ -543,6 +543,7 @@ No main merge, force push, dependency change, model release, or production deplo
 - [x] Fetch origin and compare the active `Muchammadmunawir/frontend-integration-figma` branch with `origin/main`: one main-only merge commit and four development-only commits.
 - [x] Confirm Phase 2 (`5dcb4a2`), Phase 2.1 (`4340647`), and Phase 3 (`58d199d`) are ancestors of the candidate. Main-only `85252f2` records the earlier branch merge; merge it without conflicts or lost teammate changes.
 - [x] Keep the development branch as the PR candidate. Do not merge into main, force push, reset, deploy, install dependencies, or change frozen analytical/source artifacts.
+- [x] Inspect the remaining unmerged teammate branch `origin/jelajah`: commit `3fb1e12` has no PR and introduces `index-status.ts` with `100 - pressure`, 70/50 quality statuses, and regional ranking. Preserve the branch unchanged; do not merge those contradictory semantics into the stabilized candidate. Any reusable UI work needs a separate pressure-consistent review, not a blind merge.
 
 ### Critical fixes
 
