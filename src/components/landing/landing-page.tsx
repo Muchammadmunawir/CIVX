@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { WestJavaMap } from "@/components/explore/west-java-map";
 import { SectionReveals } from "@/components/product/section-reveals";
+import { ResultsNotice } from "@/components/product/product-ui";
 import { getExploreRegionsProduct2023, getProductMethodology2023, getRegionProductView2023 } from "@/lib/civx/product-2023";
 import styles from "./landing.module.css";
 
@@ -16,6 +17,7 @@ export function LandingPage() {
   ];
 
   return <SectionReveals className={`civx-container ${styles.page}`}>
+    <ResultsNotice />
     <div className={styles.layout}>
       <section className={styles.summary} aria-labelledby="home-title">
         <h1 id="home-title" data-reveal>Dashboard Regional CIVX<span>.</span></h1>

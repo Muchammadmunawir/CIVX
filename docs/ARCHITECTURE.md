@@ -242,7 +242,7 @@ The new methodology anchor documents both actions and the public-release prerequ
 
 Compare consumes all six existing comparison-facade dimensions and unchanged overall pressure directly. It removes inverse-index, provincial-average, sorting, and quality/priority-badge calculations. Engine-provided absolute distances and signed overall deltas remain distinct. No scoring or contextual aggregation moves into React.
 
-The root server layout reuses `Notice` and existing semantic styling to disclose preview/unreleased status on every route. Regional print rules hide this shell notice with other chrome. The notice is not authentication, authorization, or a numerical-copy/print control. Methodology explicitly records that limitation; no release flag or export bypass is added.
+`ResultsNotice` reuses `Notice` and existing semantic styling once on Home, Explore, Region Detail, and Compare, rather than rendering a global banner in the root layout. Its static, named complementary landmark links to `/methodology#status-model`; detailed rights and reporting disclosures remain on Methodology and Sources. Regional print rules hide it with screen content. The notice is not authentication, authorization, or a numerical-copy/print control; no release flag or export bypass is added.
 
 Critical comparison contrast uses existing semantic roles: `--muted` for the second region's small score text, `--comparison-b` for its bars, and foreground/accent-soft roles for the reading label. Branding, layout, motion, and global theme values are unchanged.
 

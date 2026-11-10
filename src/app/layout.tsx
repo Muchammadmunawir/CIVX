@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Poppins } from "next/font/google";
-import Link from "next/link";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { themeBootScript } from "@/components/layout/theme";
-import { Notice } from "@/components/product/product-ui";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -30,12 +28,6 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
         <script dangerouslySetInnerHTML={{ __html: themeBootScript }} />
         <a className="civx-skip-link" href="#main-content">Lewati ke konten</a>
         <SiteHeader />
-        <aside className="civx-container" aria-label="Status pratinjau">
-          <Notice>
-            <strong>Pratinjau untuk peninjauan.</strong> Skor dan insight CIVX 2023 belum disetujui untuk rilis publik.
-            {" "}<Link className="civx-text-link" href="/methodology#status-model">Baca status model dan batas penggunaan.</Link>
-          </Notice>
-        </aside>
         <div id="main-content" tabIndex={-1}>{children}</div>
         <SiteFooter />
       </body>

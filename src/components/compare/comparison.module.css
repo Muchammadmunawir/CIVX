@@ -37,9 +37,9 @@
   padding: 16px;
 }
 .error p { margin: 8px 0 0; }
-.snapshotNotice { margin-top: 24px; }
 
 /* Region summaries */
+.results { margin-top: var(--space-6); }
 .summaryGrid, .analysisGrid { display: grid; gap: 24px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .regionSummary { display: flex; flex-direction: column; min-width: 0; }
 .regionIdentity { color: var(--muted); font-size: var(--text-caption); font-weight: 600; letter-spacing: .04em; margin: 0; text-transform: uppercase; }
@@ -89,8 +89,6 @@
 .readingTag { background: var(--accent-soft); border-radius: 4px; color: var(--foreground); display: inline-block; font-size: var(--text-caption); font-weight: 500; padding: 4px 10px; }
 .attention h3 { font-size: 1.0625rem; font-weight: 600; margin: 20px 0 12px; }
 .attention p { font-size: var(--text-small); line-height: 1.7; margin: 0; }
-.attention hr { border: 0; border-top: 1px solid var(--border); margin: 20px 0; }
-.attention .muted { color: var(--muted); }
 .outlineButton { border-color: var(--border-strong); gap: 10px; min-height: var(--control-height); }
 .attention .outlineButton { margin-top: 20px; }
 

@@ -26,9 +26,6 @@ export function MethodologyPage() {
   return (
     <SectionReveals className={`civx-container product-page ${styles.page}`}>
       <PageHeading breadcrumb="Metodologi" title="Di balik angka indeks" description="Pahami apa yang diukur, bagaimana skor dibentuk, dan batas penggunaannya." />
-      <Notice>
-        Model {methodology.referenceYear} telah dihitung, tetapi belum dirilis untuk publik. Persetujuan integrasi antarmuka tidak mengubah status skor dan insight.
-      </Notice>
       <div className={styles.layout}>
         <nav className={styles.contents} aria-label="Dalam halaman ini" data-reveal>
           <p>Dalam halaman ini</p>
@@ -121,11 +118,11 @@ export function MethodologyPage() {
 
           <section className={styles.section} aria-labelledby="status-model" data-reveal>
             <h2 id="status-model" className="product-section-title">Status model & penggunaan</h2>
-            <p>CIVX adalah indeks analitis yang ditetapkan proyek, bukan indeks resmi atau pengesahan lembaga sumber. Hak penggunaan dan redistribusi sumber belum dinyatakan tuntas.</p>
-            <p>Model 2023 masih memerlukan persetujuan rilis publik. Baca definisi, periode rujukan, dan keterbatasan sumber sebelum menggunakan hasilnya.</p>
-            <p>Tampilan angka pada antarmuka merupakan pratinjau peninjauan, bukan persetujuan publikasi. Hak penggunaan sumber dan persetujuan rilis harus dituntaskan sebelum penerapan publik. Pemberitahuan pratinjau bukan kontrol akses.</p>
-            <p>Pembatasan CSV dan laporan wilayah tidak mencegah penyalinan tampilan atau pencetakan halaman lain melalui peramban. Gunakan lingkungan peninjauan terbatas; jangan menyebarkan hasil numerik sebelum persetujuan terdokumentasi.</p>
-            <Link className="civx-text-link" href="/sources">Lihat sumber dan catatan penggunaannya <span aria-hidden="true">→</span></Link>
+            <p>CIVX adalah indeks analitis proyek, bukan indeks resmi atau pengesahan lembaga sumber. Model {methodology.referenceYear} telah dihitung, tetapi skor dan insight belum disetujui untuk rilis publik.</p>
+            <p>Hak penggunaan dan redistribusi sumber belum dituntaskan. Persetujuan integrasi antarmuka tidak mengubah status rilis atau memberikan izin publikasi.</p>
+            <p>Tampilan numerik hanya untuk peninjauan lokal atau dengan kontrol akses. Penerapan publik dan redistribusi hasil memerlukan penuntasan hak sumber serta persetujuan rilis terdokumentasi.</p>
+            <p>Pemberitahuan ini bukan kontrol akses. Pembatasan CSV dan laporan wilayah tidak mencegah penyalinan, tangkapan layar, atau pencetakan halaman numerik lainnya.</p>
+            <Link className="civx-text-link" href="/sources#penggunaan-sumber">Lihat sumber dan catatan penggunaannya <span aria-hidden="true">→</span></Link>
           </section>
 
           <section className={styles.section} aria-labelledby="ekspor-dan-laporan" data-reveal>

@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { ContextSection } from "@/components/product/context-section";
 import { IndicatorDisclosure } from "@/components/product/indicator-disclosure";
 import { regionType } from "@/components/product/format";
-import { DimensionBars, Notice, PageHeading, ScoreDisplay } from "@/components/product/product-ui";
+import { DimensionBars, PageHeading, ResultsNotice, ScoreDisplay } from "@/components/product/product-ui";
 import { SectionReveals } from "@/components/product/section-reveals";
 import { getRegionProductView2023 } from "@/lib/civx/product-2023";
 import { RegionSilhouette } from "./region-silhouette";
@@ -19,6 +19,7 @@ export function RegionDetail({ id }: { id: string }) {
 
   return <SectionReveals as="article" className={`civx-container product-page ${styles.page}`} selector="[data-region-screen] [data-reveal]">
     <div data-region-screen>
+    <ResultsNotice />
     <nav className={styles.breadcrumb} aria-label="Jejak halaman">
       <Link href="/">Beranda</Link><span aria-hidden="true">/</span><Link href="/explore">Jelajah</Link><span aria-hidden="true">/</span><span aria-current="page">{region.name}</span>
     </nav>
@@ -49,8 +50,6 @@ export function RegionDetail({ id }: { id: string }) {
         </div>
       </section>
     </div>
-
-    <div className={styles.notice}><Notice>Skor mengacu pada 2023. Setiap indikator tetap memakai periode rujukan sumbernya. Data konteks terpisah dan tidak memengaruhi skor.</Notice></div>
 
     <nav className={styles.anchors} aria-label="Bagian detail wilayah">
       <a href={`#${prefix}-profile`}>Profil dimensi</a>

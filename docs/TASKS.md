@@ -637,3 +637,27 @@ No main merge, force push, dependency change, model release, or production deplo
 - **P2 — Decorative effects:** no route choreography, continuous animation, new illustration, or extra decorative transition was added. Stability and meaningful feedback took priority.
 
 Frontend is ready to enter final restricted QA with the explicit limits above. It is not a public-deployment approval. Development-branch commit/push is separate from any main merge or production deployment.
+
+## 34. Compact governance disclosures
+
+- [x] Audit the clean development branch and repeated rendered notices before editing. Home had one banner, Explore/Region/Compare/Sources had two, and Methodology had repeated release-status banners plus its separate interpretation note.
+- [x] Replace the global layout banner and page-specific repeats with one shared server-rendered `ResultsNotice` on Home, Explore, Region Detail, and Compare. Reuse the existing notice styling and accessible links; do not change palette, fonts, tokens, or scoring.
+- [x] Use concise Indonesian copy: “Pratinjau terbatas. Skor dan insight belum disetujui untuk rilis publik.” Link directly to `/methodology#status-model`.
+- [x] Remove duplicated prominent release/rights paragraphs from Methodology and Sources while retaining their substance at `/methodology#status-model`, `/methodology#ekspor-dan-laporan`, and `/sources#penggunaan-sumber`. Preserve methodological reading cues beside numerical data.
+- [x] Remove Compare's repeated limitations paragraph; its action now links directly to `/methodology#keterbatasan`. Preserve the interpretation of absolute distance and signed differences.
+- [x] Shorten CSV/print captions without weakening their identity/reference-only scope. Retain accessible descriptions, contextual terms links, error feedback, CSV payload disclosures, and all printed report restrictions.
+- [x] Remove obsolete notice CSS and preserve the existing Compare section gap with a spacing token.
+- [x] Remove three incidental exact-navigation assertions from the analytical comparison test after the new anchored Methodology link made one fail. Keep all pressure, dimension, precision, selector, tie, and invalid-input assertions; exercise disclosure navigation in the browser rather than re-pin the old link shape.
+
+### Exercised verification
+
+- `npm test`: **305 passed**, zero failures, cancelled, or skipped after the obsolete navigation assertions were removed. Lint and the strict webpack production build passed; the build generated **36 pages**.
+- Production Chromium checked six routes in both themes at **320/390/768/1024/1440px: 60 combinations**. The four numerical surfaces each show exactly one identical named results notice; Methodology and Sources have no global results banner. No viewport overflow, clipped checked text, duplicate H1, or broken same-page anchor was observed.
+- Visually reviewed mobile light Compare, mobile dark Region Detail, desktop light Sources, and desktop dark Methodology. Before/after captures and measurements remain outside Git at `/tmp/civx-notices/`.
+- Keyboard activation of the compact notice opens model status with visible focus. Model status links to source rights; the print caption links to reporting terms. The retained text explicitly covers unreleased status, incomplete source rights, restricted review, and the fact that a notice is not access control.
+- Reduced-motion emulation keeps the notice visible. The existing named landmark and native links remain accessible without an alert or modal.
+- A real keyboard-triggered filtered CSV download contains Kota Bandung `3273`, remains **790 bytes**, retains publication restrictions, and has no score column. Regional print media hides the screen notice, keeps six report rows and the explicit withheld-score statement, and produces the existing A4 report.
+- Final production smoke observed no application exception or console error.
+- Frozen score/insight SHA-256 values remain `47b4813abd59bc452556e9d057596511f95e17acd81a4994589bc87460d9f6d5` and `ffd92543c6387c981d2647c8ed55bd3abb7f7c4e9b5b91d4a74fab81999d6345`.
+
+Publication restrictions are unchanged: `SCORED_NOT_RELEASED`, `INSIGHTS_NOT_RELEASED`, and `productionIntegrationAuthorized: false` still apply. Existing numerical screens would conflict with those restrictions if deployed publicly without documented rights and release approval. Notices do not authorize exposure, restrict access, or prevent copying/ordinary printing of other numerical pages. Keep review local or access-controlled. No live public deployment was authorized or performed by this change.

@@ -74,9 +74,6 @@ test("distinct-region comparison renders facade pressure scores and all six full
   assert.equal(selectedOption(html, "a"), "3276");
   assert.equal(selectedOption(html, "b"), "3202");
   assert.match(html, /<form action="\/compare" method="get"/);
-  assert.match(html, /href="\/methodology"/);
-  assert.match(html, /href="\/regions\/3276"/);
-  assert.match(html, /href="\/explore"/);
 });
 
 test("omitted URL selections keep the existing distinct default comparison", () => {

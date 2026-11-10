@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { formatDifference, formatScore, regionType } from "@/components/product/format";
-import { Notice, PageHeading } from "@/components/product/product-ui";
+import { PageHeading, ResultsNotice } from "@/components/product/product-ui";
 import { SectionReveals } from "@/components/product/section-reveals";
 import type {
   CivxComparisonProductView2023,
@@ -59,9 +59,7 @@ function Attention({ comparison }: { comparison: ComparisonView }) {
     <p>{comparison.core.overall.absoluteDifference === 0
       ? "Skor keseluruhan kedua pilihan sama. Jarak absolut dan selisih bertanda A dikurangi B sama-sama nol."
       : "Jarak absolut menunjukkan besar perbedaan tanpa arah. Selisih bertanda A dikurangi B menunjukkan arah perbedaan tekanan relatif, bukan keunggulan wilayah."}</p>
-    <hr />
-    <p className={styles.muted}>Selisih kecil bukan bukti signifikansi statistik. Skor ini bukan peringkat resmi, penilaian kualitas wilayah, atau rekomendasi kebijakan. Data CONTEXT tidak masuk skor CORE.</p>
-    <Link className={`civx-button civx-button-secondary ${styles.outlineButton}`} href="/methodology">Pahami keterbatasan <span aria-hidden="true">›</span></Link>
+    <Link className={`civx-button civx-button-secondary ${styles.outlineButton}`} href="/methodology#keterbatasan">Pahami keterbatasan <span aria-hidden="true">›</span></Link>
   </section>;
 }
 
@@ -133,6 +131,7 @@ export function ComparisonPage({ comparison, regions, selectedA, selectedB, erro
   const selectionError = error || (comparison === null ? "Perbandingan belum tersedia. Pilih wilayah pertama dan pembanding dari daftar 27 kabupaten/kota Jawa Barat." : undefined);
 
   return <SectionReveals className={`civx-container product-page ${styles.page}`}>
+    <ResultsNotice />
     <PageHeading title="Bandingkan wilayah" breadcrumb="Bandingkan" description="Lihat dua wilayah dalam satu pandangan untuk memahami perbedaan tekanan relatif." />
     <section className={`product-card ${styles.selector}`} aria-label="Pilih wilayah perbandingan">
       <form action="/compare" method="get" className={styles.form} key={`${selectedA}:${selectedB}`} aria-describedby={selectionError ? "selection-error" : undefined}>
@@ -151,7 +150,6 @@ export function ComparisonPage({ comparison, regions, selectedA, selectedB, erro
       </form>
       {selectionError && <div id="selection-error" role="alert" className={styles.error}><strong>Pilihan belum dapat ditampilkan</strong><p>{selectionError}</p><p>Pilih ulang wilayah pada daftar di atas. Pilihan yang tidak dikenal dibiarkan kosong, bukan diganti otomatis.</p></div>}
     </section>
-    <div className={styles.snapshotNotice}><Notice>Skor tekanan relatif CIVX 2023 membandingkan kohor tetap 27 kabupaten/kota Jawa Barat, bukan skala kualitas absolut. Semakin tinggi skor, semakin tinggi tekanan relatif. Skor ini bukan peringkat resmi atau rekomendasi kebijakan; data CONTEXT tidak masuk skor.</Notice></div>
     {comparison !== null && !selectionError && <ComparisonResults comparison={comparison} />}
   </SectionReveals>;
 }

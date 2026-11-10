@@ -16,6 +16,13 @@ export function Notice({ children }: { children: ReactNode }) {
   return <div className="product-notice"><span aria-hidden="true">i</span><div>{children}</div></div>;
 }
 
+export function ResultsNotice() {
+  return <aside aria-label="Status hasil CIVX"><Notice>
+    <strong>Pratinjau terbatas.</strong> Skor dan insight belum disetujui untuk rilis publik.
+    {" "}<Link className="civx-text-link" href="/methodology#status-model">Status dan ketentuan</Link>.
+  </Notice></aside>;
+}
+
 export function ScoreDisplay({ score, label = "Skor CIVX 2023" }: { score: number; label?: string }) {
   return <div className="product-score"><p>{label}</p><strong>{formatScore(score)} <small>/ 100</small></strong></div>;
 }
