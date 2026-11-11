@@ -432,3 +432,342 @@ This user-authorized incremental revision supersedes the neutral-only Explore ma
 - [x] Inspect production light/dark layouts at 320, 390, 768, 1024, and 1440 px with no viewport overflow or clipped map text. Observe a running 250 ms fill transition and a zero-second reduced-motion transition. Observe no application JavaScript or console errors.
 
 No dataset, scoring rule, normalization, weight, methodology, governance flag, CORE/CONTEXT rule, or dependency changed. No CSV, PDF, heatmap, commit, push, or deployment was performed. Approximate boundaries, tiny city targets, source rights, independent review, formal accessibility certification, and public-release approval retain their existing limits. Browser verification covers Chromium and emulated viewport/media states, not physical mobile devices or every browser.
+
+## 29. Phase 2 choropleth completion
+
+- [x] Inspect the clean integration branch and fetch origin. Merge the latest team `origin/main` work (`f90c8fd`) into `Muchammadmunawir/frontend-integration-figma` without conflicts, preserving Home/Compare changes and leaving `main` unchanged.
+- [x] Run the merged baseline: 293 tests passed with no failures or skipped tests.
+- [x] Retain neutral plus six exact facade-named CORE dimensions, fixed 0–100 colors, full-precision scores, filtering invariance, canonical navigation, geometry attribution, and CORE/CONTEXT separation.
+- [x] Move the layer control before the workspace. Put region selection/information before SVG links in DOM/keyboard order and above the graphic on mobile. Preserve the desktop map-left/panel-right layout and Home's visual arrangement.
+- [x] Use the Indonesian label “Lapisan peta” and add an explicit non-official/non-policy disclaimer with a working methodology route.
+- [x] Add a presentation-only missing-score regression that distinguishes unavailable from zero without mutating production data or substituting the overall score. The focused page suite passes all 15 tests.
+- [x] Exercise all six layers, neutral reset, unchanged hover fills, selection retention, layer changes without table-page reset, type/name intersection, empty-result recovery, region-first keyboard access, and detail navigation.
+- [x] Inspect light/dark maps at 320, 390, 768, 1024, and 1440 px without viewport overflow or clipped map text. Confirm that mobile information precedes the map. Observe a running 250 ms fill transition and zero-duration reduced motion.
+
+### Final verification
+
+- `npm test`: 294 passed, zero failed, cancelled, or skipped.
+- `npm run lint`: passed with no warnings or errors.
+- `npm run build`: passed strict TypeScript and generated 36 pages with webpack.
+- Production Chromium verified all six layers across all 27 regions, light/dark layouts at five widths, mobile panel-first order, keyboard/SVG click navigation, touch activation of the detail link, the methodology link, and Home's preserved neutral map arrangement.
+- A running fill transition measured 250 ms; reduced motion produced a zero-second transition. Minimum measured map-text contrast was 5.65:1 in light mode and 7.66:1 in dark mode.
+- Production smoke recorded no application JavaScript or console errors. Touch verification used browser emulation, not a physical device. Cross-browser and formal screen-reader certification remain outside this pass.
+- Frozen score/insight SHA-256 values remain `47b4813abd59bc452556e9d057596511f95e17acd81a4994589bc87460d9f6d5` and `ffd92543c6387c981d2647c8ed55bd3abb7f7c4e9b5b91d4a74fab81999d6345`.
+
+The latest team Home uses an inverted display index (`100 − pressure`), province mean, and status/priority labels. Phase 2 preserves that team work rather than silently rewriting it; these presentations need separate methodology review before competition submission. The map does not adopt those categories or invert pressure values. No dependency, dataset, scoring, normalization, weights, governance flag, API, database, CSV/PDF export, heatmap, or comparison feature is introduced by this completion pass.
+
+## 30. Phase 2.1 — theme-aware overall choropleth and motion
+
+- [x] Inspect the clean integration branch, fetch origin, and confirm the previous team integration and Phase 2 commits. Keep `main` unchanged and preserve the existing Home/Compare presentation.
+- [x] Compare the light-mode tokens with integration commit `2e955be`. Preserve the original backgrounds, typography, surfaces, buttons, accents, navigation, and spacing conventions. Supplied screenshot/video references were not available; follow the written motion brief instead.
+- [x] Replace neutral mode with **Skor Keseluruhan CIVX** on Home and Explore through the same existing map. Retain all six exact facade-named CORE dimensions and full-precision pressure scores.
+- [x] Add map-specific semantic light/dark tokens derived from the existing indigo accent. Keep the fixed 0–100 domain, explicit gray filter exclusion, hatched unavailable scores, relative-cohort legend, methodological caveats, and source attribution.
+- [x] Keep geographic paths mounted and stationary across layers, retain the inspected region and table page, update labels immediately, and animate fill for 300 ms without replacing score colors on hover.
+- [x] Replace the OS-dependent theme select popup with a scoped accessible radio menu. Preserve theme bootstrap, storage, and System tracking; support arrows, Home/End, first-letter access, Enter/Space, Escape, Tab/Shift+Tab, and outside dismissal.
+- [x] Add progressive once-only Home/Explore reveals: 520 ms, 16 px travel, and 70 ms stagger. Keep actions opaque, settle on interaction, retain no-JavaScript visibility, and disable nonessential motion under reduced motion.
+- [x] Fix tablet Home card text collisions without changing their content or desktop/mobile hierarchy. Align the Home map selector without stretching its control height.
+- [x] Reuse Explore's existing loading component for its request-time Suspense boundary and reserve a viewport of loading height, eliminating the observed footer shift.
+- [x] Replace the obsolete neutral-map behavior regression with shared Home/Explore overall-score and filter-invariance coverage. Remove the selector-options-only wiring test rather than repinning its wording.
+- [x] Update README and the product, data, architecture, and integration contracts. No source, model, normalization, weighting, CORE/CONTEXT, release flag, dependency, export, or deployment changes.
+
+### Exercised verification
+
+- `npm test`: **293 passed**, zero failed, cancelled, or skipped. The focused frontend page suite passed all **14** tests, including all 162 dimension scores, shared overall pressure, fixed filter mapping, unavailable-versus-zero handling, and equivalent region access.
+- `npm run lint`: passed without warnings or errors.
+- `npm run build`: passed strict TypeScript and generated **36 pages** with webpack.
+- Production Chromium checked overall plus six CORE layers against all 27 full-precision facade records in both themes. Selected region `3273` survived every layer switch. Home and Explore pressure mappings matched.
+- Browser interaction smoke exercised hover, keyboard focus/outline, SVG Enter navigation, selected-region detail, table-page retention across layers, name/type intersection, excluded keyboard targets, empty results, and reset.
+- Touch emulation navigated from the inspection panel to `/regions/3273` and directly from a geographic path to `/regions/3201`. No physical device was used.
+- Captured and visually reviewed Home/Explore light/dark screenshots at **320, 390, 768, 1024, and 1440 px**: **20 combinations**, with no document overflow or clipped visible heading/paragraph/label text. Explore retains panel-first mobile order.
+- Theme menu keyboard, selected/focus states, Space activation, first-letter access, Escape focus return, Tab/Shift+Tab destinations, and outside dismissal worked. Measured option text contrast was at least **10.01:1** in light mode and **6.65:1** in dark mode. System followed emulated OS changes and survived reload.
+- A running fill transition measured **300 ms**. SVG identity and path geometry stayed unchanged; sampled desktop inspection heights stayed equal across layers. Surface-relative scale intensity increased monotonically at 0/25/50/75/100 in both themes.
+- Observed **nine Home** and **eleven Explore** reveal starts, each once despite scrolling away and back. Reduced motion produced no reveal starts, no hidden content, and a **0 s** fill transition. Enabling reduced motion during the session settled every target.
+- No-JavaScript browser loads retained visible content and all 27 native map links on both pages.
+- Layout-shift instrumentation identified the previous Explore fallback footer shift (**0.2315625**). After reserving loading height, the same normal/reduced-motion Home/Explore smoke recorded **0**. These are local smoke observations, not field-performance guarantees.
+- No application JavaScript exception or console error was observed. Script requests cancelled during intentional no-JavaScript probes are not product navigation failures.
+- Frozen score/insight SHA-256 values remain `47b4813abd59bc452556e9d057596511f95e17acd81a4994589bc87460d9f6d5` and `ffd92543c6387c981d2647c8ed55bd3abb7f7c4e9b5b91d4a74fab81999d6345`.
+
+Visual review retains the original light-mode base palette and existing dark-mode hierarchy. It accepts the compact legend, stronger selection boundary, and progressive movement without redesigning cards, navigation, or the page hierarchy. Browser coverage is Chromium only; Firefox/Safari, physical devices, and formal screen-reader certification remain unverified.
+
+The pre-existing Home inverted index, province mean, and status/priority labels still require separate methodology review before competition submission. This phase does not extend those categories to the choropleth or authorize public model release, certified 2023 boundaries, deployment, or a policy recommendation.
+
+## 31. Phase 3 — governance-limited export and reporting
+
+### Inspection and scope decision
+
+- [x] Read the repository instructions, README, planning/governance documents, product facade/contracts, source metadata, and installed Next.js server/client/CSS/Activity guidance before editing.
+- [x] Inspect the clean `Muchammadmunawir/frontend-integration-figma` branch and fetch origin. Confirm teammate integration `f90c8fd`, mobile controls `5dcb4a2`, and Phase 2.1 `4340647`. The fetched main-only addition is merge `85252f2` of the integration branch; no unintegrated teammate implementation is missing.
+- [x] Confirm no existing frontend CSV/download/print implementation. The offline freeze-register CSV is not a public regional-results export.
+- [x] Enforce existing `SCORED_NOT_RELEASED`, `INSIGHTS_NOT_RELEASED`, and `productionIntegrationAuthorized: false`. Public numerical CSV/PDF and source redistribution remain blocked. Implement only existing identity/year/reference metadata, without changing flags or exposing a bypass.
+
+### Delivered permitted scope
+
+- [x] Add accessible **Unduh CSV** to Explore using the full name/type-filtered identities in BPS order. Pagination and map layers do not limit the export. Empty results disable the action with an explanation; preparation failures have live feedback.
+- [x] Include descriptive Indonesian identity/disclosure columns, reference year 2023, BPS attribution, limitations, interpretation, and absolute Sources/Methodology/reporting links. Omit score columns entirely; withheld values are neither missing observations nor zero.
+- [x] Add UTF-8 BOM, comma-delimited RFC 4180 quoting, CRLF, multiline/quote/Unicode handling, and formula-like text protection after whitespace/control/format prefixes. Preserve finite numeric precision and zero/missing distinctions in the serializer without exporting unreleased scores.
+- [x] Add browser-native **Cetak / Simpan PDF** on region detail. The A4 report includes CIVX branding, exact identity/year, all six dimension/indicator references, original publisher URLs/table locators (including denominator sources), model/version, limitations, and non-official/non-policy interpretation. Scores, observations, uncertainty values, insights, CONTEXT, internal artifact pointers, and source books are excluded.
+- [x] Keep the report available to ordinary keyboard/menu printing. Hide navigation and screen controls, keep summaries/table rows intact, and use high-contrast print text independent of theme.
+- [x] Reproduce and fix cached-report print leakage: Next.js Activity retains old route DOM under display-none ancestors. Scope print chrome to reports without hidden ancestors; Compare keeps its own print surface after navigation, and Back restores regional print behavior.
+- [x] Reproduce Home's incorrect quality reading in Chromium: Depok displayed inverted 72.0 while its map showed pressure 28.0; Sukabumi displayed 36.4 against pressure 63.6. The frozen definition does not authorize this inversion, a provincial index, quality thresholds, or policy priorities.
+- [x] Replace only Home's unsupported summaries with facade-derived coverage/year/dimension/indicator counts. Keep its layout, map, theme tokens, and reveal behavior. Delete the obsolete test pinning inverted Home wording. No analytical formulas, datasets, weights, normalization, or release statuses change.
+- [x] Update README, product/data/architecture/integration contracts, and the public `/methodology#ekspor-dan-laporan` reference. Add no dependencies or PDF library.
+
+### Exercised verification
+
+- `npm test`: **304 passed**, zero failed/cancelled/skipped. This includes ten new CSV security/missingness/governance tests and two report disclosure/provenance tests. Tests exercise finite precision, explicit zero versus missing, formula text, malicious extra payload exclusion, canonical identities, empty selections, protected numeric access traps, shared bibliography locators, and denominator attribution.
+- `npm run lint`: passed without warnings/errors after the final print-scope fix.
+- `npm run build`: passed strict TypeScript and generated **36 pages** with webpack after that fix.
+- Chromium exercised actual native downloads, including **27 identities** and a final production keyboard download of **one Bandung city identity** (`civx-jawa-barat-2023-identitas-1-wilayah.csv`, 790 bytes). Browser Blob inspection confirmed BOM bytes `239,187,191`, exact filtered BPS IDs/year, reference links, and exclusion of internal pointers.
+- Filter scenarios returned all nine cities, Bandung city `3273`, Bandung kabupaten `3204`/`3217`, and an empty disabled state. Exporting from table page 3 with Public Health selected still returned all 27 identities. An injected browser download failure produced useful feedback.
+- Production Chromium checked **48 fully loaded route/width/theme combinations**: Home, Explore, Region Detail, and Compare at 320/390/768/1024/1440 px in light/dark; Sources and Methodology at 320/1440 in both themes. No document overflow, clipped visible heading/paragraph/label text, or unnamed input/select/button control was observed. Screen-reader-only clipped labels are intentionally excluded from the visual clipping probe.
+- Visually reviewed desktop Home/Region Detail, mobile export/print controls, and both rasterized A4 report pages. Final production PDF for Bandung Barat has **two A4 pages**, `595.92 × 841.92 pt`; Bandung report also has two pages. Important dimension rows and summary/limitation blocks stay intact.
+- Keyboard activation produced an actual CSV download and one native `beforeprint` event. Print media hid the shell/screen content and showed all six report rows. An injected print failure produced an accessible error. Production region → Compare → Back preserved the corrected active/cached print scope.
+- Exercised overall plus six CORE map layers, SVG Enter navigation to region detail, indicator disclosure, same-region comparison, and invalid comparison rejection. No scoring result changes were observed; the existing domain regressions remain passing.
+- Final production smoke observed no application JavaScript exception or console error. One RSC request was cancelled during intentional Back navigation; product navigation completed. Tooling-only smoke setup errors were corrected and are not application failures.
+- Frozen score SHA-256 remains `47b4813abd59bc452556e9d057596511f95e17acd81a4994589bc87460d9f6d5`; insight SHA-256 remains `ffd92543c6387c981d2647c8ed55bd3abb7f7c4e9b5b91d4a74fab81999d6345`.
+
+### Unresolved before submission
+
+Public score/indicator CSV and numerical regional PDF require documented source-rights and model-release approval. Existing frontend integration does not supply that approval. Independent source/method review, certified effective boundaries, formal accessibility evaluation, Firefox/Safari, physical-device testing, and a visible operating-system print-dialog review remain unverified. Chromium's actual native print event and PDF rendering were exercised, not every browser/printer.
+
+The existing team Compare implementation remains unchanged and still contains `100 - pressure`, an inverted provincial mean, 70/50 quality thresholds, best/priority badges, and “Skor dari Beranda” wording that is stale after Home's correction (`comparison-page.tsx:32–42,119–124,173`). These are unresolved methodological claims outside the requested Home correction. Passing interaction/regression tests does not approve those claims; address them before presenting the entire platform as methodologically ready.
+
+No main merge, force push, dependency change, model release, or production deployment is part of this phase.
+
+
+## 32. Phase 4 final integration and submission review
+
+### Integration and scope
+
+- [x] Read repository guidance and planning records before editing. Initial development working tree was clean.
+- [x] Fetch origin and compare the active `Muchammadmunawir/frontend-integration-figma` branch with `origin/main`: one main-only merge commit and four development-only commits.
+- [x] Confirm Phase 2 (`5dcb4a2`), Phase 2.1 (`4340647`), and Phase 3 (`58d199d`) are ancestors of the candidate. Main-only `85252f2` records the earlier branch merge; merge it without conflicts or lost teammate changes.
+- [x] Keep the development branch as the PR candidate. Do not merge into main, force push, reset, deploy, install dependencies, or change frozen analytical/source artifacts.
+- [x] Inspect the remaining unmerged teammate branch `origin/jelajah`: commit `3fb1e12` has no PR and introduces `index-status.ts` with `100 - pressure`, 70/50 quality statuses, and regional ranking. Preserve the branch unchanged; do not merge those contradictory semantics into the stabilized candidate. Any reusable UI work needs a separate pressure-consistent review, not a blind merge.
+
+### Critical fixes
+
+- [x] Confirm Phase 3 already corrected Home: coverage/year/dimension/indicator facts replace the inverted quality index and unsupported best/priority/provincial summaries.
+- [x] Reproduce Compare's remaining inversion in Chromium: Depok showed 72.0 against authoritative pressure 28.0; Kabupaten Sukabumi showed 36.4 against pressure 63.6. Both had unsupported quality/priority badges and an inverted provincial mean.
+- [x] Cut Compare over to direct overall pressure and all six exact facade dimension names. Remove inversion, provincial averaging, proxy labels, thresholds, and quality/priority badges. Preserve selectors, valid same-region ties, invalid-input handling, layout, and links.
+- [x] Distinguish engine-provided absolute distance from signed overall A-minus-B difference. Keep full-precision bar values and display-only rounding; do not recalculate scoring or deltas in React.
+- [x] Reproduce severe dark-mode contrast failures: second-region dimension text 2.62:1 and reading label 1.92:1. Reuse existing semantic roles instead of changing global brand colors.
+- [x] Add a shared Indonesian preview-status notice and explain the unresolved display/release contradiction in Methodology and documentation. This is disclosure, not access control or release approval.
+- [x] Rewrite README for judges: purpose, problem, users, actual features, stack, local setup, sources/vintages, limitations, safe review, and linked technical/audit records. Publish no unverified demo URL.
+
+### Automated verification
+
+- `npm test`: **305 passed**, zero failed, cancelled, or skipped after the final CSS fix. Comparison regressions cover direct overall/dimension pressure, full-precision bars, reversed pair values/delta, absolute distance, same-region ties, and invalid selections.
+- `npm run lint`: passed without warnings or errors.
+- `npm run build`: passed webpack compilation and strict TypeScript; **36 pages** generated.
+- Runtime: Node **v26.12.0**, npm **12.2.1**. No language server is configured; build-time TypeScript completed successfully.
+- Frozen score SHA-256 remains `47b4813abd59bc452556e9d057596511f95e17acd81a4994589bc87460d9f6d5`; insight SHA-256 remains `ffd92543c6387c981d2647c8ed55bd3abb7f7c4e9b5b91d4a74fab81999d6345`.
+
+### Exercised production Chromium verification
+
+- Check Home, Explore, Region Detail, Compare, Methodology, and Sources at **320/768/1440 px in both themes: 36 combinations**. No document overflow, unnamed visible input/select/button, broken same-page anchor, or missing preview notice was observed.
+- After the contrast fix, recheck Compare at **320/768/1024/1440 px in both themes: eight combinations**. Second-region text measures **5.89:1 light / 8.56:1 dark**; reading label **12.86:1 / 12.98:1**; second-region bars against their track **3.29:1 / 5.99:1**. No document overflow. Visually review the corrected mobile dimension card.
+- Load all six routes again against the final production build. No application JavaScript exception, console error, or hydration error was observed. Tool-only smoke-script selector/context errors were corrected; they are not application regressions.
+- Confirm all **27 Home** overall values and all **189 Explore** overall/dimension map values match authoritative full-precision facade records. Layer changes preserve region `3273` and table page 3. Keyboard Enter on a map link opens the correct detail route.
+- Exercise search/type intersection, full-filter map retention, pagination, empty disabled CSV, and reset. Actual native CSV downloads contain **27 identities** and one filtered Kota Bandung `3273` identity. The filtered action also works by keyboard.
+- Inspect actual downloaded CSV bytes: BOM **239,187,191**, CRLF records, year/reference links, and no score columns. The 27-row download starts from table page 3 with Public Health selected, proving neither limits the export. Formula protection, quoting, Unicode, finite precision, and missing/zero distinctions remain covered by the existing CSV behavioral/security tests.
+- Confirm Region Detail's overall pressure, all 18 primary indicator disclosures, source/definition expansion, canonical navigation, and Banjar's explicit **0 terminals**, distinct from unavailable context.
+- Activate regional print by keyboard and observe a native `beforeprint` event. Generate and visually review both pages of the Kota Bandung A4 report: **595.92 × 841.92 pt**, two pages, identity/reference scope, six intact dimension rows, nine source references, denominator provenance, limitations, and no numerical results/insights/CONTEXT. Print media hides shell, preview notice, controls, and regional screen content.
+- Exercise region → Compare → Back. Cached regional reports do not hide Compare's active content or leak a regional report into it. **Ordinary Compare printing still includes on-screen numbers**; record this governance gap rather than calling it a permitted numerical report.
+- Exercise distinct pair selection, swapping A/B, same-region exact ties, and unknown-selection error recovery. Corrected Depok/Sukabumi cards show **28.0 / 63.6**, not **72.0 / 36.4**.
+- Exercise Source search, CORE/CONTEXT filtering, Education filtering (**three CORE records**), empty recovery, reset (**25 records**), Methodology formulas/anchors, mobile menu Escape/focus return, global keyboard search, dark reload persistence, and System tracking emulated dark/light preferences.
+- Reduced motion yields **0 s** map transitions and readable reveal content. Unknown regional IDs render the not-found boundary with `noindex`; streamed HTTP remains 200, as documented by installed Next.js guidance.
+- Probe **34 collected internal URLs**: all return HTTP 200. Check **23 unique external source URLs**: 21 return HEAD 200; Galura rejects HEAD with 405 but GET returns 200 JSON; the Kementerian Kesehatan SKI PDF times out on both HEAD and a range GET. Preserve its audited URL and provenance; do not fabricate a replacement or claim current availability. These are reachability checks, not fresh source-content verification.
+
+### Remaining blockers and safe submission checklist
+
+- [ ] Document source reuse/publication rights and named model/insight release approval before public numerical publication or deployment. Frozen `SCORED_NOT_RELEASED`, `INSIGHTS_NOT_RELEASED`, and `productionIntegrationAuthorized: false` remain unchanged.
+- [ ] Keep competition review local or access-controlled until that decision. The notice and metadata-only CSV/regional report do not prevent copying, screenshots, or printing other numerical screens. A public unrestricted demo remains inconsistent with current governance; no major feature or release restriction was silently removed.
+- [ ] Obtain independent source/method review and effective-boundary review before official-grade claims. Approximate 2020 display geometry is not certified 2023 geography.
+- [ ] Recheck the SKI publisher PDF before judging; retain the audited source locator if the publisher remains unavailable.
+- [ ] Complete formal assistive-technology review and physical-device/Firefox/Safari checks. Chromium emulation is not certification. A native print event and rendered PDF were verified, not an operating-system print-dialog visual review or every printer.
+- [ ] Review the development-to-main PR and its test/governance evidence. Do not merge or deploy without the owner's explicit approval.
+
+
+## 33. Phase 4.5 — frontend polish and design consistency
+
+### Audit and preserved scope
+
+- [x] Inspect the clean development branch, fetch origin, read planning records, and confirm Phase 2 `5dcb4a2`, Phase 2.1 `4340647`, Phase 3 `58d199d`, and Phase 4 stabilization are present.
+- [x] Review existing components, CSS modules, semantic tokens, motion utilities, installed Next.js CSS/server-client guidance, and previous visual decisions before editing.
+- [x] Capture and review Home, Explore, Region Detail, Compare, Methodology, and Sources in light/dark at desktop/mobile widths: 24 baseline captures. Preserve Poppins, the original light palette, the existing dark hierarchy, routes, charts, map geometry, and analytical meaning.
+- [x] Preserve all source/model artifacts, scoring, normalization, weights, CORE/CONTEXT separation, governance restrictions, CSV projection, and metadata-only regional reports. Add no dependency or animation library.
+
+### Observed inconsistencies and fixes
+
+- [x] Replace Compare's hardcoded dark SVG select arrow with native themed controls. Raise its roughly 40px selectors and 42px submit action to the shared 44px minimum.
+- [x] Align Home reference cards with the coverage card; reuse 8px card radii and remove the separate coverage shadow. Replace oversized 20px action pills with compact 13px actions.
+- [x] Introduce shared caption/small/body/section/title typography roles; raise affected 10–11px metadata to at least 12px. Preserve the font family and all original palette values.
+- [x] Standardize buttons, field borders, disabled states, pagination, keyboard focus, and disclosure feedback. Add visible Explore filter labels and retain its full-result map and CSV behavior.
+- [x] Right-align Compare numeric table columns and give its horizontally scrolling table a name and keyboard focus. Keep methodology tables intact while limiting running text to 75ch.
+- [x] Reuse once-only section reveals on all six pages. Centralize 520ms duration, 16px travel, and 70ms stagger; register source groups remounted by filters. Keep actions opaque and settle motion on interaction.
+- [x] Correct two observed cold-load shifts: the pathname Suspense fallback previously expanded the mobile header; Compare's separate short request fallback exposed a moving footer. Keep the shell stable and reuse the viewport-height route loader in both Compare loading paths.
+- [x] Keep tablet search on one full row at 761–900px. All six 768px headers now measure 136px with the same search position.
+- [x] Reproduce dark PDF page margins and override the root print color scheme, not just the body. Retain the original report content, A4 pagination, and active/cached-route print rules.
+- [x] Correct stale Compare page metadata that still described four dimensions; it now describes the existing overall pressure and six CORE dimensions.
+
+### Exercised verification
+
+- `npm test`: **305 passed**, zero failed, cancelled, or skipped after the final code change.
+- `npm run lint`: passed without warnings or errors.
+- `npm run build`: passed webpack compilation and strict TypeScript; **36 pages** generated.
+- Production Chromium checked all six pages at **320/390/768/1024/1440px in light/dark: 60 combinations**. No document overflow, clipped visible heading/paragraph/label/summary text, unnamed visible controls, sub-44px input/select/button controls, duplicate main/H1, or broken same-page anchors was observed.
+- Local layout-shift instrumentation reproduced header movement of **0.2188574388671875** and Compare footer movement up to **0.25619140625**. Final collected matrix records **0**. Compare was rechecked in all ten theme/width combinations with browser cache disabled after the shared-fallback fix. These are local smoke observations, not field-performance guarantees.
+- Captured 60 final full-page screenshots and reviewed contact sheets for all five widths in both themes. Evidence remains outside Git in `/tmp/civx-phase45/`, including before/after captures, measurement JSON, actual CSV downloads, and the A4 PDF.
+- Exercised overall plus all six CORE map layers in both themes. Region `3273`, table page 3, all 27 paths, and SVG node identity survive switches. Observed 300ms fill and 140ms boundary transition declarations; SVG Enter activation opens the canonical regional route.
+- Exercised Explore name/type intersection, one Kota Bandung result, empty/disabled CSV, and reset to all 27 regions. Actual native downloads contain 27 identities (15,963 bytes) and one identity (790 bytes); the filtered download works by keyboard. Byte inspection confirms UTF-8 BOM `239,187,191`, CRLF, year/reference fields, and no score columns.
+- Exercised direct-pressure comparison, selector submission, reversed pairs, same-region zero distance, and invalid-selection recovery. Depok/Sukabumi remain **28.0 / 63.6**. All 18 regional indicator disclosures remain present; source expansion and Banjar's explicit **0 terminals** remain available.
+- Exercised Sources CORE/Education filtering (three records), CONTEXT (seven), empty recovery, reset (25), source expansion, and registration of remounted reveal groups. Exercised Methodology's normalization anchor/formula and keyboard horizontal table scrolling.
+- Exercised mobile Menu Enter/Escape/focus restoration, global search ArrowDown/Escape, dark reload persistence, and System following emulated light/dark preferences.
+- Reduced-motion probes covered all six routes at 320/1440px: no reveal animations or opacity-hidden targets, and 0s map transitions. Enabling reduced motion during a session also settles active entrances. Scroll probes observed no repeated entrance on the same target.
+- Keyboard printing emitted a native `beforeprint` event. The final production Kota Bandung PDF has **two A4 pages, 594.96 × 841.92pt**, six intact dimension rows, nine source references, white margins from a dark screen theme, no active animation, and unchanged metadata-only scope. Both rasterized report pages were visually reviewed.
+- Region → Compare → Back retains active/cached report print isolation. Compare's ordinary numerical screen printing remains an existing governance limitation, not an approved numerical report.
+- All six final canonical surface loads returned HTTP 200. Final JavaScript-enabled production smoke observed no application exception or console error. Tool-only browser/script setup errors were corrected separately.
+
+### Remaining limits
+
+- **P1 — No-JavaScript route rendering:** Home, Methodology, and Sources remain readable without JavaScript. Explore, Region Detail, and Compare can remain on streamed Suspense loading fallbacks. Reveal CSS introduces no hidden waiting state; the remaining hidden ancestors belong to React's streamed transport. Full no-JavaScript data-route support requires a separate rendering/cache decision, not an animation workaround.
+- **P1 — Accessibility/browser QA:** Firefox, Safari, physical mobile devices, formal assistive-technology evaluation, and an operating-system print-dialog visual review remain unverified. Chromium viewport/media emulation is not certification.
+- **P0 — Existing public-release gate:** source reuse rights and model/insight publication approval remain unresolved. Keep review restricted; do not deploy publicly or interpret this polish as release authorization.
+- **P2 — Decorative effects:** no route choreography, continuous animation, new illustration, or extra decorative transition was added. Stability and meaningful feedback took priority.
+
+Frontend is ready to enter final restricted QA with the explicit limits above. It is not a public-deployment approval. Development-branch commit/push is separate from any main merge or production deployment.
+
+## 34. Compact governance disclosures
+
+- [x] Audit the clean development branch and repeated rendered notices before editing. Home had one banner, Explore/Region/Compare/Sources had two, and Methodology had repeated release-status banners plus its separate interpretation note.
+- [x] Replace the global layout banner and page-specific repeats with one shared server-rendered `ResultsNotice` on Home, Explore, Region Detail, and Compare. Reuse the existing notice styling and accessible links; do not change palette, fonts, tokens, or scoring.
+- [x] Use the approved Indonesian main text: “Data CIVX 2023 masih dalam tahap peninjauan. Hasil analisis bukan indeks resmi atau rekomendasi kebijakan.” Use “Pelajari status dan batasan data” for the link to `/methodology#status-model`.
+- [x] Remove duplicated prominent release/rights paragraphs from Methodology and Sources while retaining their substance at `/methodology#status-model`, `/methodology#ekspor-dan-laporan`, and `/sources#penggunaan-sumber`. Preserve methodological reading cues beside numerical data.
+- [x] Remove Compare's repeated limitations paragraph; its action now links directly to `/methodology#keterbatasan`. Preserve the interpretation of absolute distance and signed differences.
+- [x] Shorten CSV/print captions without weakening their identity/reference-only scope. Retain accessible descriptions, contextual terms links, error feedback, CSV payload disclosures, and all printed report restrictions.
+- [x] Remove obsolete notice CSS and preserve the existing Compare section gap with a spacing token.
+- [x] Remove three incidental exact-navigation assertions from the analytical comparison test after the new anchored Methodology link made one fail. Keep all pressure, dimension, precision, selector, tie, and invalid-input assertions; exercise disclosure navigation in the browser rather than re-pin the old link shape.
+
+### Exercised verification
+
+- `npm test`: **305 passed**, zero failures, cancelled, or skipped after the obsolete navigation assertions were removed. Lint and the strict webpack production build passed; the build generated **36 pages**.
+- Production Chromium checked six routes in both themes at **320/390/768/1024/1440px: 60 combinations**. The four numerical surfaces each show exactly one identical named results notice; Methodology and Sources have no global results banner. No viewport overflow, clipped checked text, duplicate H1, or broken same-page anchor was observed.
+- Visually reviewed mobile light Compare, mobile dark Region Detail, desktop light Sources, and desktop dark Methodology. Before/after captures and measurements remain outside Git at `/tmp/civx-notices/`.
+- Keyboard activation of the compact notice opens model status with visible focus. Model status links to source rights; the print caption links to reporting terms. The retained text explicitly covers unreleased status, incomplete source rights, restricted review, and the fact that a notice is not access control.
+- Reduced-motion emulation keeps the notice visible. The existing named landmark and native links remain accessible without an alert or modal.
+- A real keyboard-triggered filtered CSV download contains Kota Bandung `3273`, remains **790 bytes**, retains publication restrictions, and has no score column. Regional print media hides the screen notice, keeps six report rows and the explicit withheld-score statement, and produces the existing A4 report.
+- Final production smoke observed no application exception or console error.
+- Frozen score/insight SHA-256 values remain `47b4813abd59bc452556e9d057596511f95e17acd81a4994589bc87460d9f6d5` and `ffd92543c6387c981d2647c8ed55bd3abb7f7c4e9b5b91d4a74fab81999d6345`.
+
+Publication restrictions are unchanged: `SCORED_NOT_RELEASED`, `INSIGHTS_NOT_RELEASED`, and `productionIntegrationAuthorized: false` still apply. Existing numerical screens would conflict with those restrictions if deployed publicly without documented rights and release approval. Notices do not authorize exposure, restrict access, or prevent copying/ordinary printing of other numerical pages. Keep review local or access-controlled. No live public deployment was authorized or performed by this change.
+
+## 35. Approved results notice wording
+
+- [x] Apply the exact approved main and link text through the existing shared `ResultsNotice`, retaining its styling and `/methodology#status-model` target. No scoring, governance flag, export rule, or other behavior changes.
+- [x] Verify exact rendered copy, a single notice, and no document overflow on Home, Explore, Region Detail, and Compare at 320/1440px in both themes: 16 production Chromium checks. Visually review the narrow dark notice and exercise its link by keyboard; no application console error observed.
+- [x] Pass `npm test` with all 305 tests, `npm run lint`, and `npm run build`, including strict TypeScript and 36 generated pages.
+
+## 36. Mobile hamburger navigation
+
+- [x] Inspect the existing navigation, header, links, global styles, and production behavior before editing. Keep the 760px mobile breakpoint, route ordering, active markers, and stable navigation shell.
+- [x] Replace the visible Menu +/− label with three thin CSS strokes in a 44×44px button. Reuse semantic theme, spacing, radius, focus, and motion tokens without dependencies or desktop styling changes.
+- [x] Animate hamburger/X transforms over 200ms. Add 8px downward menu travel over 200ms and a 140ms entrance/exit fade; keep links inert and aria-hidden throughout the closed state and exit.
+- [x] Preserve Indonesian accessible labels and expanded/controls attributes. Verify Escape restores focus, outside clicks/focus close the menu, all five links close and navigate, native Tab leaves the non-modal dropdown, and resizing resets state with valid focus.
+- [x] Check production Chromium at 320/375/390/430/768/1024px in both themes: 12 combinations without document overflow. Desktop link geometry, fonts, padding, and header heights match the baseline exactly. Exercise regional active indication, keyboard search to Kabupaten Bandung, and theme switching.
+- [x] Check reduced motion at all four mobile widths in both themes: eight additional combinations with zero-duration transitions. Verify rapid toggles, the 760/761px boundary, and a scrollable 390×320px menu whose last link stays reachable. Review before/after mobile light/dark and desktop captures; local artifacts remain outside Git at `/tmp/civx-mobile-nav/`. Final route/keyboard smoke records no application console error or exception.
+- [x] Pass `npm test` with all 305 tests, `npm run lint`, and `npm run build`, including strict TypeScript and 36 generated pages.
+
+Scope remains navigation presentation and interaction only. No route, scoring, source data, governance flag, release restriction, or dependency changes. This work does not authorize public numerical publication, merge PR #19, or deploy production.
+
+## 37. Final controlled product enhancement
+
+### P0 review
+
+- [x] Inspect the clean, fetched `Muchammadmunawir/frontend-integration-figma` branch at `954a13a` and existing draft PR #19. Preserve teammate work, completed hamburger navigation, the exact approved results notice, and all canonical routes.
+- [x] Review all six production pages in both themes before editing. Existing coverage, maps, comparison, source disclosures, identity CSV, and regional reporting remain the implementation baseline; do not recreate working features.
+- [x] Make the README introduction explicit about the problem, solution, audience, fixed 2023/27-region scope, capabilities, setup, walkthrough, and limitations. Include one actual local browser capture of usage scenarios with no unreleased analytical values. Preserve research/audit history and provide no unauthorized demo link.
+- [ ] Public numerical release remains blocked. `SCORED_NOT_RELEASED`, `INSIGHTS_NOT_RELEASED`, `productionIntegrationAuthorized: false`, and incomplete source-rights/release signoff are unchanged. An anonymous check of the PR-linked preview redirected to Vercel login; this is not certification of every deployment URL or public-release permission. Keep numerical review local or access-controlled. A notice is not access control.
+
+### P1 implementation
+
+- [x] Add pure `findSimilarRegions2023` and facade-backed `getSimilarRegions2023`. Use only the six existing full-precision CORE dimension scores, canonical summation order, Euclidean distance, selected-region exclusion, a three-peer maximum, and ascending BPS-ID tie-breaking. Reject incomplete/nonfinite/out-of-range/non-CORE or incompatible data without imputation; unknown selected IDs return `undefined`.
+- [x] Add “Wilayah dengan Profil Serupa” to Region Detail with compact Indonesian six-bar profiles, separate distance labels, a section shortcut, and actual selected/peer Compare links. Explain the fixed cohort and the absence of causal, predictive, policy, official-classification, or percentage-similarity meaning. Keep the preview inside the screen-only wrapper and outside all exports.
+- [x] Add three Home usage scenarios: Education-layer exploration, two-region comparison, and indicator/source inspection. Shorten the Methodology entry explanation and use native disclosures for the full framework, formulas, and similarity derivation; retain substantive source, rights, and reporting disclosures.
+- [x] Implement shareable Explore `q`/`type`/`layer` state, safe repeated/invalid-value defaults, grouped search history, discrete undoable actions, and current-URL synchronization for native history and same-route Next links. Preserve foreign parameters/hash, map DOM identity, inspected region, and layer context. Clarify search/type-only reset and expose active filters plus a mobile results shortcut.
+- [x] Reuse palette, typography, spacing, controls, focus, and once-only reveal conventions. Browser review found the first peer-card iteration too tall; compact labels and a shared scale caption fix that density without changing values. Do not add decorative motion, dependencies, new models, or excluded dashboard features.
+- [x] Add 40 behavioral regressions for similarity ordering/ties/invalid inputs/mutation boundaries, rendered peer-to-Compare consumption, URL boundaries, and server/router filter state. Remove incidental header/old-empty-copy assertions rather than re-pin wording. Retain numerical, filtering, provenance, and export contracts.
+
+### Exercised verification
+
+- `npm test`: **345 passed**, zero failures, skipped, cancelled, or todo. `npm run lint` and `npm run build` passed; strict TypeScript completed and the production build generated **36 pages**.
+- Production Chromium checked six routes in both themes at **320/390/768/1024/1440px: 60 combinations**. No document overflow or unnamed visible controls. The four numerical surfaces retain exactly one notice with the exact approved text; new peer identities, links, and all six visual values match the derived/facade records.
+- Independently calculate nearest peers with `Math.hypot` for all **27 regions / 81 selected-peer pairs** and compare the production API order/distances. The facade and methodology metadata remain unchanged before/after derivation.
+- Verify all **189 Explore values** across overall and six dimension layers against full-precision facade scores. Layer changes retain selected Kota Bandung. Exercise grouped typing, three Back/Forward transitions, reset, layer/page preservation, focusable mobile list access, empty recovery, direct URL/reload, ambiguous query defaults, and same-route Next links without map remounting. CDP history entries confirm one search-session entry; `history.length` alone is capped by Chromium.
+- Activate all three Home scenarios and three peer Compare links by keyboard. Exercise native comparison submission, reversed pairs, same-region six-dimension equality, unknown-ID recovery, indicator/source disclosure, the similarity-method link, all three Methodology disclosures at 320px, and source scope/search/original IRBI link/empty recovery.
+- Download actual keyboard-triggered CSV files: **27 identities / 15,963 bytes** from table page two and **one identity / 790 bytes** after filtering. Both retain UTF-8 BOM and the identity/reference schema. The filtered file is byte-identical to the pre-change baseline; neither contains numerical or similarity columns.
+- Trigger the native regional print path by keyboard and observe `beforeprint`. Print media hides the complete analytical screen and peer section while retaining six metadata rows. The resulting **two-page A4** PDF has the same extracted text as baseline, no model/similarity values, and the existing release restrictions.
+- Check reduced motion on all six routes at 320px dark and 1440px light: **12 additional combinations**, visible content and no reveal animation. The Home usage targets remain done/opaque with zero running animations after scrolling away/back. Mobile Escape/focus restoration and actual theme-menu interaction still work.
+- Measure buffered initial layout shifts with browser cache disabled on those same 12 route/theme/width combinations: **CLS 0** in each local observation. This is local Chromium evidence, not a cross-device performance guarantee.
+- Visually review final compact profiles at phone/tablet/desktop widths, both profile themes, Home usage scenarios, active Explore controls, and Methodology disclosures. Local before/after numerical captures, CSVs, PDFs, and machine-readable probes remain at `/tmp/civx-final-product/`; only the non-analytical usage screenshot is committed.
+- Final browser diagnostics contain no application console error, runtime exception, or hydration error. Frozen score and insight SHA-256 values match the pre-change baseline exactly.
+
+### Remaining gates
+
+Technical integration review and final submission QA can proceed on the development branch with local/access-controlled data. Public publication cannot proceed before documented source rights and model/insight release approval. Independent source/method review, effective-boundary certification, formal accessibility review, Firefox/Safari, physical-device testing, and visible OS print-dialog/printer review remain unverified owner/QA gates. No heatmap, new dataset/model, prediction, chatbot, multi-region comparison, authentication/database, radar chart, logo replacement, or complex animation is introduced. No new PR, merge into main, or production deployment is authorized by this work.
+
+## 38. Complete reporting contract with offline numerical review
+
+### Implemented scope
+
+- Document the complete [analytical CSV/PDF contract](ANALYTICAL-REPORTING-2023.md), separate from the authorized public identity/reference contract. Public reporting remains metadata-only, not a complete numerical analytical export.
+- Add a Node-only preparation command and pure reporting modules under `scripts/`. Read authoritative 2023 facade values without scoring again, retain original precision/missingness/uncertainty, exclude CONTEXT/insights/similarity, and never mutate frozen product records.
+- Produce full-filter analytical CSV with 240 columns: 24 common fields and 18 indicator groups with 12 fields each. Preserve BPS identity, period, overall/six-dimension scores, raw/normalized indicators, units, operand definitions, evidence roles, source dates/locators, limitations, filter scope, and model provenance. Reuse existing UTF-8 BOM/CRLF/formula-safe CSV serialization.
+- Produce selected-region standalone HTML with CIVX identity, all numerical evidence, bibliography, limitations, a CSP-hashed native print action, and a readable A4 layout. Browser Save as PDF completes the private numerical report; the CLI does not itself generate a PDF binary.
+- Enforce local output outside the repository through realpath/symlink checks, private random directories (`0700`), and CLI-written CSV/HTML (`0600`). Expose no route, client authorization toggle, server port, public download, or output-path override. Operators must save browser-generated PDFs in a controlled location.
+- Clarify public actions as **Unduh CSV identitas** and **Cetak identitas / PDF**, including the Methodology instruction. Do not change public serialization, print payloads, release flags, scoring, source datasets, dependencies, routes, or the approved shared notice.
+
+### Exercised verification
+
+- `npm test`: **369 passed**, zero failed/skipped/cancelled/todo; 24 new behavioral tests cover numerical fidelity, filters, zeros/nulls, full precision, formula injection, CSV parsing, malformed input, metadata/source roles, HTML injection/unsafe URLs, CSP, filesystem containment/permissions, and real CLI execution. `npm run lint` and `npm run build` pass, including strict TypeScript and **36 generated pages**.
+- Run the actual CLI for all **27 regions** and a Kota Bandung search/type selection. Check `0700` directories and `0600` generated files outside the repository.
+- Open the resulting standalone `file://` report in Chromium and verify **43 exact numerical data bindings** against the facade: one overall score, six dimensions, and raw/normalized values for all 18 indicators. Exercise the native print button by keyboard and observe `beforeprint`.
+- Inspect report widths **320, 390, 768, 1024, and 1440px** with no horizontal overflow, 18 indicator sections, six dimension rows, and no loaded network assets or runtime/console errors.
+- Generate and visually inspect a tagged **23-page A4** numerical PDF for Kota Bandung. Keep the full six-dimension summary on its first page, preserve all 18 raw indicator values in extracted text, and verify the `≤7.2 m²` source comparator visually. PDF text extraction can reorder comparison glyphs; visual rendering and source HTML retain the original comparator. No physical printer, visible OS save dialog, or formal PDF accessibility certification is claimed.
+- Check public Explore, Region Detail, and Methodology reporting controls in light/dark themes at **320px and 1024px**: 12 combinations, no overflow or application errors. Download the actual filtered public CSV by keyboard; its **790 bytes match baseline exactly**. Public print still hides the complete analytical screen/peer section and retains six metadata rows; resulting PDF text matches baseline exactly.
+- Confirm private-report module/scope/column markers are absent from built application assets, and requests for private scripts, analytical API/output names return **404**. Generated numerical CSV/HTML/PDF/screenshots stay outside the repository.
+- Frozen score and insight SHA-256 values match the pre-change baseline: `47b4813abd59bc452556e9d057596511f95e17acd81a4994589bc87460d9f6d5` and `ffd92543c6387c981d2647c8ed55bd3abb7f7c4e9b5b91d4a74fab81999d6345`.
+
+### Remaining authorization and QA gates
+
+Full numerical public CSV/PDF is **not authorized or available**. `SCORED_NOT_RELEASED`, `INSIGHTS_NOT_RELEASED`, and `productionIntegrationAuthorized: false` remain unchanged. Owners must document source-specific redistribution rights, release approval for the exact score model/artifact and CSV/PDF scope, a production-integration decision, and a reviewed server-side distribution contract. Insight approval remains separate; these reports exclude insights.
+
+Existing on-screen numerical pages still require local/access-controlled review; disclaimers do not authorize open deployment or prevent copying/printing. Independent methodology/source and effective-boundary review remain project gates. Formal PDF accessibility, Firefox/Safari, physical devices/printers, and the visible OS save dialog remain unverified. No merge of PR #19, public deployment, or publication signoff is included.
+
+## 39. Compact public CSV and readable Excel export
+
+### Approved implementation
+
+- Replace the repetitive public CSV with six identity fields: BPS code, region name/type, province, reference year, and short BPS source identity. Remove per-row paragraphs and URLs without removing substantive website disclosures. Preserve canonical facade values, full-filter membership, BOM/RFC 4180/CRLF, and the existing formula-safe serializer.
+- Add the explicitly user-approved MIT dependency `write-excel-file@4.1.1` and its `fflate` requirement. Record the decision in Architecture §20 and pin the direct version/lockfile. Use static imports and the universal Blob entry; add no CDN, API, route, auth bypass, or analytical data lookup.
+- Produce `Data Wilayah` with CIVX title/year, readable widths, wrapping, branded headers, text BPS IDs, integer years, frozen heading rows, and AutoFilter. Put detailed scope, filters, BPS attribution, status, limitations, and verified publisher/repository URLs only in `Informasi Data`. Never invent a deployed domain or embed localhost in these public exports.
+- Reuse existing secondary-button and theme tokens for **Unduh CSV** / **Unduh Excel**, a short linked scope description, keyboard controls, pending/error feedback, and disabled empty selections.
+- Keep the private analytical CLI/A4 modules, all scoring/data artifacts, governance flags, regional metadata print scope, shared notice, and hamburger unchanged. Update current contract/planning docs without deleting historical research.
+
+### Exercised verification
+
+- `npm test`: **376 passed**, zero failed/skipped/cancelled/todo. Eight new workbook behavior tests cover identity/type fidelity, filtered membership, freeze/filter alignment, literal formula-like text, leading-zero/Unicode values, no analytical payload reads/mutation, portable references, empty selection, and a valid default style. The obsolete per-row disclosure wording test was removed; CSV tests now assert the approved six-column schema and BPS attribution.
+- `npm run lint` and `npm run build` pass, including strict TypeScript and **36 generated pages**. The first run exposed a test-only XML helper limitation for attribute values containing spaces and a historical fixture's stale dependency lock check. Fix the parser and exclude the lockfile alongside `package.json` in the existing isolated presentation/tooling fixture; retain every analytical drift guard and leave original audit scripts/protocols/artifacts untouched.
+- Generate actual XLSX/CSV files and reopen them with **openpyxl 3.1.5** and Python's CSV reader for all **27 regions**, **nine cities**, and the **one-city Bandung filter**. Validate exact names/codes/year/attribution, source separation, four external references, text/number formats, all rows in AutoFilter, frozen headings, and no formulas or localhost addresses.
+- The independent reader initially reported missing default-style metadata. Add a valid Normal named style through the writer's supported extension API, not a warning filter. Final reader checks promote warnings to errors and complete with **zero warnings**. A regression test verifies the named style's valid font reference.
+- Measure actual emitted header/name text using Pillow and the installed Arial fallback against XLSX column widths and row heights. All header/body cells fit; minimum measured horizontal spare space is **27.8px**. This is local font-fit evidence, not a Microsoft Excel desktop screenshot or an all-platform font guarantee.
+- Launch the production build on loopback and activate both real download controls with keyboard. Read the downloaded XLSX/CSV again with independent readers: **27 identities** for the unfiltered set and **one identity** for the Bandung/kota selection. Exporting CSV from table page 3 still yields all 27 identities, not nine visible rows. Empty search results disable both buttons.
+- Check Light/Dark at **320, 375, 390, 430, 768, 1024, and 1440px**: **14 combinations**, no page overflow, aligned controls within viewport, minimum button height above **44px**, and working shared accessible descriptions. Keyboard Tab reaches Excel after CSV with a visible **3px** focus outline. Visually inspect captured control groups at mobile/desktop widths.
+- Follow **Informasi ekspor** to the existing Methodology anchor and observe the updated Excel/CSV explanation. Browser console/runtime diagnostics contain no errors. The browser AX snapshot helper was unavailable; no formal screen-reader/accessibility certification is claimed.
+- Verify the BPS publication and all three existing GitHub documentation URLs through actual reads. Private reporting markers remain absent from built application assets. Execute the unchanged private CLI and read its **240-column** selected-region CSV outside the repository, retaining `0700`/`0600` permissions. Score/insight SHA-256 fingerprints remain exactly those recorded in §38.
+
+### Remaining limits
+
+Microsoft Excel desktop, LibreOffice GUI, Firefox/Safari, physical devices, and formal assistive-technology review were not available/exercised. CSV remains plain text without column-width metadata; use XLSX for preset layout. QA readers/Pillow were installed only in a temporary external virtual environment, not as repository dependencies. Generated workbooks, downloads, and captures remain outside Git.
+
+Public exports still contain identities/references only. Full numerical CSV/XLSX/PDF remains unapproved; source-rights, model/insight release, and production-integration gates are unchanged. Existing numerical screens still require local/access-controlled review. No merge of PR #19 or production deployment is authorized.

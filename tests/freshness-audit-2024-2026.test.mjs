@@ -16,10 +16,10 @@ const csvPath = "data/processed/freshness-audit-2024-2026.csv";
 const load = path => JSON.parse(readFileSync(new URL(path, root), "utf8"));
 const protocol = load(protocolPath);
 // The historical audit froze its old presentation as well as analytical inputs.
-// Replay domain behavior in an isolated analytical fixture after the authorized
-// frontend cutover; never repin or rewrite the repository protocol or evidence.
+// Replay domain behavior in an isolated analytical fixture after authorized
+// frontend/dependency changes; never repin or rewrite the repository protocol or evidence.
 const presentationFiles = new Set([
-  "README.md", "package.json", "next.config.ts",
+  "README.md", "package.json", "package-lock.json", "next.config.ts",
   "docs/PRODUCT.md", "docs/DATA.md", "docs/ARCHITECTURE.md", "docs/TASKS.md",
 ]);
 const replayProtocol = {

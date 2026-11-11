@@ -1,24 +1,26 @@
 .page { min-width: 0; color: var(--foreground); }
-.page :is(a, summary):focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
-.breadcrumb { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin-bottom: 1.25rem; color: var(--muted); font-size: 0.8125rem; line-height: 1.6; }
+.actions { display: flex; flex-wrap: wrap; align-items: start; gap: 12px; }
+.actions > div { max-width: 260px; }
+.actions p { margin: 8px 0 0; }
+.actions p:empty { display: none; }
+.breadcrumb { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin-bottom: 1.25rem; color: var(--muted); font-size: var(--text-small); line-height: 1.6; }
 .breadcrumb a { color: inherit; text-decoration: none; }
 .breadcrumb a:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 0.25rem; }
 .overview { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: start; gap: 1.5rem; }
 .overview > section { min-width: 0; }
 .scoreCard { display: flex; flex-direction: column; align-items: start; }
 .scoreCard > .scoreNote { margin-top: auto; padding-top: 1rem; }
-.scoreNote { margin-bottom: 0; font-size: 0.8125rem; color: var(--muted); }
-.interpretation h2, .identity h2 { margin: 0 0 1rem; font-size: 1rem; font-weight: 600; line-height: 1.5; }
-.interpretation > p:not(:last-child) { margin: 0 0 1rem; font-size: 0.9375rem; line-height: 1.7; }
+.scoreNote { margin-bottom: 0; font-size: var(--text-small); color: var(--muted); }
+.interpretation h2, .identity h2 { margin: 0 0 1rem; font-size: var(--text-section); font-weight: 600; line-height: 1.5; }
+.interpretation > p:not(:last-child) { margin: 0 0 1rem; font-size: var(--text-body); line-height: 1.7; }
 .interpretation > p:last-child { margin-bottom: 0; }
 .identityRecord { display: grid; grid-template-columns: 5rem minmax(0, 1fr); align-items: start; gap: 1rem; }
-.identity dl { display: grid; gap: 0.625rem; margin: 0; font-size: 0.8125rem; line-height: 1.7; }
+.identity dl { display: grid; gap: 0.625rem; margin: 0; font-size: var(--text-small); line-height: 1.7; }
 .identity dl > div { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.125rem; }
-.identity dt { color: var(--muted); font-size: 0.6875rem; }
+.identity dt { color: var(--muted); font-size: var(--text-caption); }
 .identity dd { min-width: 0; margin: 0; overflow-wrap: anywhere; }
-.notice { margin-top: 1.5rem; }
 .anchors { display: flex; flex-wrap: wrap; align-items: center; gap: 0 1.5rem; margin: 1.5rem 0; border-bottom: 1px solid var(--border); }
-.anchors a { display: inline-flex; align-items: center; min-height: 3.25rem; padding: 0.75rem 0; color: var(--muted); font-size: 0.875rem; font-weight: 500; text-decoration: none; border-bottom: 2px solid transparent; }
+.anchors a { display: inline-flex; align-items: center; min-height: 3.25rem; padding: 0.75rem 0; color: var(--muted); font-size: var(--text-body); font-weight: 500; text-decoration: none; border-bottom: 2px solid transparent; }
 .anchors a:hover, .anchors a:focus-visible { color: var(--accent); border-bottom-color: var(--orange); }
 .profileGrid { align-items: start; scroll-margin-top: 6rem; }
 .profileGrid > section { min-width: 0; }
@@ -29,16 +31,24 @@
 .insight:first-child { padding-top: 0; }
 .insight:last-child { padding-bottom: 0; }
 .insight h3 { margin: 0 0 0.625rem; font-size: 0.9375rem; line-height: 1.6; font-weight: 600; }
-.insight p { margin: 0; font-size: 0.875rem; line-height: 1.8; overflow-wrap: anywhere; }
+.insight p { margin: 0; font-size: var(--text-body); line-height: 1.8; overflow-wrap: anywhere; }
 .section { scroll-margin-top: 6rem; min-width: 0; }
 .sectionHeading { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.5rem 1rem; }
 .sectionHeading h2 { margin-top: 0; margin-bottom: 0; }
 .indicatorGroups { display: grid; gap: 1rem; margin-top: 1.5rem; }
 .indicatorGroup > h3 { margin: 0 0 1rem; font-size: 1rem; line-height: 1.5; font-weight: 600; }
-.noteText { font-size: 0.875rem; line-height: 1.8; margin: 0.875rem 0; }
-.notes { padding-left: 1.25rem; font-size: 0.875rem; line-height: 1.7; }
+.noteText { font-size: var(--text-body); line-height: 1.8; margin: 0.875rem 0; }
+.notes { padding-left: 1.25rem; font-size: var(--text-body); line-height: 1.7; }
 .notes li + li { margin-top: 0.5rem; }
 .footerLinks { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; margin-top: 1.5rem; }
+.similarIntro { max-width: 80ch; margin: 0 0 1.25rem; font-size: var(--text-small); line-height: 1.8; }
+.similarGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin: 0; padding: 0; list-style: none; }
+.similarCard { display: flex; flex-direction: column; align-items: stretch; padding: var(--space-4); }
+.similarCard h3 { margin: 0 0 0.5rem; font-size: 1rem; line-height: 1.6; font-weight: 600; }
+.distance { margin: 0 0 1rem; color: var(--muted); font-size: var(--text-small); line-height: 1.7; }
+.distance strong { color: var(--foreground); font-variant-numeric: tabular-nums; font-weight: 600; }
+.similarCard :global(.dimension-row) { margin-bottom: var(--space-2); }
+.similarCard > a { align-self: start; margin-top: auto; }
 
 @media (max-width: 1000px) {
   .overview { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -51,10 +61,11 @@
   .identity { grid-column: auto; }
   .identity dl { grid-template-columns: minmax(0, 1fr); }
   .profileGrid { grid-template-columns: minmax(0, 1fr); }
+  .similarGrid { grid-template-columns: minmax(0, 1fr); }
   .anchors { gap: 0.25rem 1rem; }
-  .anchors a { font-size: 0.8125rem; }
+  .anchors a { font-size: var(--text-small); }
 }
 
 @media (max-width: 480px) {
-  .breadcrumb { font-size: 0.75rem; }
+  .breadcrumb { font-size: var(--text-caption); }
 }

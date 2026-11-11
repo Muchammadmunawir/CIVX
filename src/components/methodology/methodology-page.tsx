@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { getExploreRegionsProduct2023, getProductMethodology2023, getRegionProductView2023 } from "@/lib/civx/product-2023";
 import { Notice, PageHeading } from "@/components/product/product-ui";
+import { SectionReveals } from "@/components/product/section-reveals";
+import { REPORTING_INTERPRETATION_2023, REPORTING_RESTRICTION_2023 } from "@/lib/civx/export-2023";
 import styles from "./methodology-page.module.css";
 
 const sections = [
@@ -9,8 +11,10 @@ const sections = [
   ["tahapan-perhitungan", "Tahapan perhitungan"],
   ["normalisasi", "Normalisasi & bobot"],
   ["interpretasi", "Cara membaca skor"],
+  ["profil-serupa", "Profil serupa"],
   ["keterbatasan", "Keterbatasan"],
   ["status-model", "Status model"],
+  ["ekspor-dan-laporan", "Ekspor & laporan"],
 ] as const;
 
 export function MethodologyPage() {
@@ -21,21 +25,18 @@ export function MethodologyPage() {
   const { dimensions, indicators } = profile.core;
 
   return (
-    <main className={`civx-container product-page ${styles.page}`}>
+    <SectionReveals className={`civx-container product-page ${styles.page}`}>
       <PageHeading breadcrumb="Metodologi" title="Di balik angka indeks" description="Pahami apa yang diukur, bagaimana skor dibentuk, dan batas penggunaannya." />
-      <Notice>
-        Model {methodology.referenceYear} telah dihitung, tetapi belum dirilis untuk publik. Persetujuan integrasi antarmuka tidak mengubah status skor dan insight.
-      </Notice>
       <div className={styles.layout}>
-        <nav className={styles.contents} aria-label="Dalam halaman ini">
+        <nav className={styles.contents} aria-label="Dalam halaman ini" data-reveal>
           <p>Dalam halaman ini</p>
           <ul>{sections.map(([id, label]) => <li key={id}><a href={`#${id}`}>{label}</a></li>)}</ul>
           <p className={styles.sidebarNote}>Satu model lengkap {methodology.referenceYear}. Bukan seri waktu atau indeks resmi pemerintah.</p>
         </nav>
         <div className={styles.body}>
-          <section className={styles.section} aria-labelledby="tentang-indeks">
+          <section className={styles.section} aria-labelledby="tentang-indeks" data-reveal>
             <h2 id="tentang-indeks" className="product-section-title">Tentang indeks CIVX</h2>
-            <p className={styles.lead}>Satu ringkasan untuk memulai pertanyaan yang lebih baik tentang wilayah.</p>
+            <p className={styles.lead}>Dari data sumber ke pola tekanan relatif.</p>
             <p>CIVX merangkum tekanan relatif kabupaten/kota di {methodology.province}. Skor membantu membaca pola, bukan menggantikan data rinci, pengalaman warga, atau penilaian lapangan.</p>
             <dl className={styles.summary}>
               <div><dt>Kabupaten/kota</dt><dd>{methodology.cohortSize}</dd></div>
@@ -44,11 +45,16 @@ export function MethodologyPage() {
               <div><dt>Tahun model</dt><dd>{methodology.referenceYear}</dd></div>
             </dl>
             <p className="product-caption">Cakupan tetap mengikuti kode BPS, tanpa agregat provinsi. CORE masuk skor; CONTEXT hanya memberi konteks.</p>
+            <p>Perbandingan memakai kohort tetap {methodology.cohortSize} kabupaten/kota Jawa Barat pada {methodology.referenceYear}. Pencarian dan filter hanya mengubah tampilan, bukan acuan skor.</p>
+            <p>Setiap indikator mempertahankan definisi, periode, penyebut, dan rujukan ke sumber aslinya. <Link className="civx-text-link" href="/sources">Telusuri jejak sumber</Link> sebelum menafsirkan hasil. Skor tidak menjelaskan sebab, memprediksi masa depan, atau menentukan kebijakan.</p>
           </section>
 
-          <section className={styles.section} aria-labelledby="kerangka-indikator">
+          <section className={styles.section} aria-labelledby="kerangka-indikator" data-reveal>
             <h2 id="kerangka-indikator" className="product-section-title">Kerangka indikator</h2>
-            <p>Enam dimensi memiliki bobot setara. Di setiap dimensi, bobot terbagi rata di antara indikatornya.</p>
+            <p>CORE mencakup sosial ekonomi, pendidikan, layanan dasar, kesehatan publik, tekanan risiko bencana, dan tekanan kualitas lingkungan. Keenam dimensi berbobot setara; bobot indikator terbagi rata dalam dimensinya.</p>
+            <details className={styles.disclosure}>
+              <summary>Lihat indikator dan bobot enam dimensi</summary>
+              <div className={styles.disclosureBody}>
             <div className="product-table-wrap" role="region" aria-label="Kerangka enam dimensi" tabIndex={0}>
               <table className={`product-table ${styles.dimensions}`}>
                 <caption className="civx-sr-only">Dimensi, indikator CORE, dan bobot model 2023</caption>
@@ -65,9 +71,11 @@ export function MethodologyPage() {
               </table>
             </div>
             <p className="product-caption">Bobot tepat setiap dimensi adalah 1/6, bukan 16,7% dalam perhitungan. Enam pecahan tersebut berjumlah 1 (100%); persentase tampilan dibulatkan.</p>
+              </div>
+            </details>
           </section>
 
-          <section className={styles.section} aria-labelledby="tahapan-perhitungan">
+          <section className={styles.section} aria-labelledby="tahapan-perhitungan" data-reveal>
             <h2 id="tahapan-perhitungan" className="product-section-title">Tahapan perhitungan</h2>
             <ol className={styles.steps}>
               <li><h3>Siapkan bukti yang sebanding</h3><p>Samakan kode wilayah, definisi, unit, pembilang, penyebut, dan periode referensi. Pertahankan sumber serta lokasi baris atau tabel.</p></li>
@@ -77,8 +85,12 @@ export function MethodologyPage() {
             </ol>
           </section>
 
-          <section className={styles.section} aria-labelledby="normalisasi">
+          <section className={styles.section} aria-labelledby="normalisasi" data-reveal>
             <h2 id="normalisasi" className="product-section-title">Normalisasi & bobot</h2>
+            <p>Normalisasi menyamakan skala indikator dengan mempertahankan arah tekanan. Acuan minimum–maksimum tetap berasal dari kohort 2023, bukan wilayah yang sedang dipilih.</p>
+            <details className={styles.disclosure}>
+              <summary>Lihat rumus dan pembobotan</summary>
+              <div className={styles.disclosureBody}>
             <div className={styles.formulas}>
               <h3>Nilai mentah lebih tinggi → tekanan lebih tinggi</h3>
               <p className={styles.formula}>s = 100 × ((x − a) / (b − a))</p>
@@ -88,9 +100,11 @@ export function MethodologyPage() {
             </div>
             <p>Bobot efektif satu indikator adalah (1/6) × (1/n), dengan n jumlah indikator dalam dimensinya. Dimensi berindikator tunggal tetap mendapat 1/6, bukan bobot tambahan.</p>
             <p>Perhitungan memakai presisi penuh dari model yang dibekukan. Angka di antarmuka dibulatkan untuk pembacaan, bukan dihitung ulang dari angka tampilan.</p>
+              </div>
+            </details>
           </section>
 
-          <section className={styles.section} aria-labelledby="interpretasi">
+          <section className={styles.section} aria-labelledby="interpretasi" data-reveal>
             <h2 id="interpretasi" className="product-section-title">Cara membaca skor</h2>
             <Notice>Skor lebih tinggi berarti tekanan relatif lebih tinggi, bukan wilayah lebih baik atau lebih buruk.</Notice>
             <ul className={styles.list}>
@@ -102,7 +116,22 @@ export function MethodologyPage() {
             </ul>
           </section>
 
-          <section className={styles.section} aria-labelledby="keterbatasan">
+          <section className={styles.section} aria-labelledby="profil-serupa" data-reveal>
+            <h2 id="profil-serupa" className="product-section-title">Kemiripan profil wilayah</h2>
+            <p>“Wilayah dengan Profil Serupa” mencari hingga tiga wilayah dengan jarak terdekat pada enam skor dimensi CORE. Skor 2023 dibaca dari model yang sama, tanpa dihitung atau dinormalisasi ulang; CONTEXT tidak ikut dihitung.</p>
+            <p>Jarak lebih kecil berarti pola enam tekanan relatif lebih dekat. Kemiripan tidak membuktikan kesamaan penyebab atau keadaan wilayah, bukan rekomendasi kebijakan, dan tidak memprediksi hasil masa depan.</p>
+            <details className={styles.disclosure}>
+              <summary>Bagaimana jarak profil dihitung?</summary>
+              <div className={styles.disclosureBody}>
+                <p>Untuk setiap dimensi, hitung selisih skor kedua wilayah, kuadratkan, lalu jumlahkan keenamnya. Akar jumlah tersebut adalah jarak Euclidean. Urutan dimensi sama untuk semua wilayah; perhitungan memakai presisi penuh, bukan angka tampilan yang dibulatkan.</p>
+                <p>Wilayah asal dikeluarkan. Hasil diurutkan dari jarak terkecil; jarak yang sama diurutkan menurut kode BPS. Data enam dimensi harus lengkap dan bernilai sah; data hilang tidak diganti nol. Tidak ada persentase kemiripan atau klasifikasi resmi.</p>
+                <p>Cakupan terbatas pada kohort {methodology.cohortSize} kabupaten/kota Jawa Barat tahun {methodology.referenceYear}. Jarak adalah ukuran turunan untuk eksplorasi, bukan skor CIVX baru atau peringkat kualitas wilayah. Buka perbandingan untuk memeriksa profil secara langsung.</p>
+              </div>
+            </details>
+            <p className="product-caption">Fitur ini merupakan pratinjau analitis terbatas. <a className="civx-text-link" href="#status-model">Status model dan batas penggunaan</a> tetap berlaku.</p>
+          </section>
+
+          <section className={styles.section} aria-labelledby="keterbatasan" data-reveal>
             <h2 id="keterbatasan" className="product-section-title">Keterbatasan yang perlu dibaca</h2>
             <ul className={styles.list}>
               <li>Seluruh {indicators.length} indikator CORE wajib lengkap. Data hilang atau tidak sah menggagalkan perhitungan; tidak diisi nol, diimputasi, diganti tahun, atau ditutup dengan perubahan bobot.</li>
@@ -116,14 +145,29 @@ export function MethodologyPage() {
             <Link href="/sources" className="civx-button civx-button-primary">Telusuri sumber data</Link>
           </section>
 
-          <section className={styles.section} aria-labelledby="status-model">
+          <section className={styles.section} aria-labelledby="status-model" data-reveal>
             <h2 id="status-model" className="product-section-title">Status model & penggunaan</h2>
-            <p>CIVX adalah indeks analitis yang ditetapkan proyek, bukan indeks resmi atau pengesahan lembaga sumber. Hak penggunaan dan redistribusi sumber belum dinyatakan tuntas.</p>
-            <p>Model 2023 masih memerlukan persetujuan rilis publik. Baca definisi, periode rujukan, dan keterbatasan sumber sebelum menggunakan hasilnya.</p>
-            <Link className="civx-text-link" href="/sources">Lihat sumber dan catatan penggunaannya <span aria-hidden="true">→</span></Link>
+            <p>CIVX adalah indeks analitis proyek, bukan indeks resmi atau pengesahan lembaga sumber. Model {methodology.referenceYear} telah dihitung, tetapi skor dan insight belum disetujui untuk rilis publik.</p>
+            <p>Hak penggunaan dan redistribusi sumber belum dituntaskan. Persetujuan integrasi antarmuka tidak mengubah status rilis atau memberikan izin publikasi.</p>
+            <p>Tampilan numerik hanya untuk peninjauan lokal atau dengan kontrol akses. Penerapan publik dan redistribusi hasil memerlukan penuntasan hak sumber serta persetujuan rilis terdokumentasi.</p>
+            <p>Pemberitahuan ini bukan kontrol akses. Pembatasan CSV dan laporan wilayah tidak mencegah penyalinan, tangkapan layar, atau pencetakan halaman numerik lainnya.</p>
+            <Link className="civx-text-link" href="/sources#penggunaan-sumber">Lihat sumber dan catatan penggunaannya <span aria-hidden="true">→</span></Link>
+          </section>
+
+          <section className={styles.section} aria-labelledby="ekspor-dan-laporan" data-reveal>
+            <h2 id="ekspor-dan-laporan" className="product-section-title">Ketentuan ekspor & laporan</h2>
+            <p>{REPORTING_RESTRICTION_2023}</p>
+            <p>CSV Jelajah memuat enam kolom ringkas: kode BPS, nama, jenis wilayah, provinsi, tahun acuan 2023, dan sumber identitas BPS. Excel memuat tabel yang sama pada lembar “Data Wilayah”; lembar “Informasi Data” menyimpan atribusi lengkap, filter, status, batasan, serta tautan dokumentasi dan penerbit. Unduhan mengikuti seluruh hasil pencarian dan filter jenis, bukan halaman tabel atau lapisan peta.</p>
+            <p>Kolom skor sengaja tidak disertakan, bukan diisi nol atau dianggap data hilang. Nilai yang ditahan karena izin berbeda dari nilai yang tidak tersedia pada sumber. Ekspor lengkap memerlukan persetujuan rilis dan penuntasan hak penggunaan sumber.</p>
+            <p>CSV memakai UTF-8 dengan BOM, pemisah koma, dan akhir baris CRLF. Teks berpetik mempertahankan koma, kutipan, dan baris baru. Teks yang dapat terbaca sebagai rumus spreadsheet diberi awalan apostrof; awalan ini merupakan pengamanan, bukan bagian nama asli.</p>
+            <p>Pilih “Unduh CSV” untuk tabel polos atau “Unduh Excel” untuk lebar kolom siap baca, header tetap terlihat, dan filter spreadsheet. CSV tidak menyimpan lebar kolom. Tautan dalam Excel memakai dokumentasi repository dan penerbit yang terverifikasi, bukan alamat server lokal atau situs publik yang belum disahkan.</p>
+            <p>Untuk laporan wilayah, pilih “Cetak identitas / PDF”, gunakan kertas A4, lalu pilih printer atau “Simpan sebagai PDF” pada dialog peramban. Laporan hanya memuat identitas dan referensi; skor, nilai indikator, serta insight tidak dicetak. Navigasi dan kontrol halaman disembunyikan. Nonaktifkan header dan footer bawaan peramban bila tidak diperlukan.</p>
+            <p>{REPORTING_INTERPRETATION_2023}</p>
+            <p>Rujukan penerbit bukan izin redistribusi dokumen. Buku sumber tidak disertakan. Periode, definisi, penyebut, dan ketidakpastian indikator tetap mengikuti katalog sumber, bukan disamakan dengan tahun model.</p>
+            <Link className="civx-text-link" href="/sources">Buka atribusi dan keterbatasan setiap sumber <span aria-hidden="true">→</span></Link>
           </section>
         </div>
       </div>
-    </main>
+    </SectionReveals>
   );
 }

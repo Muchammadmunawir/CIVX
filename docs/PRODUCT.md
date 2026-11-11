@@ -142,3 +142,49 @@ The six supplied Figma references define layout and visual style only. Structura
 CORE and the seven audited CONTEXT datasets remain separate. Context availability, zeros, individual sites, actual dates, and non-comparison restrictions survive presentation. The earlier Regional Advantages contract is not part of this reviewed product facade and is not imported from the old model.
 
 The integration does not release the frozen model, certify source rights, authorize new periods, or change source evidence. Implementation and verification details: [PRODUCT-INTEGRATION-2023.md](PRODUCT-INTEGRATION-2023.md#figma-frontend-integration).
+
+## 13. Phase 2.1 presentation refinement
+
+Home and Explore default to **Skor Keseluruhan CIVX** from the existing 2023 pressure scores. Explore retains the six CORE dimension layers, fixed 0–100 mapping, selection, filtering, and canonical detail navigation. The map introduces no categories, ranking, official classification, individual stress measurement, or policy recommendation.
+
+The original light-mode palette, typography, and page structure remain authoritative. Map-specific semantic tokens adapt the existing indigo identity to each theme. A scoped accessible theme menu fixes option contrast. Progressive once-only entrances and restrained state transitions respect reduced motion and leave content accessible without JavaScript.
+
+This phase preserves the latest team Home summary cards, including their inverted display index, province mean, and status/priority labels. Those pre-existing presentations still require separate methodology review before submission; the choropleth does not inherit them. No source, score, normalization, weight, CORE/CONTEXT separation, or release-authorization flag changes.
+
+## 14. Phase 3 reporting and transparency
+
+This phase supersedes the unresolved Home presentation note in §13. Home now shows model coverage and reference year instead of an inverted quality index, provincial aggregate, arbitrary 70/50 status thresholds, best-performing region, or policy priority. The model only defines relative pressure; these removed claims had no reviewed methodological basis. The pressure choropleth and existing animation behavior remain unchanged.
+
+Explore provides **Unduh CSV** for the full name/type-filtered set, independent of pagination and map layer. Public scope is identity, year, attribution, interpretation, and reference links only. Scores, indicators, insights, CONTEXT observations, and source publications are excluded because public release and source rights remain unapproved. The UI, CSV, and methodology explain this restriction; absent score columns do not mean missing data or zero.
+
+Region detail provides **Cetak / Simpan PDF** through browser-native print, with A4-specific styling. The report contains CIVX branding, identity, year, six dimension/indicator references, source bibliography, model/version, and explicit limitations. Unreleased numerical results are not printed. Both actions use existing styles, keyboard controls, accessible descriptions, and useful failure feedback.
+
+Full numerical export remains blocked until a documented public-release and rights decision changes the reviewed contract. Existing frontend integration, a download click, or a print request does not grant that permission.
+
+The existing team Compare presentation remained outside the Phase 3 Home correction. The Phase 4 cutover below supersedes this historical concern.
+
+
+## 15. Phase 4 stabilization and release review
+
+Compare now displays unchanged facade pressure scores for the overall result and all six CORE dimensions. Higher means higher relative pressure, consistently with Home, Explore, and Region Detail. The inverted quality index, provincial mean, arbitrary quality thresholds, proxy dimension names, and best/priority badges are removed. The engine supplies absolute distances and signed overall A-minus-B differences; the UI does not compute new scores or differences. Same-region ties and invalid-input recovery retain their existing contracts.
+
+Home, Explore, Region Detail, and Compare each carry one compact Indonesian preview notice linking to `/methodology#status-model`. Methodology and Sources retain the detailed status, rights, interpretation, and reporting disclosures without repeating the global banner. This is disclosure, not access control or release authorization. The unreleased score/insight flags, source-rights restrictions, identity-only CSV, and metadata-only regional A4 report remain unchanged.
+
+The current numerical display still conflicts with public-release restrictions if deployed openly. Other pages can still be copied or printed with numerical content. Keep review local or access-controlled; do not deploy publicly, redistribute numerical outputs, or call the model approved until rights and release signoff are documented. No major feature is silently removed to conceal this governance gap.
+
+
+## 16. Final controlled product enhancement
+
+Region Detail now offers “Wilayah dengan Profil Serupa”: up to three nearest six-CORE pressure profiles in the same 2023 Jawa Barat cohort, with direct two-region Compare actions. Euclidean distance is a separate derived exploratory metric, not a new CIVX score, quality ranking, official similarity classification, cause explanation, forecast, or policy recommendation. Complete finite facade dimensions and deterministic BPS-ID ties are required; CONTEXT remains excluded.
+
+Home provides three practical entry scenarios for education pressure, two-region comparison, and source-backed regional inspection. Methodology preserves concise cohort/provenance guidance and uses progressive disclosure for technical tables/formulas. Explore exposes active filters, clear search/type-only reset, a mobile result shortcut, and shareable `q`/`type`/`layer` URLs with native Back/Forward and preserved map context.
+
+The current unreleased score/insight flags, source-rights limits, CSV scope, and regional A4 scope are unchanged. This feature authorization is for restricted local/access-controlled analytical preview, not public numerical publication. PR #19 remains the integration-review vehicle; owners retain release and deployment signoff.
+
+## 17. Portable regional identity exports
+
+The approved Explore presentation offers **Unduh CSV** and **Unduh Excel**, with one short identity/reference-only scope description and a link to existing reporting terms. Both export all search/type-filtered identities rather than the current table page; map-layer state remains independent.
+
+CSV is a clean six-column BPS identity table without repeated paragraphs or row-level URLs. Excel keeps the same table on `Data Wilayah` and stores full attribution, filters, status, limitations, and verified documentation/publisher URLs on `Informasi Data`. It supplies readable column widths, frozen headers, AutoFilter, explicit text codes, and numeric years. No public website URL is invented.
+
+This is a usability/schema cutover, not permission to distribute scores or indicators. Numerical public CSV/XLSX/PDF remains unapproved. The restricted offline analytical reporting workflow, existing regional A4 report, approved results notice, theme identity, and mobile navigation remain unchanged.

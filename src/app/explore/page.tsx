@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { ExplorePage } from "@/components/explore/explore-page";
+import ExploreLoading from "./loading";
 
 export const metadata: Metadata = {
   title: "Jelajah",
@@ -8,10 +9,10 @@ export const metadata: Metadata = {
 };
 
 export default function ExploreRoute({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
-  return <Suspense fallback={<main className="civx-container civx-state"><p role="status">Memuat daftar wilayah…</p></main>}><ExploreContent searchParams={searchParams} /></Suspense>;
+  return <Suspense fallback={<ExploreLoading />}><ExploreContent searchParams={searchParams} /></Suspense>;
 }
 
 async function ExploreContent({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
-  const { q } = await searchParams;
-  return <ExplorePage initialSearch={typeof q === "string" ? q : ""} />;
+  const initialQuery = await searchParams;
+  return <ExplorePage initialQuery={initialQuery} />;
 }

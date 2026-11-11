@@ -1,17 +1,134 @@
-# CIVX — Jawa Barat 2023
+# CIVX — Explore regional pressure, inspect the evidence
 
-CIVX describes **relative regional pressure** across **27 kabupaten/kota**, **18 CORE indicators**, and **six equally weighted dimensions**. A higher score means higher relative pressure within the fixed 2023 cohort, not better or worse regional quality, a causal explanation, or a policy priority.
+CIVX (Civic Index) helps researchers, journalists, civic organizations, public-sector stakeholders, and students explore **relative regional pressure in Jawa Barat** and inspect the evidence behind it.
 
-The frontend follows six supplied Figma references while replacing their illustrative values and methodology with the reviewed product layer. Frontend integration does not authorize a public model release. The frozen `SCORED_NOT_RELEASED`, `INSIGHTS_NOT_RELEASED`, and production-authorization flags remain unchanged.
+**Problem:** regional statistics are scattered across publications and government portals, with different units, dates, definitions, and coverage. **Solution:** CIVX connects a fixed **2023 cohort of 27 kabupaten/kota**, an interactive map, six CORE dimension profiles, two-region comparison, and original source references in one Indonesian-language interface.
+
+Use CIVX as an inspectable starting point for further investigation—not an automatic policy decision.
+
+## What judges can explore
+
+| Feature | What it provides |
+| --- | --- |
+| Home `/` | Coverage summaries, an interactive regional pressure map, and three practical ways to start. |
+| Explore `/explore` | Search across 27 kabupaten/kota, filter by region type, inspect overall or six dimension layers, and share the current search/type/layer URL. |
+| Region detail `/regions/[id]` | Overall pressure, six dimensions, up to three similar profiles with direct Compare actions, 18 indicator disclosures, original source references, controlled insights, and separately dated context. |
+| Compare `/compare?a=3201&b=3273` | Two-region selection and the direct-pressure comparison contract described below. |
+| Methodology `/methodology` | Scoring direction, normalization, weighting, limitations, and export restrictions. |
+| Sources `/sources` | Searchable evidence for all CORE indicators and CONTEXT datasets, including publishers, periods, units, coverage, and limitations. |
+
+The interface includes light/dark/system themes, responsive layouts, keyboard controls, visible focus, and reduced-motion support. These features are not a claim of formal accessibility certification.
+
+**Review status, not public approval:** current screens display unreleased model values and insights for frontend review. No verified public demo URL is provided here. Use the restricted local review instructions below; do not treat a working screen as release authorization.
+
+## Quick product walkthrough
+
+Use the [local setup](#run-locally) below for restricted review. No public demo is authorized.
+
+1. **Start at Home `/`.** Read the coverage and reference year, then inspect a region on the map. Higher values mean higher relative pressure, not better performance.
+2. **Explore `/explore?layer=education`.** Start on the Education map layer, search for a region, or filter kabupaten/kota. Share the URL or use Back/Forward to revisit filter states. Filters never recalibrate the fixed cohort scale.
+3. **Compare `/compare?a=3201&b=3273`.** Inspect the overall pressure and six dimensions side by side. Differences describe the model, not causes or policy priorities.
+4. **Inspect `/regions/3273`.** Compare a similar six-dimension profile, then open an indicator to check its value, period, definition, denominator, uncertainty, and original source. Similarity describes pressure patterns, not shared causes or future outcomes. CONTEXT remains separate from CORE.
+5. **Check evidence and limits.** Search `/sources` and read `/methodology#status-model`. CSV and regional A4 reports contain identities and references only, not unreleased analytical values.
+
+Stack and commands are in [Run locally](#run-locally); detailed methodological and technical audits remain in [Technical and audit reading](#technical-and-audit-reading).
+
+![Actual local Chromium capture of CIVX's three usage scenarios](docs/screenshots/cara-menggunakan-civx.png)
+
+Actual browser capture of the navigation scenarios, not a mockup. This image contains no unreleased analytical values; numerical review captures remain local. The [similar-profile derivation and restrictions](docs/PRODUCT-INTEGRATION-2023.md#derived-similar-regional-profiles) are documented separately.
+
+## How to read CIVX
+
+The reviewed model covers **27 kabupaten/kota in Jawa Barat**, with a **2023 reference vintage**, **18 CORE indicators**, and **six equally weighted dimensions**:
+
+- Socioeconomic
+- Education
+- Basic Services
+- Public Health
+- Disaster Pressure
+- Environment
+
+Each dimension contributes exactly **1/6** of the overall score. Indicators share their own dimension's weight equally; the 18 indicators do not all have equal overall weight. Direction-aware min–max normalization uses the same fixed 27-region cohort.
+
+**Higher score means higher relative pressure, not better performance.** A score is not regional quality, a public ranking, a winner/loser judgment, or a policy priority. Zero does not mean no pressure; 100 does not mean the maximum possible harm. Changing a search filter does not recalibrate the scale.
+
+Only this complete CORE vintage is available. CIVX does not establish trends, causal effects, predictions, or confidence in an overall regional score. Published source uncertainty is retained where available; absent uncertainty does not establish certainty.
+
+### Comparison contract
+
+The Phase 4 comparison cutover uses **direct overall pressure and all six CORE dimensions**, with the engine's full-precision A-minus-B differences. It removes inverted `100 − pressure` scores, the inverted provincial mean, and unsupported quality/priority badges. It does not add a provincial benchmark, rank, or recommended action.
+
+Independently rounded display values may not subtract to the displayed difference. CONTEXT is not scored or numerically compared. Phase 4 browser evidence and automated checks are recorded in [TASKS.md §32](docs/TASKS.md#32-phase-4-final-integration-and-submission-review).
+
+## Sources, dates, and separate context
+
+The audited source catalogue includes:
+
+- **BPS** regional statistics, household surveys, education measures, commuter statistics, and Podes publications.
+- **Dinas Kesehatan Provinsi Jawa Barat** for the exact population denominator in the health profile, and **BKPK Kementerian Kesehatan RI** for SKI nutrition estimates.
+- **BNPB** for the official 2023 disaster-risk index (IRBI).
+- **Dinas Lingkungan Hidup Jawa Barat**, through **Galura / Open Data**, for district IKLH.
+- **Pemerintah Kota Bandung / Dinas Perhubungan** for selected road observations, and **KLH/BPLH** for dated station ISPU readings. The air audit also cites the KLHK-era ISPU regulation; it does not relabel those readings as a 2023 KLHK regional panel.
+
+See the [frozen indicator/source catalogue](docs/FINAL-INDICATOR-FREEZE-2023.md#3-exact-source-and-denominator-contract) and [contextual source audit](docs/CONTEXTUAL-DATA-AUDIT-2023.md) for original URLs, table/page locators, definitions, source receipts, and rights limitations. A source published or retrieved in 2024–2026 is not automatically an observation from that year.
+
+**Seven CONTEXT datasets stay separate and never change CIVX:** selected Bandung road speed and volume/capacity observations, Type C terminal inventory, commuter share, Podes theft-occurrence counts, overall station ISPU, and its PM2.5 component.
+
+Their dates and coverage differ:
+
+- Terminals use the **2023** inventory; commuter data use the **October 2023** survey and its stated recall window.
+- Bandung road observations come from the **2024** report; exact survey dates are unspecified.
+- Podes theft-occurrence counts refer to the **year preceding May 2024 enumeration**, not a verified calendar-2023 crime rate.
+- Air observations retain **29 October 2026, 16:00 source-local time**. They are station index snapshots, not 2023 regional exposure, annual averages, or PM2.5 mass concentrations.
+
+Missing values are not zero. Commuter coverage includes only five regions. Terminal cells remain missing for Kabupaten Cirebon and Kabupaten Subang, while Kota Banjar's explicit zero remains zero. Road and air observations stay site-level; CIVX does not invent city averages. See [availability and missingness](docs/PRODUCT-INTEGRATION-2023.md#availability-and-missingness).
+
+Maps use approximate **2020 geoBoundaries ADM2 geometry**, not certified 2023 boundaries or a scoring input. Attribution: BPS, WFP, and OCHA ROAP via [geoBoundaries](https://www.geoboundaries.org/api/current/gbOpen/IDN/ADM2/), adapted under [CC BY 3.0 IGO](https://creativecommons.org/licenses/by/3.0/igo/). See [geometry provenance](docs/DATA.md#9-geographic-display-geometry-separate-from-scoring).
+
+## Governance and safe review
+
+There is an explicit governance contradiction to resolve: the frontend currently shows model values and descriptive insights, while the frozen records remain **`SCORED_NOT_RELEASED`**, **`INSIGHTS_NOT_RELEASED`**, and **`productionIntegrationAuthorized: false`**. Frontend review does not clear those restrictions or authorize public redistribution.
+
+Keep the features available for **restricted local review**. **Do not deploy publicly** until source reuse rights and model/insight release signoff are documented. Independent method review, effective-boundary certification, and formal accessibility review remain separate gates. This README claims no approval, deployment, or newly verified release.
+
+### CSV, Excel, and A4 reports
+
+- Explore's **Unduh CSV** exports a compact six-column identity table: BPS code, region name/type, province, reference year, and BPS source identity. It includes **all filtered regions**, not only the table page. No repeated disclosure paragraphs or URLs appear in region rows.
+- CSV uses comma-delimited RFC 4180 records, CRLF, a **UTF-8 BOM**, and spreadsheet-formula protection, including formula-like text after leading whitespace/control/format characters.
+- **Unduh Excel** exports the same identities in **Data Wilayah**, with readable widths, styled headers, frozen headings, AutoFilter, text BPS IDs, and integer years. **Informasi Data** contains filter scope, attribution, status, limitations, and verified BPS/repository documentation URLs, without localhost or an invented deployment URL. CSV cannot store column widths; choose Excel for a ready-to-read spreadsheet.
+- Both exports exclude scores, indicator values, insights, and CONTEXT. Full restrictions remain at `/methodology#ekspor-dan-laporan`, in the Excel information sheet, and in the [reporting contract](docs/ANALYTICAL-REPORTING-2023.md).
+- Region detail's **Cetak identitas / PDF** opens the browser print dialog. Select A4 and a printer or Save as PDF. The identity/reference report includes source and methodology references, **no numerical model or observation values**, and no insights.
+
+On-screen display is not numerical export approval. Public numerical CSV/XLSX/PDF requires a documented rights/release decision and a reviewed contract change, not a browser flag. Details appear at `/methodology#ekspor-dan-laporan` and in [product integration](docs/PRODUCT-INTEGRATION-2023.md).
+
+The regional report restriction is not a browser-wide data-loss control: other pages can still be copied or printed with their on-screen numbers. The shared preview notice discloses release status; it does not restrict access. Keep review local or access-controlled until a documented release decision resolves this gap.
+
+### Restricted local analytical reports
+
+Numerical reporting is implemented **offline for restricted review**, not as a public website export. This distinction does not make metadata-only reporting a complete numerical export.
+
+```sh
+node scripts/prepare-analytical-report-2023.ts --region 3273 --q Bandung --type kota
+```
+
+The command creates a full-precision analytical CSV for every filtered region and a standalone A4 HTML report for the selected region. Both read the authoritative facade: overall pressure, six dimensions, 18 CORE indicators/units, original periods, definitions/denominators, uncertainty, and source references. Open the returned `file://` HTML and activate **Cetak / Simpan PDF lokal** to save a numerical PDF locally.
+
+Files stay in a random private temporary directory outside the repository, with POSIX directory/file modes `0700`/`0600`. The offline command adds no web route, client toggle, public download, or publication approval, and does not use the public Excel writer. Save the browser-generated PDF in the same controlled directory; browser save locations/permissions remain the operator's responsibility. See the [complete analytical reporting contract and authorization checklist](docs/ANALYTICAL-REPORTING-2023.md).
 
 ## Run locally
 
+Stack: **Next.js 16.4.2**, **React 19.3.0**, and **TypeScript with strict mode**, using CSS modules and semantic CSS tokens. The frozen local dataset needs no database, API server, credentials, or external map service.
+
+Use **Node.js 26.12.0 and npm 12.2.1**, the versions exercised for this submission review. From the repository root:
+
 ```sh
-npm install
+npm ci
 npm run dev
 ```
 
-Open `http://localhost:3000`. Validate with:
+Open **http://localhost:3000** for restricted review. The existing `next/font` Poppins setup downloads fonts at build time and self-hosts them afterward.
+
+### Verification commands
 
 ```sh
 npm test
@@ -20,60 +137,17 @@ npm run build
 npm start
 ```
 
-Development and production builds explicitly use webpack. Next 16.4.2 Turbopack reserializes some imported JSON numbers: for example, `3.7037037037037037` becomes `3.703703703703704`, failing exact contextual coverage validation. Webpack preserves the reviewed values. Validation and model data are not weakened or rewritten to accommodate the bundler.
+`npm start` serves the completed production build locally; it is not deployment authorization. The portable export candidate passed **376 tests**, lint, and the strict TypeScript production build (**36 generated pages**). Independent spreadsheet-reader and responsive browser evidence lives in [TASKS.md §39](docs/TASKS.md#39-compact-public-csv-and-readable-excel-export). Previous analytical reporting and product reviews remain in §§38 and 37.
 
-No dependencies, credentials, external map services, database, or API server were added. Styling uses existing CSS modules and semantic global CSS tokens. The unused Tailwind import and Turbopack-only CSS rule were removed; installed packages remain unchanged. Poppins uses the existing `next/font` loader and is self-hosted after its build-time download.
+**Bundler precision:** development and builds intentionally use webpack. Next 16.4.2 Turbopack can reserialize imported JSON numbers—for example, `3.7037037037037037` becomes `3.703703703703704`—and fail exact contextual coverage validation. Keep reviewed data and validation intact rather than weakening them for the bundler.
 
-## Routes
+## Technical and audit reading
 
-| Route | Behavior |
-| --- | --- |
-| `/` | Truthful cohort/model summaries and interactive Jawa Barat map. |
-| `/explore` | All 27 regions in canonical BPS order, name search, kabupaten/kota filter, neutral map, and nine-row table pages. Pagination affects only the table; the map keeps the full filtered result. `?q=` supports search-form navigation. |
-| `/regions/[id]` | Standalone detail with score, real-geometry silhouette, six dimension bars, unchanged controlled insights, 18 grouped indicator disclosures, and separate context. Unknown IDs use Next's not-found boundary. |
-| `/compare?a=3201&b=3273` | Reviewed overall/dimension/indicator differences, two selectors, tied highlights, and separate context. Same-region ties are valid. Invalid or repeated query values show an error rather than substituted results. |
-| `/methodology` | Direction-aware min–max formulas, exact equal-dimension weights, equal weights within each dimension, source limitations, and model status. |
-| `/sources` | Searchable evidence for all 18 CORE indicators and seven contextual datasets. Filter by CORE/CONTEXT and by CORE dimension; browse original publishers, links, periods, units, coverage, and limitations. |
+- [Product integration](docs/PRODUCT-INTEGRATION-2023.md) and [data access](docs/DATA-ACCESS-LAYER-2023.md): immutable product boundary, source traceability, missingness, and site-context semantics.
+- [Normalization](docs/NORMALIZATION-DESIGN-2023.md), [weighting](docs/WEIGHTING-DESIGN-2023.md), [scoring](docs/SCORING-ENGINE-2023.md), [comparison](docs/COMPARISON-ENGINE-2023.md), and [insights](docs/INSIGHT-ENGINE-2023.md): exact mathematical and release contracts.
+- [Context audit](docs/CONTEXTUAL-DATA-AUDIT-2023.md), [freshness audit](docs/FRESHNESS-AUDIT-2024-2026.md), and [data provenance](docs/DATA.md): original evidence, dates, limitations, and reuse constraints.
+- [Architecture](docs/ARCHITECTURE.md) and [verification history](docs/TASKS.md): implementation and recorded checks.
 
-Header search uses only the 27 known regions. Navigation, footer, active indicators, light/dark/system preference, disclosure controls, and responsive layouts share one application shell. There is no score sort, public regional ranking, status threshold, province average, year selector, or time-series chart.
+Authoritative frontend reads use `src/lib/civx/product-2023.ts`; React does not normalize, rescore, reweight, or regenerate insights. `similar-regions-2023.ts` derives Euclidean peer distances separately from the same six CORE scores. Full precision is retained; pressure displays use one decimal and derived distances up to two decimals with Indonesian number formatting.
 
-## Product boundary
-
-Every product surface uses `src/lib/civx/product-2023.ts`:
-
-- `getExploreRegionsProduct2023()`
-- `getRegionProductView2023(regionId)`
-- `getComparisonProductView2023(regionAId, regionBId)`
-- `getProductMethodology2023()`
-
-React does not normalize, score, weight, regenerate insights, or calculate comparison differences. Display helpers round scores to one decimal in Indonesian number formatting while retaining full internal precision. Source values keep their units. Comparison deltas use the engine's unrounded A-minus-B values; independently rounded display numbers can differ slightly when subtracted.
-
-The former `current.ts` product is no longer imported by frontend routes or components. Historical domain/data files and tests remain available; obsolete frontend consumers and intercepted region dialogs were removed. The current flow opens a full region page from both maps and lists.
-
-See [product integration](docs/PRODUCT-INTEGRATION-2023.md), [data access](docs/DATA-ACCESS-LAYER-2023.md), [comparison](docs/COMPARISON-ENGINE-2023.md), and [frozen scoring](docs/SCORING-ENGINE-2023.md). Historical four/eight-input documentation and regeneration commands do not define the newly integrated frontend model. Do not regenerate historical releases to build the frontend.
-
-## CORE and CONTEXT
-
-The six CORE dimensions retain their repository display names: Socioeconomic, Education, Basic Services, Public Health, Disaster Pressure, and Environment. Each receives exactly 1/6 of the overall score. Indicators share their dimension's weight equally. Only the complete 2023 model is available.
-
-CONTEXT is visually separate and never changes CIVX:
-
-- Commuter shares cover five regions; other regions remain unavailable, not zero.
-- Type C terminals preserve missing Cirebon/Subang observations and Banjar's explicit zero.
-- Podes records villages/kelurahan with theft occurrence, not a crime rate or safety score.
-- Bandung road observations retain individual sites, not a city average.
-- ISPU and PM2.5-component ISPU retain station observations and their actual timestamp, not regional averages or annual exposure.
-
-Expanded disclosures retain definitions, denominators, source limitations, uncertainty, and published source locators. Internal evidence pointers, artifact paths, hashes, raw release flags, and debug JSON remain in domain records and engineering documentation, not product pages. Weighted denominators are not unweighted sample sizes. Missing uncertainty is not evidence of certainty. Available regional values and site observations appear before compact, collapsed missing-source groups.
-
-## Map and accessibility
-
-The existing SVG implementation uses `data/geography/jabar-adm2-2020.json`, with its established BPS-code associations. All regions use neutral CIVX blue; hover/focus indicates inspection, not a pressure category. Native link titles and the inspection panel expose region name and score. Click opens detail. Selectors and the complete region list provide non-map access.
-
-Geometry represents approximate **2020 geoBoundaries ADM2 boundaries**, not certified 2023 boundaries or a scoring input. Attribution: BPS, WFP, and OCHA ROAP via [geoBoundaries](https://www.geoboundaries.org/api/current/gbOpen/IDN/ADM2/), adapted under [CC BY 3.0 IGO](https://creativecommons.org/licenses/by/3.0/igo/). Provenance remains in [DATA.md §9](docs/DATA.md#9-geographic-display-geometry-separate-from-scoring).
-
-Small screens collapse navigation, stack grids and comparison cards, and scroll tables within their own frame. Semantic headings, labels, native buttons/links/details, visible focus, skip navigation, Escape dismissal, and reduced-motion support remain available. Browser smoke is not formal accessibility certification.
-
-## Limits and governance
-
-Independent source/method review, source reuse rights, effective-boundary certification, formal accessibility review, and model release approval remain separate gates. Whole restricted publications are not redistributed. No deployment, new model year, trend, policy simulation, or context comparison is authorized by this integration. Verification evidence is recorded in [TASKS.md](docs/TASKS.md).
+Historical documents, including [METHODOLOGY.md](docs/METHODOLOGY.md), [METHODOLOGY-V2.md](docs/METHODOLOGY-V2.md), and [METHODOLOGY-CURRENT.md](docs/METHODOLOGY-CURRENT.md), remain audit history. Their earlier four/eight-input contracts do not define this frontend's 18-indicator model. Do not regenerate historical releases to run the website.

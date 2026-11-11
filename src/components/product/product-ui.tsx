@@ -16,15 +16,31 @@ export function Notice({ children }: { children: ReactNode }) {
   return <div className="product-notice"><span aria-hidden="true">i</span><div>{children}</div></div>;
 }
 
+export function ResultsNotice() {
+  return <aside aria-label="Status hasil CIVX"><Notice>
+    <strong>Data CIVX 2023 masih dalam tahap peninjauan.</strong> Hasil analisis bukan indeks resmi atau rekomendasi kebijakan.
+    {" "}<Link className="civx-text-link" href="/methodology#status-model">Pelajari status dan batasan data</Link>
+  </Notice></aside>;
+}
+
 export function ScoreDisplay({ score, label = "Skor CIVX 2023" }: { score: number; label?: string }) {
   return <div className="product-score"><p>{label}</p><strong>{formatScore(score)} <small>/ 100</small></strong></div>;
 }
 
-export function DimensionBars({ dimensions }: { dimensions: readonly CivxDimensionProduct2023[] }) {
+const compactDimensionLabels: Readonly<Record<string, string>> = {
+  socioeconomic: "Sosial ekonomi",
+  education: "Pendidikan",
+  basic_services: "Layanan dasar",
+  public_health: "Kesehatan publik",
+  disaster_pressure: "Risiko bencana",
+  environment: "Kualitas lingkungan",
+};
+
+export function DimensionBars({ dimensions, compact = false }: { dimensions: readonly CivxDimensionProduct2023[]; compact?: boolean }) {
   return <div className="dimension-bars">{dimensions.map(dimension => <div className="dimension-row" key={dimension.dimensionId}>
-    <div><span>{dimension.displayName}</span><strong>{formatScore(dimension.score)}</strong></div>
+    <div><span title={compact ? dimension.displayName : undefined}>{compact ? compactDimensionLabels[dimension.dimensionId] ?? dimension.displayName : dimension.displayName}</span><strong>{formatScore(dimension.score)}</strong></div>
     <div className="pressure-track" aria-hidden="true"><span style={{ width: `${dimension.score}%` }} /></div>
-  </div>)}<p className="product-caption">Skala tekanan relatif 0–100 · lebih tinggi berarti tekanan relatif lebih tinggi.</p></div>;
+  </div>)}{!compact && <p className="product-caption">Skala tekanan relatif 0–100 · lebih tinggi berarti tekanan relatif lebih tinggi.</p>}</div>;
 }
 
 export function SourceLink({ source }: { source: CivxProductSource2023 }) {

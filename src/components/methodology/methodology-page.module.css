@@ -1,53 +1,59 @@
 .page { color: var(--foreground); }
-.layout { display: grid; grid-template-columns: 13rem minmax(0, 1fr); gap: 2.5rem; margin-top: 2rem; align-items: start; }
-.contents { position: sticky; top: 6rem; font-size: .8125rem; }
+.layout { display: grid; grid-template-columns: 13rem minmax(0, 1fr); gap: var(--space-10); margin-top: var(--space-8); align-items: start; }
+.contents { position: sticky; top: 6rem; font-size: var(--text-small); }
 .contents > p:first-child { color: var(--muted); font-weight: 600; margin: 0 0 .75rem; }
 .contents ul { list-style: none; margin: 0; padding: 0; }
-.contents a { display: flex; align-items: center; min-height: 2.75rem; gap: .75rem; color: var(--muted); text-decoration: none; }
+.contents a { display: flex; align-items: center; min-height: var(--control-height); gap: var(--space-3); color: var(--muted); text-decoration: none; }
 .contents a::before { content: ""; width: .25rem; height: .25rem; background: var(--border); border-radius: 50%; flex: none; }
 .contents a:hover, .contents a:focus-visible { color: var(--accent); }
 .contents a:hover::before, .contents a:focus-visible::before { background: var(--orange); }
 .sidebarNote { border-top: 1px solid var(--border); color: var(--muted); padding-top: 1.25rem; margin-top: 1.25rem; line-height: 1.7; }
 .body { min-width: 0; }
-.section { scroll-margin-top: 6rem; margin-bottom: 2.5rem; }
+.section { scroll-margin-top: 6rem; margin-bottom: var(--space-10); }
 .section:last-child { margin-bottom: 0; }
 .section > h2 { scroll-margin-top: 6rem; }
-.section p, .section li { font-size: .9375rem; line-height: 1.75; }
-.section p { margin: .75rem 0; }
-.section .lead { font-size: 1.125rem; color: var(--foreground); }
-.summary { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .75rem; margin: 1.5rem 0 1rem; }
-.summary > div { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1rem; display: flex; flex-direction: column-reverse; gap: .5rem; }
-.summary dt { color: var(--muted); font-size: .75rem; }
+.section p, .section li { font-size: var(--text-body); line-height: 1.75; }
+.section p { max-width: 75ch; margin: var(--space-3) 0; }
+.section > ul, .section > ol { max-width: 75ch; }
+.section :global(.product-caption) { font-size: var(--text-caption); }
+.section .lead { font-size: var(--text-section); color: var(--foreground); }
+.summary { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-3); margin: var(--space-6) 0 var(--space-4); }
+.summary > div { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: var(--space-4); display: flex; flex-direction: column-reverse; gap: var(--space-2); }
+.summary dt { color: var(--muted); font-size: var(--text-caption); }
 .summary dd { font-variant-numeric: tabular-nums; font-size: 1.75rem; font-weight: 700; color: var(--accent); margin: 0; }
 .dimensions { min-width: 42rem; }
 .dimensions th { text-align: left; }
 .dimensions th[scope="row"] { font-weight: 600; width: 23%; }
 .dimensions td { vertical-align: top; }
 .dimensions ul { margin: 0; padding-left: 1rem; }
-.dimensions li { font-size: .8125rem; line-height: 1.65; }
+.dimensions li { font-size: var(--text-small); line-height: 1.65; }
 .weight { color: var(--accent); font-weight: 600; white-space: nowrap; font-variant-numeric: tabular-nums; }
-.weight span { display: block; color: var(--muted); font-size: .75rem; font-weight: 400; margin-top: .25rem; }
+.weight span { display: block; color: var(--muted); font-size: var(--text-caption); font-weight: 400; margin-top: var(--space-1); }
 .steps { list-style: decimal; padding-left: 1.75rem; margin: 1rem 0 0; }
 .steps li { border-bottom: 1px solid var(--border); padding: .75rem 0 .75rem .5rem; }
 .steps li::marker { color: var(--accent); font-weight: 600; }
-.steps h3 { font-size: .9375rem; margin: 0; font-weight: 600; }
+.steps h3 { font-size: var(--text-body); margin: 0; font-weight: 600; }
 .steps p { margin: .25rem 0 0; color: var(--muted); }
-.formulas { background: var(--accent-soft); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; }
-.formulas h3 { font-size: .875rem; margin: 0; }
+.formulas { background: var(--accent-soft); border: 1px solid var(--border); border-radius: var(--radius-md); padding: var(--space-6); }
+.formulas h3 { font-size: var(--text-body); margin: 0; }
 .formulas h3:not(:first-child) { border-top: 1px solid var(--border); padding-top: 1.25rem; margin-top: 1.25rem; }
 .formulas .formula { color: var(--accent); font-weight: 600; font-size: 1.0625rem; overflow-wrap: anywhere; }
-.formulas > p:last-child { font-size: .8125rem; margin-bottom: 0; }
+.formulas > p:last-child { font-size: var(--text-small); margin-bottom: 0; }
 .list { padding-left: 1.25rem; margin: 1rem 0 1.5rem; }
 .list li + li { margin-top: .75rem; }
-.page a:focus-visible, .page summary:focus-visible, .page [tabindex]:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.disclosure { margin-top: var(--space-4); border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--surface); }
+.disclosure > summary { min-height: var(--control-height); padding: var(--space-3) var(--space-4); font-size: var(--text-body); font-weight: 600; cursor: pointer; transition: background-color var(--duration-micro) var(--ease-standard); }
+.disclosure > summary:hover { background: var(--panel-hover); }
+.disclosure[open] > summary { border-bottom: 1px solid var(--border); }
+.disclosureBody { min-width: 0; padding: 0 var(--space-4) var(--space-4); }
 @media (max-width: 1000px) {
-  .layout { grid-template-columns: 10.5rem minmax(0, 1fr); gap: 1.5rem; }
+  .layout { grid-template-columns: 10.5rem minmax(0, 1fr); gap: var(--space-6); }
   .summary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 760px) {
-  .layout { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+  .layout { grid-template-columns: minmax(0, 1fr); gap: var(--space-8); }
   .contents { position: static; border-bottom: 1px solid var(--border); padding-bottom: 1rem; }
   .contents ul { display: flex; flex-wrap: wrap; column-gap: 1.25rem; }
   .sidebarNote { display: none; }
-  .formulas { padding: 1rem; }
+  .formulas { padding: var(--space-4); }
 }

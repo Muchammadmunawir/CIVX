@@ -1,0 +1,48 @@
+import type { CivxRegionProductHeader2023 } from "./product-view-types-2023.ts";
+
+export const REPORTING_SCOPE_2023 = "Identitas wilayah dan referensi saja";
+export const REPORTING_RESTRICTION_2023 = "Skor CIVX, skor dimensi, nilai indikator, dan insight belum disetujui untuk rilis publik. Ekspor tidak menyertakan nilai tersebut, data konteks, atau dokumen sumber.";
+export const REPORTING_INTERPRETATION_2023 = "CIVX menggambarkan tekanan relatif, bukan indeks kualitas wilayah, klasifikasi resmi pemerintah, atau rekomendasi kebijakan otomatis.";
+
+export type CsvValue2023 = string | number | null | undefined;
+
+/** RFC 4180 records, UTF-8 BOM for spreadsheets, and text-only formula protection. */
+export function encodeCsv2023(rows: readonly (readonly CsvValue2023[])[]): string {
+  const cell = (value: CsvValue2023): string => {
+    if (value === null || value === undefined) return "";
+    if (typeof value === "number") {
+      if (!Number.isFinite(value)) throw new Error("Nilai angka CSV tidak valid.");
+      return String(value);
+    }
+    // Ignore leading whitespace/control/format characters when detecting formulas.
+    // Prefixing text with an apostrophe prevents spreadsheet execution, not just CSV parsing.
+    const safe = /^[\s\p{Cc}\p{Cf}]*[=+\-@]|^[\t\r\n]/u.test(value) ? `'${value}` : value;
+    return `"${safe.replaceAll('"', '""')}"`;
+  };
+  return `\uFEFF${rows.map(row => row.map(cell).join(",")).join("\r\n")}\r\n`;
+}
+
+export interface CsvReferences2023 {
+  readonly methodologyUrl: string;
+  readonly sourcesUrl: string;
+  readonly reportingUrl: string;
+}
+
+export const EXPLORE_IDENTITY_HEADERS_2023 = [
+  "Kode BPS", "Nama wilayah", "Jenis wilayah", "Provinsi", "Tahun acuan", "Sumber identitas",
+] as const;
+
+/** Explicit identity projection shared by public CSV and Excel; never read analytical payloads. */
+export function getExploreIdentityRows2023(regions: readonly CivxRegionProductHeader2023[]): [string, string, string, string, number, string][] {
+  if (regions.length === 0) throw new Error("Tidak ada wilayah sesuai filter untuk diunduh.");
+  return regions.map(region => [
+    region.id, region.name, region.type === "kabupaten" ? "Kabupaten" : "Kota",
+    region.province, region.referenceYear, "BPS",
+  ]);
+}
+
+/** Public CSV is a compact identity table; disclosures stay on the website and Excel information sheet. */
+export function createExploreCsv2023(regions: readonly CivxRegionProductHeader2023[]): { content: string; filename: string } {
+  const rows = getExploreIdentityRows2023(regions);
+  return { content: encodeCsv2023([EXPLORE_IDENTITY_HEADERS_2023, ...rows]), filename: `civx-jawa-barat-2023-identitas-${regions.length}-wilayah.csv` };
+}

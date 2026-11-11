@@ -208,4 +208,29 @@ The only complete model year remains 2023. The six dimensions are Socioeconomic,
 
 Sources presents existing product evidence for all 18 CORE indicators and seven CONTEXT datasets. The context dataset's actual period is independent of the model year. Missing values remain unavailable; explicit zeros remain zero. Road and air measurements remain individual site observations, and Podes retains village/kelurahan theft occurrence rather than a crime rate.
 
-Existing approximate 2020 display geometry and attribution in §9 remain unchanged. Home and Explore's default map remain neutral; Explore optionally colors regions by one of the six existing CORE dimension scores on a fixed 0–100 single-hue scale. The legend identifies the fixed 27-region 2023 cohort, relative pressure, and non-absolute endpoints, without introducing pressure classes or policy thresholds. Filtering never changes scores or the color scale; excluded regions appear gray, not as zero. UI formatting and color interpolation are presentation-only; model values retain full precision. Webpack is used because the installed Turbopack JSON reserialization changes some frozen floating-point literals.
+Existing approximate 2020 display geometry and attribution in §9 remain unchanged. Home and Explore default to the existing overall CIVX pressure score; Explore additionally offers the six existing CORE dimension scores. Both use the same fixed 0–100 sequential theme-aware scale, with stronger intensity representing higher relative pressure. The legend retains the fixed 27-region 2023 cohort, relative interpretation, and non-absolute endpoints without introducing classes or policy thresholds. Filtering never changes scores or the scale; excluded regions appear gray, while unavailable scores use hatching and never become zero. UI formatting and color interpolation are presentation-only; model values retain full precision. Webpack preserves frozen JSON floating-point literals.
+
+## 16. Phase 3 public reporting boundary
+
+The current product metadata explicitly remains `SCORED_NOT_RELEASED`, `INSIGHTS_NOT_RELEASED`, and `productionIntegrationAuthorized: false`. Source/publication reuse rights and external release approval remain unresolved. Existing frontend integration is not a new license or approval to redistribute modeled results.
+
+The permitted new CSV/report scope consists only of existing BPS-coded identity headers, reference year, public bibliographic references, model definitions, and disclosure text. CSV has no numerical score columns. The A4 report includes dimension/indicator names and source locators, but no regional scores, raw observations, normalized pressures, uncertainty values, insights, CONTEXT, internal artifact pointers, or restricted books. Missing data, explicit zero, and values withheld for authorization remain distinct concepts.
+
+CSV identities come directly from the filtered product headers in canonical BPS order. The serializer preserves UTF-8, RFC 4180 records, quotes/newlines, formula-like text protection, finite numeric precision, and zero versus missing cells. Its public schema accepts no analytical payload. Source links point to original publishers and existing Sources/Methodology disclosures; references do not imply permission to reproduce publications.
+
+Home's former `100 − pressure`, provincial index, arbitrary status thresholds, and best/priority summaries were not supported by the frozen pressure definition. Phase 3 replaces those presentation-only claims with coverage facts. No source, normalization, weight, score, missingness rule, or release flag changes. `/methodology#ekspor-dan-laporan` documents the public scope and the approval prerequisite for numerical exports.
+
+
+## 17. Phase 4 integrity review
+
+All public-facing routes now interpret the unchanged 2023 facade as relative pressure. Compare no longer inverts scores, assigns quality/priority classes, or calculates a provincial mean. Its six dimension values retain the facade names and full precision; comparison differences come from the engine rather than independently rounded display values.
+
+The review does not modify source datasets, normalization, weights, missingness, CORE/CONTEXT separation, or frozen release flags. Source attribution, source periods, denominators, site observations, explicit zeros, and missing reasons remain intact.
+
+Existing numerical screens and ordinary printing outside the regional metadata report are not a release-control boundary. The preview notice is disclosure only. Restricted local/access-controlled review remains the safe option pending documented source rights and model/insight release approval; frontend integration is not that approval.
+
+## 18. Compact portable public identity contract
+
+Public CSV now contains six fields only: BPS code, region name, region type, province, reference year, and short `BPS` source identity. Full attribution, disclosure, and source/methodology links remain available on the website and the separate Excel `Informasi Data` sheet, not repeated in every CSV row. The XLSX `Data Wilayah` sheet contains the same facade identities. Source and repository references were verified; no localhost or invented deployment URL is embedded in these public files.
+
+CSV retains its tested UTF-8 BOM, RFC 4180 escaping, CRLF, and formula defense. Excel stores identifiers/text as text and reference year as an integer, without formula cells or numerical model/indicator payloads. Neither export reads CORE/CONTEXT results. The offline private analytical contract is unchanged. No source rights, release flag, dataset, normalization, scoring, or geography decision changes.
