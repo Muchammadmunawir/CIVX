@@ -1,33 +1,10 @@
-import { createHash } from "node:crypto";
 import type { CivxIndicatorProduct2023, CivxProductSource2023, CivxProductUncertainty2023 } from "../../src/lib/civx/product-view-types-2023.ts";
 import { LOCAL_REPORT_NOTICE_2023, type LocalAnalyticalReport2023 } from "./report-data-2023.ts";
+import { pressureDimensionLabel2023 } from "../../src/lib/civx/visualization-2023.ts";
+import { renderPressureProfileSvg2023 } from "./report-charts-2023.ts";
+import { escapeHtml, link, number, pressure, PRINT_SCRIPT, REPORT_CSP } from "./report-markup-2023.ts";
 
-const PRINT_SCRIPT = 'document.getElementById("print-report").addEventListener("click", function () { window.print(); });';
-const PRINT_HASH = createHash("sha256").update(PRINT_SCRIPT).digest("base64");
 const UNAVAILABLE = "Tidak tersedia pada facade.";
-const pressureFormatter = new Intl.NumberFormat("id-ID", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
-
-function escapeHtml(value: string | number | boolean): string {
-  return String(value).replace(/[&<>"']/g, character => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character]!);
-}
-
-function number(value: number): string {
-  if (typeof value !== "number" || !Number.isFinite(value)) throw new TypeError("Nilai laporan harus berupa angka hingga dari facade.");
-  return String(value);
-}
-
-function pressure(value: number): string {
-  const exact = number(value);
-  if (value < 0 || value > 100) throw new RangeError("Tekanan laporan harus berada pada skala 0–100.");
-  return `<data value="${exact}" title="Nilai facade: ${exact}">${pressureFormatter.format(value)}</data>`;
-}
-
-function link(url: string): string {
-  let parsed: URL;
-  try { parsed = new URL(url); } catch { throw new TypeError("URL sumber atau rujukan laporan tidak sah."); }
-  if (parsed.protocol !== "https:" && parsed.protocol !== "http:") throw new TypeError("URL sumber atau rujukan laporan harus memakai HTTP atau HTTPS.");
-  return `<a href="${escapeHtml(url)}" rel="noreferrer">${escapeHtml(url)}</a>`;
-}
 
 function field(label: string, value: string): string {
   return `<div><dt>${escapeHtml(label)}</dt><dd>${value}</dd></div>`;
@@ -63,7 +40,7 @@ function sourceRoles(indicator: CivxIndicatorProduct2023): readonly (readonly [s
   return [["Sumber utama", indicator.disclosure.source], ["Sumber pembilang", indicator.disclosure.numeratorSource], ["Sumber penyebut", indicator.disclosure.denominatorSource]];
 }
 
-const STYLES = `
+export const LOCAL_REPORT_STYLES_2023 = `
 :root { color-scheme: light; --background:#fafafa; --surface:#ffffff; --foreground:#27272b; --muted:#65636e; --border:#e5e3eb; --accent:#2b0ab5; --accent-hover:#200483; --accent-soft:#f0ecff; --accent-contrast:#ffffff; --orange:#f45a19; }
 * { box-sizing:border-box; }
 body { margin:0; background:var(--background); color:var(--foreground); font:14px/1.6 Arial,Helvetica,sans-serif; }
@@ -101,7 +78,6 @@ caption { text-align:left; margin-bottom:12px; }
 th,td { padding:12px; border-bottom:1px solid var(--border); vertical-align:top; }
 thead th { background:var(--accent-soft); }
 tbody th { font-weight:600; width:42%; }
-.profile { min-width:140px; }
 .numeric { font-variant-numeric:tabular-nums; }
 .indicator { margin:24px 0; padding:20px 0; border-top:1px solid var(--border); }
 .indicator > .details { padding:16px; background:var(--background); }
@@ -111,6 +87,9 @@ li { margin-bottom:8px; }
 .bibliography { margin:0; padding-left:24px; }
 .source { padding:16px 0; break-inside:avoid; page-break-inside:avoid; }
 .muted { color:var(--muted); }
+.pressure-chart { display:block; width:100%; min-width:640px; height:auto; }
+.chart-scroll { break-inside:avoid; page-break-inside:avoid; margin:12px 0; }
+.artifact-hash { grid-column:1 / -1; }
 footer { margin-top:32px; padding-top:16px; border-top:1px solid var(--border); }
 @media (max-width:600px) {
   main { padding:20px 16px; }
@@ -144,6 +123,7 @@ footer { margin-top:32px; padding-top:16px; border-top:1px solid var(--border); 
   section[aria-labelledby="dimensions-heading"] { break-inside:avoid; page-break-inside:avoid; }
   .table-scroll { overflow:visible; }
   table { min-width:0; }
+  .pressure-chart { min-width:0; }
   thead { display:table-header-group; }
   tr,.notice,.details > div { break-inside:avoid; page-break-inside:avoid; }
   .indicator { break-before:auto; page-break-before:auto; margin:12pt 0; padding:8pt 0 0; }
@@ -197,9 +177,9 @@ export function renderLocalAnalyticalHtml2023(report: LocalAnalyticalReport2023)
     field("Lokasi tabel / halaman", optionalText(source.locator)), field("Tanggal publikasi", optionalText(source.publicationDate)),
     field("Tanggal akses", optionalText(source.accessedAt)),
   ].join("")}</dl></li>`).join("");
-  const csp = `default-src 'none'; script-src 'sha256-${PRINT_HASH}'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'; object-src 'none'; connect-src 'none'`;
+  const csp = REPORT_CSP;
   return `<!doctype html>
-<html lang="id"><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="${escapeHtml(csp)}"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="referrer" content="no-referrer"><title>${escapeHtml(region.name)} — Laporan analitis lokal CIVX ${escapeHtml(region.referenceYear)}</title><style>${STYLES}</style></head>
+<html lang="id"><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="${escapeHtml(csp)}"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="referrer" content="no-referrer"><title>${escapeHtml(region.name)} — Laporan analitis lokal CIVX ${escapeHtml(region.referenceYear)}</title><style>${LOCAL_REPORT_STYLES_2023}</style></head>
 <body><main>
 <header><p class="wordmark">CIV<span>X</span></p><h1>Laporan analitis ${escapeHtml(region.name)}</h1>
 <p>Tekanan relatif CIVX · Tahun acuan ${escapeHtml(region.referenceYear)}</p>
@@ -213,17 +193,17 @@ export function renderLocalAnalyticalHtml2023(report: LocalAnalyticalReport2023)
     field("Filter jenis wilayah", escapeHtml(report.filters.type)), field("ID model", escapeHtml(methodology.modelId)),
     field("Versi model", escapeHtml(methodology.modelVersion)), field("Status skor", escapeHtml(methodology.scoreStatus)),
     field("Status insight", escapeHtml(methodology.insightStatus)), field("Integrasi produksi diizinkan", escapeHtml(methodology.productionIntegrationAuthorized)),
-    field("SHA-256 artefak skor", escapeHtml(methodology.sources.scoreArtifact.sha256)),
+    `<div class="artifact-hash"><dt>SHA-256 artefak skor</dt><dd>${escapeHtml(methodology.sources.scoreArtifact.sha256)}</dd></div>`,
   ].join("")}</dl></header>
-<section aria-labelledby="overall-heading"><h2 id="overall-heading">Skor keseluruhan</h2><p class="score">${pressure(core.overallScore)} <small>/ 100</small></p><div class="track" aria-hidden="true"><span style="width:${number(core.overallScore)}%"></span></div><p>${escapeHtml(methodology.interpretation)}</p><p class="muted">Seluruh tekanan ditampilkan dengan pembulatan satu angka desimal. Nilai facade tetap utuh pada elemen data dan panjang batang. Nilai asli indikator tidak dibulatkan ulang.</p></section>
-<section aria-labelledby="dimensions-heading"><h2 id="dimensions-heading">Profil enam dimensi</h2><div class="table-scroll" role="region" aria-labelledby="dimensions-heading" tabindex="0"><table><caption>Tekanan relatif pada skala tetap 0–100; angka lebih tinggi berarti tekanan relatif lebih tinggi.</caption><thead><tr><th scope="col">Dimensi</th><th scope="col">Skor tekanan / 100</th><th scope="col">Profil 0–100</th></tr></thead><tbody>${core.dimensions.map(dimension => `<tr><th scope="row">${escapeHtml(dimension.displayName)}</th><td class="numeric">${pressure(dimension.score)}</td><td class="profile"><div class="track" aria-hidden="true"><span style="width:${number(dimension.score)}%"></span></div></td></tr>`).join("")}</tbody></table></div></section>
+<section aria-labelledby="overall-heading"><h2 id="overall-heading">Skor keseluruhan</h2><p class="score">${pressure(core.overallScore)} <small>/ 100</small></p><div class="track" aria-hidden="true"><span style="width:${number(core.overallScore)}%"></span></div><p>Tekanan relatif pada kohort tetap 27 kabupaten/kota Jawa Barat 2023, bukan kualitas wilayah atau hubungan kausal. Tampilan dibulatkan satu desimal; grafik dan elemen data memakai nilai penuh. Nilai asli indikator tidak dibulatkan ulang.</p></section>
+<section aria-labelledby="dimensions-heading"><h2 id="dimensions-heading">Profil enam dimensi</h2>${renderPressureProfileSvg2023(core.dimensions)}<div class="table-scroll" role="region" aria-labelledby="dimensions-heading" tabindex="0"><table><caption>Tekanan relatif pada skala tetap 0–100; angka lebih tinggi berarti tekanan relatif lebih tinggi.</caption><thead><tr><th scope="col">Dimensi</th><th scope="col">Skor tekanan / 100</th></tr></thead><tbody>${core.dimensions.map(dimension => `<tr><th scope="row">${escapeHtml(pressureDimensionLabel2023(dimension.dimensionId))}</th><td class="numeric">${pressure(dimension.score)}</td></tr>`).join("")}</tbody></table></div></section>
 <section aria-labelledby="indicators-heading"><h2 id="indicators-heading">Seluruh indikator CORE</h2><p>Setiap nilai berikut berasal dari facade untuk wilayah terpilih. Periode, satuan, dan operand dipertahankan sesuai sumber.</p>${indicators}</section>
 <section class="new-page" aria-labelledby="sources-heading"><h2 id="sources-heading">Bibliografi sumber</h2><p>Nomor rujukan menghubungkan setiap indikator dengan sumber utama, pembilang, dan penyebutnya. Catatan dengan lokasi atau tanggal berbeda dipertahankan terpisah.</p><ol class="bibliography">${bibliography}</ol></section>
 <section class="new-page" aria-labelledby="method-heading"><h2 id="method-heading">Metodologi dan batas interpretasi</h2>
 <p>Kohort model tetap ${escapeHtml(methodology.cohortSize)} ${escapeHtml(methodology.geographicLevel)} di ${escapeHtml(methodology.province)}, tahun ${escapeHtml(methodology.referenceYear)}. Filter hanya menentukan pemilihan laporan; filter tidak mengubah kohort atau kalibrasi model.</p>
-<p>Model memakai normalisasi min–max berarah terhadap kohort tetap 2023. Enam dimensi berbobot sama; indikator dalam setiap dimensi berbobot sama. Laporan memakai nilai facade tanpa normalisasi, pembobotan, atau penghitungan skor ulang.</p>
+<p>Model memakai normalisasi min–max berarah terhadap kohort tetap 2023. Batas indikator 0 dan 100 bersifat relatif terhadap kohort, bukan batas teoretis dunia nyata. Enam dimensi berbobot sama; indikator dalam setiap dimensi berbobot sama. Laporan memakai nilai facade tanpa normalisasi, pembobotan, atau penghitungan skor ulang.</p>
 <ul>${methodology.notes.map(note => `<li>${escapeHtml(note)}</li>`).join("")}</ul>
-<p>Skor adalah tekanan relatif, bukan indeks kualitas wilayah, probabilitas, klasifikasi resmi pemerintah, atau besaran kerugian absolut. Hubungan antarindikator tidak membuktikan kausalitas. Laporan bukan prediksi, rekomendasi kebijakan, atau dasar keputusan otomatis.</p>
+<p>Skor adalah tekanan relatif, bukan indeks kualitas hidup, ukuran kinerja pemerintah, probabilitas, klasifikasi resmi pemerintah, atau besaran kerugian absolut. Hubungan antarindikator tidak membuktikan kausalitas. Laporan bukan prediksi, rekomendasi kebijakan, atau dasar keputusan otomatis.</p>
 <p>Ketidakpastian hanya disajikan bila tersedia pada sumber. Metadata yang tidak tersedia bukan nol dan bukan bukti kepastian. Interval, ukuran sampel, dan galat sumber tidak dipropagasikan menjadi interval skor CIVX. Perbedaan periode, definisi, penyebut, dan cakupan membatasi perbandingan; lihat setiap indikator.</p>
 <p>Hak penggunaan dan redistribusi sumber serta persetujuan rilis model belum tuntas. Akses ke sumber tidak otomatis memberi izin publikasi ulang. Pembuatan HTML atau PDF lokal tidak mengubah status rilis. Jangan unggah laporan ke repository, lampiran publik, aset aplikasi, atau penyimpanan publik.</p>
 <dl class="details">${field("Rujukan metodologi", link(report.references.methodologyUrl))}${field("Rujukan sumber", link(report.references.sourcesUrl))}${field("Ketentuan pelaporan", link(report.references.reportingUrl))}${field("Artefak skor", escapeHtml(methodology.sources.scoreArtifact.path))}${field("Rancangan normalisasi", escapeHtml(methodology.sources.normalizationPath))}${field("Rancangan bobot", escapeHtml(methodology.sources.weightingPath))}</dl></section>

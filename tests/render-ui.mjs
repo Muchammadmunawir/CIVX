@@ -6,7 +6,7 @@ import ts from "typescript";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const require = createRequire(import.meta.url);
-const nextModules = new Map(["next/link", "next/navigation"].map(specifier => [specifier, pathToFileURL(require.resolve(specifier)).href]));
+const nextModules = new Map(["next/link", "next/navigation", "next/form"].map(specifier => [specifier, pathToFileURL(require.resolve(specifier)).href]));
 
 // Render real components in Node without bundling. CSS has no behavior under test.
 registerHooks({

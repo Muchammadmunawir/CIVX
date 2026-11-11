@@ -47,7 +47,6 @@
 .similarCard h3 { margin: 0 0 0.5rem; font-size: 1rem; line-height: 1.6; font-weight: 600; }
 .distance { margin: 0 0 1rem; color: var(--muted); font-size: var(--text-small); line-height: 1.7; }
 .distance strong { color: var(--foreground); font-variant-numeric: tabular-nums; font-weight: 600; }
-.similarCard :global(.dimension-row) { margin-bottom: var(--space-2); }
 .similarCard > a { align-self: start; margin-top: auto; }
 
 @media (max-width: 1000px) {

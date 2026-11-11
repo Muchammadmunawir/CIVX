@@ -5,8 +5,11 @@ import { IndicatorDisclosure } from "@/components/product/indicator-disclosure";
 import { regionType } from "@/components/product/format";
 import { DimensionBars, PageHeading, ResultsNotice, ScoreDisplay } from "@/components/product/product-ui";
 import { SectionReveals } from "@/components/product/section-reveals";
-import { getRegionProductView2023 } from "@/lib/civx/product-2023";
+import { getExploreRegionsProduct2023, getRegionProductView2023 } from "@/lib/civx/product-2023";
 import { getSimilarRegions2023 } from "@/lib/civx/similar-regions-2023";
+import { cohortPressureData2023, similarPressureData2023, pressureDimensionLabel2023 } from "@/lib/civx/visualization-2023";
+import { CohortPressureChart, SimilarPressureChart } from "@/components/charts/regional-profile-charts";
+import { PressureSeriesMark } from "@/components/charts/pressure-plot";
 import { RegionSilhouette } from "./region-silhouette";
 import { PrintReportButton } from "./print-report-button";
 import { RegionalPrintReport } from "./regional-print-report";
@@ -20,6 +23,8 @@ export function RegionDetail({ id }: { id: string }) {
   const { region, core, context, methodology } = view;
   const prefix = `region-${region.id}`;
   const similarRegions = getSimilarRegions2023(region.id);
+  const distribution = cohortPressureData2023(getExploreRegionsProduct2023(), region.id);
+  const similarProfiles = similarRegions ? similarPressureData2023({ region, core }, similarRegions) : undefined;
 
   return <SectionReveals as="article" className={`civx-container product-page ${styles.page}`} selector="[data-region-screen] [data-reveal]">
     <div data-region-screen>
@@ -57,6 +62,7 @@ export function RegionDetail({ id }: { id: string }) {
 
     <nav className={styles.anchors} aria-label="Bagian detail wilayah">
       <a href={`#${prefix}-profile`}>Profil dimensi</a>
+      <a href={`#${prefix}-distribution`}>Sebaran kohort</a>
       <a href={`#${prefix}-similar`}>Profil serupa</a>
       <a href={`#${prefix}-indicators`}>Rincian indikator</a>
       <a href={`#${prefix}-context`}>Data konteks</a>
@@ -79,13 +85,17 @@ export function RegionDetail({ id }: { id: string }) {
       </section>
     </div>
 
+    <div className={`product-section ${styles.section}`} id={`${prefix}-distribution`} data-reveal>
+      <CohortPressureChart data={distribution} />
+    </div>
+
     {similarRegions && similarRegions.length > 0 && <section className={`product-section ${styles.section}`} id={`${prefix}-similar`} aria-labelledby={`${prefix}-similar-title`} data-reveal>
       <h2 className="product-section-title" id={`${prefix}-similar-title`}>Wilayah dengan Profil Serupa</h2>
       <p className={styles.similarIntro}>Pratinjau analitis terbatas pada kohort tetap {methodology.cohortSize} kabupaten/kota Jawa Barat 2023. Jarak Euclidean lebih kecil berarti pola tekanan relatif enam dimensi CORE lebih dekat, bukan skor CIVX baru.</p>
-      <ul className={styles.similarGrid}>{similarRegions.map(peer => <li className={`product-card ${styles.similarCard}`} key={peer.region.id}>
-        <h3>{peer.region.name}</h3>
-        <p className={styles.distance}>Jarak profil: <strong>{distanceFormatter.format(peer.distance)}</strong></p>
-        <DimensionBars dimensions={peer.dimensions} compact />
+      {similarProfiles && <SimilarPressureChart data={similarProfiles} />}
+      <ul className={styles.similarGrid}>{similarRegions.map((peer, index) => <li className={`product-card ${styles.similarCard}`} key={peer.region.id}>
+        <h3><PressureSeriesMark slot={index === 0 ? "b" : index === 1 ? "c" : "d"} /> <Link href={`/regions/${peer.region.id}`}>{peer.region.name}</Link></h3>
+        <p className={styles.distance}>Jarak profil: <strong><data value={peer.distance}>{distanceFormatter.format(peer.distance)}</data></strong></p>
         <Link className="civx-button civx-button-secondary" href={`/compare?a=${region.id}&b=${peer.region.id}`} aria-label={`Bandingkan ${region.name} dengan ${peer.region.name}`}>Bandingkan profil <span aria-hidden="true">→</span></Link>
       </li>)}</ul>
       <p className="product-caption">Skala tekanan dimensi 0–100 · lebih tinggi berarti tekanan relatif lebih tinggi. Jarak profil bukan persentase kemiripan.</p>
@@ -99,7 +109,7 @@ export function RegionDetail({ id }: { id: string }) {
       </div>
       <p className="product-caption">Nilai asli dan tekanan ternormalisasi adalah dua besaran berbeda. Buka indikator untuk definisi, sumber, dan keterbatasannya.</p>
       <div className={styles.indicatorGroups}>{core.dimensions.map(dimension => <section className={`product-card ${styles.indicatorGroup}`} key={dimension.dimensionId} aria-labelledby={`${prefix}-${dimension.dimensionId}`} data-reveal>
-        <h3 id={`${prefix}-${dimension.dimensionId}`}>{dimension.displayName}</h3>
+        <h3 id={`${prefix}-${dimension.dimensionId}`}>{pressureDimensionLabel2023(dimension.dimensionId)}</h3>
         {core.indicators.filter(indicator => indicator.dimensionId === dimension.dimensionId).map(indicator => <IndicatorDisclosure key={indicator.indicatorId} indicator={indicator} />)}
       </section>)}</div>
     </section>

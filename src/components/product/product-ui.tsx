@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import type { CivxDimensionProduct2023, CivxProductSource2023 } from "@/lib/civx/product-view-types-2023";
 import { formatScore } from "./format";
+import { pressureDimensionLabel2023 } from "@/lib/civx/visualization-2023";
 
 export function PageHeading({ title, description, breadcrumb, action }: {
   title: string; description: string; breadcrumb?: string; action?: ReactNode;
@@ -27,20 +28,11 @@ export function ScoreDisplay({ score, label = "Skor CIVX 2023" }: { score: numbe
   return <div className="product-score"><p>{label}</p><strong>{formatScore(score)} <small>/ 100</small></strong></div>;
 }
 
-const compactDimensionLabels: Readonly<Record<string, string>> = {
-  socioeconomic: "Sosial ekonomi",
-  education: "Pendidikan",
-  basic_services: "Layanan dasar",
-  public_health: "Kesehatan publik",
-  disaster_pressure: "Risiko bencana",
-  environment: "Kualitas lingkungan",
-};
-
-export function DimensionBars({ dimensions, compact = false }: { dimensions: readonly CivxDimensionProduct2023[]; compact?: boolean }) {
+export function DimensionBars({ dimensions }: { dimensions: readonly CivxDimensionProduct2023[] }) {
   return <div className="dimension-bars">{dimensions.map(dimension => <div className="dimension-row" key={dimension.dimensionId}>
-    <div><span title={compact ? dimension.displayName : undefined}>{compact ? compactDimensionLabels[dimension.dimensionId] ?? dimension.displayName : dimension.displayName}</span><strong>{formatScore(dimension.score)}</strong></div>
+    <div><span>{pressureDimensionLabel2023(dimension.dimensionId)}</span><strong>{formatScore(dimension.score)}</strong></div>
     <div className="pressure-track" aria-hidden="true"><span style={{ width: `${dimension.score}%` }} /></div>
-  </div>)}{!compact && <p className="product-caption">Skala tekanan relatif 0–100 · lebih tinggi berarti tekanan relatif lebih tinggi.</p>}</div>;
+  </div>)}<p className="product-caption">Skala tekanan relatif 0–100 · lebih tinggi berarti tekanan relatif lebih tinggi.</p></div>;
 }
 
 export function SourceLink({ source }: { source: CivxProductSource2023 }) {

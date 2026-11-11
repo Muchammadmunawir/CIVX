@@ -82,9 +82,6 @@ test("RegionDetail renders six dimensions and all 18 real indicator values with 
   const widths = [...dimensions.matchAll(/style="width:([^%]+)%"/g)].map(match => Number(match[1]));
   assert.equal(widths.length, 6);
   assert.deepEqual(widths, view.core.dimensions.map(dimension => dimension.score));
-  for (const dimension of view.core.dimensions) {
-    assert.ok(dimensions.includes(`<span>${escape(dimension.displayName)}</span><strong>${escape(formatScore(dimension.score))}</strong>`));
-  }
   const indicators = section(html, "id", `region-${view.region.id}-indicators`);
   const summaries = elements(indicators, "summary").map(element => element.body);
   const indicatorSummaries = summaries.filter(summary => view.core.indicators.some(indicator => summary.includes(`<strong>${escape(indicator.displayName)}</strong>`)));

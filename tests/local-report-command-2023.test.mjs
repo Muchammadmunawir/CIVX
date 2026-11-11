@@ -84,6 +84,8 @@ test("invalid or publication/output arguments create no report files and never s
     ["--region", "3273", "--q", "zz-not-found"], ["--region", "3273", "--type", "province"],
     ["--region", "3273", "--public", "true"], ["--region", "3273", "--out", "public/reports"],
     ["--region", "3273", "--region", "3201"],
+    ["--region", "3273", "--compare-with", "unknown"], ["--region", "3273", "--compare-with", ""],
+    ["--region", "3273", "--compare-with"], ["--region", "3273", "--compare-with", "3201", "--public", "true"],
   ];
   for (const args of cases) {
     const result = run(base, args);
@@ -91,4 +93,20 @@ test("invalid or publication/output arguments create no report files and never s
     assert.equal(result.stdout, "");
     assert.deepEqual(readdirSync(base), []);
   }
+});
+
+test("explicit peer creates only an additional private comparison document without changing filtered CSV scope", t => {
+  const base = temporary(t);
+  const result = run(base, ["--region", "3273", "--q", "Bandung", "--type", "kota", "--compare-with", "3201"]);
+  assert.equal(result.status, 0, result.stderr);
+  const output = JSON.parse(result.stdout);
+  const comparisonPath = fileURLToPath(output.comparisonHtml);
+  assert.equal(output.regions, 1);
+  assert.equal(relative(output.directory, comparisonPath).split(sep).length, 1);
+  if (process.platform !== "win32") assert.equal(statSync(comparisonPath).mode & 0o777, 0o600);
+  const html = readFileSync(comparisonPath, "utf8");
+  for (const id of ["3273", "3201"]) assert.ok(html.includes(`Kode BPS ${id}`));
+  assert.equal([...html.matchAll(/<tr data-indicator-id=/g)].length, 18);
+  assert.deepEqual([...readFileSync(output.csv, "utf8").matchAll(/\r\n"(\d{4})",/g)].map(match => match[1]), ["3273"]);
+  assert.equal(readdirSync(output.directory).length, 3);
 });

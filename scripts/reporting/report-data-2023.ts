@@ -1,6 +1,7 @@
-import { getExploreRegionsProduct2023, getRegionProductView2023 } from "../../src/lib/civx/product-2023.ts";
+import { getComparisonProductView2023, getExploreRegionsProduct2023, getRegionProductView2023 } from "../../src/lib/civx/product-2023.ts";
 import type { CsvReferences2023 } from "../../src/lib/civx/export-2023.ts";
-import type { CivxCoreProduct2023, CivxProductMethodology2023, CivxRegionProductHeader2023 } from "../../src/lib/civx/product-view-types-2023.ts";
+import type { CivxComparisonProductView2023, CivxCoreProduct2023, CivxProductMethodology2023, CivxRegionProductHeader2023 } from "../../src/lib/civx/product-view-types-2023.ts";
+import { comparisonPressureData2023, type PressureComparisonData2023 } from "../../src/lib/civx/visualization-2023.ts";
 
 export const LOCAL_REPORT_SCOPE_2023 = "LOCAL_RESTRICTED_REVIEW" as const;
 export const LOCAL_REPORT_NOTICE_2023 = "Laporan analitis untuk peninjauan lokal terbatas. Skor dan nilai indikator belum diizinkan untuk redistribusi atau rilis publik. Pemberitahuan ini bukan izin publikasi.";
@@ -58,5 +59,33 @@ export function prepareLocalAnalyticalReport2023(
       sourcesUrl: "http://localhost:3000/sources",
       reportingUrl: "http://localhost:3000/methodology#ekspor-dan-laporan",
     }),
+  });
+}
+
+export interface LocalComparisonReport2023 {
+  readonly scope: typeof LOCAL_REPORT_SCOPE_2023;
+  readonly regionA: LocalReportRegion2023;
+  readonly regionB: LocalReportRegion2023;
+  readonly comparison: PressureComparisonData2023;
+  readonly overall: CivxComparisonProductView2023["core"]["overall"];
+  readonly references: CsvReferences2023;
+}
+
+/** Additional local document only; the explicit peer is independent of CSV filters. */
+export function prepareLocalComparisonReport2023(report: LocalAnalyticalReport2023, peerId: string): LocalComparisonReport2023 {
+  const peer = getRegionProductView2023(peerId);
+  if (!peer) throw new RangeError("Kode BPS wilayah pembanding tidak dikenal.");
+  const view = getComparisonProductView2023(report.selected.region.id, peerId);
+  return Object.freeze({
+    scope: LOCAL_REPORT_SCOPE_2023,
+    regionA: report.selected,
+    regionB: Object.freeze({
+      region: peer.region,
+      core: Object.freeze({ scope: peer.core.scope, overallScore: peer.core.overallScore, dimensions: peer.core.dimensions, indicators: peer.core.indicators }),
+      methodology: peer.methodology,
+    }),
+    comparison: comparisonPressureData2023(view),
+    overall: view.core.overall,
+    references: report.references,
   });
 }

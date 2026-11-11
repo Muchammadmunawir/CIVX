@@ -30,33 +30,13 @@ function assertComparisonOutput(selection) {
   assert.ok(overall?.includes(`<strong>${escape(formatScore(comparison.core.overall.absoluteDifference))} <span>poin</span></strong>`));
   assert.ok(overall?.includes(`<strong>${escape(formatDifference(comparison.core.overall.delta))}</strong> poin`));
 
-  const dimensions = html.split('aria-labelledby="dimensions-heading"')[1]?.split("</section>")[0];
-  assert.equal(comparison.core.dimensions.length, 6);
-  assert.equal((dimensions.match(/<h3>/g) ?? []).length, 6);
-  const rows = comparison.core.dimensions.map(dimension => {
-    const label = escape(dimension.dimensionName);
-    const row = dimensions.split(`<h3>${label}</h3>`)[1]?.split("<h3>")[0];
-    assert.ok(row, dimension.dimensionName);
-    const a = formatScore(dimension.regionAScore), b = formatScore(dimension.regionBScore);
-    assert.ok(row.includes(`<strong>${escape(a)}</strong> / <b>${escape(b)}</b>`), dimension.dimensionName);
-    for (const [side, score] of [["A", dimension.regionAScore], ["B", dimension.regionBScore]]) {
-      const width = row.match(new RegExp(`<div[^>]*data-side="${side}"[^>]*><span style="width:([^"]+)"`))?.[1];
-      assert.equal(width, `${score}%`, `${dimension.dimensionId} ${side} bar retains full facade precision`);
-    }
-    return [dimension.dimensionName, a, b, formatScore(dimension.absoluteDifference)];
-  });
-
-  const tables = [...html.matchAll(/<table\b[^>]*>([\s\S]*?)<\/table>/g)].map(match => match[1]);
-  assert.equal(tables.length, 1);
-  const body = tables[0].match(/<tbody>([\s\S]*?)<\/tbody>/)[1];
-  const cells = [...body.matchAll(/<tr>([\s\S]*?)<\/tr>/g)]
-    .map(match => [...match[1].matchAll(/<(?:td|th)\b[^>]*>([\s\S]*?)<\/(?:td|th)>/g)].map(cell => text(cell[1])));
-  assert.deepEqual(cells, [...rows, [
-    "Tekanan relatif keseluruhan1",
-    formatScore(comparison.core.overall.regionAScore),
-    formatScore(comparison.core.overall.regionBScore),
-    formatScore(comparison.core.overall.absoluteDifference),
-  ]].map(row => row.map(escape)));
+  const bodies = [...html.matchAll(/<tbody>([\s\S]*?)<\/tbody>/g)].map(match => match[1]);
+  const body = bodies.find(value => [...value.matchAll(/<tr\b/g)].length === 7);
+  assert.ok(body, "Six dimensions and overall score retain a semantic table equivalent");
+  const numericRows = [...body.matchAll(/<tr\b[^>]*>([\s\S]*?)<\/tr>/g)]
+    .map(match => [...match[1].matchAll(/<td\b[^>]*>([\s\S]*?)<\/td>/g)].map(cell => text(cell[1])));
+  assert.deepEqual(numericRows, [...comparison.core.dimensions, comparison.core.overall].map(row =>
+    [row.regionAScore, row.regionBScore, row.absoluteDifference].map(value => escape(formatScore(value)))));
   return html;
 }
 
@@ -67,13 +47,12 @@ function selectedOption(html, side) {
   return select.match(/<option value="([^"]*)"[^>]*selected=""/)?.[1];
 }
 
-test("distinct-region comparison renders facade pressure scores and all six full-precision dimension bars", () => {
+test("distinct-region comparison preserves facade pressure values and selected identities", () => {
   const selection = selectComparison("3276", "3202");
   assert.deepEqual(selection.comparison, getComparisonProductView2023("3276", "3202"));
   const html = assertComparisonOutput(selection);
   assert.equal(selectedOption(html, "a"), "3276");
   assert.equal(selectedOption(html, "b"), "3202");
-  assert.match(html, /<form action="\/compare" method="get"/);
 });
 
 test("omitted URL selections keep the existing distinct default comparison", () => {
@@ -124,7 +103,7 @@ test("pair swaps render facade A/B values, unchanged absolute distances and reve
   assertComparisonOutput(reverse);
 });
 
-test("same-region selection remains valid and renders identical scores, bars and exact zero differences", () => {
+test("same-region selection remains valid with identical scores and exact zero differences", () => {
   const selection = selectComparison("3273", "3273");
   const expected = getComparisonProductView2023("3273", "3273");
   assert.deepEqual(selection.comparison, expected);

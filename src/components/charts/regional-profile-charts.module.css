@@ -1,0 +1,51 @@
+.chart { min-width: 0; max-width: 100%; color: var(--foreground); }
+.description { color: var(--muted); font-size: var(--text-small); margin: 0 0 var(--space-4); }
+.legendControls { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-3); }
+.legendButton { display: inline-flex; align-items: center; gap: var(--space-3); min-height: var(--control-height); max-width: 100%; padding: var(--space-2) var(--space-3); border: 1px solid var(--border-strong); border-radius: var(--radius-sm); background: var(--surface); color: var(--foreground); text-align: left; font-size: var(--text-small); transition: background-color var(--duration-micro) var(--ease-standard), border-color var(--duration-micro) var(--ease-standard); }
+.legendButton > span:not(:first-child) { min-width: 0; overflow-wrap: anywhere; }
+.legendButton small { display: block; color: var(--muted); font-size: var(--text-caption); }
+.legendButton:hover { background: var(--panel-hover); }
+.legendButton[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); }
+.legendButton:active { border-color: var(--foreground); }
+.legendButton:focus-visible, .cohortRow:focus-visible, .equivalent > summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.highlightLabel { font-size: var(--text-caption); font-weight: 600; }
+.legendButton[aria-pressed="false"] .highlightLabel { visibility: hidden; }
+.activeHeading { margin: 0 0 var(--space-3); font-size: var(--text-small); }
+.similarRows, .cohortRows { min-width: 0; margin-bottom: var(--space-4); }
+.axis { min-width: 0; }
+.similarRow, .cohortRow { min-width: 0; padding-block: var(--space-2); border-bottom: 1px solid var(--border); }
+.dimensionLabel { min-width: 0; font-size: var(--text-small); font-weight: 600; overflow-wrap: anywhere; }
+.rowPlot { min-width: 0; }
+.similarRow { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0 var(--space-3); align-items: center; }
+.similarRow .rowPlot { grid-column: 1 / -1; grid-row: 2; }
+.activeValue { display: inline-flex; align-items: center; gap: var(--space-2); min-width: 4rem; font-size: var(--text-body); font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.legend { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-5); list-style: none; margin: 0 0 var(--space-4); padding: 0; font-size: var(--text-small); }
+.legend li { display: flex; align-items: center; gap: var(--space-2); min-width: 0; }
+.legend li > span:last-child { overflow-wrap: anywhere; }
+.cohortRow { border-radius: var(--radius-sm); }
+.cohortRow:focus-visible { background: var(--panel-hover); }
+.cohortRow:focus-visible [data-selected="true"] { --point-scale: 1.15; }
+.cohortValues { display: flex; flex-wrap: wrap; gap: var(--space-1) var(--space-4); margin: 0; font-size: var(--text-small); }
+.cohortValues > span { min-width: 0; overflow-wrap: anywhere; }
+.cohortValues data { font-variant-numeric: tabular-nums; font-weight: 600; }
+.position { flex-basis: 100%; color: var(--muted); }
+.equivalent { min-width: 0; border-top: 1px solid var(--border); }
+.equivalent > summary { color: var(--foreground); font-size: var(--text-small); font-weight: 600; border-radius: var(--radius-sm); overflow-wrap: anywhere; transition: background-color var(--duration-micro) var(--ease-standard); }
+.equivalent > summary:hover { background: var(--panel-hover); }
+.valueTable { table-layout: fixed; width: 100%; border-collapse: collapse; text-align: left; font-size: var(--text-small); }
+.valueTable caption { padding-block: var(--space-2) var(--space-3); color: var(--muted); text-align: left; }
+.valueTable th, .valueTable td { padding: var(--space-3) var(--space-2); border-bottom: 1px solid var(--border); vertical-align: top; overflow-wrap: anywhere; }
+.valueTable th { font-weight: 500; }
+.valueTable th:last-child, .valueTable td:last-child { width: 24%; text-align: right; font-variant-numeric: tabular-nums; }
+.tableNote { display: block; color: var(--muted); font-size: var(--text-caption); }
+@media (min-width: 760px) {
+  .similarRow { grid-template-columns: minmax(0, 12rem) minmax(0, 1fr) 4rem; gap: var(--space-3); }
+  .similarRow .rowPlot { grid-column: auto; grid-row: auto; }
+  .similarRows .axis { margin-left: calc(12rem + var(--space-3)); margin-right: calc(4rem + var(--space-3)); }
+  .activeValue { justify-content: flex-end; }
+  .cohortRow { display: grid; grid-template-columns: minmax(0, 12rem) minmax(0, 1fr); gap: 0 var(--space-4); align-items: center; }
+  .cohortValues { grid-column: 2; }
+  .cohortRows .axis { margin-left: calc(12rem + var(--space-4)); }
+}
+@media (prefers-reduced-motion: reduce) { .legendButton, .equivalent > summary { transition: none; } }
+@media print { .legendButton, .equivalent > summary { transition: none; } .cohortRow { break-inside: avoid; } }

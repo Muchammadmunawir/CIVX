@@ -1,0 +1,71 @@
+.section { min-width: 0; }
+.description, .note { color: var(--muted); font-size: var(--text-small); }
+.note { margin: var(--space-4) 0 0; }
+.switcher { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-block: var(--space-4); }
+.switcher button { min-height: var(--control-height); border: 1px solid var(--border-strong); border-radius: var(--radius-sm); background: var(--surface); color: var(--foreground); padding: var(--space-2) var(--space-3); font-size: var(--text-small); font-weight: 500; transition: background-color var(--duration-standard) var(--ease-standard), border-color var(--duration-micro) var(--ease-standard), color var(--duration-micro) var(--ease-standard); }
+.switcher button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-contrast); }
+.switcher button:hover:not([aria-pressed="true"]) { background: var(--accent-soft); border-color: var(--accent); }
+.legend { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2) var(--space-5); margin: 0 0 var(--space-4); color: var(--foreground); font-size: var(--text-small); }
+.legend > span { display: inline-flex; align-items: center; gap: var(--space-2); min-width: 0; overflow-wrap: anywhere; }
+.rows { list-style: none; display: grid; gap: var(--space-1); margin: var(--space-2) 0; padding: 0; }
+.row { min-width: 0; border-bottom: 1px solid var(--border); }
+.row:last-child { border-bottom: 0; }
+.rowContent { border-radius: var(--radius-sm); padding: var(--space-3) 0; transition: background-color var(--duration-micro) var(--ease-standard); }
+.rowContent:hover, .rowContent:focus-visible { background: var(--panel-hover); }
+.rowContent:is(:hover, :focus-visible) [data-score] { --point-scale: 1.15; }
+.viewEntry { animation: view-entry var(--duration-standard) var(--ease-standard); }
+@keyframes view-entry { from { opacity: .8; transform: translateY(3px); } to { opacity: 1; transform: none; } }
+.rowHeading { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: var(--space-2) var(--space-4); }
+.rowHeading h3 { margin: 0; font-size: var(--text-small); font-weight: 600; overflow-wrap: anywhere; }
+.pair { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); margin: 0; color: var(--foreground); font-size: var(--text-small); font-variant-numeric: tabular-nums; }
+.pair span { white-space: nowrap; }
+.pair data { font-weight: 600; }
+.readout { margin: 0; color: var(--muted); font-size: var(--text-caption); overflow-wrap: anywhere; }
+.readout data { color: var(--foreground); font-weight: 600; font-variant-numeric: tabular-nums; }
+.bars { display: grid; gap: var(--space-2); margin-inline: var(--space-2); padding-block: var(--space-4); }
+.barRow { display: grid; grid-template-columns: 12px minmax(0, 1fr); align-items: center; gap: var(--space-2); }
+.barRow > span { color: var(--foreground); font-size: var(--text-caption); font-weight: 600; line-height: 1; }
+.barScale { margin-inline-start: 20px; }
+.track { background: var(--accent-soft); border-radius: 4px; height: 5px; overflow: hidden; }
+.track > span { background: var(--accent); border-radius: 4px; display: block; height: 100%; transition: width var(--duration-emphasis) var(--ease-standard); }
+.track[data-side="B"] > span { background: var(--comparison-b); }
+.directionLabels { display: flex; justify-content: space-between; gap: var(--space-3); color: var(--muted); font-size: var(--text-caption); margin: 0 var(--space-2) var(--space-2); }
+.deltaValue { margin: 0; font-size: var(--text-body); font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.deltaValue > span { color: var(--muted); font-size: var(--text-caption); font-weight: 400; }
+.signedPlot { position: relative; height: 64px; margin-inline: var(--space-2); }
+.signedPlot > svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.gridline { stroke: var(--border); stroke-width: 1; stroke-dasharray: 2 4; }
+.zeroAxis { stroke: var(--foreground); stroke-width: 1; }
+.baseline { stroke: var(--border-strong); stroke-width: 1; }
+.deltaBar { position: absolute; top: 30px; height: 4px; background: var(--accent); transition: left var(--duration-emphasis) var(--ease-standard), width var(--duration-emphasis) var(--ease-standard); }
+.deltaBar[data-relation="B_HIGHER"] { background: var(--comparison-b); }
+.deltaEndpoint { position: absolute; top: 32px; display: flex; align-items: center; justify-content: center; transform: translate(-50%, -50%); transition: left var(--duration-emphasis) var(--ease-standard); }
+.equalMark { width: 4px; height: 12px; border-radius: 1px; background: var(--foreground); }
+.details { margin-top: var(--space-5); padding-top: var(--space-4); border-top: 1px solid var(--border); }
+.details summary { min-height: var(--control-height); padding-block: var(--space-2); color: var(--foreground); font-weight: 600; font-size: var(--text-small); }
+.details[open] summary { margin-bottom: var(--space-2); }
+.tableWrap { max-width: 100%; overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius-sm); }
+.table { min-width: 720px; width: 100%; border-collapse: collapse; font-size: var(--text-small); text-align: left; }
+.table caption { padding: var(--space-3) var(--space-4); color: var(--muted); text-align: left; }
+.table th, .table td { padding: var(--space-3); border-bottom: 1px solid var(--border); vertical-align: top; }
+.table thead th { background: var(--panel-hover); color: var(--foreground); font-weight: 600; }
+.table tbody th { min-width: 160px; font-weight: 500; }
+.table data { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.table tbody tr:last-child > * { border-bottom: 0; }
+.table tbody tr:hover > * { background: var(--panel-hover); }
+@media (max-width: 480px) {
+  .section { padding: var(--space-4); }
+  .switcher { display: grid; grid-template-columns: minmax(0, 1fr); }
+  .rowHeading { align-items: flex-start; flex-direction: column; }
+  .legend { align-items: flex-start; flex-direction: column; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .switcher button, .rowContent, .track > span, .deltaBar, .deltaEndpoint { transition: none; }
+  .viewEntry { animation: none; }
+}
+@media print {
+  .switcher button, .rowContent, .track > span, .deltaBar, .deltaEndpoint { transition: none; }
+  .viewEntry { animation: none; }
+  .tableWrap { overflow: visible; }
+  .table { min-width: 0; }
+}

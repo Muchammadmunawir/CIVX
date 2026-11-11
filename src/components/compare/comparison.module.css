@@ -40,13 +40,14 @@
 
 /* Region summaries */
 .results { margin-top: var(--space-6); }
-.summaryGrid, .analysisGrid { display: grid; gap: 24px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.summaryGrid, .analysisGrid { display: grid; gap: var(--space-6); grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .regionSummary { display: flex; flex-direction: column; min-width: 0; }
 .regionIdentity { color: var(--muted); font-size: var(--text-caption); font-weight: 600; letter-spacing: .04em; margin: 0; text-transform: uppercase; }
 .regionSummary h3 { font-size: 1.375rem; font-weight: 600; line-height: 1.4; margin: 20px 0 12px; overflow-wrap: anywhere; }
 .bigScore { align-items: baseline; display: flex; gap: 10px; margin: 0; }
 .bigScore strong { color: var(--accent); font-size: 3rem; font-variant-numeric: tabular-nums; font-weight: 700; line-height: 1.1; }
 .bigScore small { color: var(--muted); font-size: var(--text-caption); }
+.regionSummary[data-side="B"] .bigScore strong { color: var(--comparison-b); }
 .scoreNote { color: var(--muted); font-size: var(--text-caption); margin: 16px 0 0; }
 
 /* Overall difference banner */
@@ -65,25 +66,6 @@
 .difference h3 { font-size: .9375rem; margin: 0 0 4px; }
 .difference p { font-size: var(--text-caption); margin: 0; }
 
-/* Dimension bars */
-.analysisGrid { align-items: start; margin-top: 32px; }
-.dimensions, .attention { min-width: 0; }
-.dimensions > h2, .attention > h2 { margin-top: 0; }
-.legend { color: var(--muted); display: flex; flex-wrap: wrap; font-size: var(--text-caption); gap: 8px 20px; margin: -4px 0 20px; }
-.legend span { align-items: center; display: inline-flex; gap: 6px; }
-.legend i { background: var(--accent); border-radius: 2px; display: inline-block; height: 8px; width: 8px; }
-.legend [data-side="B"] i { background: var(--bar-b); }
-.dimensions { --bar-b: var(--comparison-b); }
-.dimensionList { display: grid; gap: 20px; margin: 0 0 20px; }
-.dimensionHeading { align-items: baseline; display: flex; gap: 12px; justify-content: space-between; margin-bottom: 10px; }
-.dimensionHeading h3 { font-size: var(--text-small); font-weight: 500; margin: 0; min-width: 0; overflow-wrap: anywhere; }
-.pair { color: var(--accent); font-size: var(--text-small); font-variant-numeric: tabular-nums; white-space: nowrap; }
-.pair strong { font-weight: 700; }
-.pair b { color: var(--muted); font-weight: 700; }
-.track { background: var(--accent-soft); border-radius: 4px; height: 5px; overflow: hidden; }
-.track + .track { margin-top: 8px; }
-.track span { background: var(--accent); border-radius: 4px; display: block; height: 100%; }
-.track[data-side="B"] span { background: var(--bar-b); }
 
 /* Attention card */
 .readingTag { background: var(--accent-soft); border-radius: 4px; color: var(--foreground); display: inline-block; font-size: var(--text-caption); font-weight: 500; padding: 4px 10px; }
@@ -105,6 +87,10 @@
 .detailTable .valueA { color: var(--accent); }
 .detailTable sup, .footnote sup { font-size: .6em; }
 .footnote { margin: 16px 0 0; }
+.analysisGrid { align-items: start; margin-top: var(--space-8); }
+.analysisGrid > div { min-width: 0; }
+.detailDisclosure { margin-top: var(--space-8); }
+.detailDisclosure > summary { font-weight: 600; }
 
 /* Bottom bar */
 .bottomBar { align-items: center; display: flex; flex-wrap: wrap; gap: 16px 24px; justify-content: space-between; margin-top: 24px; }
