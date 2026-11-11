@@ -91,13 +91,15 @@ There is an explicit governance contradiction to resolve: the frontend currently
 
 Keep the features available for **restricted local review**. **Do not deploy publicly** until source reuse rights and model/insight release signoff are documented. Independent method review, effective-boundary certification, and formal accessibility review remain separate gates. This README claims no approval, deployment, or newly verified release.
 
-### CSV and A4 reports
+### CSV, Excel, and A4 reports
 
-- Explore's **Unduh CSV identitas** exports **all filtered regional identities and references**, not only the current table page. Map-layer selection does not change the export. No scores, indicator values, or CONTEXT observations are exported.
+- Explore's **Unduh CSV** exports a compact six-column identity table: BPS code, region name/type, province, reference year, and BPS source identity. It includes **all filtered regions**, not only the table page. No repeated disclosure paragraphs or URLs appear in region rows.
 - CSV uses comma-delimited RFC 4180 records, CRLF, a **UTF-8 BOM**, and spreadsheet-formula protection, including formula-like text after leading whitespace/control/format characters.
+- **Unduh Excel** exports the same identities in **Data Wilayah**, with readable widths, styled headers, frozen headings, AutoFilter, text BPS IDs, and integer years. **Informasi Data** contains filter scope, attribution, status, limitations, and verified BPS/repository documentation URLs, without localhost or an invented deployment URL. CSV cannot store column widths; choose Excel for a ready-to-read spreadsheet.
+- Both exports exclude scores, indicator values, insights, and CONTEXT. Full restrictions remain at `/methodology#ekspor-dan-laporan`, in the Excel information sheet, and in the [reporting contract](docs/ANALYTICAL-REPORTING-2023.md).
 - Region detail's **Cetak identitas / PDF** opens the browser print dialog. Select A4 and a printer or Save as PDF. The identity/reference report includes source and methodology references, **no numerical model or observation values**, and no insights.
 
-On-screen display is not numerical export approval. Public numerical CSV/PDF requires a documented rights/release decision and a reviewed contract change, not a browser flag. Details appear at `/methodology#ekspor-dan-laporan` and in [product integration](docs/PRODUCT-INTEGRATION-2023.md).
+On-screen display is not numerical export approval. Public numerical CSV/XLSX/PDF requires a documented rights/release decision and a reviewed contract change, not a browser flag. Details appear at `/methodology#ekspor-dan-laporan` and in [product integration](docs/PRODUCT-INTEGRATION-2023.md).
 
 The regional report restriction is not a browser-wide data-loss control: other pages can still be copied or printed with their on-screen numbers. The shared preview notice discloses release status; it does not restrict access. Keep review local or access-controlled until a documented release decision resolves this gap.
 
@@ -111,7 +113,7 @@ node scripts/prepare-analytical-report-2023.ts --region 3273 --q Bandung --type 
 
 The command creates a full-precision analytical CSV for every filtered region and a standalone A4 HTML report for the selected region. Both read the authoritative facade: overall pressure, six dimensions, 18 CORE indicators/units, original periods, definitions/denominators, uncertainty, and source references. Open the returned `file://` HTML and activate **Cetak / Simpan PDF lokal** to save a numerical PDF locally.
 
-Files stay in a random private temporary directory outside the repository, with POSIX directory/file modes `0700`/`0600`. No web route, client toggle, public download, new dependency, or publication approval is added. Save the browser-generated PDF in the same controlled directory; browser save locations/permissions remain the operator's responsibility. See the [complete analytical reporting contract and authorization checklist](docs/ANALYTICAL-REPORTING-2023.md).
+Files stay in a random private temporary directory outside the repository, with POSIX directory/file modes `0700`/`0600`. The offline command adds no web route, client toggle, public download, or publication approval, and does not use the public Excel writer. Save the browser-generated PDF in the same controlled directory; browser save locations/permissions remain the operator's responsibility. See the [complete analytical reporting contract and authorization checklist](docs/ANALYTICAL-REPORTING-2023.md).
 
 ## Run locally
 
@@ -135,7 +137,7 @@ npm run build
 npm start
 ```
 
-`npm start` serves the completed production build locally; it is not deployment authorization. The reporting candidate passed **369 tests**, lint, and the strict TypeScript production build (**36 generated pages**). Reporting evidence and remaining approval gates live in [TASKS.md §38](docs/TASKS.md#38-complete-reporting-contract-with-offline-numerical-review); the previous product review remains in §37.
+`npm start` serves the completed production build locally; it is not deployment authorization. The portable export candidate passed **376 tests**, lint, and the strict TypeScript production build (**36 generated pages**). Independent spreadsheet-reader and responsive browser evidence lives in [TASKS.md §39](docs/TASKS.md#39-compact-public-csv-and-readable-excel-export). Previous analytical reporting and product reviews remain in §§38 and 37.
 
 **Bundler precision:** development and builds intentionally use webpack. Next 16.4.2 Turbopack can reserialize imported JSON numbers—for example, `3.7037037037037037` becomes `3.703703703703704`—and fail exact contextual coverage validation. Keep reviewed data and validation intact rather than weakening them for the bundler.
 

@@ -34,8 +34,9 @@
 .pagination button[aria-current="page"] { background: var(--accent); border-color: var(--accent); color: var(--accent-contrast); }
 .pagination button:disabled { color: var(--muted); cursor: not-allowed; }
 .export { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 16px; margin-block: 12px 20px; }
-.export > button { flex: none; }
-.export > button:disabled { color: var(--muted); cursor: not-allowed; }
+.exportActions { display: flex; flex-wrap: wrap; gap: var(--space-2); max-width: 100%; }
+.exportActions > button { flex: none; }
+.exportActions > button:disabled { color: var(--muted); cursor: not-allowed; }
 .export > p { flex: 1 1 320px; margin: 0; }
 .export > p[role="status"] { flex-basis: 100%; }
 .export > p[role="status"]:empty { display: none; }

@@ -229,3 +229,8 @@ The review does not modify source datasets, normalization, weights, missingness,
 
 Existing numerical screens and ordinary printing outside the regional metadata report are not a release-control boundary. The preview notice is disclosure only. Restricted local/access-controlled review remains the safe option pending documented source rights and model/insight release approval; frontend integration is not that approval.
 
+## 18. Compact portable public identity contract
+
+Public CSV now contains six fields only: BPS code, region name, region type, province, reference year, and short `BPS` source identity. Full attribution, disclosure, and source/methodology links remain available on the website and the separate Excel `Informasi Data` sheet, not repeated in every CSV row. The XLSX `Data Wilayah` sheet contains the same facade identities. Source and repository references were verified; no localhost or invented deployment URL is embedded in these public files.
+
+CSV retains its tested UTF-8 BOM, RFC 4180 escaping, CRLF, and formula defense. Excel stores identifiers/text as text and reference year as an integer, without formula cells or numerical model/indicator payloads. Neither export reads CORE/CONTEXT results. The offline private analytical contract is unchanged. No source rights, release flag, dataset, normalization, scoring, or geography decision changes.

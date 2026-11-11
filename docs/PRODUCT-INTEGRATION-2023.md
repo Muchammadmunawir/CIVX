@@ -211,4 +211,10 @@ The [complete CSV/PDF contract](ANALYTICAL-REPORTING-2023.md) is implemented for
 
 The CLI writes only to a private temporary directory outside the repository. It does not start a server, add an application route, import reporting code into client bundles, or write downloadable assets. Its local scope label is disclosure, not an authorization mechanism. Browser-generated PDF location/permissions remain the operator's responsibility.
 
-Application actions remain **Unduh CSV identitas** and **Cetak identitas / PDF**. Their public payloads remain unchanged and must not be described as complete numerical analytical exports. Source rights, model-release approval, and a reviewed production-distribution contract are still required before numerical public reporting. Insight approval is separate if insight export is ever proposed; current analytical reports exclude it.
+Explore now offers **Unduh CSV** and **Unduh Excel** for identities only; the region action remains **Cetak identitas / PDF**. Public reporting must not be described as complete numerical analytical export. Source rights, model-release approval, and a reviewed production-distribution contract are still required before numerical public reporting. Insight approval is separate if insight export is ever proposed; current analytical reports exclude it.
+
+## Portable public identity exports
+
+CSV contains only six identity/attribution fields, with no repeated disclosure paragraphs or URLs. Excel uses the same explicit projection in `Data Wilayah` and moves detailed scope, filter snapshot, status, limitations, BPS attribution, and verified source/methodology references into `Informasi Data`. Widths, wrapping, text BPS IDs, numeric years, frozen headers, and AutoFilter are document presentation, not changes to source values.
+
+Both actions consume the full existing filtered header set; pagination and map layer do not change export membership. No application-origin URL enters either portable format. Detailed website disclosures remain linked from the controls. The [reporting contract](ANALYTICAL-REPORTING-2023.md) records the approved schema; the private 240-column CLI/A4 workflow and all publication restrictions remain intact.

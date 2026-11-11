@@ -180,3 +180,11 @@ Region Detail now offers “Wilayah dengan Profil Serupa”: up to three nearest
 Home provides three practical entry scenarios for education pressure, two-region comparison, and source-backed regional inspection. Methodology preserves concise cohort/provenance guidance and uses progressive disclosure for technical tables/formulas. Explore exposes active filters, clear search/type-only reset, a mobile result shortcut, and shareable `q`/`type`/`layer` URLs with native Back/Forward and preserved map context.
 
 The current unreleased score/insight flags, source-rights limits, CSV scope, and regional A4 scope are unchanged. This feature authorization is for restricted local/access-controlled analytical preview, not public numerical publication. PR #19 remains the integration-review vehicle; owners retain release and deployment signoff.
+
+## 17. Portable regional identity exports
+
+The approved Explore presentation offers **Unduh CSV** and **Unduh Excel**, with one short identity/reference-only scope description and a link to existing reporting terms. Both export all search/type-filtered identities rather than the current table page; map-layer state remains independent.
+
+CSV is a clean six-column BPS identity table without repeated paragraphs or row-level URLs. Excel keeps the same table on `Data Wilayah` and stores full attribution, filters, status, limitations, and verified documentation/publisher URLs on `Informasi Data`. It supplies readable column widths, frozen headers, AutoFilter, explicit text codes, and numeric years. No public website URL is invented.
+
+This is a usability/schema cutover, not permission to distribute scores or indicators. Numerical public CSV/XLSX/PDF remains unapproved. The restricted offline analytical reporting workflow, existing regional A4 report, approved results notice, theme identity, and mobile navigation remain unchanged.

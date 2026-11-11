@@ -4,16 +4,27 @@
 
 **Pelaporan numerik publik belum diizinkan.** `SCORED_NOT_RELEASED`, `INSIGHTS_NOT_RELEASED`, dan `productionIntegrationAuthorized: false` tetap berlaku. Hak penggunaan dan redistribusi sumber serta persetujuan rilis model belum tuntas. Data yang dapat dibaca dari penerbit tidak otomatis boleh dipublikasikan ulang.
 
-Kontrak ini memisahkan dua keluaran:
+Kontrak ini memisahkan pelaporan identitas publik dari pelaporan analitis lokal:
 
 | Keluaran | Cakupan saat ini | Akses |
 | --- | --- | --- |
-| CSV Jelajah dan PDF regional pada aplikasi | Identitas, metadata, definisi, atribusi, dan referensi; tanpa hasil numerik | Perilaku publik lama dipertahankan |
+| CSV dan Excel Jelajah | Identitas BPS, jenis wilayah, provinsi, tahun, dan atribusi; Excel menambahkan lembar informasi tanpa nilai analitis | Tabel publik ringkas dan workbook identitas |
+| PDF regional pada aplikasi | Identitas, metadata, definisi, atribusi, dan referensi; tanpa hasil numerik | Cakupan cetak identitas tetap |
 | CSV analitis dan laporan A4 lokal | Skor keseluruhan, enam dimensi, serta 18 indikator CORE dari facade, beserta satuan dan bukti | CLI lokal di luar aplikasi; bukan unduhan atau rute publik |
 
 Hasil numerik lokal diberi cakupan tetap `LOCAL_RESTRICTED_REVIEW`. Label ini bukan pengamanan: pemisahan berasal dari modul offline di `scripts/reporting/`, tidak adanya impor aplikasi/rute, serta direktori keluaran privat di luar repository. Tidak ada boolean klien, tombol tersembunyi, parameter URL, atau flag `includeScores` untuk melewati kontrak publik.
 
 Simpan hasil lokal di lingkungan terkontrol. Jangan unggah ke repository, lampiran PR publik, `public/`, penyimpanan publik, atau layanan demo. Pembuatan laporan lokal tidak memberikan izin redistribusi.
+
+## Ekspor identitas publik portabel
+
+**CSV memiliki enam kolom:** `Kode BPS`, `Nama wilayah`, `Jenis wilayah`, `Provinsi`, `Tahun acuan`, dan `Sumber identitas`. Sumber ringkas setiap baris adalah `BPS`; atribusi lengkap tersedia di situs dan lembar informasi Excel. Jangan menambahkan paragraf pembatasan, preamble, baris ringkasan, atau URL pada setiap rekaman wilayah. CSV tetap UTF-8 BOM/RFC 4180/CRLF dan memakai perlindungan formula yang sama dengan sebelumnya.
+
+**Excel memiliki dua lembar:** `Data Wilayah` berisi judul CIVX, tahun 2023, header pada baris 4, enam kolom yang sama, dan seluruh hasil filter. Empat baris teratas dibekukan; AutoFilter hanya mencakup header tabel dan rekaman wilayah. Kode BPS memakai sel teks dengan format `@`, tahun memakai bilangan bulat, dan nilai teks tidak menjadi formula. Lebar, wrapping, tinggi baris, dan warna CIVX membantu pembacaan; CSV tidak dapat menyimpan format tersebut.
+
+`Informasi Data` menyimpan cakupan, jumlah wilayah, pencarian/jenis wilayah, atribusi BPS melalui facade CIVX, status, keterbatasan, serta empat URL penerbit/dokumentasi yang diverifikasi. Tidak ada URL localhost, tebakan domain aplikasi, tautan unduhan buku ber-token, skor, indikator, atau data konteks. Dokumentasi GitHub mengikuti branch pengembangan yang sudah ada; tautan tersebut bukan klaim deployment atau persetujuan rilis.
+
+Kedua tombol memakai seluruh header facade yang lolos filter, bukan halaman tabel. Keadaan kosong menonaktifkan kedua unduhan. Ketentuan tetap tersedia melalui `/methodology#ekspor-dan-laporan`. Penyederhanaan struktur publik ini tidak mengubah kontrak CSV analitis lokal 240 kolom, renderer A4 privat, serializer umum, atau flag governance.
 
 ## Sumber kebenaran dan seleksi
 

@@ -60,21 +60,16 @@ function parseCsv(content) {
   return rows;
 }
 
-// Synthetic references and malicious payloads stay confined to this test file.
-const references = Object.freeze({
-  methodologyUrl: "https://example.invalid/metodologi?tahun=2023&bahasa=id",
-  sourcesUrl: "https://example.invalid/sumber-data#identitas-bps",
-  reportingUrl: "https://example.invalid/pelaporan#batasan-ekspor",
-});
 
 function identityCells(region) {
   return [region.id, region.name, region.type === "kabupaten" ? "Kabupaten" : "Kota", region.province, String(region.referenceYear)];
 }
 
 function dataRows(regions) {
-  const rows = parseCsv(createExploreCsv2023(regions, references).content);
+  const rows = parseCsv(createExploreCsv2023(regions).content);
   assert.equal(rows.length, regions.length + 1, "Every selected identity needs one record, plus a header");
-  assert.ok(rows.every(row => row.length === 12), "Public export contains only five identity and seven disclosure/reference cells");
+  assert.deepEqual(rows[0], ["Kode BPS", "Nama wilayah", "Jenis wilayah", "Provinsi", "Tahun acuan", "Sumber identitas"]);
+  assert.ok(rows.every(row => row.length === 6), "Public export contains five identity cells and compact attribution only");
   return rows.slice(1);
 }
 
@@ -127,7 +122,7 @@ test("Explore export preserves every canonical facade identity and reference yea
   const regions = getExploreRegionsProduct2023().map(item => item.region);
   assert.equal(regions.length, 27);
   const rows = dataRows(regions);
-  assert.deepEqual(rows.map(row => row.slice(0, 5)), regions.map(identityCells));
+  assert.deepEqual(rows, regions.map(region => [...identityCells(region), "BPS"]));
   assert.equal(new Set(rows.map(row => row[0])).size, regions.length);
   assert.ok(rows.every(row => row[4] === "2023"));
 });
@@ -141,19 +136,6 @@ test("Explore export respects a selected name/type subset and its displayed orde
   assert.deepEqual(dataRows(selected).map(row => row.slice(0, 5)), selected.map(identityCells));
 });
 
-test("Explore disclosure cells carry publication restrictions, BPS attribution, interpretation, and reference links", () => {
-  const regions = getExploreRegionsProduct2023().map(item => item.region);
-  for (const row of dataRows(regions)) {
-    assert.match(row[5], /identitas.*referensi/i);
-    assert.match(row[6], /skor.*insight.*belum.*(?:disetujui|rilis)/i);
-    assert.match(row[6], /tidak menyertakan.*konteks.*(?:dokumen|sumber)/i);
-    assert.match(row[7], /BPS/);
-    assert.match(row[7], /identitas|kode wilayah/i);
-    assert.match(row[8], /tekanan relatif/i);
-    assert.match(row[8], /bukan.*(?:kualitas|klasifikasi resmi).*rekomendasi kebijakan/i);
-    assert.deepEqual(row.slice(9), [references.methodologyUrl, references.sourcesUrl, references.reportingUrl]);
-  }
-});
 
 test("Explore export cannot leak extra CORE, CONTEXT, insight, raw-book, hash, or internal-path payloads", () => {
   const regions = getExploreRegionsProduct2023().map(item => item.region);
@@ -171,11 +153,11 @@ test("Explore export cannot leak extra CORE, CONTEXT, insight, raw-book, hash, o
   };
   const poisoned = regions.map(region => ({ ...region, ...privatePayload }));
   const cleanRows = dataRows(regions);
-  const exported = createExploreCsv2023(poisoned, references);
+  const exported = createExploreCsv2023(poisoned);
   assert.deepEqual(parseCsv(exported.content).slice(1), cleanRows);
   assert.doesNotMatch(exported.content, /PRIVATE_|98\.76543219876|87\.65432198765|deadbeef1234567890|\/private\//);
 });
 
 test("Explore export rejects an empty selection rather than downloading a header-only file", () => {
-  assert.throws(() => createExploreCsv2023([], references), Error);
+  assert.throws(() => createExploreCsv2023([]), Error);
 });

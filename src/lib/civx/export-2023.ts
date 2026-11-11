@@ -28,20 +28,21 @@ export interface CsvReferences2023 {
   readonly reportingUrl: string;
 }
 
-/** Public exports deliberately accept identity headers, never CORE or CONTEXT payloads. */
-export function createExploreCsv2023(regions: readonly CivxRegionProductHeader2023[], references: CsvReferences2023): { content: string; filename: string } {
+export const EXPLORE_IDENTITY_HEADERS_2023 = [
+  "Kode BPS", "Nama wilayah", "Jenis wilayah", "Provinsi", "Tahun acuan", "Sumber identitas",
+] as const;
+
+/** Explicit identity projection shared by public CSV and Excel; never read analytical payloads. */
+export function getExploreIdentityRows2023(regions: readonly CivxRegionProductHeader2023[]): [string, string, string, string, number, string][] {
   if (regions.length === 0) throw new Error("Tidak ada wilayah sesuai filter untuk diunduh.");
-  const rows: CsvValue2023[][] = [[
-    "Kode BPS", "Nama wilayah", "Jenis wilayah", "Provinsi", "Tahun acuan",
-    "Cakupan ekspor", "Pembatasan publikasi", "Atribusi identitas", "Interpretasi CIVX",
-    "Rujukan metodologi", "Rujukan sumber data", "Ketentuan ekspor",
-  ]];
-  for (const region of regions) {
-    rows.push([
-      region.id, region.name, region.type === "kabupaten" ? "Kabupaten" : "Kota", region.province, region.referenceYear,
-      REPORTING_SCOPE_2023, REPORTING_RESTRICTION_2023, "Identitas kode wilayah BPS melalui facade produk CIVX 2023.", REPORTING_INTERPRETATION_2023,
-      references.methodologyUrl, references.sourcesUrl, references.reportingUrl,
-    ]);
-  }
-  return { content: encodeCsv2023(rows), filename: `civx-jawa-barat-2023-identitas-${regions.length}-wilayah.csv` };
+  return regions.map(region => [
+    region.id, region.name, region.type === "kabupaten" ? "Kabupaten" : "Kota",
+    region.province, region.referenceYear, "BPS",
+  ]);
+}
+
+/** Public CSV is a compact identity table; disclosures stay on the website and Excel information sheet. */
+export function createExploreCsv2023(regions: readonly CivxRegionProductHeader2023[]): { content: string; filename: string } {
+  const rows = getExploreIdentityRows2023(regions);
+  return { content: encodeCsv2023([EXPLORE_IDENTITY_HEADERS_2023, ...rows]), filename: `civx-jawa-barat-2023-identitas-${regions.length}-wilayah.csv` };
 }

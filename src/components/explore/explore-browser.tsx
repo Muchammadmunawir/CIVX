@@ -100,7 +100,7 @@ export function ExploreBrowser({ regions, initialState = { q: "", type: "all", l
     <div className={styles.mapReveal} data-reveal><WestJavaMap regions={regions} visibleIds={filtered.map(view => view.region.id)} dimensionId={dimensionId} onDimensionChangeAction={layer => { editingSearch.current = false; update({ layer }); }} /></div>
     <section className={`product-section ${styles.results}`} id="region-results" aria-labelledby="regions-title" tabIndex={-1} data-reveal>
       <div className={styles.resultsHeading}><h2 className="product-section-title" id="regions-title">Daftar wilayah</h2><p className="product-caption">{range} wilayah · {regions.length} wilayah dalam model · urutan kode BPS</p></div>
-      <CsvDownload regions={filtered.map(view => view.region)} />
+      <CsvDownload regions={filtered.map(view => view.region)} filters={{ q: search, type }} />
       {filtered.length ? <>
         <RegionTable regions={pageRegions} />
         <nav className={styles.pagination} aria-label="Halaman daftar wilayah">
